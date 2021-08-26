@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+<head>
+<style type="text/css">
+table {
+            <#if .locale == "zh_CN">
+                font-family: stsong, sans-serif;
+            <#elseif .locale == "zh_TW">
+                font-family: msung, sans-serif;
+            <#elseif .locale == "ja_JP">
+                font-family: heiseimin, sans-serif;
+            <#elseif .locale == "ko_KR">
+                font-family: hygothic, sans-serif;
+            <#elseif .locale == "ru_RU">
+                font-family: verdana;
+            <#else>
+                font-family: sans-serif;
+            </#if>
+            font-size: 9pt;
+            margin-top: 10px;
+            table-layout: fixed;
+            width: 100%;
+        }
+        th {
+            font-weight: bold;
+            font-size: 8pt;
+            vertical-align: middle;
+            padding-right: 6px;
+            padding-left: 6px;
+            padding-bottom: 3px;
+            padding-top: 5px;
+            background-color: #e3e3e3;
+            color: #333333;
+        }
+        td {
+            padding-right: 6px;
+            padding-left: 6px;
+            padding-bottom: 4px;
+            padding-top: 4px;
+        }
+        b {
+            font-weight: bold;
+            color: #333333;
+        }
+        table.header td {
+            padding: 0px;
+            font-size: 10pt;
+        }
+        table.footer td {
+            padding: 0px;
+            font-size: 8pt;
+        }
+        table.itemtable th {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        table.body td {
+            padding-top: 2px;
+        }
+        td.addressheader {
+            font-size: 8pt;
+            padding-top: 6px;
+            padding-bottom: 2px;
+        }
+        td.address {
+            padding-top: 0px;
+        }
+        span.title {
+            font-size: 28pt;
+        }
+        span.number {
+            font-size: 16pt;
+        }
+        div.remittanceSlip {
+            width: 100%;
+            /* To ensure minimal height of remittance slip */
+            height: 200pt;
+            page-break-inside: avoid;
+            page-break-after: avoid;
+        }
+        hr {
+            border-top: 1px dashed #d3d3d3;
+            width: 100%;
+            color: #ffffff;
+            background-color: #ffffff;
+            height: 1px;
+        }</style></head>
+<body>
+<p>Please use Single Currency Advanced Printing Template</p>
+</body>
+</pdf>

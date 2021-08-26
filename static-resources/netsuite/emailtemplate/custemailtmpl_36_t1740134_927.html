@@ -1,0 +1,32 @@
+<p><font face="verdana" size="2">Dear&nbsp;<#--FM:BEGIN--><#if (entity.entityId)?has_content>${entity.entityId}<#elseif (project.entityId)?has_content>${project.entityId}<#else>${company.entityId}</#if><#--FM:END-->,</font></p>
+
+<p>&nbsp;</p>
+
+<p><font face="verdana" size="2">Thank you for your business. Your invoice for professional services is now ready to view for project:&nbsp;<b>${transaction.job}</b>.</font></p>
+
+<p>&nbsp;</p>
+
+<p><font face="verdana" size="2"><b>Invoice #: &nbsp;${transaction.tranId}</b></font></p>
+
+<p><font face="verdana" size="2"><b>Date: &nbsp;${transaction.tranDate}</b></font></p>
+
+<p><font face="verdana" size="2"><b>Due Date: &nbsp;${transaction.dueDate}</b></font></p>
+
+<p><font face="verdana" size="2"><b>Amount Due: &nbsp;${transaction.total}</b></font></p>
+
+<p><b style="font-family: verdana; font-size: small; background-color: rgb(255, 255, 255);">Detailed Invoice: <a href="${transaction.custbody_oa_invoice_link}">&nbsp;</a></b><a href="${transaction.custbody_oa_invoice_link}" target="_blank">${transaction.custbody_oa_invoice_link}</a><br />
+&nbsp;</p>
+
+<p><font face="verdana" size="2">If you should have any questions regarding your account, please contact us by email (billing@netsuite.com) or by phone at 1(877)638-7848 (from inside the US), (650) 627-1316 (from outside the US), or +44 (0) 1628-774400 (UK) so that we may assist you. Please also contact us to advise payment status or to resolve any billing discrepancies.&nbsp;</font></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><font face="verdana" size="2">Regards,</font></p>
+
+<p>&nbsp;</p>
+
+<p><font face="verdana" size="2">Accounts Receivable</font></p>
+
+<p><font face="verdana" size="2"><img src="${companyInformation.logoUrl}" /></font></p>

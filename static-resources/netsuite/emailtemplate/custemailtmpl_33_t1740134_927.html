@@ -1,0 +1,42 @@
+<#if customrecord.custrecord_nsts_ci_customer.isperson == "T">Dear ${customrecord.custrecord_nsts_ci_customer.salutation} ${customrecord.custrecord_nsts_ci_customer.firstname} ${customrecord.custrecord_nsts_ci_customer.middlename} ${customrecord.custrecord_nsts_ci_customer.lastname},<br />
+<#else> Dear ${customrecord.custrecord_nsts_ci_customer.companyname},<br />
+</#if><br />
+<span style="background-color: rgb(255, 255, 255);">This is just a friendly reminder that payment for Invoice #</span>${customrecord.name}<span style="background-color: rgb(255, 255, 255);"> (attached) is past due.</span><br />
+<br />
+<span style="background-color: rgb(255, 255, 255);">We would much appreciate if you could let us know the status of this payment. Please do not hesitate to call us if you have any questions about the balance due on your account. If you have already sent us your payment, please disregard this reminder.</span><br />
+<br />
+<span style="background-color: rgb(255, 255, 255);">Thank you very much for your attention to this matter and your continued business.</span><br />
+<br />
+<strong>Consolidated Invoice Details</strong>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width: 400px;">
+<tbody>
+	<tr>
+	<td>Consolidated Invoice #</td>
+	<td>${customrecord.name}</td>
+	</tr>
+	<tr>
+	<td>CI Date</td>
+	<td>${customrecord.custrecord_nsts_ci_date}</td>
+	</tr>
+	<tr>
+	<td>CI Due Date</td>
+	<td>${customrecord.custrecord_nsts_ci_tran_duedate}</td>
+	</tr>
+	<tr>
+	<td>Amount</td>
+	<td>${customrecord.custrecord_nsts_ci_pdf_itemtotal}</td>
+	</tr>
+</tbody>
+</table>
+&nbsp;
+
+<p>Sincerely,<br />
+${customrecord.custrecord_nsts_dunning_sender.salutation}&nbsp;${customrecord.custrecord_nsts_dunning_sender.firstname}&nbsp;${customrecord.custrecord_nsts_dunning_sender.middlename}&nbsp;${customrecord.custrecord_nsts_dunning_sender.lastname}<br />
+<#if companyInformation.legalname != "">${companyInformation.legalname}<br />
+<#else>${companyInformation.companyname}<br />
+</#if> ${companyInformation.phone}<br />
+${companyInformation.email}<br />
+${companyInformation.fax}</p>
+
+<p>&nbsp;</p>
