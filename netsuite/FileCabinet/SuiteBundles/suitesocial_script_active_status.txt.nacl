@@ -1,0 +1,12 @@
+netsuite.file SuiteBundles_suitesocial_script_active_status_txt@duuuv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteBundles/suitesocial_script_active_status.txt"
+  content = file("netsuite/FileCabinet/SuiteBundles/suitesocial_script_active_status.txt")
+  _parent = [
+    netsuite.folder.instance.SuiteBundles,
+  ]
+}
