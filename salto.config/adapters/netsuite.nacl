@@ -1,0 +1,56 @@
+netsuite {
+  fetch = {
+    include = {
+      types = [
+        {
+          name = ".*"
+        },
+      ]
+      fileCabinet = [
+        "^/SuiteScripts.*",
+        "^/Templates.*",
+        "^/SuiteBundles.*",
+      ]
+    }
+    exclude = {
+      fileCabinet = [
+        "/SuiteBundles/Bundle 47492/helpcenter\\.nl\\?topic=DOC_TaxAuditFilesBundle ",
+      ]
+      types = [
+        {
+          name = "workbook"
+        },
+        {
+          name = "dataset"
+        },
+        {
+          name = "Customer"
+        },
+        {
+          name = "AccountingPeriod"
+        },
+        {
+          name = "Employee"
+        },
+        {
+          name = "Job"
+        },
+        {
+          name = "ManufacturingCostTemplate"
+        },
+        {
+          name = "Partner"
+        },
+        {
+          name = "Solution"
+        },
+        {
+          name = "GiftCertificateItem"
+        },
+        {
+          name = "DownloadItem"
+        },
+      ]
+    }
+  }
+}

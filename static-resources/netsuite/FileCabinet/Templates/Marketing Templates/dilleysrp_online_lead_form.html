@@ -1,0 +1,233 @@
+<NLFORM>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Online Lead Form</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+	<style>
+	img.bg-img {
+		min-height: 100%;
+		height: auto;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 0;
+	}
+	legend {
+		margin-top: 15px;
+	}
+	input,
+	button,
+	select,
+	textarea {
+		font-family: inherit;
+		font-size: inherit;
+		line-height: inherit;
+	}
+	input,
+	select {
+		display: block;
+		width: 100% !important;
+		height: 34px !important;
+		padding: 6px 12px;
+		font-size: 14px !important;
+		line-height: 1.428571429;
+		color: #555555;
+		vertical-align: middle;
+		background-color: #ffffff;
+		background-image: none;
+		border: 1px solid #cccccc;
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	}
+	input:focus,
+	select:focus {
+		border-color: #66afe9;
+		outline: 0;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+	}
+	input:-moz-placeholder {
+		color: #999999;
+	}
+	input::-moz-placeholder {
+		color: #999999;
+		opacity: 1;
+	}
+	input:-ms-input-placeholder {
+		color: #999999;
+	}
+	input::-webkit-input-placeholder {
+		color: #999999;
+	}
+	input[disabled],
+	input[readonly],
+	fieldset[disabled] input {
+		cursor: not-allowed;
+		background-color: #eeeeee;
+	}
+	textarea {
+		height: auto;
+	}
+	button,
+	input,
+	select,
+	textarea {
+		font-family: inherit;
+		font-size: 100%;
+		margin: 0;
+	}
+	button,
+	input {
+		line-height: normal;
+	}
+	button,
+	select {
+		text-transform: none;
+	}
+	button,
+	html input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		-webkit-appearance: button;
+		cursor: pointer;
+	}
+	.form-group {
+		margin-bottom: 15px;
+	}
+	.form-action {
+		margin-top: 20px;
+	}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div>
+		<img class="bg-img" src="https://system.na1.netsuite.com/core/media/media.nl?id=3949&c=TSTDRV1136823&h=de69b8c35db302223596">
+	</div>
+	<div class="row">
+		<header class="col-md-9">
+			<div class="page-header">
+				<h1>Online Lead Form <small>Powered by NetSuite</small></h1>
+			</div>
+		</header>
+	</div>
+	<div class="row">
+		<form role="form">
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-12">
+						<legend>Contact information</legend>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="control-group">
+									<label class="control-label" for="firstname">First name *</label>
+									<NLFIRSTNAME>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="control-group">
+									<label class="control-label"for="lastname">Last name *</label>
+									<NLLASTNAME>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="control-group">
+									<label class="control-label"for="email">Email *</label>
+									<NLEMAIL>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="control-group">
+									<label class="control-label"for="title">Job title</label>
+									<NLTITLE>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<legend>Company details</legend>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="control-group">
+									<label class="control-label"for="companyname">Company name *</label>
+									<NLCOMPANYNAME>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="control-group">
+									<label class="control-label"for="custentity4">Company size</label>
+									<NLCUSTENTITY4>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="control-group">
+									<label class="control-label"for="city">City</label>
+									<NLCITY>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="control-group">
+									<label class="control-label"for="state">State *</label>
+									<NLSTATE>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="control-group">
+									<label class="control-label"for="zipcode">Zip/postal code *</label>
+									<NLZIPCODE>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="control-group">
+									<label class="control-label"for="country">Country</label>
+									<NLCOUNTRY>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="control-group">
+									<NLSUBSIDIARY>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-action">
+							<button type="submit" class="btn btn-lg btn-primary btn-block">Submit form</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="col-md-9">
+		<hr>
+
+		<footer class="text-muted">
+			<p class="pull-right">* Required fields</p>
+			<p>
+				&copy; NetSuite 2017
+			</p>
+		</footer>
+	</div>
+</div>
+
+</body>
+</html>

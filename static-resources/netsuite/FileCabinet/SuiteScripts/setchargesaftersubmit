@@ -1,0 +1,47 @@
+
+/**
+ * Copyright NetSuite, Inc. 2016 All rights reserved.
+ * The following code is a demo prototype. Due to time constraints of a demo,
+ * the code may contain bugs, may not accurately reflect user requirements
+ * and may not be the best approach. Actual implementation should not reuse
+ * this code without due verification.
+ *
+ * Populates charges in an invoice header custom field.
+ *
+ * Version    Date             Author           Remarks
+ * 1.00       09 Mar 2016      Ryan Morrissey   Initial commit
+ *
+ */
+
+function populateChargesAfterSubmit(type) {
+    try {
+        var invFld  = 'custbody_charge_details',
+            invID   = nlapiGetRecordId(),
+            invRec  = nlapiLoadRecord('invoice', invID),
+
+            chgArr  = [],
+            cols    = [],
+            flts    = [],
+            results = null;
+
+        cols.push(new nlobjSearchColumn('internalid'));
+        flts.push(new nlobjSearchFilter('internalid', 'invoice', 'is', invID));
+        results = nlapiSearchRecord('charge', null, flts, cols);
+
+        if (!results || results.length < 1) {
+            nlapiLogExecution('info', 'Invoice update', 'No charges found for invoice id ' + invID);
+            return;
+        }
+
+        for (var _i = results.length - 1; _i >= 0; _i--) {
+            chgArr.push(results[_i].getId());
+        }
+
+        nlapiLogExecution('debug', 'Invoice update', 'Charges found: ' + JSON.stringify(chgArr));
+        invRec.setFieldValues(invFld, chgArr);
+        nlapiSubmitRecord(invRec);
+
+    } catch(e) {
+        nlapiLogExecution('error', 'Try/catch error', e.message);
+    }
+}

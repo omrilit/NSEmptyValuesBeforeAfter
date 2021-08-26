@@ -1,0 +1,118 @@
+
+function sampleValidateField(type, name)
+{
+ // This script does not allow discounts greater than 30%, without manager approval.
+
+ // If the rate is a percent and is not as high as the Cust. Discount or
+ // In-store Discount, check to see if they would like to reset the discount to the higher rate.
+
+ // The three variable initialization functions that are called from this function
+ // (calcIsPercent, calcTransactionDiscountRate and calcCustomerDiscountRate) are defined at the end of this script file.
+
+ if (name == 'discountrate')
+ {
+  // intialize variables
+  // Customers that purchase in the store, as opposed to from a Web site, automatically receive a 5% in-store transaction discount.
+  var instore_discount = -15;
+
+  // Start by assuming the customer discount is better than the in-store discount.
+  var useCustomerDiscount = true;
+
+  // Is the transaction discount field a percent?
+  var isPercent = calcIsPercent();
+
+  // If a transaction discount is present, set tran_discount_rate, otherwise initialize to zero.
+  var tran_discount_rate = calcTransactionDiscountRate();
+
+  // If a customer discount is present, set cust_discount, otherwise initialize to zero.
+  var cust_discount = calcCustomerDiscountRate();
+  
+  // If the In-store discount is higher than the customer discount, use it instead.
+  if ( instore_discount <= cust_discount )
+   useCustomerDiscount = false;
+  
+  if (isPercent)
+  {
+   if ( parseFloat(nlapiGetFieldValue('discountrate')) < -30 )
+   {
+    // If so, prompt...
+    if (!confirm("Please confirm that you have a manager's approval for a " + nlapiGetFieldText('discountitem') + ".\n\n(OK = Yes, Cancel = No)"))
+    {
+     // Reset to the higher of In-store discount or Cust. Discount.
+     if( useCustomerDiscount )
+     {
+      alert("Discount level not approved, resetting to Customer Discount.");
+      nlapiSetFieldText('discountitem',nlapiGetFieldText('custbody_cust_discount'));
+     }
+     else
+     {
+      alert("Discount level not approved, resetting to In-store Discount.");
+      nlapiSetFieldText('discountitem', "15% Discount");
+     }
+    }
+   }
+  
+   // If the Transaction Discount Rate is a percent and is lower than Cust. Discount or In-Store Discount, then
+   // prompt to reset Transaction Discount to the higher of the two.
+   if (tran_discount_rate > cust_discount || tran_discount_rate > instore_discount)
+   {
+    if ( confirm("The Transaction Discount Rate is not as good as the Cust. Discount or the In-store Discount.\n\nReset Transaction Discount to the better of the two?\n\n(OK = Yes, Cancel = No)") )
+    {
+     // Use the higher of the In-store or Cust. Discount rate.
+     if( useCustomerDiscount )
+     {
+      // alert("custbody_cust_discount: '" + nlapiGetFieldText('custbody_cust_discount') + "'");
+      nlapiSetFieldText('discountitem',nlapiGetFieldText('custbody_cust_discount'));
+     }
+     else
+     {
+      nlapiSetFieldText('discountitem', "15% Discount");
+     }
+    }
+   }
+  }
+ }
+
+
+ // If any single line-item quantity exceeds 20, ask if this is correct.
+ if ( (type == 'item') && (name == 'quantity') )
+ {
+  var count = parseFloat(nlapiGetCurrentLineItemValue('item', 'quantity'));
+  if(count > 20)
+  {
+   return confirm("Do you really want to add " + count + " of this item?\n\n(OK = Yes, Cancel = No)");
+  }
+ }
+
+ // Always return true at this level to validate all the fields that you are not specifically validating...
+ return true;
+}
+
+// The following scripts are the three variable init functions called from the sampleValidateField function.
+//
+function calcIsPercent()
+{
+ // If you cannot find a percent sign in the discount field, set isPercent to false.
+ if( nlapiGetFieldValue('discountrate').indexOf('%') == -1 )
+  return false;
+ else
+  return true;
+}
+
+function calcTransactionDiscountRate()
+{
+ // If a transaction discount is present, set tran_discount_rate, otherwise initialize to zero.
+ if( !isNaN(parseFloat(nlapiGetFieldValue('discountrate'))) )
+  return parseFloat(nlapiGetFieldValue('discountrate'));
+ else
+  return 0;
+}
+
+function calcCustomerDiscountRate()
+{
+ if( !isNaN(parseFloat(nlapiGetFieldText('custbody_cust_discount'))) )
+  // Multiply the rate by -1 because all discounts must be negative or they add to order total.
+  return ((parseFloat(nlapiGetFieldText('custbody_cust_discount'))) * -1);
+ else
+  return 0;
+}
