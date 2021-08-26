@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div>
+    <#assign aDateTime = .now>
+    <p>${aDateTime?string("MMMM dd, yyyy")}</p>
+    <br/>
+
+    <#if contact??>
+        Dear ${contact.salutation} <b>${contact.firstname} ${contact.middlename} ${contact.lastname}</b>,<br/>
+    <#else>
+        <#if customer.isperson>
+            Dear ${customer.salutation} <b>${customer.firstname} ${customer.middlename} ${customer.lastname}</b>,<br/>
+        <#else>
+            Dear <b>${customer.companyname}</b>,<br/>
+        </#if>
+    </#if>
+
+    <p>This is just a friendly reminder that your account with us appears as past due. Our records indicate that you have a total outstanding balance of ${customer.overduebalance} with the following invoices overdue: </p>
+
+    <#if invoicelist?has_content>
+        <table border="1" style="font-family: sans-serif; font-size: 12px">
+            <thead>
+                <tr>
+                    <td>Invoice #</td>
+                    <td>Description</td>
+                    <td>Invoice Date</td>
+                    <td>Due Date</td>
+                    <td>Invoice Currency</td>
+                    <td>Amount (Invoice Currency)</td>
+                </tr>
+            </thead>
+            <tbody>
+                <#list invoicelist as invoice>
+                    <tr>
+                        <td>${invoice.tranid}<#if invoice.custbody_3805_dunning_procedure != "">*</#if></td>
+                        <td>${invoice.memo}</td>
+                        <td>${invoice.trandate}</td>
+                        <td>${invoice.duedate}</td>
+                        <td>${invoice.currency}</td>
+                        <td>${invoice.fxamountremaining?string.number}</td>
+                    </tr>
+                </#list>
+            </tbody>
+        </table>
+        <span style="font-style: italic;">*A separate dunning letter may be sent for each marked invoice.</span>
+    <#elseif invoice??> <!-- for invoice dunning -->
+        <table border="1" style="font-family: sans-serif; font-size: 12px">
+            <thead>
+                <tr>
+                    <td>Invoice #</td>
+                    <td>Description</td>
+                    <td>Invoice Date</td>
+                    <td>Due Date</td>
+                    <td>Currency</td>
+                    <td>Amount</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>${invoice.tranid}</td>
+                    <td>${invoice.memo}</td>
+                    <td>${invoice.trandate}</td>
+                    <td>${invoice.duedate}</td>
+                    <td>${invoice.currency}</td>
+                    <td>${invoice.amountremaining}</td>
+                </tr>
+            </tbody>
+        </table>
+    </#if>
+
+    <p>We would much appreciate if you could let us know the status of this payment. Please do not hesitate to call us if you have any questions about the balance due on your account. If you have already sent us your payment, please disregard this reminder.</p>
+    <p>To access your NetSuite Customer Center account, please visit <a href="https://system.netsuite.com/pages/customerlogin.jsp">https://system.netsuite.com/pages/customerlogin.jsp</a></p>
+    <p>Thank you very much for your attention to this matter and your continued business.</p>
+    <p>
+        Sincerely,<br/><br/>
+        ${employee.salutation} ${employee.firstname} ${employee.middlename} ${employee.lastname}<br/>
+        <#if companyInformation.legalname != "">
+            ${companyInformation.legalname}<br/>
+        <#else>
+            ${companyInformation.companyname}<br/>
+        </#if>
+        ${companyInformation.phone}<br/>
+        ${companyInformation.email}<br/>
+        ${companyInformation.fax}<br/>
+    </p>
+</div>

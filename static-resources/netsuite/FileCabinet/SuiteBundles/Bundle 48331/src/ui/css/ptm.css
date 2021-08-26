@@ -1,0 +1,1568 @@
+/**
+ * © 2015 NetSuite Inc.  User may not copy, modify, distribute, or re-bundle or otherwise make available this code.
+ */
+ 
+/**
+ * PTM CSS File
+ * 
+ */
+
+body {
+    overflow: hidden;
+}
+
+#psa-menu *, #advFilterMain *,  #psa-ptm-app * , #ra-allocation-hover *, .ra-form-window * {
+    font-family: Serif;
+    font-size: 14px;
+}
+
+p {
+    margin-bottom:15px;
+}
+
+h1 {
+    margin-bottom:20px;
+}
+
+h2 {
+    color:#333;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+pre.code {
+    background: #F8F8F8;
+    border: 1px solid #e8e8e8;
+    padding:10px;
+    margin:10px;
+    margin-left:0px;
+    border-left:5px solid #e8e8e8;
+    line-height:14px !important;
+}
+
+.psa-ptm-app *{
+    color: #333333;
+}
+
+.pt_body {
+    height: 28px;
+}
+
+/* prevent quicktips from using miscalculated dimensions */
+#ext-quicktips-tip, #ext-quicktips-tip-body {
+    width: auto !important;
+    height: auto !important;
+    max-width: 250px;
+}
+
+/* prevent quicktips from spanning the whole page */
+#ext-quicktips-tip-outerCt, #ext-quicktips-tip-innerCt {
+    display: inline-block !important;
+}
+
+.ptm-largedata-icon {
+    background: url(../css/images/ptm/more.png) no-repeat center center !important;
+}
+
+.ptm-largedata-btn {
+    border: none;
+    background: transparent;
+}
+
+/*
+=================================================
+    Toolbar Classes
+=================================================
+*/
+
+.toolbar-gray{
+    background: transparent;
+}
+
+.icon-info {
+    background: url(images/ptm/icon_info2.png) no-repeat center center !important;
+}
+
+/* for content viewport (everything below NS main and sub menus) */
+.x4-border-layout-ct {
+    background-color: transparent;
+}
+
+/* for panel containing Save, Cancel, Reset buttons */
+.x4-panel-body {
+    background-color: transparent;
+}
+
+/* for div containing the Hide/Show Filters link/button: set minus icon */
+.ra-filter-div {
+    background: url(images/ptm/default/tree/elbow-minus-nl.gif) no-repeat -2px 1px;
+    padding: 4px 4px 4px 17px; /* adjust padding to center image */
+    cursor: pointer;
+}
+
+/* for div containing the Hide/Show Filters link/button: set plus icon */
+.ra-filter-div-plus {
+    background: url(images/ptm/default/tree/elbow-plus-nl.gif) no-repeat -2px 1px;
+    padding: 4px 4px 4px 17px; /* adjust padding to center image */
+    cursor: pointer;
+}
+
+/* for toggle links */
+#psa-ra-app a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #1d86f9 !important;
+}
+
+/* standardized button class, override from NS CSS */
+.pgBntG .bntBgT, .pgBntY .bntBgT{
+    height: 20px;           /* standard button height */
+    padding: 1px 6px 3px;   /* adjust padding to make sure text is centered in the buttons */
+}
+
+/* for selected toggle links */
+.x4-btn-pressed a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #051526 !important;
+}
+
+.icon-prev {
+    background: url(images/ptm/da-prevwhite.png) no-repeat center center !important;
+    height: 17px !important;
+}
+
+.icon-next {
+    background: url(images/ptm/da-nextwhite.png) no-repeat center center !important;
+    height: 17px !important;
+}
+
+.icon-new {
+    background: url(images/ptm/icon_add.png) no-repeat center center !important;
+}
+
+.icon-options {
+    background: url(images/ptm/icon_cog.png) no-repeat center center !important;
+}
+
+.x4-tree-arrows .x4-tree-expander {
+    background: url(images/ptm/da-expand.png) no-repeat 0 0;
+    margin: 0px 0px 7px 15px !important;
+}
+
+.x4-tree-arrows .x4-grid-tree-node-expanded .x4-tree-expander {
+    background: url(images/ptm/da-collapse.png) no-repeat 0 0;
+    margin: 0px 0px 7px 15px;
+}
+
+.x4-tree-arrows .x4-tree-expander-over .x4-tree-expander {
+    background: url(images/ptm/da-expand.png) no-repeat 0 0;
+    margin: 0px 0px 7px 15px;
+}
+
+.x4-tree-arrows .x4-grid-tree-node-expanded .x4-tree-expander-over .x4-tree-expander {
+    background: url(images/ptm/da-collapse.png) no-repeat 0 0;
+    margin: 0px 0px 7px 15px;
+}
+
+.icon-expand {
+    background: url(images/ptm/icon_expand.png) no-repeat center center !important;
+    margin-top: -3px;
+    margin-left: 3px;
+}
+
+.icon-collapse {
+    background: url(images/ptm/icon_collapse.png) no-repeat center center !important;
+    margin-top: -3px;
+    margin-left: 3px;
+}
+
+#ra-page-toolbar {
+    border: none !important;
+    background-color: #FFF !important;
+    background-image: none !important;
+}
+
+.ptm-toolbar-main {
+    background-image: none !important;
+    background-color: #E0E6EF !important;
+    /*border: 1px solid #ccc !important;*/
+    border-color: #CCCCCC;
+}
+
+.x4-toolbar-separator {
+    border-left: none !important;
+    border-right: none !important;
+    background-color: #666666;
+    width: 1px !important;
+}
+
+#rangefield {
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    font-size: 12px;
+    /*width: 225px;*/
+}
+
+.toggle-link-a {
+    text-decoration: none;
+}
+
+.toggle-link {
+    color: #255599 !important;
+    font-size: 12px !important;
+}
+
+/* ignore pressed state for styling of expand/collapse links */
+#ptm-chartExpandBtn-linkInnerEl, #ptm-chartCollapseBtn-linkInnerEl {
+    font-size: 11px;
+    color: #255599 !important;
+}
+
+.toggle-link-pressed a span.toggle-link {
+    color: #333333 !important;
+    /*font-weight: bold;*/
+}
+
+.ra-round-btn {
+    height: 26px;
+    border-color: #cccccc;
+    background-color: #e0e0e0;
+    background-image: -webkit-linear-gradient(top, #ffffff, #e0e0e0) !important; /* For Chrome and Safari */
+    background-image: -moz-linear-gradient(top, #ffffff, #e0e0e0) !important; /* For old Fx (3.6 to 15) */
+    background-image: -ms-linear-gradient(top, #ffffff, #e0e0e0) !important; /* For pre-releases of IE 10*/
+    background-image: -o-linear-gradient(top, #ffffff, #e0e0e0) !important; /* For old Opera (11.1 to 12.0) */
+    background-image: linear-gradient(to bottom, #ffffff, #e0e0e0) !important; /* Standard syntax; must be last */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    
+    /* unselectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ra-round-btn-icon .x4-btn-wrap {
+    margin-top: -3px;
+    margin-left: -3px;
+
+}
+
+.ra-round-btn-icon .x4-btn-inner {
+    text-align: left;
+}
+
+
+.ra-round-btn-start {
+    -webkit-border-radius: 15px 0px 0px 15px;
+    -moz-border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.ra-round-btn-end {
+    height: 26px;
+    -webkit-border-radius: 0px 15px 15px 0px;
+    -moz-border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.ra-icon-btn, .ra-export-btn {
+    border-color: transparent;
+    background-image: none;
+    background-color: transparent;
+}
+
+.ra-icon-btn .x4-btn-inner, .ra-icon-btn .x4-btn-icon-el {
+    width: 20px;
+}
+
+.ra-export-btn .x4-btn-inner, .ra-export-btn .x4-btn-icon-el {
+    width: 16px;
+}
+
+.x4-btn-default-toolbar-medium {
+    border: none;
+    padding: 0;
+}
+
+.ptm-rect-btn {
+    height: 28px;
+    background-image: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0px 12px 0px 12px;
+}
+
+.ptm-rect-btn * {
+    height: 100% !important;
+}
+
+.ptm-rect-btn .x4-btn-wrap {
+    margin-top: 0px;
+}
+
+.ptm-rect-btn .x4-btn-inner {
+    line-height: 25px;
+    font-size: 14px !important;
+    padding: 0px;
+}
+
+.ptm-rect-btn-gray {
+    border-color: #b2b2b2;
+    background-color: #e5e5e5;
+    background-image: -webkit-linear-gradient(top, #fafafa, #e5e5e5) !important; /* For Chrome and Safari */
+    background-image: -moz-linear-gradient(top, #fafafa, #e5e5e5) !important; /* For old Fx (3.6 to 15) */
+    background-image: -ms-linear-gradient(top, #fafafa, #e5e5e5) !important; /* For pre-releases of IE 10*/
+    background-image: -o-linear-gradient(top, #fafafa, #e5e5e5) !important; /* For old Opera (11.1 to 12.0) */
+    background-image: linear-gradient(to bottom, #fafafa, #e5e5e5) !important; /* Standard syntax; must be last */
+}
+
+.ptm-rect-btn-gray:focus {
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+    -ms-box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+    box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+}
+
+.ptm-rect-btn-gray:hover {
+    background-color: #e5e5e5;
+    background-image: none !important;
+}
+
+.ptm-rect-btn-gray:active {
+    background-color: #b2b2b2;
+    background-image: none !important;
+}
+
+.ptm-rect-btn-gray:disabled {
+    background-color: #e5e5e5;
+    background-image: none !important;
+    border: 1px solid #ccc;
+}
+
+.ptm-rect-btn-gray .x4-btn-inner {
+    color: #333333;
+    font-weight: 600;
+}
+
+.ptm-rect-btn-gray:disabled .x4-btn-inner {
+    color: #999999;
+}
+
+.ptm-rect-btn-blue {
+    border-color: #125ab2;
+    background-color: #187bf2;
+    background-image: -webkit-linear-gradient(top, #4c9dff, #187bf2) !important; /* For Chrome and Safari */
+    background-image: -moz-linear-gradient(top, #4c9dff, #187bf2) !important; /* For old Fx (3.6 to 15) */
+    background-image: -ms-linear-gradient(top, #4c9dff, #187bf2) !important; /* For pre-releases of IE 10*/
+    background-image: -o-linear-gradient(top, #4c9dff, #187bf2) !important; /* For old Opera (11.1 to 12.0) */
+    background-image: linear-gradient(to bottom, #4c9dff, #187bf2) !important; /* Standard syntax; must be last */
+}
+
+.ptm-rect-btn-blue:focus {
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+    -ms-box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+    box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+}
+
+.ptm-rect-btn-blue:hover {
+    background-color: #1467cc;
+    background-image: none !important;
+}
+
+.ptm-rect-btn-blue:active {
+    background-color: #004599;
+    background-image: none !important;
+}
+
+.ptm-rect-btn-blue:disabled {
+    background-color: #e5e5e5;
+    background-image: none !important;
+    border: 1px solid #ccc;
+}
+
+.ptm-rect-btn-blue .x4-btn-inner {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.ptm-rect-btn-blue:disabled .x4-btn-inner {
+    color: #999999;
+}
+
+.ptm-rect-btn-arrow  {
+    border:1px solid #CECECE;
+    background: #ffffff !important;
+    outline: none;
+    display: block;
+}
+
+.x4-btn {
+    /* unselectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ptm-rect-btn-arrow :hover {
+    /*border:2px solid #eaeaea;*/
+    /*background: #ffffff !important;*/
+    outline: none;
+    display: block;
+}
+
+/*#filterMain {
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin: 8px 0px 0px 0px;
+    padding: 8px 0px 8px 0px;
+    background: #f5f5f5;
+}*/
+
+#filterMain {
+    border: none;
+    background: transparent;
+    margin: 8px 0px 0px 0px;
+    padding: 8px 0px 8px 0px;
+}
+
+#advFilterMain {
+    border: none;
+    background: transparent;
+    margin: -10px 0px 10px 0px;
+}
+
+#savedFilters-labelEl {
+    font-size: 13px;
+}
+
+#advfilter-summary {
+    margin-top: 7px;
+}
+
+#psa-menu {
+    margin: 0px 1px 0px;
+}
+
+#filterBody{
+    margin-top: 5px;
+}
+
+#filterBody .x4-form-item {
+    float: left;
+    margin-left: 20px;
+    width: 150px;
+}
+
+#filterBody .x4-form-item-label {
+    font-weight: bold;
+}
+
+.ptm-menu-separator {
+    background-color: #b3b3b3;
+    width: 1px;
+    height: 28px;
+    margin: 0;
+}
+
+.ptm-menu-separator-small {
+    background-color: #b3b3b3;
+    width: 1px;
+    height: 15px;
+    margin: 3px 0px;
+}
+
+.x4-form-text {
+    background-image : none;
+}
+
+.ra-resource-search .x4-form-text {
+    margin: 0px;
+}
+
+.ra-search-resource-trigger {
+    background:url(images/ptm/icon_quicksearch2.png) no-repeat 0px 2px transparent;
+    border-top: 1px solid #B5B8C8;
+    border-right: 1px solid #B5B8C8;
+}
+
+.icon-pdf {
+    background: url(images/ptm/li-pdf.png) no-repeat center center !important;
+}
+
+.icon-csv {
+    background: url(images/ptm/li-csv.png) no-repeat 0px 3px !important;
+}
+
+.icon-excel {
+    background: url(images/ptm/li-excel.png) no-repeat center center !important;
+    margin-top: 1px;
+}
+
+.icon-print {
+    background: url(images/ptm/li-print.png) no-repeat center center !important;
+}
+
+/* all panels (w/buttons) should be defined here */
+
+#advFilterMain, #advFilterMain-body, #advFilterMain-outerCt, #advFilterMain-innerCt, #ra-page-toolbar, #ra-page-toolbar-innerCt {
+    overflow: visible;
+}
+
+/* all forms should be defined here */
+#ra-viewWindow-body div, #ra-form-taskAssignment-body div, #ptm-settingsWindow-body div {
+    overflow: visible;
+}
+
+/*
+=================================================
+    Text Metrics
+=================================================
+*/
+#ptm-bind-14px {
+    font-size: 14px;
+}
+
+#ptm-bind-13px {
+    font-size: 13px;
+}
+
+#ptm-bind-12px {
+    font-size: 12px;
+}
+
+/*
+=================================================
+    Grid Classes
+=================================================
+*/
+#psa-ptm-app {
+    margin: 0px 1px;
+}
+
+.sch-schedulerpanel {
+    background-color: #ffffff;
+}
+
+.x4-grid3-body {
+    height: 100% !important;
+}
+
+.icon-edit {
+    width: 20px;
+    height: 20px;
+    background:url(images/ptm/20.png) no-repeat -293px -360px transparent;
+    cursor: pointer;
+}
+
+.sch-event {
+    text-align: left;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-color: #b2b2b2;
+    cursor: move;
+    z-index: 5;
+    margin-top: 3px;
+    background: none;
+}
+
+.sch-event-inner {
+    /*margin-top: 11px;
+    padding-left: 8px;*/
+    color: #262626 !important;
+    margin: 0 0;
+}
+
+.ptm-event-label {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.ra-resource-row .sch-event-inner {
+    font-weight: bold;
+}
+
+.ptm-vertical-drag-only {
+    cursor: default;
+}
+
+.ptm-vertical-drag-only .sch-event-inner {
+    cursor: ns-resize;
+}
+
+/*
+=================================================
+    Density 1 (Dense)
+=================================================
+*/
+
+.ra-density-1 .sch-event { /* RA height */
+    height: 21px !important;
+}
+
+.ra-density-1-resource .sch-event { /* roll-up height */
+    height: 17px !important;
+    margin-top: 4px;
+}
+
+.ra-density-1 .sch-event-inner { /* vertical align of text in RA's */
+    /*margin-top: 3px;*/
+}
+
+.ra-density-1-resource .sch-event-inner { /* vertical align of text in roll-ups */
+    /*margin-top: 1px;*/
+}
+
+.ra-density-1 .x4-grid-cell-resourceColumn .x4-grid-cell-inner, .ra-density-1-resource .x4-grid-cell-resourceColumn .x4-grid-cell-inner { /* vertical align of text in resource column */
+    padding-top: 6px;
+}
+
+/*
+=================================================
+    Density 2 (Standard)
+=================================================
+*/
+
+.ra-density-2 .sch-event {
+    height: 27px !important;
+}
+
+.ra-density-2-resource .sch-event {
+    height: 21px !important;
+    margin-top: 5px;
+}
+
+.ra-density-2 .sch-event-inner {
+    /*margin-top: 6px;*/
+}
+
+.ra-density-2-resource .sch-event-inner {
+    /*margin-top: 3px;*/
+}
+
+.ra-density-2 .x4-grid-cell-resourceColumn .x4-grid-cell-inner, .ra-density-2-resource .x4-grid-cell-resourceColumn .x4-grid-cell-inner {
+    padding-top: 10px;
+}
+
+/*
+=================================================
+    Density 3 (Relaxed)
+=================================================
+*/
+
+.ra-density-3 .sch-event {
+    height: 33px !important;
+}
+
+.ra-density-3-resource .sch-event {
+    height: 25px !important;
+    margin-top: 6px;
+}
+
+.ra-density-3 .sch-event-inner {
+    /*margin-top: 9px;*/
+}
+
+.ra-density-3-resource .sch-event-inner {
+    /*margin-top: 5px;*/
+}
+
+.ra-density-3 .x4-grid-cell-resourceColumn .x4-grid-cell-inner, .ra-density-3-resource .x4-grid-cell-resourceColumn .x4-grid-cell-inner {
+    padding-top: 11px;
+}
+
+/*
+=================================================
+    END Density Styles
+=================================================
+*/
+
+div.sch-event-hover, div.sch-event-selected, div.sch-event-hover.sch-event-selected {
+    border-color: #b2b2b2;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.Hard {
+    background: #e6e6e6;
+    color:black;
+}
+
+.Soft {
+    background:#ffffff url(images/ptm/pattern_soft_alloc.png) repeat left top;
+    color:black;
+}
+
+.ra-rejected,.ra-rejected div.sch-event-hover,.ra-rejected div.sch-event-selected {
+    /*background: #2b2b2b url(images/ptm/pattern_rejected_alloc.png) repeat left top;*/
+    /*border-color: #ff1919 !important;*/
+}
+
+.ra-rejected * {
+    color: #ff1919 !important;
+    text-decoration: line-through;
+}
+
+.ra-pending-approval {
+    border-style: dashed;
+}
+
+.ra-pending-approval * {
+    color: #808080 !important;
+}
+
+.Exception {
+    background:url(images/ptm/event-big.png) repeat-x left top;
+}
+
+/* for Resource rows (rows with expand/collapse button and rollup) */
+.x4-grid-group-hd div.x4-grid-group-title {
+    background-position: 11px 6px;  /* put expand/collapse icon to center */
+    padding: 4px 4px 4px 30px;      /* match text positioning with filter toolbar 'Hide Filters' link */
+    background-color: #e1e5f3;
+    opacity:.6;
+    filter:alpha(opacity=60);
+    font-weight: normal !important;
+    color: #051526 !important;
+}
+
+.x4-grid-group .x4-grid-group-collapsed {
+    height: 27px !important;
+}
+
+/* for Resource:Project cells (under Resource Allocation column) */
+.x4-grid3-col-name-project {
+    padding-left: 45px !important;  /* insert "tab" before each entry */
+    height: 100%;
+    cursor: pointer;
+}
+
+.x4-grid3-col-name-project div {
+    text-decoration: none;
+    font-weight: bold !important;
+    color: #1d86f9 !important;
+    border-bottom: 1px dashed #000;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.x4-grid3-cell-inner, .x4-grid3-hd-inner {
+    padding: none;
+}
+
+.x4-grid3-header-inner {
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.sch-simple-timeaxis .sch-simple-timeheader {
+    display : block; 
+    overflow : hidden; 
+    text-overflow : ellipsis;
+    font-size: 11px !important;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+.x4-grid3-header-offset {
+    height: 100%;
+}
+
+.sch-event-endsoutside {
+    -moz-border-radius-topright:0 !important;
+    -moz-border-radius-bottomright:0 !important;
+    -webkit-border-radius-top-right:0 !important;
+    -webkit-border-radius-bottom-right:0 !important;
+}
+
+.sch-event-startsoutside {
+    -moz-border-radius-topleft:0 !important;
+    -moz-border-radius-bottomleft:0 !important;
+    -webkit-border-radius-top-left:0 !important;
+    -webkit-border-radius-bottom-left:0 !important;
+}
+
+/*.sch-event {
+    -webkit-box-shadow: 1px 1px 1px rgba(150, 150, 150, 0.3);
+    -moz-box-shadow: 1px 1px 1px rgba(150, 150, 150, 0.3);
+    -ms-box-shadow: 1px 1px 1px rgba(150, 150, 150, 0.3);
+    box-shadow: 1px 1px 1px rgba(150, 150, 150, 0.3);
+}*/
+
+.x4-grid-group-collapsed {
+    padding-bottom: 2px !important;
+    margin-bottom: 2px;
+    height: 27px !important;
+    /*border-bottom: 2px solid #ffffff !important;*/
+}
+
+.x4-grid-group-hd {
+    width: 100% !important;
+    border-right: none !important;/*1px #cccccc !important;*/
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.x4-grid3-row {
+    border: none !important;
+}
+
+.sch-header-row-middle {
+    background: #ffffff;
+    height: 100%;
+}
+
+.sch-timeheader {
+    border-left-color: #ffffff !important;
+    border-right-color: #cccccc;
+}
+
+
+.x4-grid3-header {
+    padding-top: 0px;
+    border-bottom: 1px solid #cccccc;
+    /*height: 35px;*/
+}
+
+.x4-grid3-body {
+    border-right: none !important;/*1px solid #cccccc;*/
+}
+
+.x4-grid-with-col-lines .x4-grid3-row td.x4-grid3-cell {
+    border-right-color: transparent;
+}
+
+.x4-grid3-cell-last {
+    border-right-color: transparent;
+}
+
+.x4-grid3-cell-last .sch-timeheader{
+    border-right-color: #cccccc !important;
+}
+
+.x4-grid3-td-name-project {
+    border-left: none !important;
+}
+
+.ra-resource-row .x4-grid-cell-inner {
+    border-top: 1px solid #cccccc !important;
+    margin-bottom: 0px !important;
+    cursor: default !important;
+}
+
+.x4-grid-row .x4-grid-cell {
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+}
+
+.sch-horizontal .sch-resizable-handle {
+    background: transparent url(images/ptm/drag_handle.png) no-repeat center center !important;
+    z-index: 20;
+}
+
+.sch-resizable-handle-start {
+    padding-right: 10px;
+    cursor: w-resize;
+}
+
+.sch-resizable-handle-end {
+    padding-left: 10px;
+    cursor: e-resize;
+}
+
+.x4-column-header, .x4-column-header-over, .sch-column-header, .x4-grid-header-ct {
+    background-image: none !important;
+    background-color: transparent;
+    /*height: 35px;*/
+    text-align: center;
+}
+
+.sch-column-header {
+    border-right-color: #eee;
+}
+
+#psa-ptm-app .x4-column-header, #psa-ptm-app .x4-column-header-over, #psa-ptm-app .sch-column-header, #psa-ptm-app .x4-grid-header-ct {
+    height: 35px;
+}
+
+#psa-ptm-app-body {
+    top: 38px !important;
+    border-top: 1px solid #ccc !important;
+}
+
+#psa-ptm-app .x4-grid-body {
+    border-top: none;
+    border-bottom: none;
+    border-color: #ccc;
+}
+
+#psa-ptm-app-locked-east-handle {
+    width: 6px;
+    border-left: 1px solid #ccc !important;
+    border-right: 1px solid #ccc !important;
+}
+
+#psa-ptm-app-locked .x4-box-inner, .sch-column-header {
+    border-bottom: 1px solid #ccc;
+    height: 35px !important;
+    width: 500px;
+}
+
+#psa-ptm-app-locked-body, #psa-ptm-app-normal-body {
+    top: 34px !important;
+}
+
+#resourceColumn-titleEl { /* resource column: header cell */
+    text-align: left;
+    padding: 6px 6px 5px 27px !important;
+}
+
+#resourceColumn-textEl { /* resource column: header text */
+    font-size: 13px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.x4-tree-elbow, .x4-tree-elbow-end, .x4-tree-arrows .x4-tree-expander { /* resource column: expand/collapse icons */
+    margin-left: 5px;
+}
+
+.x4-tree-icon-parent { /* resource column: folder icons */
+    visibility: hidden !important;
+}
+
+/* locked columns: add ellipses to text that are too long */
+.x4-grid-cell-treecolumn .x4-grid-cell-inner {
+    display : block; 
+    overflow : hidden; 
+    text-overflow : ellipsis;
+}
+
+.x4-grid-cell-inner .x4-grid-cell-inner-treecolumn  {
+}
+
+.x4-tree-node-text {
+    font-size: 12px !important;
+}
+
+.x4-grid-row .x4-tree-node-text { /* resource column: project name */
+    margin-left: -8px;
+    color: #000 !important;
+    /*border-bottom: 1px dashed #000;*/
+}
+
+.ra-resource-row .x4-tree-node-text { /* resource column: resource name */
+    margin-left: -13px !important;
+    color: #333333 !important;
+    font-weight: bold;
+    cursor: default !important;
+    border-bottom: none;
+}
+
+.x4-grid-row-selected .x4-grid-td, .x4-grid-row-focused .x4-grid-td { /* resource column: selected nodes */
+    background-color: #ffffff !important;
+}
+
+.sch-column-line, .sch-timeline, div.sch-timeline:hover {
+    cursor: default;
+    border-style: solid;
+    border-color: #ccc;
+    border-right: 0px;
+    z-index: 1;
+}
+
+/*.sch-column-line {
+    border-color: #ededed;
+}*/
+
+/*
+.sch-column-line {
+    border-color: #AAA;
+}
+
+.sch-secondary-canvas, .sch-horizontal .sch-resourcezone {
+    z-index: 10;
+    opacity: 0.5;
+}
+*/
+.sch-horizontal .sch-resourcezone {
+    /*background: transparent url(images/ptm/pattern_non_working.png);*/
+    z-index: 0;
+}
+
+#ra-sublist {
+    margin-top: -15px;
+}
+
+#ra-sublist .x4-grid-header-ct, #ra-sublist .x4-grid-body {
+    border-color: #ccc !important;
+}
+
+#ra-sublist .x4-column-header-inner, #ra-sublist .x4-column-header-over {
+    height: 20px;
+    background-color: #fafafa !important;
+    background-image: linear-gradient(bottom, #fafafa 100%, #d4d4d4 0%) !important;
+    background-image: -o-linear-gradient(bottom, #fafafa 100%, #d4d4d4 0%) !important;
+    background-image: -moz-linear-gradient(bottom, #fafafa 100%, #d4d4d4 0%) !important;
+    background-image: -webkit-linear-gradient(bottom, #fafafa 100%, #d4d4d4 0%) !important;
+    background-image: -ms-linear-gradient(bottom, #fafafa 100%, #d4d4d4 0%) !important;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1, #fafafa), color-stop(0, #d4d4d4)) !important;
+}
+
+#ra-sublist .x4-grid-cell-inner {
+    text-align: center !important;
+}
+
+#ra-sublist .x4-grid-table {
+    border-bottom: none !important;
+}
+
+.x4-grid-table {
+    border-bottom: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.x4-panel-default {
+    border-color: #ccc;
+}
+
+#ra-allocation-hover { /* #ra-allocation-hover-body */
+    padding: 15px;
+}
+
+div.sch-event-selected {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+}
+
+/*
+=================================================
+    Forms (Pop-Up) Classes
+=================================================
+*/
+
+.icon-search {
+    background:url(images/ptm/20.png) no-repeat -266px -424px transparent !important;
+}
+
+.staticlist {
+    width: 460px;
+    height: 135px;
+    background: url(images/ptm/staticlist2.jpg) no-repeat;
+}
+
+.x4-window-plain .x4-window-body {
+    background-color: #FAFAFA !important;
+}
+
+.x4-window-body *{
+    color: #222222;
+}
+
+.x4-header-text {
+    padding-left: 3px;
+}
+
+.x4-window-header-text-container-default {
+    /*margin-left: 3px !important;*/
+    margin-top: 4px !important;
+}
+
+.ra-form-label {
+    padding: 5px;
+}
+
+.ra-color-picker .x4-panel-body {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.x4-fieldset-header-text {
+    font-weight: bold;
+}
+
+.x4-fieldset {
+    margin: 0;
+}
+
+#ptm-settingsWindow .x4-fieldset {
+    padding: 0;
+}
+
+fieldset .toggle-link {
+}
+
+.x4-menu-scroll-top, .x4-menu-scroll-bottom {
+    background-image: none;
+}
+
+.x4-form-item-label {
+    margin-bottom: 5px;
+}
+
+.ptm-required-field {
+    background: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #C77F02;
+    padding: 0 2px;
+}
+
+/*
+=================================================
+    Legend Classes (Bottom Toolbar)
+=================================================
+*/
+
+.legend-box { /* all legend boxes */
+    width: 22px;
+    height: 22px;
+    border: 1px solid #b2b2b2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 3px;
+    color: #262626;
+    font-weight: bold;
+}
+
+.legend-staffed {
+    background-color: #999999;
+}
+
+.legend-over {
+    background-color: #cf2b25;
+    /*color: #ffffff;*/
+}
+
+.legend-assigned, .sch-event {
+    background-color: #ff9500;
+}
+
+.legend-worked {
+    background-color: #2d7be0;
+    /*color: #ffffff;*/
+}
+
+.legend-non-working, .sch-horizontal .sch-resourcezone {
+    background-color: #ededed;
+    font-size: 10px !important;
+    padding-top: 3px !important;
+}
+
+.ptm-toolbar-legend {
+    background-image: none !important;
+    background-color: transparent !important;
+    border: none;
+    border-top: 1px solid #ccc !important;
+}
+
+.ptm-color-picker .x4-panel-body {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.x4-panel-body-default {
+    border-color: #ccc;
+}
+
+/*
+=================================================
+    RAToolTip Classes
+    -most values are copied from NS LAF
+=================================================
+*/
+
+.x4-tip-default {
+    width: auto !important;
+    padding: 5px;
+    background-color: #fff;
+    max-width: 500px;
+}
+
+.x4-tip-body-default {
+    width: auto !important;
+    padding: 0;
+}
+
+/* avoid minimum-width tooltips from spanning 500px */
+.x4-tip-body-default span {
+    display: inline-block !important;
+}
+
+/* always hide anchors (sch bug) */
+.x4-tip-anchor {
+    visibility: hidden !important;
+}
+
+.ra-tooltip-padding {
+    padding: 15px;
+}
+
+.ra-tooltip {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    /*word-wrap: normal;*/
+}
+
+.project-tooltip-data {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+    /*word-wrap: normal;*/
+}
+
+.project-tooltip-data tr td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.ra-tooltip, .ra-tooltip * {
+    font: inherit;
+}
+
+.ra-tooltip .header {
+    /*background-color: #DCE1E8;*/
+}
+
+.ra-tooltip .header div {
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 18px !important;
+    color: #666666;
+    background: transparent url(../css/images/ptm/recordTypeIcon-customer.png) no-repeat;
+    background-size: 25px 25px;
+    padding-left: 30px;
+}
+
+.ra-tooltip .label {
+    text-align: right;
+    vertical-align: top;
+    color: #666666;
+    font-size: 14px;
+}
+
+.ra-tooltip .value {
+    vertical-align: top;
+    padding-left: 5px;
+    color: #666666;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.x4-tip-tl, .x4-tip-tr, .x4-tip-tc {
+    background: transparent !important;
+}
+
+.x4-tip-tl {
+    float: right;
+    margin-top: 3px;
+}
+
+.x4-tip {
+    border: 1px solid #a6a6a6 !important;
+}
+
+.sch-tip-ok {
+  background: url(images/ptm/drop-yes.gif) no-repeat left top;
+}
+
+.sch-tip-notok {
+  background: url(images/ptm/drop-no.gif) no-repeat left top;
+}
+
+.ra-form-window .x4-window-header * {
+    overflow: visible;
+}
+
+/*
+================================
+Link Button
+================================
+*/
+.linkButton {
+    background-image: none;
+    background-color: transparent;
+    border-style: none;
+    text-decoration: none;
+    color: #1d86f9;
+}
+
+.linkButton.over {
+    background-color: white;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(48%, #f9f9f9), color-stop(52%, #e2e2e2), color-stop(100%, #e7e7e7));
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e7e7e7);
+    background-image: -moz-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e7e7e7);
+    background-image: -o-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e7e7e7);
+    background-image: -ms-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e7e7e7);
+    background-image: linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e7e7e7);
+    border-style: solid;
+    padding: 0px;
+}
+
+/*
+===============================
+Search Results Ext Grid
+===============================
+*/
+
+#ra-search-results-grid .x4-column-header-inner .x4-column-header-text {
+    white-space: normal;
+    font-weight: bold;
+}
+
+#ra-search-results-grid .x4-grid-cell-inner {
+    white-space: normal;
+}
+
+#ra-search-results-grid .x4-grid-header-ct, #ra-search-results-grid .x4-grid-body {
+    border-color: #ccc !important;
+}
+
+#ra-search-results-grid .x4-column-header-inner, #ra-search-results-grid .x4-column-header-over {
+    background-color: #fafafa !important;
+    background-image: linear-gradient(bottom, #fafafa 100%, #d4d4d4 0%) !important;
+    background-image: -o-linear-gradient(bottom, #fafafa 100%, #d4d4d4 0%) !important;
+    background-image: -moz-linear-gradient(bottom, #fafafa 100%, #d4d4d4 0%) !important;
+    background-image: -webkit-linear-gradient(bottom, #fafafa 100%, #d4d4d4 0%) !important;
+    background-image: -ms-linear-gradient(bottom, #fafafa 100%, #d4d4d4 0%) !important;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1, #fafafa), color-stop(0, #d4d4d4)) !important;
+}
+.ra-select-icon {
+    background: url(images/ptm/icon_select_arrow.png) no-repeat center center !important;
+}
+
+.ra-download-icon {
+    background: url(images/ptm/icon_download.png) no-repeat center center !important;
+}
+
+.ra-search-icon {
+    background: url(images/ptm/icon_quicksearch.png) no-repeat center center !important;
+}
+
+.ra-search-header {
+    background-color: transparent !important;
+}
+
+.ra-search-header-text {
+    color: #0000FF !important;
+}
+
+.ra-search-btn {
+    border: none;
+    background: transparent;
+    padding-top: 5px;
+}
+
+/*
+==============
+Item Selector
+==============
+*/
+
+#itemselector .x4-panel-header {
+    background-image: none;
+    background-color: #FFFFFF;
+}
+
+#itemselector .x4-panel-header, #itemselector .x4-panel-body {
+    border-color: #B5B8C8;
+}
+
+/*----------------------------*/
+
+#ra-page-combo-box * {
+    cursor: hand;
+}
+
+#ra-page-combo-box-inputEl {
+    font-size: 12px;
+    background: transparent;
+    border: none !important;
+    text-align: right;
+    padding: 0;
+    /* font-weight: bold; */
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+}
+
+#ra-page-combo-box-triggerWrap .x4-form-trigger {
+    background: transparent url(../css/images/ptm/dropdown.png) 0px 1px;
+    border-bottom: none;
+    width: 100%;
+}
+
+#ra-page-combo-box-triggerWrap .x4-trigger-cell {
+    background: transparent;
+    width: 20px !important;
+}
+
+#ra-page-combo-box-triggerWrap .x4-form-trigger-over {
+    border-bottom-color: transparent;
+    background-position: 0px 1px;
+}
+
+#ra-page-combo-box-triggerWrap .x4-form-trigger-wrap-focus .x4-form-trigger {
+    background-position: 0px 1px;
+}
+#ra-page-combo-box-triggerWrap .x4-form-trigger-wrap-focus .x4-form-trigger-over {
+    background-position: 0px 1px;
+}
+/*----------------------------*/
+
+#ra-paging-bound-list {
+    background: #F9F9F9;
+    border: 1px solid #ccc;
+}
+
+.ra-paging-bound-list-floating {
+    border-top-width: 1px;
+}
+
+.ra-paging-bound-list li.x4-boundlist-item { 
+    font-size: 12px;
+    border-style: none;
+    padding: 5px 20px 5px 10px;
+    text-align: right;
+    /* handle long text for page ranges */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+li.ra-paging-bound-list-selected {
+    background: transparent;
+    font-weight: bold;
+}
+
+li.ra-paging-bound-list-item-over {
+    border-color:#808080;
+    background: #999;
+    color: #FAFAFA;
+}
+
+#ptm-total-page-labelEl {
+    font-size: 13px;
+}
+
+#ra-bind-14px {
+    font-size: 14px;
+}
+
+#ra-bind-13px {
+    font-size: 13px;
+}
+
+#ra-bind-12px {
+    font-size: 12px;
+}
+
+/*
+==============
+Date Range Menu
+==============
+*/
+
+.ptm-datemenu-item-text {
+    background-color: #FFFFFF;
+}
+
+.ptm-required-icon {
+    display : inline;
+}
+
+/* Styles used by Ext.ux.form.ItemSelector */
+
+.x4-form-multiselect-body .x4-boundlist .x4-mask {
+    background: none;
+}
+
+.x4-form-itemselector-body .x4-form-item {
+    margin: 0;
+}
+
+.x4-form-itemselector-top {
+}
+.x4-form-itemselector-up {
+    background: url(images/ptm/shuttle_cntl_arrows.png) no-repeat top left;
+    background-position: 4px -45px;
+}
+.x4-form-itemselector-add {
+    background: url(images/ptm/shuttle_cntl_arrows.png) no-repeat top left;
+    background-position: 6px -29px;
+}
+.x4-form-itemselector-remove {
+    background: url(images/ptm/shuttle_cntl_arrows.png) no-repeat top left;
+    background-position: 5px -11px;
+}
+.x4-form-itemselector-down {
+    background: url(images/ptm/shuttle_cntl_arrows.png) no-repeat top left;
+    background-position: 4px 6px;
+}
+.x4-form-itemselector-bottom {
+}
+
+#ptm-largedata-itemselector #ptm-largedata-itemselector-targetEl table {top: -1px!important;}
+
+/*====================================================*/
+/* for printing                                       */
+/*====================================================*/
+
+#lockedRowsCt, #normalRowsCt {
+    overflow: visible !important;
+}
+
+.sch-print-body .sch-column-header {
+    border-bottom: 0px !important;
+}
+
+.sch-print-body #ra-chartResourceColumn-innerCt {
+    /* hide search resource box */
+    display: none;
+}
+
+.sch-print-body .sch-column-header {
+    background: #EAEAEA !important;
+}
+
+.sch-print-body #psa-ptm-app-timelineview-table, .sch-print-body .sch-print-normalheader {
+    border-left: 1px solid #ccc !important;
+}
+
+.sch-print-headerbg {
+    border-left: none;
+}
+
+@media print
+{
+    * {
+        page-break-inside: avoid !important;
+        -webkit-print-color-adjust: exact;
+    }
+}

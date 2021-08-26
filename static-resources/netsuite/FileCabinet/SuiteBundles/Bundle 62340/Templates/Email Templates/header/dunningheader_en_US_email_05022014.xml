@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div>
+
+<#if companyInformation.logoUrl != "">
+<img src="${companyInformation.logoUrl}"/><br/>
+</#if>
+
+<#if companyInformation.legalname != "">
+<p>${companyInformation.legalname}</p>
+<#else>
+<p>${companyInformation.companyname}</p>
+</#if>
+
+</div>
