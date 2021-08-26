@@ -1,0 +1,1381 @@
+<#--
+Copyright 2014 NetSuite Inc.  User may not copy, modify, distribute, or re-bundle or otherwise make available this code.
+-->
+
+<#--
+
+EP FREE MARKER LIBRARY
+
+- contains prepared data and functions that support EP template engine using FreeMarker
+- added to the template that is passed on to an nlobjTemplateRenderer object
+
+=================
+Revision History:
+=================
+ Date               Submitter           Issue Number            Summary of Change           
+ 04/30/2014         jseego              288775                  Initial commit              
+ 05/26/2014         jseego              291326                  Add getCurrencySymbol function
+ 05/27/2014         jseego              291467                  Add getCountryCode function
+ 
+ 06/02/2014         jsintos             291837                  Edited buildEntityName function
+ 05/30/2014         jseego              292176                  Add getAmount function
+                                                                Move computeTotalAmount function to data script due to dependency on getAmount function
+ 05/30/2014         mcadano             292330                  Add alignment parameter to setLength function
+ 06/05/2014         jsintos             292763                  Add encloseString function
+ 06/11/2014         jseego              293691                  Build transHash data for non-Positive Pay payment type only
+ 06/16/2014         jseego              293181                  Add getStateCode function
+ 06/16/2014         mcadano             293388                  Get rightmost sub-string when padSide is left 
+ 06/17/2014         jseego              294380                  Add type "currency" in formatAmount function
+ 07/03/2014         jseego              296608                  Unescape ampersand character for non-xml files
+ 07/03/2014         jseego              296439                  Remove commas in digits before setting length or padding
+ 07/03/2014         jseego              296447                  Remove extra space when building entity name without last name
+ 07/03/2014         jseego              296631                  Correct logic of getting sequence id
+ 07/24/2014         jseego              299510                  Use prefix "_2663_" to resolve namespace issue in variables of the Advanced Template library
+ 07/28/2014         jseego              287598                  Correct logic of prioritizing printoncheckas in buildEntityName function
+ 07/31/2014         jsintos             297624                  Added parameter on formatAmount to accept separator for number format
+ 08/15/2014         jsintos             300586                  Added parameter on formatAmount to accept separator for currency format 
+-->
+
+<#-- DATA -->
+
+<#-- 
+transHash
+- hash containing transaction search results (sequence) as values with payment internal id as keys
+
+Sample Usage:
+    1. Given a payment with ID = "123", with two transactions with tranid = "A" and tranid = "B", respectively
+        <#list transHash["123"] as transaction>
+            ${transaction.tranid}
+        </#list>
+    
+Sample Result:
+    1.  "A"
+        "B"
+-->
+<#assign transHash = {}>
+<#if pfa.custrecord_2663_payment_type != "Positive Pay">
+    <#list transactions as transaction>
+        <#assign _2663_paymentId = transaction.applyingtransaction.internalId>    
+        <#if _2663_paymentId?has_content>
+            <#assign _2663_subTransactions = [transaction]>
+            <#if transHash[_2663_paymentId]?has_content>
+                <#assign _2663_subTransactions = transHash[_2663_paymentId] + _2663_subTransactions>
+            </#if>        
+            <#assign transHash = transHash + {_2663_paymentId:_2663_subTransactions}>
+        </#if>
+    </#list>
+</#if>
+
+<#-- FUNCTIONS -->
+
+<#--
+setMaxLength
+- sets a maximum length for a string value
+
+Parameter: data         - string to be processed
+
+Parameter: maxLength    - maximum length to be set
+
+Return Value:
+    String with acceptable length
+    
+Sample Usage:
+    1. ${setMaxLength("abcde",3)}
+    2. ${setMaxLength("a",3)}
+    
+Sample Result:
+    1. "abc"
+    2. "a"
+-->
+<#function setMaxLength data maxLength>
+    <#assign _2663_value = data>
+    <#assign _2663_toUnescapeAmpersand = isUnescapeAmpersandNeeded()>
+    <#if _2663_toUnescapeAmpersand>
+        <#assign _2663_value = _2663_value?replace('&amp;','&')>
+        <#assign _2663_value = _2663_value?replace('&AMP;','&')>
+    </#if>
+    <#if _2663_value?is_number>
+        <#assign _2663_value = _2663_value?c>
+    </#if>
+    <#if (_2663_value?length > maxLength) >
+        <#return (_2663_value?substring(0,maxLength))>
+    <#else>
+        <#return (_2663_value)>
+    </#if>
+</#function>
+
+<#--
+setLength
+- sets the fixed length for a string value
+
+Parameter: data      - string to be processed
+
+Parameter: length    - length to be set
+                     - this is a fixed. Spaces will be added if data length less than set length
+
+Parameter: alignment - determines alignment of text
+                     - Defaul value is "left".
+
+Return Value:
+    String with fixed length
+    
+Sample Usage:
+    1. ${setLength("abcde",3)}
+    2. ${setLength("a",3)}
+    3. ${setLength("a",3,"right")}
+    
+Sample Result:
+    1. "abc"
+    2. "a  "
+    3. "  a"
+-->
+<#function setLength data length alignment="left">
+    <#assign _2663_value = data>
+    <#assign _2663_toUnescapeAmpersand = isUnescapeAmpersandNeeded()>
+    <#if _2663_toUnescapeAmpersand>
+        <#assign _2663_value = _2663_value?replace('&amp;','&')>
+        <#assign _2663_value = _2663_value?replace('&AMP;','&')>
+    </#if>
+    <#if _2663_value?is_number>
+        <#assign _2663_value = _2663_value?c>
+    </#if>
+    <#if (_2663_value?length >= length) >
+    	<#if alignment == "right">
+    		<#return (_2663_value?substring(_2663_value?length - length))>
+    	<#else>
+    		<#return (_2663_value?substring(0,length))>
+    	</#if>
+    <#else>
+        <#assign _2663_spaceLength = length - _2663_value?length>
+        <#assign _2663_output = _2663_value>
+		<#if alignment == "right">
+    		<#list 1.._2663_spaceLength as i>
+            	<#assign _2663_output = " " + _2663_output>
+        	</#list>
+    	<#else>
+    		<#list 1.._2663_spaceLength as i>
+            	<#assign _2663_output = _2663_output + " ">
+        	</#list>
+    	</#if>        
+        <#return _2663_output>
+    </#if>
+</#function>
+
+<#--
+setPadding
+- puts a padding to a string value
+
+Parameter: data         - string to be processed
+
+Parameter: padSide      - the side in which the padding is to be inserted
+                        - accepts values "left" or "right"
+   
+Parameter: padChar      - the character padding to be inserted                        
+   
+Parameter: length       - length to be set
+                        - if length is less than data, data will be truncated
+
+Return Value:
+    String with character padding
+    
+Sample Usage:
+    1. ${setPadding("abcde", "left", "0", 10)}
+    2. ${setPadding("abcde", "left", "0", 3)}
+    3. ${setPadding("abcde", "right", "0", 10)}
+    4. ${setPadding("abcde", "right", "0", 3)}
+    
+Sample Result:
+    1. "00000abcde"
+    2. "cde"
+    3. "abcde00000"
+    4. "abc"
+-->
+<#function setPadding data padSide padChar length>
+    <#assign _2663_value = data>
+    <#assign _2663_toUnescapeAmpersand = isUnescapeAmpersandNeeded()>
+    <#if _2663_toUnescapeAmpersand>
+        <#assign _2663_value = _2663_value?replace('&amp;','&')>
+        <#assign _2663_value = _2663_value?replace('&AMP;','&')>
+    </#if>
+    <#if _2663_value?is_number>
+        <#assign _2663_value = _2663_value?c>
+    </#if>
+    <#assign _2663_padLength = length - _2663_value?length>
+    <#if (_2663_padLength > 0) >        
+        <#if padSide == "left">
+            <#assign _2663_output = _2663_value?string?left_pad(length, padChar)>
+        <#elseif padSide == "right">
+            <#assign _2663_output = _2663_value?string?right_pad(length, padChar)>
+        </#if>        
+    <#else>
+    	<#if padSide == "left">
+            <#assign _2663_output = (_2663_value?substring(_2663_value?length - length))>
+        <#elseif padSide == "right">
+			<#assign _2663_output = (_2663_value?substring(0,length))>            
+        </#if>
+    </#if>
+    <#return _2663_output>
+</#function>
+
+<#--
+buildEntityName
+- builds the entity name
+
+Parameter: entity                   - search result object of the entity
+
+Parameter: isPrintOnCheckAs         - flag to prioritize printoncheckas entity field
+                                    - accepts boolean values true or false. defaults to true
+
+Return Value:
+    String containing the entity name
+    
+Sample Usage:
+    1. Given a vendor with printoncheckas of "Z"
+        ${buildEntityName(entity)}
+    2. Given an employee with firstname of "John" and lastname of "Doe"
+        ${buildEntityName(entity)}
+    3. Given a vendor (individual) with firstname of "John" and lastname of "Doe"
+        ${buildEntityName(entity)}
+    4. Given a customer (company) with companyname of "Software Company"
+        ${buildEntityName(entity)}
+    5. Given a vendor (company) with printoncheckas of "Z" and with companyname of "Software Company"
+        ${buildEntityName(entity,false)}
+    
+Sample Result:
+    1. "Z"
+    2. "John Doe"
+    3. "John Doe"
+    4. "Software Company"
+    5. "Software Company"
+-->
+<#function buildEntityName entity isPrintOnCheckAs=true>
+    <#assign _2663_value = "">
+    <#if isPrintOnCheckAs && entity.printoncheckas?has_content>
+        <#assign _2663_value =  entity.printoncheckas >
+    <#else>
+        <#if entity.isperson?has_content>
+            <#if entity.isperson>
+                <#assign _2663_value =  (entity.firstname + " " + entity.lastname)>
+            <#else>
+                <#assign _2663_value = entity.companyname>
+            </#if>
+        <#else>
+            <#assign _2663_value = (entity.firstname + " " + entity.lastname)>
+        </#if>
+    </#if>
+    <#return _2663_value?trim>
+    
+</#function>
+
+<#--
+formatAmount
+- formats a given amount
+
+Parameter: amount       - amount to be formatted
+                        - should be whole numbers or rational numbers with a maximum of two decimal places
+                        
+Parameter: format       - the format to be used
+                        - accepts values "dec", "noDec", "truncDec", 
+                        - default value is "noDec"
+                        - "dec" = absolute value then round to two decimal places
+                        - "noDec" = absolute value then remove decimal point
+                        - "truncDec" = absolute value then remove decimal portion                        
+                        - "currency" = absolute value, round to two decimal places, retain comma symbol
+                        
+Parameter: separator    - used to split the integer portion and the decimal portion
+                        - only available for “dec” format 
+                        - default value is "."
+                        
+Return Value:
+    String with formatted amount
+
+Sample Usage:
+    1. ${formatAmount(-100.50,"dec")}
+    2. ${formatAmount(100.50,"noDec")}    
+    3. ${formatAmount(100.50)}    
+    4. ${formatAmount(-100.50,"truncDec")}
+    5. ${formatAmount(-1234.50,"currency")}
+    6. ${formatAmount(100.50,"dec",",")}
+    7. ${formatAmount(1234.50,"currency",".")}
+    8. ${formatAmount(.50,"decLessThan1")}
+    
+Sample Result:
+    1. "100.50"
+    2. "10050"    
+    3. "10050"    
+    4. "100"
+    5. "1,234.50"
+    6. "100,50"
+    7. "1,234.50"
+    8. "0.50"
+-->
+<#function formatAmount amount format="noDec" separator=".">
+    <#assign _2663_value = "" >
+    
+    <#if (amount >= 0) >
+        <#assign _2663_value = amount >
+    <#else>
+        <#assign _2663_value = amount * -1 >
+    </#if>    
+    
+    <#if (format == "dec" || format == "decLessThan1") >
+        <#if _2663_value?has_content && _2663_value != 0>
+            <#assign _2663_value = _2663_value * 100 >
+            <#assign _2663_value = _2663_value?round?c >
+            <#assign _2663_valIndex = _2663_value?length?number - 2 >
+            <#if (_2663_valIndex > 0) >
+                <#assign _2663_value = _2663_value?substring(0,_2663_valIndex) + separator + _2663_value?substring(_2663_valIndex) >
+            <#else>
+                <#if (format == "dec") >
+                    <#assign _2663_value = separator + setPadding(_2663_value, "left", "0", 2) >
+                <#elseif (format == "decLessThan1") >            
+                    <#assign _2663_value = "0" + separator + setPadding(_2663_value, "left", "0", 2) >
+                </#if>        
+            </#if>
+        </#if>
+    <#elseif (format == "noDec") >
+        <#assign _2663_value = _2663_value * 100 >
+        <#assign _2663_value = _2663_value?string.computer >
+    <#elseif (format == "truncDec") >
+        <#assign _2663_value = _2663_value?floor >
+        <#assign _2663_value = _2663_value?string.computer >
+    <#elseif (format == "currency") >
+		<#if _2663_value?has_content && _2663_value != 0>
+	        <#assign _2663_finalVal = "" >
+	        <#if (_2663_value < 0) >
+	        	<#assign _2663_value = _2663_value * -1 >
+	        </#if>
+	        <#assign _2663_origValue = _2663_value >
+	        <#assign _2663_value = _2663_value * 100 >
+	        <#assign _2663_value = _2663_value?round?c >
+	        <#assign _2663_separatorIndex = _2663_value?length?number - 2 >
+	        <#if _2663_separatorIndex?number == 0>
+	        	<#assign _2663_finalVal = _2663_origValue >
+	        <#else>
+	        	<#assign _2663_blockCtr = (_2663_value?substring(0,_2663_separatorIndex)?length?number / 3)?floor?c >
+	        	<#assign _2663_leftMostBlock = _2663_value?substring(0,_2663_separatorIndex)?length?number % 3 >
+	        	<#if _2663_leftMostBlock == 0>
+	        		<#if _2663_blockCtr == "1">
+	        			<#assign _2663_finalVal = _2663_value?substring(0,_2663_separatorIndex)>
+	        		<#else>
+	        			<#assign _2663_valCtr = 0>
+	        			<#list 1.._2663_blockCtr?number as i>
+	        				<#assign _2663_finalVal = _2663_finalVal + _2663_value?substring(_2663_valCtr,_2663_valCtr+3)>
+	        				<#if _2663_blockCtr?number != i>
+	        					<#assign _2663_finalVal = _2663_finalVal + ",">
+	        				</#if>
+	        				<#assign _2663_valCtr = _2663_valCtr + 3>
+	        			</#list>
+	        		</#if>
+	        		<#assign _2663_finalVal = _2663_finalVal + separator + _2663_value?substring(_2663_separatorIndex) >
+	        	<#elseif _2663_leftMostBlock != 0>
+	        		<#assign _2663_finalVal = _2663_value?substring(0,_2663_leftMostBlock)>
+	        		<#if (_2663_blockCtr?number != 0)>
+	        			<#list 1.._2663_blockCtr?number as i>
+	        				<#assign _2663_finalVal = _2663_finalVal + "," + _2663_value?substring(_2663_leftMostBlock,_2663_leftMostBlock+3)>
+	        				<#assign _2663_leftMostBlock = _2663_leftMostBlock + 3 >
+	        			</#list>
+	        		</#if>
+	        		<#assign _2663_finalVal = _2663_finalVal + separator + _2663_value?substring(_2663_separatorIndex) >
+	        	</#if>
+	        </#if>
+	    </#if>
+	    
+	    <#assign _2663_value = _2663_finalVal >
+    </#if>
+    
+    <#return _2663_value>
+</#function>
+
+<#--
+convertToLatinCharSet
+- converts a string into its Latin equivalent
+
+Parameter: data     - string to be processed
+    
+Return Value:
+    String using Latin character set
+    
+Sample Usage:
+    1. ${convertToLatinCharSet("ÁbbbẮ")}
+     
+Sample Result:
+    1.  "AbbbA"
+
+-->
+<#function convertToLatinCharSet data>
+    <#assign _2663_value = data>
+    <#assign _2663_value = _2663_value?replace('Á','A')>
+    <#assign _2663_value = _2663_value?replace('Ă','A')>
+    <#assign _2663_value = _2663_value?replace('Ắ','A')>
+    <#assign _2663_value = _2663_value?replace('Ặ','A')>
+    <#assign _2663_value = _2663_value?replace('Ằ','A')>
+    <#assign _2663_value = _2663_value?replace('Ẳ','A')>
+    <#assign _2663_value = _2663_value?replace('Ẵ','A')>
+    <#assign _2663_value = _2663_value?replace('Ǎ','A')>
+    <#assign _2663_value = _2663_value?replace('Â','A')>
+    <#assign _2663_value = _2663_value?replace('Ấ','A')>
+    <#assign _2663_value = _2663_value?replace('Ậ','A')>
+    <#assign _2663_value = _2663_value?replace('Ầ','A')>
+    <#assign _2663_value = _2663_value?replace('Ẩ','A')>
+    <#assign _2663_value = _2663_value?replace('Ẫ','A')>
+    <#assign _2663_value = _2663_value?replace('Ä','A')>
+    <#assign _2663_value = _2663_value?replace('Ǟ','A')>
+    <#assign _2663_value = _2663_value?replace('Ȧ','A')>
+    <#assign _2663_value = _2663_value?replace('Ǡ','A')>
+    <#assign _2663_value = _2663_value?replace('Ạ','A')>
+    <#assign _2663_value = _2663_value?replace('Ȁ','A')>
+    <#assign _2663_value = _2663_value?replace('À','A')>
+    <#assign _2663_value = _2663_value?replace('Ả','A')>
+    <#assign _2663_value = _2663_value?replace('Ȃ','A')>
+    <#assign _2663_value = _2663_value?replace('Ā','A')>
+    <#assign _2663_value = _2663_value?replace('Ą','A')>
+    <#assign _2663_value = _2663_value?replace('Å','A')>
+    <#assign _2663_value = _2663_value?replace('Ǻ','A')>
+    <#assign _2663_value = _2663_value?replace('Ḁ','A')>
+    <#assign _2663_value = _2663_value?replace('Ⱥ','A')>
+    <#assign _2663_value = _2663_value?replace('Ã','A')>
+    <#assign _2663_value = _2663_value?replace('Ꜳ','AA')>
+    <#assign _2663_value = _2663_value?replace('Æ','AE')>
+    <#assign _2663_value = _2663_value?replace('Ǽ','AE')>
+    <#assign _2663_value = _2663_value?replace('Ǣ','AE')>
+    <#assign _2663_value = _2663_value?replace('Ḃ','B')>
+    <#assign _2663_value = _2663_value?replace('Ḅ','B')>
+    <#assign _2663_value = _2663_value?replace('Ɓ','B')>
+    <#assign _2663_value = _2663_value?replace('Ḇ','B')>
+    <#assign _2663_value = _2663_value?replace('Ƀ','B')>
+    <#assign _2663_value = _2663_value?replace('Ƃ','B')>
+    <#assign _2663_value = _2663_value?replace('Ć','C')>
+    <#assign _2663_value = _2663_value?replace('Č','C')>
+    <#assign _2663_value = _2663_value?replace('Ç','C')>
+    <#assign _2663_value = _2663_value?replace('Ḉ','C')>
+    <#assign _2663_value = _2663_value?replace('Ĉ','C')>
+    <#assign _2663_value = _2663_value?replace('Ċ','C')>
+    <#assign _2663_value = _2663_value?replace('Ƈ','C')>
+    <#assign _2663_value = _2663_value?replace('Ȼ','C')>
+    <#assign _2663_value = _2663_value?replace('Ď','D')>
+    <#assign _2663_value = _2663_value?replace('Ḑ','D')>
+    <#assign _2663_value = _2663_value?replace('Ḓ','D')>
+    <#assign _2663_value = _2663_value?replace('Ḋ','D')>
+    <#assign _2663_value = _2663_value?replace('Ḍ','D')>
+    <#assign _2663_value = _2663_value?replace('Ɗ','D')>
+    <#assign _2663_value = _2663_value?replace('Ḏ','D')>
+    <#assign _2663_value = _2663_value?replace('ǲ','D')>
+    <#assign _2663_value = _2663_value?replace('ǅ','D')>
+    <#assign _2663_value = _2663_value?replace('Đ','D')>
+    <#assign _2663_value = _2663_value?replace('Ƌ','D')>
+    <#assign _2663_value = _2663_value?replace('Ǳ','DZ')>
+    <#assign _2663_value = _2663_value?replace('Ǆ','DZ')>
+    <#assign _2663_value = _2663_value?replace('É','E')>
+    <#assign _2663_value = _2663_value?replace('Ĕ','E')>
+    <#assign _2663_value = _2663_value?replace('Ě','E')>
+    <#assign _2663_value = _2663_value?replace('Ȩ','E')>
+    <#assign _2663_value = _2663_value?replace('Ḝ','E')>
+    <#assign _2663_value = _2663_value?replace('Ê','E')>
+    <#assign _2663_value = _2663_value?replace('Ế','E')>
+    <#assign _2663_value = _2663_value?replace('Ệ','E')>
+    <#assign _2663_value = _2663_value?replace('Ề','E')>
+    <#assign _2663_value = _2663_value?replace('Ể','E')>
+    <#assign _2663_value = _2663_value?replace('Ễ','E')>
+    <#assign _2663_value = _2663_value?replace('Ḙ','E')>
+    <#assign _2663_value = _2663_value?replace('Ë','E')>
+    <#assign _2663_value = _2663_value?replace('Ė','E')>
+    <#assign _2663_value = _2663_value?replace('Ẹ','E')>
+    <#assign _2663_value = _2663_value?replace('Ȅ','E')>
+    <#assign _2663_value = _2663_value?replace('È','E')>
+    <#assign _2663_value = _2663_value?replace('Ẻ','E')>
+    <#assign _2663_value = _2663_value?replace('Ȇ','E')>
+    <#assign _2663_value = _2663_value?replace('Ē','E')>
+    <#assign _2663_value = _2663_value?replace('Ḗ','E')>
+    <#assign _2663_value = _2663_value?replace('Ḕ','E')>
+    <#assign _2663_value = _2663_value?replace('Ę','E')>
+    <#assign _2663_value = _2663_value?replace('Ɇ','E')>
+    <#assign _2663_value = _2663_value?replace('Ẽ','E')>
+    <#assign _2663_value = _2663_value?replace('Ḛ','E')>
+    <#assign _2663_value = _2663_value?replace('Ḟ','F')>
+    <#assign _2663_value = _2663_value?replace('Ƒ','F')>
+    <#assign _2663_value = _2663_value?replace('Ǵ','G')>
+    <#assign _2663_value = _2663_value?replace('Ğ','G')>
+    <#assign _2663_value = _2663_value?replace('Ǧ','G')>
+    <#assign _2663_value = _2663_value?replace('Ģ','G')>
+    <#assign _2663_value = _2663_value?replace('Ĝ','G')>
+    <#assign _2663_value = _2663_value?replace('Ġ','G')>
+    <#assign _2663_value = _2663_value?replace('Ɠ','G')>
+    <#assign _2663_value = _2663_value?replace('Ḡ','G')>
+    <#assign _2663_value = _2663_value?replace('Ǥ','G')>
+    <#assign _2663_value = _2663_value?replace('Ḫ','H')>
+    <#assign _2663_value = _2663_value?replace('Ȟ','H')>
+    <#assign _2663_value = _2663_value?replace('Ḩ','H')>
+    <#assign _2663_value = _2663_value?replace('Ĥ','H')>
+    <#assign _2663_value = _2663_value?replace('Ⱨ','H')>
+    <#assign _2663_value = _2663_value?replace('Ḧ','H')>
+    <#assign _2663_value = _2663_value?replace('Ḣ','H')>
+    <#assign _2663_value = _2663_value?replace('Ḥ','H')>
+    <#assign _2663_value = _2663_value?replace('Ħ','H')>
+    <#assign _2663_value = _2663_value?replace('Í','I')>
+    <#assign _2663_value = _2663_value?replace('Ĭ','I')>
+    <#assign _2663_value = _2663_value?replace('Ǐ','I')>
+    <#assign _2663_value = _2663_value?replace('Î','I')>
+    <#assign _2663_value = _2663_value?replace('Ï','I')>
+    <#assign _2663_value = _2663_value?replace('Ḯ','I')>
+    <#assign _2663_value = _2663_value?replace('İ','I')>
+    <#assign _2663_value = _2663_value?replace('Ị','I')>
+    <#assign _2663_value = _2663_value?replace('Ȉ','I')>
+    <#assign _2663_value = _2663_value?replace('Ì','I')>
+    <#assign _2663_value = _2663_value?replace('Ỉ','I')>
+    <#assign _2663_value = _2663_value?replace('Ȋ','I')>
+    <#assign _2663_value = _2663_value?replace('Ī','I')>
+    <#assign _2663_value = _2663_value?replace('Į','I')>
+    <#assign _2663_value = _2663_value?replace('Ɨ','I')>
+    <#assign _2663_value = _2663_value?replace('Ĩ','I')>
+    <#assign _2663_value = _2663_value?replace('Ḭ','I')>
+    <#assign _2663_value = _2663_value?replace('Ĵ','J')>
+    <#assign _2663_value = _2663_value?replace('Ɉ','J')>
+    <#assign _2663_value = _2663_value?replace('Ḱ','K')>
+    <#assign _2663_value = _2663_value?replace('Ǩ','K')>
+    <#assign _2663_value = _2663_value?replace('Ķ','K')>
+    <#assign _2663_value = _2663_value?replace('Ⱪ','K')>
+    <#assign _2663_value = _2663_value?replace('Ḳ','K')>
+    <#assign _2663_value = _2663_value?replace('Ƙ','K')>
+    <#assign _2663_value = _2663_value?replace('Ḵ','K')>
+    <#assign _2663_value = _2663_value?replace('Ĺ','L')>
+    <#assign _2663_value = _2663_value?replace('Ƚ','L')>
+    <#assign _2663_value = _2663_value?replace('Ľ','L')>
+    <#assign _2663_value = _2663_value?replace('Ļ','L')>
+    <#assign _2663_value = _2663_value?replace('Ḽ','L')>
+    <#assign _2663_value = _2663_value?replace('Ḷ','L')>
+    <#assign _2663_value = _2663_value?replace('Ḹ','L')>
+    <#assign _2663_value = _2663_value?replace('Ⱡ','L')>
+    <#assign _2663_value = _2663_value?replace('Ḻ','L')>
+    <#assign _2663_value = _2663_value?replace('Ŀ','L')>
+    <#assign _2663_value = _2663_value?replace('Ɫ','L')>
+    <#assign _2663_value = _2663_value?replace('ǈ','L')>
+    <#assign _2663_value = _2663_value?replace('Ł','L')>
+    <#assign _2663_value = _2663_value?replace('Ǉ','LJ')>
+    <#assign _2663_value = _2663_value?replace('Ḿ','M')>
+    <#assign _2663_value = _2663_value?replace('Ṁ','M')>
+    <#assign _2663_value = _2663_value?replace('Ṃ','M')>
+    <#assign _2663_value = _2663_value?replace('Ń','N')>
+    <#assign _2663_value = _2663_value?replace('Ň','N')>
+    <#assign _2663_value = _2663_value?replace('Ņ','N')>
+    <#assign _2663_value = _2663_value?replace('Ṋ','N')>
+    <#assign _2663_value = _2663_value?replace('Ṅ','N')>
+    <#assign _2663_value = _2663_value?replace('Ṇ','N')>
+    <#assign _2663_value = _2663_value?replace('Ǹ','N')>
+    <#assign _2663_value = _2663_value?replace('Ɲ','N')>
+    <#assign _2663_value = _2663_value?replace('Ṉ','N')>
+    <#assign _2663_value = _2663_value?replace('Ƞ','N')>
+    <#assign _2663_value = _2663_value?replace('ǋ','N')>
+    <#assign _2663_value = _2663_value?replace('Ñ','N')>
+    <#assign _2663_value = _2663_value?replace('Ǌ','NJ')>
+    <#assign _2663_value = _2663_value?replace('Ó','O')>
+    <#assign _2663_value = _2663_value?replace('Ŏ','O')>
+    <#assign _2663_value = _2663_value?replace('Ǒ','O')>
+    <#assign _2663_value = _2663_value?replace('Ô','O')>
+    <#assign _2663_value = _2663_value?replace('Ố','O')>
+    <#assign _2663_value = _2663_value?replace('Ộ','O')>
+    <#assign _2663_value = _2663_value?replace('Ồ','O')>
+    <#assign _2663_value = _2663_value?replace('Ổ','O')>
+    <#assign _2663_value = _2663_value?replace('Ỗ','O')>
+    <#assign _2663_value = _2663_value?replace('Ö','O')>
+    <#assign _2663_value = _2663_value?replace('Ȫ','O')>
+    <#assign _2663_value = _2663_value?replace('Ȯ','O')>
+    <#assign _2663_value = _2663_value?replace('Ȱ','O')>
+    <#assign _2663_value = _2663_value?replace('Ọ','O')>
+    <#assign _2663_value = _2663_value?replace('Ő','O')>
+    <#assign _2663_value = _2663_value?replace('Ȍ','O')>
+    <#assign _2663_value = _2663_value?replace('Ò','O')>
+    <#assign _2663_value = _2663_value?replace('Ỏ','O')>
+    <#assign _2663_value = _2663_value?replace('Ơ','O')>
+    <#assign _2663_value = _2663_value?replace('Ớ','O')>
+    <#assign _2663_value = _2663_value?replace('Ợ','O')>
+    <#assign _2663_value = _2663_value?replace('Ờ','O')>
+    <#assign _2663_value = _2663_value?replace('Ở','O')>
+    <#assign _2663_value = _2663_value?replace('Ỡ','O')>
+    <#assign _2663_value = _2663_value?replace('Ȏ','O')>
+    <#assign _2663_value = _2663_value?replace('Ō','O')>
+    <#assign _2663_value = _2663_value?replace('Ṓ','O')>
+    <#assign _2663_value = _2663_value?replace('Ṑ','O')>
+    <#assign _2663_value = _2663_value?replace('Ɵ','O')>
+    <#assign _2663_value = _2663_value?replace('Ǫ','O')>
+    <#assign _2663_value = _2663_value?replace('Ǭ','O')>
+    <#assign _2663_value = _2663_value?replace('Ø','O')>
+    <#assign _2663_value = _2663_value?replace('Ǿ','O')>
+    <#assign _2663_value = _2663_value?replace('Õ','O')>
+    <#assign _2663_value = _2663_value?replace('Ṍ','O')>
+    <#assign _2663_value = _2663_value?replace('Ṏ','O')>
+    <#assign _2663_value = _2663_value?replace('Ȭ','O')>
+    <#assign _2663_value = _2663_value?replace('Ƣ','OI')>
+    <#assign _2663_value = _2663_value?replace('Ɛ','E')>
+    <#assign _2663_value = _2663_value?replace('Ɔ','O')>
+    <#assign _2663_value = _2663_value?replace('Ȣ','OU')>
+    <#assign _2663_value = _2663_value?replace('Ṕ','P')>
+    <#assign _2663_value = _2663_value?replace('Ṗ','P')>
+    <#assign _2663_value = _2663_value?replace('Ƥ','P')>
+    <#assign _2663_value = _2663_value?replace('Ᵽ','P')>
+    <#assign _2663_value = _2663_value?replace('Ŕ','R')>
+    <#assign _2663_value = _2663_value?replace('Ř','R')>
+    <#assign _2663_value = _2663_value?replace('Ŗ','R')>
+    <#assign _2663_value = _2663_value?replace('Ṙ','R')>
+    <#assign _2663_value = _2663_value?replace('Ṛ','R')>
+    <#assign _2663_value = _2663_value?replace('Ṝ','R')>
+    <#assign _2663_value = _2663_value?replace('Ȑ','R')>
+    <#assign _2663_value = _2663_value?replace('Ȓ','R')>
+    <#assign _2663_value = _2663_value?replace('Ṟ','R')>
+    <#assign _2663_value = _2663_value?replace('Ɍ','R')>
+    <#assign _2663_value = _2663_value?replace('Ɽ','R')>
+    <#assign _2663_value = _2663_value?replace('Ǝ','E')>
+    <#assign _2663_value = _2663_value?replace('Ś','S')>
+    <#assign _2663_value = _2663_value?replace('Ṥ','S')>
+    <#assign _2663_value = _2663_value?replace('Š','S')>
+    <#assign _2663_value = _2663_value?replace('Ṧ','S')>
+    <#assign _2663_value = _2663_value?replace('Ş','S')>
+    <#assign _2663_value = _2663_value?replace('Ŝ','S')>
+    <#assign _2663_value = _2663_value?replace('Ș','S')>
+    <#assign _2663_value = _2663_value?replace('Ṡ','S')>
+    <#assign _2663_value = _2663_value?replace('Ṣ','S')>
+    <#assign _2663_value = _2663_value?replace('Ṩ','S')>
+    <#assign _2663_value = _2663_value?replace('ẞ','SS')>
+    <#assign _2663_value = _2663_value?replace('Ť','T')>
+    <#assign _2663_value = _2663_value?replace('Ţ','T')>
+    <#assign _2663_value = _2663_value?replace('Ṱ','T')>
+    <#assign _2663_value = _2663_value?replace('Ț','T')>
+    <#assign _2663_value = _2663_value?replace('Ⱦ','T')>
+    <#assign _2663_value = _2663_value?replace('Ṫ','T')>
+    <#assign _2663_value = _2663_value?replace('Ṭ','T')>
+    <#assign _2663_value = _2663_value?replace('Ƭ','T')>
+    <#assign _2663_value = _2663_value?replace('Ṯ','T')>
+    <#assign _2663_value = _2663_value?replace('Ʈ','T')>
+    <#assign _2663_value = _2663_value?replace('Ŧ','T')>
+    <#assign _2663_value = _2663_value?replace('Ɯ','M')>
+    <#assign _2663_value = _2663_value?replace('Ʌ','V')>
+    <#assign _2663_value = _2663_value?replace('Ú','U')>
+    <#assign _2663_value = _2663_value?replace('Ŭ','U')>
+    <#assign _2663_value = _2663_value?replace('Ǔ','U')>
+    <#assign _2663_value = _2663_value?replace('Û','U')>
+    <#assign _2663_value = _2663_value?replace('Ṷ','U')>
+    <#assign _2663_value = _2663_value?replace('Ü','U')>
+    <#assign _2663_value = _2663_value?replace('Ǘ','U')>
+    <#assign _2663_value = _2663_value?replace('Ǚ','U')>
+    <#assign _2663_value = _2663_value?replace('Ǜ','U')>
+    <#assign _2663_value = _2663_value?replace('Ǖ','U')>
+    <#assign _2663_value = _2663_value?replace('Ṳ','U')>
+    <#assign _2663_value = _2663_value?replace('Ụ','U')>
+    <#assign _2663_value = _2663_value?replace('Ű','U')>
+    <#assign _2663_value = _2663_value?replace('Ȕ','U')>
+    <#assign _2663_value = _2663_value?replace('Ù','U')>
+    <#assign _2663_value = _2663_value?replace('Ủ','U')>
+    <#assign _2663_value = _2663_value?replace('Ư','U')>
+    <#assign _2663_value = _2663_value?replace('Ứ','U')>
+    <#assign _2663_value = _2663_value?replace('Ự','U')>
+    <#assign _2663_value = _2663_value?replace('Ừ','U')>
+    <#assign _2663_value = _2663_value?replace('Ử','U')>
+    <#assign _2663_value = _2663_value?replace('Ữ','U')>
+    <#assign _2663_value = _2663_value?replace('Ȗ','U')>
+    <#assign _2663_value = _2663_value?replace('Ū','U')>
+    <#assign _2663_value = _2663_value?replace('Ṻ','U')>
+    <#assign _2663_value = _2663_value?replace('Ų','U')>
+    <#assign _2663_value = _2663_value?replace('Ů','U')>
+    <#assign _2663_value = _2663_value?replace('Ũ','U')>
+    <#assign _2663_value = _2663_value?replace('Ṹ','U')>
+    <#assign _2663_value = _2663_value?replace('Ṵ','U')>
+    <#assign _2663_value = _2663_value?replace('Ṿ','V')>
+    <#assign _2663_value = _2663_value?replace('Ʋ','V')>
+    <#assign _2663_value = _2663_value?replace('Ṽ','V')>
+    <#assign _2663_value = _2663_value?replace('Ẃ','W')>
+    <#assign _2663_value = _2663_value?replace('Ŵ','W')>
+    <#assign _2663_value = _2663_value?replace('Ẅ','W')>
+    <#assign _2663_value = _2663_value?replace('Ẇ','W')>
+    <#assign _2663_value = _2663_value?replace('Ẉ','W')>
+    <#assign _2663_value = _2663_value?replace('Ẁ','W')>
+    <#assign _2663_value = _2663_value?replace('Ⱳ','W')>
+    <#assign _2663_value = _2663_value?replace('Ẍ','X')>
+    <#assign _2663_value = _2663_value?replace('Ẋ','X')>
+    <#assign _2663_value = _2663_value?replace('Ý','Y')>
+    <#assign _2663_value = _2663_value?replace('Ŷ','Y')>
+    <#assign _2663_value = _2663_value?replace('Ÿ','Y')>
+    <#assign _2663_value = _2663_value?replace('Ẏ','Y')>
+    <#assign _2663_value = _2663_value?replace('Ỵ','Y')>
+    <#assign _2663_value = _2663_value?replace('Ỳ','Y')>
+    <#assign _2663_value = _2663_value?replace('Ƴ','Y')>
+    <#assign _2663_value = _2663_value?replace('Ỷ','Y')>
+    <#assign _2663_value = _2663_value?replace('Ȳ','Y')>
+    <#assign _2663_value = _2663_value?replace('Ɏ','Y')>
+    <#assign _2663_value = _2663_value?replace('Ỹ','Y')>
+    <#assign _2663_value = _2663_value?replace('Ź','Z')>
+    <#assign _2663_value = _2663_value?replace('Ž','Z')>
+    <#assign _2663_value = _2663_value?replace('Ẑ','Z')>
+    <#assign _2663_value = _2663_value?replace('Ⱬ','Z')>
+    <#assign _2663_value = _2663_value?replace('Ż','Z')>
+    <#assign _2663_value = _2663_value?replace('Ẓ','Z')>
+    <#assign _2663_value = _2663_value?replace('Ȥ','Z')>
+    <#assign _2663_value = _2663_value?replace('Ẕ','Z')>
+    <#assign _2663_value = _2663_value?replace('Ƶ','Z')>
+    <#assign _2663_value = _2663_value?replace('Ĳ','IJ')>
+    <#assign _2663_value = _2663_value?replace('Œ','OE')>
+    <#assign _2663_value = _2663_value?replace('ᴀ','A')>
+    <#assign _2663_value = _2663_value?replace('ᴁ','AE')>
+    <#assign _2663_value = _2663_value?replace('ʙ','B')>
+    <#assign _2663_value = _2663_value?replace('ᴃ','B')>
+    <#assign _2663_value = _2663_value?replace('ᴄ','C')>
+    <#assign _2663_value = _2663_value?replace('ᴅ','D')>
+    <#assign _2663_value = _2663_value?replace('ᴇ','E')>
+    <#assign _2663_value = _2663_value?replace('ɢ','G')>
+    <#assign _2663_value = _2663_value?replace('ʛ','G')>
+    <#assign _2663_value = _2663_value?replace('ʜ','H')>
+    <#assign _2663_value = _2663_value?replace('ɪ','I')>
+    <#assign _2663_value = _2663_value?replace('ʁ','R')>
+    <#assign _2663_value = _2663_value?replace('ᴊ','J')>
+    <#assign _2663_value = _2663_value?replace('ᴋ','K')>
+    <#assign _2663_value = _2663_value?replace('ʟ','L')>
+    <#assign _2663_value = _2663_value?replace('ᴌ','L')>
+    <#assign _2663_value = _2663_value?replace('ᴍ','M')>
+    <#assign _2663_value = _2663_value?replace('ɴ','N')>
+    <#assign _2663_value = _2663_value?replace('ᴏ','O')>
+    <#assign _2663_value = _2663_value?replace('ɶ','OE')>
+    <#assign _2663_value = _2663_value?replace('ᴐ','O')>
+    <#assign _2663_value = _2663_value?replace('ᴕ','OU')>
+    <#assign _2663_value = _2663_value?replace('ᴘ','P')>
+    <#assign _2663_value = _2663_value?replace('ʀ','R')>
+    <#assign _2663_value = _2663_value?replace('ᴎ','N')>
+    <#assign _2663_value = _2663_value?replace('ᴙ','R')>
+    <#assign _2663_value = _2663_value?replace('ᴛ','T')>
+    <#assign _2663_value = _2663_value?replace('ᴚ','R')>
+    <#assign _2663_value = _2663_value?replace('ᴜ','U')>
+    <#assign _2663_value = _2663_value?replace('ᴠ','V')>
+    <#assign _2663_value = _2663_value?replace('ᴡ','W')>
+    <#assign _2663_value = _2663_value?replace('ʏ','Y')>
+    <#assign _2663_value = _2663_value?replace('ᴢ','Z')>
+    <#assign _2663_value = _2663_value?replace('á','a')>
+    <#assign _2663_value = _2663_value?replace('ă','a')>
+    <#assign _2663_value = _2663_value?replace('ắ','a')>
+    <#assign _2663_value = _2663_value?replace('ặ','a')>
+    <#assign _2663_value = _2663_value?replace('ằ','a')>
+    <#assign _2663_value = _2663_value?replace('ẳ','a')>
+    <#assign _2663_value = _2663_value?replace('ẵ','a')>
+    <#assign _2663_value = _2663_value?replace('ǎ','a')>
+    <#assign _2663_value = _2663_value?replace('â','a')>
+    <#assign _2663_value = _2663_value?replace('ấ','a')>
+    <#assign _2663_value = _2663_value?replace('ậ','a')>
+    <#assign _2663_value = _2663_value?replace('ầ','a')>
+    <#assign _2663_value = _2663_value?replace('ẩ','a')>
+    <#assign _2663_value = _2663_value?replace('ẫ','a')>
+    <#assign _2663_value = _2663_value?replace('ä','a')>
+    <#assign _2663_value = _2663_value?replace('ǟ','a')>
+    <#assign _2663_value = _2663_value?replace('ȧ','a')>
+    <#assign _2663_value = _2663_value?replace('ǡ','a')>
+    <#assign _2663_value = _2663_value?replace('ạ','a')>
+    <#assign _2663_value = _2663_value?replace('ȁ','a')>
+    <#assign _2663_value = _2663_value?replace('à','a')>
+    <#assign _2663_value = _2663_value?replace('ả','a')>
+    <#assign _2663_value = _2663_value?replace('ȃ','a')>
+    <#assign _2663_value = _2663_value?replace('ā','a')>
+    <#assign _2663_value = _2663_value?replace('ą','a')>
+    <#assign _2663_value = _2663_value?replace('ᶏ','a')>
+    <#assign _2663_value = _2663_value?replace('ẚ','a')>
+    <#assign _2663_value = _2663_value?replace('å','a')>
+    <#assign _2663_value = _2663_value?replace('ǻ','a')>
+    <#assign _2663_value = _2663_value?replace('ḁ','a')>
+    <#assign _2663_value = _2663_value?replace('ⱥ','a')>
+    <#assign _2663_value = _2663_value?replace('ã','a')>
+    <#assign _2663_value = _2663_value?replace('æ','ae')>
+    <#assign _2663_value = _2663_value?replace('ǽ','ae')>
+    <#assign _2663_value = _2663_value?replace('ǣ','ae')>
+    <#assign _2663_value = _2663_value?replace('ḃ','b')>
+    <#assign _2663_value = _2663_value?replace('ḅ','b')>
+    <#assign _2663_value = _2663_value?replace('ɓ','b')>
+    <#assign _2663_value = _2663_value?replace('ḇ','b')>
+    <#assign _2663_value = _2663_value?replace('ᵬ','b')>
+    <#assign _2663_value = _2663_value?replace('ᶀ','b')>
+    <#assign _2663_value = _2663_value?replace('ƀ','b')>
+    <#assign _2663_value = _2663_value?replace('ƃ','b')>
+    <#assign _2663_value = _2663_value?replace('ɵ','o')>
+    <#assign _2663_value = _2663_value?replace('ć','c')>
+    <#assign _2663_value = _2663_value?replace('č','c')>
+    <#assign _2663_value = _2663_value?replace('ç','c')>
+    <#assign _2663_value = _2663_value?replace('ḉ','c')>
+    <#assign _2663_value = _2663_value?replace('ĉ','c')>
+    <#assign _2663_value = _2663_value?replace('ɕ','c')>
+    <#assign _2663_value = _2663_value?replace('ċ','c')>
+    <#assign _2663_value = _2663_value?replace('ƈ','c')>
+    <#assign _2663_value = _2663_value?replace('ȼ','c')>
+    <#assign _2663_value = _2663_value?replace('ď','d')>
+    <#assign _2663_value = _2663_value?replace('ḑ','d')>
+    <#assign _2663_value = _2663_value?replace('ḓ','d')>
+    <#assign _2663_value = _2663_value?replace('ȡ','d')>
+    <#assign _2663_value = _2663_value?replace('ḋ','d')>
+    <#assign _2663_value = _2663_value?replace('ḍ','d')>
+    <#assign _2663_value = _2663_value?replace('ɗ','d')>
+    <#assign _2663_value = _2663_value?replace('ᶑ','d')>
+    <#assign _2663_value = _2663_value?replace('ḏ','d')>
+    <#assign _2663_value = _2663_value?replace('ᵭ','d')>
+    <#assign _2663_value = _2663_value?replace('ᶁ','d')>
+    <#assign _2663_value = _2663_value?replace('đ','d')>
+    <#assign _2663_value = _2663_value?replace('ɖ','d')>
+    <#assign _2663_value = _2663_value?replace('ƌ','d')>
+    <#assign _2663_value = _2663_value?replace('ı','i')>
+    <#assign _2663_value = _2663_value?replace('ɟ','j')>
+    <#assign _2663_value = _2663_value?replace('ʄ','j')>
+    <#assign _2663_value = _2663_value?replace('ǳ','dz')>
+    <#assign _2663_value = _2663_value?replace('ǆ','dz')>
+    <#assign _2663_value = _2663_value?replace('é','e')>
+    <#assign _2663_value = _2663_value?replace('ĕ','e')>
+    <#assign _2663_value = _2663_value?replace('ě','e')>
+    <#assign _2663_value = _2663_value?replace('ȩ','e')>
+    <#assign _2663_value = _2663_value?replace('ḝ','e')>
+    <#assign _2663_value = _2663_value?replace('ê','e')>
+    <#assign _2663_value = _2663_value?replace('ế','e')>
+    <#assign _2663_value = _2663_value?replace('ệ','e')>
+    <#assign _2663_value = _2663_value?replace('ề','e')>
+    <#assign _2663_value = _2663_value?replace('ể','e')>
+    <#assign _2663_value = _2663_value?replace('ễ','e')>
+    <#assign _2663_value = _2663_value?replace('ḙ','e')>
+    <#assign _2663_value = _2663_value?replace('ë','e')>
+    <#assign _2663_value = _2663_value?replace('ė','e')>
+    <#assign _2663_value = _2663_value?replace('ẹ','e')>
+    <#assign _2663_value = _2663_value?replace('ȅ','e')>
+    <#assign _2663_value = _2663_value?replace('è','e')>
+    <#assign _2663_value = _2663_value?replace('ẻ','e')>
+    <#assign _2663_value = _2663_value?replace('ȇ','e')>
+    <#assign _2663_value = _2663_value?replace('ē','e')>
+    <#assign _2663_value = _2663_value?replace('ḗ','e')>
+    <#assign _2663_value = _2663_value?replace('ḕ','e')>
+    <#assign _2663_value = _2663_value?replace('ę','e')>
+    <#assign _2663_value = _2663_value?replace('ᶒ','e')>
+    <#assign _2663_value = _2663_value?replace('ɇ','e')>
+    <#assign _2663_value = _2663_value?replace('ẽ','e')>
+    <#assign _2663_value = _2663_value?replace('ḛ','e')>
+    <#assign _2663_value = _2663_value?replace('ḟ','f')>
+    <#assign _2663_value = _2663_value?replace('ƒ','f')>
+    <#assign _2663_value = _2663_value?replace('ᵮ','f')>
+    <#assign _2663_value = _2663_value?replace('ᶂ','f')>
+    <#assign _2663_value = _2663_value?replace('ǵ','g')>
+    <#assign _2663_value = _2663_value?replace('ğ','g')>
+    <#assign _2663_value = _2663_value?replace('ǧ','g')>
+    <#assign _2663_value = _2663_value?replace('ģ','g')>
+    <#assign _2663_value = _2663_value?replace('ĝ','g')>
+    <#assign _2663_value = _2663_value?replace('ġ','g')>
+    <#assign _2663_value = _2663_value?replace('ɠ','g')>
+    <#assign _2663_value = _2663_value?replace('ḡ','g')>
+    <#assign _2663_value = _2663_value?replace('ᶃ','g')>
+    <#assign _2663_value = _2663_value?replace('ǥ','g')>
+    <#assign _2663_value = _2663_value?replace('ḫ','h')>
+    <#assign _2663_value = _2663_value?replace('ȟ','h')>
+    <#assign _2663_value = _2663_value?replace('ḩ','h')>
+    <#assign _2663_value = _2663_value?replace('ĥ','h')>
+    <#assign _2663_value = _2663_value?replace('ⱨ','h')>
+    <#assign _2663_value = _2663_value?replace('ḧ','h')>
+    <#assign _2663_value = _2663_value?replace('ḣ','h')>
+    <#assign _2663_value = _2663_value?replace('ḥ','h')>
+    <#assign _2663_value = _2663_value?replace('ɦ','h')>
+    <#assign _2663_value = _2663_value?replace('ħ','h')>
+    <#assign _2663_value = _2663_value?replace('ƕ','hv')>
+    <#assign _2663_value = _2663_value?replace('í','i')>
+    <#assign _2663_value = _2663_value?replace('ĭ','i')>
+    <#assign _2663_value = _2663_value?replace('ǐ','i')>
+    <#assign _2663_value = _2663_value?replace('î','i')>
+    <#assign _2663_value = _2663_value?replace('ï','i')>
+    <#assign _2663_value = _2663_value?replace('ḯ','i')>
+    <#assign _2663_value = _2663_value?replace('ị','i')>
+    <#assign _2663_value = _2663_value?replace('ȉ','i')>
+    <#assign _2663_value = _2663_value?replace('ì','i')>
+    <#assign _2663_value = _2663_value?replace('ỉ','i')>
+    <#assign _2663_value = _2663_value?replace('ȋ','i')>
+    <#assign _2663_value = _2663_value?replace('ī','i')>
+    <#assign _2663_value = _2663_value?replace('į','i')>
+    <#assign _2663_value = _2663_value?replace('ᶖ','i')>
+    <#assign _2663_value = _2663_value?replace('ɨ','i')>
+    <#assign _2663_value = _2663_value?replace('ĩ','i')>
+    <#assign _2663_value = _2663_value?replace('ḭ','i')>
+    <#assign _2663_value = _2663_value?replace('ᵹ','g')>
+    <#assign _2663_value = _2663_value?replace('ǰ','j')>
+    <#assign _2663_value = _2663_value?replace('ĵ','j')>
+    <#assign _2663_value = _2663_value?replace('ʝ','j')>
+    <#assign _2663_value = _2663_value?replace('ɉ','j')>
+    <#assign _2663_value = _2663_value?replace('ḱ','k')>
+    <#assign _2663_value = _2663_value?replace('ǩ','k')>
+    <#assign _2663_value = _2663_value?replace('ķ','k')>
+    <#assign _2663_value = _2663_value?replace('ⱪ','k')>
+    <#assign _2663_value = _2663_value?replace('ḳ','k')>
+    <#assign _2663_value = _2663_value?replace('ƙ','k')>
+    <#assign _2663_value = _2663_value?replace('ḵ','k')>
+    <#assign _2663_value = _2663_value?replace('ᶄ','k')>
+    <#assign _2663_value = _2663_value?replace('ĺ','l')>
+    <#assign _2663_value = _2663_value?replace('ƚ','l')>
+    <#assign _2663_value = _2663_value?replace('ɬ','l')>
+    <#assign _2663_value = _2663_value?replace('ľ','l')>
+    <#assign _2663_value = _2663_value?replace('ļ','l')>
+    <#assign _2663_value = _2663_value?replace('ḽ','l')>
+    <#assign _2663_value = _2663_value?replace('ȴ','l')>
+    <#assign _2663_value = _2663_value?replace('ḷ','l')>
+    <#assign _2663_value = _2663_value?replace('ḹ','l')>
+    <#assign _2663_value = _2663_value?replace('ⱡ','l')>
+    <#assign _2663_value = _2663_value?replace('ḻ','l')>
+    <#assign _2663_value = _2663_value?replace('ŀ','l')>
+    <#assign _2663_value = _2663_value?replace('ɫ','l')>
+    <#assign _2663_value = _2663_value?replace('ᶅ','l')>
+    <#assign _2663_value = _2663_value?replace('ɭ','l')>
+    <#assign _2663_value = _2663_value?replace('ł','l')>
+    <#assign _2663_value = _2663_value?replace('ǉ','lj')>
+    <#assign _2663_value = _2663_value?replace('ſ','s')>
+    <#assign _2663_value = _2663_value?replace('ẛ','s')>
+    <#assign _2663_value = _2663_value?replace('ḿ','m')>
+    <#assign _2663_value = _2663_value?replace('ṁ','m')>
+    <#assign _2663_value = _2663_value?replace('ṃ','m')>
+    <#assign _2663_value = _2663_value?replace('ɱ','m')>
+    <#assign _2663_value = _2663_value?replace('ᵯ','m')>
+    <#assign _2663_value = _2663_value?replace('ᶆ','m')>
+    <#assign _2663_value = _2663_value?replace('ń','n')>
+    <#assign _2663_value = _2663_value?replace('ň','n')>
+    <#assign _2663_value = _2663_value?replace('ņ','n')>
+    <#assign _2663_value = _2663_value?replace('ṋ','n')>
+    <#assign _2663_value = _2663_value?replace('ȵ','n')>
+    <#assign _2663_value = _2663_value?replace('ṅ','n')>
+    <#assign _2663_value = _2663_value?replace('ṇ','n')>
+    <#assign _2663_value = _2663_value?replace('ǹ','n')>
+    <#assign _2663_value = _2663_value?replace('ɲ','n')>
+    <#assign _2663_value = _2663_value?replace('ṉ','n')>
+    <#assign _2663_value = _2663_value?replace('ƞ','n')>
+    <#assign _2663_value = _2663_value?replace('ᵰ','n')>
+    <#assign _2663_value = _2663_value?replace('ᶇ','n')>
+    <#assign _2663_value = _2663_value?replace('ɳ','n')>
+    <#assign _2663_value = _2663_value?replace('ñ','n')>
+    <#assign _2663_value = _2663_value?replace('ǌ','nj')>
+    <#assign _2663_value = _2663_value?replace('ó','o')>
+    <#assign _2663_value = _2663_value?replace('ŏ','o')>
+    <#assign _2663_value = _2663_value?replace('ǒ','o')>
+    <#assign _2663_value = _2663_value?replace('ô','o')>
+    <#assign _2663_value = _2663_value?replace('ố','o')>
+    <#assign _2663_value = _2663_value?replace('ộ','o')>
+    <#assign _2663_value = _2663_value?replace('ồ','o')>
+    <#assign _2663_value = _2663_value?replace('ổ','o')>
+    <#assign _2663_value = _2663_value?replace('ỗ','o')>
+    <#assign _2663_value = _2663_value?replace('ö','o')>
+    <#assign _2663_value = _2663_value?replace('ȫ','o')>
+    <#assign _2663_value = _2663_value?replace('ȯ','o')>
+    <#assign _2663_value = _2663_value?replace('ȱ','o')>
+    <#assign _2663_value = _2663_value?replace('ọ','o')>
+    <#assign _2663_value = _2663_value?replace('ő','o')>
+    <#assign _2663_value = _2663_value?replace('ȍ','o')>
+    <#assign _2663_value = _2663_value?replace('ò','o')>
+    <#assign _2663_value = _2663_value?replace('ỏ','o')>
+    <#assign _2663_value = _2663_value?replace('ơ','o')>
+    <#assign _2663_value = _2663_value?replace('ớ','o')>
+    <#assign _2663_value = _2663_value?replace('ợ','o')>
+    <#assign _2663_value = _2663_value?replace('ờ','o')>
+    <#assign _2663_value = _2663_value?replace('ở','o')>
+    <#assign _2663_value = _2663_value?replace('ỡ','o')>
+    <#assign _2663_value = _2663_value?replace('ȏ','o')>
+    <#assign _2663_value = _2663_value?replace('ō','o')>
+    <#assign _2663_value = _2663_value?replace('ṓ','o')>
+    <#assign _2663_value = _2663_value?replace('ṑ','o')>
+    <#assign _2663_value = _2663_value?replace('ǫ','o')>
+    <#assign _2663_value = _2663_value?replace('ǭ','o')>
+    <#assign _2663_value = _2663_value?replace('ø','o')>
+    <#assign _2663_value = _2663_value?replace('ǿ','o')>
+    <#assign _2663_value = _2663_value?replace('õ','o')>
+    <#assign _2663_value = _2663_value?replace('ṍ','o')>
+    <#assign _2663_value = _2663_value?replace('ṏ','o')>
+    <#assign _2663_value = _2663_value?replace('ȭ','o')>
+    <#assign _2663_value = _2663_value?replace('ƣ','oi')>
+    <#assign _2663_value = _2663_value?replace('ɛ','e')>
+    <#assign _2663_value = _2663_value?replace('ᶓ','e')>
+    <#assign _2663_value = _2663_value?replace('ɔ','o')>
+    <#assign _2663_value = _2663_value?replace('ᶗ','o')>
+    <#assign _2663_value = _2663_value?replace('ȣ','ou')>
+    <#assign _2663_value = _2663_value?replace('ṕ','p')>
+    <#assign _2663_value = _2663_value?replace('ṗ','p')>
+    <#assign _2663_value = _2663_value?replace('ƥ','p')>
+    <#assign _2663_value = _2663_value?replace('ᵱ','p')>
+    <#assign _2663_value = _2663_value?replace('ᶈ','p')>
+    <#assign _2663_value = _2663_value?replace('ᵽ','p')>
+    <#assign _2663_value = _2663_value?replace('ʠ','q')>
+    <#assign _2663_value = _2663_value?replace('ɋ','q')>
+    <#assign _2663_value = _2663_value?replace('ŕ','r')>
+    <#assign _2663_value = _2663_value?replace('ř','r')>
+    <#assign _2663_value = _2663_value?replace('ŗ','r')>
+    <#assign _2663_value = _2663_value?replace('ṙ','r')>
+    <#assign _2663_value = _2663_value?replace('ṛ','r')>
+    <#assign _2663_value = _2663_value?replace('ṝ','r')>
+    <#assign _2663_value = _2663_value?replace('ȑ','r')>
+    <#assign _2663_value = _2663_value?replace('ɾ','r')>
+    <#assign _2663_value = _2663_value?replace('ᵳ','r')>
+    <#assign _2663_value = _2663_value?replace('ȓ','r')>
+    <#assign _2663_value = _2663_value?replace('ṟ','r')>
+    <#assign _2663_value = _2663_value?replace('ɼ','r')>
+    <#assign _2663_value = _2663_value?replace('ᵲ','r')>
+    <#assign _2663_value = _2663_value?replace('ᶉ','r')>
+    <#assign _2663_value = _2663_value?replace('ɍ','r')>
+    <#assign _2663_value = _2663_value?replace('ɽ','r')>
+    <#assign _2663_value = _2663_value?replace('ↄ','c')>
+    <#assign _2663_value = _2663_value?replace('ɘ','e')>
+    <#assign _2663_value = _2663_value?replace('ɿ','r')>
+    <#assign _2663_value = _2663_value?replace('ś','s')>
+    <#assign _2663_value = _2663_value?replace('ṥ','s')>
+    <#assign _2663_value = _2663_value?replace('š','s')>
+    <#assign _2663_value = _2663_value?replace('ṧ','s')>
+    <#assign _2663_value = _2663_value?replace('ş','s')>
+    <#assign _2663_value = _2663_value?replace('ŝ','s')>
+    <#assign _2663_value = _2663_value?replace('ș','s')>
+    <#assign _2663_value = _2663_value?replace('ṡ','s')>
+    <#assign _2663_value = _2663_value?replace('ṣ','s')>
+    <#assign _2663_value = _2663_value?replace('ṩ','s')>
+    <#assign _2663_value = _2663_value?replace('ʂ','s')>
+    <#assign _2663_value = _2663_value?replace('ᵴ','s')>
+    <#assign _2663_value = _2663_value?replace('ᶊ','s')>
+    <#assign _2663_value = _2663_value?replace('ȿ','s')>
+    <#assign _2663_value = _2663_value?replace('ɡ','g')>
+    <#assign _2663_value = _2663_value?replace('ß','ss')>
+    <#assign _2663_value = _2663_value?replace('ᴑ','o')>
+    <#assign _2663_value = _2663_value?replace('ᴓ','o')>
+    <#assign _2663_value = _2663_value?replace('ᴝ','u')>
+    <#assign _2663_value = _2663_value?replace('ť','t')>
+    <#assign _2663_value = _2663_value?replace('ţ','t')>
+    <#assign _2663_value = _2663_value?replace('ṱ','t')>
+    <#assign _2663_value = _2663_value?replace('ț','t')>
+    <#assign _2663_value = _2663_value?replace('ȶ','t')>
+    <#assign _2663_value = _2663_value?replace('ẗ','t')>
+    <#assign _2663_value = _2663_value?replace('ⱦ','t')>
+    <#assign _2663_value = _2663_value?replace('ṫ','t')>
+    <#assign _2663_value = _2663_value?replace('ṭ','t')>
+    <#assign _2663_value = _2663_value?replace('ƭ','t')>
+    <#assign _2663_value = _2663_value?replace('ṯ','t')>
+    <#assign _2663_value = _2663_value?replace('ᵵ','t')>
+    <#assign _2663_value = _2663_value?replace('ƫ','t')>
+    <#assign _2663_value = _2663_value?replace('ʈ','t')>
+    <#assign _2663_value = _2663_value?replace('ŧ','t')>
+    <#assign _2663_value = _2663_value?replace('ᵺ','th')>
+    <#assign _2663_value = _2663_value?replace('ɐ','a')>
+    <#assign _2663_value = _2663_value?replace('ᴂ','ae')>
+    <#assign _2663_value = _2663_value?replace('ǝ','e')>
+    <#assign _2663_value = _2663_value?replace('ᵷ','g')>
+    <#assign _2663_value = _2663_value?replace('ɥ','h')>
+    <#assign _2663_value = _2663_value?replace('ʮ','h')>
+    <#assign _2663_value = _2663_value?replace('ʯ','h')>
+    <#assign _2663_value = _2663_value?replace('ᴉ','i')>
+    <#assign _2663_value = _2663_value?replace('ʞ','k')>
+    <#assign _2663_value = _2663_value?replace('ɯ','m')>
+    <#assign _2663_value = _2663_value?replace('ɰ','m')>
+    <#assign _2663_value = _2663_value?replace('ᴔ','oe')>
+    <#assign _2663_value = _2663_value?replace('ɹ','r')>
+    <#assign _2663_value = _2663_value?replace('ɻ','r')>
+    <#assign _2663_value = _2663_value?replace('ɺ','r')>
+    <#assign _2663_value = _2663_value?replace('ʇ','t')>
+    <#assign _2663_value = _2663_value?replace('ʌ','v')>
+    <#assign _2663_value = _2663_value?replace('ʍ','w')>
+    <#assign _2663_value = _2663_value?replace('ʎ','y')>
+    <#assign _2663_value = _2663_value?replace('ú','u')>
+    <#assign _2663_value = _2663_value?replace('ŭ','u')>
+    <#assign _2663_value = _2663_value?replace('ǔ','u')>
+    <#assign _2663_value = _2663_value?replace('û','u')>
+    <#assign _2663_value = _2663_value?replace('ṷ','u')>
+    <#assign _2663_value = _2663_value?replace('ü','u')>
+    <#assign _2663_value = _2663_value?replace('ǘ','u')>
+    <#assign _2663_value = _2663_value?replace('ǚ','u')>
+    <#assign _2663_value = _2663_value?replace('ǜ','u')>
+    <#assign _2663_value = _2663_value?replace('ǖ','u')>
+    <#assign _2663_value = _2663_value?replace('ṳ','u')>
+    <#assign _2663_value = _2663_value?replace('ụ','u')>
+    <#assign _2663_value = _2663_value?replace('ű','u')>
+    <#assign _2663_value = _2663_value?replace('ȕ','u')>
+    <#assign _2663_value = _2663_value?replace('ù','u')>
+    <#assign _2663_value = _2663_value?replace('ủ','u')>
+    <#assign _2663_value = _2663_value?replace('ư','u')>
+    <#assign _2663_value = _2663_value?replace('ứ','u')>
+    <#assign _2663_value = _2663_value?replace('ự','u')>
+    <#assign _2663_value = _2663_value?replace('ừ','u')>
+    <#assign _2663_value = _2663_value?replace('ử','u')>
+    <#assign _2663_value = _2663_value?replace('ữ','u')>
+    <#assign _2663_value = _2663_value?replace('ȗ','u')>
+    <#assign _2663_value = _2663_value?replace('ū','u')>
+    <#assign _2663_value = _2663_value?replace('ṻ','u')>
+    <#assign _2663_value = _2663_value?replace('ų','u')>
+    <#assign _2663_value = _2663_value?replace('ᶙ','u')>
+    <#assign _2663_value = _2663_value?replace('ů','u')>
+    <#assign _2663_value = _2663_value?replace('ũ','u')>
+    <#assign _2663_value = _2663_value?replace('ṹ','u')>
+    <#assign _2663_value = _2663_value?replace('ṵ','u')>
+    <#assign _2663_value = _2663_value?replace('ᵫ','ue')>
+    <#assign _2663_value = _2663_value?replace('ⱴ','v')>
+    <#assign _2663_value = _2663_value?replace('ṿ','v')>
+    <#assign _2663_value = _2663_value?replace('ʋ','v')>
+    <#assign _2663_value = _2663_value?replace('ᶌ','v')>
+    <#assign _2663_value = _2663_value?replace('ⱱ','v')>
+    <#assign _2663_value = _2663_value?replace('ṽ','v')>
+    <#assign _2663_value = _2663_value?replace('ẃ','w')>
+    <#assign _2663_value = _2663_value?replace('ŵ','w')>
+    <#assign _2663_value = _2663_value?replace('ẅ','w')>
+    <#assign _2663_value = _2663_value?replace('ẇ','w')>
+    <#assign _2663_value = _2663_value?replace('ẉ','w')>
+    <#assign _2663_value = _2663_value?replace('ẁ','w')>
+    <#assign _2663_value = _2663_value?replace('ⱳ','w')>
+    <#assign _2663_value = _2663_value?replace('ẘ','w')>
+    <#assign _2663_value = _2663_value?replace('ẍ','x')>
+    <#assign _2663_value = _2663_value?replace('ẋ','x')>
+    <#assign _2663_value = _2663_value?replace('ᶍ','x')>
+    <#assign _2663_value = _2663_value?replace('ý','y')>
+    <#assign _2663_value = _2663_value?replace('ŷ','y')>
+    <#assign _2663_value = _2663_value?replace('ÿ','y')>
+    <#assign _2663_value = _2663_value?replace('ẏ','y')>
+    <#assign _2663_value = _2663_value?replace('ỵ','y')>
+    <#assign _2663_value = _2663_value?replace('ỳ','y')>
+    <#assign _2663_value = _2663_value?replace('ƴ','y')>
+    <#assign _2663_value = _2663_value?replace('ỷ','y')>
+    <#assign _2663_value = _2663_value?replace('ȳ','y')>
+    <#assign _2663_value = _2663_value?replace('ẙ','y')>
+    <#assign _2663_value = _2663_value?replace('ɏ','y')>
+    <#assign _2663_value = _2663_value?replace('ỹ','y')>
+    <#assign _2663_value = _2663_value?replace('ź','z')>
+    <#assign _2663_value = _2663_value?replace('ž','z')>
+    <#assign _2663_value = _2663_value?replace('ẑ','z')>
+    <#assign _2663_value = _2663_value?replace('ʑ','z')>
+    <#assign _2663_value = _2663_value?replace('ⱬ','z')>
+    <#assign _2663_value = _2663_value?replace('ż','z')>
+    <#assign _2663_value = _2663_value?replace('ẓ','z')>
+    <#assign _2663_value = _2663_value?replace('ȥ','z')>
+    <#assign _2663_value = _2663_value?replace('ẕ','z')>
+    <#assign _2663_value = _2663_value?replace('ᵶ','z')>
+    <#assign _2663_value = _2663_value?replace('ᶎ','z')>
+    <#assign _2663_value = _2663_value?replace('ʐ','z')>
+    <#assign _2663_value = _2663_value?replace('ƶ','z')>
+    <#assign _2663_value = _2663_value?replace('ɀ','z')>
+    <#assign _2663_value = _2663_value?replace('ﬁ','fi')>
+    <#assign _2663_value = _2663_value?replace('ﬂ','fl')>
+    <#assign _2663_value = _2663_value?replace('ĳ','ij')>
+    <#assign _2663_value = _2663_value?replace('œ','oe')>
+    <#assign _2663_value = _2663_value?replace('ₐ','a')>
+    <#assign _2663_value = _2663_value?replace('ₑ','e')>
+    <#assign _2663_value = _2663_value?replace('ᵢ','i')>
+    <#assign _2663_value = _2663_value?replace('ₒ','o')>
+    <#assign _2663_value = _2663_value?replace('ᵣ','r')>
+    <#assign _2663_value = _2663_value?replace('ᵤ','u')>
+    <#assign _2663_value = _2663_value?replace('ᵥ','v')>
+    <#assign _2663_value = _2663_value?replace('ₓ','x')>
+    <#return _2663_value>
+</#function>
+
+<#--
+getSequenceId
+- returns the raw sequence ID from search of the pfa record
+
+Parameter: forTodaySequenceOnly     - flag to filter today's pfa records only
+                                    - accepts boolean values true or false
+                                    - this is not used within this function
+                                    - this is used during template data preparation in payment file builder script
+    
+Return Value:
+    Sequence ID based on pfa search results
+    
+Sample Usage:
+    Given PFA for today with sequence IDs 1,2,3 and for yesterday with sequence IDs 4,5,6    
+    1. ${getSequenceId(true)}
+    2. ${getSequenceId(false)}
+     
+Sample Result:
+    1. 3
+    2. 6
+
+-->
+<#function getSequenceId forTodaySequenceOnly>
+    <#-- do nothing with forTodaySequenceOnly parameter as we only need this in data preparation -->
+    <#assign _2663_sequenceId = 0>
+    <#if (sequences?has_content && sequences?size > 0) >        
+        <#assign _2663_sequenceId= sequences[0].custrecord_2663_sequence_id>
+    </#if>
+    <#return _2663_sequenceId>
+</#function>
+
+<#--
+getCurrencySymbol
+- returns the 3-digit ISO currency symbol for the given currency name
+
+Parameter: currencyName     - name in NetSuite currency record
+    
+Return Value:
+    String containing currency symbol
+    
+Sample Usage:    
+    1. ${getCurrencySymbol("USA")}    
+     
+Sample Result:
+    1. "USD"
+
+-->
+<#function getCurrencySymbol (currencyName)>
+
+    <#-- 
+    for multiple currencies, "currencies" is in sequence form, check with ?size?has_content
+    for single currency, "currencies" is in record form, check with .symbol?has_content
+    if-else is not used here since boolean false is not always returned by ?has_content
+    -->
+    
+    <#assign _2663_symbol = "" >
+    <#if currencies?size?has_content>
+        <#-- for multiple currencies (search result) -->
+        <#list currencies as currency>
+            <#if currency.name == currencyName>
+                <#assign _2663_symbol = currency.symbol >
+                <#break>
+            </#if>
+        </#list>
+    </#if>
+    <#if currencies.symbol?has_content>
+        <#-- for single currency (record) -->
+        <#assign _2663_symbol = currencies.symbol >
+    </#if>
+    <#return _2663_symbol>
+</#function>
+
+
+<#--
+getCountryCode
+- returns the 2-letter country code for the given country 
+
+Parameter: country  - name of country
+    
+Return Value:
+    String containing country code
+    
+Sample Usage:    
+    1. ${getCountryCode("Singapore")}    
+     
+Sample Result:
+    1. "SG"
+
+-->
+<#-- contents are built in _2663.PaymentFileDataSrc().GetCountryCodeFunc() -->
+
+<#--
+getStateCode
+- returns the state code for the given state 
+
+Parameter: state  - name of state
+    
+Return Value:
+    String containing state code
+    
+Sample Usage:    
+    1. ${getStateCode("Alabama")}    
+     
+Sample Result:
+    1. "AL"
+
+-->
+<#-- contents are built in _2663.PaymentFileDataSrc().GetStateCodeFunc() -->
+
+<#--
+getAmount
+- returns a payment amount considering multiple currencies, base currency, and bank currency
+
+Parameter: payment  - payment search result object
+
+Parameter: multiCurrency    - flag if template is multi-currency
+                            - defaults to false
+    
+Return Value:
+    {Number} payment amount 
+    
+Sample Usage:    
+    1. Given a single currency format, and payment with amount of 100
+        ${getAmount(payment)}
+        
+    2. Given a multi-currency format, with base currency not equal to bank currency, payment with amount of 100, fxamount of 200, and formula currency amount of 300
+        ${getAmount(payment,true)}        
+        
+    3. Given a multi-currency format, with base currency equal to bank currency, payment with amount of 100, fxamount of 200, and formula currency amount of 300
+        ${getAmount(payment,true)}                
+     
+Sample Result:
+    1. 100
+    2. 200
+    3. 300
+
+-->
+<#-- contents are built in _2663.PaymentFileDataSrc().GetAmountFunc() -->
+
+
+<#--
+computeTotalAmount
+- adds all payment amounts
+
+Parameter: payments     - sequence of payment search results to be processed                        
+                        
+Parameter: multiCurrency    - flag if template is multi-currency
+                            - defaults to false
+
+Return Value:
+    Total Amount
+
+Sample Usage:    
+    1. Given payment search results (payments) with amounts 1,2,3
+       ${computeTotalAmount(payments)}
+    
+Sample Result:
+    1. 6
+-->
+<#-- contents are built in _2663.PaymentFileDataSrc().GetComputeTotalAmountFunc() -->
+
+<#--
+encloseString
+This function encloses the given string in between double quotes or single quotes if it contains the given escape character.
+
+Parameter:
+str The string to enclose
+maxLength The maximum length of the string including the enclosing characters
+escapeChar The character to check for
+enclosingChar The character which will be used to enclose the string
+
+Return Value:
+    A string enclosed between the enclosing characters if it contains the escape character
+
+Sample Usage:
+1. ${encloseString("ab^cd\$e",5,"\$","\"")}
+2. ${encloseString("ab^cd\$f",9,"^","x")}
+3. ${encloseString("ab^cd\$e",11,"*","x")}
+
+Sample Result:
+    1. "ab^"
+    2. xab^cd$fx
+    3. ab^cd$e
+-->
+
+<#function encloseString str maxLength escapeChar enclosingChar>
+	<#assign _2663_val = str >
+	<#assign regExpSpecialChars = ["^","$",".","?",",","\\","*","+","|"]>
+	<#if (regExpSpecialChars?seq_contains(escapeChar)?string("yes","no")=="yes") >
+		<#if (_2663_val?index_of(escapeChar)!=-1) >
+			<#if (maxLength?number-2 < _2663_val?length)>
+				<#assign _2663_val=_2663_val?substring(0,maxLength?number-2)>
+			</#if>
+			<#assign _2663_val=enclosingChar+_2663_val+enclosingChar>
+		</#if>
+	</#if>
+	<#return _2663_val>
+</#function>
+
+<#--
+isUnescapeAmpersandNeeded
+- checks if unescape operation is needed for ampersand character. 
+- Background: FreeMarker automatically converts ampersand to escaped form. This produces unwanted results if actual ampersand character is needed.
+
+Return Value:
+    Boolean true or false
+-->
+<#function isUnescapeAmpersandNeeded>
+    <#assign _2663_toUnescape = false>
+    <#assign _2663_paymentType = pfa.custrecord_2663_payment_type >
+    <#if _2663_paymentType == "EFT">
+        <#if cbank.custrecord_2663_eft_template.custrecord_2663_output_file_extension != "xml">
+            <#assign _2663_toUnescape = true>
+        </#if>        
+    <#elseif _2663_paymentType == "DD">
+        <#if cbank.custrecord_2663_dd_template.custrecord_2663_output_file_extension != "xml">
+            <#assign _2663_toUnescape = true>
+        </#if>
+    <#elseif _2663_paymentType == "Positive Pay">
+        <#if cbank.custrecord_2663_pp_template.custrecord_2663_output_file_extension != "xml">
+            <#assign _2663_toUnescape = true>
+        </#if>
+    </#if>
+    <#return _2663_toUnescape>
+</#function>

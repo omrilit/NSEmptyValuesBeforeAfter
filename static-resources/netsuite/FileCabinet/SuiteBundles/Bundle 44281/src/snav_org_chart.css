@@ -1,0 +1,270 @@
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.nodename {
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+td {
+    border: none;
+}
+
+.org-chart-table .child-line-row td,.org-chart-table .parent-line-row td,.org-chart-table  .tr-parent-downward-line td,.org-chart-table  .tr-parent-downward-line
+    {
+    height: 10px;
+    line-height: 10px;
+    background-colorX: yellow;
+    font-size: 1px;
+}
+
+.org-chart td {
+    text-alignx: center;
+    vertical-align: top;
+    border: 1px dotted white;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.org-chart-node-td,.org-chart-table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upperLeft {
+    xbackground-color: #CCFFFF;
+}
+
+.parent-line-left {
+    background-colorX: #FFCCFF;
+}
+
+.parent-line-left,.parent-line-right {
+    width: 50%
+}
+
+.org-chart .node-selected a {
+    color: white;
+}
+
+.org-chart .node-selected {
+    background-color: #607799;
+}
+
+.org-chart .node {
+    border: 1px solid #6699FF;
+    padding: 4px;
+    display: inline-block;
+    widthx: 100%;
+    border-radius: 5px;
+    text-align: center;
+    backgound-color: #EFEFEF;
+    Xbox-shadow: 2px 2px 1px #888888;
+}
+
+.org-chart .nodeContainer {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 0px;
+    width: 100%;
+    border: 0px dotted red;
+    text-align: center;
+}
+
+.org-chart-drag-backgroundx {
+    xbackground-color: silver;
+    xborder-radius: 5px;
+    box-shadow: 3px 3px 2px #888888;
+    xmargin-bottom: 8px;
+}
+
+.xnode:hover {
+    background-color: #99CCFF
+}
+
+.org-chart .top {
+    border-top: 1px solid gray;
+}
+
+.org-chart .right {
+    border-right: 1px solid gray;
+}
+
+#tmpTable {
+    padding: 0px;
+    border: none;
+    widthx: 100%;
+}
+
+.org-chart-expand-or-collapse {
+    border: 1px dotted silver;
+    overflow: hidden;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: none;
+    font-size: .8em;
+    color: dimgray;
+    margin-left: 0px;
+    background-color: white;
+    visibility: hidden;
+}
+
+.org-chart-expand-or-collapse:hover {
+    background-color: #99CCFF;
+}
+
+.org-chart-table {
+    xmargin: 10px;
+    background-colorx: yellow;
+    border: 0px dotted green;
+}
+
+.org-chart-table td {
+    borderx: 1px solid silver
+}
+
+.org-chart-view-supervisor {
+    font-size: 20px;
+    margin-left: 0px;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    top: 33px;
+    text-decoration: none;
+    borderx: 1px solid silver;
+    background-color: white;
+    color: dimgray;
+}
+
+.org-chart-show-subordinates {
+    font-size: 20px;
+    top: 0px;
+    margin-left: 3px;
+    position: relative;
+    text-decoration: none;
+    borderx: 1px solid silver;
+    background-color: white;
+    color: dimgray;
+    display: none;
+}
+
+.org-chart-view-supervisor:hover,.org-chart-show-subordinates:hover {
+    background-color: #99CCFF;
+}
+
+.tr-parent-downward-line {
+    height: 15px;
+    line-height: 15px
+}
+
+.tooltip-styles {
+	font-size: 10px;
+	color: black;
+	max-width: 300px;
+}
+
+.tooltip-styles .background {
+	position: absolute;
+	width: 100%;
+	height: calc(100% - 35px);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	opacity: 0.03;
+}
+
+.tooltip-styles .subs-name {
+	font-size: 11px;
+	font-weight: bold;
+	color: white;
+	background-color: #768eb1;
+	padding: 5px;
+	text-align: left;
+}
+
+.tooltip-styles .details {
+	padding: 3px 5px;
+}
+
+.tooltip-styles .details > div {
+	text-align: left;
+	padding: 2px 0px;
+}
+
+.tooltip-styles .details > div > div:nth-child(1) {
+	display: inline-block;
+	width: 70px;
+	text-align: left;
+	vertical-align: top;
+	color: gray;
+}
+
+.tooltip-styles .details > div > div:nth-child(2) {
+	display: inline-block;
+	width: 200px;
+	text-align: left;
+	border-bottom: 1px solid #c1bfbf;
+}
+
+.tooltip-styles .subs-note {
+	font-size: 9px;
+	padding: 2px;
+	background-color: #eae8e8;
+	line-height: 1.5;
+}
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-shadow-customized .tooltipster-box {
+	border: 1px solid #eae8e8;
+	border-radius: 6px;
+}
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-shadow-customized .tooltipster-content {
+	padding: 0px;
+}
+
+.sublogo {
+    display: inline;
+}
+
+.setting_disabled {
+    color: GrayText
+}
+
+.toggled-on {
+    background: url('/images/sprite-list.png') no-repeat -50px -150px;
+    zoom:0.6;
+    width: 45px;
+    height: 18px;
+}
+
+.toggled-off {
+    background: url('/images/sprite-list.png') no-repeat -50px -200px;
+    zoom:0.6;
+    width: 45px;
+    height: 18px;
+}
+
+.AdminSetting {
+}
+
+.PopupSetting {
+    float: left;
+    position: absolute;
+}
+
+.ui-dialog .ui-dialog-content {
+    font-size: .6em;
+}
+
+
+

@@ -1,0 +1,283 @@
+<!--Click a node to change your restricted view preference for subsidiary. When there is no subsidiary restriction in the preferences, the default subsidiary of the employee is selected in the subsidiary navigator (??? - teddy).-->
+<div id="dlgSettings">
+    <div class="PopupSetting" style="display:none;">
+        <table>
+            <tr class="AdminSetting">
+                <td /> 
+                <td width="100">
+                    <label id="lblUseTooltip">Enable Tooltip</label>
+                </td>
+                <td>
+                    <div id="tglEnableUseTooltip" class="toggled-on" value="true" onclick="_OnTglEnableTooltip_Click()" />
+                </td>
+            </tr>
+            <tr id="rowUseLogo" title="">
+                <td>
+                    <input id="chkUseLogo" type="checkbox" onclick="_OnShowLogo_Click()" />
+                </td>
+                <td width="100">
+                    <label id="lblUseLogo">Show Logo</label>
+                </td>
+                <td>
+                    <div id="tglEnableUseLogo" class="toggled-on AdminSetting" value="true" onclick="_OnTglEnableUseLogo_Click()" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+<div>
+    <table>
+        <tr>
+            <td valign="top"> 
+                <a onclick="_OnSettings_Click(); return false;" href="#" class='dottedlink'>
+                    <img id="imgSetting" width="15px" src="{SETTINGS_ICON_URL}" style="margin-top:2px" />
+                    Settings
+                </a>
+                &nbsp;
+                <a onclick="snavShowHelp(); return false;" href="#" class='dottedlink'>
+                    <img id="snavHelpIcon" width="14px" src="{snavIconHelp}" style="margin-top: 2px" />
+                    Help
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+
+<div
+    id='snavPlaceholder1'
+    class='org-chart'
+    style='border: 0px dotted green; margin-top: 10px; width: 100%'
+></div>
+<div
+    id='snavProgress'
+    class='smalltext'
+    style='border: 0px dotted red'
+>
+    <br>
+    <img width="15px" src='{snavIconLoading}' />Loading subsidiaries...
+</div>
+<!--templates -->
+<!-- root node -->
+<div
+    id='tmpRoot'
+    style='display: none'
+>
+    <table
+        id='root-table--{internalid}'
+        class='org-chart-table'
+    >
+        <tr>
+            <td
+                id='td-node--{internalid}'
+                class='org-chart-node-td'
+            >
+                <div
+                    id="div--{internalid}"
+                    class='nodeContainer'
+                >
+                    <a
+                        class="org-chart-view-supervisor"
+                        onclickX="onExpandOrCollapseClicked(event);"
+                        href="#"
+                    >&uarr;</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<table style='display: none'>
+    <!-- vertical lines for each node -->
+    <tr id='tmpChildLine'>
+        <td
+            id='td-child-line-left-{internalid}'
+            class='top right upperLeft'
+        >&nbsp;</td>
+        <td
+            id='td-child-line-right-{internalid}'
+            class='top'
+        >&nbsp;</td>
+    </tr>
+    
+    <!-- per child node -->
+    <tr id='tmpChildNode'>
+        <td id='td-node--{internalid}' colspan='2' class='org-chart-node-td' data-id='{internalid}'>
+            <div id='div--{internalid}' class='nodeContainer'>
+                <div class='org-chart-drag-background' style='margin: 0px'>
+                    <span data-tooltip-content="#tooltip-content-{internalid}" class='node node-not-selected node-tooltip' onclick='return snavRestrictView("{internalid}");' class='clearfix' data-id='{internalid}' data-parentid='{parentId}' data-fullname='{fullname}' style='text-align: center; cursor: pointer' >
+                        <a target='_blank' href='#' class='nodename portlettext' style='text-decoration: none; border: none; padding: 2px' >{HTM_LOGO}{name}</a>
+                    </span>
+                    <!-- tooltip template -->
+                    <div style="display: none;">
+	                    <span id="content-{internalid}">
+	                    	<div class="tooltip-styles">
+		                    	<div class="subs-name">{name}</div>
+		                    	<div class="details">
+	                    			<div class="background" style="background-image: url('{LogoURL}');"></div>
+		                    		<div><div>Country</div><div>{country}</div></div>
+		                    		<div style="{phoneStyle}"><div>Phone</div><div>{phone}</div></div>
+		                    		<div style="{currencyStyle}"><div>Currency</div><div>{currency}</div></div>
+		                    		<div style="{urlStyle}"><div>Website</div><div>{url}</div></div>
+		                    		<div><div>Address</div><div>{address}</div></div>
+		                    	</div>
+	                    	</div>
+	                    </span>
+                    </div>
+                </div>
+                
+                <!-- this is the single vertical line below the parent -->
+                <table id='table-parent-downward-line--{internalid}' style='width: 100%; display: none; margin: 0px' cellspacing='0' cellpadding='0'>
+                    <tr id='tr-parent-downward-line--{internalid}' class='tr-parent-downward-line'>
+                        <td style='border-right: 1px solid silver'>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<script id="snavParentScript" type="text/javascript">
+function snavShowSubNavPopup() {
+    // window's jQuery object
+    var jWin = jQuery(window.top);
+    
+    // get window's visible width and height
+    var winWidth = jWin.width();
+    var winHeight = jWin.height();
+    // compute for max-width and max-height for popup
+    var maxWidth = winWidth - 60;
+    var maxHeight = winHeight - 60;
+
+    // get body container
+    var body = jQuery('html');
+    
+    // get actual subnav width/height taken from within iframe and add buffer to avoid scrollbars
+    var width = (snavWidth + 25);
+    var height = (snavHeight + 25);
+    
+    // resize width/height to smaller to not exceed the expected window boundaries
+    width = (winWidth - width) >= 60 ? width : (winWidth - 60);
+    height = (winHeight - height) >= 60 ? height : (winHeight - 60);
+    
+    // set min-width and min-height
+    var minWidth = 300;
+    var minHeight = 200;
+    width = (winWidth >= (minWidth + 60) && width < minWidth) ? minWidth : width;
+    height = (winHeight >= (minHeight + 60) && height < minHeight) ? minHeight : height;
+    
+    // compute for top/left positions
+    var scrollTop = jWin.scrollTop();
+    var scrollLeft = jWin.scrollLeft();
+    var top = (winHeight / 2) - (height / 2) + scrollTop;
+    var left = (winWidth / 2) - (width / 2) + scrollLeft;
+
+    // detach iframe from portlet
+    snavIframeParent = jQuery('#snavPortlet').parent();
+    var snav = jQuery('#snavPortlet').detach();
+    // keep original width/height before setting
+    snavIframeWidth = snav.css('width');
+    snavIframeHeight = snav.css('height');
+    // set width/height of iframe to 100%
+    snav.css({ 'width' : '100%', 'height' : '100%' });
+    
+    // create overlay
+    var overlay = jQuery('<div>').attr({ id : 'snavOverlay' }).css({
+        'background-color' : '#333',
+        'opacity' : '0.6',
+	    'height' : '100%',
+	    'position' : 'absolute',
+	    'top' : scrollTop + 'px',
+	    'left' : scrollLeft + 'px',
+	    'z-index' : '1001',
+	    'width' : '100%'
+    });
+    overlay.appendTo(body);
+    
+    // create popup and append iframe
+    var popup = jQuery('<div>').attr({ id : 'snavPopup' }).css({
+        'width' : width + 'px',
+        'height' : height + 'px',
+        'max-width' : maxWidth + 'px',
+        'max-height' : maxHeight + 'px',
+        'border' : '5px solid rgb(206,219,230)',
+        '-moz-border-radius' : '5px',
+        '-webkit-border-radius' : '5px',
+        '-khtml-border-radius' : '5px',
+        'border-radius' : '5px',
+        'background-color' : 'white',
+        'position' : 'absolute',
+        'top' : top + 'px',
+        'left' : left + 'px',
+        'padding' : '5px',
+        'z-index' : '1001',
+        'display' : 'none'
+    }).append(snav);
+    popup.appendTo(body);
+    
+    // add close icon to popup
+    var close = jQuery("<img>").attr({ src : snavIconClose }).css({
+        'width' : '15px',
+        'position' : 'absolute',
+        'top' : '5px',
+        'right' : '5px',
+        'cursor' : 'pointer'
+    }).on('click', snavCloseSubNavPopup);
+    close.appendTo(popup);
+    
+    // show popup
+    popup.show('scale');
+    
+    // disable scroll
+    jWin.bind('scroll', function() {
+        // disable vertical scroll
+        if (jWin.scrollTop() !== scrollTop) {
+            jWin.scrollTop(scrollTop);
+        }
+        // disable horizontal scroll
+        if (jWin.scrollLeft() !== scrollLeft) {
+            jWin.scrollLeft(scrollLeft);
+        }
+    })
+    
+    // add keyup event to detect escape key press on parent document
+    jQuery(document).keyup(snavOnKeyup);
+ 	// add keyup event to detect escape key press on iframe document
+    setTimeout(function() {
+        snav.contents().keyup(snavOnKeyup);
+    }, 2000);
+}
+
+function snavOnKeyup(e) {
+    if (e.keyCode == 27) { // escape key
+        // close popup
+        snavCloseSubNavPopup();
+	}
+}
+
+function snavCloseSubNavPopup() {
+    // unbind keyup event
+    jQuery(document).unbind('keyup');
+    jQuery('#snavPortlet').contents().unbind('keyup');
+    
+    // detach iframe from popup
+    var snav = jQuery('#snavPortlet').detach();
+    // remove popup from body
+    jQuery('#snavPopup').remove();
+    jQuery('#snavOverlay').remove();
+    
+    // re-attach to iframe parent in portlet
+    snav.css({ 'width' : snavIframeWidth, 'height' : snavIframeHeight });
+    snavIframeParent.append(snav);
+
+    // restore scroll
+    jQuery(window.top).unbind('scroll');
+}
+</script>

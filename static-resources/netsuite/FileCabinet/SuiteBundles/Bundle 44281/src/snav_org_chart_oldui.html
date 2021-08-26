@@ -1,0 +1,118 @@
+<!--Click a node to change your restricted view preference for subsidiary. When there is no subsidiary restriction in the preferences, the default subsidiary of the employee is selected in the subsidiary navigator (??? - teddy).
+-->
+<a
+    onclick="snavShowHelp(); return false;"
+    href="#"
+    class='dottedlink'
+>
+    About Subsidiary Navigator <img
+        width="15px"
+        src="https://netsuite.custhelp.com/euf/assets/images/help-topics.png"
+        style="margin-top: 2px"
+        id="snavHelpIcon"
+    >
+</a>
+<div
+    id='snavPlaceholder1'
+    class='org-chart'
+    style='border: 0px dotted green; margin-top: 10px'
+></div>
+<div
+    id='snavProgress'
+    class='smalltext'
+    style='border: 0px dotted red'
+>
+    <br>
+    <img src='/images/setup/hourglass.gif' />Loading subsidiaries...
+</div>
+<!--templates -->
+<!-- root node -->
+<div
+    id='tmpRoot'
+    style='display: none'
+>
+    <table
+        id='root-table--{internalid}'
+        class='org-chart-table'
+    >
+        <tr>
+            <td
+                id='td-node--{internalid}'
+                class='org-chart-node-td'
+            >
+                <div
+                    id="div--{internalid}"
+                    class='nodeContainer'
+                >
+                    <a
+                        class="org-chart-view-supervisor"
+                        onclickX="onExpandOrCollapseClicked(event);"
+                        href="#"
+                    >&uarr;</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<table style='display: none'>
+    <!-- vertical lines for each node -->
+    <tr id='tmpChildLine'>
+        <td
+            id='td-child-line-left-{internalid}'
+            class='top right upperLeft'
+        >&nbsp;</td>
+        <td
+            id='td-child-line-right-{internalid}'
+            class='top'
+        >&nbsp;</td>
+    </tr>
+    <!-- per child node -->
+    <tr id='tmpChildNode'>
+        <td
+            id='td-node--{internalid}'
+            colspan='2'
+            class='org-chart-node-td'
+            data-id='{internalid}'
+        >
+            <div
+                id='div--{internalid}'
+                class='nodeContainer'
+            >
+                <div
+                    class='org-chart-drag-background'
+                    style='margin: 0px'
+                >
+                    <span
+                        title='Click to limit the information displayed on your dashboard, searches, and reports to a specific subsidiary and its sub-subsidiaries.'
+                        class='node node-not-selected'
+                        onclick='return snavRestrictView("{internalid}");'
+                        class='clearfix'
+                        data-id='{internalid}'
+                        data-fullname='{fullname}'
+                        style='text-align: center; cursor: pointer'
+                    ><a
+                            target='_blank'
+                            href='#'
+                            class='formtabtextoffX nodename portlettext'
+                            style='text-decoration: none; border: none; padding: 2px'
+                        >{name}</a></span>
+                </div>
+                <!-- this is the single vertical line below the parent -->
+                <table
+                    id='table-parent-downward-line--{internalid}'
+                    style='width: 100%; display: none; margin: 0px'
+                    cellspacing='0'
+                    cellpadding='0'
+                >
+                    <tr
+                        id='tr-parent-downward-line--{internalid}'
+                        class='tr-parent-downward-line'
+                    >
+                        <td style='border-right: 1px dashed silver'>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,158 @@
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.nodename {
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+td {
+    border: none;
+}
+
+.child-line-row td,.parent-line-row td {
+    height: 5px;
+    line-height: 5px;
+    background-colorX: yellow;
+}
+
+.org-chart td {
+    text-alignx: center;
+    vertical-align: top;
+    border: 1px solid silver;
+    border: 1px solid transparent;
+}
+
+.org-chart-node-td,.org-chart-table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upperLeft {
+    xbackground-color: #CCFFFF;
+}
+
+.parent-line-left {
+    background-colorX: #FFCCFF;
+}
+
+.parent-line-left,.parent-line-right {
+    width: 50%
+}
+
+.org-chart .node-selected a {
+    color: white;
+}
+
+.org-chart .node {
+    border: 1px solid silver;
+    padding: 2px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 1px #888888;
+}
+
+.org-chart .nodeContainer {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 0px;
+    width: 100%;
+    border: 0px dotted red;
+    text-align: center;
+}
+
+.org-chart-drag-backgroundx {
+    xbackground-color: silver;
+    xborder-radius: 5px;
+    box-shadow: 3px 3px 2px #888888;
+    xmargin-bottom: 8px;
+}
+
+.xnode:hover {
+    background-color: #99CCFF
+}
+
+.org-chart .top {
+    border-top: 1px dashed gray;
+}
+
+.org-chart .right {
+    border-right: 1px dashed gray;
+}
+
+#tmpTable {
+    padding: 0px;
+    border: none;
+    widthx: 100%;
+}
+
+.org-chart-expand-or-collapse {
+    border: 1px dotted silver;
+    overflow: hidden;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: none;
+    font-size: .8em;
+    color: dimgray;
+    margin-left: 0px;
+    background-color: white;
+    visibility: hidden;
+}
+
+.org-chart-expand-or-collapse:hover {
+    background-color: #99CCFF;
+}
+
+.org-chart-table {
+    xmargin: 10px;
+    background-colorx: yellow;
+    border: 0px dotted green;
+}
+
+.org-chart-table td {
+    borderx: 1px solid silver
+}
+
+.org-chart-view-supervisor {
+    font-size: 20px;
+    margin-left: 0px;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    top: 33px;
+    text-decoration: none;
+    borderx: 1px solid silver;
+    background-color: white;
+    color: dimgray;
+}
+
+.org-chart-show-subordinates {
+    font-size: 20px;
+    top: 0px;
+    margin-left: 3px;
+    position: relative;
+    text-decoration: none;
+    borderx: 1px solid silver;
+    background-color: white;
+    color: dimgray;
+    display: none;
+}
+
+.org-chart-view-supervisor:hover,.org-chart-show-subordinates:hover {
+    background-color: #99CCFF;
+}
+
+.tr-parent-downward-line {
+    height: 15px;
+    line-height: 15px
+}

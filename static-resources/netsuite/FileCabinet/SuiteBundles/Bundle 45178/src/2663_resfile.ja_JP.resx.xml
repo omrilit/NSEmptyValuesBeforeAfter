@@ -1,0 +1,377 @@
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="err_bank_name_exists" xml:space="preserve">
+    <value>銀行名は存在しています。</value>
+  </data>
+  <data name="fld_label_dept" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="fld_label_class" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="fld_label_loc" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="fld_helptext_dept" xml:space="preserve">
+    <value>Defines the default department for payment(s).</value>
+  </data>
+  <data name="fld_helptext_class" xml:space="preserve">
+    <value>Defines the default class for payment(s).</value>
+  </data>
+  <data name="fld_helptext_loc" xml:space="preserve">
+    <value>Defines the default location for payment(s).</value>
+  </data>
+  <data name="warn_bank_pri_to_sec" xml:space="preserve">
+    <value>Note: Setting this bank detail as primary will change other details to secondary.</value>
+  </data>
+  <data name="warn_bank_no_primary" xml:space="preserve">
+    <value>Note: There are no primary bank details for this entity. Please set one bank detail as primary to include this entity for EFT.</value>
+  </data>
+  <data name="fld_validator_init_err" xml:space="preserve">
+    <value>Unable to initialize conditions for field validation.</value>
+  </data>
+  <data name="fld_validator_mandatory" xml:space="preserve">
+    <value>Field is mandatory.</value>
+  </data>
+  <data name="fld_validator_alpha" xml:space="preserve">
+    <value>Field must be alphabetic characters</value>
+  </data>
+  <data name="fld_validator_sp" xml:space="preserve">
+    <value> and can have special characters: </value>
+  </data>
+  <data name="fld_validator_alpha_uppercase" xml:space="preserve">
+    <value> Field must be in uppercase</value>
+  </data>
+  <data name="fld_validator_alpha_lowercase" xml:space="preserve">
+    <value> Field must be in lowercase</value>
+  </data>
+  <data name="period" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="fld_validator_num" xml:space="preserve">
+    <value>Field must be numeric.</value>
+  </data>
+  <data name="fld_validator_num_dec_ok" xml:space="preserve">
+    <value> Decimals are allowed.</value>
+  </data>
+  <data name="fld_validator_num_dec_ng" xml:space="preserve">
+    <value> Decimals are not allowed.</value>
+  </data>
+  <data name="fld_validator_validchar" xml:space="preserve">
+    <value>Field must only contain characters: </value>
+  </data>
+  <data name="fld_validator_invalidchar" xml:space="preserve">
+    <value>Field must not contain characters: </value>
+  </data>
+  <data name="fld_validator_len" xml:space="preserve">
+    <value>Field length must be </value>
+  </data>
+  <data name="fld_validator_len_fixed" xml:space="preserve">
+    <value> characters.</value>
+  </data>
+  <data name="fld_validator_len_max" xml:space="preserve">
+    <value> characters or less.</value>
+  </data>
+  <data name="fld_validator_len_range" xml:space="preserve">
+    <value>between</value>
+  </data>
+  <data name="fld_validator_hankaku" xml:space="preserve">
+    <value>Field must be half-width katakana characters</value>
+  </data>
+  <data name="err_eft_in_progress" xml:space="preserve">
+    <value>Another EFT process is currently in progress.</value>
+  </data>
+  <data name="err_file_ref" xml:space="preserve">
+    <value>File reference : </value>
+  </data>
+  <data name="err_proc_state" xml:space="preserve">
+    <value>Processing state : </value>
+  </data>
+  <data name="err_exit_and_retry" xml:space="preserve">
+    <value>Please exit and retry at a later time.</value>
+  </data>
+  <data name="err_no_payments_selected" xml:space="preserve">
+    <value>Please ensure that payments are selected for processing.</value>
+  </data>
+  <data name="fld_label_file_id" xml:space="preserve">
+    <value>File Id</value>
+  </data>
+  <data name="fld_label_total_lines" xml:space="preserve">
+    <value>Total Lines</value>
+  </data>
+  <data name="fld_label_lines_selected" xml:space="preserve">
+    <value>Lines Selected</value>
+  </data>
+  <data name="fld_label_total_amt_paid" xml:space="preserve">
+    <value>Total Amount Paid</value>
+  </data>
+  <data name="fld_label_amt_selected" xml:space="preserve">
+    <value>Amount Selected</value>
+  </data>
+  <data name="fld_label_submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="fld_label_select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="fld_label_mark_all" xml:space="preserve">
+    <value>Mark All</value>
+  </data>
+  <data name="fld_label_unmark_all" xml:space="preserve">
+    <value>Unmark All</value>
+  </data>
+  <data name="fld_label_name_display" xml:space="preserve">
+    <value>Payee</value>
+  </data>
+  <data name="fld_label_trandate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="fld_label_tranid" xml:space="preserve">
+    <value>Reference Number</value>
+  </data>
+  <data name="fld_label_postingperiod" xml:space="preserve">
+    <value>Posting Period</value>
+  </data>
+  <data name="fld_label_currency_display" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="fld_label_total" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="err_invalid_state" xml:space="preserve">
+    <value>Invalid state, there are no payment file records for processing.</value>
+  </data>
+  <data name="err_error_state" xml:space="preserve">
+    <value>Error state: </value>
+  </data>
+  <data name="fld_label_refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="fld_label_reprocess" xml:space="preserve">
+    <value>Reprocess</value>
+  </data>
+  <data name="fld_label_cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="fld_label_rollback" xml:space="preserve">
+    <value>Rollback</value>
+  </data>
+  <data name="fld_label_reversepayments" xml:space="preserve">
+    <value>Reverse Vendor Payments</value>
+  </data>
+  <data name="fld_label_notifypayments" xml:space="preserve">
+    <value>Email Payment Notification</value>
+  </data>
+  <data name="fld_label_recreatefile" xml:space="preserve">
+    <value>Recreate File</value>
+  </data>
+  <data name="sublist_label_single_curr" xml:space="preserve">
+    <value>Payment Details</value>
+  </data>
+  <data name="sublist_label_multi_curr" xml:space="preserve">
+    <value>Multicurrency Payment Details</value>
+  </data>
+  <data name="err_amt_entered" xml:space="preserve">
+    <value>Amount entered is $</value>
+  </data>
+  <data name="err_amt_remaining" xml:space="preserve">
+    <value>. Please ensure that the payment amount is greater than $0 and not greater than the amount remaining, $</value>
+  </data>
+  <data name="fld_label_subsidiary" xml:space="preserve">
+    <value>Subsidiary</value>
+  </data>
+  <data name="err_mandatory_flds" xml:space="preserve">
+    <value>Please enter the following mandatory field(s) :</value>
+  </data>
+  <data name="err_acctg_tax_period_open" xml:space="preserve">
+    <value>Please ensure that the Accounting and Tax Periods are open.</value>
+  </data>
+  <data name="fld_label_bank_acct" xml:space="preserve">
+    <value>Bank account</value>
+  </data>
+  <data name="fld_helptext_bank_acct" xml:space="preserve">
+    <value>Defines bank from which payments will be made.</value>
+  </data>
+  <data name="fld_label_ap_acct" xml:space="preserve">
+    <value>A/P account</value>
+  </data>
+  <data name="fld_helptext_ap_acct" xml:space="preserve">
+    <value>Defines the AP Account filter which will be used in the retrieval of available bills.\n\nThis is a mandatory field and is required to list available bills.</value>
+  </data>
+  <data name="fld_helptext_postingperiod" xml:space="preserve">
+    <value>Defines the accounting period in which selected bill will be posted.</value>
+  </data>
+  <data name="fld_label_duedate_from" xml:space="preserve">
+    <value>Due date from</value>
+  </data>
+  <data name="fld_helptext_duedate_from" xml:space="preserve">
+    <value>If entered, only bills greater than or equal to this date will be listed.</value>
+  </data>
+  <data name="fld_label_duedate_to" xml:space="preserve">
+    <value>to</value>
+  </data>
+  <data name="fld_helptext_duedate_to" xml:space="preserve">
+    <value>If entered, only bills less than or equal to this date will be listed.</value>
+  </data>
+  <data name="fld_label_vendor" xml:space="preserve">
+    <value>Vendor</value>
+  </data>
+  <data name="fld_helptext_vendor" xml:space="preserve">
+    <value>Select filter available bills only for that vendor.</value>
+  </data>
+  <data name="fld_label_employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="fld_helptext_employee" xml:space="preserve">
+    <value>Select filter available bills only for that employee.</value>
+  </data>
+  <data name="fld_label_procdate" xml:space="preserve">
+    <value>Date to be processed</value>
+  </data>
+  <data name="fld_helptext_procdate" xml:space="preserve">
+    <value>Defines the date on which the bank will process the file.</value>
+  </data>
+  <data name="fld_label_file_ref_note" xml:space="preserve">
+    <value>EFT file reference note</value>
+  </data>
+  <data name="fld_helptext_file_ref_note" xml:space="preserve">
+    <value>Defines the EFT file reference note. The reference note appears within the EFT file.</value>
+  </data>
+  <data name="fld_helptext_lines_selected" xml:space="preserve">
+    <value>The count of the total selected bills.</value>
+  </data>
+  <data name="fld_helptext_total_amt_paid" xml:space="preserve">
+    <value>The sum of the payment amount of selected bills.</value>
+  </data>
+  <data name="fld_label_type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="fld_label_duedate" xml:space="preserve">
+    <value>Due Date</value>
+  </data>
+  <data name="fld_label_amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="fld_label_amount_remaining" xml:space="preserve">
+    <value>Amount Remaining</value>
+  </data>
+  <data name="fld_label_payment_amt" xml:space="preserve">
+    <value>Payment Amount</value>
+  </data>
+</root>
