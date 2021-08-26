@@ -1,0 +1,12 @@
+netsuite.file SuiteScripts_SSSDiscountApproval_js@dv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = true
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/SSSDiscountApproval.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/SSSDiscountApproval.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+}

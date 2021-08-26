@@ -1,0 +1,12 @@
+netsuite.file SuiteScripts_setchargesaftersubmit@d {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/setchargesaftersubmit"
+  content = file("netsuite/FileCabinet/SuiteScripts/setchargesaftersubmit")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+}

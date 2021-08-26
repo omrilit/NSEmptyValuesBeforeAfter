@@ -1,0 +1,12 @@
+netsuite.file SuiteScripts_SSO_test_deploy_js@duuv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/SSO_test_deploy.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/SSO_test_deploy.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+}

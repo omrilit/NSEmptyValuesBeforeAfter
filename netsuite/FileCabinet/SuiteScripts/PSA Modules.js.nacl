@@ -1,0 +1,12 @@
+netsuite.file SuiteScripts_PSA_Modules_js@dsv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/PSA Modules.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/PSA Modules.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+}

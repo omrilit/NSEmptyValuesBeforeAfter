@@ -1,0 +1,12 @@
+netsuite.file SuiteScripts_ProjectReport_JSON_js@duv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/ProjectReport_JSON.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/ProjectReport_JSON.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+}

@@ -1,0 +1,12 @@
+netsuite.file SuiteScripts_openair_dashboard_js@duv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/openair_dashboard.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/openair_dashboard.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+}

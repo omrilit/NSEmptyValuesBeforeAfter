@@ -1,0 +1,12 @@
+netsuite.file SuiteScripts_updatelinitems_js@dv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = true
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/updatelinitems.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/updatelinitems.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+}

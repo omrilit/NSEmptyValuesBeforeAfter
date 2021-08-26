@@ -1,0 +1,13 @@
+netsuite.file SuiteScripts_transaction_discount_txt@dsv {
+  description = "to be used on transaction forms to control discount calculations via JS"
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/transaction discount.txt"
+  content = file("netsuite/FileCabinet/SuiteScripts/transaction discount.txt")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+}
