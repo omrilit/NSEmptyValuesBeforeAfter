@@ -1,0 +1,1249 @@
+﻿<TaxCustomization>
+    <TaxFields>
+        <TaxField id="custrecord_4110_reduced_rate" type="checkbox" tag="Reduced"/>
+        <TaxField id="custrecord_4110_super_reduced" type="checkbox" tag="SuperReduced"/>
+        <TaxField id="custrecord_4110_import" type="checkbox" tag="Import"/>
+        <TaxField id="custrecord_4110_capital_goods" type="checkbox" tag="CapitalGoods"/>
+        <TaxField id="custrecord_4110_government" type="checkbox" tag="Government"/>
+        <TaxField id="custrecord_4110_special_territory" type="checkbox" tag="Territory"/>
+        <TaxField id="custrecord_4110_surcharge" type="checkbox" tag="Surcharge"/>
+        <TaxField id="custrecord_4110_purchaser_issued" type="checkbox" tag="PurchaserIssued"/>
+        <TaxField id="custrecord_4110_cash_register" type="checkbox" tag="CashRegister"/>
+        <TaxField id="custrecord_4110_no_tax_invoice" type="checkbox" tag="NoInvoice"/>
+        <TaxField id="custrecord_4110_duplicate" type="checkbox" tag="Duplicate"/>
+        <TaxField id="custrecord_4110_triplicate" type="checkbox" tag="Triplicate"/>
+        <TaxField id="custrecord_4110_other_tax_evidence" type="checkbox" tag="OtherTaxEvidence"/>
+        <TaxField id="custrecord_4110_electronic" type="checkbox" tag="Electronic"/>
+        <TaxField id="custrecord_4110_no_tax_credit" type="checkbox" tag="NoCredit"/>
+        <TaxField id="custrecord_4110_non_operation" type="checkbox" tag="NonOperation"/>
+        <TaxField id="custrecord_4110_category" type="list" tag="Category">
+            <HelpText defaultlanguage="en">
+                <Help language="en">Select from the dropdown the category of goods or services that this tax code applies to.</Help>
+                <Help language="es">Seleccione el tipo de bienes o servicios que establece la tasa impositiva asociada al c&#x00F3;digo fiscal.</Help>
+                <Help language="pt">Selecione a categoria dos produtos ou servi&#x00E7;os que define a taxa do imposto associada ao c&#x00F3;digo do imposto.</Help>
+            </HelpText>
+        </TaxField>
+        <TaxField id="custrecord_4110_unknown_tax_credit" type="checkbox" tag="UnknownTaxCredit"/>
+        <TaxField id="custrecord_4110_suspended" type="checkbox" tag="Suspended"/>
+        <TaxField id="custrecord_4110_non_taxable" type="checkbox" tag="NonTaxable"/>
+        <TaxField id="custrecord_4110_partial_credit" type="checkbox" tag="PartialCredit"/>
+        <TaxField id="custrecord_4110_duty" type="checkbox" tag="Duty"/>
+        <TaxField id="custrecord_4110_paid" type="checkbox" tag="Paid"/>
+        <TaxField id="custrecord_4110_outside_customs" type="checkbox" tag="OutsideCustoms"/>
+        <TaxField id="custrecord_4110_non_resident" type="checkbox" tag="NonResident"/>
+        <TaxField id="custrecord_4110_non_recoverable" type="checkbox" tag="NonRecoverable"/>
+        <TaxField id="custrecord_4110_reverse_charge_alt" type="checkbox" tag="ReverseChargeAlt"/>
+        <TaxField id="custrecord_4110_nondeductible_account" type="listrecord" tag="NonDeductibleAccount"/>
+        <TaxField id="custrecord_4110_non_deductible" type="checkbox" tag="NonDeductible"/>
+        <TaxField id="custrecord_4110_nondeductible_parent" type="listrecordfilter" tag="NonDeductibleParent">
+            <HelpText defaultlanguage="en">
+                <Help language="en">Select the code and rate that where the non-deductible rate will be derived.</Help>
+            </HelpText>
+        </TaxField>
+        <TaxField id="custrecord_4110_parent_alt" type="listrecord" tag="NotionalRateAlt">
+            <HelpText defaultlanguage="en">
+                <Help language="en">Select the code and rate that this new tax code is based on.</Help>
+            </HelpText>
+        </TaxField>
+        <TaxField id="exempt" ignore="true" type="checkbox" tag="Exempt"/>
+        <TaxField id="custrecord_tax_exemption_reason" type="listrecord" tag="TaxExemptCode"/>
+        <TaxField id="custrecord_gcc_state" type="checkbox" tag="GCCState"/>
+        <TaxField id="custrecord_deemed_supply" type="checkbox" tag="DeemedSupply"/>
+        <TaxField id="custrecord_deferred_on" type="checkbox" tag="DeferredOn"/>
+    </TaxFields>
+
+    <Nexuses>
+        <Nexus country="AT">
+            <Import display="show"/>
+            <Duty display="show"/>
+            <Paid display="show"/>
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Territory display="show"/>
+            <Category display="show" >
+                <Lists defaultlanguage="en">
+                    <List language="en">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Buildings and Other Assets</Option>
+                        <Option id="S2">Motor Vehicles</Option>
+                    </List>
+                </Lists>
+            </Category>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="AT" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="BE">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Import display="show"/>
+            <Duty display="show"/>
+            <Category display="show" >
+                <Lists defaultlanguage="en">
+                    <List language="en">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Property/Other Assets</Option>
+                        <Option id="S2">Investment</Option>
+                        <Option id="S3">Investment below the threshold</Option>
+                    </List>
+                    <List language = "fr">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Biens déductibles</Option>
+                        <Option id="S2">Invest. biens déductibles</Option>
+                        <Option id="S3">Invest. inférieur au seuil</Option>
+                    </List>
+                    <List language = "nl">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Property</Option>
+                        <Option id="S2">Bedrijfsmiddelen</Option>
+                        <Option id="S3">Bedrijfsmiddelen below the threshold</Option>
+                    </List>
+                </Lists>
+            </Category>
+
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="BE" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="BG">
+            <Reduced display="show"/>
+            <Import display="show"/>
+            <PartialCredit display="show"/>
+            <Category display="show" >
+                <Lists defaultlanguage="en">
+                    <List language="en">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Protocol</Option>
+                        <Option id="S2">Triangulation</Option>
+                        <Option id="S3">Tourism</Option>
+                    </List>
+                </Lists>
+            </Category>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="BG" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="CH">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <ReverseChargeAlt display="show"/>
+            <NotionalRateAlt display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="CH" feature="advtaxengine"/>
+                    </Filters>
+                </List>
+            </NotionalRateAlt>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="CH" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+            <Import display="show"/>
+        </Nexus>
+
+        <Nexus country="CL">
+            <Import display="show"/>
+            <Electronic display="show"/>
+            <NoCredit display="show"/>
+            <NonOperation display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="CL" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="CO">
+            <Import display="show"/>
+            <Reduced display="show"/>
+            <NoCredit display="show"/>
+            <NonTaxable display="show"/>
+            <Category display="show" >
+                <Lists defaultlanguage="es">
+                    <List language="en">
+                        <Option id="S0">NONE</Option>
+                        <Option id="S3">Beers</Option>
+                        <Option id="S5">Gambling</Option>
+                        <Option id="S1">Cleaning services, security and temporary employment companies (valid until Dec. 31, 2012)</Option>
+                        <Option id="S10">Coffee, wheat, rice, corn, sugar, cocoa, etc. (valid until Dec. 31, 2012)</Option>
+                        <Option id="S20">Pick-ups valuated under US$30.000, national boats and mobile Telephony (valid until Dec. 31, 2012)</Option>
+                        <Option id="S25">Other Vehicles valuated under US$30.000 and motorcycles over 185 c.c. (valid until Dec. 31, 2012)</Option>
+                        <Option id="S35">Vehicles valuated over US$30.000, private aircrafts and imported boats (valid until Dec. 31, 2012)</Option>
+                    </List>
+                    <List language="es">
+                        <Option id="S0">Nada</Option>
+                        <Option id="S3">Cerveza de producción nacional</Option>
+                        <Option id="S5">Juegos de suerte y azar</Option>
+                        <Option id="S1">Servicios de Aseo, Vigilancia Privada y Empleo temporal por empresas autorizadas (válida hasta el 31 de diciembre de 2012)</Option>
+                        <Option id="S10">Café, Trigo, Arroz, Maíz Azúcar, Cacao, etc. (válida hasta el 31 de diciembre de 2012)</Option>
+                        <Option id="S20">Camperos cuyo valor sea inferior a US$30.000, Barcos fabricados en el país y el Servicio de telefonía móvil (válida hasta el 31 de diciembre de 2012)</Option>
+                        <Option id="S25">Otros vehículos automotores cuyo valor sea inferior a US$30.0 y motocicletas y motos con motor superior a 185 c.c. (válida hasta el 31 de diciembre de 2012)</Option>
+                        <Option id="S35">Vehículos cuyo valor sea superior a US$30.000, aerodinos privados y barcos importados (válida hasta el 31 de diciembre de 2012)</Option>
+                    </List>
+                </Lists>
+            </Category>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="CO" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="CY">
+            <Import display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="CY" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="CZ">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Import display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="CZ" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+            <Category display="show" >
+                <Lists defaultlanguage="en">
+                    <List language="en">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Investment gold</Option>
+                        <Option id="S2">New vehicles</Option>
+                        <Option id="S3">Others</Option>
+                    </List>
+                </Lists>
+            </Category>
+        </Nexus>
+
+        <Nexus country="DE">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Import display="show"/>
+            <Duty display="show"/>
+            <Category display="show" >
+                <Lists defaultlanguage="en">
+                    <List language="en">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Mobile Device</Option>
+                    </List>
+                </Lists>
+            </Category>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="DE" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="DK">
+            <Import display="show"/>
+            <Category display="show" >
+                <Lists defaultlanguage="en">
+                    <List language="en">
+                        <Option id="S0">None</Option>
+                        <Option id="S2">Oil and liquefied petroleum gas tax</Option>
+                        <Option id="S3">Electricity tax</Option>
+                        <Option id="S4">Natural and town gas tax</Option>
+                        <Option id="S5">Coal tax</Option>
+                        <Option id="S6">Carbon dioxide tax</Option>
+                        <Option id="S7">Water tax</Option>
+                        <Option id="S8">Import Duty</Option>
+                    </List>
+                </Lists>
+            </Category>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="DK" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+        <Nexus country="ES">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Surcharge display="show"/>
+            <Import display="show"/>
+            <Category display="show" >
+                <Lists defaultlanguage="en">
+                    <List language="en">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Capital Goods</Option>
+                        <Option id="S2">Current Assets</Option>
+                        <Option id="S3">Investment Goods</Option>
+                        <Option id="S4">Regularization Investment</Option>
+                    </List>
+                </Lists>
+            </Category>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="ES" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="FI">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Import display="show"/>
+            <Duty display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="FI" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="FR">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Import display="show"/>
+            <Territory display="show"/>
+            <Category display="show" >
+                <Lists defaultlanguage="en">
+                    <List language="en">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Gas &amp; Electricity</Option>
+                        <Option id="S2">Monaco</Option>
+                        <Option id="S3">Duty Free</Option>
+                        <Option id="S4">Sales to non-FR customers</Option>
+                        <Option id="S5">Fixed Assets</Option>
+                    </List>
+                </Lists>
+            </Category>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="FR" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="GB">
+            <NonTaxable display="show"/>
+            <Import display="show"/>
+            <Duty display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="GB" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="GR"></Nexus>
+
+        <Nexus country="HR">
+            <Reduced display="show"/>
+        </Nexus>
+
+        <Nexus country="HU">
+            <Import display="show"/>
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Category display="show" >
+                <Lists defaultlanguage="en">
+                    <List language="en">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Fixed Asset</Option>
+                        <Option id="S2">Advances</Option>
+                        <Option id="S3">New Vehicles into EU</Option>
+                        <Option id="S4">Special Interest Tax free</Option>
+                    </List>
+                </Lists>
+            </Category>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="HU" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="IE">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Import display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="IE" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="ID">
+            <Import display="show"/>
+            <NoInvoice display="show"/>
+            <Government display="show"/>
+            <NoCredit display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="ID" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="IT">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Import display="show"/>
+            <NonTaxable display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="IT" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="KE">
+            <Reduced display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="KE" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="KR">
+            <CapitalGoods display="show"/>
+            <PurchaserIssued display="show"/>
+            <NoInvoice display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="KR" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="LU">
+            <Import display="show"/>
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Category display="show">
+                <Lists defaultlanguage="en">
+                    <List language="en">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Food</Option>
+                        <Option id="S2">Manufactured Tobacco</Option>
+                    </List>
+                </Lists>
+            </Category>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="LU" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="MX">
+            <Import display="show"/>
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Territory display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="MX" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="MY">
+            <Import display="show"/>
+            <Category display="show">
+                <Lists defaultlanguage="en">
+                    <List language="en">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Approved Trader Scheme</Option>
+                        <Option id="S2">Capital goods</Option>
+                        <Option id="S3">Disallowed input GST</Option>
+                        <Option id="S4">Incidental</Option>
+                        <Option id="S5">Input GST adjustment</Option>
+                        <Option id="S6">Non-Incidental</Option>
+                        <Option id="S7">Output GST adjustment</Option>
+                        <Option id="S8">Relief Supply</Option>
+                        <Option id="S9">Residual input tax</Option>
+                        <Option id="S10">Out-of-scope supplies</Option>
+                        <Option id="S11">Disregarded supplies</Option>
+                        <Option id="S12">Relief Purchase</Option>
+                        <Option id="S13">Flat Rate Scheme</Option>
+                        <Option id="S14">GST Expense</Option>
+                        <Option id="S15">Purchases - Second Schedule GST Act 2014</Option>
+                        <Option id="S16">Self-Recipient Accounting</Option>
+                        <Option id="S17">Designated Area</Option>
+                        <Option id="S18">Margin Scheme</Option>
+                        <Option id="S19">Approved Jeweller Scheme</Option>
+                        <Option id="S20">Out of scope</Option>
+                        <Option id="S21">Free Zone Area</Option>
+                        <Option id="S22">Sales - Second Schedule GST Act 2014</Option>
+                        <Option id="S23">Purchases – GST at standard rate 0%</Option>
+                        <Option id="S24">Supplies – GST at standard rate 0%</Option>
+                        <Option id="S25">Deemed supplies – GST at standard rate 0%</Option>
+                        <Option id="S26">Local supplies – GST at standard rate 0%</Option>
+                    </List>
+                </Lists>
+            </Category>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="MY" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="MT"></Nexus>
+
+        <Nexus country="NL">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Import display="show"/>
+            <Duty display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="NL" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="NO">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Import display="show"/>
+            <NonTaxable display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="NO" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="PE">
+            <UnknownTaxCredit display="show"/>
+            <NonOperation display="show"/>
+            <Import display="show"/>
+            <NoCredit display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="PE" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="PH">
+            <Import display="show"/>
+            <CapitalGoods display="show"/>
+            <Government display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="PH" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="PL">
+            <Import display="show"/>
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <CapitalGoods display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="PL" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="PT">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Government display="show"/>
+            <Territory display="show"/>
+            <Category display="show" >
+                <Lists defaultlanguage="en">
+                    <List language="en">
+                        <Option id="S0">None</Option>
+                        <Option id="S1">Fixed Asset</Option>
+                        <Option id="S2">Other Goods and Services</Option>
+                        <Option id="S3">Vehicle and Excise</Option>
+                        <Option id="S4">Adjustment</Option>
+                    </List>
+                </Lists>
+            </Category>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="PT" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+            <TaxExemptCode display="show"/>
+        </Nexus>
+
+        <Nexus country="RO">
+            <Import display="show"/>
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="RO" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="RS">
+            <Reduced display="show"/>
+            <Import display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="RS" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="SE">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Import display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="SE" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="SG">
+            <Import display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="SG" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+            <DeemedSupply display="show" />
+            <DeferredOn display="show" />
+        </Nexus>
+
+        <Nexus country="SI">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <Import display="show"/>
+            <CapitalGoods display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="SI" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="SK">
+            <Import display="show"/>
+            <Reduced display="show"/>
+            <Duty display="show"/>
+            <Paid display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="SK" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="TR">
+            <Reduced display="show"/>
+            <SuperReduced display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="TR" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="UA">
+            <Import display="show"/>
+            <NonTaxable display="show"/>
+            <OutsideCustoms display="show"/>
+            <NonResident display="show"/>
+            <CapitalGoods display="show"/>
+            <NonRecoverable display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="UA" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="UY">
+            <Reduced display="show"/>
+            <Suspended display="show"/>
+            <Import display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="UY" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="TH">
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="TH" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="TW">
+            <Import display="show"/>
+            <CapitalGoods display="show"/>
+            <CashRegister display="show"/>
+            <NoInvoice display="show"/>
+            <Duplicate display="show"/>
+            <Triplicate display="show"/>
+            <OtherTaxEvidence display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="TW" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="ZA">
+            <Import display="show"/>
+            <CapitalGoods display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="ZA" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="VN">
+            <Reduced display="show"/>
+            <NonOperation display="show"/>
+            <UnknownTaxCredit display="show"/>
+            <CapitalGoods display="show"/>
+            <NonDeductible display="show"/>
+            <NonDeductibleParent display="show">
+                <List source='salestaxitem'>
+                    <Columns>
+                        <Column id="itemid" type="column" parent="" summary=""/>
+                        <Column id="sep1" type="text" value=" ("/>
+                        <Column id="rate" type="column" parent="" summary=""/>
+                        <Column id="sep2" type="text" value=")"/>
+                    </Columns>
+                    <Filters>
+                        <Filter id="country" parent="" operator="is" value="VN" feature="advtaxengine"/>
+                        <Filter id="custrecord_4110_non_deductible" parent="" operator="is" value="T"/>
+                    </Filters>
+                </List>
+            </NonDeductibleParent>
+            <NonDeductibleAccount display="show"/>
+        </Nexus>
+
+        <Nexus country="AE">
+            <Import display="show"/>
+            <GCCState display="show"/>
+        </Nexus>
+
+        <Nexus country="SA">
+            <Import display="show"/>
+            <GCCState display="show"/>
+        </Nexus>
+
+        <Nexus country="OTHER">
+            <Reduced display="hide"/>
+            <SuperReduced display="hide"/>
+            <Import display="hide"/>
+            <CapitalGoods display="hide"/>
+            <Government display="hide"/>
+            <Territory display="hide"/>
+            <Surcharge display="hide"/>
+            <PurchaserIssued display="hide"/>
+            <CashRegister display="hide"/>
+            <NoInvoice display="hide"/>
+            <Duplicate display="hide"/>
+            <Triplicate display="hide"/>
+            <OtherTaxEvidence display="hide"/>
+            <Electronic display="hide"/>
+            <NoCredit display="hide"/>
+            <NonOperation display="hide"/>
+            <Category display="hide"/>
+            <Suspended display="hide"/>
+            <NonTaxable display="hide"/>
+            <UnknownTaxCredit display="hide"/>
+            <PartialCredit display="hide"/>
+            <Duty display="hide"/>
+            <Paid display="hide"/>
+            <OutsideCustoms display="hide"/>
+            <NonResident display="hide"/>
+            <NonRecoverable display="hide"/>
+            <NotionalRateAlt display="hide"/>
+            <ReverseChargeAlt display="hide"/>
+            <NonDeductible display="hide"/>
+            <NonDeductibleAccount display="hide"/>
+            <NonDeductibleParent display="hide"/>
+            <TaxExemptCode display="hide"/>
+            <GCCState display="hide"/>
+            <DeemedSupply display="hide"/>
+            <DeferredOn display="hide"/>
+        </Nexus>
+    </Nexuses>
+</TaxCustomization>

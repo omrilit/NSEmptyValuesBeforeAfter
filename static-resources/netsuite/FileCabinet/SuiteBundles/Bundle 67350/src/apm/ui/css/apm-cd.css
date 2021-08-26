@@ -1,0 +1,298 @@
+/**
+ * Copyright © 2015, 2020, Oracle and/or its affiliates. All rights reserved.
+ */
+
+/**
+ * Module Description
+ *
+ * Version    Date            Author           Remarks
+ * 1.00       15 Feb 2018     jmarimla         Initial
+ * 2.00       22 Feb 2018     jmarimla         Drilldown
+ * 3.00       03 Mar 2018     jmarimla         Z-index drillup button
+ * 4.00       11 Mar 2020     jmarimla         Overview portlet
+ * 5.00       23 Mar 2020     jmarimla         Concurrency chart css
+ * 6.00       20 Apr 2020     earepollo        UI improvements
+ * 7.00       01 Jun 2020     lemarcelo        Chart note
+ * 8.00       08 Jun 2020     jmarimla         UI changes
+ * 9.00       15 Jun 2020     jmarimla         UI changes
+ * 10.00      19 Nov 2020     lemarcelo        Added help link and icon
+ *
+ */
+
+/*
+ * Exact Concurrency
+ */
+.apm-cd-exactconcurrency-main {
+    width: 100%;
+    position: relative;
+}
+
+.apm-cd-exactconcurrency {
+    width: 100%;
+    height: 350px;
+}
+
+/*
+ * Time Bar
+ */
+
+.apm-cd-timebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.apm-cd-timebar .mode {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px 20px 0px 0px;
+}
+
+.apm-cd-timebar .integration {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px 20px 0px 0px;
+}
+
+.apm-cd-timebar .integration.hidden {
+    display: none;
+}
+
+.apm-cd-timebar .timepaging {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.apm-cd-timebar .timepaging .timelabel {
+    color: #000000;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.apm-cd-timebar .timepaging .btn {
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    cursor: pointer;
+}
+
+.apm-cd-timebar .timepaging .prev {
+    background-image: url(ns_images/icon-arrowleft.svg);
+}
+
+.apm-cd-timebar .timepaging .next {
+    background-image: url(ns_images/icon-arrowright.svg);
+}
+
+/*
+ * Overview Data
+ */
+.apm-cd-overviewdata {
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.apm-cd-overviewdata .divider {
+    width: 1px;
+    height: 100%;
+    background-color: #dddddd;
+}
+
+.apm-cd-overviewdata .section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apm-cd-overviewdata .section .title {
+    font-size: 14px;
+    color: #555555;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.apm-cd-overviewdata .section .content {
+    font-size: 32px;
+    color: #999999;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.apm-cd-overviewdata .section.conclimit [href] {
+    color: #4d5f79;
+    text-decoration: none;
+}
+
+.apm-cd-overviewdata .section.conclimit [href]:hover {
+    text-decoration: underline;
+}
+
+.apm-cd-overviewdata .section.peakconc * {
+    color: #B87241;
+}
+
+.apm-cd-overviewdata .section.peakconc .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apm-cd-overviewdata .section.peakconc .content .value {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.apm-cd-overviewdata .section.peakconc .content .date {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.apm-cd-overviewdata .section.errorrate * {
+    color: #B85B5B;
+}
+
+.apm-cd-overviewdata .topinteg.hidden {
+    display: none;
+}
+
+.apm-cd-overviewdata .section.topinteg .title {
+    max-width: 180px;
+    white-space: normal;
+    text-align: center;
+}
+
+.apm-cd-overviewdata .section.topinteg .content {
+    font-size: 12px;
+    text-align: center;
+}
+
+.apm-cd-overviewdata .section.topinteg .integname {
+    text-align: left;
+    padding-right: 8px;
+}
+
+.apm-cd-overviewdata .section.topinteg .integpercent {
+    text-align: right;
+}
+
+.apm-cd-overviewdata .section.topinteg .integname [href] {
+    color: #4d5f79;
+    text-decoration: none;
+}
+
+.apm-cd-overviewdata .section.topinteg .integname [href]:hover {
+    text-decoration: underline;
+}
+
+/*
+ * Concurrency Section
+ */
+.apm-cd-concurrency-section .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.apm-cd-concurrency-section .title .text {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.apm-cd-concurrency-section .title .icon,
+.apm-cd-popup-instances .apm-cd-info-container .apm-cd-info {
+    height: 24px;
+    width: 24px;
+    background-image: url(ns_images/info.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    margin-left: 5px;
+}
+
+.apm-cd-concurrency-section .toolbar {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.apm-cd-concurrency-section .chart-note{
+    width: 100%;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px 20px 0px 0px;
+}
+
+.apm-cd-concurrency-section .chart {
+    width: 100%;
+    height: 450px;
+}
+
+.apm-cd-concurrencycount-tooltip .date{
+    font-weight: 600;
+    color: #555555;
+}
+
+.apm-cd-concurrencycount-tooltip .value{
+    font-weight: 600;
+    font-size: 12px;
+    padding-right: 8px;
+    text-align: right;
+}
+
+.apm-cd-concurrencycount-tooltip .label{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.apm-cd-concurrencycount-tooltip .underlimit {
+    color: #4d5f79;
+}
+
+.apm-cd-concurrencycount-tooltip .overlimit {
+    color: #B87241;
+}
+
+.apm-cd-concurrencycount-tooltip .errors {
+    color: #B85B5B;
+}
+
+/*
+ * Instance Details
+ */
+.apm-cd-popup-instances .grid {
+    height: 410px;
+}
+
+/*
+ * Tooltips
+ */
+ .psgp-ui-tooltip {
+    border: 1px solid #6f6f6f;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.psgp-ui-tooltip * {
+    font-size: 12px;
+    color: #555555;
+}
+
+.apm-cd-info-container {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}

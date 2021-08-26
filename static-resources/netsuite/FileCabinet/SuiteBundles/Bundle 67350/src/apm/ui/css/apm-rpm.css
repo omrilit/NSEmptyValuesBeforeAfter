@@ -1,0 +1,509 @@
+/**
+ * Copyright © 2015, 2020, Oracle and/or its affiliates. All rights reserved.
+ */
+
+/**
+ * Module Description
+ *
+ * Version    Date            Author           Remarks
+ * 1.00       07 Jan 2015     jmarimla         Initial
+ * 2.00       15 Jan 2015     jmarimla         Set text-align for recordtiletitle
+ * 3.00       28 Jan 2015     jmarimla         Css for selected record tile and record charts
+ * 4.00       10 Mar 2015     rwong            Added css for delete icon
+ * 5.00       21 Mar 2015     jmarimla         Added css for new record tiles ui
+ * 6.00       24 May 2019     earepollo        Changed subpanel BG to white
+ * 7.00       11 Aug 2020     earepollo        ExtJS to jQuery
+ * 8.00       20 Aug 2020     lemarcelo        ExtJS to jQuery
+ * 9.00       07 Oct 2020     jmarimla         Adjusted tile css
+ * 10.00      19 Nov 2020     lemarcelo        Added help link and icon
+ *
+ */
+
+.apm-rpm-recordpages-portlet {
+    height: 320px;
+}
+
+/*
+ * Settings Dialog
+ */
+.apm-rpm-settings-custdebug {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+.apm-rpm-dialog-custdebug.ui-dialog-content {
+    padding: 20px;
+}
+
+.apm-rpm-dialog-custdebug .buttons {
+    padding: 15px 5px 5px 5px;
+    width: 100%;
+}
+
+.apm-rpm-dialog-custdebug .buttons * {
+    display: inline-block;
+}
+
+.apm-rpm-dialog-custdebug .btn-save {
+    margin: 0px 20px 0px 0px;
+}
+
+/*
+ * Record Pages Toolbar
+ */
+
+.apm-rpm-recordpages-toolbar {
+    position: relative;
+    height: 39px;
+    background: #ffffff;
+    padding: 4px 10px;
+}
+
+.apm-rpm-recordpages-toolbar .label {
+    color: #555555;
+    font-size: 14px;
+    padding: 5px 9px;
+    text-transform: uppercase;
+}
+
+.apm-rpm-recordpages-toolbar .pagination {
+    color: #555555;
+    font-size: 14px;
+    padding: 5px 0px 5px 9px;
+    text-align: right;
+}
+
+.apm-rpm-recordpages-toolbar .text-date {
+    color: #555555;
+    font-size: 14px;
+    padding: 5px 9px;
+}
+
+.apm-rpm-recordpages-toolbar .left{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 6px 0px 0px 12px;
+}
+
+.apm-rpm-recordpages-toolbar .left div{
+    float: left;
+}
+
+.apm-rpm-recordpages-toolbar .right{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 6px 12px 0px 0px;
+}
+
+.apm-rpm-recordpages-toolbar .right div{
+    float: left;
+}
+
+/*
+ * Record Tiles Carousel
+ */
+.apm-rpm-recordpages-carousel {
+    height: 230px;
+    width: 100%;
+}
+
+.apm-rpm-record-tile {
+    float: left;
+    position: relative;
+    width: 185px;
+    height: 185px;
+    z-index: 0;
+}
+
+.apm-rpm-record-tile .main-tile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dadfe6;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.apm-rpm-record-tile .main-tile:hover {
+    cursor: pointer;
+    border: 1px solid #2e82e8;
+    -webkit-box-shadow: -1px 2px 4px 0px rgba(46, 130, 232, 0.75);
+    -moz-box-shadow: -1px 2px 4px 0px rgba(46, 130, 232, 0.75);
+    box-shadow: -1px 2px 4px 0px rgba(46, 130, 232, 0.75);
+}
+
+.apm-rpm-record-tile.clicked .main-tile,
+.apm-rpm-record-tile.clicked .main-tile:hover {
+    border: #2e82e8 solid 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: -2px 2px 5px 0px #616161;
+    -moz-box-shadow: -2px 2px 5px 0px #616161;
+    box-shadow: -2px 2px 5px 0px #616161;
+}
+
+.apm-rpm-record-tile.clicked:before {
+    content: "";
+    position: absolute;
+    top: 184px;
+    left: 80px;
+    border-style: solid;
+    border-width: 16px 16px 0;
+    border-color: #2e82e8 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+.apm-rpm-record-tile.clicked:after {
+    content: "";
+    position: absolute;
+    top: 182px;
+    left: 81px;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+.apm-rpm-record-tile .header {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: #e6ebf2;
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    z-index: 3;
+}
+
+.apm-rpm-record-tile .record-name {
+    color: #333333;
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px 0px 0px 5px;
+}
+
+.apm-rpm-record-tile .record-operation {
+    color: #333333;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px 0px 0px 5px;
+}
+
+.apm-rpm-record-tile .body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    padding: 30px 5px 0px 5px;
+}
+
+.apm-rpm-record-tile .body-nodata {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fefdf1;
+    z-index: 2;
+    padding: 35px 5px 0px 5px;
+}
+
+.apm-rpm-record-tile .body-nodata .message {
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.apm-rpm-record-tile .body-nodata .message .icon {
+    background-image: url(ns_images/icon_msg_info.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    margin: 5px 2px 5px 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.apm-rpm-record-tile .body-nodata .message .text {
+    color: #666666;
+    margin: 5px 5px 5px 2px;
+    font-size: 11px;
+}
+
+.apm-rpm-record-tile .row-1 {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 8px;
+}
+
+.apm-rpm-record-tile .row-1 .details {
+    height: 100%;
+}
+
+.apm-rpm-record-tile .row-1 .details.col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.apm-rpm-record-tile .row-1 .label {
+    height: 15px;
+    font-size: 12px;
+    color: #666666;
+    font-weight: 400;
+}
+
+.apm-rpm-record-tile .row-1 .details.col-1 .value {
+    height: 30px;
+    font-size: 25px;
+}
+
+.apm-rpm-record-tile .total-time .value.warning,
+.apm-rpm-record-tile .total-time .label.warning{
+    color: #ff5833;
+}
+
+.apm-rpm-record-tile .row-1 .details.col-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 15px;
+}
+
+.apm-rpm-record-tile .row-1 .total-count {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 10px 0px 0px 0px;
+}
+
+.apm-rpm-record-tile .row-1 .icon {
+    height: 22px;
+    width: 22px;
+}
+
+.apm-rpm-record-tile .row-1 .icon.users {
+    background-image: url(ns_images/person_icon.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.apm-rpm-record-tile .row-1 .icon.logs {
+    background-image: url(ns_images/logs_icon.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.apm-rpm-record-tile .row-1 .value {
+    float: left;
+    font-size: 16px;
+    color: #666666;
+    font-weight: 600;
+}
+
+.apm-rpm-record-tile .row-2 {
+    width: 100%;
+    height: 85px;
+}
+
+.apm-rpm-record-tile .row-2 .chart {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+ * Record Tile Charts
+ */
+.apm-rpm-recordtile-charts {
+    padding: 0px 50px 20px 50px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.apm-rpm-recordtile-charts .tile {
+    padding: 0px 10px 0px 10px;
+    margin: 10px 10px 10px 10px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.apm-rpm-recordtile-charts .tile .record-name {
+    color: #333333;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.apm-rpm-recordtile-charts .tile .record-operation {
+    color: #666666;
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 7px;
+}
+
+.apm-rpm-recordtile-charts .chart-row {
+    width: 100%;
+}
+
+.apm-rpm-recordtile-charts .chart-outer {
+    height: 300px;
+    display: inline-block;
+    width: 50%;
+    padding: 5px 5px 5px 5px;
+}
+
+.apm-rpm-recordtile-charts .chart {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #666666;
+}
+
+/*
+ * Setup Dialog
+ */
+
+.apm-rpm-dialog-setup.ui-dialog-content {
+    padding: 20px;
+}
+
+.apm-rpm-dialog-setup .buttons {
+    padding: 8px 5px;
+    width: 100%;
+}
+
+.apm-rpm-dialog-setup .buttons *,
+.apm-rpm-dialog-customdaterange .buttons *,
+.apm-rpm-dialog-watchlist .buttons * {
+    display: inline-block;
+}
+
+.apm-rpm-dialog-setup .btn-save,
+.apm-rpm-dialog-setup .btn-cancel {
+    margin-right: 20px;
+}
+
+.apm-rpm-dialog-setup .setup-info {
+    display: flex;
+    align-items: center;
+}
+.apm-rpm-dialog-setup .setup-info .text{
+    margin-left: 5px;
+ }
+
+.apm-rpm-dialog-setup .tab-section {
+    padding: 5px 0px;
+    width: 100%;
+}
+
+.chartpref-section-title {
+    background-color: #DFE4EB;
+    color: #607988;
+    font-size: 13px;
+    font-weight: bold;
+    height: 27px;
+    padding: 5px 15px;
+    margin: 10px;
+}
+
+.executiontime-container {
+    padding: 0px 25px 20px;
+}
+.general-container {
+    padding: 0px 25px 24px;
+}
+
+.apm-rpm-watchlist-container,
+.apm-rpm-customdatetime-container {
+    padding: 0px 10px;
+}
+
+.apm-rpm-executiontime-subpanel {
+    padding: 10px 0px 15px 0px;
+}
+
+.apm-rpm-setup-label {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+
+.watchlist-buttons,
+.customdatetime-buttons {
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.apm-rpm-watchlist-container .btn-add-watchlist,
+.apm-rpm-customdatetime-container .btn-add-datetime{
+    margin-right: 15px;
+}
+
+.apm-rpm-watchlist-container .grid,
+.apm-rpm-customdatetime-container .grid {
+    width: 100%;
+    border: 1px solid #dddddd;
+    height: 190px;
+    top: 10px;
+    overflow: auto;
+}
+
+.apm-rpm-dialog-customdaterange .psgp-field-datetime-time {
+    position: unset;
+}
+
+.apm-rpm-dialog-customdaterange .psgp-field-datetime-date .ui-datepicker-trigger {
+    bottom: unset;
+    margin: 1px 4px;
+}
+
+.apm-rpm-dialog-customdaterange.ui-dialog-content,
+.apm-rpm-dialog-watchlist.ui-dialog-content {
+    padding: 10px 20px;
+}
+
+.apm-rpm-dialog-watchlist .btn-add,
+.apm-rpm-dialog-customdaterange .btn-add {
+    margin: 15px 20px 5px 0px;
+}
+.rpm-setup-delete-icon {
+    background-image: url(ns_images/machine_x.gif);
+    width: 13px;
+    height: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.apm-rpm-dialog-setup .setup-info .apm-rpm-info,
+.apm-rpm-recordtile-charts .tile .apm-rpm-info {
+    display:inline-block;
+    background-image: url(ns_images/info.svg);
+    background-size: 24px;
+    width: 24px;
+    height: 24px;
+}

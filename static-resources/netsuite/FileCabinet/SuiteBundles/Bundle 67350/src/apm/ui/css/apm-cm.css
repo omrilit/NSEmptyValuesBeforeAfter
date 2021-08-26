@@ -1,0 +1,444 @@
+/**
+ * Copyright © 2015, 2020, Oracle and/or its affiliates. All rights reserved.
+ */
+
+/**
+ * Module Description
+ *
+ * Version    Date            Author           Remarks
+ * 1.00       17 Jan 2018     jmarimla         Initial
+ * 2.00       06 Feb 2018     jmarimla         Concurrency portlet
+ * 3.00       09 Feb 2018     jmarimla         Popup instances
+ * 4.00       19 Feb 2018     rwong            Violation chart
+ * 5.00       15 May 2018     jmarimla         Remove italic
+ * 6.00       14 Dec 2018     jmarimla         Not available css
+ * 7.00       03 Apr 2019     jmarimla         Footnote css
+ * 8.00       24 May 2019     erepollo         Change concurrency toolbar BG to white
+ * 9.00       12 Mar 2020     lemarcelo        Overview portlet
+ * 10.00      12 Mar 2020     erepollo         Unallocated/Allocated tabs
+ * 11.00      13 Mar 2020     jmarimla         Utilization chart
+ * 12.00      18 Mar 2020     jmarimla         Tabs css
+ * 13.00      20 Apr 2020     jmarimla         Minor ui changes
+ * 14.00      29 Apr 2020     earepollo        Minor ui change
+ * 15.00      08 Jun 2020     jmarimla         UI changes
+ * 16.00      15 Jun 2020     jmarimla         UI changes
+ *
+ */
+
+.psgp-kpipanel-item-value.notavailable {
+    color: #ff5833;
+}
+
+/*
+ * Settings
+ */
+.apm-cm-settings-daterange {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+.apm-cm-settings-daterange-dialog.ui-dialog-content {
+    padding: 20px;
+}
+
+.apm-cm-settings-daterange-dialog .buttons {
+    padding: 5px;
+    width: 100%;
+}
+
+.apm-cm-settings-daterange-dialog .buttons * {
+    display: inline-block;
+}
+
+.apm-cm-settings-daterange-dialog .btn-save {
+    margin: 0px 20px 0px 0px;
+}
+
+.apm-cm-settings-daterange-dialog .note {
+    padding: 5px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.apm-cm-dialog-customdaterange.ui-dialog-content {
+    padding: 20px;
+}
+
+.apm-cm-dialog-customdaterange .buttons {
+    padding: 5px;
+    width: 100%;
+}
+
+.apm-cm-dialog-customdaterange .buttons * {
+    display: inline-block;
+}
+
+.apm-cm-dialog-customdaterange .btn-save {
+    margin: 0px 20px 0px 0px;
+}
+
+/*
+ * Allocation Tabs
+ */
+.apm-cm-tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.apm-cm-tab {
+    cursor: pointer;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    padding: 4px 15px;
+    border: 1px solid #D3D3D3;
+    background-color: #e5e5e5;
+}
+
+.apm-cm-unallocated-tab .apm-cm-tab {
+    border-radius: 3px 0px 0px 3px;
+    -webkit-border-radius: 3px 0px 0px 3px;
+    -moz-border-radius: 3px 0px 0px 3px;
+}
+
+.apm-cm-allocated-tab .apm-cm-tab {
+    border-radius: 0px 3px 3px 0px;
+    -webkit-border-radius: 0px 3px 3px 0px;
+    -moz-border-radius: 0px 3px 3px 0px;
+}
+
+.apm-cm-tab.selected {
+    background-color: #4d5f79;
+    background-image: unset;
+    border: 1px solid #4d5f79;
+    color: #ffffff;
+}
+
+.apm-cm-filter-integration {
+    top: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.apm-cm-filter-integration .label {
+    margin-right: 3px;
+    color: #999999;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/*
+ * Concurrency Section
+ */
+.apm-cm-concurrency-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.apm-cm-concurrency-section .tabs {
+    display: flex;
+    flex-direction: row;
+}
+
+.apm-cm-concurrency-section .tab {
+    cursor: pointer;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    padding: 4px 15px;
+    border: 1px solid #D3D3D3;
+    background-color: #e5e5e5;
+}
+
+.apm-cm-concurrency-section .tab.peak {
+    border-radius: 3px 0px 0px 3px;
+    -webkit-border-radius: 3px 0px 0px 3px;
+    -moz-border-radius: 3px 0px 0px 3px;
+}
+
+.apm-cm-concurrency-section .tab.average {
+    border-radius: 0px 3px 3px 0px;
+    -webkit-border-radius: 0px 3px 3px 0px;
+    -moz-border-radius: 0px 3px 3px 0px;
+}
+
+.apm-cm-concurrency-section .tab.selected {
+    background-color: #4d5f79;
+    background-image: unset;
+    border: 1px solid #4d5f79;
+    color: #ffffff;
+}
+
+.apm-cm-concurrency-section .chart-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.apm-cm-concurrency-section .chart-title .text {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px 5px 0px 0px;
+}
+
+.apm-cm-concurrency-section .chart-title .icon {
+    height: 24px;
+    width: 24px;
+    background-image: url(ns_images/info.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    cursor: pointer;
+}
+
+.apm-cm-concurrency-section .chart {
+    padding-top: 15px;
+}
+
+.apm-cm-concurrency-section .legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.apm-cm-concurrency-section .legend-block-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.apm-cm-concurrency-section .legend-block-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apm-cm-concurrency-section .legend-1-title, .apm-cm-concurrency-section .legend-2-title {
+    color: #333333;
+    font-size: 12px;
+}
+
+.apm-cm-concurrency-section .legend-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apm-cm-concurrency-section .legend-1 .row-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.apm-cm-concurrency-section .legend-1 .row-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.apm-cm-concurrency-section .legend-1 .box {
+    height: 14px;
+    width: 30px;
+    border: 1px solid #ffffff;
+}
+
+.apm-cm-concurrency-section .legend-1 .box-1 {
+    background-color: #E8F1F9;
+}
+
+.apm-cm-concurrency-section .legend-1 .box-2 {
+    background-color: #D1E4F4;
+}
+
+.apm-cm-concurrency-section .legend-1 .box-3 {
+    background-color: #BAD6EE;
+}
+
+.apm-cm-concurrency-section .legend-1 .box-4 {
+    background-color: #A3C8E8;
+}
+
+.apm-cm-concurrency-section .legend-1 .box-5 {
+    background-color: #B87241;
+}
+
+.apm-cm-concurrency-section .legend-1 .label {
+    text-align: center;
+}
+
+.apm-cm-concurrency-section .legend .legend-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.apm-cm-concurrency-section .legend .legend-2 .box {
+    background-color: #B85B5B;
+    border: 1px solid #ffffff;
+    height: 14px;
+    width: 30px;
+}
+
+.apm-cm-concurrency-section .footnote {
+    background: #ffffff;
+    padding: 3px 20px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #333333;
+    width: 100%;
+}
+
+.apm-cm-heatmap-tooltip .date{
+    font-weight: 600;
+    color: #555555;
+}
+
+.apm-cm-heatmap-tooltip .value{
+    font-weight: 600;
+    font-size: 12px;
+    padding-right: 8px;
+    text-align: right;
+}
+
+.apm-cm-heatmap-tooltip .label{
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left;
+}
+
+.apm-cm-heatmap-tooltip .peak {
+    color: #B87241;
+}
+
+.apm-cm-heatmap-tooltip .average {
+    color: #555555;
+}
+
+.apm-cm-heatmap-tooltip .errorrate {
+    color: #B85B5B;
+}
+/*
+ * Overview Data
+ */
+.apm-cm-overviewdata {
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.apm-cm-overviewdata .divider {
+    width: 1px;
+    height: 100%;
+    background-color: #dddddd;
+}
+
+.apm-cm-overviewdata .section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apm-cm-overviewdata .section .title {
+    font-size: 14px;
+    color: #555555;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.apm-cm-overviewdata .section .content {
+    color: #999999;
+    margin-top: 5px;
+}
+
+.apm-cm-overviewdata .section .content .value {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.apm-cm-overviewdata .section .content .range {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.apm-cm-overviewdata .section.conclimit [href] {
+    color: #4d5f79;
+    text-decoration: none;
+}
+
+.apm-cm-overviewdata .section.conclimit [href]:hover {
+    text-decoration: underline;
+}
+
+.apm-cm-overviewdata .section.peakconc .title {
+    color: #B87241;
+}
+
+.apm-cm-overviewdata .section.peakconc.highlight * {
+    color: #B87241;
+}
+
+.apm-cm-overviewdata .section.peakconc .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apm-cm-overviewdata .section.peakconc .content .value {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.apm-cm-overviewdata .section.peakconc .content .date {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.apm-cm-overviewdata .section.closelimit .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apm-cm-overviewdata .section.overlimit .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apm-cm-overviewdata .section.errorrate .title {
+    color: #B85B5B;
+}
+
+.apm-cm-overviewdata .section.errorrate.highlight * {
+    color: #B85B5B;
+}
+
+/*
+ * Instance Details
+ */
+.apm-cm-popup-instances .grid {
+    height: 410px;
+}
+
+/*
+ * Tooltips
+ */
+ .psgp-ui-tooltip {
+    border: 1px solid #6f6f6f;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.psgp-ui-tooltip * {
+    font-size: 12px;
+    color: #555555;
+}

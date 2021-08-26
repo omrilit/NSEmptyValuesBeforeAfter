@@ -1,0 +1,151 @@
+/**
+ * Copyright © 2020, Oracle and/or its affiliates. All rights reserved.
+ */
+
+/**
+ * Module Description
+ *
+ * Version    Date            Author           Remarks
+ * 1.00       11 Jun 2020     earepollo        ExtJS to jQuery
+ * 2.00       06 Aug 2020     jmarimla         Summary panel css
+ *
+ */
+
+/*
+ * Settings Dialog
+ */
+.apm-ssa-settings-custdebug {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+.apm-ssa-dialog-custdebug.ui-dialog-content {
+    padding: 20px;
+}
+
+.apm-ssa-dialog-custdebug .buttons {
+    padding: 15px 5px 5px 5px;
+    width: 100%;
+}
+
+.apm-ssa-dialog-custdebug .buttons * {
+    display: inline-block;
+}
+
+.apm-ssa-dialog-custdebug .btn-save {
+    margin: 0px 20px 0px 0px;
+}
+
+/*
+ * Performance Chart Portlet
+ */
+.apm-ssa-perfchart-portlet .psgp-portlet{
+    margin: 0px 5px 0px 0px;
+    min-height: 500px;
+    overflow: auto;
+}
+
+.apm-ssa-no-records-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.apm-ssa-no-records-container .chart-warning {
+    background-image: url(ns_images/warning.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 35px;
+}
+
+.apm-ssa-performance-chartcontainer {
+    margin: 0px 10px;
+}
+
+.apm-ssa-btn-drillup {
+    padding: 0px 10px 0px 0px;
+    display: flex;
+    justify-content: end;
+}
+
+/*
+ * SuiteScript Details Portlet
+ */
+.apm-ssa-suiteScriptDetails-portlet {
+    margin: 0px 0px 0px 5px;
+}
+
+/*
+ * Summary Fields
+ */
+.apm-ssa-summary-fields {
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.apm-ssa-summary-fields .label {
+    color: #999999;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.apm-ssa-summary-fields .value {
+    color: #545454;
+    font-size: 13px;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px 10px 0px 0px;
+}
+
+.apm-ssa-summary-fields > div {
+    width: 100%;
+    padding: 5px 0px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.apm-ssa-summary-date > div {
+    display: inline-block;
+    padding-right: 20%;
+}
+
+/*
+ * SuiteScriptDetails Grid
+ */
+.apm-ssa-suitescriptdetail-grid {
+    padding: 0px 10px 20px 10px;
+}
+
+/*
+ * SuiteScriptDetail Logs Popup
+ */
+ .apm-ssa-suiteScriptDetails-portlet .btn-viewlogs {
+    padding: 10px 10px 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apm-ssa-suitescript-logs .grid {
+    min-height: 400px;
+}
+
+ .apm-ssa-sslogs-viewdetails-icon {
+    width: 28px;
+    height: 28px;
+    background-image: none;
+}
+
+.apm-ssa-sslogs-viewdetails-icon.showicon {
+    background-image: url(ns_images/details.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    cursor: pointer;
+}

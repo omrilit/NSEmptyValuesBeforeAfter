@@ -1,0 +1,190 @@
+/**
+ * Copyright © 2019, Oracle and/or its affiliates. All rights reserved.
+ */
+/**
+ * Module Description
+ *
+ * Version    Date            Author           Remarks
+ * 1.00
+ * 2.00       02 Dec 2020     earepollo        Fixed bug in ellipsis
+ *
+ */
+
+#apm-pts-main-content {
+    min-width: 1100px;
+}
+/*
+ * Customer Debug Dialog
+ */
+.apm-pts-settings-custdebug {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+.apm-pts-dialog-custdebug.ui-dialog-content {
+    padding: 20px;
+}
+
+.apm-pts-dialog-custdebug .buttons {
+    padding: 15px 5px 5px 5px;
+    width: 100%;
+}
+
+.apm-pts-dialog-custdebug .buttons * {
+    display: inline-block;
+}
+
+.apm-pts-dialog-custdebug .btn-save {
+    margin: 0px 20px 0px 0px;
+}
+
+.apm-pts-filter-responsetime {
+    position: relative;
+}
+/*
+ * subpanel
+ */
+.apm-pts-subpanel {
+    margin: 10px;
+    padding: 0px 0px 15px 0px;
+}
+/*
+ * containers
+ */
+.apm-pts-summary-container {
+    width: 100%;
+    min-height: 175px;
+    margin: 0px 0px 10px 0px;
+}
+.apm-pts-details-container {
+    margin: 0px 0px 10px 0px;
+}
+.apm-pts-scriptworkflow-container {
+    margin: 0px 0px 0px 10px;
+    height: 400px;
+}
+
+.apm-pts-no-data-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.apm-pts-no-data-container .chart-warning {
+    background-image: url(ns_images/warning.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 40px;
+    height: 35px;
+}
+.apm-pts-no-data-container .label {
+    color: #808080;
+    font-size: 11px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+/*
+ * grids
+ */
+.apm-pts-grid {
+    width: 100%;
+    border: 1px solid #dddddd;
+    height: 100%;
+}
+.apm-pts-grid-details {
+    width: 100%;
+    border: 1px solid #dddddd;
+    height: 410px;
+    top: 10px;
+    overflow: auto;
+}
+.apm-pts-grid-ssdetails {
+    border: 1px solid #dddddd;
+    margin: 0px 0px 5px;
+    top: 5px;
+    width: 100%;
+    height: 269px;
+    overflow: auto;
+}
+/*
+ * summary-side-panel
+ */
+ .summary-side-panel {
+    padding: 10px 0px 0px 0px;
+}
+.summary-side-panel .label {
+    font-size: 12px;
+    font-weight: normal;
+    color: #6f6f6f;
+    text-transform: uppercase;
+    padding: 0px 0px 0px 5px;
+}
+.summary-side-panel .content {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 3px 0px 10px 5px;
+}
+
+.apm-pts-viewptddetails-icon,
+.apm-pts-viewprofilerdetails-icon {
+    width: 28px;
+    height: 28px;
+    background-image: none;
+}
+.apm-pts-viewptddetails-icon.showicon,
+.apm-pts-viewprofilerdetails-icon.showicon {
+    background-image: url(ns_images/details.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    cursor: pointer;
+}
+.apm-pts-ssdetails-grid-script {
+    flex-direction: row;
+    align-items: center;
+    text-overflow: ellipsis;
+}
+
+.apm-pts-ssdetails-grid-script .icon {
+    width: 15px;
+    height: 15px;
+    margin: 0px 3px 0px 0px;
+    display: inline-block;
+}
+.apm-pts-details-container .apm-pts-grid-details tr.selected {
+    background-color: #fefeee;
+}
+.apm-pts-dialog-setup.ui-dialog-content {
+    padding: 20px;
+}
+
+.apm-pts-dialog-setup .buttons {
+    padding: 8px 5px;
+    width: 100%;
+}
+.apm-pts-dialog-setup .grid {
+    padding: 15px 0px;
+    width: 100%;
+}
+
+.apm-pts-dialog-setup .buttons * {
+    display: inline-block;
+}
+
+.apm-pts-dialog-setup .btn-save,
+.apm-pts-dialog-setup .btn-cancel  {
+    margin: 0px 20px 0px 0px;
+}
+.apm-pts-dialog-setup .grid * {
+    padding: 5px;
+}
+
+.psgp-column-panel-2 .psgp-portlet-header .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    max-width: calc(100% - 24px);
+}

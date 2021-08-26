@@ -1,0 +1,163 @@
+/**
+ * Copyright © 2019, Oracle and/or its affiliates. All rights reserved.
+ */
+/**
+ * Module Description
+ *
+ * Version    Date            Author           Remarks
+ * 1.00       21 Apr 2020     earepollo        ExtJS to jQuery
+ * 2.00       15 Jun 2020     earepollo        Scrollable SSD grid
+ *
+ */
+
+#apm-ptd-main-content {
+    min-width: 1100px;
+}
+
+/*
+ * Profiler Link
+ */
+ .apm-redirectlink {
+    position: absolute;
+    right: 200px;
+    top: 15px;
+}
+
+.apm-redirectlink {
+    color: #333333;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    float: right;
+    margin: 0px 20px 0px 0px;
+}
+
+.apm-redirectlink:hover {
+    text-decoration: underline;
+}
+
+/*
+ * Operation ID Search
+ */
+.btn-search {
+    padding: 0px 12px;
+    margin: 0px;
+    height: 28px;
+    right: auto;
+    left: 330px;
+    top: 22px;
+}
+
+.field-operationid input.psgp-textbox{
+    width: 300px;
+    table-layout: fixed;
+}
+
+/*
+ * Settings Dialog
+ */
+.apm-ptd-settings-custdebug {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+.apm-ptd-dialog-custdebug.ui-dialog-content {
+    padding: 20px;
+}
+
+.apm-ptd-dialog-custdebug .buttons {
+    padding: 15px 5px 5px 5px;
+    width: 100%;
+}
+
+.apm-ptd-dialog-custdebug .buttons * {
+    display: inline-block;
+}
+
+.apm-ptd-dialog-custdebug .btn-save {
+    margin: 0px 20px 0px 0px;
+}
+
+/*
+ * KPI
+ */
+ .apm-ptd-kpi-container {
+    width: 100%;
+    padding: 0px 50px;
+}
+
+.apm-ptd-kpi-row {
+    width: 100%;
+}
+
+.apm-ptd-kpi-block {
+    width: 33%;
+    display: inline-block;
+    padding: 15px 0px;
+    vertical-align: top;
+}
+
+.apm-ptd-kpi-block .label{
+    color: #999999;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.apm-ptd-kpi-block .value{
+    color: #545454;
+    font-size: 13px;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px 10px 0px 0px;
+}
+
+.apm-ptd-subpanel-suitescriptdetail {
+    margin: 10px 10px 10px 10px;
+}
+
+/*
+ * Timeline Subpanel
+ */
+.apm-ptd-subpanel-timeline {
+    margin: 10px;
+}
+
+.apm-ptd-no-records-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.apm-ptd-no-records-container .chart-warning {
+    background-image: url(ns_images/warning.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 35px;
+}
+
+/*
+ * SuiteScript Details Grid
+ */
+.apm-ptd-suitescriptdetail-grid {
+    height: 300px;
+    margin: 5px 0px 5px 0px;
+    padding: 0px 0px 10px 0px;
+    overflow: auto;
+}
+/*
+ * Chart note
+ */
+.apm-ptd-timeline-chartcontainer .chart-note{
+    width: 100%;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5px 20px 0px 0px;
+}
