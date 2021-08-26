@@ -1,0 +1,2763 @@
+﻿<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+
+  <xsd:schema id="root" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element msdata:IsDataSet="true" name="root">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="page" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+                <xsd:element minOccurs="0" msdata:Ordinal="2" name="comment" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute msdata:Ordinal="1" name="name" type="xsd:string" use="required"/>
+              <xsd:attribute msdata:Ordinal="3" name="type" type="xsd:string"/>
+              <xsd:attribute msdata:Ordinal="4" name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+    <!--
+      ###Enumaration of PAGES.. for tracing only###
+      assetcreation - Asset Creation
+      assetdepreciation - Asset Depreciation
+      assetdisposal - Asset Disposal
+      assetproposal - Asset Proposal
+      assetregister - Asset Register Report/Asset Register Detail
+      assetrevaluation - Asset Revaluation
+      assetsplit - Asset Split
+      assetsummary - Asset Summary Report
+      depreciationschedule - Asset Depreciation Schedule
+      depreciationschedule2 - Asset Depreciation Schedule (Portrait)
+      depreciationmethod - Depreciation Method
+      famreports - Fixed Assets Reports
+      generatehistory - Generate Asset History
+      reportstatus - FAM - Report Status
+      reportstatus2 - Asset Report Status (sc)
+      systemsetup - System Setup
+      systemstatus - System Status
+      maintenance - Language Management
+      depreciationmethodformula - Depreciation Method
+      clientpage - Entries intended for client messages
+  -->
+
+  <!-- Page Screen Title -->
+  <data name="maintenance_screen_assetcreation" page="maintenance" xml:space="preserve">
+    <value>Creación del activo</value>
+  </data>
+  <data name="maintenance_screen_assetdisposal" page="maintenance" xml:space="preserve">
+    <value>Enajenación del activo</value>
+  </data>
+  <data name="maintenance_screen_assetproposal" page="maintenance" xml:space="preserve">
+    <value>Propuesta de activo</value>
+  </data>
+  <data name="maintenance_screen_assetrevaluation" page="maintenance" xml:space="preserve">
+    <value>Revaluación del activo</value>
+  </data>
+  <data name="maintenance_screen_assetsplit" page="maintenance" xml:space="preserve">
+    <value>División del activo</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule2" page="maintenance" xml:space="preserve">
+    <value>Programa de depreciación (vertical)</value>
+  </data>
+  <data name="maintenance_screen_systemsetup" page="maintenance" xml:space="preserve">
+    <value>Configuración del sistema</value>
+  </data>
+  <data name="maintenance_screen_maintenance" page="maintenance" xml:space="preserve">
+    <value>Traducción actualizada masiva-FAM</value>
+  </data>
+  <data name="maintenance_screen_assetdepreciation" page="maintenance" xml:space="preserve">
+    <value>Depreciación del activo</value>
+  </data>
+  <data name="maintenance_screen_assetregister" page="maintenance" xml:space="preserve">
+    <value>Informe del registro de activos</value>
+  </data>
+  <data name="maintenance_screen_assetsummary" page="maintenance" xml:space="preserve">
+    <value>Informe de resumen del activo</value>
+  </data>
+  <data name="maintenance_screen_backgroundprocessing" page="maintenance" xml:space="preserve">
+    <value>Procesamiento de fondo</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule" page="maintenance" xml:space="preserve">
+    <value>Programa de depreciación</value>
+  </data>
+  <data name="maintenance_screen_generatehistory" page="maintenance" xml:space="preserve">
+    <value>Generar historial</value>
+  </data>
+  <data name="maintenance_screen_reportstatus" page="maintenance" xml:space="preserve">
+    <value>Estado del informe del registro de activos</value>
+  </data>
+  <data name="maintenance_screen_systemstatus" page="maintenance" xml:space="preserve">
+    <value>Estado del sistema</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethod" page="maintenance" xml:space="preserve">
+    <value>Método de depreciación</value>
+  </data>
+  <data name="maintenance_screen_reportstatus2" page="maintenance" xml:space="preserve">
+    <value>Estado de informe de programa de depreciación</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethodformula" page="maintenance" xml:space="preserve">
+    <value>Fórmula de depreciación</value>
+  </data>
+  <data name="maintenance_screen_clientpage" page="maintenance" xml:space="preserve">
+    <value>Mensajes de alerta del cliente</value>
+  </data>
+
+  <!-- Localization Maintenance Page -->
+  <data name="maintenance_description_jp" page="maintenance" xml:space="preserve">
+    <value>Nombre: Japón JP</value>
+  </data>
+  <data name="maintenance_description_default" page="maintenance" xml:space="preserve">
+    <value>Nombre: Inglés EE.UU.</value>
+  </data>
+  <data name="maintenance_select_language" page="maintenance" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="custpage_translations_header" page="maintenance" xml:space="preserve">
+    <value>Traducción actualizada masiva-FAM</value>
+  </data>
+  <data name="custpage_translations_en_US_header" page="maintenance" xml:space="preserve">
+    <value>EE.UU.</value>
+  </data>
+  <data name="custpage_translations_ja_JP_header" page="maintenance" xml:space="preserve">
+    <value>Japón</value>
+  </data>
+  <data name="custpage_translations_custom_header" page="maintenance" xml:space="preserve">
+    <value>Traducción</value>
+  </data>
+  <data name="custpage_translations_custom_header_us" page="maintenance" xml:space="preserve">
+    <value>ee.uu.</value>
+  </data>
+  <data name="custpage_translations_custom_header_jp" page="maintenance" xml:space="preserve">
+    <value>jp</value>
+  </data>
+  <data name="custpage_translations_screen_header" page="maintenance" xml:space="preserve">
+    <value>Pantalla</value>
+  </data>
+  <data name="custpage_translations_common_fields" page="maintenance" xml:space="preserve">
+    <value>Campos comunes</value>
+  </data>
+
+  <!-- Asset Proposal Page -->
+  <data name="custrecord_assetproposal_title" page="assetproposal" xml:space="preserve">
+    <value>Propuesta de activo</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetproposal" xml:space="preserve">
+    <value>Tipo(s) de activo</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetproposal" xml:space="preserve">
+    <value>Subsidiaria(s)</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetproposal" xml:space="preserve">
+    <value>Incluir secundarios</value>
+    </data>
+  <data name="custpage_selectpage" page="assetproposal" xml:space="preserve">
+    <value>Seleccionar página</value>
+  </data>
+  <data name="custpage_rowperpage" page="assetproposal" xml:space="preserve">
+    <value>Propuestas por página</value>
+  </data>
+  <data name="proposals" page="assetproposal" xml:space="preserve">
+    <value>Activo propuesto</value>
+    </data>
+  <data name="marked" page="assetproposal" xml:space="preserve">
+    <value>Seleccionar</value>
+    </data>
+  <data name="editurl" page="assetproposal" xml:space="preserve">
+    <value>Editar</value>
+    </data>
+  <data name="custrecord_propsourceid" page="assetproposal" xml:space="preserve">
+    <value>Transacción</value>
+    </data>
+  <data name="custrecord_propassettype" page="assetproposal" xml:space="preserve">
+    <value>Tipo de activo</value>
+    </data>
+  <data name="custrecord_propassetdescr" page="assetproposal" xml:space="preserve">
+    <value>Descripción</value>
+    </data>
+  <data name="custrecord_propaccmethod" page="assetproposal" xml:space="preserve">
+    <value>Método de depreciación</value>
+    </data>
+  <data name="custrecord_propassetcost" page="assetproposal" xml:space="preserve">
+    <value>Costo inicial</value>
+    </data>
+  <data name="custrecord_propresidvalue" page="assetproposal" xml:space="preserve">
+    <value>Valor residual</value>
+    </data>
+  <data name="custrecord_propassetlifetime" page="assetproposal" xml:space="preserve">
+    <value>Vida útil</value>
+  </data>
+  <data name="custrecord_propsubsid" page="assetproposal" xml:space="preserve">
+    <value>Subsidiaria</value>
+  </data>
+  <data name="custpage_nopropselected" page="assetproposal" xml:space="preserve">
+    <value>No se seleccionaron propuestas para generar.</value>
+  </data>
+
+  <!-- Asset Transfer Page -->
+  <data name="custrecord_assettransfer_title" page="assettransfer" xml:space="preserve">
+    <value>Transferencia de activo</value>
+  </data>
+  <data name="custpage_assetid" page="assettransfer" xml:space="preserve">
+    <value>Nombre/Identificación del activo</value>
+  </data>
+  <data name="custpage_assetid_help" page="assettransfer" xml:space="preserve">
+    <value>Seleccione la identificación o nombre del activo que desea transferir.</value>
+  </data>
+  <data name="custpage_assettype" page="assettransfer" xml:space="preserve">
+    <value>Tipo de activo</value>
+  </data>
+  <data name="custpage_assettype_help" page="assettransfer" xml:space="preserve">
+    <value>Tipo de activo para este activo.</value>
+  </data>
+  <data name="custpage_newassettype" page="assettransfer" xml:space="preserve">
+    <value>Tipo de activo</value>
+  </data>
+  <data name="custpage_newassettype_help" page="assettransfer" xml:space="preserve">
+    <value>Seleccione el tipo de activo adónde desea transferir este activo.</value>
+  </data>
+  <data name="custpage_assetsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>Subsidiaria</value>
+  </data>
+  <data name="custpage_assetsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>Subsidiaria actual del activo.</value>
+  </data>
+  <data name="custpage_newsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>Subsidiaria</value>
+  </data>
+  <data name="custpage_newsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>Seleccione la subsidiaria a la que desea transferir este activo.</value>
+  </data>
+  <data name="custpage_assetclass" page="assettransfer" xml:space="preserve">
+    <value>Clase</value>
+  </data>
+  <data name="custpage_assetclass_help" page="assettransfer" xml:space="preserve">
+    <value>La clase actual del activo.</value>
+  </data>
+  <data name="custpage_newclass" page="assettransfer" xml:space="preserve">
+    <value>Clase</value>
+  </data>
+  <data name="custpage_newclass_help" page="assettransfer" xml:space="preserve">
+    <value>Seleccione la clase a la que desea transferir este activo.</value>
+  </data>
+  <data name="custpage_assetdepartment" page="assettransfer" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="custpage_assetdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>El departamento actual del activo.</value>
+  </data>
+  <data name="custpage_newdepartment" page="assettransfer" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="custpage_newdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>Seleccione el departamento al que desea transferir este activo.</value>
+  </data>
+  <data name="custpage_assetlocation" page="assettransfer" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="custpage_assetlocation_help" page="assettransfer" xml:space="preserve">
+    <value>La ubicación actual del activo.</value>
+  </data>
+  <data name="custpage_newlocation" page="assettransfer" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="custpage_newlocation_help" page="assettransfer" xml:space="preserve">
+    <value>Seleccione la ubicación a la que desea transferir este activo.</value>
+  </data>
+  <data name="custpage_assetdescription" page="assettransfer" xml:space="preserve">
+    <value>Descripción del activo</value>
+  </data>
+  <data name="custpage_assetdescription_help" page="assettransfer" xml:space="preserve">
+    <value>Aquí se muestra la descripción del activo.</value>
+  </data>
+  <data name="custpage_assetserialno" page="assettransfer" xml:space="preserve">
+    <value>Número de serie del activo</value>
+  </data>
+  <data name="custpage_assetserialno_help" page="assettransfer" xml:space="preserve">
+    <value>El número de serie que se utiliza para identificar o hacer el seguimiento del activo.</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assettransfer" xml:space="preserve">
+    <value>Número de activo alternativo</value>
+  </data>
+  <data name="custpage_assetalternateno_help" page="assettransfer" xml:space="preserve">
+    <value>Número de referencia de activo adicional</value>
+  </data>
+  <data name="custpage_assetorigcost" page="assettransfer" xml:space="preserve">
+    <value>Costo original</value>
+  </data>
+  <data name="custpage_assetorigcost_help" page="assettransfer" xml:space="preserve">
+    <value>El costo original (de compra) del activo.</value>
+  </data>
+  <data name="custpage_assetcurrcost" page="assettransfer" xml:space="preserve">
+    <value>Valor actual en libros</value>
+  </data>
+  <data name="custpage_assetcurrcost_help" page="assettransfer" xml:space="preserve">
+    <value>Es la valuación en libros actual del activo.</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assettransfer" xml:space="preserve">
+    <value>Vida útil del activo</value>
+  </data>
+  <data name="custpage_assetlifetime_help" page="assettransfer" xml:space="preserve">
+    <value>Es la vida útil esperada del activo, en múltiplos del período de depreciación (por ejemplo, si la depreciación es mensual, escriba la vida útil en meses).</value>
+  </data>
+  <data name="custpage_assetlastdepr" page="assettransfer" xml:space="preserve">
+    <value>Último período de depreciación</value>
+  </data>
+  <data name="custpage_assetlastdepr_help" page="assettransfer" xml:space="preserve">
+    <value>Es el número del período (dentro de la vida útil del activo) en el que el activo se depreció más recientemente.</value>
+  </data>
+  <data name="custpage_assetstatus" page="assettransfer" xml:space="preserve">
+    <value>Estado del activo</value>
+  </data>
+  <data name="custpage_assetstatus_help" page="assettransfer" xml:space="preserve">
+    <value>El estado actual del activo.</value>
+  </data>
+  <data name="custpage_assetcurrency" page="assettransfer" xml:space="preserve">
+    <value>Moneda</value>
+  </data>
+  <data name="custpage_assetcurrency_help" page="assettransfer" xml:space="preserve">
+    <value>Es la moneda base del libro de la subsidiaria.</value>
+  </data>
+
+  <!-- Process Instance Status Page -->
+  <data name="custpage_processstatus_title" page="processstatus" xml:space="preserve">
+    <value>Estado de la transacción</value>
+  </data>
+  <data name="custpage_processid" page="processstatus" xml:space="preserve">
+    <value>Procesos más recientes: </value>
+  </data>
+  <data name="custpage_currentprocess" page="processstatus" xml:space="preserve">
+    <value>Proceso(s) actual(es): </value>
+  </data>
+  <data name="custpage_processstatus" page="processstatus" xml:space="preserve">
+    <value>Estado del proceso actual: </value>
+  </data>
+  <data name="custpage_prevprocess" page="processstatus" xml:space="preserve">
+    <value>Proceso(s) anterior(es): </value>
+  </data>
+  <data name="custpage_nopending" page="processstatus" xml:space="preserve">
+    <value>Sin proceso pendiente</value>
+  </data>
+  <data name="custpage_nocurrent" page="processstatus" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="custpage_rendering" page="processstatus" xml:space="preserve">
+    <value>Presentando…</value>
+  </data>
+  <data name="custpage_deprnone" page="processstatus" xml:space="preserve">
+    <value>Se han depreciado (0) activos.</value>
+  </data>
+    <data name="custpage_depracctmethods" page="processstatus" xml:space="preserve">
+    <value>Depreciación de método de contabilidad </value>
+  </data>
+  <data name="custpage_depracctmethods_count" page="processstatus" xml:space="preserve">
+    <value>Los métodos de contabilidad se depreciaron.</value>
+  </data>
+  <data name="custpage_deprtaxmethods" page="processstatus" xml:space="preserve">
+    <value>Depreciación de métodos de impuestos </value>
+  </data>
+  <data name="custpage_deprtaxmethods_count" page="processstatus" xml:space="preserve">
+    <value>Los métodos de impuestos se depreciaron.</value>
+  </data>
+  <data name="custpage_writingdepr_amounts" page="processstatus" xml:space="preserve">
+    <value>Escritura de depreciación en el diario </value>
+  </data>
+  <data name="custpage_deprhistory_count" page="processstatus" xml:space="preserve">
+    <value>Historial de depreciación procesado.</value>
+  </data>
+  <data name="custpage_status_allassettype" page="processstatus" xml:space="preserve">
+    <value>Todos los tipos de activo</value>
+  </data>
+  <data name="custpage_procstatus_dispose" page="processstatus" xml:space="preserve">
+    <value>Enajenación de activo </value>
+  </data>
+  <data name="custpage_procstatus_dispose_count" page="processstatus" xml:space="preserve">
+    <value>Los activos se enajenaron.</value>
+  </data>
+  <data name="custpage_procstatus_reval" page="processstatus" xml:space="preserve">
+    <value>Revaluación de activo </value>
+  </data>
+  <data name="custpage_procstatus_reval_count" page="processstatus" xml:space="preserve">
+    <value>Los activos se revaluaron.</value>
+  </data>
+  <data name="custpage_procstatus_split" page="processstatus" xml:space="preserve">
+    <value>División de activo </value>
+  </data>
+  <data name="custpage_procstatus_split_count" page="processstatus" xml:space="preserve">
+    <value>Los activos se dividieron.</value>
+  </data>
+  <data name="custpage_procstatus_transfer" page="processstatus" xml:space="preserve">
+    <value>Transferencia de activo </value>
+  </data>
+  <data name="custpage_procstatus_transfer_count" page="processstatus" xml:space="preserve">
+    <value>Los activos se transfirieron.</value>
+  </data>
+  <data name="custpage_procstatus_gen" page="processstatus" xml:space="preserve">
+    <value>Generación de activo </value>
+  </data>
+  <data name="custpage_procstatus_gen_count" page="processstatus" xml:space="preserve">
+    <value>Se generaron los activos.</value>
+  </data>
+  <data name="custpage_procstatus_prop" page="processstatus" xml:space="preserve">
+    <value>Propuesta de activo </value>
+  </data>
+  <data name="custpage_procstatus_prop_count" page="processstatus" xml:space="preserve">
+    <value>Se propusieron los activos.</value>
+  </data>
+  <data name="custpage_procstatus_schedreport_count" page="processstatus" xml:space="preserve">
+    <value>Se generaron los informes.</value>
+  </data>
+  <data name="custpage_rep_gen_asset_register" page="processstatus" xml:space="preserve">
+    <value>Generación de informe de registro de activo</value>
+  </data>
+  <data name="custpage_rep_gen_asset_summary" page="processstatus" xml:space="preserve">
+    <value>Generación de informe resumido de activo</value>
+  </data>
+  <data name="custpage_rep_gen_depr_sched" page="processstatus" xml:space="preserve">
+    <value>Generación de informe de programa de depreciación</value>
+  </data>
+  <data name="custpage_report_generation_count" page="processstatus" xml:space="preserve">
+    <value>Se incluyen los registros.</value>
+  </data>
+  <data name="custpage_view_report_as" page="processstatus" xml:space="preserve">
+    <value>El informe se visualiza como:</value>
+  </data>
+  <data name="custpage_procstatus_create" page="processstatus" xml:space="preserve">
+    <value>Creación de activo </value>
+  </data>
+  <data name="custpage_procstatus_create_count" page="processstatus" xml:space="preserve">
+    <value>Se crearon los activos.</value>
+  </data>
+  <data name="custpage_view_proppage" page="processstatus" xml:space="preserve">
+    <value>Ver página de propuesta</value>
+  </data>
+  
+  <!-- Asset Summary Page -->
+  <data name="custrecord_assetsummary_title" page="assetsummary" xml:space="preserve">
+    <value>Informe de resumen del activo</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetsummary" xml:space="preserve">
+    <value>Tipo(s) de activo</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetsummary" xml:space="preserve">
+    <value>Subsidiaria(s)</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetsummary" xml:space="preserve">
+    <value>Incluir secundarios</value>
+    </data>
+  <data name="custpage_filtermsselect" page="assetsummary" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetsummary" xml:space="preserve">
+    <value>Método de depreciación</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetsummary" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetsummary" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetsummary" xml:space="preserve">
+    <value>Clase</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetsummary" xml:space="preserve">
+    <value>Fecha de inicio de período</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetsummary" xml:space="preserve">
+    <value>Fecha de finalización de período</value>
+  </data>
+  <data name="custpage_html_tangible" page="assetsummary" xml:space="preserve">
+    <value>Activos fijos tangibles</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="assetsummary" xml:space="preserve">
+    <value>Costo o valuación</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetsummary" xml:space="preserve">
+    <value>Depreciación</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetsummary" xml:space="preserve">
+    <value>Valor neto en libros</value>
+  </data>
+  <data name="custpage_html_at" page="assetsummary" xml:space="preserve">
+    <value>En (0)</value>
+  </data>
+  <data name="custpage_html_additions" page="assetsummary" xml:space="preserve">
+    <value>Adiciones</value>
+  </data>
+  <data name="custpage_html_disposals" page="assetsummary" xml:space="preserve">
+    <value>Enajenaciones</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="assetsummary" xml:space="preserve">
+    <value>Cargo del período</value>
+  </data>
+  <data name="custpage_html_adjustments" page="assetsummary" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="custpage_html_fam" page="assetsummary" xml:space="preserve">
+    <value>Gestión de activos fijos</value>
+  </data>
+  <data name="custpage_html_total" page="assetsummary" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetsummary" xml:space="preserve">
+    <value>Todos los activos</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetsummary" xml:space="preserve">
+    <value>Todos los activos excepto los alquilados</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetsummary" xml:space="preserve">
+    <value>Únicamente alquilados</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetsummary" xml:space="preserve">
+    <value>Método contable (opción)</value>
+  </data>
+  
+  
+  <!-- Fixed Assets Reports -->
+  <data name="custrecord_famreports_title" page="famreports" xml:space="preserve">
+    <value>Informes de activos fijos</value>
+  </data>
+  <data name="custpage_reporttype" page="famreports" xml:space="preserve">
+    <value>Clase de informe</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="famreports" xml:space="preserve">
+    <value>Tipo(s) de activo</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="famreports" xml:space="preserve">
+    <value>Subsidiaria(s)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="famreports" xml:space="preserve">
+    <value>Incluir secundarios</value>
+  </data>
+  <data name="custpage_filteracctngbook" page="famreports" xml:space="preserve">
+    <value>Libro(s) contable(s)</value>
+  </data>
+  <data name="custpage_filtermsselect" page="famreports" xml:space="preserve">
+    <value>Activos que se deben incluir</value>
+  </data>
+  <data name="custpage_filtersmethod" page="famreports" xml:space="preserve">
+    <value>Depreciación alternativa</value>
+  </data>
+  <data name="custpage_filterslocation" page="famreports" xml:space="preserve">
+    <value>Ubicación(es)</value>
+  </data>
+  <data name="custpage_filtersdept" page="famreports" xml:space="preserve">
+    <value>Departamento(s)</value>
+  </data>
+  <data name="custpage_filtersclass" page="famreports" xml:space="preserve">
+    <value>Clase(s)</value>
+  </data>
+  <data name="custpage_filterstartdate" page="famreports" xml:space="preserve">
+    <value>Fecha de inicio</value>
+  </data>
+  <data name="custpage_filterenddate" page="famreports" xml:space="preserve">
+    <value>Fecha de finalización</value>
+  </data>
+  <data name="custpage_html_tangible" page="famreports" xml:space="preserve">
+    <value>Activos fijos tangibles</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="famreports" xml:space="preserve">
+    <value>Costo o valuación</value>
+  </data>
+  <data name="custpage_html_depreciation" page="famreports" xml:space="preserve">
+    <value>Depreciación</value>
+  </data>
+  <data name="custpage_html_nbv" page="famreports" xml:space="preserve">
+    <value>Valor neto en libros</value>
+  </data>
+  <data name="custpage_html_at" page="famreports" xml:space="preserve">
+    <value>En (0)</value>
+  </data>
+  <data name="custpage_html_additions" page="famreports" xml:space="preserve">
+    <value>Adiciones</value>
+  </data>
+  <data name="custpage_html_disposals" page="famreports" xml:space="preserve">
+    <value>Enajenaciones</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="famreports" xml:space="preserve">
+    <value>Cargo del período</value>
+  </data>
+  <data name="custpage_html_adjustments" page="famreports" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="custpage_html_fam" page="famreports" xml:space="preserve">
+    <value>Gestión de activos fijos</value>
+  </data>
+  <data name="custpage_html_total" page="famreports" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="famreports" xml:space="preserve">
+    <value>Todos los activos</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="famreports" xml:space="preserve">
+    <value>Todos los activos excepto los alquilados</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="famreports" xml:space="preserve">
+    <value>Únicamente alquilados</value>
+  </data>
+  <data name="custpage_dropdown_report_assetregister" page="famreports" xml:space="preserve">
+    <value>Registro de activos</value>
+  </data>
+  <data name="custpage_dropdown_report_assetsummary" page="famreports" xml:space="preserve">
+    <value>Resumen de activos</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_nbv" page="famreports" xml:space="preserve">
+    <value>Valor neto en libros del programa de depreciación</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_pd" page="famreports" xml:space="preserve">
+    <value>Depreciación del período del programa de depreciación</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="famreports" xml:space="preserve">
+    <value>Método de contabilidad</value>
+  </data>
+  <data name="custpage_saveresults_help" page="famreports" xml:space="preserve">
+    <value>Guardar importes de pronóstico le permite guardar las entradas generadas del programa de depreciación (por toda la vida útil de un activo) en el registro de activo. Cuando está habilitada, el sistema ignorará la Fecha de inicio, la Fecha de finalización, el Valor neto en libros y la Depreciación del período. Esto garantiza que la tabla Historial de depreciación siempre tenga un programa de depreciación completo durante la vida útil del activo. Los valores que se ingresan en los campos Fecha de inicio, Fecha de finalización, Valor neto en libros y Depreciación del período solo se utilizarán para el informe generado.</value>
+  </data>
+  <data name="custpage_saveresults" page="famreports" xml:space="preserve">
+    <value>Guardar importes de pronóstico</value>
+  </data>
+  <data name="custpage_assetinclude_help" page="famreports" xml:space="preserve">
+    <value>Seleccione cuál de los siguientes activos desea incluir en el informe: Todos los activos, Todos los activos excepto los alquilados o Únicamente alquilados.</value>
+  </data>
+  <data name="custpage_nodataforreport" page="famreports" xml:space="preserve">
+    <value>Los datos de informe no están disponibles para la combinación de filtros que seleccionó.</value>
+  </data>
+  <data name="custpage_dropddown_none" page="famreports" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+
+  <!-- Report Status -->
+  <data name="custpage_currentstatus" page="reportstatus" xml:space="preserve">
+    <value>Estado actual</value>
+  </data>
+  <data name="custpage_resultstatus" page="reportstatus" xml:space="preserve">
+    <value>¿Dónde están las cosas?</value>
+  </data>
+  <data name="custpage_reportavailable" page="reportstatus" xml:space="preserve">
+    <value>Resultados del informe disponibles</value>
+  </data>
+  <data name="custpage_generatereportassettypes" page="reportstatus" xml:space="preserve">
+    <value>Generación de tipos de informe de activo:</value>
+  </data>
+  <data name="custpage_generatereport" page="reportstatus" xml:space="preserve">
+    <value>Generar informe: </value>
+  </data>
+  <data name="custpage_assetprocessed" page="reportstatus" xml:space="preserve">
+    <value>Se han procesado (0) activos.</value>
+  </data>
+  <data name="custpage_reportlink" page="reportstatus" xml:space="preserve">
+    <value>aquí</value>
+  </data>
+  <data name="custpage_errorfile" page="reportstatus" xml:space="preserve">
+    <value>Error al recuperar la información del archivo de informe</value>
+  </data>
+  <data name="custpage_generatingreport" page="reportstatus" xml:space="preserve">
+    <value>Generación de informe para</value>
+  </data>
+  <data name="custpage_reportcomplete" page="reportstatus" xml:space="preserve">
+    <value>Finalizó la generación del informe.</value>
+  </data>
+  <data name="custpage_processfailed" page="reportstatus" xml:space="preserve">
+    <value>Falló el procesamiento.</value>
+  </data>
+
+  <!-- Report Status Depreciation -->
+  <data name="custrecord_reportstatus_title" page="reportstatus2" xml:space="preserve">
+    <value>Estado de informe de programa de depreciación</value>
+  </data>
+  <data name="custpage_html_currentstatus" page="reportstatus2" xml:space="preserve">
+    <value>Estado actual</value>
+  </data>
+  <data name="custpage_html_resultstatus" page="reportstatus2" xml:space="preserve">
+    <value>¿Dónde están las cosas?</value>
+  </data>
+  <data name="custpage_html_assetprocessed" page="reportstatus2" xml:space="preserve">
+    <value>Se han procesado (0) activos.</value>
+  </data>
+  <data name="custpage_html_reportavailable" page="reportstatus2" xml:space="preserve">
+    <value>Resultados del informe disponibles</value>
+  </data>
+  <data name="custpage_html_reportlink" page="reportstatus2" xml:space="preserve">
+    <value>aquí</value>
+  </data>
+  <data name="custpage_html_generatereport" page="reportstatus2" xml:space="preserve">
+    <value>Generación de informe para: (0)</value>
+  </data>
+  <data name="custpage_html_processfailed" page="reportstatus2" xml:space="preserve">
+    <value>Falló el procesamiento.</value>
+  </data>
+  <data name="custpage_html_errorfile" page="reportstatus2" xml:space="preserve">
+    <value>Error al recuperar la información del archivo de informe</value>
+  </data>
+  <data name="custpage_html_assetno" page="reportstatus2" xml:space="preserve">
+    <value>Activo nº</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="reportstatus2" xml:space="preserve">
+    <value>Descripción del activo</value>
+  </data>
+
+
+  <data name="custrecord_famreportshist_title" page="famreportshistory" xml:space="preserve">
+    <value>Historial de informes de activos fijos</value>
+  </data>  
+  <data name="custpage_showingdays" page="famreportshistory" xml:space="preserve">
+    <value>Muestra los informes de los últimos (0) días.</value>
+  </data>
+  <data name="custpage_group_reporthistory" page="famreportshistory" xml:space="preserve">
+    <value>Informes de activos fijos</value>
+  </data>
+  <data name="custpage_reports_dategen" page="famreportshistory" xml:space="preserve">
+    <value>Fecha generada</value>
+  </data>
+  <data name="custpage_reports_reptype" page="famreportshistory" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="custpage_reports_repstartdate" page="famreportshistory" xml:space="preserve">
+    <value>Fecha de inicio</value>
+  </data>
+  <data name="custpage_reports_rependdate" page="famreportshistory" xml:space="preserve">
+    <value>Fecha de finalización</value>
+  </data>
+  <data name="custpage_reports_fileoptions" page="famreportshistory" xml:space="preserve">
+    <value>Opciones de archivo</value>
+  </data>
+  <data name="custpage_reports_viewas" page="famreportshistory" xml:space="preserve">
+    <value>Ver como: </value>
+  </data>
+  <data name="custpage_reports_delete" page="famreportshistory" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="custpage_reports_repowner" page="famreportshistory" xml:space="preserve">
+    <value>Propietario</value>
+  </data>
+  <data name="custpage_error_filepermissioninsuf" page="famreportshistory" xml:space="preserve">
+    <value>Este rol no tiene permiso para Ver el archivo o superior.</value>
+  </data>
+  <data name="custpage_button_all_reports" page="famreportshistory" xml:space="preserve">
+    <value>Mostrar todos los informes</value>
+  </data>
+  <data name="custpage_button_my_reports" page="famreportshistory" xml:space="preserve">
+    <value>Mostrar mis informes</value>
+  </data>
+
+  <!-- System Setup Page -->
+  <data name="custrecord_systemsetup_title" page="systemsetup" xml:space="preserve">
+    <value>Gestión de activos fijos</value>
+  </data>
+  <data name="custrecord_systemsetup_settingstab" page="systemsetup" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalktab" page="systemsetup" xml:space="preserve">
+    <value>SuiteTalk</value>
+  </data>
+  <data name="custrecord_systemsetup_featurestab" page="systemsetup" xml:space="preserve">
+    <value>Funciones</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalkdesc" page="systemsetup" xml:space="preserve">
+    <value>Ingrese las credenciales para usar las comunicaciones de Suite Talk (servicios web)</value>
+  </data>
+  <data name="custpage_filtermsselect" page="systemsetup" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="custpage_filtersmethod" page="systemsetup" xml:space="preserve">
+    <value>Método de depreciación</value>
+  </data>
+  <data name="custpage_filterslocation" page="systemsetup" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="custpage_filtersdept" page="systemsetup" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="custpage_filtersclass" page="systemsetup" xml:space="preserve">
+    <value>Clase</value>
+  </data>
+  <data name="custpage_filterstartdate" page="systemsetup" xml:space="preserve">
+    <value>Fecha de inicio de período</value>
+  </data>
+  <data name="custpage_filterenddate" page="systemsetup" xml:space="preserve">
+    <value>Fecha de finalización de período</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import" page="systemsetup" xml:space="preserve">
+    <value>Ejecutar scripts del servidor en importación de CSV</value>
+  </data>
+  <data name="custpage_farsetuppostlocation" page="systemsetup" xml:space="preserve">
+    <value>Contabilizar en Cambio de ubicación</value>
+  </data>
+  <data name="custpage_farsetuppostclass" page="systemsetup" xml:space="preserve">
+    <value>Contabilizar en Cambio de clase</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment" page="systemsetup" xml:space="preserve">
+    <value>Contabilizar en Cambio de departamento</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock" page="systemsetup" xml:space="preserve">
+    <value>Contabilizar en Siguiente período abierto si las cuentas a pagar están bloqueadas</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla para permitir la contabilización en el siguiente período abierto en caso de que las cuentas a pagar estén bloqueadas. Desactive esta casilla para permitir la contabilización en el período actual, incluso si las cuentas a pagar están bloqueadas.</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock" page="systemsetup" xml:space="preserve">
+    <value>Contabilizar en Siguiente período abierto si las cuentas a cobrar están bloqueadas</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla para permitir la contabilización en el siguiente período abierto si las cuentas a cobrar están bloqueadas. Desactive esta casilla para permitir la contabilización en el período actual, incluso si las cuentas a cobrar están bloqueadas.</value>
+  </data>
+  <data name="custpage_allow_non_fixedasset_account" page="systemsetup" xml:space="preserve">
+    <value>Permitir tipos de cuenta de activo no fijo</value>
+  </data>
+  <data name="custpage_farsetupsummary" page="systemsetup" xml:space="preserve">
+    <value>Resumir diarios por</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations" page="systemsetup" xml:space="preserve">
+    <value>Permitir depreciación con fecha futura</value>
+  </data>
+  <data name="custpage_allowvalueedit" page="systemsetup" xml:space="preserve">
+    <value>Permitir la edición del valor de activo</value>
+  </data>
+  <data name="custpage_allownegativecost" page="systemsetup" xml:space="preserve">
+    <value>Permitir el costo de activo negativo</value>
+  </data>
+  <data name="custpage_userrole_help1" page="systemsetup" xml:space="preserve">
+    <value>Permitir la Edición del valor del activo le otorga al administrador permiso completo para editar los valores en los registros de activos.</value>
+  </data>
+  <data name="custpage_userrole_help2" page="systemsetup" xml:space="preserve">
+    <value>También puede seleccionar roles adicionales para permitir que otros usuarios editen valores de activos.</value>
+  </data>
+  <data name="custpage_userrole" page="systemsetup" xml:space="preserve">
+    <value>Roles del usuario</value>
+  </data>
+  <data name="custpage_propapprovedonly" page="systemsetup" xml:space="preserve">
+    <value>Proponer solo transacciones aprobadas</value>
+  </data>
+  <data name="custpage_followacctperiod" page="systemsetup" xml:space="preserve">
+    <value>Usar fechas de período contable para la depreciación</value>
+  </data>
+  <data name="custpage_allowbypassue" page="systemsetup" xml:space="preserve">
+    <value>Evitar scripts de UE de registros personalizados durante la depreciación</value>
+  </data>
+  <data name="custpage_constrainal" page="systemsetup" xml:space="preserve">
+    <value>Refrenar la vida del activo alternativo</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction" page="systemsetup" xml:space="preserve">
+    <value>Usar Diarios personalizados</value>
+  </data>
+  <data name="custpage_adminallreports" page="systemsetup" xml:space="preserve">
+    <value>Permitir a los Administradores ver todos los informes</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount" page="systemsetup" xml:space="preserve">
+    <value>Reducir el valor en libros usando la cuenta de depreciación</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym" page="systemsetup" xml:space="preserve">
+    <value>Número entero (0 d.p.) Monedas</value>
+  </data>
+  <data name="custpage_farsetupresrej" page="systemsetup" xml:space="preserve">
+    <value>Restringir habilidad para rechazar propuestas</value>
+  </data>
+  <data name="custpage_farsetupreportfolder" page="systemsetup" xml:space="preserve">
+    <value>Carpeta a ser usada para la generación de informes (identificación interna)</value>
+  </data>
+  <data name="custpage_farsetupdisposalform" page="systemsetup" xml:space="preserve">
+    <value>Formulario de factura de enajenación de activo (identificación interna)</value>
+  </data>
+  <data name="custpage_farsetupsubsidsenabled" page="systemsetup" xml:space="preserve">
+    <value>Subsidiarias</value>
+  </data>
+  <data name="custpage_farsetupdeptsenabled" page="systemsetup" xml:space="preserve">
+    <value>Departamentos</value>
+  </data>
+  <data name="custpage_farsetuplocationsenabled" page="systemsetup" xml:space="preserve">
+    <value>Ubicaciones</value>
+  </data>
+  <data name="custpage_farsetupclassesenabled" page="systemsetup" xml:space="preserve">
+    <value>Clases</value>
+  </data>
+  <data name="custpage_farsetupjobsenabled" page="systemsetup" xml:space="preserve">
+    <value>Trabajos</value>
+  </data>
+  <data name="custpage_farsetupmulticurrenabled" page="systemsetup" xml:space="preserve">
+    <value>Monedas múltiples</value>
+  </data>
+  <data name="custpage_admin_only_field" page="systemsetup" xml:space="preserve">
+    <value>Solo administración</value>
+  </data>
+  <data name="custpage_html_adminonly" page="systemsetup" xml:space="preserve">
+    <value>Solo los administradores pueden acceder a esta página.</value>
+  </data>
+  <data name="custpage_dropdown_none" page="systemsetup" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="custpage_dropdown_parent" page="systemsetup" xml:space="preserve">
+    <value>Primario</value>
+  </data>
+  <data name="custpage_dropdown_subcategory" page="systemsetup" xml:space="preserve">
+    <value>Subcategoría</value>
+  </data>
+  <data name="custpage_dropdown_assettype" page="systemsetup" xml:space="preserve">
+    <value>Tipo de activo</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import_help" page="systemsetup" xml:space="preserve">
+  <value>No active esta casilla si está importando registros de activos de mitad de vida.
+Si esta casilla está marcada y también lo está la casilla Ejecutar SuiteScript del servidor y los disparadores del flujo de trabajo (Configuración &gt; Importar &gt; Preferencias de importación CSV), entonces, la información como Depreciación acumulativa, Última fecha de depreciación y Último período de depreciación se completarán automáticamente con los valores predeterminados de 0, incluso si los importes verdaderos se incorporan al archivo de importación.</value>
+  </data>
+  <data name="custpage_farsetuppostlocation_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla si los activos se transferirán al modificar la ubicación, con entradas de diario acompañantes.</value>
+  </data>
+  <data name="custpage_farsetuppostclass_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla si los activos se transferirán al modificar la clase, con entradas de diario acompañantes.</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla si los activos se transferirán al modificar el departamento, con entradas de diario acompañantes.</value>
+  </data>
+  <data name="custpage_constrainal_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla para restringir la adición a un registro de activos de un método de depreciación alternativo cuyo valor de vida del activo (AL, por sus siglas en inglés) sea superior a la vida útil del activo.</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla para contabilizar el importe de reducción del valor en libros en la cuenta de depreciación. Desactive la casilla de verificación para contabilizar el importe de reducción del valor en libros en la cuenta de activo.</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym_help" page="systemsetup" xml:space="preserve">
+    <value>Ingrese uno o más símbolos de monedas (por ejemplo, los yenes japoneses separan los valores múltiples con ;) para las monedas sin lugar para decimales.</value>
+  </data>
+  <data name="custpage_farsetupresrej_help" page="systemsetup" xml:space="preserve">
+    <value>Si esta opción está seleccionada, el botón Rechazar propuestas solo aparecerá en la página Propuesta de activo, cuando los usuarios acceden con el rol de Administrador.</value>
+  </data>
+  <data name="custpage_farsetupreportfolder_help" page="systemsetup" xml:space="preserve">
+    <value>Escriba la ID interna de la carpeta Informes de registros de activos fijos en el Gabinete de archivos en donde se guardan los informes de activos fijos. Para ver la identificación interna de la carpeta Informes de registro de activo fijo en su cuenta de NetSuite: 1. 
+Vaya a Documentos &gt; Archivos &gt; Gabinete de archivos.2. 
+Haga clic en SuiteBundles.3. 
+Haga clic en el Paquete 35405,4. 
+Haga clic en la carpeta scr.</value>
+  </data>
+  <data name="custpage_farsetupdisposalform_help" page="systemsetup" xml:space="preserve">
+    <value>Escriba la ID interna del formulario de factura preferido que se usará para crear el registro de la factura de venta cuando enajene un activo por venta. Si este campo se deja en blanco, el formulario preferido predeterminado se usará como el formulario de factura.</value>
+  </data>
+  <data name="custpage_farsetupsummary_help" page="systemsetup" xml:space="preserve">
+    <value>Seleccione una opción Resumir diarios por: Primario. Resuma los valores de los subactivos para el nivel primario y cree una entrada de diario para incluir los valores primarios y secundarios por período.
+
+Subcategoría: resuma los valores para la subcategoría y cree una entrada de diario por subcategoría por período Solo se puede seleccionar esta opción si se han implementado las categorías Mantenimiento y Reparación y las subcategorías Mantenimiento y Reparación.
+Tipo de activo: resuma los valores por tipo de activo.</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla para permitir la depreciación de los activos hasta una fecha de depreciación posterior a la del período actual. Desactive la casilla para depreciar los activos solamente hasta el período actual.</value>
+  </data>
+  <data name="custpage_allowvalueedit_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla para conceder a los administradores permiso completo para editar valores en los informes de activo.
+Si esta casilla no está seleccionada, no se puede editar los registros de activo. Consulte Restricción de la edición de valores de activo para la lista de campos que no se pueden editar.
+Para permitir que otros usuarios editen valores de activo, seleccione roles adicionales en el campo Roles del usuario.</value>
+  </data>
+  <data name="custpage_allownegativecost_help" page="systemsetup" xml:space="preserve">
+    <value>Selecciónelo para permitir que los administradores (y otros roles con permiso para editar valores de activo) ingresen valores negativos (para costo original, costo actual y valor residual) en los registros de activo.</value>
+  </data>
+  <data name="custpage_userrole_help" page="systemsetup" xml:space="preserve">
+    <value>Se activa cuando la casilla Permitir edición del valor de activo está marcada. Para seleccionar dos o más roles, mantenga presionada la tecla CTRL mientras hace clic en cada rol del campo Roles del usuario.</value>
+  </data>
+  <data name="custpage_propapprovedonly_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla si desea proponer activos solo desde las transacciones aprobadas. Desactive esta casilla para permitir la propuesta automática de activos desde todas las transacciones nuevas contabilizadas en función de las cuentas del libro mayor de activos fijos, independientemente del estado de la transacción (por ejemplo, si está aprobada o la aprobación está pendiente).</value>
+  </data>
+  <data name="custpage_followacctperiod_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta preferencia para utilizar las fechas de período contable para la entrada de diario de depreciación. Esto es aplicable si el Formato del período no está en Meses de calendario.</value>
+  </data>
+  <data name="custpage_allowbypassue_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla para evitar los flujos de trabajo y scripts Usuario-Evento para los registros personalizados durante el Proceso de depreciación. Borre esta casilla si está ejecutando scripts o flujos de trabajo personalizados en los registros que se actualizarán durante el Proceso de depreciación.</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla para usar un formulario de entrada de diario personalizado</value>
+  </data>
+  <data name="custpage_adminallreports_help" page="systemsetup" xml:space="preserve">
+    <value>Active esta casilla para permitir que los administradores vean los informes generados por otros usuarios.</value>
+  </data>
+  
+  <!-- Asset Split -->
+  <data name="custrecord_assetsplit_title" page="assetsplit" xml:space="preserve">
+    <value>División del activo</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetsplit" xml:space="preserve">
+    <value>Información primaria</value>
+  </data>
+  <data name="custpage_group_splitdetails" page="assetsplit" xml:space="preserve">
+    <value>Dividir detalles</value>
+  </data>
+  <data name="custpage_newlbl" page="assetsplit" xml:space="preserve">
+    <value>Nuevos valores de activo:</value>
+  </data>
+  <data name="custpage_oldlbl" page="assetsplit" xml:space="preserve">
+    <value>Valores de activo antiguos:</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetsplit" xml:space="preserve">
+    <value>Métodos de impuestos</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetsplit" xml:space="preserve">
+    <value>Libro contable</value>
+  </data>
+  <data name="custpage_altmethod" page="assetsplit" xml:space="preserve">
+    <value>Método alternativo</value>
+  </data>
+  <data name="custpage_assetid" page="assetsplit" xml:space="preserve">
+    <value>Nombre/Identificación del activo</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetsplit" xml:space="preserve">
+    <value>Descripción del activo</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetsplit" xml:space="preserve">
+    <value>Número de serie del activo</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetsplit" xml:space="preserve">
+    <value>Número de activo alternativo</value>
+  </data>
+  <data name="custpage_assettype" page="assetsplit" xml:space="preserve">
+    <value>Tipo de activo</value>
+  </data>
+  <data name="custpage_assetcost" page="assetsplit" xml:space="preserve">
+    <value>Costo original</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetsplit" xml:space="preserve">
+    <value>Costo actual</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetsplit" xml:space="preserve">
+    <value>Valor residual</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetsplit" xml:space="preserve">
+    <value>Método de depreciación</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetsplit" xml:space="preserve">
+    <value>Vida útil del activo</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetsplit" xml:space="preserve">
+    <value>Valor actual en libros</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetsplit" xml:space="preserve">
+    <value>Depreciación hasta la fecha</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetsplit" xml:space="preserve">
+    <value>Último período de depreciación</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetsplit" xml:space="preserve">
+    <value>Importe de la última depreciación</value>
+  </data>
+  <data name="custpage_assetdeprstartdate" page="assetsplit" xml:space="preserve">
+    <value>Fecha de inicio de la depreciación</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetsplit" xml:space="preserve">
+    <value>Fecha de la última depreciación</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetsplit" xml:space="preserve">
+    <value>Estado del activo</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetsplit" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetsplit" xml:space="preserve">
+    <value>Subsidiaria</value>
+  </data>
+  <data name="custpage_splitquantity" page="assetsplit" xml:space="preserve">
+    <value>Cantidad dividida</value>
+  </data>
+  <data name="splitquantity_help" page="assetsplit" xml:space="preserve">
+    <value>Ingrese un valor inferior a la Cantidad de activo.</value>
+  </data>
+  <!--help texts -->
+  <data name="custpage_newqty_help" page="assetsplit" xml:space="preserve">
+    <value>La cantidad independiente del activo original. Esto se convertirá ahora en la cantidad del activo nuevo.</value>
+  </data>
+  <data name="custpage_newoc_help" page="assetsplit" xml:space="preserve">
+    <value>El costo original predeterminado (compra) para el activo nuevo se basa en el costo original y en la cantidad dividida del activo nuevo. Ingrese un valor nuevo si no desea utilizar el costo original predeterminado.</value>
+  </data>
+  <data name="custpage_newcc_help" page="assetsplit" xml:space="preserve">
+    <value>El costo actual predeterminado para el activo nuevo se basa en el costo original y la cantidad dividida del activo nuevo. Ingrese un valor nuevo si no desea utilizar el costo actual predeterminado.</value>
+  </data>
+  <data name="custpage_newnbv_help" page="assetsplit" xml:space="preserve">
+    <value>La valuación en libros actual predeterminada para el activo nuevo se basa en el valor neto en libros y la cantidad dividida del activo original.  Ingrese un valor nuevo si no desea utilizar el valor neto en libros predeterminado.  Tenga en cuenta que la suma del Valor neto en libros y la Depreciación hasta la fecha debe ser igual al Costo actual.</value>
+  </data>
+  <data name="custpage_newdeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>El importe total de depreciación aplicada al activo nuevo hasta la fecha basado en la cantidad dividida y en la depreciación hasta la fecha del activo original. Ingrese un valor nuevo si no desea utilizar el importe de depreciación total predeterminado. Tenga en cuenta que la suma del Valor neto en libros y la Depreciación hasta la fecha debe ser igual al Costo actual.</value>
+  </data>
+  <data name="custpage_newrv_help" page="assetsplit" xml:space="preserve">
+    <value>El valor predeterminado del valor del nuevo activo al final de su vida útil. Este valor se basa en la cantidad dividida y el Valor residual del activo original.  Ingrese un valor nuevo si no desea utilizar el valor residual predeterminado.</value>
+  </data>
+  <data name="custpage_newlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>El importe de la última depreciación predeterminado para el activo nuevo se basa en la cantidad dividida y el Importe de la última depreciación del activo original. Ingrese un valor nuevo si no desea utilizar el importe de la última depreciación predeterminado.</value>
+  </data>
+  <data name="custpage_oldqty_help" page="assetsplit" xml:space="preserve">
+    <value>La cantidad restante del activo original.</value>
+  </data>
+  <data name="custpage_oldoc_help" page="assetsplit" xml:space="preserve">
+    <value>El costo original restante para el activo original se basa en la cantidad dividida.</value>
+  </data>
+  <data name="custpage_oldcc_help" page="assetsplit" xml:space="preserve">
+    <value>El costo actual restante para el activo original se basa en la cantidad dividida.</value>
+  </data>
+  <data name="custpage_oldnbv_help" page="assetsplit" xml:space="preserve">
+    <value>La valuación en libros actual restante para el activo original se basa en la cantidad dividida.</value>
+  </data>
+  <data name="custpage_olddeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>El importe de depreciación restante que se aplicó a la fecha del activo original se basa en la cantidad dividida.</value>
+  </data>
+  <data name="custpage_oldrv_help" page="assetsplit" xml:space="preserve">
+    <value>El valor remanente del valor del activo original al final de su vida útil. Este valor se basa en la cantidad dividida.</value>
+  </data>
+  <data name="custpage_oldlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>El importe de la última depreciación restante para el activo original se basa en la cantidad dividida.</value>
+  </data>
+
+  <!-- Asset Disposal -->
+  <data name="custrecord_assetdisposal_title" page="assetdisposal" xml:space="preserve">
+    <value>Enajenación/venta del activo</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetdisposal" xml:space="preserve">
+    <value>Información primaria</value>
+  </data>
+  <data name="custpage_group_disposaldetail" page="assetdisposal" xml:space="preserve">
+    <value>Detalles de enajenación</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetdisposal" xml:space="preserve">
+    <value>Métodos de impuestos</value>
+  </data>
+  <data name="custpage_assetid" page="assetdisposal" xml:space="preserve">
+    <value>Nombre/Identificación del activo</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetdisposal" xml:space="preserve">
+    <value>Seleccione la identificación o nombre del activo que desea enajenar.</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetdisposal" xml:space="preserve">
+    <value>Descripción del activo</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetdisposal" xml:space="preserve">
+    <value>Número de serie del activo</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetdisposal" xml:space="preserve">
+    <value>Número de activo alternativo</value>
+  </data>
+  <data name="custpage_assettype" page="assetdisposal" xml:space="preserve">
+    <value>Tipo de activo</value>
+  </data>
+  <data name="custpage_assetcost" page="assetdisposal" xml:space="preserve">
+    <value>Costo original</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetdisposal" xml:space="preserve">
+    <value>Costo actual</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetdisposal" xml:space="preserve">
+    <value>Valor residual</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetdisposal" xml:space="preserve">
+    <value>Método de depreciación</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetdisposal" xml:space="preserve">
+    <value>Vida útil del activo</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetdisposal" xml:space="preserve">
+    <value>Valor actual en libros</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetdisposal" xml:space="preserve">
+    <value>Depreciación hasta la fecha</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetdisposal" xml:space="preserve">
+    <value>Último período de depreciación</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetdisposal" xml:space="preserve">
+    <value>Importe de la última depreciación</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetdisposal" xml:space="preserve">
+    <value>Fecha de la última depreciación</value>
+  </data>
+  <data name="custpage_assetdeprperiod" page="assetdisposal" xml:space="preserve">
+    <value>Período de depreciación</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetdisposal" xml:space="preserve">
+    <value>Método de revisión</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetdisposal" xml:space="preserve">
+    <value>Estado del activo</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetdisposal" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="custpage_disposaldate" page="assetdisposal" xml:space="preserve">
+    <value>Fecha de enajenación</value>
+  </data>
+  <data name="custpage_disposaltype" page="assetdisposal" xml:space="preserve">
+    <value>Tipo de enajenación</value>
+  </data>
+  <data name="custpage_assetquantdisposed" page="assetdisposal" xml:space="preserve">
+    <value>Cantidad enajenada</value>
+  </data>
+  <data name="custpage_disposalitem" page="assetdisposal" xml:space="preserve">
+    <value>Artículo de venta</value>
+  </data>
+  <data name="custpage_customer" page="assetdisposal" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="custpage_salesamount" page="assetdisposal" xml:space="preserve">
+    <value>Importe de Venta</value>
+  </data>
+  <data name="custpage_taxcode" page="assetdisposal" xml:space="preserve">
+    <value>Código de impuesto sobre las ventas</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetdisposal" xml:space="preserve">
+    <value>Subsidiaria</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetdisposal" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdisposal" xml:space="preserve">
+    <value>Libro contable</value>
+  </data>
+  <data name="custpage_altmethod" page="assetdisposal" xml:space="preserve">
+    <value>Método alternativo</value>
+  </data>
+  <data name="custpage_html_assetdisposed" page="assetdisposal" xml:space="preserve">
+    <value>EL ACTIVO NO FUE ENAJENADO</value>
+  </data>
+  <data name="custpage_html_invoicefail" page="assetdisposal" xml:space="preserve">
+    <value>No se pudo crear una factura para la venta de activo.</value>
+  </data>
+  <data name="custpage_html_checksetup" page="assetdisposal" xml:space="preserve">
+    <value>Consulte la configuración de un registro de activo para obtener datos incompatibles y/o faltantes.</value>
+  </data>
+  <data name="custpage_html_journalfail" page="assetdisposal" xml:space="preserve">
+    <value>No se creó una entrada de diario para la venta de activo.</value>
+  </data>
+  <data name="custpage_html_journal_writeofffail" page="assetdisposal" xml:space="preserve">
+    <value>No se creó una entrada de diario para la cancelación de activo.</value>
+  </data>
+  <data name="custpage_assetquantdisposed_help" page="assetdisposal" xml:space="preserve">
+    <value>La Cantidad enajenada no puede ser mayor que la Cantidad de activo.</value>
+  </data>
+  <data name="custpage_disposaldate_help" page="assetdisposal" xml:space="preserve">
+    <value>La fecha de enajenación no puede ser superior a la Última fecha de depreciación.</value>
+  </data>
+  <data name="custpage_disposalitem_help" page="assetdisposal" xml:space="preserve">
+    <value>Solo se puede seleccionar Artículos no inventariados para Venta o Reventa.</value>
+  </data>
+  <data name="custpage_filterslocation_help" page="assetdisposal" xml:space="preserve">
+    <value>Si la función Inventario con múltiples ubicaciones (MLI) está activada, la enajenación de activo por parte de Ventas exige la configuración de un valor de Ubicación. Si está disponible, el valor de ubicación proviene del registro FAM – Activo de forma predeterminada y no se puede editar para evitar las transferencias de ubicación sin seguimiento. Si no está disponible desde el registro de activo, debe seleccionar el valor en la lista Ubicación que se encuentra en la página Enajenación/venta.</value>
+  </data>
+  <data name="custpage_salesamount_help" page="assetdisposal" xml:space="preserve">
+    <value>El importe de venta debe ser superior a cero.</value>
+  </data>
+  <data name="custpage_taxcode_help" page="assetdisposal" xml:space="preserve">
+    <value>Seleccione un Código de impuesto aplicable para la Subsidiaria del Cliente.</value>
+  </data>
+  <data name="custpage_salememo" page="assetdisposal" xml:space="preserve">
+    <value>Venta de activo (0)</value>
+  </data>
+  <data name="custpage_writeoffmemo" page="assetdisposal" xml:space="preserve">
+    <value>Cancelación del activo (0)</value>
+  </data>
+  <data name="custpage_nodispacc" page="assetdisposal" xml:space="preserve">
+     <value>El activo no se puede enajenar porque no se han establecido las siguientes cuentas de enajenación para:(0)</value>
+  </data>
+  <data name="custpage_inactiveacc" page="assetdisposal" xml:space="preserve">
+     <value>El activo no se puede enajenar porque las siguientes cuentas de enajenación están inactivas:(0)</value>
+  </data>
+  <data name="custpage_invoicefail" page="assetdisposal" xml:space="preserve">
+     <value>No se pudo crear una factura</value>
+  </data>
+  <data name="custpage_quantityerror" page="assetdisposal" xml:space="preserve">
+     <value>La Cantidad enajenada debe ser entre (0) y (1)</value>
+  </data>
+
+  <!-- Asset Depreciation Schedule Report V2 (Portrait) -->
+  <data name="custrecord_deprecationschedule2_title" page="depreciationschedule2" xml:space="preserve">
+    <value>Informe de programa de depreciación del activo</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule2" xml:space="preserve">
+    <value>Valor neto en libros</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>Depreciación del período</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule2" xml:space="preserve">
+    <value>Tipo(s) de activo</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule2" xml:space="preserve">
+    <value>Subsidiarias</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule2" xml:space="preserve">
+    <value>Incluir secundarios</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule2" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule2" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule2" xml:space="preserve">
+    <value>Clase</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule2" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>Método de depreciación</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule2" xml:space="preserve">
+    <value>Fecha de inicio</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule2" xml:space="preserve">
+    <value>Fecha de finalización</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule2" xml:space="preserve">
+    <value>Todos los activos</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule2" xml:space="preserve">
+    <value>Todos los activos excepto los alquilados</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule2" xml:space="preserve">
+    <value>Únicamente alquilados</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>Método de contabilidad</value>
+  </data>
+  <data name="custpage_html_asset" page="depreciationschedule2" xml:space="preserve">
+    <value>Activo</value>
+  </data>
+  <data name="custpage_message_filestorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>No se pueden almacenar los datos temporales requeridos para el informe (nlapiSubmitFile)</value>
+  </data>
+  <data name="custpage_message_temporarydata" page="depreciationschedule2" xml:space="preserve">
+    <value>Datos temporales requeridos por el informe del Programa de depreciación para la gestión de activos fijos</value>
+  </data>
+  <data name="custpage_html_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>Programa de depreciación de activo: depreciación del período</value>
+  </data>
+  <data name="custpage_html_nbv" page="depreciationschedule2" xml:space="preserve">
+    <value>Programa de depreciación de activo: valor neto en libros</value>
+  </data>
+  <data name="custpage_html_periodtotal" page="depreciationschedule2" xml:space="preserve">
+    <value>Total del período</value>
+  </data>
+  <data name="custpage_html_assetno" page="depreciationschedule2" xml:space="preserve">
+    <value>Activo nº</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="depreciationschedule2" xml:space="preserve">
+    <value>Descripción del activo</value>
+  </data>
+  <data name="custpage_deprschedreport" page="depreciationschedule2" xml:space="preserve">
+    <value>Informe del programa de depreciación para la gestión de activos fijos</value>
+  </data>
+  <data name="custpage_html_reporttruncated" page="depreciationschedule2" xml:space="preserve">
+    <value>Informe truncado, alcanzó el tamaño de almacenamiento máximo.</value>
+  </data>
+  <data name="custpage_message_reportstorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>No se pueden almacenar los resultados del informe de la tienda (nlapiSubmitFile)</value>
+  </data>
+  <data name="custpage_html_fam" page="depreciationschedule2" xml:space="preserve">
+    <value>Gestión de activos fijos</value>
+  </data>
+  <data name="custpage_html_noassetfound" page="depreciationschedule2" xml:space="preserve">
+    <value>No se encontraron activos para el informe de programa</value>
+  </data>
+
+  <!-- Asset Creation Status -->
+  <data name="custrecord_assetcreation_title" page="assetcreation" xml:space="preserve">
+    <value>Creación de nuevos activos</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetcreation" xml:space="preserve">
+    <value>Tipo(s) de activo</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetcreation" xml:space="preserve">
+    <value>Subsidiaria(s)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetcreation" xml:space="preserve">
+    <value>Incluir secundarios</value>
+  </data>
+  <data name="custrecord_creationstatus_title" page="assetcreation" xml:space="preserve">
+    <value>Estado de creación del activo</value>
+  </data>
+  <data name="custrecord_html_currentstatus" page="assetcreation" xml:space="preserve">
+    <value>Estado actual</value>
+  </data>
+  <data name="custrecord_resultstatus" page="assetcreation" xml:space="preserve">
+    <value>¿Dónde están las cosas?</value>
+  </data>
+  <data name="custrecord_generationcomplete" page="assetcreation" xml:space="preserve">
+    <value>Finalizó la generación del activo.</value>
+  </data>
+  <data name="custrecord_creatingasset" page="assetcreation" xml:space="preserve">
+    <value>Creación de activos para Tipos de activo: (0)</value>
+  </data>
+  <data name="custrecord_transactionprocessed" page="assetcreation" xml:space="preserve">
+    <value>Se han procesado (0) transacciones, se han creado (1) nuevos activos.</value>
+  </data>
+  <data name="custrecord_allassettypes" page="assetcreation" xml:space="preserve">
+    <value>Todos los tipos de activo</value>
+  </data>
+
+  <!-- Asset Revaluation -->
+  <data name="custrecord_assetrevaluation_title" page="assetrevaluation" xml:space="preserve">
+    <value>Revaluación del activo</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetrevaluation" xml:space="preserve">
+    <value>Información primaria</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetrevaluation" xml:space="preserve">
+    <value>Seleccione la identificación o nombre del activo que desea revaluar.</value>
+  </data>
+  <data name="custpage_assetid" page="assetrevaluation" xml:space="preserve">
+    <value>Nombre/Identificación del activo</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetrevaluation" xml:space="preserve">
+    <value>Descripción del activo</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetrevaluation" xml:space="preserve">
+    <value>Número de serie del activo</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetrevaluation" xml:space="preserve">
+    <value>Número de activo alternativo</value>
+  </data>
+  <data name="custpage_assettype" page="assetrevaluation" xml:space="preserve">
+    <value>Tipo de activo</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetrevaluation" xml:space="preserve">
+    <value>Costo actual</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Valor residual</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetrevaluation" xml:space="preserve">
+    <value>Método de depreciación</value>
+  </data>
+  <data name="custpage_depmethodlbl" page="clientpage" xml:space="preserve">
+    <value>Método de depreciación</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>Vida útil del activo</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Valor actual en libros</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetrevaluation" xml:space="preserve">
+    <value>Método de revisión</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetrevaluation" xml:space="preserve">
+    <value>Estado del activo</value>
+  </data>
+  <data name="custpage_writedownamount" page="assetrevaluation" xml:space="preserve">
+    <value>Importe de reducción del valor en libros</value>
+  </data>
+  <data name="custpage_newresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Ajuste de valor residual</value>
+  </data>
+  <data name="custpage_newlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>Ajuste de vida útil</value>
+  </data>
+  <data name="custpage_newdeprmethod" page="assetrevaluation" xml:space="preserve">
+    <value>Ajuste de método de depreciación</value>
+  </data>
+  <data name="custpage_revaluationmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Referencia de transacción</value>
+  </data>
+  <data name="custpage_revaluationdate" page="assetrevaluation" xml:space="preserve">
+    <value>Fecha de transacción</value>
+  </data>
+  <data name="custpage_lastdeprperiod" page="clientpage" xml:space="preserve">
+    <value>Último período de depreciación</value>
+  </data>
+  <data name="custpage_residualvalueerrror" page="assetrevaluation" xml:space="preserve">
+    <value>El Valor residual excede el Costo original o el Costo actual</value>
+  </data>
+  <data name="custpage_defaultrevmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Revaluación de activo (FAM)</value>
+  </data>
+  <data name="custpage_defaultwdmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Reducción del valor en libros del activo (FAM)</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetrevaluation" xml:space="preserve">
+    <value>Libro(s) contable(s)</value>
+  </data>
+  <data name="custpage_writedownperc" page="assetrevaluation" xml:space="preserve">
+    <value>Porcentaje de reducción del valor en libros</value>
+  </data>
+  <data name="custpage_newdeprmethod_help" page="assetrevaluation" xml:space="preserve">
+    <value>El método de depreciación nuevo que se utilizará para depreciar este activo tras la revaluación.</value>
+  </data>
+  <data name="custpage_newlifetime_help" page="assetrevaluation" xml:space="preserve">
+    <value>La vida útil nueva del activo tras la revaluación.</value>
+  </data>
+  <data name="custpage_newresidualvalue_help" page="assetrevaluation" xml:space="preserve">
+    <value>El valor residual nuevo del activo tras la revaluación.</value>
+  </data>
+  <data name="custpage_writedownperc_help" page="assetrevaluation" xml:space="preserve">
+    <value>Ingrese para completar el importe de reducción del valor en libro de forma automática en la sublista a continuación.</value>
+  </data>
+  <data name="custpage_revaluationdate_help" page="assetrevaluation" xml:space="preserve">
+    <value>Ingrese una fecha para la entrada de diario de esta transacción.</value>
+  </data>
+  <data name="custpage_revaluationmemo_help" page="assetrevaluation" xml:space="preserve">
+    <value>Ingrese una referencia para identificar la entrada de diario de esta transacción.</value>
+  </data>
+  <data name="custpage_writedownamount_help" page="assetrevaluation" xml:space="preserve">
+    <value>Ingrese un importe de reducción del valor en libro. Este importe se extrae del valor neto en libros actual</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetrevaluation" xml:space="preserve">
+    <value>Seleccione los Libros contables que están asociados con este activo.</value>
+  </data>
+  <data name="custpage_groupdeprerror" page="assetrevaluation" xml:space="preserve">
+      <value>La revaluación no es posible para las Depreciaciones alternativas de depreciación del grupo</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>La revaluación no es posible para los registros con fechas de revaluación anteriores a la última fecha de depreciación.</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>La revaluación no es posible para los registros con fechas de revaluación anteriores a la última fecha de depreciación.</value>
+  </data>
+  <data name="custpage_wdacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Cuenta de reducción del valor en libros faltante o inactiva</value>
+  </data>
+  <data name="custpage_assetacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Cuenta de activo faltante o inactiva</value>
+  </data>
+  <data name="custpage_depracct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Cuenta de depreciación faltante o inactiva</value>
+  </data>
+  <data name="custpage_deprchargeacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Cuenta de cargo de depreciación faltante o inactiva</value>
+  </data>
+  <data name="custpage_plugin_not_parent_asset" page="assetrevaluation" xml:space="preserve">
+      <value>La Identificación de registro de activo provista no se encuentra en el Activo primario del Método de impuestos para su revaluación.</value>
+  </data>
+  <data name="custpage_no_tax_or_asset" page="assetrevaluation" xml:space="preserve">
+      <value>Debe proporcionar la Id. de registro de activo o la Id. de método de impuestos para revaluación.</value>
+  </data>
+
+
+
+  <!-- Asset report -->
+  <data name="custrecord_assetregister_title" page="assetregister" xml:space="preserve">
+    <value>Informe del registro de activos</value>
+  </data>
+  <data name="custrecord_assetregisterdetail_title" page="assetregister" xml:space="preserve">
+    <value>Informe de detalles del registro de activos</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetregister" xml:space="preserve">
+    <value>Tipo(s) de activo</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetregister" xml:space="preserve">
+    <value>Subsidiaria(s)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetregister" xml:space="preserve">
+    <value>Incluir secundarios</value>
+  </data>
+  <data name="custpage_filtermsselect" page="assetregister" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetregister" xml:space="preserve">
+    <value>Método de depreciación</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetregister" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetregister" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetregister" xml:space="preserve">
+    <value>Clase</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetregister" xml:space="preserve">
+    <value>Fecha de inicio de período</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetregister" xml:space="preserve">
+    <value>Fecha de finalización de período</value>
+  </data>
+  <data name="custpage_html_fam" page="assetregister" xml:space="preserve">
+    <value>Gestión de activos fijos</value>
+  </data>
+  <data name="custpage_html_transdate" page="assetregister" xml:space="preserve">
+    <value>Fecha de transacción</value>
+  </data>
+  <data name="custpage_html_cost" page="assetregister" xml:space="preserve">
+    <value>Costo</value>
+  </data>
+  <data name="custpage_html_accdepreciation" page="assetregister" xml:space="preserve">
+    <value>Depreciación acumulada</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetregister" xml:space="preserve">
+    <value>NBV</value>
+  </data>
+  <data name="custpage_html_acquisitiondate" page="assetregister" xml:space="preserve">
+    <value>Fecha de adquisición</value>
+  </data>
+  <data name="custpage_html_assettype" page="assetregister" xml:space="preserve">
+    <value>Tipo de activo</value>
+  </data>
+  <data name="custpage_html_assetmanagement" page="assetregister" xml:space="preserve">
+    <value>(0) Gestión de activo</value>
+  </data>
+  <data name="custpage_html_assetname" page="assetregister" xml:space="preserve">
+    <value>Nombre del activo</value>
+  </data>
+  <data name="custpage_html_description" page="assetregister" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="custpage_html_additions" page="assetregister" xml:space="preserve">
+    <value>Adiciones</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetregister" xml:space="preserve">
+    <value>Depreciación</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetregister" xml:space="preserve">
+    <value>Todos los activos</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetregister" xml:space="preserve">
+    <value>Todos los activos excepto los alquilados</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetregister" xml:space="preserve">
+    <value>Únicamente alquilados</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetregister" xml:space="preserve">
+    <value>Método de contabilidad</value>
+  </data>
+  <data name="custrecord_html_assetregisterdetail" page="assetregister" xml:space="preserve">
+    <value>Detalle del registro de activo</value>
+  </data>
+
+  <!--System Status -->
+  <data name="custrecord_systemstatus_title" page="systemstatus" xml:space="preserve">
+    <value>Estado de depreciación del activo</value>
+  </data>
+  <data name="custpage_currentstatus" page="systemstatus" xml:space="preserve">
+    <value>Estado actual</value>
+  </data>
+  <data name="custpage_resultstatus" page="systemstatus" xml:space="preserve">
+    <value>¿Dónde están las cosas?</value>
+  </data>
+  <data name="custpage_depreciatestatus1" page="systemstatus" xml:space="preserve">
+    <value>Tipos de activo en depreciación:</value>
+  </data>
+  <data name="custpage_deprcomplete" page="systemstatus" xml:space="preserve">
+    <value>Completado</value>
+  </data>
+  
+  <!--Generate History -->
+  <data name="custrecord_generatehistory_title" page="generatehistory" xml:space="preserve">
+    <value>Generar historial de activo</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="generatehistory" xml:space="preserve">
+    <value>Tipo(s) de activo</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="generatehistory" xml:space="preserve">
+    <value>Subsidiaria(s)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="generatehistory" xml:space="preserve">
+    <value>Incluir secundarios</value>
+  </data>
+  <data name="custpage_filtersmethod" page="generatehistory" xml:space="preserve">
+    <value>Método de depreciación</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod1" page="generatehistory" xml:space="preserve">
+    <value>Método de depreciación 1</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod2" page="generatehistory" xml:space="preserve">
+    <value>Método de depreciación 2</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod3" page="generatehistory" xml:space="preserve">
+    <value>Método de depreciación 3</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod4" page="generatehistory" xml:space="preserve">
+    <value>Método de depreciación 4</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod5" page="generatehistory" xml:space="preserve">
+    <value>Método de depreciación 5</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod6" page="generatehistory" xml:space="preserve">
+    <value>Método de depreciación 6</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod7" page="generatehistory" xml:space="preserve">
+    <value>Método de depreciación 7</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod8" page="generatehistory" xml:space="preserve">
+    <value>Método de depreciación 8</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod9" page="generatehistory" xml:space="preserve">
+    <value>Método de depreciación 9</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_ok" page="depreciationmethod" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="custpage_error" page="depreciationmethod" xml:space="preserve">
+    <value>ERROR</value>
+  </data>
+
+  <!-- Asset Depreciation -->
+  <data name="custrecord_assetdepreciation_title" page="assetdepreciation" xml:space="preserve">
+    <value>Depreciar activos</value>
+  </data>
+  <data name="custfield_errormessage" page="assetdepreciation" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="custpage_futuredateerror" page="assetdepreciation" xml:space="preserve">
+    <value>La fecha del período de depreciación no puede ser un período futuro.</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetdepreciation" xml:space="preserve">
+    <value>Tipo(s) de activo</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetdepreciation" xml:space="preserve">
+    <value>Subsidiaria(s)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetdepreciation" xml:space="preserve">
+    <value>Incluir secundarios</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdepreciation" xml:space="preserve">
+    <value>Libro(s) contable(s)</value>
+  </data>
+  <data name="custpage_deprperiod" page="assetdepreciation" xml:space="preserve">
+    <value>Período de depreciación</value>
+  </data>
+  <data name="custpage_postperiod" page="assetdepreciation" xml:space="preserve">
+    <value>Período contable</value>
+  </data>
+  <data name="custpage_deprmemo" page="assetdepreciation" xml:space="preserve">
+    <value>Referencia de depreciación</value>
+  </data>
+  <data name="custpage_assetdepreciation" page="assetdepreciation" xml:space="preserve">
+    <value>Depreciación del activo</value>
+  </data>
+  <data name="custpage_deprmemo_help" page="assetdepreciation" xml:space="preserve">
+    <value>Ingrese una referencia de depreciación para utilizar como la referencia base en todos los diarios generados. Deje en blanco para usar la referencia predeterminada.</value>
+  </data>
+  <data name="custpage_deprperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>Ingrese una fecha hasta la que se depreciarán los activos. Tenga en cuenta que la fecha contabilizada siempre será a fin de mes.</value>
+  </data>
+  <data name="custpage_postperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>Seleccione el período en el que desea contabilizar esta transacción. Si un período está cerrado, no podrá contabilizar en ese período.</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetdepreciation" xml:space="preserve">
+    <value>Seleccione los Libros contables que están asociados con este activo.</value>
+  </data>
+  <data name="client_depr_subsbooksmismatch" page="assetdepreciation" xml:space="preserve">
+    <value>Los libros contables seleccionados no están asociados a las subsidiarias seleccionadas.</value>
+  </data>
+
+  <!-- Depreciation Schedule Report -->
+  <data name="custrecord_depreciationschedule_title" page="depreciationschedule" xml:space="preserve">
+    <value>Informe de programa de depreciación del activo</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule" xml:space="preserve">
+    <value>Tipo de activo</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule" xml:space="preserve">
+    <value>Valor neto en libros</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule" xml:space="preserve">
+    <value>Depreciación del período</value>
+  </data>
+  <data name="custpage_saveresults" page="depreciationschedule" xml:space="preserve">
+    <value>Guardar resultados</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule" xml:space="preserve">
+    <value>Subsidiaria(s)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule" xml:space="preserve">
+    <value>Incluir secundarios</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule" xml:space="preserve">
+    <value>Clase</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule" xml:space="preserve">
+    <value>Método de depreciación</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule" xml:space="preserve">
+    <value>Fecha de inicio</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule" xml:space="preserve">
+    <value>Fecha de finalización</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule" xml:space="preserve">
+    <value>Todos los activos</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule" xml:space="preserve">
+    <value>Todos los activos excepto los alquilados</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule" xml:space="preserve">
+    <value>Únicamente alquilados</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule" xml:space="preserve">
+    <value>Método de contabilidad</value>
+  </data>
+  <data name="custpage_filterenddate_help" page="depreciationschedule" xml:space="preserve">
+    <value>Ingrese o seleccione una fecha de finalización para el período de informe que desea.</value>
+  </data>
+  <data name="custpage_filterstartdate_help" page="depreciationschedule" xml:space="preserve">
+    <value>Ingrese o seleccione una fecha de inicio para el período de informe que desea.</value>
+  </data>
+  <data name="custpage_netbookvalue_help" page="depreciationschedule" xml:space="preserve">
+    <value>Active esta casilla si desea que solo se muestre el pronóstico del valor neto en libros mensual en el Informe HTML.</value>
+  </data>
+  <data name="custpage_perioddepr_help" page="depreciationschedule" xml:space="preserve">
+    <value>Active esta casilla si desea que se muestre solo el pronóstico de depreciación mensual en el Informe HTML.</value>
+  </data>
+  <data name="custpage_saveresults_help" page="depreciationschedule" xml:space="preserve">
+    <value>Guardar resultados se utiliza para generar entradas de Programa de depreciación para la vida útil de un activo y para guardar las entradas en el registro de activo. Cuando se selecciona Guardar resultados, el sistema ignora la Fecha de inicio, la Fecha de finalización, el Valor neto en libros y el Período de depreciación para garantizar que la tabla de Historial de depreciación siempre contenga un programa de depreciación completo para la vida útil del activo. Los valores ingresados en los campos Fecha de inicio, Fecha de finalización, Valor neto en libros y Período de depreciación solo se utilizarán para el informe HTML generado.</value>
+  </data>
+
+  <!-- Bulk Transfer -->
+  <data name="custpage_bulktransfer_title" page="bulktransfer" xml:space="preserve">
+    <value>Transferencia de activo en masa</value>
+  </data>
+  <data name="custpage_uploadhelp" page="bulktransfer" xml:space="preserve">
+    <value>Puede cargar su archivo Importación CSV para actualizar la Subsidiaria, el Departamento, la Clase, la Ubicación y el Tipo de activo para múltiples activos.</value>
+  </data>
+  <data name="custpage_settinghelp" page="bulktransfer" xml:space="preserve">
+    <value>Para registrar una entrada de diario en transferencia, asegúrese de que la preferencia Contabilizar en Cambio de departamento, Clase o Ubicación (Activos fijos &gt; Configuración &gt; Configuración del sistema) esté activada.</value>
+  </data>
+  <data name="custpage_uploadboth" page="bulktransfer" xml:space="preserve">
+    <value>No cargue el archivo CSV con las transferencias Tipo de activo y Subsidiaria.</value>
+  </data>
+  <data name="custpage_samplefile" page="bulktransfer" xml:space="preserve">
+    <value>Haga clic (aquí) para ver un archivo de muestra.</value>
+  </data>
+  <data name="custpage_nofileuploaderror" page="bulktransfer" xml:space="preserve">
+    <value>No se puedo cargar el archivo.</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_html_formulainstruction" page="depreciationmethodformula" xml:space="preserve">
+    <value>Use los siguientes operadores y símbolos (que reconocen mayúsculas y minúsculas) para definir la fórmula de depreciación:</value>
+  </data>
+  <data name="custpage_html_formulahelp1" page="depreciationmethodformula" xml:space="preserve">
+    <value>^ (a la potencia de, es decir, 5^2 = 5 al cuadrado)</value>
+  </data>
+  <data name="custpage_html_formulahelp2" page="depreciationmethodformula" xml:space="preserve">
+    <value>() * / + -</value>
+  </data>
+  <data name="custpage_html_formulahelp3" page="depreciationmethodformula" xml:space="preserve">
+    <value>cualquier número con decimales (por ejemplo, 12345,67)</value>
+  </data>
+  <data name="custpage_html_formulahelp4" page="depreciationmethodformula" xml:space="preserve">
+    <value>~ (máximo de dos valores, es decir 2~5 = 5)</value>
+  </data>
+  <data name="custpage_html_formulahelp5" page="depreciationmethodformula" xml:space="preserve">
+    <value>OC (costo de activo original)</value>
+  </data>
+  <data name="custpage_html_formulahelp6" page="depreciationmethodformula" xml:space="preserve">
+    <value>CC (costo de activo circulante)</value>
+  </data>
+  <data name="custpage_html_formulahelp7" page="depreciationmethodformula" xml:space="preserve">
+    <value>NB (valor neto en libros)</value>
+  </data>
+  <data name="custpage_html_formulahelp8" page="depreciationmethodformula" xml:space="preserve">
+    <value>RV (valor residual)</value>
+  </data>
+  <data name="custpage_html_formulahelp9" page="depreciationmethodformula" xml:space="preserve">
+    <value>AL (vida útil del activo)</value>
+  </data>
+  <data name="custpage_html_formulahelp10" page="depreciationmethodformula" xml:space="preserve">
+    <value>CP (período actual o edad actual)</value>
+  </data>
+  <data name="custpage_html_formulahelp11" page="depreciationmethodformula" xml:space="preserve">
+    <value>TD (importe de depreciación total)</value>
+  </data>
+  <data name="custpage_html_formulahelp12" page="depreciationmethodformula" xml:space="preserve">
+    <value>CU (uso actual)</value>
+  </data>
+  <data name="custpage_html_formulahelp13" page="depreciationmethodformula" xml:space="preserve">
+    <value>LU (uso de vida útil)</value>
+  </data>
+  <data name="custpage_html_formulahelp14" page="depreciationmethodformula" xml:space="preserve">
+    <value>LD (importe de la última depreciación)</value>
+  </data>
+  <data name="custpage_html_formulahelp15" page="depreciationmethodformula" xml:space="preserve">
+    <value>DH (días en período actual)</value>
+  </data>
+  <data name="custpage_html_formulahelp16" page="depreciationmethodformula" xml:space="preserve">
+    <value>PB (valor neto en libros del año anterior)</value>
+  </data>
+  <data name="custpage_html_formulahelp17" page="depreciationmethodformula" xml:space="preserve">
+    <value>DP (número de días en un período)</value>
+  </data>
+  <data name="custpage_html_formulahelp18" page="depreciationmethodformula" xml:space="preserve">
+    <value>FY (número de días en un año fiscal)</value>
+  </data>
+
+  <!-- BG Process Record -->
+  <data name="custpage_bgprocess_deleteerror" page="bgprocess" xml:space="preserve">
+    <value>Esta instancia de proceso no se puede eliminar debido al estado de proceso: (0)</value>
+  </data>
+  <data name="list_bgprocess_queue" page="bgprocess" xml:space="preserve">
+    <value>En cola</value>
+  </data>
+  <data name="list_bgprocess_inprogress" page="bgprocess" xml:space="preserve">
+    <value>En curso</value>
+  </data>
+  <data name="list_bgprocess_completed" page="bgprocess" xml:space="preserve">
+    <value>Completado</value>
+  </data>
+  <data name="list_bgprocess_completedwitherrors" page="bgprocess" xml:space="preserve">
+    <value>Completado con errores</value>
+  </data>
+  <data name="list_bgprocess_failed" page="bgprocess" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="list_bgprocess_revert" page="bgprocess" xml:space="preserve">
+    <value>Error: Se revertirán los cambios</value>
+  </data>
+
+  <!-- BG Queue Record -->
+  <data name="custpage_bgqueue_deleteerror" page="bgqueue" xml:space="preserve">
+    <value>Esta instancia de cola no se puede eliminar debido al estado de instancia de proceso asociado: (0)</value>
+  </data>
+
+  <!-- CLIENT SIDE MESSAGES AND ALERTS -->
+  <data name="client_assetrecord_notnegative" page="clientpage" xml:space="preserve">
+     <value>(0) no puede ser un valor negativo</value>
+  </data>
+  <data name="client_assetrecord_greatererror" page="clientpage" xml:space="preserve">
+     <value>(0) no puede ser mayor que (1)</value>
+  </data>
+  <data name="client_systemsetup_negativecheck" page="clientpage" xml:space="preserve">
+     <value>Hay activos existentes con costos negativos. Actualmente no se permite deshabilitar esta opción. Revise el centro de ayuda para obtener más detalles.</value>
+  </data>
+  <data name="client_subdept_notmatch" page="clientpage" xml:space="preserve">
+     <value>La subsidiaria y el departamento no coinciden.</value>
+  </data>
+  <data name="client_subloc_notmatch" page="clientpage" xml:space="preserve">
+     <value>La subsidiaria y la ubicación no coinciden.</value>
+  </data>
+  <data name="client_subclass_notmatch" page="clientpage" xml:space="preserve">
+     <value>La subsidiaria y la clase no coinciden.</value>
+  </data>
+  <data name="client_assetrecord_outdated" page="clientpage" xml:space="preserve">
+     <value>El registro de activo con el que está trabajo ha cambiado recientemente. Haga clic en Actualizar para obtener el registro de activo más reciente.</value>
+  </data>
+  <data name="client_assetrecord_dateerror" page="clientpage" xml:space="preserve">
+     <value>La Fecha de inicio debe ser anterior a la Fecha de finalización</value>
+  </data>
+  <data name="client_assetrecord_fieldadjust" page="clientpage" xml:space="preserve">
+     <value>(0) se ajustó automáticamente debido a cambios con (1)</value>
+  </data>
+  <data name="client_assetrecord_enddateadjust" page="clientpage" xml:space="preserve">
+    <value>(0) se redondeó hacia abajo para reflejar el (1) nuevo</value>
+  </data>
+  <data name="client_leavepage" page="clientpage" xml:space="preserve">
+     <value>Los datos que introdujo en esta página no se guardaron y se perderán. Presione Aceptar para continuar.</value>
+  </data>
+  <data name="client_accounting_methods" page="clientpage" xml:space="preserve">
+     <value>Métodos de contabilidad</value>
+  </data>
+  <data name="client_tax_methods" page="clientpage" xml:space="preserve">
+     <value>Métodos de impuestos</value>
+  </data>
+  <data name="client_journals" page="clientpage" xml:space="preserve">
+     <value>Diarios</value>
+  </data>
+  <data name="client_multibookdisabled" page="clientpage" xml:space="preserve">
+     <value>No puede seleccionar un Libro contable si la función Contabilidad Multi-Book está deshabilitada.</value>
+  </data>
+  <data name="client_primarybook" page="clientpage" xml:space="preserve">
+     <value>Solo puede seleccionar Libros secundarios para los métodos de impuestos.</value>
+  </data>
+  <data name="client_pendingbook" page="clientpage" xml:space="preserve">
+     <value>Debe seleccionar un Libro de contabilidad activo.</value>
+  </data>
+  <data name="client_booksubsidiary_mismatch" page="clientpage" xml:space="preserve">
+     <value>Seleccione un libro de contabilidad que esté asociado con la subsidiaria del activo.</value>
+  </data>
+  <data name="client_invalid_deprenddate" page="clientpage" xml:space="preserve">
+     <value>El (0) ingresado no es válido para los valores (1) y (2)</value>
+  </data>
+  <data name="client_enable_bypass" page="clientpage" xml:space="preserve">
+     <value>Cuando activa esta preferencia, los flujos de trabajo y scripts Evento de usuario para los registros personalizados no se activarán durante la depreciación. ¿Desea continuar?</value>
+  </data>
+  <data name="client_asset_disposed" page="clientpage" xml:space="preserve">
+    <value>El activo ya está enajenado</value>
+  </data>
+  <data name="client_select_book" page="clientpage" xml:space="preserve">
+    <value>Seleccione Libro(s) de contabilidad</value>
+  </data>
+  <data name="client_match_current_error" page="clientpage" xml:space="preserve">
+      <value>(0) no debe coincidir con (1) actual.</value>
+  </data>
+  <data name="client_newrvdiffsign" page="clientpage" xml:space="preserve">
+      <value>(0) no puede sobrepasar el valor cero.</value>
+  </data>
+  <data name="client_lesserthan_error" page="clientpage" xml:space="preserve">
+     <value>(0) no puede ser menor que (1)</value>
+  </data>
+  <data name="client_newdepmeth_diffperiod" page="clientpage" xml:space="preserve">
+     <value>El Método de depreciación ajustado seleccionado debe tener el mismo Período de depreciación que el Método de depreciación actual.</value>
+  </data>
+  <data name="client_enter_value" page="clientpage" xml:space="preserve">
+    <value>Introduzca valores para: (0)</value>
+  </data>
+  <data name="client_subsidiary_match" page="clientpage" xml:space="preserve">
+    <value>La subsidiaria del (0) seleccionado no coincide con la subsidiaria de este Activo.</value>
+  </data>
+  <data name="client_report_confirm_delete" page="clientpage" xml:space="preserve">
+    <value>Esto eliminará el informe actual. ¿Desea continuar?</value>
+  </data>
+  
+  <!-- FAM_Split_CS.js -->
+  <data name="client_assetsplit_invalidsplitquantity" page="clientpage" xml:space="preserve">
+    <value>La Cantidad dividida no es válida</value>
+  </data>
+  <data name="client_assetsplit_entervalue" page="clientpage" xml:space="preserve">
+    <value>Introduzca un valor para Cantidad dividida</value>
+  </data>
+  <data name="client_assetsplit_greatererror" page="clientpage" xml:space="preserve">
+    <value>La Cantidad dividida no puede ser igual o mayor que la Cantidad</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method" page="clientpage" xml:space="preserve">
+    <value>Método contable: el costo actual debe ser igual al valor en libros más la depreciación hasta la fecha.</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method2" page="clientpage" xml:space="preserve">
+    <value>Haga clic en Actualizar para volver a calcular usando el costo actual.</value>
+  </data>
+  <data name="client_assetsplit_equalerror_tax" page="clientpage" xml:space="preserve">
+    <value>Método de impuestos (0): el costo actual debe ser igual al valor en libros más la depreciación hasta la fecha</value>
+  </data>
+  <data name="client_assetsplit_quantity1" page="clientpage" xml:space="preserve">
+    <value>La división de activo está disponible para los activos con más de una cantidad (1).</value>
+  </data> 
+  <data name="client_assetsplit_invalid_status" page="clientpage" xml:space="preserve">
+    <value>La división de activo no está disponible para los activos enajenados y completamente depreciados.</value>
+  </data> 
+  
+  <!-- FAM_CS_AltMethod_Client.js -->
+  <data name="client_altmethod_subsidiaryrequired" page="clientpage" xml:space="preserve">
+     <value>Se requiere subsidiaria para este método.</value>
+  </data>
+  <data name="client_altmethod_improperconvention" page="clientpage" xml:space="preserve">
+     <value>El método de depreciación no admite la convención seleccionada.</value>
+  </data>
+  <data name="client_altmethod_subsidiarymismatch" page="clientpage" xml:space="preserve">
+     <value>La subsidiaria del Método alternativo no coincide con la Subsidiaria de este Activo.</value>
+  </data>
+
+
+  <!-- ncFAR_AltDeprClient.js -->
+  <data name="client_altdepr_assetalreadyused" page="clientpage" xml:space="preserve">
+     <value>(0) ya está siendo usado por este activo. Seleccione otro Método alternativo.</value>
+  </data>
+  <data name="client_altdepr_assetlifetimewarning" page="clientpage" xml:space="preserve">
+     <value>Advertencia: La vida útil del activo alternativo ingresada excede la vida útil del activo</value>
+  </data>
+  <data name="client_altdepr_assetlifetimeerror" page="clientpage" xml:space="preserve">
+     <value>La vida útil del activo alternativo no puede exceder la vida útil del activo</value>
+  </data>
+  <data name="client_altdepr_nomethodfound" page="clientpage" xml:space="preserve">
+     <value>No se definió un método alternativo para la subsidiaria seleccionada. Vaya a Activos fijos &gt; Configuración &gt; Métodos alternativos para actualizar la lista.</value>
+  </data>
+  <data name="client_altdepr_disposedtaxmethod" page="clientpage" xml:space="preserve">
+     <value>No se puede asignar el Libro contable al Método de impuestos enajenado/completamente depreciado.</value>
+  </data>
+
+  <!-- ncFAR_AssetRecordClient_AllForms.js -->
+  <data name="client_assetrecord_specifydepreciationrules" page="clientpage" xml:space="preserve">
+    <value>Se deben especificar las Reglas de depreciación.</value>
+  </data>
+  <data name="client_assetrecord_specifysubsidiary" page="clientpage" xml:space="preserve">
+    <value>Se debe especificar la subsidiaria.</value>
+  </data>
+  <data name="client_assetrecord_recordbeingpooled" page="clientpage" xml:space="preserve">
+     <value>No se permite el cambio de Subsidiaria ya que un registro de Depreciación alternativa pertenece a un Conjunto.</value>
+  </data>
+  <data name="client_assetrecord_assetnotallowed" page="clientpage" xml:space="preserve">
+     <value>La cuenta de activo no fijo no se permite para la cuenta de activo. Póngase en contacto con el administrador.</value>
+  </data>
+  <data name="client_assetrecord_deprnotallowed" page="clientpage" xml:space="preserve">
+     <value>La cuenta de activo no fijo no se permite para la cuenta de depreciación. Póngase en contacto con el administrador.</value>
+  </data>
+  <data name="client_assetrecord_cannotdelete" page="clientpage" xml:space="preserve">
+     <value>Este activo no se puede eliminar porque está activo para depreciación. Enajene el activo si desea eliminarlo.</value>
+  </data>
+  <data name="client_assetrecord_confirmsubsidiarychange" page="clientpage" xml:space="preserve">
+    <value>Asegúrese de guardar los cambios antes de transferir el activo a otra subsidiaria. De lo contrario, se descartarán los cambios.
+
+De manera alternativa, puede primero actualizar la subsidiaria, antes de hacer más cambios en el informe de activo.
+
+¿Desea continuar?</value>
+  </data>
+
+  <!-- ncFAR_DefaultAltDeprClient.js -->
+  <data name="client_defaultaltdepr_alreadyused" page="clientpage" xml:space="preserve">
+     <value>(0) ya está siendo usado por este Tipo de activo. Seleccione otro Método alternativo.</value>
+  </data>
+  <data name="client_defaultaltdepr_addnotallowed" page="clientpage" xml:space="preserve">
+    <value>No se permite la creación de informes FAM – Depreciación alternativa predeterminada desde la lista de registros.
+
+Vaya a un registro Tipo de activo y agregue un registro nuevo desde la ficha Libros contables.</value>
+  </data>
+  <!-- ncFAR_DeprMethodClientScripts.js script not found-->
+  <data name="client_deprmethod_failedtovalidate2" page="clientpage" xml:space="preserve">
+     <value>No se pudo validar la función.</value>
+  </data>
+  <data name="client_deprmethod_validationfailed" page="clientpage" xml:space="preserve">
+     <value>Falló la validación</value>
+  </data>
+  <data name="client_deprmethod_dp_annually_invalid" page="clientpage" xml:space="preserve">
+     <value>No se puede utilizar DP si el Período de depreciación es Anualmente</value>
+  </data>
+
+  <!-- Disposal Client Messages -->
+  <data name="client_disposal_alreadydisposed" page="clientpage" xml:space="preserve">
+     <value>Este activo ya se ha enajenado.</value>
+  </data>
+  <data name="client_disposal_cannotbegreater" page="clientpage" xml:space="preserve">
+     <value>La Cantidad enajenada no puede ser mayor que la Cantidad de activo.</value>
+  </data>
+  <data name="client_disposal_saleamountgreater" page="clientpage" xml:space="preserve">
+     <value>El importe de venta debe ser superior a cero.</value>
+  </data>
+  <data name="client_disposal_selectcustomer" page="clientpage" xml:space="preserve">
+     <value>Seleccione un Cliente.</value>
+  </data>
+  <data name="client_disposal_selectsaleitem" page="clientpage" xml:space="preserve">
+     <value>Seleccione un artículo de venta.</value>
+  </data>
+  <data name="client_disposal_selectlocation" page="clientpage" xml:space="preserve">
+     <value>Seleccione una Ubicación.</value>
+  </data>
+  <data name="client_disposal_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Actualmente, se está procesando este activo para enajenación. Aguarde la finalización del proceso de enajenación antes de iniciar otra enajenación para este activo.</value>
+  </data>
+  <data name="client_disposal_acctnotexist" page="clientpage" xml:space="preserve">
+     <value>Asegúrese de que se establecieron y activaron las Cuentas de cancelación, enajenación, depreciación y activo antes de continuar.
+La enajenación puede no ser posible por lo siguiente: (0)</value>
+  </data>
+  <data name="client_disposal_dateearlierthanldd" page="clientpage" xml:space="preserve">
+    <value>La Fecha de enajenación '(0)' no puede ser anterior a la Última fecha de depreciación '(1)'.</value>
+  </data>
+  <data name="client_disposal_plugin_no_assetid" page="clientpage" xml:space="preserve">
+    <value>No se definió la identificación de activo.</value>
+  </data>
+  <data name="client_disposal_plugin_invalid_type" page="clientpage" xml:space="preserve">
+    <value>Tipo de enajenación no válido para el Activo: (0))</value>
+  </data>
+  
+  <!-- ncFAR_ProposalAltDeprClient.js -->
+  <data name="client_proposalaltdepr_selectbeingused" page="clientpage" xml:space="preserve">
+     <value>(0) ya está siendo usado por esta Propuesta de activo. Seleccione otro Método alternativo.</value>
+  </data>
+
+  <!-- ncFAR_RevaluationClientScripts.js -->
+  <data name="client_revaluation_disposed" page="clientpage" xml:space="preserve">
+     <value>Este activo ha sido enajenado.</value>
+  </data>
+  <data name="client_assetnotset" page="clientpage" xml:space="preserve">
+     <value>Una o más cuentas de activo no están configuradas, es probable que no sea posible revaluar.</value>
+  </data>
+  <data name="client_revaluation_notsupplied" page="clientpage" xml:space="preserve">
+    <value>Se deben proporcionar detalles de revaluación</value>
+  </data>
+  <data name="client_revaluation_zeronbv" page="clientpage" xml:space="preserve">
+    <value>No se puede revaluar el activo completamente depreciado.</value>
+  </data>
+  <data name="client_revaluation_zerocc" page="clientpage" xml:space="preserve">
+    <value>No se puede reducir el valor en libros de un activo con costo actual cero.</value>
+  </data>
+  <data name="client_revaluation_rvoverzero" page="clientpage" xml:space="preserve">
+    <value>El Valor residual nuevo no puede superar el valor cero.</value>
+  </data>
+  <data name="client_role_nopermission" page="clientpage" xml:space="preserve">
+    <value>Este rol no tiene permiso para editar el registro de Activo.</value>
+  </data>
+  <data name="client_status_nobgprocess" page="clientpage" xml:space="preserve">
+    <value>No se encontró un Procesamiento de fondo.</value>
+  </data>
+  <data name="client_change_accountingbook" page="clientpage" xml:space="preserve">
+    <value>No se permite el cambio de Libro contable.</value>
+  </data>
+  <data name="client_revaluation_needcompute" page="clientpage" xml:space="preserve">
+    <value>Se debe primero calcular la revaluación de activo antes de que se pueda procesar.</value>
+  </data>
+  <data name="client_revaluation_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Actualmente, se está procesando este activo para revaluación. Aguarde la finalización del proceso de revaluación antes de iniciar otra revaluación para este activo.</value>
+  </data>
+  <data name="client_revaluation_wdacct_notset" page="clientpage" xml:space="preserve">
+     <value>El activo no se puede revaluar porque no se establecieron las siguientes cuentas de reducción del valor en libros:(0)</value>
+  </data>
+  <data name="client_revaluation_transdate_warn" page="clientpage" xml:space="preserve">
+     <value>La fecha de revaluación en algunos registros es anterior a la última fecha de depreciación. Estos registros no se revaluarán. </value>
+  </data>
+  <data name="client_greater_than_zerovalue" page="clientpage" xml:space="preserve">
+    <value>Ingrese un valor superior a cero para (0).</value>
+  </data>
+  <data name="client_change_zerowd" page="clientpage" xml:space="preserve">
+    <value>Ingrese un valor distinto a cero para el Importe de reducción del valor en libros.</value>
+  </data>
+  <data name="client_no_reval_det_supplied" page="clientpage" xml:space="preserve">
+      <value>Se deben proporcionar detalles de revaluación.</value>
+  </data>
+
+  <!-- FAM_AssetTransfer_CS.js -->
+  <data name="client_assettransfer_subsidiarybookid" page="clientpage" xml:space="preserve">
+     <value>El activo tiene un libro contable que no está asociado a la subsidiaria de destino. El activo se transferirá, pero no se incluirán los métodos de impuestos en este libro contable.</value>
+  </data>
+  <data name="client_assettransfer_subsidiarymethod" page="clientpage" xml:space="preserve">
+     <value>El activo tiene un método alternativo que no está asociado a la subsidiaria de destino. El activo se transferirá, pero no se incluirán los métodos de impuestos en este método alternativo.</value>
+  </data>
+  <data name="client_assettransfer_emptysubat" page="clientpage" xml:space="preserve">
+     <value>No se puede vaciar el Tipo de subsidiaria/activo para el registro de activo.</value>
+  </data>
+  <data name="client_assettransfer_nochange" page="clientpage" xml:space="preserve">
+     <value>Los valores del campo destino Transferencia de activo deben ser distintos del original.</value>
+  </data>
+  <data name="client_assettransfer_notransferacct" page="clientpage" xml:space="preserve">
+     <value>No existe un registro Cuenta de transferencia de activo para las subsidiarias de origen y destino.</value>
+  </data>
+  <data name="client_assettransfer_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Actualmente, se está procesando este activo para transferencia. Aguarde la finalización del proceso de transferencia antes de iniciar otra transferencia para este activo.</value>
+  </data>
+  <data name="client_assettransfer_bulkbgpexists" page="clientpage" xml:space="preserve">
+     <value>Actualmente, se está procesando una solicitud de Transferencia de activo en masa. Aguarde la finalización del proceso de transferencia antes de iniciar otra transferencia.</value>
+  </data>
+  <data name="client_assettransfer_warnbgpexists" page="clientpage" xml:space="preserve">
+     <value>Actualmente, se está procesando una solicitud de Transferencia de activo en masa. Es posible que no pueda enviar una nueva solicitud de Transferencia de activo.</value>
+  </data>
+  <data name="client_assettransfer_atassetacct" page="clientpage" xml:space="preserve">
+     <value>El Tipo de activo seleccionado no tiene una Cuenta de activo.</value>
+  </data>
+  <data name="client_assettransfer_atdepracct" page="clientpage" xml:space="preserve">
+     <value>El Tipo de activo seleccionado no tiene una Cuenta de depreciación.</value>
+  </data>
+  <data name="client_assettransfer_cdl_mandatory" page="clientpage" xml:space="preserve">
+     <value>No se puede establecer Departamento/Clase/Ubicación en &lt;NINGUNO&gt; porque es obligatorio.</value>
+  </data>
+
+    <!-- FAM_AssetRecordTransfer.js -->
+  <data name="client_assettransfer_invalid_sub_bookid" xml:space="preserve">
+     <value>El Libro contable para este Método de impuestos no está asociado a la subsidiaria de destino. No se transferirá el Método de impuestos.</value>
+  </data>
+  <data name="client_assettransfer_invalid_sub_altmeth" xml:space="preserve">
+     <value>El Método alternativo para este Método de impuesto no está asociado a la subsidiaria de destino. No se transferirá el Método de impuestos.</value>
+  </data>
+  <data name="client_assettransfer_no_tax_meth_acct" xml:space="preserve">
+     <value>La combinación de Método alternativo e Identificación de libro contable para este Método de impuesto no tiene una entrada en el Tipo de activo de destino. Las cuentas Método de impuesto se dejarán en blanco.</value>
+  </data>
+  <data name="custpage_transfer_asset_undefined" xml:space="preserve">
+    <value>No existe el Informe de activo para la transferencia:(0)</value>
+  </data>
+
+    <!-- FAM_AssetTransferCSV.js -->
+    <data name="message_errorfile" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Error al recuperar información de archivo de transferencia de activo.</value>
+    </data>
+    <data name="message_toomanyfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Demasiados campos</value>
+    </data>
+    <data name="message_toofewfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Muy pocos campos</value>
+    </data>
+    <data name="message_duplicateasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Entrada duplicada para identificación de activo: (0)</value>
+    </data>
+    <data name="message_headertoofew" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Los datos para la transferencia de activo están incompletos. El archivo debe tener valores para Activo, más uno de los siguientes: Tipo de activo, Subsidiaria, Clase, Departamento y Ubicación.</value>
+    </data>
+    <data name="message_headerassetmissing" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Ingrese valores para el activo</value>
+    </data>
+    <data name="message_headernotallowed" page="assettransfercsv_ss" xml:space="preserve">
+        <value>No se permite el campo encabezado (0). El archivo solo puede contener los siguientes encabezados: Activo, Tipo de activo, Subsidiaria, Clase, Departamento y Ubicación.</value>
+    </data>
+    <data name="message_duplicateheader" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Hay múltiples instancias del campo encabezado: (0). Elimine las columnas duplicadas.</value>
+    </data>
+    <data name="message_subsidiarybookid" page="assettransfercsv_ss" xml:space="preserve">
+        <value>El activo tiene un libro contable que no está asociado a la subsidiaria de destino. El activo se transferirá, pero no se incluirán los métodos de impuestos en este libro contable.</value>
+    </data>
+    <data name="message_subsidiarymethod" page="assettransfercsv_ss" xml:space="preserve">
+        <value>El activo tiene un método alternativo que no está asociado a la subsidiaria de destino. El activo se transferirá, pero no se incluirán los métodos de impuestos en este método alternativo.</value>
+    </data>
+    <data name="message_emptysubat" page="assettransfercsv_ss" xml:space="preserve">
+        <value>No se puede vaciar el Tipo de subsidiaria/activo para el registro de activo.</value>
+    </data>
+    <data name="message_nochange" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Los valores del campo destino Transferencia de activo deben ser distintos del original.</value>
+    </data>
+    <data name="message_notransferacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>No existe un registro Cuenta de transferencia de activo para las subsidiarias de origen y destino.</value>
+    </data>
+    <data name="message_subdept_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>La subsidiaria y el departamento no coinciden.</value>
+    </data>
+    <data name="message_subloc_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>La subsidiaria y la ubicación no coinciden.</value>
+    </data>
+    <data name="message_subclass_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>La subsidiaria y la clase no coinciden.</value>
+    </data>
+    <data name="message_atassetacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>El Tipo de activo seleccionado no tiene una Cuenta de activo.</value>
+    </data>
+    <data name="message_atdepracct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>El Tipo de activo seleccionado no tiene una Cuenta de depreciación.</value>
+    </data>
+    <data name="message_cdl_mandatory" page="assettransfercsv_ss" xml:space="preserve">
+        <value>No se puede dejar de establecer Departamento/Clase/Ubicación porque es obligatorio.</value>
+    </data>
+    <data name="message_invalidasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>El Activo no existe o su estado es inactivo.</value>
+    </data>
+    <data name="message_onetransfertype" page="assettransfercsv_ss" xml:space="preserve">
+        <value>No se permite la transferencia de Tipo de activo cuando se transfiere a una Subsidiaria, Clase, Departamento o Ubicación diferente</value>
+    </data>
+    <data name="message_nonexistentfld" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Uno o más campos de destino no existen o están inactivos</value>
+    </data>
+
+  <!-- Ext Js Messages -->
+  <data name="extjs_message_title" page="clientpage" xml:space="preserve">
+    <value>Activos fijos</value>
+  </data>
+  <data name="extjs_processing" page="clientpage" xml:space="preserve">
+    <value>Procesamiento</value>
+  </data>
+  <data name="extjs_reading_asset" page="clientpage" xml:space="preserve">
+    <value>Lectura de activo</value>
+  </data>
+  <data name="extjs_clearing_data" page="clientpage" xml:space="preserve">
+    <value>Borrado de datos</value>
+  </data>
+  <data name="extjs_loading_data" page="clientpage" xml:space="preserve">
+    <value>Carga de datos</value>
+  </data>
+  <data name="extjs_refreshing_data" page="clientpage" xml:space="preserve">
+    <value>Actualización de datos</value>
+  </data>
+  <data name="extjs_initializing" page="clientpage" xml:space="preserve">
+    <value>Inicializando</value>
+  </data>
+  <data name="extjs_initializing_error" page="clientpage" xml:space="preserve">
+    <value>Error de inicialización</value>
+  </data>
+  <data name="extjs_reloading" page="clientpage" xml:space="preserve">
+    <value>Recarga</value>
+  </data>
+  <data name="extjs_done" page="clientpage" xml:space="preserve">
+     <value>Realizado</value>
+  </data>
+
+
+  <!-- Background Processing -->
+  <data name="custpage_error_internal" xml:space="preserve">
+    <value>¡Este suitelet es solo para uso interno!</value>
+  </data>
+  <data name="custpage_error_postmethod" xml:space="preserve">
+    <value>Método POST inesperado.</value>
+  </data>
+
+  <!-- Constants -->
+  <data name="custpage_constant_accountingmethod" xml:space="preserve">
+    <value>Método de contabilidad</value>
+  </data>
+  <data name="custpage_constant_allassets" xml:space="preserve">
+    <value>Todos los activos</value>
+  </data>
+  <data name="custpage_constant_exceptleased" xml:space="preserve">
+    <value>Todos los activos excepto los alquilados</value>
+  </data>
+  <data name="custpage_constant_onlyaassets" xml:space="preserve">
+    <value>Únicamente activos alquilados</value>
+  </data>
+
+
+  <!-- Server Scripts/Undefined -->
+  <data name="custpage_html_tangible" xml:space="preserve">
+    <value>Activos fijos tangibles</value>
+  </data>
+  <data name="custpage_desc_schedulereport" xml:space="preserve">
+    <value>Informe de programa de gestión de activos fijos</value>
+  </data>
+  <data name="custpage_html_fam" xml:space="preserve">
+    <value>Gestión de activos fijos</value>
+  </data>
+  <data name="custpage_accounts_missing" xml:space="preserve">
+    <value>Faltan una o más cuentas de contabilización.</value>
+  </data>
+  <data name="custpage_transfer_account_missing" xml:space="preserve">
+    <value>No se pueden ubicar las cuentas de transferencia válidas de sub:(0) a sub:(1)</value>
+  </data>
+  <data name="custpage_transfer_tax_method_account_missing" xml:space="preserve">
+    <value>Cuenta de depreciación/activo de método de impuestos faltante</value>
+  </data>
+  <data name="custpage_errordepreciation" xml:space="preserve">
+    <value>Falló el cálculo de depreciación</value>
+  </data>
+  <data name="custpage_transactionfailed" xml:space="preserve">
+    <value>Falló la transacción</value>
+  </data>
+  <data name="custpage_fields_missing" xml:space="preserve">
+    <value>Introduzca valores para: (0)</value>
+  </data>
+  <data name="custpage_fields_inactive" xml:space="preserve">
+    <value>Los siguientes campos están inactivos: (0)</value>
+  </data>
+  <data name="custpage_outside_period" xml:space="preserve">
+    <value>La fecha de transacción especificada no se encuentra dentro del intervalo de fechas del período contable.</value>
+  </data>
+  <data name="custpage_setupmissing" xml:space="preserve">
+    <value>Falta el informe de Configuración del sistema para la gestión de activos fijos o no está completo. No es posible determinar la configuración del sistema.</value>
+  </data>
+  <data name="custpage_settingmissing" xml:space="preserve">
+    <value>Error al leer la configuración del sistema</value>
+  </data>
+  <data name="custpage_invalid_acctsub_combo" xml:space="preserve">
+    <value>Combinación Cuenta-subsidiaria (0) inválida. Identificación de activo: (1)</value>
+  </data>
+
+  <!-- Buttons -->
+  <data name="custrecord_assetproposal_refreshbutton" page="assetproposal" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="custrecord_assetproposal_proposebutton" page="assetproposal" xml:space="preserve">
+    <value>Proponer nuevos activos</value>
+  </data>
+  <data name="custrecord_assetproposal_generatebutton" page="assetproposal" xml:space="preserve">
+    <value>Generar activos</value>
+  </data>
+  <data name="custrecord_assetproposal_rejectbutton" page="assetproposal" xml:space="preserve">
+    <value>Rechazar propuestas</value>
+  </data>
+  <data name="custrecord_famreports_generatebutton" page="famreports" xml:space="preserve">
+    <value>Generar</value>
+  </data>
+  <data name="custrecord_assetsummary_generatebutton" page="assetsummary" xml:space="preserve">
+    <value>Generar informe</value>
+  </data>
+  <data name="custrecord_systemsetup_savebutton" page="systemsetup" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="custrecord_systemsetup_submitbutton" page="systemsetup" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="custrecord_assetsplit_refreshbutton" page="assetsplit" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="custrecord_assetsplit_splitbutton" page="assetsplit" xml:space="preserve">
+    <value>Dividir</value>
+  </data>
+  <data name="custrecord_assetdisposal_refreshbutton" page="assetdisposal" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="custrecord_assetdisposal_disposebutton" page="assetdisposal" xml:space="preserve">
+    <value>Enajenar</value>
+  </data>
+  <data name="custrecord_depreciationschedule2_generatebutton" page="depreciationschedule2" xml:space="preserve">
+    <value>Generar informe</value>
+  </data>
+  <data name="custrecord_assetcreation_createbutton" page="assetcreation" xml:space="preserve">
+    <value>Crear activos</value>
+  </data>
+  <data name="custrecord_creationstatus_refreshbutton" page="assetcreation" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="custrecord_assetrevaluation_refreshbutton" page="assetrevaluation" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="custrecord_assetrevaluation_processbutton" page="assetrevaluation" xml:space="preserve">
+    <value>Revaluación del proceso</value>
+  </data>
+  <data name="custrecord_assetrevaluation_calculatebutton" page="assetrevaluation" xml:space="preserve">
+    <value>Calcular</value>
+  </data>
+  <data name="custrecord_assetregister_generatebutton" page="assetregister" xml:space="preserve">
+    <value>Generar informe</value>
+  </data>
+  <data name="custrecord_maintenance_savebutton" page="maintenance" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="custrecord_maintenance_resetbutton" page="maintenance" xml:space="preserve">
+    <value>Restablecer</value>
+  </data>
+  <data name="custrecord_systemstatus_refreshbutton" page="systemstatus" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="custrecord_generatehistory_generatebutton" page="generatehistory" xml:space="preserve">
+    <value>Generar historial</value>
+  </data>
+  <data name="custrecord_assetdepreciation_depreciatebutton" page="assetdepreciation" xml:space="preserve">
+    <value>Depreciar activos</value>
+  </data>
+  <data name="custrecord_depreciationschedule_generatebutton" page="depreciationschedule" xml:space="preserve">
+    <value>Generar informe</value>
+  </data>
+  <data name="custrecord_reportstatus_refreshbutton" page="reportstatus" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="custrecord_reportstatus2_refreshbutton" page="reportstatus2" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="custrecord_assettransfer_refreshbutton" page="assettransfer" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="custrecord_assettransfer_transferbutton" page="assettransfer" xml:space="preserve">
+    <value>Procesar transferencia</value>
+  </data>
+  <data name="custrecord_assettransfer_importcsv" page="assettransfer" xml:space="preserve">
+    <value>Importar CSV</value>
+  </data>
+  <data name="custrecord_bulktransfer_submitbutton" page="bulktransfer" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="custrecord_bulktransfer_cancelbutton" page="bulktransfer" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+
+  <!-- Asset Record -->
+  <data name="assetrecord_assettypehelp" xml:space="preserve">
+    <value>El tipo de activo establece de manera predeterminada la mayor parte de la configuración del activo y se usa para categorizar los activos en los informes y en otros procesos.</value>
+  </data>
+  <data name="assetrecord_assetdescrhelp" xml:space="preserve">
+    <value>Una descripción breve del activo.</value>
+  </data>
+  <data name="assetrecord_subshelp" xml:space="preserve">
+    <value>La subsidiaria asociada con este registro.</value>
+  </data>
+  <data name="assetrecord_includechildhelp" xml:space="preserve">
+    <value>Active esta casilla para incluir los activos de las subsidiarias secundarias.</value>
+  </data>
+
+  <data name="assetrecord_assetserialnohelp" xml:space="preserve">
+    <value>Un número de serie que puede usarse para realizar un seguimiento del activo o identificarlo.</value>
+  </data>
+  <data name="assetrecord_assetalternatenohelp" xml:space="preserve">
+    <value>Un número de referencia de activo adicional.</value>
+  </data>
+  <data name="assetrecord_assetcosthelp" xml:space="preserve">
+    <value>El costo original (de compra) del activo.</value>
+  </data>
+  <data name="assetrecord_assetcurrentcosthelp" xml:space="preserve">
+    <value>El costo actual del activo.  Esto incluirá cualquier reducción del valor en libros aplicada al activo.</value>
+  </data>
+  <data name="assetrecord_residualvalpercenthelp" xml:space="preserve">
+    <value>Es el porcentaje del costo original que tendrá el activo al final de su vida útil. Por ejemplo, un activo comprado por 1000,00 puede valer 100,00 al final de su vida útil, por lo tanto el porcentaje del valor residual sería el 10 % (el 10 % de 1000,00 es 100,00). Escribir un valor residual siempre anulará el valor predeterminado calculado con el porcentaje.</value>
+  </data>
+  <data name="assetrecord_residualvalhelp" xml:space="preserve">
+    <value>El valor que tendrá el activo al final de su vida útil. Por ejemplo, un activo comprado por 1000,00 puede valer 100,00 al final de su vida útil.Escribir un valor residual siempre anulará el valor predeterminado calculado con el porcentaje.</value>
+  </data>
+  <data name="assetrecord_assetacctmethodhelp" xml:space="preserve">
+    <value>Seleccione el método de depreciación (fórmula) que se usará para depreciar este activo.  Este método de contabilidad se usará para calcular los valores que se escribirán en el sistema de contabilidad.</value>
+  </data>
+  <data name="assetrecord_assetperiodconvhelp" xml:space="preserve">
+    <value>Seleccione la convención que usará para definir un año:1. 12 meses de 30 días cada uno. En general, esta convención se utiliza en Norteamérica y Europa y produce una depreciación mensual más uniforme.2. 
+
+El número exacto de días en un mes, el año tiene 365 días: esta convención se usa generalmente en Australia y Nueva Zelanda y produce una depreciación desigual dentro del año.</value>
+  </data>
+  <data name="assetrecord_assetlifetimehelp" xml:space="preserve">
+    <value>La vida útil esperada del activo, en múltiplos del período de depreciación (por ejemplo, si la depreciación es mensual, escriba la vida útil en meses).</value>
+  </data>
+  <data name="assetrecord_assetdeprperiodhelp" xml:space="preserve">
+    <value>La frecuencia con la cual se debe producir la depreciación del activo.</value>
+  </data>
+  <data name="assetrecord_assetlifetimeusagehelp" xml:space="preserve">
+    <value>Si la depreciación del activo se rige por el uso que se le dio a ese activo (por ejemplo, kilometraje del vehículo), el uso de vida útil representa el número total de unidades disponibles del activo.  Cuando el uso total hasta la fecha sea igual al uso de vida útil, el activo habrá llegado al final de la vida útil.</value>
+  </data>
+  <data name="assetrecord_assetnetbookvaluehelp" xml:space="preserve">
+    <value>La valuación en libros actual del activo.</value>
+  </data>
+  <data name="assetrecord_assetcumulativedeprhelp" xml:space="preserve">
+    <value>El importe total de la depreciación aplicada al activo hasta la fecha</value>
+  </data>
+  <data name="assetrecord_assetstatushelp" xml:space="preserve">
+    <value>El estado del activo: Nuevo, Depreciándose, Completamente depreciado o Enajenado</value>
+  </data>
+  <data name="assetrecord_assetcustomerlocationhelp" xml:space="preserve">
+    <value>La ubicación del cliente al que se le compró el activo.</value>
+  </data>
+  <data name="assetrecord_assetcurrencyhelp" xml:space="preserve">
+    <value>La moneda en la que se expresó originalmente el costo del activo.</value>
+  </data>
+  <data name="assetrecord_assetcurrencyidhelp" xml:space="preserve">
+    <value>La ID interna de la moneda del activo.</value>
+  </data>
+  <data name="assetrecord_assetfixedratehelp" xml:space="preserve">
+    <value>Un tipo de cambio fijo, entre la moneda del costo original (moneda del activo) y la moneda base de la empresa o la subsidiaria del activo.</value>
+  </data>
+  <data name="assetrecord_assetcustodianhelp" xml:space="preserve">
+    <value>El empleado responsable del activo.</value>
+  </data>
+  <data name="assetrecord_assetphysicallochelp" xml:space="preserve">
+    <value>Indica dónde se ubica generalmente el activo.</value>
+  </data>
+  <data name="assetrecord_assetincludesreportschelp" xml:space="preserve">
+    <value>Indica si el activo se debe incluir en el Informe de resumen de activos.  ult, todos los activos se incluyen en el informe.</value>
+  </data>
+  <data name="assetrecord_assetpurchasedatehelp" xml:space="preserve">
+    <value>La fecha de compra del activo.</value>
+  </data>
+  <data name="assetrecord_assetdeprstartdatehelp" xml:space="preserve">
+    <value>La fecha en la que comenzará la depreciación del activo. Por ejemplo, se podría comprar un activo pero podría no ser recibido o no ser puesto en servicio hasta un par de meses más tarde.</value>
+  </data>
+  <data name="assetrecord_assetdeprenddatehelp" xml:space="preserve">
+    <value>La fecha en la que se espera que finalice la depreciación del activo.  De manera predeterminada, se establece la fecha de inicio de la depreciación del activo más la vida útil.</value>
+  </data>
+  <data name="assetrecord_assetlastdeprperiodhelp" xml:space="preserve">
+    <value>El número del período (dentro de la vida útil del activo) en el que el activo se depreció más recientemente.</value>
+  </data>
+  <data name="assetrecord_assetlastdepramounthelp" xml:space="preserve">
+    <value>El valor de la depreciación más reciente de este activo.</value>
+  </data>
+  <data name="assetrecord_assetlastdeprdatehelp" xml:space="preserve">
+    <value>La fecha de la depreciación más reciente de este activo.</value>
+  </data>
+  <data name="assetrecord_assetdepractivehelp" xml:space="preserve">
+    <value>Indica si el activo está activo y si fue incluido en el procesamiento de depreciación.  Si el activo está relacionado con un trabajo, podría establecerse que se vuelva activo de forma automática cuando el trabajo esté finalizado.</value>
+  </data>
+  <data name="assetrecord_assetdisptypehelp" xml:space="preserve">
+    <value>El tipo por el cual se enajenó el activo. </value>
+  </data>
+  <data name="assetrecord_assetcustomerhelp" xml:space="preserve">
+    <value>El cliente al cual se le vendió el activo.</value>
+  </data>
+  <data name="assetrecord_assetqtyhelp" xml:space="preserve">
+    <value>La cantidad de este activo.</value>
+  </data>
+  <data name="assetrecord_assetrevisionmethodhelp" xml:space="preserve">
+    <value>Controla cómo las revisiones (revaluación) afectan el activo.  Cuando se selecciona 'Período actual', se vuelve a calcular la depreciación del activo hasta la fecha con los valores revisados, y se ingresa la diferencia entre la depreciación calculada y la depreciación contabilizada anteriormente en el período actual.  Cuando se selecciona 'Vida restante', la revisión solo se aplica al activo desde este punto en adelante, por lo tanto solo afecta los cálculos de depreciaciones futuras.</value>
+  </data>
+  <data name="assetrecord_assetnamehelp" xml:space="preserve">
+    <value>El nombre del activo con el que está asociado este registro.</value>
+  </data>
+  <data name="assetrecord_assetlocationhelp" xml:space="preserve">
+    <value>Seleccione una ubicación si desea que el informe solo incluya los activos asociados con una ubicación específica.</value>
+  </data>
+  <data name="assetrecord_assetdepartmenthelp" xml:space="preserve">
+    <value>Seleccione un departamento si desea que el informe solo incluya los activos asociados con un departamento específico.</value>
+  </data>
+  <data name="assetrecord_assetclasshelp" xml:space="preserve">
+    <value>Seleccione una clase si desea que el informe solo incluya los activos asociados con una clase específica.</value>
+  </data>
+  <data name="assetrecord_report_subshelp" xml:space="preserve">
+    <value>Seleccione la(s) subsidiaria(s) desde la(s) que desea generar un informe.</value>
+  </data>
+  <data name="assetrecord_report_assetacctmethodhelp" xml:space="preserve">
+    <value>Seleccione el método de depreciación.</value>
+  </data>
+  <data name="assetrecord_report_includechildhelp" xml:space="preserve">
+    <value>Active esta casilla para incluir activos de las subsidiarias secundarias en el informe.</value>
+  </data>
+  <data name="assetrecord_report_assettypehelp" xml:space="preserve">
+    <value>Seleccione uno o más tipos de activo para categorizar los activos en el informe. Tenga en cuenta que los valores predeterminados se asignarán a la mayoría de las configuraciones de activo que se basan en el tipo de activo.</value>
+  </data>
+  <data name="assetrecord_assetperiodstartdatehelp" xml:space="preserve">
+    <value>Ingrese o seleccione una fecha de inicio para el período de informe que desea generar.</value>
+  </data>
+  <data name="assetrecord_assetperiodenddatehelp" xml:space="preserve">
+    <value>Ingrese o seleccione una fecha de finalización para el período de informe que desea generar.</value>
+  </data>
+  <data name="assetrecord_report_acctngbookhelp" xml:space="preserve">
+    <value>Seleccione el libro contable para el que desea generar un informe.</value>
+  </data>
+  <data name="assetrecord_report_typehelp" xml:space="preserve">
+    <value>Seleccione el tipo de informe que debe generar.</value>
+  </data>
+
+  <!-- Alternate Depreciation Record -->
+  <data name="client_altdepr_currency_mismatch" page="clientpage" xml:space="preserve">
+     <value>La Moneda de la Depreciación alternativa debe coincidir con la moneda del Libro contable cuando se selecciona un Libro contable.     
+De lo contario, la moneda debe coincidir con la moneda base de la Subsidiaria o Empresa.</value>
+  </data>
+</root>

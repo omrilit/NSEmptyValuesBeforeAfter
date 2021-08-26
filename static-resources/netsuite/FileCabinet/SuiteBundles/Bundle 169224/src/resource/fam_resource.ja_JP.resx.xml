@@ -1,0 +1,2921 @@
+﻿<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+
+  <xsd:schema id="root" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element msdata:IsDataSet="true" name="root">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="page" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+                <xsd:element minOccurs="0" msdata:Ordinal="2" name="comment" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute msdata:Ordinal="1" name="name" type="xsd:string" use="required"/>
+              <xsd:attribute msdata:Ordinal="3" name="type" type="xsd:string"/>
+              <xsd:attribute msdata:Ordinal="4" name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/Microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+    <!--
+      ###Enumaration of PAGES.. for tracing only###
+      assetcreation - Asset Creation
+      assetdepreciation - Asset Depreciation
+      assetdisposal - Asset Disposal
+      assetproposal - Asset Proposal
+      assetregister - Asset Register Report/Asset Register Detail
+      assetrevaluation - Asset Revaluation
+      assetsplit - Asset Split
+      assetsummary - Asset Summary Report
+      depreciationschedule - Asset Depreciation Schedule
+      depreciationschedule2 - Asset Depreciation Schedule (Portrait)
+      depreciationmethod - Depreciation Method
+      famreports - Fixed Assets Reports
+      generatehistory - Generate Asset History
+      reportstatus - FAM - Report Status
+      reportstatus2 - Asset Report Status (sc)
+      systemsetup - System Setup
+      systemstatus - System Status
+      maintenance - Language Management
+      depreciationmethodformula - Depreciation Method
+      clientpage - Entries intended for client messages
+  -->
+
+  <!-- Page Screen Title -->
+  <data name="maintenance_screen_assetcreation" page="maintenance" xml:space="preserve">
+    <value>資産作成</value>
+  </data>
+  <data name="maintenance_screen_assetdisposal" page="maintenance" xml:space="preserve">
+    <value>資産の処分</value>
+  </data>
+  <data name="maintenance_screen_assetproposal" page="maintenance" xml:space="preserve">
+    <value>資産の提案</value>
+  </data>
+  <data name="maintenance_screen_assetrevaluation" page="maintenance" xml:space="preserve">
+    <value>資産の再評価</value>
+  </data>
+  <data name="maintenance_screen_assetsplit" page="maintenance" xml:space="preserve">
+    <value>資産の分割</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule2" page="maintenance" xml:space="preserve">
+    <value>減価償却スケジュール（横向き）</value>
+  </data>
+  <data name="maintenance_screen_systemsetup" page="maintenance" xml:space="preserve">
+    <value>システムの設定</value>
+  </data>
+  <data name="maintenance_screen_maintenance" page="maintenance" xml:space="preserve">
+    <value>翻訳の一括更新 - FAM</value>
+  </data>
+  <data name="maintenance_screen_assetdepreciation" page="maintenance" xml:space="preserve">
+    <value>資産の減価償却</value>
+  </data>
+  <data name="maintenance_screen_assetregister" page="maintenance" xml:space="preserve">
+    <value>資産登録レポート</value>
+  </data>
+  <data name="maintenance_screen_assetsummary" page="maintenance" xml:space="preserve">
+    <value>資産概要レポート</value>
+  </data>
+  <data name="maintenance_screen_backgroundprocessing" page="maintenance" xml:space="preserve">
+    <value>バックグラウンド処理</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule" page="maintenance" xml:space="preserve">
+    <value>減価償却スケジュール</value>
+  </data>
+  <data name="maintenance_screen_generatehistory" page="maintenance" xml:space="preserve">
+    <value>履歴の生成</value>
+  </data>
+  <data name="maintenance_screen_reportstatus" page="maintenance" xml:space="preserve">
+    <value>資産登録レポートステータス</value>
+  </data>
+  <data name="maintenance_screen_systemstatus" page="maintenance" xml:space="preserve">
+    <value>システムステータス</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethod" page="maintenance" xml:space="preserve">
+    <value>償却方法</value>
+  </data>
+  <data name="maintenance_screen_reportstatus2" page="maintenance" xml:space="preserve">
+    <value>減価償却スケジュールレポートステータス</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethodformula" page="maintenance" xml:space="preserve">
+    <value>減価償却計算式</value>
+  </data>
+  <data name="maintenance_screen_clientpage" page="maintenance" xml:space="preserve">
+    <value>クライアントアラートメッセージ</value>
+  </data>
+
+  <!-- Localization Maintenance Page -->
+  <data name="maintenance_description_jp" page="maintenance" xml:space="preserve">
+    <value>名前 - 日本語（日本）</value>
+  </data>
+  <data name="maintenance_description_default" page="maintenance" xml:space="preserve">
+    <value>名前 - 英語（米国）</value>
+  </data>
+  <data name="maintenance_select_language" page="maintenance" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="custpage_translations_header" page="maintenance" xml:space="preserve">
+    <value>翻訳の一括更新 - FAM</value>
+  </data>
+  <data name="custpage_translations_en_US_header" page="maintenance" xml:space="preserve">
+    <value>米国</value>
+  </data>
+  <data name="custpage_translations_ja_JP_header" page="maintenance" xml:space="preserve">
+    <value>日本</value>
+  </data>
+  <data name="custpage_translations_custom_header" page="maintenance" xml:space="preserve">
+    <value>翻訳 -</value>
+  </data>
+  <data name="custpage_translations_custom_header_us" page="maintenance" xml:space="preserve">
+    <value>us</value>
+  </data>
+  <data name="custpage_translations_custom_header_jp" page="maintenance" xml:space="preserve">
+    <value>jp</value>
+  </data>
+  <data name="custpage_translations_screen_header" page="maintenance" xml:space="preserve">
+    <value>画面</value>
+  </data>
+  <data name="custpage_translations_common_fields" page="maintenance" xml:space="preserve">
+    <value>共通フィールド</value>
+  </data>
+
+  <!-- Asset Proposal Page -->
+  <data name="custrecord_assetproposal_title" page="assetproposal" xml:space="preserve">
+    <value>資産の提案</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetproposal" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetproposal" xml:space="preserve">
+    <value>連結</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetproposal" xml:space="preserve">
+    <value>子を含む</value>
+    </data>
+  <data name="custpage_selectpage" page="assetproposal" xml:space="preserve">
+    <value>ページの選択</value>
+  </data>
+  <data name="custpage_rowperpage" page="assetproposal" xml:space="preserve">
+    <value>ページごとの提案</value>
+  </data>
+  <data name="proposals" page="assetproposal" xml:space="preserve">
+    <value>提案済みの資産</value>
+    </data>
+  <data name="marked" page="assetproposal" xml:space="preserve">
+    <value>選択</value>
+    </data>
+  <data name="editurl" page="assetproposal" xml:space="preserve">
+    <value>編集</value>
+    </data>
+  <data name="custrecord_propsourceid" page="assetproposal" xml:space="preserve">
+    <value>取引</value>
+    </data>
+  <data name="custrecord_propassettype" page="assetproposal" xml:space="preserve">
+    <value>資産タイプ</value>
+    </data>
+  <data name="custrecord_propassetdescr" page="assetproposal" xml:space="preserve">
+    <value>説明</value>
+    </data>
+  <data name="custrecord_propaccmethod" page="assetproposal" xml:space="preserve">
+    <value>償却方法</value>
+    </data>
+  <data name="custrecord_propassetcost" page="assetproposal" xml:space="preserve">
+    <value>最初の費用</value>
+    </data>
+  <data name="custrecord_propresidvalue" page="assetproposal" xml:space="preserve">
+    <value>残存価額</value>
+    </data>
+  <data name="custrecord_propassetlifetime" page="assetproposal" xml:space="preserve">
+    <value>耐用期間</value>
+  </data>
+  <data name="custrecord_propsubsid" page="assetproposal" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_nopropselected" page="assetproposal" xml:space="preserve">
+    <value>作成する提案が選択されていません。</value>
+  </data>
+
+  <!-- Asset Transfer Page -->
+  <data name="custrecord_assettransfer_title" page="assettransfer" xml:space="preserve">
+    <value>資産の譲渡</value>
+  </data>
+  <data name="custpage_assetid" page="assettransfer" xml:space="preserve">
+    <value>資産ID/名前</value>
+  </data>
+  <data name="custpage_assetid_help" page="assettransfer" xml:space="preserve">
+    <value>譲渡する資産のIDまたは名前を選択します。</value>
+  </data>
+  <data name="custpage_assettype" page="assettransfer" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_assettype_help" page="assettransfer" xml:space="preserve">
+    <value>この資産タイプ。</value>
+  </data>
+  <data name="custpage_newassettype" page="assettransfer" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_newassettype_help" page="assettransfer" xml:space="preserve">
+    <value>この資産の譲渡先の資産タイプを選択します。</value>
+  </data>
+  <data name="custpage_assetsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_assetsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>資産の現在の連結子会社。</value>
+  </data>
+  <data name="custpage_newsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_newsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>この資産の譲渡先の連結子会社を選択します。</value>
+  </data>
+  <data name="custpage_assetclass" page="assettransfer" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="custpage_assetclass_help" page="assettransfer" xml:space="preserve">
+    <value>資産の現在のクラス。</value>
+  </data>
+  <data name="custpage_newclass" page="assettransfer" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="custpage_newclass_help" page="assettransfer" xml:space="preserve">
+    <value>この資産の譲渡先のクラスを選択します。</value>
+  </data>
+  <data name="custpage_assetdepartment" page="assettransfer" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="custpage_assetdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>資産の現在の部門。</value>
+  </data>
+  <data name="custpage_newdepartment" page="assettransfer" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="custpage_newdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>この資産の譲渡先の部門を選択します。</value>
+  </data>
+  <data name="custpage_assetlocation" page="assettransfer" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="custpage_assetlocation_help" page="assettransfer" xml:space="preserve">
+    <value>資産の現在の場所。</value>
+  </data>
+  <data name="custpage_newlocation" page="assettransfer" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="custpage_newlocation_help" page="assettransfer" xml:space="preserve">
+    <value>この資産の譲渡先の場所を選択します。</value>
+  </data>
+  <data name="custpage_assetdescription" page="assettransfer" xml:space="preserve">
+    <value>資産の説明</value>
+  </data>
+  <data name="custpage_assetdescription_help" page="assettransfer" xml:space="preserve">
+    <value>資産の説明がここに表示されます。</value>
+  </data>
+  <data name="custpage_assetserialno" page="assettransfer" xml:space="preserve">
+    <value>資産シリアル番号</value>
+  </data>
+  <data name="custpage_assetserialno_help" page="assettransfer" xml:space="preserve">
+    <value>資産の追跡または識別に使用されるシリアル番号。</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assettransfer" xml:space="preserve">
+    <value>代替資産番号</value>
+  </data>
+  <data name="custpage_assetalternateno_help" page="assettransfer" xml:space="preserve">
+    <value>追加の資産参照番号</value>
+  </data>
+  <data name="custpage_assetorigcost" page="assettransfer" xml:space="preserve">
+    <value>取得原価</value>
+  </data>
+  <data name="custpage_assetorigcost_help" page="assettransfer" xml:space="preserve">
+    <value>資産の取得（購入）原価。</value>
+  </data>
+  <data name="custpage_assetcurrcost" page="assettransfer" xml:space="preserve">
+    <value>現在の帳簿価額</value>
+  </data>
+  <data name="custpage_assetcurrcost_help" page="assettransfer" xml:space="preserve">
+    <value>資産の現在の帳簿評価。</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assettransfer" xml:space="preserve">
+    <value>資産耐用年数</value>
+  </data>
+  <data name="custpage_assetlifetime_help" page="assettransfer" xml:space="preserve">
+    <value>減価償却期間の倍数で表す資産の期待耐用年数（例：減価償却期間が「月次」の場合、月数で耐用年数を入力します）。</value>
+  </data>
+  <data name="custpage_assetlastdepr" page="assettransfer" xml:space="preserve">
+    <value>最終減価償却期間</value>
+  </data>
+  <data name="custpage_assetlastdepr_help" page="assettransfer" xml:space="preserve">
+    <value>資産が最も最近に減価償却された期間の数（資産の耐用年数内）。</value>
+  </data>
+  <data name="custpage_assetstatus" page="assettransfer" xml:space="preserve">
+    <value>資産ステータス</value>
+  </data>
+  <data name="custpage_assetstatus_help" page="assettransfer" xml:space="preserve">
+    <value>資産の現在のステータス。</value>
+  </data>
+  <data name="custpage_assetcurrency" page="assettransfer" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="custpage_assetcurrency_help" page="assettransfer" xml:space="preserve">
+    <value>連結子会社の帳簿の基準通貨です。</value>
+  </data>
+
+  <!-- Process Instance Status Page -->
+  <data name="custpage_processstatus_title" page="processstatus" xml:space="preserve">
+    <value>トランザクションのステータス</value>
+  </data>
+  <data name="custpage_processid" page="processstatus" xml:space="preserve">
+    <value>最近のプロセス： </value>
+  </data>
+  <data name="custpage_currentprocess" page="processstatus" xml:space="preserve">
+    <value>現在のプロセス： </value>
+  </data>
+  <data name="custpage_processstatus" page="processstatus" xml:space="preserve">
+    <value>現在のプロセスステータス： </value>
+  </data>
+  <data name="custpage_prevprocess" page="processstatus" xml:space="preserve">
+    <value>以前のプロセス： </value>
+  </data>
+  <data name="custpage_nopending" page="processstatus" xml:space="preserve">
+    <value>保留中のプロセスなし</value>
+  </data>
+  <data name="custpage_nocurrent" page="processstatus" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="custpage_rendering" page="processstatus" xml:space="preserve">
+    <value>レンダリング中...</value>
+  </data>
+  <data name="custpage_deprnone" page="processstatus" xml:space="preserve">
+    <value>(0)個の資産が減価償却されました。</value>
+  </data>
+    <data name="custpage_depracctmethods" page="processstatus" xml:space="preserve">
+    <value>会計方法の償却 </value>
+  </data>
+  <data name="custpage_depracctmethods_count" page="processstatus" xml:space="preserve">
+    <value>個の会計方法が償却されました。</value>
+  </data>
+  <data name="custpage_deprtaxmethods" page="processstatus" xml:space="preserve">
+    <value>税申告方法の償却 </value>
+  </data>
+  <data name="custpage_deprtaxmethods_count" page="processstatus" xml:space="preserve">
+    <value>個の税申告方法が償却されました。</value>
+  </data>
+  <data name="custpage_writingdepr_amounts" page="processstatus" xml:space="preserve">
+    <value>仕訳帳に償却額を記載 </value>
+  </data>
+  <data name="custpage_deprhistory_count" page="processstatus" xml:space="preserve">
+    <value>件の償却履歴が処理されました。</value>
+  </data>
+  <data name="custpage_status_allassettype" page="processstatus" xml:space="preserve">
+    <value>すべての資産タイプ</value>
+  </data>
+  <data name="custpage_procstatus_dispose" page="processstatus" xml:space="preserve">
+    <value>資産の処分 </value>
+  </data>
+  <data name="custpage_procstatus_dispose_count" page="processstatus" xml:space="preserve">
+    <value>個の資産が処分済みです。</value>
+  </data>
+  <data name="custpage_procstatus_reval" page="processstatus" xml:space="preserve">
+    <value>資産の再評価 </value>
+  </data>
+  <data name="custpage_procstatus_reval_count" page="processstatus" xml:space="preserve">
+    <value>個の資産が再評価済みです。</value>
+  </data>
+  <data name="custpage_procstatus_split" page="processstatus" xml:space="preserve">
+    <value>資産の分割 </value>
+  </data>
+  <data name="custpage_procstatus_split_count" page="processstatus" xml:space="preserve">
+    <value>個の資産が分割済みです。</value>
+  </data>
+  <data name="custpage_procstatus_transfer" page="processstatus" xml:space="preserve">
+    <value>資産の譲渡 </value>
+  </data>
+  <data name="custpage_procstatus_transfer_count" page="processstatus" xml:space="preserve">
+    <value>個の資産が譲渡済みです。</value>
+  </data>
+  <data name="custpage_procstatus_gen" page="processstatus" xml:space="preserve">
+    <value>資産の生成 </value>
+  </data>
+  <data name="custpage_procstatus_gen_count" page="processstatus" xml:space="preserve">
+    <value>個の資産が生成済みです。</value>
+  </data>
+  <data name="custpage_procstatus_prop" page="processstatus" xml:space="preserve">
+    <value>資産の提案 </value>
+  </data>
+  <data name="custpage_procstatus_prop_count" page="processstatus" xml:space="preserve">
+    <value>個の資産が提案済みです。</value>
+  </data>
+  <data name="custpage_procstatus_schedreport_count" page="processstatus" xml:space="preserve">
+    <value>件のレポートが生成済みです。</value>
+  </data>
+  <data name="custpage_rep_gen_asset_register" page="processstatus" xml:space="preserve">
+    <value>資産登録レポートの生成</value>
+  </data>
+  <data name="custpage_rep_gen_asset_summary" page="processstatus" xml:space="preserve">
+    <value>資産概要レポートの生成</value>
+  </data>
+  <data name="custpage_rep_gen_depr_sched" page="processstatus" xml:space="preserve">
+    <value>資産減価償却スケジュールレポートの生成</value>
+  </data>
+  <data name="custpage_report_generation_count" page="processstatus" xml:space="preserve">
+    <value>個のレコードが含まれています。</value>
+  </data>
+  <data name="custpage_view_report_as" page="processstatus" xml:space="preserve">
+    <value>次の形式でレポートを表示：</value>
+  </data>
+  <data name="custpage_procstatus_create" page="processstatus" xml:space="preserve">
+    <value>資産の作成 </value>
+  </data>
+  <data name="custpage_procstatus_create_count" page="processstatus" xml:space="preserve">
+    <value>個の資産が作成されました。</value>
+  </data>
+  <data name="custpage_view_proppage" page="processstatus" xml:space="preserve">
+    <value>提案ページの表示</value>
+  </data>
+  
+  <!-- Asset Summary Page -->
+  <data name="custrecord_assetsummary_title" page="assetsummary" xml:space="preserve">
+    <value>資産概要レポート</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetsummary" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetsummary" xml:space="preserve">
+    <value>連結</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetsummary" xml:space="preserve">
+    <value>子を含む</value>
+    </data>
+  <data name="custpage_filtermsselect" page="assetsummary" xml:space="preserve">
+    <value>選択</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetsummary" xml:space="preserve">
+    <value>償却方法</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetsummary" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetsummary" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetsummary" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetsummary" xml:space="preserve">
+    <value>期間開始日</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetsummary" xml:space="preserve">
+    <value>期間終了日</value>
+  </data>
+  <data name="custpage_html_tangible" page="assetsummary" xml:space="preserve">
+    <value>有形固定資産</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="assetsummary" xml:space="preserve">
+    <value>原価または評価</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetsummary" xml:space="preserve">
+    <value>減価償却</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetsummary" xml:space="preserve">
+    <value>純帳簿価格</value>
+  </data>
+  <data name="custpage_html_at" page="assetsummary" xml:space="preserve">
+    <value>(0)で</value>
+  </data>
+  <data name="custpage_html_additions" page="assetsummary" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="custpage_html_disposals" page="assetsummary" xml:space="preserve">
+    <value>処分</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="assetsummary" xml:space="preserve">
+    <value>期間の料金</value>
+  </data>
+  <data name="custpage_html_adjustments" page="assetsummary" xml:space="preserve">
+    <value>調整</value>
+  </data>
+  <data name="custpage_html_fam" page="assetsummary" xml:space="preserve">
+    <value>固定資産管理</value>
+  </data>
+  <data name="custpage_html_total" page="assetsummary" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetsummary" xml:space="preserve">
+    <value>全資産</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetsummary" xml:space="preserve">
+    <value>リース資産以外の全資産</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetsummary" xml:space="preserve">
+    <value>リース資産のみ</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetsummary" xml:space="preserve">
+    <value>会計方法（オプション）</value>
+  </data>
+  
+  
+  <!-- Fixed Assets Reports -->
+  <data name="custrecord_famreports_title" page="famreports" xml:space="preserve">
+    <value>固定資産レポート</value>
+  </data>
+  <data name="custpage_reporttype" page="famreports" xml:space="preserve">
+    <value>レポートの種類</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="famreports" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="famreports" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="famreports" xml:space="preserve">
+    <value>子を含む</value>
+  </data>
+  <data name="custpage_filteracctngbook" page="famreports" xml:space="preserve">
+    <value>会計帳簿</value>
+  </data>
+  <data name="custpage_filtermsselect" page="famreports" xml:space="preserve">
+    <value>含める資産</value>
+  </data>
+  <data name="custpage_filtersmethod" page="famreports" xml:space="preserve">
+    <value>代替減価償却</value>
+  </data>
+  <data name="custpage_filterslocation" page="famreports" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="custpage_filtersdept" page="famreports" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="custpage_filtersclass" page="famreports" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="custpage_filterstartdate" page="famreports" xml:space="preserve">
+    <value>開始日</value>
+  </data>
+  <data name="custpage_filterenddate" page="famreports" xml:space="preserve">
+    <value>終了日</value>
+  </data>
+  <data name="custpage_html_tangible" page="famreports" xml:space="preserve">
+    <value>有形固定資産</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="famreports" xml:space="preserve">
+    <value>原価または評価</value>
+  </data>
+  <data name="custpage_html_depreciation" page="famreports" xml:space="preserve">
+    <value>減価償却</value>
+  </data>
+  <data name="custpage_html_nbv" page="famreports" xml:space="preserve">
+    <value>純帳簿価格</value>
+  </data>
+  <data name="custpage_html_at" page="famreports" xml:space="preserve">
+    <value>(0)で</value>
+  </data>
+  <data name="custpage_html_additions" page="famreports" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="custpage_html_disposals" page="famreports" xml:space="preserve">
+    <value>処分</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="famreports" xml:space="preserve">
+    <value>期間の料金</value>
+  </data>
+  <data name="custpage_html_adjustments" page="famreports" xml:space="preserve">
+    <value>調整</value>
+  </data>
+  <data name="custpage_html_fam" page="famreports" xml:space="preserve">
+    <value>固定資産管理</value>
+  </data>
+  <data name="custpage_html_total" page="famreports" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="famreports" xml:space="preserve">
+    <value>全資産</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="famreports" xml:space="preserve">
+    <value>リース資産以外の全資産</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="famreports" xml:space="preserve">
+    <value>リース資産のみ</value>
+  </data>
+  <data name="custpage_dropdown_report_assetregister" page="famreports" xml:space="preserve">
+    <value>資産登録</value>
+  </data>
+  <data name="custpage_dropdown_report_assetsummary" page="famreports" xml:space="preserve">
+    <value>資産概要</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_nbv" page="famreports" xml:space="preserve">
+    <value>減価償却スケジュール - 純帳簿価額</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_pd" page="famreports" xml:space="preserve">
+    <value>減価償却スケジュール - 期間減価償却</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="famreports" xml:space="preserve">
+    <value>減価償却法</value>
+  </data>
+  <data name="custpage_saveresults_help" page="famreports" xml:space="preserve">
+    <value>「予測額を保存」により、生成された償却スケジュールエントリを（資産の耐用寿命にわたり）資産レコードに保存できます。有効になっている場合、開始日、終了日、純帳簿価格、および期間減価償却は自動的に無視されます。これにより、「減価償却履歴」テーブルには、資産の耐用寿命にわたり常に完全な減価償却スケジュールレポートが含まれことになります。「開始日」、「終了日」、「純帳簿価額」、および「期間減価償却」の各フィールドの値は、生成されるレポートのみに使用されます。</value>
+  </data>
+  <data name="custpage_saveresults" page="famreports" xml:space="preserve">
+    <value>予測額を保存</value>
+  </data>
+  <data name="custpage_assetinclude_help" page="famreports" xml:space="preserve">
+    <value>レポートに「すべての資産」、「リース資産以外の全資産」、または「リース資産のみ」のどの資産を含めるかを選択します。</value>
+  </data>
+  <data name="custpage_nodataforreport" page="famreports" xml:space="preserve">
+    <value>選択したフィルタの組み合わせにはレポートデータを使用できません。</value>
+  </data>
+  <data name="custpage_dropddown_none" page="famreports" xml:space="preserve">
+    <value>なし</value>
+  </data>
+
+  <!-- FAM Report Templates -->
+  <!-- Asset Registry Report Template-->
+  <data name="ARR_desc_ARR" page="ARR_template" xml:space="preserve">
+     <value>FAM によって生成されました。資産台帳レポート</value>
+  </data>
+  <data name="ARR_title_ARR" page="ARR_template" xml:space="preserve">
+     <value>資産台帳レポート</value>
+  </data>
+  <data name="ARR_fam_ARR" page="ARR_template" xml:space="preserve">
+     <value>固定資産管理</value>
+  </data>
+  <data name="ARR_begbal_ARR" page="ARR_template" xml:space="preserve">
+     <value>期首残高</value>
+  </data>
+  <data name="ARR_assettype_ARR" page="ARR_template" xml:space="preserve">
+     <value>資産種別</value>
+  </data>
+  <data name="ARR_id_ARR" page="ARR_template" xml:space="preserve">
+     <value>ID</value>
+  </data>
+  <data name="ARR_name_ARR" page="ARR_template" xml:space="preserve">
+     <value>名称</value>
+  </data>
+  <data name="ARR_deprstartdate_ARR" page="ARR_template" xml:space="preserve">
+     <value>減価償却開始日</value>
+  </data>
+  <data name="ARR_al_ARR" page="ARR_template" xml:space="preserve">
+     <value>AL</value>
+  </data>
+  <data name="ARR_cost_ARR" page="ARR_template" xml:space="preserve">
+     <value>原価</value>
+  </data>
+  <data name="ARR_nbv_ARR" page="ARR_template" xml:space="preserve">
+     <value>正味帳簿価額</value>
+  </data>
+  <data name="ARR_acquisition_ARR" page="ARR_template" xml:space="preserve">
+     <value>取得</value>
+  </data>
+  <data name="ARR_sale_ARR" page="ARR_template" xml:space="preserve">
+     <value>販売</value>
+  </data>
+  <data name="ARR_disposals_ARR" page="ARR_template" xml:space="preserve">
+     <value>廃棄</value>
+  </data>
+  <data name="ARR_depreciation_ARR" page="ARR_template" xml:space="preserve">
+     <value>減価償却</value>
+  </data>
+  
+  <data name="ARR_revaluation_ARR" page="ARR_template" xml:space="preserve">
+     <value>再評価</value>
+  </data>
+  <data name="ARR_writedown_ARR" page="ARR_template" xml:space="preserve">
+     <value>評価減</value>
+  </data>
+  <data name="ARR_subwithzero_ARR" page="ARR_template" xml:space="preserve">
+     <value>残高ゼロの補助簿</value>
+  </data>
+  
+  <!-- Asset Summary Report Template-->
+  <data name="ASR_desc_ASR" page="ASR_template" xml:space="preserve">
+     <value>FAM によって生成されました。資産概要レポート</value>
+  </data>
+  <data name="ASR_title_ASR" page="ASR_template" xml:space="preserve">
+     <value>資産概要レポート</value>
+  </data>
+  <data name="ASR_fam_ASR" page="ASR_template" xml:space="preserve">
+     <value>固定資産管理</value>
+  </data>
+  <data name="ASR_begbal_ASR" page="ASR_template" xml:space="preserve">
+     <value>期首残高</value>
+  </data>
+  <data name="ASR_additions_ASR" page="ASR_template" xml:space="preserve">
+     <value>追加</value>
+  </data>
+  <data name="ASR_sale_ASR" page="ASR_template" xml:space="preserve">
+     <value>販売</value>
+  </data>
+  <data name="ASR_disposals_ASR" page="ASR_template" xml:space="preserve">
+     <value>廃棄</value>
+  </data>
+  <data name="ASR_revaluations_ASR" page="ASR_template" xml:space="preserve">
+     <value>再評価</value>
+  </data>
+  <data name="ASR_endbal_ASR" page="ASR_template" xml:space="preserve">
+     <value>期末残高</value>
+  </data>
+  <data name="ASR_subwithzero_ASR" page="ASR_template" xml:space="preserve">
+     <value>残高ゼロの補助簿</value>
+  </data>
+  
+  <!-- Depreciation Schedule Report Template-->
+  <data name="DSR_desc_DSR" page="DSR_template" xml:space="preserve">
+     <value>FAM によって生成されました。減価償却スケジュールレポート</value>
+  </data>
+  <data name="DSR_title_DSR" page="DSR_template" xml:space="preserve">
+     <value>資産減価償却スケジュールレポート</value>
+  </data>
+  <data name="DSR_fam_DSR" page="DSR_template" xml:space="preserve">
+     <value>固定資産管理</value>
+  </data>
+  <data name="DSR_from_DSR" page="DSR_template" xml:space="preserve">
+     <value>自</value>
+  </data>
+  <data name="DSR_to_DSR" page="DSR_template" xml:space="preserve">
+     <value>至</value>
+  </data>
+  <data name="DSR_id_DSR" page="DSR_template" xml:space="preserve">
+     <value>ID</value>
+  </data>
+  <data name="DSR_name_DSR" page="DSR_template" xml:space="preserve">
+     <value>名称</value>
+  </data>
+  <data name="DSR_al_DSR" page="DSR_template" xml:space="preserve">
+     <value>AL</value>
+  </data>
+  <data name="DSR_deprmethod_DSR" page="DSR_template" xml:space="preserve">
+     <value>減価償却法</value>
+  </data>
+  <data name="DSR_jan_DSR" page="DSR_template" xml:space="preserve">
+     <value>1 月</value>
+  </data>
+  <data name="DSR_feb_DSR" page="DSR_template" xml:space="preserve">
+     <value>2 月</value>
+  </data>
+  <data name="DSR_mar_DSR" page="DSR_template" xml:space="preserve">
+     <value>3 月</value>
+  </data>
+  <data name="DSR_apr_DSR" page="DSR_template" xml:space="preserve">
+     <value>4 月</value>
+  </data>
+  <data name="DSR_may_DSR" page="DSR_template" xml:space="preserve">
+     <value>5 月</value>
+  </data>
+  <data name="DSR_jun_DSR" page="DSR_template" xml:space="preserve">
+     <value>6 月</value>
+  </data>
+  <data name="DSR_jul_DSR" page="DSR_template" xml:space="preserve">
+     <value>7 月</value>
+  </data>
+  <data name="DSR_aug_DSR" page="DSR_template" xml:space="preserve">
+     <value>8 月</value>
+  </data>
+  <data name="DSR_sep_DSR" page="DSR_template" xml:space="preserve">
+     <value>9 月</value>
+  </data>
+  <data name="DSR_oct_DSR" page="DSR_template" xml:space="preserve">
+     <value>10 月</value>
+  </data>
+  <data name="DSR_nov_DSR" page="DSR_template" xml:space="preserve">
+     <value>11 月</value>
+  </data>
+  <data name="DSR_dec_DSR" page="DSR_template" xml:space="preserve">
+     <value>12 月</value>
+  </data>
+
+  <!-- Report Status -->
+  <data name="custpage_currentstatus" page="reportstatus" xml:space="preserve">
+    <value>現在のステータス</value>
+  </data>
+  <data name="custpage_resultstatus" page="reportstatus" xml:space="preserve">
+    <value>どの場所にありますか？</value>
+  </data>
+  <data name="custpage_reportavailable" page="reportstatus" xml:space="preserve">
+    <value>レポートの結果を利用できます</value>
+  </data>
+  <data name="custpage_generatereportassettypes" page="reportstatus" xml:space="preserve">
+    <value>レポート資産タイプの生成：</value>
+  </data>
+  <data name="custpage_generatereport" page="reportstatus" xml:space="preserve">
+    <value>レポートを生成： </value>
+  </data>
+  <data name="custpage_assetprocessed" page="reportstatus" xml:space="preserve">
+    <value>(0)個の資産が処理済みです。</value>
+  </data>
+  <data name="custpage_reportlink" page="reportstatus" xml:space="preserve">
+    <value>こちら</value>
+  </data>
+  <data name="custpage_errorfile" page="reportstatus" xml:space="preserve">
+    <value>レポートファイル情報の取得エラー</value>
+  </data>
+  <data name="custpage_generatingreport" page="reportstatus" xml:space="preserve">
+    <value>次のレポートの生成中：</value>
+  </data>
+  <data name="custpage_reportcomplete" page="reportstatus" xml:space="preserve">
+    <value>レポート生成が完了しました。</value>
+  </data>
+  <data name="custpage_processfailed" page="reportstatus" xml:space="preserve">
+    <value>処理に失敗しました。</value>
+  </data>
+
+  <!-- Report Status Depreciation -->
+  <data name="custrecord_reportstatus_title" page="reportstatus2" xml:space="preserve">
+    <value>減価償却スケジュールレポートステータス</value>
+  </data>
+  <data name="custpage_html_currentstatus" page="reportstatus2" xml:space="preserve">
+    <value>現在のステータス</value>
+  </data>
+  <data name="custpage_html_resultstatus" page="reportstatus2" xml:space="preserve">
+    <value>どの場所にありますか？</value>
+  </data>
+  <data name="custpage_html_assetprocessed" page="reportstatus2" xml:space="preserve">
+    <value>(0)個の資産が処理済みです。</value>
+  </data>
+  <data name="custpage_html_reportavailable" page="reportstatus2" xml:space="preserve">
+    <value>レポートの結果を利用できます</value>
+  </data>
+  <data name="custpage_html_reportlink" page="reportstatus2" xml:space="preserve">
+    <value>こちら</value>
+  </data>
+  <data name="custpage_html_generatereport" page="reportstatus2" xml:space="preserve">
+    <value>次のレポートの生成中：(0)</value>
+  </data>
+  <data name="custpage_html_processfailed" page="reportstatus2" xml:space="preserve">
+    <value>処理に失敗しました。</value>
+  </data>
+  <data name="custpage_html_errorfile" page="reportstatus2" xml:space="preserve">
+    <value>レポートファイル情報の取得エラー</value>
+  </data>
+  <data name="custpage_html_assetno" page="reportstatus2" xml:space="preserve">
+    <value>資産番号</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="reportstatus2" xml:space="preserve">
+    <value>資産の説明</value>
+  </data>
+
+
+  <data name="custrecord_famreportshist_title" page="famreportshistory" xml:space="preserve">
+    <value>固定資産レポートの履歴</value>
+  </data>  
+  <data name="custpage_showingdays" page="famreportshistory" xml:space="preserve">
+    <value>最近(0)日のレポートの表示。</value>
+  </data>
+  <data name="custpage_group_reporthistory" page="famreportshistory" xml:space="preserve">
+    <value>固定資産レポート</value>
+  </data>
+  <data name="custpage_reports_dategen" page="famreportshistory" xml:space="preserve">
+    <value>生成日</value>
+  </data>
+  <data name="custpage_reports_reptype" page="famreportshistory" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="custpage_reports_repstartdate" page="famreportshistory" xml:space="preserve">
+    <value>開始日</value>
+  </data>
+  <data name="custpage_reports_rependdate" page="famreportshistory" xml:space="preserve">
+    <value>終了日</value>
+  </data>
+  <data name="custpage_reports_fileoptions" page="famreportshistory" xml:space="preserve">
+    <value>ファイルオプション</value>
+  </data>
+  <data name="custpage_reports_viewas" page="famreportshistory" xml:space="preserve">
+    <value>次として表示： </value>
+  </data>
+  <data name="custpage_reports_delete" page="famreportshistory" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="custpage_reports_repowner" page="famreportshistory" xml:space="preserve">
+    <value>所有者</value>
+  </data>
+  <data name="custpage_error_filepermissioninsuf" page="famreportshistory" xml:space="preserve">
+    <value>このロールにはファイルの表示以上の権限がありません。</value>
+  </data>
+  <data name="custpage_button_all_reports" page="famreportshistory" xml:space="preserve">
+    <value>すべてのレポートを表示</value>
+  </data>
+  <data name="custpage_button_my_reports" page="famreportshistory" xml:space="preserve">
+    <value>マイレポートを表示</value>
+  </data>
+
+  <!-- System Setup Page -->
+  <data name="custrecord_systemsetup_title" page="systemsetup" xml:space="preserve">
+    <value>固定資産管理</value>
+  </data>
+  <data name="custrecord_systemsetup_settingstab" page="systemsetup" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalktab" page="systemsetup" xml:space="preserve">
+    <value>SuiteTalk</value>
+  </data>
+  <data name="custrecord_systemsetup_featurestab" page="systemsetup" xml:space="preserve">
+    <value>機能</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalkdesc" page="systemsetup" xml:space="preserve">
+    <value>Suite Talk（Webサービス）通信に使用する資格情報を入力します</value>
+  </data>
+  <data name="custpage_filtermsselect" page="systemsetup" xml:space="preserve">
+    <value>選択</value>
+  </data>
+  <data name="custpage_filtersmethod" page="systemsetup" xml:space="preserve">
+    <value>償却方法</value>
+  </data>
+  <data name="custpage_filterslocation" page="systemsetup" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="custpage_filtersdept" page="systemsetup" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="custpage_filtersclass" page="systemsetup" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="custpage_filterstartdate" page="systemsetup" xml:space="preserve">
+    <value>期間開始日</value>
+  </data>
+  <data name="custpage_filterenddate" page="systemsetup" xml:space="preserve">
+    <value>期間終了日</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import" page="systemsetup" xml:space="preserve">
+    <value>CSVインポート時にサーバスクリプトを実行</value>
+  </data>
+  <data name="custpage_farsetuppostlocation" page="systemsetup" xml:space="preserve">
+    <value>場所変更時に転記</value>
+  </data>
+  <data name="custpage_farsetuppostclass" page="systemsetup" xml:space="preserve">
+    <value>クラス変更時に転記</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment" page="systemsetup" xml:space="preserve">
+    <value>部門変更時に転記</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock" page="systemsetup" xml:space="preserve">
+    <value>買掛がロックされている場合に次の未終了期間に転記</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock_help" page="systemsetup" xml:space="preserve">
+    <value>買掛がロックされている場合に次の未終了期間への転記を許可するには、このボックスにチェックマークを入れます。買掛がロックされている場合でも現在の期間への転記を許可するには、このボックスのチェックマークを外します。</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock" page="systemsetup" xml:space="preserve">
+    <value>売掛がロックされている場合に次の未終了期間に転記</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock_help" page="systemsetup" xml:space="preserve">
+    <value>売掛がロックされている場合に次の未終了期間への転記を許可するには、このボックスにチェックマークを入れます。売掛がロックされている場合でも現在の期間への転記を許可するには、このボックスのチェックマークを外します。</value>
+  </data>
+  <data name="custpage_allow_non_fixedasset_account" page="systemsetup" xml:space="preserve">
+    <value>非固定資産勘定タイプのみ許可</value>
+  </data>
+  <data name="custpage_farsetupsummary" page="systemsetup" xml:space="preserve">
+    <value>仕訳帳の要約条件</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations" page="systemsetup" xml:space="preserve">
+    <value>将来の日付の減価償却を許可</value>
+  </data>
+  <data name="custpage_allowvalueedit" page="systemsetup" xml:space="preserve">
+    <value>資産価値の編集を許可</value>
+  </data>
+  <data name="custpage_allownegativecost" page="systemsetup" xml:space="preserve">
+    <value>マイナスの資産原価を許可</value>
+  </data>
+  <data name="custpage_userrole_help1" page="systemsetup" xml:space="preserve">
+    <value>「資産価値の編集を許可」により、資産レコードで値を編集するためのフル権限が管理者に付与されます。</value>
+  </data>
+  <data name="custpage_userrole_help2" page="systemsetup" xml:space="preserve">
+    <value>他のユーザに資産価値を許可するため追加のロールを選択することもできます。</value>
+  </data>
+  <data name="custpage_userrole" page="systemsetup" xml:space="preserve">
+    <value>ユーザロール</value>
+  </data>
+  <data name="custpage_propapprovedonly" page="systemsetup" xml:space="preserve">
+    <value>承認済みトランザクションのみを提案</value>
+  </data>
+  <data name="custpage_followacctperiod" page="systemsetup" xml:space="preserve">
+    <value>減価償却に会計期間の日付を使用</value>
+  </data>
+  <data name="custpage_allowbypassue" page="systemsetup" xml:space="preserve">
+    <value>減価償却中にカスタムレコードUEスクリプトを無視</value>
+  </data>
+  <data name="custpage_constrainal" page="systemsetup" xml:space="preserve">
+    <value>代替資産耐用年数の制約</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction" page="systemsetup" xml:space="preserve">
+    <value>カスタム仕訳帳を使用</value>
+  </data>
+  <data name="custpage_adminallreports" page="systemsetup" xml:space="preserve">
+    <value>管理者にすべてのレポートの表示を許可</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount" page="systemsetup" xml:space="preserve">
+    <value>減価償却勘定を使用して減額</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym" page="systemsetup" xml:space="preserve">
+    <value>整数（0小数点） 通貨</value>
+  </data>
+  <data name="custpage_farsetupresrej" page="systemsetup" xml:space="preserve">
+    <value>提案却下機能の制限</value>
+  </data>
+  <data name="custpage_farsetupreportfolder" page="systemsetup" xml:space="preserve">
+    <value>レポーティングに使用するフォルダ（内部ID）</value>
+  </data>
+  <data name="custpage_farsetupdisposalform" page="systemsetup" xml:space="preserve">
+    <value>資産処分請求書フォーム（内部ID）</value>
+  </data>
+  <data name="custpage_farsetupsubsidsenabled" page="systemsetup" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_farsetupdeptsenabled" page="systemsetup" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="custpage_farsetuplocationsenabled" page="systemsetup" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="custpage_farsetupclassesenabled" page="systemsetup" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="custpage_farsetupjobsenabled" page="systemsetup" xml:space="preserve">
+    <value>ジョブ</value>
+  </data>
+  <data name="custpage_farsetupmulticurrenabled" page="systemsetup" xml:space="preserve">
+    <value>複数通貨</value>
+  </data>
+  <data name="custpage_admin_only_field" page="systemsetup" xml:space="preserve">
+    <value>管理者のみ</value>
+  </data>
+  <data name="custpage_html_adminonly" page="systemsetup" xml:space="preserve">
+    <value>管理者のみがこのページにアクセスできます。</value>
+  </data>
+  <data name="custpage_dropdown_none" page="systemsetup" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="custpage_dropdown_parent" page="systemsetup" xml:space="preserve">
+    <value>親</value>
+  </data>
+  <data name="custpage_dropdown_subcategory" page="systemsetup" xml:space="preserve">
+    <value>サブカテゴリ</value>
+  </data>
+  <data name="custpage_dropdown_assettype" page="systemsetup" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import_help" page="systemsetup" xml:space="preserve">
+  <value>耐用年数中の資産のレコードをインポートする場合は、このボックスにチェックマークを入れないでください。
+このボックスにチェックマークが入っており、「サーバSuiteScriptを実行してワークフローをトリガー」（「設定」 &gt; 「インポート」 &gt; 「CSVインポートプリファレンス」）ボックスにもチェックマークが入っている場合、たとえインポートファイルに正しい値が含まれていても、「累積減価償却」、「前回の償却日」、「前回の償却期間」などの情報にはデフォルト値の0が自動的に入力されます。</value>
+  </data>
+  <data name="custpage_farsetuppostlocation_help" page="systemsetup" xml:space="preserve">
+    <value>場所の変更に際して資産が譲渡される場合には、仕訳記入と共にこのボックスにチェックマークを入れます。</value>
+  </data>
+  <data name="custpage_farsetuppostclass_help" page="systemsetup" xml:space="preserve">
+    <value>クラスの変更に際して資産が譲渡される場合にはこのボックスにチェックマークを入れます。</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment_help" page="systemsetup" xml:space="preserve">
+    <value>部門の変更に際して資産が譲渡される場合には、仕訳記入と共にこのボックスにチェックマークを入れます。</value>
+  </data>
+  <data name="custpage_constrainal_help" page="systemsetup" xml:space="preserve">
+    <value>資産の耐用年数（AL）の値が資産の有効期間よりも大きい代替の減価償却方法の資産レコードへの追加を制限するには、このボックスにチェックマークを付けます。</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount_help" page="systemsetup" xml:space="preserve">
+    <value>このボックスにチェックマークを入れると、評価減額が減価償却勘定に転記されます。このチェックボックスのチェックマークを外すと、減損額は資産勘定に転記されます。</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym_help" page="systemsetup" xml:space="preserve">
+    <value>小数点のない通貨の場合、1つ以上の記号を入力します（例えば、日本円の場合複数の値をカンマで区切ります）。</value>
+  </data>
+  <data name="custpage_farsetupresrej_help" page="systemsetup" xml:space="preserve">
+    <value>このオプションにチェックマークが入っている場合、「提案の却下」ボタンは、ユーザが管理者ロールでアクセスしたときにのみ「資産の提案」ページに表示されます。</value>
+  </data>
+  <data name="custpage_farsetupreportfolder_help" page="systemsetup" xml:space="preserve">
+    <value>固定資産レポートが保存されているファイルキャビネットの「固定資産登録レポート」フォルダの内部IDを入力します。NetSuiteアカウントで「固定資産台帳」フォルダの内部IDを確認するには、次の操作を行います。
+1. 「ドキュメント」 &gt; 「ファイル」 &gt; 「ファイルキャビネット」へと進みます。
+2. 「SuiteBundles」をクリックします。
+3. 「バンドル35405」をクリックします。
+4. 「src」フォルダをクリックします。</value>
+  </data>
+  <data name="custpage_farsetupdisposalform_help" page="systemsetup" xml:space="preserve">
+    <value>販売で資産を処理する場合は、請求書レコードを作成するために使用する優先請求書フォームの内部IDを入力します。このフィールドが空白の場合、デフォルトの優先フォームが「請求書」フォームとして使用されます。</value>
+  </data>
+  <data name="custpage_farsetupsummary_help" page="systemsetup" xml:space="preserve">
+    <value>次のいずれかの「仕訳帳の要約条件」オプションを選択します。
+親 - サブ資産の値を親の下にまとめ、期間ごとに親と子の値を含むよう1つの仕訳を作成します。
+サブカテゴリ - 値をサブカテゴリにまとめ、サブカテゴリごと、期間ごとに1つの仕訳を作成します。このオプションは、「修理・保守カテゴリ」および「修理・保守サブカテゴリ」が実装されている場合にのみ選択することができます。
+資産タイプ - 資産タイプ別に値をまとめます。</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations_help" page="systemsetup" xml:space="preserve">
+    <value>このボックスにチェックマークを入れると、現行期間以降の減価償却の日付まで資産の減価償却が可能となります。このボックスのチェックマークを外すと、現行期間のみで資産を減価償却します。</value>
+  </data>
+  <data name="custpage_allowvalueedit_help" page="systemsetup" xml:space="preserve">
+    <value>このボックスにチェックマークを入れると、資産レコードの値を編集するためのフル権限が管理者に付与されます。
+ボックスにチェックマークが入っていない場合、資産レコードは編集できません。編集できないフィールドのリストについては、「資産価値の編集の制限」を参照してください。
+他のユーザに資産価値の編集を許可するには、「ユーザロール」フィールドから追加のロールを選択します。</value>
+  </data>
+  <data name="custpage_allownegativecost_help" page="systemsetup" xml:space="preserve">
+    <value>管理者（および資産の値を編集する権限を持つ、その他のロール）が資産レコード（取得原価、現在原価、および残存価額）に負の値を入力できるようにするには、このボックスにチェックマークを入れます。</value>
+  </data>
+  <data name="custpage_userrole_help" page="systemsetup" xml:space="preserve">
+    <value>これは「資産価値の編集を許可」ボックスにチェックマークが入っている場合に有効になります。2つ以上のロールを選択するには、Ctrlキーを押しながら「ユーザロール」フィールドで各ロールをクリックします。</value>
+  </data>
+  <data name="custpage_propapprovedonly_help" page="systemsetup" xml:space="preserve">
+    <value>承認されているトランザクションのみから資産を提案する場合は、このボックスにチェックマークを入れます。トランザクションのステータス（例えば、承認済みか承認待ち）を問わず、固定資産総勘定元帳勘定に対して転記されたすべての新規トランザクションから自動的に資産の提案を有効にするには、このボックスのチェックマークを外します。</value>
+  </data>
+  <data name="custpage_followacctperiod_help" page="systemsetup" xml:space="preserve">
+    <value>減価償却仕訳に会計期間日を使用する場合、このプリファレンスを有効にします。これは期間書式に暦月を使用していない場合に適用されます。</value>
+  </data>
+  <data name="custpage_allowbypassue_help" page="systemsetup" xml:space="preserve">
+    <value>減価償却プロセス中にカスタムレコードでユーザイベントスクリプトとワークフローを無視する場合は、このボックスにチェックマークを入れます。減価償却プロセス中に更新されるレコードでカスタムスクリプトとワークフローを実行する場合は、このボックスのチェックマークを外します。</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction_help" page="systemsetup" xml:space="preserve">
+    <value>カスタム仕訳フォームを使用するにはこのボックスにチェックマークを入れます</value>
+  </data>
+  <data name="custpage_adminallreports_help" page="systemsetup" xml:space="preserve">
+    <value>他のユーザが作成したレポートを管理者が表示できるようにするには、このボックスにチェックマークを入れます。</value>
+  </data>
+  
+  <!-- Asset Split -->
+  <data name="custrecord_assetsplit_title" page="assetsplit" xml:space="preserve">
+    <value>資産の分割</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetsplit" xml:space="preserve">
+    <value>主要情報</value>
+  </data>
+  <data name="custpage_group_splitdetails" page="assetsplit" xml:space="preserve">
+    <value>詳細の分割</value>
+  </data>
+  <data name="custpage_newlbl" page="assetsplit" xml:space="preserve">
+    <value>新しい資産値：</value>
+  </data>
+  <data name="custpage_oldlbl" page="assetsplit" xml:space="preserve">
+    <value>古い資産値：</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetsplit" xml:space="preserve">
+    <value>税申告方法</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetsplit" xml:space="preserve">
+    <value>会計帳簿</value>
+  </data>
+  <data name="custpage_altmethod" page="assetsplit" xml:space="preserve">
+    <value>代替方法</value>
+  </data>
+  <data name="custpage_assetid" page="assetsplit" xml:space="preserve">
+    <value>資産ID/名前</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetsplit" xml:space="preserve">
+    <value>資産の説明</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetsplit" xml:space="preserve">
+    <value>資産シリアル番号</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetsplit" xml:space="preserve">
+    <value>代替資産番号</value>
+  </data>
+  <data name="custpage_assettype" page="assetsplit" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_assetcost" page="assetsplit" xml:space="preserve">
+    <value>取得原価</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetsplit" xml:space="preserve">
+    <value>現在原価</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetsplit" xml:space="preserve">
+    <value>残存価額</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetsplit" xml:space="preserve">
+    <value>償却方法</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetsplit" xml:space="preserve">
+    <value>資産耐用年数</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetsplit" xml:space="preserve">
+    <value>現在の帳簿価額</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetsplit" xml:space="preserve">
+    <value>現在までの減価償却</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetsplit" xml:space="preserve">
+    <value>最終減価償却期間</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetsplit" xml:space="preserve">
+    <value>前回の減価償却金額</value>
+  </data>
+  <data name="custpage_assetdeprstartdate" page="assetsplit" xml:space="preserve">
+    <value>減価償却開始日</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetsplit" xml:space="preserve">
+    <value>前回の減価償却日</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetsplit" xml:space="preserve">
+    <value>資産ステータス</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetsplit" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetsplit" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_splitquantity" page="assetsplit" xml:space="preserve">
+    <value>分割数量</value>
+  </data>
+  <data name="splitquantity_help" page="assetsplit" xml:space="preserve">
+    <value>資産の額以下の値を入力してください。</value>
+  </data>
+  <!--help texts -->
+  <data name="custpage_newqty_help" page="assetsplit" xml:space="preserve">
+    <value>元の資産から分離された数量。これが、新しい資産の数量となります。</value>
+  </data>
+  <data name="custpage_newoc_help" page="assetsplit" xml:space="preserve">
+    <value>元の資産の取得原価と分割数量に基づいた、新たな資産のためのデフォルトの取得（購入）原価。デフォルトの取得原価を使用しない場合は、新しい値を入力します。</value>
+  </data>
+  <data name="custpage_newcc_help" page="assetsplit" xml:space="preserve">
+    <value>元の資産の取得原価と分割数量に基づいた、新たな資産のためのデフォルトの現在原価。デフォルトの現在原価を使用しない場合は、新しい値を入力します。</value>
+  </data>
+  <data name="custpage_newnbv_help" page="assetsplit" xml:space="preserve">
+    <value>元の資産の純帳簿価額と分割数量に基づいた、新たな資産のためのデフォルトの現在の帳簿評価。デフォルトの純帳簿価額を使用しない場合は、新しい値を入力します。 注：「純帳簿価額」と「現在までの減価償却累計額」の合計は、「現在原価」と等しくなります。</value>
+  </data>
+  <data name="custpage_newdeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>分割数量と元資産の現在までの減価償却額に基づき、新しい資産に現在までに適用されたデフォルトの総減価償却額。デフォルトの総減価償却を使用しない場合は、新しい値を入力します。注：「純帳簿価額」と「現在までの減価償却累計額」の合計は、「現在原価」と等しくなります。</value>
+  </data>
+  <data name="custpage_newrv_help" page="assetsplit" xml:space="preserve">
+    <value>新しい資産の耐用年数終了時点におけるデフォルトの価値。この値は、分割数量と元の資産の残存価額に基づいています。 デフォルトの残存価額を使用しない場合は、新しい値を入力します。</value>
+  </data>
+  <data name="custpage_newlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>分割数量と元資産の前回の償却金額に基づく、新しい資産のデフォルトの前回の償却金額。デフォルトの前回の減価償却額を使用しない場合は、新しい値を入力します。</value>
+  </data>
+  <data name="custpage_oldqty_help" page="assetsplit" xml:space="preserve">
+    <value>元資産の残存数量。</value>
+  </data>
+  <data name="custpage_oldoc_help" page="assetsplit" xml:space="preserve">
+    <value>分割数量に基づく元の資産の取得原価の残高。</value>
+  </data>
+  <data name="custpage_oldcc_help" page="assetsplit" xml:space="preserve">
+    <value>分割数量に基づく元の資産の現在原価の残高。</value>
+  </data>
+  <data name="custpage_oldnbv_help" page="assetsplit" xml:space="preserve">
+    <value>分割数量に基づいた、元の資産に対する現在の帳簿評価の残高。</value>
+  </data>
+  <data name="custpage_olddeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>分割数量に基づき元資産に現在まで適用された減価償却の残高。</value>
+  </data>
+  <data name="custpage_oldrv_help" page="assetsplit" xml:space="preserve">
+    <value>資産の耐用寿命終了時点における元資産の残余価値。この値は分割数量に基づいています。</value>
+  </data>
+  <data name="custpage_oldlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>分割数量に基づく元資産の前回の償却金額残高。</value>
+  </data>
+
+  <!-- Asset Disposal -->
+  <data name="custrecord_assetdisposal_title" page="assetdisposal" xml:space="preserve">
+    <value>資産売却/処分</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetdisposal" xml:space="preserve">
+    <value>主要情報</value>
+  </data>
+  <data name="custpage_group_disposaldetail" page="assetdisposal" xml:space="preserve">
+    <value>処分の詳細</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetdisposal" xml:space="preserve">
+    <value>税申告方法</value>
+  </data>
+  <data name="custpage_assetid" page="assetdisposal" xml:space="preserve">
+    <value>資産ID/名前</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetdisposal" xml:space="preserve">
+    <value>処分する資産のIDまたは名前を選択します。</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetdisposal" xml:space="preserve">
+    <value>資産の説明</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetdisposal" xml:space="preserve">
+    <value>資産シリアル番号</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetdisposal" xml:space="preserve">
+    <value>代替資産番号</value>
+  </data>
+  <data name="custpage_assettype" page="assetdisposal" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_assetcost" page="assetdisposal" xml:space="preserve">
+    <value>取得原価</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetdisposal" xml:space="preserve">
+    <value>現在原価</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetdisposal" xml:space="preserve">
+    <value>残存価額</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetdisposal" xml:space="preserve">
+    <value>償却方法</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetdisposal" xml:space="preserve">
+    <value>資産耐用年数</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetdisposal" xml:space="preserve">
+    <value>現在の帳簿価額</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetdisposal" xml:space="preserve">
+    <value>現在までの減価償却</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetdisposal" xml:space="preserve">
+    <value>最終減価償却期間</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetdisposal" xml:space="preserve">
+    <value>前回の減価償却金額</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetdisposal" xml:space="preserve">
+    <value>前回の減価償却日</value>
+  </data>
+  <data name="custpage_assetdeprperiod" page="assetdisposal" xml:space="preserve">
+    <value>減価償却期間</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetdisposal" xml:space="preserve">
+    <value>修正方法</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetdisposal" xml:space="preserve">
+    <value>資産ステータス</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetdisposal" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="custpage_disposaldate" page="assetdisposal" xml:space="preserve">
+    <value>廃棄日</value>
+  </data>
+  <data name="custpage_disposaltype" page="assetdisposal" xml:space="preserve">
+    <value>廃棄タイプ</value>
+  </data>
+  <data name="custpage_assetquantdisposed" page="assetdisposal" xml:space="preserve">
+    <value>破棄済み数量</value>
+  </data>
+  <data name="custpage_disposalitem" page="assetdisposal" xml:space="preserve">
+    <value>販売アイテム</value>
+  </data>
+  <data name="custpage_customer" page="assetdisposal" xml:space="preserve">
+    <value>顧客</value>
+  </data>
+  <data name="custpage_salesamount" page="assetdisposal" xml:space="preserve">
+    <value>販売額</value>
+  </data>
+  <data name="custpage_taxcode" page="assetdisposal" xml:space="preserve">
+    <value>消費税コード</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetdisposal" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetdisposal" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdisposal" xml:space="preserve">
+    <value>会計帳簿</value>
+  </data>
+  <data name="custpage_altmethod" page="assetdisposal" xml:space="preserve">
+    <value>代替方法</value>
+  </data>
+  <data name="custpage_html_assetdisposed" page="assetdisposal" xml:space="preserve">
+    <value>資産が処分されていません！</value>
+  </data>
+  <data name="custpage_html_invoicefail" page="assetdisposal" xml:space="preserve">
+    <value>資産売却の請求書の作成に失敗しました。</value>
+  </data>
+  <data name="custpage_html_checksetup" page="assetdisposal" xml:space="preserve">
+    <value>互換性がないデータおよび/または見つからないデータの資産レコードの設定を確認してください。</value>
+  </data>
+  <data name="custpage_html_journalfail" page="assetdisposal" xml:space="preserve">
+    <value>資産売却の仕訳が作成されていません。</value>
+  </data>
+  <data name="custpage_html_journal_writeofffail" page="assetdisposal" xml:space="preserve">
+    <value>資産除却の仕訳が作成されていません。</value>
+  </data>
+  <data name="custpage_assetquantdisposed_help" page="assetdisposal" xml:space="preserve">
+    <value>処分数量は、資産の数量より大きくすることはできません。</value>
+  </data>
+  <data name="custpage_disposaldate_help" page="assetdisposal" xml:space="preserve">
+    <value>処分日は、最終減価償却日以前に設定できません。</value>
+  </data>
+  <data name="custpage_disposalitem_help" page="assetdisposal" xml:space="preserve">
+    <value>販売用または再販用の非在庫アイテムのみを選択できます。</value>
+  </data>
+  <data name="custpage_filterslocation_help" page="assetdisposal" xml:space="preserve">
+    <value>「複数倉庫の在庫管理（MLI）」機能が有効になっている場合、売却による資産処分は、「場所」の値を設定する必要があります。可能な場合、「場所」の値はデフォルトでFAM-資産レコードをソースとし、追跡されていない場所の転移を防ぐよう編集することはできません。資産レコードから入手できない場合は、「販売/処分」ページ上の「場所」リストから値を選択する必要があります。</value>
+  </data>
+  <data name="custpage_salesamount_help" page="assetdisposal" xml:space="preserve">
+    <value>販売金額は、ゼロより大きくする必要があります。</value>
+  </data>
+  <data name="custpage_taxcode_help" page="assetdisposal" xml:space="preserve">
+    <value>顧客の連結子会社に適用可能な税金コードを選択します。</value>
+  </data>
+  <data name="custpage_salememo" page="assetdisposal" xml:space="preserve">
+    <value>資産売却(0)</value>
+  </data>
+  <data name="custpage_writeoffmemo" page="assetdisposal" xml:space="preserve">
+    <value>資産の除却(0)</value>
+  </data>
+  <data name="custpage_nodispacc" page="assetdisposal" xml:space="preserve">
+     <value>次の処分勘定が設定されていないため、資産を処分できません：(0)</value>
+  </data>
+  <data name="custpage_inactiveacc" page="assetdisposal" xml:space="preserve">
+     <value>次の処分勘定が無効であるため、資産を処分できません：(0)</value>
+  </data>
+  <data name="custpage_invoicefail" page="assetdisposal" xml:space="preserve">
+     <value>請求書を作成できませんでした</value>
+  </data>
+  <data name="custpage_quantityerror" page="assetdisposal" xml:space="preserve">
+     <value>処分数量は(0)から(1)までにする必要があります</value>
+  </data>
+
+  <!-- Asset Depreciation Schedule Report V2 (Portrait) -->
+  <data name="custrecord_deprecationschedule2_title" page="depreciationschedule2" xml:space="preserve">
+    <value>資産減価償却スケジュールレポート</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule2" xml:space="preserve">
+    <value>純帳簿価格</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>当期の償却額</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule2" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule2" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule2" xml:space="preserve">
+    <value>子を含む</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule2" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule2" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule2" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule2" xml:space="preserve">
+    <value>選択</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>償却方法</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule2" xml:space="preserve">
+    <value>開始日</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule2" xml:space="preserve">
+    <value>終了日</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule2" xml:space="preserve">
+    <value>全資産</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule2" xml:space="preserve">
+    <value>リース資産以外の全資産</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule2" xml:space="preserve">
+    <value>リース資産のみ</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>会計方法</value>
+  </data>
+  <data name="custpage_html_asset" page="depreciationschedule2" xml:space="preserve">
+    <value>資産</value>
+  </data>
+  <data name="custpage_message_filestorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>レポートで必要とされる一時データを保存できません（nlapiSubmitFile）</value>
+  </data>
+  <data name="custpage_message_temporarydata" page="depreciationschedule2" xml:space="preserve">
+    <value>固定資産管理償却スケジュールレポートで必要な一時データ</value>
+  </data>
+  <data name="custpage_html_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>資産減価償却スケジュール - 期間減価償却</value>
+  </data>
+  <data name="custpage_html_nbv" page="depreciationschedule2" xml:space="preserve">
+    <value>資産減価償却スケジュール - 純帳簿価額</value>
+  </data>
+  <data name="custpage_html_periodtotal" page="depreciationschedule2" xml:space="preserve">
+    <value>対象期間合計</value>
+  </data>
+  <data name="custpage_html_assetno" page="depreciationschedule2" xml:space="preserve">
+    <value>資産番号</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="depreciationschedule2" xml:space="preserve">
+    <value>資産の説明</value>
+  </data>
+  <data name="custpage_deprschedreport" page="depreciationschedule2" xml:space="preserve">
+    <value>固定資産管理償却スケジュールレポート</value>
+  </data>
+  <data name="custpage_html_reporttruncated" page="depreciationschedule2" xml:space="preserve">
+    <value>レポートでは端数が切り捨てられ、最大のストレージサイズに達しました。</value>
+  </data>
+  <data name="custpage_message_reportstorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>レポート結果を保存できません（nlapiSubmitFile）</value>
+  </data>
+  <data name="custpage_html_fam" page="depreciationschedule2" xml:space="preserve">
+    <value>固定資産管理</value>
+  </data>
+  <data name="custpage_html_noassetfound" page="depreciationschedule2" xml:space="preserve">
+    <value>スケジュールレポートのための資産が見つかりません</value>
+  </data>
+
+  <!-- Asset Creation Status -->
+  <data name="custrecord_assetcreation_title" page="assetcreation" xml:space="preserve">
+    <value>新しい資産の作成</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetcreation" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetcreation" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetcreation" xml:space="preserve">
+    <value>子を含む</value>
+  </data>
+  <data name="custrecord_creationstatus_title" page="assetcreation" xml:space="preserve">
+    <value>資産の作成ステータス</value>
+  </data>
+  <data name="custrecord_html_currentstatus" page="assetcreation" xml:space="preserve">
+    <value>現在のステータス</value>
+  </data>
+  <data name="custrecord_resultstatus" page="assetcreation" xml:space="preserve">
+    <value>どの場所にありますか？</value>
+  </data>
+  <data name="custrecord_generationcomplete" page="assetcreation" xml:space="preserve">
+    <value>資産生成が完了しました。</value>
+  </data>
+  <data name="custrecord_creatingasset" page="assetcreation" xml:space="preserve">
+    <value>次の種類の資産の作成：(0)</value>
+  </data>
+  <data name="custrecord_transactionprocessed" page="assetcreation" xml:space="preserve">
+    <value>(0)件の取引が処理され、(1)個の新しい資産が作成されました。</value>
+  </data>
+  <data name="custrecord_allassettypes" page="assetcreation" xml:space="preserve">
+    <value>すべての資産タイプ</value>
+  </data>
+
+  <!-- Asset Revaluation -->
+  <data name="custrecord_assetrevaluation_title" page="assetrevaluation" xml:space="preserve">
+    <value>資産の再評価</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetrevaluation" xml:space="preserve">
+    <value>主要情報</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetrevaluation" xml:space="preserve">
+    <value>再評価する資産のIDまたは名前を選択します。</value>
+  </data>
+  <data name="custpage_assetid" page="assetrevaluation" xml:space="preserve">
+    <value>資産ID/名前</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetrevaluation" xml:space="preserve">
+    <value>資産の説明</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetrevaluation" xml:space="preserve">
+    <value>資産シリアル番号</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetrevaluation" xml:space="preserve">
+    <value>代替資産番号</value>
+  </data>
+  <data name="custpage_assettype" page="assetrevaluation" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetrevaluation" xml:space="preserve">
+    <value>現在原価</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>残存価額</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetrevaluation" xml:space="preserve">
+    <value>減価償却方法</value>
+  </data>
+  <data name="custpage_depmethodlbl" page="clientpage" xml:space="preserve">
+    <value>減価償却方法</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>資産耐用年数</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetrevaluation" xml:space="preserve">
+    <value>現在の帳簿価額</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetrevaluation" xml:space="preserve">
+    <value>修正方法</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetrevaluation" xml:space="preserve">
+    <value>資産ステータス</value>
+  </data>
+  <data name="custpage_writedownamount" page="assetrevaluation" xml:space="preserve">
+    <value>評価減額</value>
+  </data>
+  <data name="custpage_newresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>残余価格の調整</value>
+  </data>
+  <data name="custpage_newlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>耐用期間の調整</value>
+  </data>
+  <data name="custpage_newdeprmethod" page="assetrevaluation" xml:space="preserve">
+    <value>減価償却方法の調整</value>
+  </data>
+  <data name="custpage_revaluationmemo" page="assetrevaluation" xml:space="preserve">
+    <value>取引参照番号</value>
+  </data>
+  <data name="custpage_revaluationdate" page="assetrevaluation" xml:space="preserve">
+    <value>取引日</value>
+  </data>
+  <data name="custpage_lastdeprperiod" page="clientpage" xml:space="preserve">
+    <value>最終減価償却期間</value>
+  </data>
+  <data name="custpage_residualvalueerrror" page="assetrevaluation" xml:space="preserve">
+    <value>残存価額が取得原価または現在原価を超えました</value>
+  </data>
+  <data name="custpage_defaultrevmemo" page="assetrevaluation" xml:space="preserve">
+    <value>資産の再評価 (FAM)</value>
+  </data>
+  <data name="custpage_defaultwdmemo" page="assetrevaluation" xml:space="preserve">
+    <value>資産評価減 (FAM)</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetrevaluation" xml:space="preserve">
+    <value>会計帳簿</value>
+  </data>
+  <data name="custpage_writedownperc" page="assetrevaluation" xml:space="preserve">
+    <value>評価減%</value>
+  </data>
+  <data name="custpage_newdeprmethod_help" page="assetrevaluation" xml:space="preserve">
+    <value>再評価後、この資産の減価償却に使用する新しい減価償却方法。</value>
+  </data>
+  <data name="custpage_newlifetime_help" page="assetrevaluation" xml:space="preserve">
+    <value>再評価後の資産の新たな耐用寿命。</value>
+  </data>
+  <data name="custpage_newresidualvalue_help" page="assetrevaluation" xml:space="preserve">
+    <value>再評価後の資産の新たな残存価額。</value>
+  </data>
+  <data name="custpage_writedownperc_help" page="assetrevaluation" xml:space="preserve">
+    <value>下のサブリストに自動入力評価減額を入力します。</value>
+  </data>
+  <data name="custpage_revaluationdate_help" page="assetrevaluation" xml:space="preserve">
+    <value>この取引に対する仕訳入力の日付を入力します。</value>
+  </data>
+  <data name="custpage_revaluationmemo_help" page="assetrevaluation" xml:space="preserve">
+    <value>この取引の仕訳を識別するための参照情報を入力します。</value>
+  </data>
+  <data name="custpage_writedownamount_help" page="assetrevaluation" xml:space="preserve">
+    <value>評価減額を入力します。この金額は、現在の純帳簿価額から差し引かれます</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetrevaluation" xml:space="preserve">
+    <value>この資産に関連付けられている会計帳簿を選択します。</value>
+  </data>
+  <data name="custpage_groupdeprerror" page="assetrevaluation" xml:space="preserve">
+      <value>グループ減価償却代替方法の再評価はできません</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>日付が前回の減価償却日以前のレコードの再評価はできません。</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>日付が前回の減価償却日以前のレコードの再評価はできません。</value>
+  </data>
+  <data name="custpage_wdacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>評価減勘定がないか無効です</value>
+  </data>
+  <data name="custpage_assetacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>資産勘定がないか無効です</value>
+  </data>
+  <data name="custpage_depracct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>減価償却勘定がないか無効です</value>
+  </data>
+  <data name="custpage_deprchargeacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>減価償却費勘定がないか無効です</value>
+  </data>
+  <data name="custpage_plugin_not_parent_asset" page="assetrevaluation" xml:space="preserve">
+      <value>入力された資産レコードIDは、再評価対象の税申告方法の親資産ではありません。</value>
+  </data>
+  <data name="custpage_no_tax_or_asset" page="assetrevaluation" xml:space="preserve">
+      <value>再評価対象の資産レコードIDまたは税申告方法IDのいずれかを入力する必要があります。</value>
+  </data>
+
+
+
+  <!-- Asset report -->
+  <data name="custrecord_assetregister_title" page="assetregister" xml:space="preserve">
+    <value>資産登録レポート</value>
+  </data>
+  <data name="custrecord_assetregisterdetail_title" page="assetregister" xml:space="preserve">
+    <value>資産登録詳細レポート</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetregister" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetregister" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetregister" xml:space="preserve">
+    <value>子を含む</value>
+  </data>
+  <data name="custpage_filtermsselect" page="assetregister" xml:space="preserve">
+    <value>選択</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetregister" xml:space="preserve">
+    <value>減価償却方法</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetregister" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetregister" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetregister" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetregister" xml:space="preserve">
+    <value>期間開始日</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetregister" xml:space="preserve">
+    <value>期間終了日</value>
+  </data>
+  <data name="custpage_html_fam" page="assetregister" xml:space="preserve">
+    <value>固定資産管理</value>
+  </data>
+  <data name="custpage_html_transdate" page="assetregister" xml:space="preserve">
+    <value>取引日</value>
+  </data>
+  <data name="custpage_html_cost" page="assetregister" xml:space="preserve">
+    <value>原価</value>
+  </data>
+  <data name="custpage_html_accdepreciation" page="assetregister" xml:space="preserve">
+    <value>減価償却累計額</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetregister" xml:space="preserve">
+    <value>NBV</value>
+  </data>
+  <data name="custpage_html_acquisitiondate" page="assetregister" xml:space="preserve">
+    <value>取得日</value>
+  </data>
+  <data name="custpage_html_assettype" page="assetregister" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_html_assetmanagement" page="assetregister" xml:space="preserve">
+    <value>(0)資産管理</value>
+  </data>
+  <data name="custpage_html_assetname" page="assetregister" xml:space="preserve">
+    <value>資産名</value>
+  </data>
+  <data name="custpage_html_description" page="assetregister" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="custpage_html_additions" page="assetregister" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetregister" xml:space="preserve">
+    <value>減価償却</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetregister" xml:space="preserve">
+    <value>全資産</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetregister" xml:space="preserve">
+    <value>リース資産以外の全資産</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetregister" xml:space="preserve">
+    <value>リース資産のみ</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetregister" xml:space="preserve">
+    <value>減価償却法</value>
+  </data>
+  <data name="custrecord_html_assetregisterdetail" page="assetregister" xml:space="preserve">
+    <value>資産登録詳細</value>
+  </data>
+
+  <!--System Status -->
+  <data name="custrecord_systemstatus_title" page="systemstatus" xml:space="preserve">
+    <value>資産の減価償却ステータス</value>
+  </data>
+  <data name="custpage_currentstatus" page="systemstatus" xml:space="preserve">
+    <value>現在のステータス</value>
+  </data>
+  <data name="custpage_resultstatus" page="systemstatus" xml:space="preserve">
+    <value>どの場所にありますか？</value>
+  </data>
+  <data name="custpage_depreciatestatus1" page="systemstatus" xml:space="preserve">
+    <value>減価償却中の資産タイプ：</value>
+  </data>
+  <data name="custpage_deprcomplete" page="systemstatus" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  
+  <!--Generate History -->
+  <data name="custrecord_generatehistory_title" page="generatehistory" xml:space="preserve">
+    <value>資産履歴の生成</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="generatehistory" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="generatehistory" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="generatehistory" xml:space="preserve">
+    <value>子を含む</value>
+  </data>
+  <data name="custpage_filtersmethod" page="generatehistory" xml:space="preserve">
+    <value>減価償却方法</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod1" page="generatehistory" xml:space="preserve">
+    <value>減価償却方法1</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod2" page="generatehistory" xml:space="preserve">
+    <value>減価償却方法2</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod3" page="generatehistory" xml:space="preserve">
+    <value>減価償却方法3</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod4" page="generatehistory" xml:space="preserve">
+    <value>減価償却方法4</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod5" page="generatehistory" xml:space="preserve">
+    <value>減価償却方法5</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod6" page="generatehistory" xml:space="preserve">
+    <value>減価償却方法6</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod7" page="generatehistory" xml:space="preserve">
+    <value>減価償却方法7</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod8" page="generatehistory" xml:space="preserve">
+    <value>減価償却方法8</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod9" page="generatehistory" xml:space="preserve">
+    <value>減価償却方法9</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_ok" page="depreciationmethod" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="custpage_error" page="depreciationmethod" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+
+  <!-- Asset Depreciation -->
+  <data name="custrecord_assetdepreciation_title" page="assetdepreciation" xml:space="preserve">
+    <value>資産の減価償却</value>
+  </data>
+  <data name="custfield_errormessage" page="assetdepreciation" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="custpage_futuredateerror" page="assetdepreciation" xml:space="preserve">
+    <value>償却期間日は将来の期間にできません。</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetdepreciation" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetdepreciation" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetdepreciation" xml:space="preserve">
+    <value>子を含む</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdepreciation" xml:space="preserve">
+    <value>会計帳簿</value>
+  </data>
+  <data name="custpage_deprperiod" page="assetdepreciation" xml:space="preserve">
+    <value>減価償却期間</value>
+  </data>
+  <data name="custpage_postperiod" page="assetdepreciation" xml:space="preserve">
+    <value>記帳期間</value>
+  </data>
+  <data name="custpage_deprmemo" page="assetdepreciation" xml:space="preserve">
+    <value>減価償却参照</value>
+  </data>
+  <data name="custpage_assetdepreciation" page="assetdepreciation" xml:space="preserve">
+    <value>資産の減価償却</value>
+  </data>
+  <data name="custpage_deprmemo_help" page="assetdepreciation" xml:space="preserve">
+    <value>生成されるすべての仕訳帳で基本参照として使用される減価償却参照を入力します。空白のままにすると、デフォルトの参照が使用されます。</value>
+  </data>
+  <data name="custpage_deprperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>資産の減価償却を継続する最後の日付を入力します。転記日付は常に月末になることに注意してください。</value>
+  </data>
+  <data name="custpage_postperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>この取引を転記する期間を選択します。期間が終了している場合、その期間に転記することはできません。</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetdepreciation" xml:space="preserve">
+    <value>この資産に関連付けられている会計帳簿を選択します。</value>
+  </data>
+  <data name="client_depr_subsbooksmismatch" page="assetdepreciation" xml:space="preserve">
+    <value>選択した会計帳簿は、選択した連結子会社に関連付けられていません。</value>
+  </data>
+
+  <!-- Depreciation Schedule Report -->
+  <data name="custrecord_depreciationschedule_title" page="depreciationschedule" xml:space="preserve">
+    <value>資産減価償却スケジュールレポート</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule" xml:space="preserve">
+    <value>資産タイプ</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule" xml:space="preserve">
+    <value>純帳簿価格</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule" xml:space="preserve">
+    <value>期間の減価償却</value>
+  </data>
+  <data name="custpage_saveresults" page="depreciationschedule" xml:space="preserve">
+    <value>結果を保存</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule" xml:space="preserve">
+    <value>連結</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule" xml:space="preserve">
+    <value>子を含む</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule" xml:space="preserve">
+    <value>選択</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule" xml:space="preserve">
+    <value>減価償却方法</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule" xml:space="preserve">
+    <value>開始日</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule" xml:space="preserve">
+    <value>終了日</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule" xml:space="preserve">
+    <value>全資産</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule" xml:space="preserve">
+    <value>リース資産以外の全資産</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule" xml:space="preserve">
+    <value>リース資産のみ</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule" xml:space="preserve">
+    <value>減価償却法</value>
+  </data>
+  <data name="custpage_filterenddate_help" page="depreciationschedule" xml:space="preserve">
+    <value>必要なレポート期間の終了日を入力するか選択します。</value>
+  </data>
+  <data name="custpage_filterstartdate_help" page="depreciationschedule" xml:space="preserve">
+    <value>必要なレポート期間の開始日を入力するか選択します。</value>
+  </data>
+  <data name="custpage_netbookvalue_help" page="depreciationschedule" xml:space="preserve">
+    <value>HTMLレポートに毎月の純帳簿価額予測のみを表示することを希望する場合は、このボックスにチェックマークを入れます。</value>
+  </data>
+  <data name="custpage_perioddepr_help" page="depreciationschedule" xml:space="preserve">
+    <value>HTMLレポートに毎月の減価償却予測のみを表示することを希望する場合は、このボックスにチェックマークを入れます。</value>
+  </data>
+  <data name="custpage_saveresults_help" page="depreciationschedule" xml:space="preserve">
+    <value>「結果を保存」は、資産の耐用年数全体に対する「固定資産償却スケジュール」エントリの生成、およびこのエントリの資産レコードへの保存に使用されます。「結果を保存」にチェックマークを入れると、「開始日」、「終了日」、「純帳簿価額」、「期間減価償却」がシステムによって無視されるため、「減価償却履歴」表には、資産の耐用寿命全体に対する完全な減価償却スケジュールが常に記載されることになります。「開始日」、「終了日」、「純帳簿価額」、「期間の減価償却」の各フィールドの入力値は、自動生成されるHTMLレポートのみに使用されます。</value>
+  </data>
+
+  <!-- Bulk Transfer -->
+  <data name="custpage_bulktransfer_title" page="bulktransfer" xml:space="preserve">
+    <value>資産の一括譲渡</value>
+  </data>
+  <data name="custpage_uploadhelp" page="bulktransfer" xml:space="preserve">
+    <value>複数の資産の「連結」、「部門」、「クラス」、「場所」および「資産タイプ」を更新するためにCSVインポートファイルをアップロードできます。</value>
+  </data>
+  <data name="custpage_settinghelp" page="bulktransfer" xml:space="preserve">
+    <value>譲渡時に仕訳に記録するには、「場所、クラスまたは場所変更時に転記」設定（「固定資産」、「設定」、「システムの設定」の順に移動）が有効であることを確認してください。</value>
+  </data>
+  <data name="custpage_uploadboth" page="bulktransfer" xml:space="preserve">
+    <value>「資産タイプ」と「連結」を両方譲渡した状態でCSVファイルをアップロードしないでください。</value>
+  </data>
+  <data name="custpage_samplefile" page="bulktransfer" xml:space="preserve">
+    <value>サンプルファイルを入手するには（こちら）をクリックしてください。</value>
+  </data>
+  <data name="custpage_nofileuploaderror" page="bulktransfer" xml:space="preserve">
+    <value>ファイルのアップロードに失敗しました。</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_html_formulainstruction" page="depreciationmethodformula" xml:space="preserve">
+    <value>以下の演算子と記号（大文字と小文字を区別）を使用して、減価償却の計算式を定義します：</value>
+  </data>
+  <data name="custpage_html_formulahelp1" page="depreciationmethodformula" xml:space="preserve">
+    <value>^ （累乗、5^2 = 5の2乗）</value>
+  </data>
+  <data name="custpage_html_formulahelp2" page="depreciationmethodformula" xml:space="preserve">
+    <value>() * / + -</value>
+  </data>
+  <data name="custpage_html_formulahelp3" page="depreciationmethodformula" xml:space="preserve">
+    <value>任意の小数（12345.67など）</value>
+  </data>
+  <data name="custpage_html_formulahelp4" page="depreciationmethodformula" xml:space="preserve">
+    <value>~（ 2つの値の最大値、2~5 = 5）</value>
+  </data>
+  <data name="custpage_html_formulahelp5" page="depreciationmethodformula" xml:space="preserve">
+    <value>OC（資産の取得原価）</value>
+  </data>
+  <data name="custpage_html_formulahelp6" page="depreciationmethodformula" xml:space="preserve">
+    <value>CC（資産の時価）</value>
+  </data>
+  <data name="custpage_html_formulahelp7" page="depreciationmethodformula" xml:space="preserve">
+    <value>NB（純帳簿価額）</value>
+  </data>
+  <data name="custpage_html_formulahelp8" page="depreciationmethodformula" xml:space="preserve">
+    <value>RV（残存価額）</value>
+  </data>
+  <data name="custpage_html_formulahelp9" page="depreciationmethodformula" xml:space="preserve">
+    <value>AL（資産耐用年数）</value>
+  </data>
+  <data name="custpage_html_formulahelp10" page="depreciationmethodformula" xml:space="preserve">
+    <value>CP（現行期間または経過年数）</value>
+  </data>
+  <data name="custpage_html_formulahelp11" page="depreciationmethodformula" xml:space="preserve">
+    <value>TD（合計減価償却金額）</value>
+  </data>
+  <data name="custpage_html_formulahelp12" page="depreciationmethodformula" xml:space="preserve">
+    <value>CU（現在の使用）</value>
+  </data>
+  <data name="custpage_html_formulahelp13" page="depreciationmethodformula" xml:space="preserve">
+    <value>LU（耐用使用度）</value>
+  </data>
+  <data name="custpage_html_formulahelp14" page="depreciationmethodformula" xml:space="preserve">
+    <value>LD（前回の償却金額）</value>
+  </data>
+  <data name="custpage_html_formulahelp15" page="depreciationmethodformula" xml:space="preserve">
+    <value>DH（現行期間に保持される日数）</value>
+  </data>
+  <data name="custpage_html_formulahelp16" page="depreciationmethodformula" xml:space="preserve">
+    <value>PB（前年度の純帳簿価額）</value>
+  </data>
+  <data name="custpage_html_formulahelp17" page="depreciationmethodformula" xml:space="preserve">
+    <value>DP（期間内の日数）</value>
+  </data>
+  <data name="custpage_html_formulahelp18" page="depreciationmethodformula" xml:space="preserve">
+    <value>FY（会計年度内の日数）</value>
+  </data>
+
+  <!-- BG Process Record -->
+  <data name="custpage_bgprocess_deleteerror" page="bgprocess" xml:space="preserve">
+    <value>次のプロセス状態があるため、このプロセスインスタンスを削除することはできません：（0）</value>
+  </data>
+  <data name="list_bgprocess_queue" page="bgprocess" xml:space="preserve">
+    <value>キュー内</value>
+  </data>
+  <data name="list_bgprocess_inprogress" page="bgprocess" xml:space="preserve">
+    <value>進行中</value>
+  </data>
+  <data name="list_bgprocess_completed" page="bgprocess" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="list_bgprocess_completedwitherrors" page="bgprocess" xml:space="preserve">
+    <value>エラーで終了</value>
+  </data>
+  <data name="list_bgprocess_failed" page="bgprocess" xml:space="preserve">
+    <value>失敗</value>
+  </data>
+  <data name="list_bgprocess_revert" page="bgprocess" xml:space="preserve">
+    <value>失敗 - 変更を元に戻しています</value>
+  </data>
+
+  <!-- BG Queue Record -->
+  <data name="custpage_bgqueue_deleteerror" page="bgqueue" xml:space="preserve">
+    <value>次の関連付けられたプロセスインスタンス状態があるため、このキューインスタンスを削除することはできません：（0）</value>
+  </data>
+
+  <!-- CLIENT SIDE MESSAGES AND ALERTS -->
+  <data name="client_assetrecord_notnegative" page="clientpage" xml:space="preserve">
+     <value>(0)はマイナスの値にできません</value>
+  </data>
+  <data name="client_assetrecord_greatererror" page="clientpage" xml:space="preserve">
+     <value>(0)は(1)より大きくできません</value>
+  </data>
+  <data name="client_systemsetup_negativecheck" page="clientpage" xml:space="preserve">
+     <value>原価がマイナスの資産が存在します。このオプションの無効化は現在許可されていません。詳細については、ヘルプセンターを参照してください。</value>
+  </data>
+  <data name="client_subdept_notmatch" page="clientpage" xml:space="preserve">
+     <value>連結子会社と部門が一致しません。</value>
+  </data>
+  <data name="client_subloc_notmatch" page="clientpage" xml:space="preserve">
+     <value>連結子会社と場所が一致しません。</value>
+  </data>
+  <data name="client_subclass_notmatch" page="clientpage" xml:space="preserve">
+     <value>連結子会社とクラスが一致しません。</value>
+  </data>
+  <data name="client_assetrecord_outdated" page="clientpage" xml:space="preserve">
+     <value>作業している資産レコードが最近変更されました。「更新」をクリックして最新の資産レコードを取得します。</value>
+  </data>
+  <data name="client_assetrecord_dateerror" page="clientpage" xml:space="preserve">
+     <value>開始日付は終了日付以前である必要があります。</value>
+  </data>
+  <data name="client_assetrecord_fieldadjust" page="clientpage" xml:space="preserve">
+     <value>(1)への変更のため、(0)は自動調整されました</value>
+  </data>
+  <data name="client_assetrecord_enddateadjust" page="clientpage" xml:space="preserve">
+    <value>(0)は新しい(1)を反映して四捨五入されます</value>
+  </data>
+  <data name="client_leavepage" page="clientpage" xml:space="preserve">
+     <value>このページに入力したデータは保存されておらず、失われることになります。続行するには「OK」を押します。</value>
+  </data>
+  <data name="client_accounting_methods" page="clientpage" xml:space="preserve">
+     <value>会計方法</value>
+  </data>
+  <data name="client_tax_methods" page="clientpage" xml:space="preserve">
+     <value>税申告方法</value>
+  </data>
+  <data name="client_journals" page="clientpage" xml:space="preserve">
+     <value>仕訳帳</value>
+  </data>
+  <data name="client_multibookdisabled" page="clientpage" xml:space="preserve">
+     <value>複数帳簿会計機能が無効の場合、会計帳簿を選択できません。</value>
+  </data>
+  <data name="client_primarybook" page="clientpage" xml:space="preserve">
+     <value>税申告方法に選択できるのは第二帳簿のみです。</value>
+  </data>
+  <data name="client_pendingbook" page="clientpage" xml:space="preserve">
+     <value>有効な会計帳簿を選択する必要があります。</value>
+  </data>
+  <data name="client_booksubsidiary_mismatch" page="clientpage" xml:space="preserve">
+     <value>資産の連結子会社に関連付けられた会計帳簿を選択してください。</value>
+  </data>
+  <data name="client_invalid_deprenddate" page="clientpage" xml:space="preserve">
+     <value>入力された(0)は、(1)および(2)の値に対して無効です</value>
+  </data>
+  <data name="client_enable_bypass" page="clientpage" xml:space="preserve">
+     <value>この設定を有効にすると、カスタムレコードのユーザーイベントのスクリプトとワークフローは、減価償却中にトリガーされません。続行しますか？</value>
+  </data>
+  <data name="client_asset_disposed" page="clientpage" xml:space="preserve">
+    <value>この資産はすでに処分済みです</value>
+  </data>
+  <data name="client_select_book" page="clientpage" xml:space="preserve">
+    <value>会計帳簿を選択してください</value>
+  </data>
+  <data name="client_match_current_error" page="clientpage" xml:space="preserve">
+      <value>(0)は現在の(1)と一致してはなりません。</value>
+  </data>
+  <data name="client_newrvdiffsign" page="clientpage" xml:space="preserve">
+      <value>(0)はゼロ値を超えることはできません。</value>
+  </data>
+  <data name="client_lesserthan_error" page="clientpage" xml:space="preserve">
+     <value>(0)は(1)より小さくできません</value>
+  </data>
+  <data name="client_newdepmeth_diffperiod" page="clientpage" xml:space="preserve">
+     <value>選択した調整済み減価償却方法には、現在の減価償却方法と同じ減価償却期間がなければなりません。</value>
+  </data>
+  <data name="client_enter_value" page="clientpage" xml:space="preserve">
+    <value>次の値について入力してください：(0)</value>
+  </data>
+  <data name="client_subsidiary_match" page="clientpage" xml:space="preserve">
+    <value>選択した(0)の連結子会社がこの資産の連結子会社に一致しません。</value>
+  </data>
+  <data name="client_report_confirm_delete" page="clientpage" xml:space="preserve">
+    <value>これにより現在のレポートが削除されます。続行しますか？</value>
+  </data>
+  
+  <!-- FAM_Split_CS.js -->
+  <data name="client_assetsplit_invalidsplitquantity" page="clientpage" xml:space="preserve">
+    <value>分割数量が有効でありません</value>
+  </data>
+  <data name="client_assetsplit_entervalue" page="clientpage" xml:space="preserve">
+    <value>分割数量の値を入力してください</value>
+  </data>
+  <data name="client_assetsplit_greatererror" page="clientpage" xml:space="preserve">
+    <value>分割数量は、数量以上にすることはできません</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method" page="clientpage" xml:space="preserve">
+    <value>会計方法 - 現在原価は、簿価に現在までの減価償却を加算した値に等しくする必要があります。</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method2" page="clientpage" xml:space="preserve">
+    <value>現在原価を使用して再計算するには、「更新」をクリックします。</value>
+  </data>
+  <data name="client_assetsplit_equalerror_tax" page="clientpage" xml:space="preserve">
+    <value>税申告方法(0) - 現在原価は、簿価に現在までの減価償却を加算した値に等しくする必要があります</value>
+  </data>
+  <data name="client_assetsplit_quantity1" page="clientpage" xml:space="preserve">
+    <value>資産の分割は、1数量以上の資産で利用できます。</value>
+  </data> 
+  <data name="client_assetsplit_invalid_status" page="clientpage" xml:space="preserve">
+    <value>資産の分割は、完全に減価償却された処分済みの資産で利用できます。</value>
+  </data> 
+  
+  <!-- FAM_CS_AltMethod_Client.js -->
+  <data name="client_altmethod_subsidiaryrequired" page="clientpage" xml:space="preserve">
+     <value>この方法では連結子会社が必要です。</value>
+  </data>
+  <data name="client_altmethod_improperconvention" page="clientpage" xml:space="preserve">
+     <value>減価償却方法は、選択された平均化法をサポートしていません。</value>
+  </data>
+  <data name="client_altmethod_subsidiarymismatch" page="clientpage" xml:space="preserve">
+     <value>代替減価償却の連結子会社がこの資産の連結子会社に一致しません。</value>
+  </data>
+
+
+  <!-- ncFAR_AltDeprClient.js -->
+  <data name="client_altdepr_assetalreadyused" page="clientpage" xml:space="preserve">
+     <value>(0)はすでにこの資産で使用されています。別の代替減価償却を選択してください。</value>
+  </data>
+  <data name="client_altdepr_assetlifetimewarning" page="clientpage" xml:space="preserve">
+     <value>警告：入力した資産耐用年数が資産耐用年数を超えています</value>
+  </data>
+  <data name="client_altdepr_assetlifetimeerror" page="clientpage" xml:space="preserve">
+     <value>代替資産耐用年数は、資産耐用年数を超えることはできません</value>
+  </data>
+  <data name="client_altdepr_nomethodfound" page="clientpage" xml:space="preserve">
+     <value>選択した連結子会社に代替減価償却が定義されていません。「固定資産」、「設定」、「代替減価償却」の順に移動し、リストを更新します。</value>
+  </data>
+  <data name="client_altdepr_disposedtaxmethod" page="clientpage" xml:space="preserve">
+     <value>会計帳簿は処分済み/完全な減価償却済み税申告方法に割り当てることができません。</value>
+  </data>
+
+  <!-- ncFAR_AssetRecordClient_AllForms.js -->
+  <data name="client_assetrecord_specifydepreciationrules" page="clientpage" xml:space="preserve">
+    <value>減価償却規則を指定する必要があります。</value>
+  </data>
+  <data name="client_assetrecord_specifysubsidiary" page="clientpage" xml:space="preserve">
+    <value>連結子会社を指定する必要があります。</value>
+  </data>
+  <data name="client_assetrecord_recordbeingpooled" page="clientpage" xml:space="preserve">
+     <value>代替減価償却レコードがプールに属するため、連結子会社の変更は許可されません。</value>
+  </data>
+  <data name="client_assetrecord_assetnotallowed" page="clientpage" xml:space="preserve">
+     <value>非固定資産勘定は資産勘定で許可されません。貴社の管理者にご連絡ください。</value>
+  </data>
+  <data name="client_assetrecord_deprnotallowed" page="clientpage" xml:space="preserve">
+     <value>非固定資産勘定は減価償却勘定で許可されません。貴社の管理者にご連絡ください。</value>
+  </data>
+  <data name="client_assetrecord_cannotdelete" page="clientpage" xml:space="preserve">
+     <value>この資産は減価償却のためにアクティブであるため削除できません。削除する場合は、資産を処分してください。</value>
+  </data>
+  <data name="client_assetrecord_confirmsubsidiarychange" page="clientpage" xml:space="preserve">
+    <value>別の連結子会社に資産を譲渡する前に、必ず変更内容を保存してください。保存しなかった場合、変更内容は破棄されます。
+
+別の方法として、資産レコードにさらに変更を加える前に、まず連結子会社を更新することができます。
+
+続行しますか？</value>
+  </data>
+
+  <!-- ncFAR_DefaultAltDeprClient.js -->
+  <data name="client_defaultaltdepr_alreadyused" page="clientpage" xml:space="preserve">
+     <value>(0)はすでにこの資産タイプで使用されています。別の代替減価償却を選択してください。</value>
+  </data>
+  <data name="client_defaultaltdepr_addnotallowed" page="clientpage" xml:space="preserve">
+    <value>レコードリストから新しい「FAM - デフォルトの代替減価償却」レコードを作成することは、許可されません。
+
+「資産タイプ」レコードにアクセスし、「会計帳簿」タブから新しいレコードを追加してください。</value>
+  </data>
+  <!-- ncFAR_DeprMethodClientScripts.js script not found-->
+  <data name="client_deprmethod_failedtovalidate2" page="clientpage" xml:space="preserve">
+     <value>関数が検証に失敗しました。</value>
+  </data>
+  <data name="client_deprmethod_validationfailed" page="clientpage" xml:space="preserve">
+     <value>検証に失敗しました</value>
+  </data>
+  <data name="client_deprmethod_dp_annually_invalid" page="clientpage" xml:space="preserve">
+     <value>減価償却期間が毎年の場合、DPは使用できません</value>
+  </data>
+
+  <!-- Disposal Client Messages -->
+  <data name="client_disposal_alreadydisposed" page="clientpage" xml:space="preserve">
+     <value>この資産はすでに処分済みです。</value>
+  </data>
+  <data name="client_disposal_cannotbegreater" page="clientpage" xml:space="preserve">
+     <value>処分数量は、資産の数量より大きくすることはできません。</value>
+  </data>
+  <data name="client_disposal_saleamountgreater" page="clientpage" xml:space="preserve">
+     <value>販売金額は、ゼロより大きくする必要があります。</value>
+  </data>
+  <data name="client_disposal_selectcustomer" page="clientpage" xml:space="preserve">
+     <value>顧客を選択してください。</value>
+  </data>
+  <data name="client_disposal_selectsaleitem" page="clientpage" xml:space="preserve">
+     <value>販売アイテムを選択してください。</value>
+  </data>
+  <data name="client_disposal_selectlocation" page="clientpage" xml:space="preserve">
+     <value>場所を選択しください。</value>
+  </data>
+  <data name="client_disposal_bgpexists" page="clientpage" xml:space="preserve">
+     <value>この資産は現在、処分のため処理中です。この資産の別の処分を開始する前に、処分処理が完了するまでお待ちください。</value>
+  </data>
+  <data name="client_disposal_acctnotexist" page="clientpage" xml:space="preserve">
+     <value>続行する前に、除却、処分、減価償却、および資産勘定が設定されて有効になっていることを確認します。
+次の処分はできない可能性があります：(0)</value>
+  </data>
+  <data name="client_disposal_dateearlierthanldd" page="clientpage" xml:space="preserve">
+    <value>処分日「'(0)'」は、前回の減価償却日「'(1)'」以前に設定できません。</value>
+  </data>
+  <data name="client_disposal_plugin_no_assetid" page="clientpage" xml:space="preserve">
+    <value>資産IDが定義されていません。</value>
+  </data>
+  <data name="client_disposal_plugin_invalid_type" page="clientpage" xml:space="preserve">
+    <value>資産の処分タイプが無効です: (0))</value>
+  </data>
+  
+  <!-- ncFAR_ProposalAltDeprClient.js -->
+  <data name="client_proposalaltdepr_selectbeingused" page="clientpage" xml:space="preserve">
+     <value>(0)はすでにこの資産提案で使用されています。別の代替減価償却を選択してください。</value>
+  </data>
+
+  <!-- ncFAR_RevaluationClientScripts.js -->
+  <data name="client_revaluation_disposed" page="clientpage" xml:space="preserve">
+     <value>この資産はすでに処分済みです。</value>
+  </data>
+  <data name="client_assetnotset" page="clientpage" xml:space="preserve">
+     <value>1つ以上の資産勘定科目が設定されていないため再評価できません。</value>
+  </data>
+  <data name="client_revaluation_notsupplied" page="clientpage" xml:space="preserve">
+    <value>再評価の詳細を入力する必要があります。</value>
+  </data>
+  <data name="client_revaluation_zeronbv" page="clientpage" xml:space="preserve">
+    <value>完全に減価償却済みの資産は再評価できません。</value>
+  </data>
+  <data name="client_revaluation_zerocc" page="clientpage" xml:space="preserve">
+    <value>現在原価がゼロの資産を評価減することはできません。</value>
+  </data>
+  <data name="client_revaluation_rvoverzero" page="clientpage" xml:space="preserve">
+    <value>新しい残存価額はゼロ値を超えることはできません。</value>
+  </data>
+  <data name="client_role_nopermission" page="clientpage" xml:space="preserve">
+    <value>この役割には、資産レコードを編集するための権限がありません。</value>
+  </data>
+  <data name="client_status_nobgprocess" page="clientpage" xml:space="preserve">
+    <value>バックグラウンド処理が見つかりません。</value>
+  </data>
+  <data name="client_change_accountingbook" page="clientpage" xml:space="preserve">
+    <value>会計帳簿の変更は許可されません。</value>
+  </data>
+  <data name="client_revaluation_needcompute" page="clientpage" xml:space="preserve">
+    <value>資産の再評価は、処理する前に計算しなければなりません。</value>
+  </data>
+  <data name="client_revaluation_bgpexists" page="clientpage" xml:space="preserve">
+     <value>この資産は現在再評価の処理中です。この資産の別の再評価を開始する前に、再評価処理が完了するまでお待ちください。</value>
+  </data>
+  <data name="client_revaluation_wdacct_notset" page="clientpage" xml:space="preserve">
+     <value>次の減損勘定が設定されていないため、資産を再評価できません：(0)</value>
+  </data>
+  <data name="client_revaluation_transdate_warn" page="clientpage" xml:space="preserve">
+     <value>一部のレコードの再評価の日付が、前回の減価償却日以前になっています。これらのレコードは再評価されません。</value>
+  </data>
+  <data name="client_greater_than_zerovalue" page="clientpage" xml:space="preserve">
+    <value>(0)にはゼロより大きい値を入力してください。</value>
+  </data>
+  <data name="client_change_zerowd" page="clientpage" xml:space="preserve">
+    <value>除却金額にはゼロ以外の値を入力してください。</value>
+  </data>
+  <data name="client_no_reval_det_supplied" page="clientpage" xml:space="preserve">
+      <value>再評価の詳細を入力する必要があります。</value>
+  </data>
+
+  <!-- FAM_AssetTransfer_CS.js -->
+  <data name="client_assettransfer_subsidiarybookid" page="clientpage" xml:space="preserve">
+     <value>資産には、割当先の連結子会社に関連付けられていない会計帳簿が含まれます。資産は譲渡されますが、この会計帳簿の税申告方法は含まれません。</value>
+  </data>
+  <data name="client_assettransfer_subsidiarymethod" page="clientpage" xml:space="preserve">
+     <value>資産には、定義先の連結子会社に関連付けられていない代替減価償却が含まれます。資産は譲渡されますが、この代替減価償却の税申告方法は含まれません。</value>
+  </data>
+  <data name="client_assettransfer_emptysubat" page="clientpage" xml:space="preserve">
+     <value>資産レコードの「連結」/「資産タイプ」は空白にできません。</value>
+  </data>
+  <data name="client_assettransfer_nochange" page="clientpage" xml:space="preserve">
+     <value>資産の譲渡割当先フィールドの値は、元の値とは異なる値にする必要があります。</value>
+  </data>
+  <data name="client_assettransfer_notransferacct" page="clientpage" xml:space="preserve">
+     <value>割当元および割当先の連結子会社には、既存の「資産の譲渡勘定」レコードがありません。</value>
+  </data>
+  <data name="client_assettransfer_bgpexists" page="clientpage" xml:space="preserve">
+     <value>この資産は現在譲渡の処理中です。この資産の別の譲渡を開始する前に、譲渡処理が完了するまでお待ちください。</value>
+  </data>
+  <data name="client_assettransfer_bulkbgpexists" page="clientpage" xml:space="preserve">
+     <value>一括資産の譲渡リクエストは現在処理中です。別の譲渡を開始する前に、譲渡処理が完了するまでお待ちください。</value>
+  </data>
+  <data name="client_assettransfer_warnbgpexists" page="clientpage" xml:space="preserve">
+     <value>一括資産の譲渡リクエストは現在処理中です。新しい資産の譲渡リクエストは送信できない場合があります。</value>
+  </data>
+  <data name="client_assettransfer_atassetacct" page="clientpage" xml:space="preserve">
+     <value>選択した資産タイプには資産勘定がありません。</value>
+  </data>
+  <data name="client_assettransfer_atdepracct" page="clientpage" xml:space="preserve">
+     <value>選択した資産タイプには減価償却勘定がありません。</value>
+  </data>
+  <data name="client_assettransfer_cdl_mandatory" page="clientpage" xml:space="preserve">
+     <value>必須であるため、「部門」、「場所」、「クラス」は＜なし＞に設定できません。</value>
+  </data>
+
+    <!-- FAM_AssetRecordTransfer.js -->
+  <data name="client_assettransfer_invalid_sub_bookid" xml:space="preserve">
+     <value>この税申告方法の会計帳簿は、定義先の連結子会社に関連付けられません。税申告方法は移転されません。</value>
+  </data>
+  <data name="client_assettransfer_invalid_sub_altmeth" xml:space="preserve">
+     <value>この税申告方法の代替減価償却は、定義先の連結子会社に関連付けられません。税申告方法は移転されません。</value>
+  </data>
+  <data name="client_assettransfer_no_tax_meth_acct" xml:space="preserve">
+     <value>この税申告方法の代替方法と帳簿IDの組み合わせには、割当先の「資産タイプ」にエントリがありません。税申告方法勘定は空白のままになります。</value>
+  </data>
+  <data name="custpage_transfer_asset_undefined" xml:space="preserve">
+    <value>譲渡用資産レコードは存在しません：(0)</value>
+  </data>
+
+    <!-- FAM_AssetTransferCSV.js -->
+    <data name="message_errorfile" page="assettransfercsv_ss" xml:space="preserve">
+        <value>資産譲渡ファイル情報の取得時にエラーが発生しました。</value>
+    </data>
+    <data name="message_toomanyfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>フィールドが多すぎます</value>
+    </data>
+    <data name="message_toofewfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>フィールドが少なすぎます</value>
+    </data>
+    <data name="message_duplicateasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>資産IDのエントリが重複しています：(0)</value>
+    </data>
+    <data name="message_headertoofew" page="assettransfercsv_ss" xml:space="preserve">
+        <value>資産譲渡のデータが不完全です。ファイルには、「資産」の値に加えて、少なくとも「資産タイプ」、「連結」、「クラス」、「部門」、「場所」のいずれかの値が含まれている必要があります。</value>
+    </data>
+    <data name="message_headerassetmissing" page="assettransfercsv_ss" xml:space="preserve">
+        <value>資産の値を入力してください</value>
+    </data>
+    <data name="message_headernotallowed" page="assettransfercsv_ss" xml:space="preserve">
+        <value>ヘッダーフィールド(0)は許可されません。ファイルのヘッダーに含めることができるのは、「資産」、「資産タイプ」、「連結」、「クラス」、「部門」、「場所」のみです。</value>
+    </data>
+    <data name="message_duplicateheader" page="assettransfercsv_ss" xml:space="preserve">
+        <value>ヘッダフィールドの複数のインスタンスがあります：(0)。重複列を削除してください。</value>
+    </data>
+    <data name="message_subsidiarybookid" page="assettransfercsv_ss" xml:space="preserve">
+        <value>資産には、割当先の連結子会社に関連付けられていない会計帳簿が含まれます。資産は譲渡されますが、この会計帳簿の税申告方法は含まれません。</value>
+    </data>
+    <data name="message_subsidiarymethod" page="assettransfercsv_ss" xml:space="preserve">
+        <value>資産には、定義先の連結子会社に関連付けられていない代替減価償却が含まれます。資産は譲渡されますが、この代替減価償却の税申告方法は含まれません。</value>
+    </data>
+    <data name="message_emptysubat" page="assettransfercsv_ss" xml:space="preserve">
+        <value>資産レコードの「連結」/「資産タイプ」は空白にできません。</value>
+    </data>
+    <data name="message_nochange" page="assettransfercsv_ss" xml:space="preserve">
+        <value>資産の譲渡割当先フィールドの値は、元の値とは異なる値にする必要があります。</value>
+    </data>
+    <data name="message_notransferacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>割当元および割当先の連結子会社には、既存の「資産の譲渡勘定」レコードがありません。</value>
+    </data>
+    <data name="message_subdept_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>連結子会社と部門が一致しません。</value>
+    </data>
+    <data name="message_subloc_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>連結子会社と場所が一致しません。</value>
+    </data>
+    <data name="message_subclass_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>連結子会社とクラスが一致しません。</value>
+    </data>
+    <data name="message_atassetacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>選択した資産タイプには資産勘定がありません。</value>
+    </data>
+    <data name="message_atdepracct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>選択した資産タイプには減価償却勘定がありません。</value>
+    </data>
+    <data name="message_cdl_mandatory" page="assettransfercsv_ss" xml:space="preserve">
+        <value>必須であるため、「部門」、「場所」、「クラス」は未設定にできません。</value>
+    </data>
+    <data name="message_invalidasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>資産は存在しないか無効です</value>
+    </data>
+    <data name="message_onetransfertype" page="assettransfercsv_ss" xml:space="preserve">
+        <value>譲渡先の連結子会社、クラス、部門、または場所が異なるとき、資産タイプの譲渡は許可されません。</value>
+    </data>
+    <data name="message_nonexistentfld" page="assettransfercsv_ss" xml:space="preserve">
+        <value>1つ以上の割当先フィールドが存在しないか無効です</value>
+    </data>
+
+  <!-- Ext Js Messages -->
+  <data name="extjs_message_title" page="clientpage" xml:space="preserve">
+    <value>固定資産</value>
+  </data>
+  <data name="extjs_processing" page="clientpage" xml:space="preserve">
+    <value>処理</value>
+  </data>
+  <data name="extjs_reading_asset" page="clientpage" xml:space="preserve">
+    <value>資産を読込中</value>
+  </data>
+  <data name="extjs_clearing_data" page="clientpage" xml:space="preserve">
+    <value>データのクリア中</value>
+  </data>
+  <data name="extjs_loading_data" page="clientpage" xml:space="preserve">
+    <value>データのロード中</value>
+  </data>
+  <data name="extjs_refreshing_data" page="clientpage" xml:space="preserve">
+    <value>データの更新中</value>
+  </data>
+  <data name="extjs_initializing" page="clientpage" xml:space="preserve">
+    <value>初期化中</value>
+  </data>
+  <data name="extjs_initializing_error" page="clientpage" xml:space="preserve">
+    <value>初期化のエラー</value>
+  </data>
+  <data name="extjs_reloading" page="clientpage" xml:space="preserve">
+    <value>再読込中</value>
+  </data>
+  <data name="extjs_done" page="clientpage" xml:space="preserve">
+     <value>完了</value>
+  </data>
+
+
+  <!-- Background Processing -->
+  <data name="custpage_error_internal" xml:space="preserve">
+    <value>このsuiteletは内部使用限定です！</value>
+  </data>
+  <data name="custpage_error_postmethod" xml:space="preserve">
+    <value>予期しないPOSTメソッド。</value>
+  </data>
+
+  <!-- Constants -->
+  <data name="custpage_constant_accountingmethod" xml:space="preserve">
+    <value>減価償却法</value>
+  </data>
+  <data name="custpage_constant_allassets" xml:space="preserve">
+    <value>全資産</value>
+  </data>
+  <data name="custpage_constant_exceptleased" xml:space="preserve">
+    <value>リース資産以外の全資産</value>
+  </data>
+  <data name="custpage_constant_onlyaassets" xml:space="preserve">
+    <value>リース限定資産</value>
+  </data>
+
+
+  <!-- Server Scripts/Undefined -->
+  <data name="custpage_html_tangible" xml:space="preserve">
+    <value>有形固定資産</value>
+  </data>
+  <data name="custpage_desc_schedulereport" xml:space="preserve">
+    <value>固定資産管理スケジュールレポート</value>
+  </data>
+  <data name="custpage_html_fam" xml:space="preserve">
+    <value>固定資産管理</value>
+  </data>
+  <data name="custpage_accounts_missing" xml:space="preserve">
+    <value>1つ以上の転記勘定科目が欠落しています。</value>
+  </data>
+  <data name="custpage_transfer_account_missing" xml:space="preserve">
+    <value>連結：(0)から連結：(1)への有効な譲渡勘定科目が見つかりません</value>
+  </data>
+  <data name="custpage_transfer_tax_method_account_missing" xml:space="preserve">
+    <value>税申告方法資産/減価償却勘定が見つかりません</value>
+  </data>
+  <data name="custpage_errordepreciation" xml:space="preserve">
+    <value>減価償却の計算に失敗しました</value>
+  </data>
+  <data name="custpage_transactionfailed" xml:space="preserve">
+    <value>取引に失敗しました</value>
+  </data>
+  <data name="custpage_fields_missing" xml:space="preserve">
+    <value>次の値について入力してください：(0)</value>
+  </data>
+  <data name="custpage_fields_inactive" xml:space="preserve">
+    <value>次のフィールドは非アクティブです：(0)</value>
+  </data>
+  <data name="custpage_outside_period" xml:space="preserve">
+    <value>指定した取引日は会計期間の日付範囲内にはありません。</value>
+  </data>
+  <data name="custpage_setupmissing" xml:space="preserve">
+    <value>固定資産管理システム設定レコードが見つからないか、不完全です。システム設定を決定できません。</value>
+  </data>
+  <data name="custpage_settingmissing" xml:space="preserve">
+    <value>システム設定の読み取りエラー</value>
+  </data>
+  <data name="custpage_invalid_acctsub_combo" xml:space="preserve">
+    <value>(0)勘定と連結子会社の組み合わせが無効です。資産ID：(1)</value>
+  </data>
+
+  <!-- Buttons -->
+  <data name="custrecord_assetproposal_refreshbutton" page="assetproposal" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="custrecord_assetproposal_proposebutton" page="assetproposal" xml:space="preserve">
+    <value>新規資産の提案</value>
+  </data>
+  <data name="custrecord_assetproposal_generatebutton" page="assetproposal" xml:space="preserve">
+    <value>資産の生成</value>
+  </data>
+  <data name="custrecord_assetproposal_rejectbutton" page="assetproposal" xml:space="preserve">
+    <value>提案の却下</value>
+  </data>
+  <data name="custrecord_famreports_generatebutton" page="famreports" xml:space="preserve">
+    <value>生成</value>
+  </data>
+  <data name="custrecord_assetsummary_generatebutton" page="assetsummary" xml:space="preserve">
+    <value>レポートを生成</value>
+  </data>
+  <data name="custrecord_systemsetup_savebutton" page="systemsetup" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="custrecord_systemsetup_submitbutton" page="systemsetup" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="custrecord_assetsplit_refreshbutton" page="assetsplit" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="custrecord_assetsplit_splitbutton" page="assetsplit" xml:space="preserve">
+    <value>分割</value>
+  </data>
+  <data name="custrecord_assetdisposal_refreshbutton" page="assetdisposal" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="custrecord_assetdisposal_disposebutton" page="assetdisposal" xml:space="preserve">
+    <value>処分</value>
+  </data>
+  <data name="custrecord_depreciationschedule2_generatebutton" page="depreciationschedule2" xml:space="preserve">
+    <value>レポートを生成</value>
+  </data>
+  <data name="custrecord_assetcreation_createbutton" page="assetcreation" xml:space="preserve">
+    <value>資産の作成</value>
+  </data>
+  <data name="custrecord_creationstatus_refreshbutton" page="assetcreation" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="custrecord_assetrevaluation_refreshbutton" page="assetrevaluation" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="custrecord_assetrevaluation_processbutton" page="assetrevaluation" xml:space="preserve">
+    <value>プロセスの再評価</value>
+  </data>
+  <data name="custrecord_assetrevaluation_calculatebutton" page="assetrevaluation" xml:space="preserve">
+    <value>計算</value>
+  </data>
+  <data name="custrecord_assetregister_generatebutton" page="assetregister" xml:space="preserve">
+    <value>レポートを生成</value>
+  </data>
+  <data name="custrecord_maintenance_savebutton" page="maintenance" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="custrecord_maintenance_resetbutton" page="maintenance" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="custrecord_systemstatus_refreshbutton" page="systemstatus" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="custrecord_generatehistory_generatebutton" page="generatehistory" xml:space="preserve">
+    <value>履歴の生成</value>
+  </data>
+  <data name="custrecord_assetdepreciation_depreciatebutton" page="assetdepreciation" xml:space="preserve">
+    <value>資産の減価償却</value>
+  </data>
+  <data name="custrecord_depreciationschedule_generatebutton" page="depreciationschedule" xml:space="preserve">
+    <value>レポートを生成</value>
+  </data>
+  <data name="custrecord_reportstatus_refreshbutton" page="reportstatus" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="custrecord_reportstatus2_refreshbutton" page="reportstatus2" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="custrecord_assettransfer_refreshbutton" page="assettransfer" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="custrecord_assettransfer_transferbutton" page="assettransfer" xml:space="preserve">
+    <value>譲渡の処理</value>
+  </data>
+  <data name="custrecord_assettransfer_importcsv" page="assettransfer" xml:space="preserve">
+    <value>CSVをインポート</value>
+  </data>
+  <data name="custrecord_bulktransfer_submitbutton" page="bulktransfer" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="custrecord_bulktransfer_cancelbutton" page="bulktransfer" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+
+  <!-- Asset Record -->
+  <data name="assetrecord_assettypehelp" xml:space="preserve">
+    <value>資産タイプは、ほとんどの資産構成でデフォルト設定となり、レポートやその他のプロセスで資産を分類するために使用されます。</value>
+  </data>
+  <data name="assetrecord_assetdescrhelp" xml:space="preserve">
+    <value>資産の簡単な説明。</value>
+  </data>
+  <data name="assetrecord_subshelp" xml:space="preserve">
+    <value>このレコードに関連付けられた連結子会社。</value>
+  </data>
+  <data name="assetrecord_includechildhelp" xml:space="preserve">
+    <value>子連結子会社の資産を含めるには、このボックスにチェックマークを入れます。</value>
+  </data>
+
+  <data name="assetrecord_assetserialnohelp" xml:space="preserve">
+    <value>資産の追跡または特定に使用できるシリアル番号。</value>
+  </data>
+  <data name="assetrecord_assetalternatenohelp" xml:space="preserve">
+    <value>追加の資産参照番号。</value>
+  </data>
+  <data name="assetrecord_assetcosthelp" xml:space="preserve">
+    <value>資産の取得（購入）原価。</value>
+  </data>
+  <data name="assetrecord_assetcurrentcosthelp" xml:space="preserve">
+    <value>資産の現在原価。 これには、資産に適用された評価減金額が含まれます。</value>
+  </data>
+  <data name="assetrecord_residualvalpercenthelp" xml:space="preserve">
+    <value>資産の耐用年数終了時点における価値に関する取得原価のパーセンテージ値。例えば、10万円で購入した資産に耐用年数の終了時点で1万円の価値があるとすると、価値の残存率は10%となります（10万円の10%は1万円）。
+残存価額を入力すると、この比率を使用して計算されたデフォ。ルト値は常に上書きされます</value>
+  </data>
+  <data name="assetrecord_residualvalhelp" xml:space="preserve">
+    <value>資産の耐用年数終了時点における価値。例えば、10万円で購入した資産は、その耐用年数の最後には1万円の価値となる可能性があります。
+
+残存価額を入力すると、この比率を使用して計算されたデフォルト値は常に上書きされます</value>
+  </data>
+  <data name="assetrecord_assetacctmethodhelp" xml:space="preserve">
+    <value>この資産を減価償却するときに使用する、減価償却方法（計算式）を選択します。 この会計方法は、会計処理システムに入力される値を計算するために使用されます。</value>
+  </data>
+  <data name="assetrecord_assetperiodconvhelp" xml:space="preserve">
+    <value>年を定義するために使用する規則を選択します：
+1. 12か月の各月を30日とする - 通常、この処理法は北米と欧州で使用され、毎月の減価償却が均一化されます。
+2. 毎月の日数は暦どおりで1年は365日 - 通常、この処理法はオーストラリアとニュージーランドで使用され、年内の減価償却が不均一となります。</value>
+  </data>
+  <data name="assetrecord_assetlifetimehelp" xml:space="preserve">
+    <value>減価償却期間の倍数で表す資産の期待耐用年数（例：減価償却期間が「月次」の場合、月数で耐用年数を入力します）。</value>
+  </data>
+  <data name="assetrecord_assetdeprperiodhelp" xml:space="preserve">
+    <value>この資産の減価償却が行われる頻度。</value>
+  </data>
+  <data name="assetrecord_assetlifetimeusagehelp" xml:space="preserve">
+    <value>資産の減価償却が資産の使用状況（自動車の走行距離数など）によって決まる場合は、耐用使用度は資産で利用可能な使用単位総数を表す値を表します。 現在までの合計使用状況が耐用使用度と等しいとき、資産は耐用年数の最後に達していることになります。</value>
+  </data>
+  <data name="assetrecord_assetnetbookvaluehelp" xml:space="preserve">
+    <value>資産の現在の帳簿評価。</value>
+  </data>
+  <data name="assetrecord_assetcumulativedeprhelp" xml:space="preserve">
+    <value>資産に現在までに適用された合計減価償却金額</value>
+  </data>
+  <data name="assetrecord_assetstatushelp" xml:space="preserve">
+    <value>資産のステータス：新規、減価償却中、減価償却完了、処分済</value>
+  </data>
+  <data name="assetrecord_assetcustomerlocationhelp" xml:space="preserve">
+    <value>資産が買収された顧客の場所。</value>
+  </data>
+  <data name="assetrecord_assetcurrencyhelp" xml:space="preserve">
+    <value>資産原価の最初の表示に使用された通貨。</value>
+  </data>
+  <data name="assetrecord_assetcurrencyidhelp" xml:space="preserve">
+    <value>資産通貨の内部ID。</value>
+  </data>
+  <data name="assetrecord_assetfixedratehelp" xml:space="preserve">
+    <value>取得原価の通貨（資産通貨）と資産の会社または連結子会社の基本通貨との間での、固定為替レート。</value>
+  </data>
+  <data name="assetrecord_assetcustodianhelp" xml:space="preserve">
+    <value>資産の担当従業員。</value>
+  </data>
+  <data name="assetrecord_assetphysicallochelp" xml:space="preserve">
+    <value>資産が通常存在する場所を示します。</value>
+  </data>
+  <data name="assetrecord_assetincludesreportschelp" xml:space="preserve">
+    <value>資産を資産概要レポートに記載するかどうかを示します。 デフォルトでは、すべての資産がレポートに記載されます。</value>
+  </data>
+  <data name="assetrecord_assetpurchasedatehelp" xml:space="preserve">
+    <value>資産の購入日。</value>
+  </data>
+  <data name="assetrecord_assetdeprstartdatehelp" xml:space="preserve">
+    <value>資産の減価償却が開始する日付。たとえば、資産を購入しても数か月間は受領されない、または運用されない場合があります。</value>
+  </data>
+  <data name="assetrecord_assetdeprenddatehelp" xml:space="preserve">
+    <value>資産の減価償却が終了すると予想される日付。 これによって、資産の減価償却開始日に加えて耐用年数がデフォルト設定されます。</value>
+  </data>
+  <data name="assetrecord_assetlastdeprperiodhelp" xml:space="preserve">
+    <value>資産が最も最近に減価償却された期間の数（資産の耐用年数内）。</value>
+  </data>
+  <data name="assetrecord_assetlastdepramounthelp" xml:space="preserve">
+    <value>この資産について直近に行われた減価償却の金額。</value>
+  </data>
+  <data name="assetrecord_assetlastdeprdatehelp" xml:space="preserve">
+    <value>この資産について直近に行われた減価償却の日付。</value>
+  </data>
+  <data name="assetrecord_assetdepractivehelp" xml:space="preserve">
+    <value>資産が有効で処理中の減価償却に含められるかどうかを示します。 資産がジョブに関連している場合、ジョブが完了したときに自動的に有効に設定することができます。</value>
+  </data>
+  <data name="assetrecord_assetdisptypehelp" xml:space="preserve">
+    <value>資産に適用された処分タイプ。</value>
+  </data>
+  <data name="assetrecord_assetcustomerhelp" xml:space="preserve">
+    <value>資産の売却先の顧客。</value>
+  </data>
+  <data name="assetrecord_assetqtyhelp" xml:space="preserve">
+    <value>この資産の数量。</value>
+  </data>
+  <data name="assetrecord_assetrevisionmethodhelp" xml:space="preserve">
+    <value>修正（再評価）によって資産がどのような影響を受けるかを制御します。 「現行期間」を選択した場合、資産の現在までの減価償却が修正値を用いて再計算され、算出された減価償却と以前に転記された減価償却との差異が現行期間に入力されます。 「残存期間」を選択した場合、修正が適用されるのは現時点以降の資産に限られるため、今後の減価償却計算のみが影響を受けます。</value>
+  </data>
+  <data name="assetrecord_assetnamehelp" xml:space="preserve">
+    <value>このレコードが関連付けられている資産の名前。</value>
+  </data>
+  <data name="assetrecord_assetlocationhelp" xml:space="preserve">
+    <value>特定の場所に関連する資産のみがレポートに含まれるようにする場合は、場所を選択します。</value>
+  </data>
+  <data name="assetrecord_assetdepartmenthelp" xml:space="preserve">
+    <value>特定の部門に関連する資産のみがレポートに含まれるようにする場合は、部門を選択します。</value>
+  </data>
+  <data name="assetrecord_assetclasshelp" xml:space="preserve">
+    <value>特定のクラスに関連する資産のみがレポートに含まれるようにする場合は、クラスを選択します。</value>
+  </data>
+  <data name="assetrecord_report_subshelp" xml:space="preserve">
+    <value>レポートを作成する連結子会社（複数可）を選択します。</value>
+  </data>
+  <data name="assetrecord_report_assetacctmethodhelp" xml:space="preserve">
+    <value>減価償却方法を選択します。</value>
+  </data>
+  <data name="assetrecord_report_includechildhelp" xml:space="preserve">
+    <value>レポートに子連結子会社の資産を含めるには、このボックスにチェックマークを入れます。</value>
+  </data>
+  <data name="assetrecord_report_assettypehelp" xml:space="preserve">
+    <value>レポートの資産を分類するには、1つ以上の資産タイプを選択します。ほとんどの資産構成には、資産タイプに基づいてデフォルト値が割り当てられることに注意してください。</value>
+  </data>
+  <data name="assetrecord_assetperiodstartdatehelp" xml:space="preserve">
+    <value>作成するレポート期間の開始日を入力するか選択します。</value>
+  </data>
+  <data name="assetrecord_assetperiodenddatehelp" xml:space="preserve">
+    <value>作成するレポート期間の終了日を入力するか選択します。</value>
+  </data>
+  <data name="assetrecord_report_acctngbookhelp" xml:space="preserve">
+    <value>レポートを作成する会計帳簿（複数可）を選択します。</value>
+  </data>
+  <data name="assetrecord_report_typehelp" xml:space="preserve">
+    <value>生成するレポートの種類を選択します。</value>
+  </data>
+
+  <!-- Alternate Depreciation Record -->
+  <data name="client_altdepr_currency_mismatch" page="clientpage" xml:space="preserve">
+     <value>会計帳簿を選択するとき、代替減価償却の通貨は会計帳簿の通貨に一致する必要があります。
+     一致しない場合、通貨は連結子会社または会社の基準通貨に一致する必要があります。</value>
+  </data>
+</root>

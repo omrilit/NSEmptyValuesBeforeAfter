@@ -1,0 +1,81 @@
+<head>
+    <style>
+        body {
+            font-family: Arial, Verdana, Helvetica, stsong, msung, mhei, heiseimin, heiseikakugo, hygothic, hysmyeongjo; font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <#assign lineIndex = 0>
+    <#assign listSize = report.recmachcustrecord_assetsummary_repparent?size>
+    <#list report.recmachcustrecord_assetsummary_repparent as line>
+        <#assign lineIndex = lineIndex + 1>
+        <#assign lineType = line.custrecord_assetsummary_linetype> 
+        <#if lineType == "sub_header">
+        <p style="font-size: 18px; color: #003399">ASR_title_ASR</p>
+        <table>
+            <tr>
+                <td colspan="8" style="font-weight: bold; font-size: 12px;"><p align="center">ASR_fam_ASR <#if line.custrecord_assetsummary_sub != "undefined">- ${line.custrecord_assetsummary_sub} <#if line.custrecord_assetsummary_currency != "undefined">${line.custrecord_assetsummary_currency}</#if></#if></p></td>
+            </tr>
+            <#if line.custrecord_assetsummary_acctgbook != "">
+            <tr>
+                <td colspan="8"><p align="center">${line.custrecord_assetsummary_acctgbook}</p></td>
+            </tr>
+            </#if>
+            <tr>
+                <td colspan="8"><p align="center">${line.custrecord_assetsummary_altdep} - ${report.custrecord_assetsummaryrep_selected}</p></td>
+            </tr>
+            <tr>
+                <td colspan="8"><p align="center">${report.custrecord_assetsummaryrep_startdate?string["MMM d, yyyy"]} - ${report.custrecord_assetsummaryrep_enddate?string["MMM d, yyyy"]}</p></td>
+            </tr>
+            <tr>
+                <td width="225px" margin-bottom="3px"></td>
+                <td width="130px"><p style="font-weight: bold;" align="right">ASR_begbal_ASR</p></td>
+                <td width="130px"><p style="font-weight: bold;" align="right">ASR_additions_ASR</p></td>
+                <td width="130px"><p style="font-weight: bold;" align="right">ASR_sale_ASR</p></td>
+                <td width="130px"><p style="font-weight: bold;" align="right">ASR_disposals_ASR</p></td>
+                <td width="130px"><p style="font-weight: bold;" align="right">ASR_transfers_ASR</p></td>
+                <td width="130px"><p style="font-weight: bold;" align="right">ASR_revaluations_ASR</p></td>
+                <td width="130px"><p style="font-weight: bold;" align="right">ASR_endbal_ASR</p></td>
+            </tr>
+        <#elseif lineType == "horizontal_rule">
+            <tr>
+                <td></td>
+                <td colspan="7" style="border-top-style: solid; border-top-width: 1px;" margin-bottom="1px"> </td>
+            </tr>
+        <#elseif lineType == "double_horizontal_rule">
+            <tr>
+                <td></td>
+                <td colspan="7" style="border-top-style: solid; border-top-width: 1px;" margin-bottom="1px"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="7" style="border-top-style: solid; border-top-width: 1px;" margin-bottom="4px"> </td>
+            </tr>
+        </table> <#if lineIndex lt listSize-1><pbr /><br /></#if>
+        <#else>
+            <tr>
+                <td style="font-weight: bold;" <#if lineType == "type_total">margin-bottom="7px"</#if>><p align="left">${line.custrecord_assetsummary_linename}</p></td>
+                <#if lineType == "type_header">
+                    <td colspan="7"></td>
+                <#else>
+                    <td><p align="right">${line.custrecord_assetsummary_beginbal?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${line.custrecord_assetsummary_additions?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${line.custrecord_assetsummary_sale?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${line.custrecord_assetsummary_disposals?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${line.custrecord_assetsummary_transfers?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${line.custrecord_assetsummary_revals?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${line.custrecord_assetsummary_endbal?string["#,##0.00;(#,##0.00)"]}</p></td>
+                </#if>
+            </tr>
+        </#if>
+        
+    </#list>
+        
+    <#if report.recmachcustrecord_assetsummary_repparent_zerovl?size gt 0>
+        <br /><p style="font-size: 10px; font-weight: bold">ASR_subwithzero_ASR</p>
+        <#list report.recmachcustrecord_assetsummary_repparent_zerovl as line>
+            <p style="font-size: 10px;">${line.custrecord_assetsummary_sub}</p>
+        </#list>
+    </#if>
+</body>

@@ -1,0 +1,2764 @@
+﻿<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+
+  <xsd:schema id="root" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element msdata:IsDataSet="true" name="root">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="page" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+                <xsd:element minOccurs="0" msdata:Ordinal="2" name="comment" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute msdata:Ordinal="1" name="name" type="xsd:string" use="required"/>
+              <xsd:attribute msdata:Ordinal="3" name="type" type="xsd:string"/>
+              <xsd:attribute msdata:Ordinal="4" name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+    <!--
+      ###Enumaration of PAGES.. for tracing only###
+      assetcreation - Asset Creation
+      assetdepreciation - Asset Depreciation
+      assetdisposal - Asset Disposal
+      assetproposal - Asset Proposal
+      assetregister - Asset Register Report/Asset Register Detail
+      assetrevaluation - Asset Revaluation
+      assetsplit - Asset Split
+      assetsummary - Asset Summary Report
+      depreciationschedule - Asset Depreciation Schedule
+      depreciationschedule2 - Asset Depreciation Schedule (Portrait)
+      depreciationmethod - Depreciation Method
+      famreports - Fixed Assets Reports
+      generatehistory - Generate Asset History
+      reportstatus - FAM - Report Status
+      reportstatus2 - Asset Report Status (sc)
+      systemsetup - System Setup
+      systemstatus - System Status
+      maintenance - Language Management
+      depreciationmethodformula - Depreciation Method
+      clientpage - Entries intended for client messages
+  -->
+
+  <!-- Page Screen Title -->
+  <data name="maintenance_screen_assetcreation" page="maintenance" xml:space="preserve">
+    <value>Создание актива</value>
+  </data>
+  <data name="maintenance_screen_assetdisposal" page="maintenance" xml:space="preserve">
+    <value>Ликвидация актива</value>
+  </data>
+  <data name="maintenance_screen_assetproposal" page="maintenance" xml:space="preserve">
+    <value>Предложение по активу</value>
+  </data>
+  <data name="maintenance_screen_assetrevaluation" page="maintenance" xml:space="preserve">
+    <value>Переоценка актива</value>
+  </data>
+  <data name="maintenance_screen_assetsplit" page="maintenance" xml:space="preserve">
+    <value>Разделение актива</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule2" page="maintenance" xml:space="preserve">
+    <value>График амортизации (вертикальная ориентация)</value>
+  </data>
+  <data name="maintenance_screen_systemsetup" page="maintenance" xml:space="preserve">
+    <value>Настройка системы</value>
+  </data>
+  <data name="maintenance_screen_maintenance" page="maintenance" xml:space="preserve">
+    <value>Массовое обновление перевода-FAM</value>
+  </data>
+  <data name="maintenance_screen_assetdepreciation" page="maintenance" xml:space="preserve">
+    <value>Амортизация актива</value>
+  </data>
+  <data name="maintenance_screen_assetregister" page="maintenance" xml:space="preserve">
+    <value>Отчет по реестру активов</value>
+  </data>
+  <data name="maintenance_screen_assetsummary" page="maintenance" xml:space="preserve">
+    <value>Сводный отчет по активу</value>
+  </data>
+  <data name="maintenance_screen_backgroundprocessing" page="maintenance" xml:space="preserve">
+    <value>Обработка в фоновом режиме</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule" page="maintenance" xml:space="preserve">
+    <value>График амортизации</value>
+  </data>
+  <data name="maintenance_screen_generatehistory" page="maintenance" xml:space="preserve">
+    <value>Создать журнал</value>
+  </data>
+  <data name="maintenance_screen_reportstatus" page="maintenance" xml:space="preserve">
+    <value>Статус отчета по реестру актива</value>
+  </data>
+  <data name="maintenance_screen_systemstatus" page="maintenance" xml:space="preserve">
+    <value>Статус системы</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethod" page="maintenance" xml:space="preserve">
+    <value>Метод амортизации</value>
+  </data>
+  <data name="maintenance_screen_reportstatus2" page="maintenance" xml:space="preserve">
+    <value>Статус планового отчета по амортизации актива</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethodformula" page="maintenance" xml:space="preserve">
+    <value>Формула амортизации</value>
+  </data>
+  <data name="maintenance_screen_clientpage" page="maintenance" xml:space="preserve">
+    <value>Сообщения для предупреждения клиента</value>
+  </data>
+
+  <!-- Localization Maintenance Page -->
+  <data name="maintenance_description_jp" page="maintenance" xml:space="preserve">
+    <value>Название - японский, JP</value>
+  </data>
+  <data name="maintenance_description_default" page="maintenance" xml:space="preserve">
+    <value>Название - английский, US</value>
+  </data>
+  <data name="maintenance_select_language" page="maintenance" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="custpage_translations_header" page="maintenance" xml:space="preserve">
+    <value>Массовое обновление перевода-FAM</value>
+  </data>
+  <data name="custpage_translations_en_US_header" page="maintenance" xml:space="preserve">
+    <value>США</value>
+  </data>
+  <data name="custpage_translations_ja_JP_header" page="maintenance" xml:space="preserve">
+    <value>Япония</value>
+  </data>
+  <data name="custpage_translations_custom_header" page="maintenance" xml:space="preserve">
+    <value>Перевод -</value>
+  </data>
+  <data name="custpage_translations_custom_header_us" page="maintenance" xml:space="preserve">
+    <value>us</value>
+  </data>
+  <data name="custpage_translations_custom_header_jp" page="maintenance" xml:space="preserve">
+    <value>jp</value>
+  </data>
+  <data name="custpage_translations_screen_header" page="maintenance" xml:space="preserve">
+    <value>Экран</value>
+  </data>
+  <data name="custpage_translations_common_fields" page="maintenance" xml:space="preserve">
+    <value>Общие поля</value>
+  </data>
+
+  <!-- Asset Proposal Page -->
+  <data name="custrecord_assetproposal_title" page="assetproposal" xml:space="preserve">
+    <value>Предложение по активу</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetproposal" xml:space="preserve">
+    <value>Тип(ы) актива</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetproposal" xml:space="preserve">
+    <value>Дочерняя организация</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetproposal" xml:space="preserve">
+    <value>Включить дочерние объекты</value>
+    </data>
+  <data name="custpage_selectpage" page="assetproposal" xml:space="preserve">
+    <value>Выбрать страницу</value>
+  </data>
+  <data name="custpage_rowperpage" page="assetproposal" xml:space="preserve">
+    <value>Предложений на страницу</value>
+  </data>
+  <data name="proposals" page="assetproposal" xml:space="preserve">
+    <value>Предложенные активы</value>
+    </data>
+  <data name="marked" page="assetproposal" xml:space="preserve">
+    <value>Выберите</value>
+    </data>
+  <data name="editurl" page="assetproposal" xml:space="preserve">
+    <value>Редактировать</value>
+    </data>
+  <data name="custrecord_propsourceid" page="assetproposal" xml:space="preserve">
+    <value>Операция</value>
+    </data>
+  <data name="custrecord_propassettype" page="assetproposal" xml:space="preserve">
+    <value>Тип актива</value>
+    </data>
+  <data name="custrecord_propassetdescr" page="assetproposal" xml:space="preserve">
+    <value>Описание</value>
+    </data>
+  <data name="custrecord_propaccmethod" page="assetproposal" xml:space="preserve">
+    <value>Метод амортизации</value>
+    </data>
+  <data name="custrecord_propassetcost" page="assetproposal" xml:space="preserve">
+    <value>Первоначальная стоимость</value>
+    </data>
+  <data name="custrecord_propresidvalue" page="assetproposal" xml:space="preserve">
+    <value>Ликвидационная стоимость</value>
+    </data>
+  <data name="custrecord_propassetlifetime" page="assetproposal" xml:space="preserve">
+    <value>Срок службы</value>
+  </data>
+  <data name="custrecord_propsubsid" page="assetproposal" xml:space="preserve">
+    <value>Дочерняя организация</value>
+  </data>
+  <data name="custpage_nopropselected" page="assetproposal" xml:space="preserve">
+    <value>Не выбрано предложений для формирования.</value>
+  </data>
+
+  <!-- Asset Transfer Page -->
+  <data name="custrecord_assettransfer_title" page="assettransfer" xml:space="preserve">
+    <value>Перевод активов</value>
+  </data>
+  <data name="custpage_assetid" page="assettransfer" xml:space="preserve">
+    <value>Ид/Название актива</value>
+  </data>
+  <data name="custpage_assetid_help" page="assettransfer" xml:space="preserve">
+    <value>Выберите идентификатор или название актива, который необходимо перевести.</value>
+  </data>
+  <data name="custpage_assettype" page="assettransfer" xml:space="preserve">
+    <value>Тип актива</value>
+  </data>
+  <data name="custpage_assettype_help" page="assettransfer" xml:space="preserve">
+    <value>Тип актива для данного актива.</value>
+  </data>
+  <data name="custpage_newassettype" page="assettransfer" xml:space="preserve">
+    <value>Тип актива</value>
+  </data>
+  <data name="custpage_newassettype_help" page="assettransfer" xml:space="preserve">
+    <value>Выберите тип актива, в который нужно перевести актив.</value>
+  </data>
+  <data name="custpage_assetsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>Дочерняя организация</value>
+  </data>
+  <data name="custpage_assetsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>Текущая дочерняя организация актива.</value>
+  </data>
+  <data name="custpage_newsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>Дочерняя организация</value>
+  </data>
+  <data name="custpage_newsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>Выберите дочернюю компанию, в которую нужно перевести актив.</value>
+  </data>
+  <data name="custpage_assetclass" page="assettransfer" xml:space="preserve">
+    <value>Класс</value>
+  </data>
+  <data name="custpage_assetclass_help" page="assettransfer" xml:space="preserve">
+    <value>Текущий класс актива.</value>
+  </data>
+  <data name="custpage_newclass" page="assettransfer" xml:space="preserve">
+    <value>Класс</value>
+  </data>
+  <data name="custpage_newclass_help" page="assettransfer" xml:space="preserve">
+    <value>Выберите класс, в который нужно перевести актив.</value>
+  </data>
+  <data name="custpage_assetdepartment" page="assettransfer" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="custpage_assetdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>Текущее подразделение актива.</value>
+  </data>
+  <data name="custpage_newdepartment" page="assettransfer" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="custpage_newdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>Выберите подразделение, в которое нужно перевести актив.</value>
+  </data>
+  <data name="custpage_assetlocation" page="assettransfer" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="custpage_assetlocation_help" page="assettransfer" xml:space="preserve">
+    <value>Текущее местоположение актива.</value>
+  </data>
+  <data name="custpage_newlocation" page="assettransfer" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="custpage_newlocation_help" page="assettransfer" xml:space="preserve">
+    <value>Выберите подразделение, в которое нужно перевести актив.</value>
+  </data>
+  <data name="custpage_assetdescription" page="assettransfer" xml:space="preserve">
+    <value>Описание актива</value>
+  </data>
+  <data name="custpage_assetdescription_help" page="assettransfer" xml:space="preserve">
+    <value>Здесь отображается описание актива.</value>
+  </data>
+  <data name="custpage_assetserialno" page="assettransfer" xml:space="preserve">
+    <value>Серийный номер актива</value>
+  </data>
+  <data name="custpage_assetserialno_help" page="assettransfer" xml:space="preserve">
+    <value>Серийный номер, который можно использовать для отслеживания или идентификации актива.</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assettransfer" xml:space="preserve">
+    <value>Альтернативный номер актива</value>
+  </data>
+  <data name="custpage_assetalternateno_help" page="assettransfer" xml:space="preserve">
+    <value>Дополнительный номер ссылки на актив</value>
+  </data>
+  <data name="custpage_assetorigcost" page="assettransfer" xml:space="preserve">
+    <value>Первоначальная стоимость</value>
+  </data>
+  <data name="custpage_assetorigcost_help" page="assettransfer" xml:space="preserve">
+    <value>Оригинальная (закупочная) цена актива.</value>
+  </data>
+  <data name="custpage_assetcurrcost" page="assettransfer" xml:space="preserve">
+    <value>Текущая балансовая стоимость</value>
+  </data>
+  <data name="custpage_assetcurrcost_help" page="assettransfer" xml:space="preserve">
+    <value>Текущая балансовая стоимость актива.</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assettransfer" xml:space="preserve">
+    <value>Срок службы актива</value>
+  </data>
+  <data name="custpage_assetlifetime_help" page="assettransfer" xml:space="preserve">
+    <value>Ожидаемый срок службы актива, кратно периоду амортизации (т. е. если период амортизации - месяц, укажите срок службы в месяцах).</value>
+  </data>
+  <data name="custpage_assetlastdepr" page="assettransfer" xml:space="preserve">
+    <value>Последний период амортизации</value>
+  </data>
+  <data name="custpage_assetlastdepr_help" page="assettransfer" xml:space="preserve">
+    <value>Номер периода (в пределах срока службы актива), в котором последний раз проводилась амортизация актива.</value>
+  </data>
+  <data name="custpage_assetstatus" page="assettransfer" xml:space="preserve">
+    <value>Статус актива</value>
+  </data>
+  <data name="custpage_assetstatus_help" page="assettransfer" xml:space="preserve">
+    <value>Текущий статус актива.</value>
+  </data>
+  <data name="custpage_assetcurrency" page="assettransfer" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="custpage_assetcurrency_help" page="assettransfer" xml:space="preserve">
+    <value>Основная валюта книги дочерней организации.</value>
+  </data>
+
+  <!-- Process Instance Status Page -->
+  <data name="custpage_processstatus_title" page="processstatus" xml:space="preserve">
+    <value>Статус операции</value>
+  </data>
+  <data name="custpage_processid" page="processstatus" xml:space="preserve">
+    <value>Последние процессы: </value>
+  </data>
+  <data name="custpage_currentprocess" page="processstatus" xml:space="preserve">
+    <value>Текущие процессы: </value>
+  </data>
+  <data name="custpage_processstatus" page="processstatus" xml:space="preserve">
+    <value>Статус текущего процесса: </value>
+  </data>
+  <data name="custpage_prevprocess" page="processstatus" xml:space="preserve">
+    <value>Предыдущие процессы: </value>
+  </data>
+  <data name="custpage_nopending" page="processstatus" xml:space="preserve">
+    <value>Нет ожидающих процессов</value>
+  </data>
+  <data name="custpage_nocurrent" page="processstatus" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="custpage_rendering" page="processstatus" xml:space="preserve">
+    <value>Воспроизведение...</value>
+  </data>
+  <data name="custpage_deprnone" page="processstatus" xml:space="preserve">
+    <value>амортизировано (0) активов.</value>
+  </data>
+    <data name="custpage_depracctmethods" page="processstatus" xml:space="preserve">
+    <value>Амортизация метода учета </value>
+  </data>
+  <data name="custpage_depracctmethods_count" page="processstatus" xml:space="preserve">
+    <value>методы учета были амортизированы.</value>
+  </data>
+  <data name="custpage_deprtaxmethods" page="processstatus" xml:space="preserve">
+    <value>Амортизация методов налогообложения </value>
+  </data>
+  <data name="custpage_deprtaxmethods_count" page="processstatus" xml:space="preserve">
+    <value>методы налогообложения были амортизированы.</value>
+  </data>
+  <data name="custpage_writingdepr_amounts" page="processstatus" xml:space="preserve">
+    <value>Запись амортизации в журнал </value>
+  </data>
+  <data name="custpage_deprhistory_count" page="processstatus" xml:space="preserve">
+    <value>обработана история амортизации.</value>
+  </data>
+  <data name="custpage_status_allassettype" page="processstatus" xml:space="preserve">
+    <value>Все типы активов</value>
+  </data>
+  <data name="custpage_procstatus_dispose" page="processstatus" xml:space="preserve">
+    <value>Ликвидируемый актив </value>
+  </data>
+  <data name="custpage_procstatus_dispose_count" page="processstatus" xml:space="preserve">
+    <value>активы были ликвидированы.</value>
+  </data>
+  <data name="custpage_procstatus_reval" page="processstatus" xml:space="preserve">
+    <value>Переоценка актива </value>
+  </data>
+  <data name="custpage_procstatus_reval_count" page="processstatus" xml:space="preserve">
+    <value>активы были переоценены.</value>
+  </data>
+  <data name="custpage_procstatus_split" page="processstatus" xml:space="preserve">
+    <value>Разделение актива </value>
+  </data>
+  <data name="custpage_procstatus_split_count" page="processstatus" xml:space="preserve">
+    <value>активы были разделены.</value>
+  </data>
+  <data name="custpage_procstatus_transfer" page="processstatus" xml:space="preserve">
+    <value>Перевод актива </value>
+  </data>
+  <data name="custpage_procstatus_transfer_count" page="processstatus" xml:space="preserve">
+    <value>активы были переведены.</value>
+  </data>
+  <data name="custpage_procstatus_gen" page="processstatus" xml:space="preserve">
+    <value>Формирование актива </value>
+  </data>
+  <data name="custpage_procstatus_gen_count" page="processstatus" xml:space="preserve">
+    <value>активы были сформированы.</value>
+  </data>
+  <data name="custpage_procstatus_prop" page="processstatus" xml:space="preserve">
+    <value>Предложенные активы </value>
+  </data>
+  <data name="custpage_procstatus_prop_count" page="processstatus" xml:space="preserve">
+    <value>активы были предложены.</value>
+  </data>
+  <data name="custpage_procstatus_schedreport_count" page="processstatus" xml:space="preserve">
+    <value>отчеты были сформированы.</value>
+  </data>
+  <data name="custpage_rep_gen_asset_register" page="processstatus" xml:space="preserve">
+    <value>Формирование отчета по реестру активов</value>
+  </data>
+  <data name="custpage_rep_gen_asset_summary" page="processstatus" xml:space="preserve">
+    <value>Формирование сводного отчета по активам</value>
+  </data>
+  <data name="custpage_rep_gen_depr_sched" page="processstatus" xml:space="preserve">
+    <value>Формирование планового отчета по амортизации</value>
+  </data>
+  <data name="custpage_report_generation_count" page="processstatus" xml:space="preserve">
+    <value>записи включены.</value>
+  </data>
+  <data name="custpage_view_report_as" page="processstatus" xml:space="preserve">
+    <value>просмотреть отчет как:</value>
+  </data>
+  <data name="custpage_procstatus_create" page="processstatus" xml:space="preserve">
+    <value>Создание актива </value>
+  </data>
+  <data name="custpage_procstatus_create_count" page="processstatus" xml:space="preserve">
+    <value>активы были созданы.</value>
+  </data>
+  <data name="custpage_view_proppage" page="processstatus" xml:space="preserve">
+    <value>просмотреть страницу предложения</value>
+  </data>
+  
+  <!-- Asset Summary Page -->
+  <data name="custrecord_assetsummary_title" page="assetsummary" xml:space="preserve">
+    <value>Сводный отчет по активу</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetsummary" xml:space="preserve">
+    <value>Тип(ы) актива</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetsummary" xml:space="preserve">
+    <value>Дочерняя организация</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetsummary" xml:space="preserve">
+    <value>Включить дочерние объекты</value>
+    </data>
+  <data name="custpage_filtermsselect" page="assetsummary" xml:space="preserve">
+    <value>Выберите</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetsummary" xml:space="preserve">
+    <value>Метод амортизации</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetsummary" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetsummary" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetsummary" xml:space="preserve">
+    <value>Класс</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetsummary" xml:space="preserve">
+    <value>Дата начала периода</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetsummary" xml:space="preserve">
+    <value>Дата окончания периода</value>
+  </data>
+  <data name="custpage_html_tangible" page="assetsummary" xml:space="preserve">
+    <value>Материальные активы</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="assetsummary" xml:space="preserve">
+    <value>Стоимость или оценка</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetsummary" xml:space="preserve">
+    <value>Амортизация</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetsummary" xml:space="preserve">
+    <value>Балансовая стоимость</value>
+  </data>
+  <data name="custpage_html_at" page="assetsummary" xml:space="preserve">
+    <value>В (0)</value>
+  </data>
+  <data name="custpage_html_additions" page="assetsummary" xml:space="preserve">
+    <value>Добавления</value>
+  </data>
+  <data name="custpage_html_disposals" page="assetsummary" xml:space="preserve">
+    <value>Ликвидации</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="assetsummary" xml:space="preserve">
+    <value>Сбор за период</value>
+  </data>
+  <data name="custpage_html_adjustments" page="assetsummary" xml:space="preserve">
+    <value>Корректировки</value>
+  </data>
+  <data name="custpage_html_fam" page="assetsummary" xml:space="preserve">
+    <value>Управление основными средствами</value>
+  </data>
+  <data name="custpage_html_total" page="assetsummary" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetsummary" xml:space="preserve">
+    <value>Все активы</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetsummary" xml:space="preserve">
+    <value>Все активы, кроме сданных в аренду</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetsummary" xml:space="preserve">
+    <value>Только сданные в аренду</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetsummary" xml:space="preserve">
+    <value>Метод учета (варианты)</value>
+  </data>
+  
+  
+  <!-- Fixed Assets Reports -->
+  <data name="custrecord_famreports_title" page="famreports" xml:space="preserve">
+    <value>Отчеты по основным средствам</value>
+  </data>
+  <data name="custpage_reporttype" page="famreports" xml:space="preserve">
+    <value>Тип отчета</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="famreports" xml:space="preserve">
+    <value>Тип(ы) актива</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="famreports" xml:space="preserve">
+    <value>Дочерняя организация</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="famreports" xml:space="preserve">
+    <value>Включить дочерние объекты</value>
+  </data>
+  <data name="custpage_filteracctngbook" page="famreports" xml:space="preserve">
+    <value>Бухгалтерские книги</value>
+  </data>
+  <data name="custpage_filtermsselect" page="famreports" xml:space="preserve">
+    <value>Активы для включения</value>
+  </data>
+  <data name="custpage_filtersmethod" page="famreports" xml:space="preserve">
+    <value>Альтернативная амортизация</value>
+  </data>
+  <data name="custpage_filterslocation" page="famreports" xml:space="preserve">
+    <value>Местоположения</value>
+  </data>
+  <data name="custpage_filtersdept" page="famreports" xml:space="preserve">
+    <value>Подразделения</value>
+  </data>
+  <data name="custpage_filtersclass" page="famreports" xml:space="preserve">
+    <value>Классы</value>
+  </data>
+  <data name="custpage_filterstartdate" page="famreports" xml:space="preserve">
+    <value>Дата начала</value>
+  </data>
+  <data name="custpage_filterenddate" page="famreports" xml:space="preserve">
+    <value>Дата окончания</value>
+  </data>
+  <data name="custpage_html_tangible" page="famreports" xml:space="preserve">
+    <value>Материальные активы</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="famreports" xml:space="preserve">
+    <value>Стоимость или оценка</value>
+  </data>
+  <data name="custpage_html_depreciation" page="famreports" xml:space="preserve">
+    <value>Амортизация</value>
+  </data>
+  <data name="custpage_html_nbv" page="famreports" xml:space="preserve">
+    <value>Балансовая стоимость</value>
+  </data>
+  <data name="custpage_html_at" page="famreports" xml:space="preserve">
+    <value>В (0)</value>
+  </data>
+  <data name="custpage_html_additions" page="famreports" xml:space="preserve">
+    <value>Добавления</value>
+  </data>
+  <data name="custpage_html_disposals" page="famreports" xml:space="preserve">
+    <value>Ликвидации</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="famreports" xml:space="preserve">
+    <value>Сбор за период</value>
+  </data>
+  <data name="custpage_html_adjustments" page="famreports" xml:space="preserve">
+    <value>Корректировки</value>
+  </data>
+  <data name="custpage_html_fam" page="famreports" xml:space="preserve">
+    <value>Управление основными средствами</value>
+  </data>
+  <data name="custpage_html_total" page="famreports" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="famreports" xml:space="preserve">
+    <value>Все активы</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="famreports" xml:space="preserve">
+    <value>Все активы, кроме сданных в аренду</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="famreports" xml:space="preserve">
+    <value>Только сданные в аренду</value>
+  </data>
+  <data name="custpage_dropdown_report_assetregister" page="famreports" xml:space="preserve">
+    <value>Реестр активов</value>
+  </data>
+  <data name="custpage_dropdown_report_assetsummary" page="famreports" xml:space="preserve">
+    <value>Сводная информация по активам</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_nbv" page="famreports" xml:space="preserve">
+    <value>Остаточная стоимость по графику амортизации</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_pd" page="famreports" xml:space="preserve">
+    <value>Периодическая амортизация по графику амортизации</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="famreports" xml:space="preserve">
+    <value>Метод учета</value>
+  </data>
+  <data name="custpage_saveresults_help" page="famreports" xml:space="preserve">
+    <value>Параметр «Сохранить суммы прогноза» позволяет сохранять сформированные записи графика амортизации (для срока службы актива) в записи актива. Если параметр включен, система будет игнорировать поля «Дата начала», «Дата окончания», «Балансовая стоимость» и «Периодическая амортизация». Благодаря этому в таблице журнала амортизации всегда будет полный график амортизации на срок службы актива. Значения, введенные в поля «Дата начала», «Дата окончания», «Балансовая стоимость» и «Периодическая амортизация» будут использованы только для формирования отчетов.</value>
+  </data>
+  <data name="custpage_saveresults" page="famreports" xml:space="preserve">
+    <value>Сохранить суммы прогноза</value>
+  </data>
+  <data name="custpage_assetinclude_help" page="famreports" xml:space="preserve">
+    <value>Выберите, какие из активов включать в отчет: все активы, все активы кроме сданных в аренду или только сданные в аренду.</value>
+  </data>
+  <data name="custpage_nodataforreport" page="famreports" xml:space="preserve">
+    <value>Данные отчета для выбранной комбинации фильтров недоступны.</value>
+  </data>
+  <data name="custpage_dropddown_none" page="famreports" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+
+  <!-- Report Status -->
+  <data name="custpage_currentstatus" page="reportstatus" xml:space="preserve">
+    <value>Текущий статус</value>
+  </data>
+  <data name="custpage_resultstatus" page="reportstatus" xml:space="preserve">
+    <value>Какова текущая ситуация?</value>
+  </data>
+  <data name="custpage_reportavailable" page="reportstatus" xml:space="preserve">
+    <value>Результаты отчета доступны</value>
+  </data>
+  <data name="custpage_generatereportassettypes" page="reportstatus" xml:space="preserve">
+    <value>Создание активов для типов активов:</value>
+  </data>
+  <data name="custpage_generatereport" page="reportstatus" xml:space="preserve">
+    <value>Сформировать отчет: </value>
+  </data>
+  <data name="custpage_assetprocessed" page="reportstatus" xml:space="preserve">
+    <value>было обработано (0) активов.</value>
+  </data>
+  <data name="custpage_reportlink" page="reportstatus" xml:space="preserve">
+    <value>здесь</value>
+  </data>
+  <data name="custpage_errorfile" page="reportstatus" xml:space="preserve">
+    <value>Ошибка извлечения информации файла отчета</value>
+  </data>
+  <data name="custpage_generatingreport" page="reportstatus" xml:space="preserve">
+    <value>Формирование отчета для</value>
+  </data>
+  <data name="custpage_reportcomplete" page="reportstatus" xml:space="preserve">
+    <value>Формирование отчета завершено.</value>
+  </data>
+  <data name="custpage_processfailed" page="reportstatus" xml:space="preserve">
+    <value>Сбой обработки.</value>
+  </data>
+
+  <!-- Report Status Depreciation -->
+  <data name="custrecord_reportstatus_title" page="reportstatus2" xml:space="preserve">
+    <value>Статус планового отчета по амортизации актива</value>
+  </data>
+  <data name="custpage_html_currentstatus" page="reportstatus2" xml:space="preserve">
+    <value>Текущий статус</value>
+  </data>
+  <data name="custpage_html_resultstatus" page="reportstatus2" xml:space="preserve">
+    <value>Какова текущая ситуация?</value>
+  </data>
+  <data name="custpage_html_assetprocessed" page="reportstatus2" xml:space="preserve">
+    <value>было обработано (0) активов.</value>
+  </data>
+  <data name="custpage_html_reportavailable" page="reportstatus2" xml:space="preserve">
+    <value>Результаты отчета доступны</value>
+  </data>
+  <data name="custpage_html_reportlink" page="reportstatus2" xml:space="preserve">
+    <value>здесь</value>
+  </data>
+  <data name="custpage_html_generatereport" page="reportstatus2" xml:space="preserve">
+    <value>Формирование отчета для: (0)</value>
+  </data>
+  <data name="custpage_html_processfailed" page="reportstatus2" xml:space="preserve">
+    <value>Сбой обработки.</value>
+  </data>
+  <data name="custpage_html_errorfile" page="reportstatus2" xml:space="preserve">
+    <value>Ошибка извлечения информации файла отчета</value>
+  </data>
+  <data name="custpage_html_assetno" page="reportstatus2" xml:space="preserve">
+    <value>Актив №</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="reportstatus2" xml:space="preserve">
+    <value>Описание актива</value>
+  </data>
+
+
+  <data name="custrecord_famreportshist_title" page="famreportshistory" xml:space="preserve">
+    <value>История отчетов по основным средствам</value>
+  </data>  
+  <data name="custpage_showingdays" page="famreportshistory" xml:space="preserve">
+    <value>Показать отчеты за последние (0) дней.</value>
+  </data>
+  <data name="custpage_group_reporthistory" page="famreportshistory" xml:space="preserve">
+    <value>Отчеты по основным средствам</value>
+  </data>
+  <data name="custpage_reports_dategen" page="famreportshistory" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="custpage_reports_reptype" page="famreportshistory" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="custpage_reports_repstartdate" page="famreportshistory" xml:space="preserve">
+    <value>Дата начала</value>
+  </data>
+  <data name="custpage_reports_rependdate" page="famreportshistory" xml:space="preserve">
+    <value>Дата окончания</value>
+  </data>
+  <data name="custpage_reports_fileoptions" page="famreportshistory" xml:space="preserve">
+    <value>Функции файлов</value>
+  </data>
+  <data name="custpage_reports_viewas" page="famreportshistory" xml:space="preserve">
+    <value>Просмотреть как: </value>
+  </data>
+  <data name="custpage_reports_delete" page="famreportshistory" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="custpage_reports_repowner" page="famreportshistory" xml:space="preserve">
+    <value>Владелец</value>
+  </data>
+  <data name="custpage_error_filepermissioninsuf" page="famreportshistory" xml:space="preserve">
+    <value>У этой роли нет разрешений на просмотр файлов или выше.</value>
+  </data>
+  <data name="custpage_button_all_reports" page="famreportshistory" xml:space="preserve">
+    <value>Показать все отчеты</value>
+  </data>
+  <data name="custpage_button_my_reports" page="famreportshistory" xml:space="preserve">
+    <value>Показать мои отчеты</value>
+  </data>
+
+  <!-- System Setup Page -->
+  <data name="custrecord_systemsetup_title" page="systemsetup" xml:space="preserve">
+    <value>Управление основными средствами</value>
+  </data>
+  <data name="custrecord_systemsetup_settingstab" page="systemsetup" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalktab" page="systemsetup" xml:space="preserve">
+    <value>SuiteTalk</value>
+  </data>
+  <data name="custrecord_systemsetup_featurestab" page="systemsetup" xml:space="preserve">
+    <value>Функции</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalkdesc" page="systemsetup" xml:space="preserve">
+    <value>Введите параметры доступа для использования средства общения SuiteTalk (веб-сервис)</value>
+  </data>
+  <data name="custpage_filtermsselect" page="systemsetup" xml:space="preserve">
+    <value>Выберите</value>
+  </data>
+  <data name="custpage_filtersmethod" page="systemsetup" xml:space="preserve">
+    <value>Метод амортизации</value>
+  </data>
+  <data name="custpage_filterslocation" page="systemsetup" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="custpage_filtersdept" page="systemsetup" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="custpage_filtersclass" page="systemsetup" xml:space="preserve">
+    <value>Класс</value>
+  </data>
+  <data name="custpage_filterstartdate" page="systemsetup" xml:space="preserve">
+    <value>Дата начала периода</value>
+  </data>
+  <data name="custpage_filterenddate" page="systemsetup" xml:space="preserve">
+    <value>Дата окончания периода</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import" page="systemsetup" xml:space="preserve">
+    <value>Запустить серверные сценарии для импорта CSV</value>
+  </data>
+  <data name="custpage_farsetuppostlocation" page="systemsetup" xml:space="preserve">
+    <value>Провести в изменение местоположения</value>
+  </data>
+  <data name="custpage_farsetuppostclass" page="systemsetup" xml:space="preserve">
+    <value>Провести в изменение класса</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment" page="systemsetup" xml:space="preserve">
+    <value>Провести в изменение подразделения</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock" page="systemsetup" xml:space="preserve">
+    <value>Провести в следующий открытый период, если счета к оплате заблокированы</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock_help" page="systemsetup" xml:space="preserve">
+    <value>Отметьте это поле, чтобы разрешить проводку в следующий открытый период, если Счета к оплате заблокированы. Снимите флажок, чтобы разрешить проводку в текущий период, даже если счета к оплате заблокированы.</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock" page="systemsetup" xml:space="preserve">
+    <value>Провести в следующий открытый период, если счета к получению заблокированы</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, чтобы разрешить проводку в следующий открытый период, если Счета к получению заблокированы. Снимите флажок, чтобы разрешить проводку в текущий период, даже если счета к получению заблокированы.</value>
+  </data>
+  <data name="custpage_allow_non_fixedasset_account" page="systemsetup" xml:space="preserve">
+    <value>Разрешить типы счетов неосновных активов</value>
+  </data>
+  <data name="custpage_farsetupsummary" page="systemsetup" xml:space="preserve">
+    <value>Подготовить сводку журналов к</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations" page="systemsetup" xml:space="preserve">
+    <value>Разрешить амортизацию на будущую дату</value>
+  </data>
+  <data name="custpage_allowvalueedit" page="systemsetup" xml:space="preserve">
+    <value>Разрешить изменение номинальной стоимости актива</value>
+  </data>
+  <data name="custpage_allownegativecost" page="systemsetup" xml:space="preserve">
+    <value>Разрешить отрицательную балансовую стоимость актива</value>
+  </data>
+  <data name="custpage_userrole_help1" page="systemsetup" xml:space="preserve">
+    <value>Параметр «Разрешить редактирование значений активов» предоставляет администратору полное разрешение редактировать значения в записях активов.</value>
+  </data>
+  <data name="custpage_userrole_help2" page="systemsetup" xml:space="preserve">
+    <value>Можно выбрать дополнительные роли и разрешить другим пользователям редактировать значения активов.</value>
+  </data>
+  <data name="custpage_userrole" page="systemsetup" xml:space="preserve">
+    <value>Роли пользователя</value>
+  </data>
+  <data name="custpage_propapprovedonly" page="systemsetup" xml:space="preserve">
+    <value>Предлагать только одобренные операции</value>
+  </data>
+  <data name="custpage_followacctperiod" page="systemsetup" xml:space="preserve">
+    <value>Использовать даты учетного периода для амортизации</value>
+  </data>
+  <data name="custpage_allowbypassue" page="systemsetup" xml:space="preserve">
+    <value>Обход сценариев события пользователя пользовательских записей во время амортизации</value>
+  </data>
+  <data name="custpage_constrainal" page="systemsetup" xml:space="preserve">
+    <value>Ограничить альтернативный срок службы актива</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction" page="systemsetup" xml:space="preserve">
+    <value>Использовать пользовательские журналы</value>
+  </data>
+  <data name="custpage_adminallreports" page="systemsetup" xml:space="preserve">
+    <value>Разрешить администраторам просматривать все отчеты</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount" page="systemsetup" xml:space="preserve">
+    <value>Частичное списание на счет амортизации</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym" page="systemsetup" xml:space="preserve">
+    <value>Целое число валюты  (0 дес. зн.)</value>
+  </data>
+  <data name="custpage_farsetupresrej" page="systemsetup" xml:space="preserve">
+    <value>Ограничить возможность отклонять предложения</value>
+  </data>
+  <data name="custpage_farsetupreportfolder" page="systemsetup" xml:space="preserve">
+    <value>Папка, которая используется для отчетности (внутренний Ид)</value>
+  </data>
+  <data name="custpage_farsetupdisposalform" page="systemsetup" xml:space="preserve">
+    <value>Форма счета-фактуры для ликвидации актива (внутренний Ид)</value>
+  </data>
+  <data name="custpage_farsetupsubsidsenabled" page="systemsetup" xml:space="preserve">
+    <value>Дочерние организации</value>
+  </data>
+  <data name="custpage_farsetupdeptsenabled" page="systemsetup" xml:space="preserve">
+    <value>Отделы</value>
+  </data>
+  <data name="custpage_farsetuplocationsenabled" page="systemsetup" xml:space="preserve">
+    <value>Местоположения</value>
+  </data>
+  <data name="custpage_farsetupclassesenabled" page="systemsetup" xml:space="preserve">
+    <value>Классы</value>
+  </data>
+  <data name="custpage_farsetupjobsenabled" page="systemsetup" xml:space="preserve">
+    <value>Работы</value>
+  </data>
+  <data name="custpage_farsetupmulticurrenabled" page="systemsetup" xml:space="preserve">
+    <value>Множественные валюты</value>
+  </data>
+  <data name="custpage_admin_only_field" page="systemsetup" xml:space="preserve">
+    <value>Только админ.</value>
+  </data>
+  <data name="custpage_html_adminonly" page="systemsetup" xml:space="preserve">
+    <value>Только администраторы имеют доступ к этой странице.</value>
+  </data>
+  <data name="custpage_dropdown_none" page="systemsetup" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="custpage_dropdown_parent" page="systemsetup" xml:space="preserve">
+    <value>Родительский элемент</value>
+  </data>
+  <data name="custpage_dropdown_subcategory" page="systemsetup" xml:space="preserve">
+    <value>Подкатегория</value>
+  </data>
+  <data name="custpage_dropdown_assettype" page="systemsetup" xml:space="preserve">
+    <value>Тип актива</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import_help" page="systemsetup" xml:space="preserve">
+  <value>Не устанавливайте этот флажок, если выполняется импорт записей активов в середине срока службы.
+Если поле отмечено, и также отмечено поле «Запустить серверный SuiteScript и рабочие процессы» (Настройки &gt; Импорт &gt; Параметры CSV-импорта), то информация, в том числе «Прогрессивная амортизация», «Дата последней амортизации» и «Последний период амортизации» будет заполняться автоматически значением 0 по умолчанию, даже если в файл импорта включены фактические суммы.</value>
+  </data>
+  <data name="custpage_farsetuppostlocation_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, если активы будут переданы с изменением местоположения, с сопровождающимися журнальными записями.</value>
+  </data>
+  <data name="custpage_farsetuppostclass_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, если активы будут переданы с изменением класса, с сопровождающимися журнальными записями.</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, если активы будут переданы с изменением подразделения, с сопровождающимися журнальными записями.</value>
+  </data>
+  <data name="custpage_constrainal_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, чтобы ограничить добавление в запись актива метода альтернативной амортизации, чье значение срока службы актива (AL) больше, чем срок службы актива.</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, чтобы провести сумму частичного списания на счет амортизации. Снимите флажок, чтобы провести сумму частичного списания на счет актива.</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym_help" page="systemsetup" xml:space="preserve">
+    <value>Введите один или несколько символов валюты (например, JPY, разделяйте несколько значений запятой) для валют без десятичных знаков.</value>
+  </data>
+  <data name="custpage_farsetupresrej_help" page="systemsetup" xml:space="preserve">
+    <value>Если отмечена эта опция, кнопка «Отклонить предложения» будет отображаться на странице «Предложение по активу», когда на нее заходят пользователи в роли администратора.</value>
+  </data>
+  <data name="custpage_farsetupreportfolder_help" page="systemsetup" xml:space="preserve">
+    <value>Введите внутренний идентификатор папки отчетов реестра основных средств в хранилище файлов, где сохраняются отчеты по основным средствам. Чтобы увидеть внутренний идентификатор папки отчетов реестра основных средств в учетной записи NetSuite:
+1. Перейдите в Документы &gt; Файлы &gt; Хранилище файл.
+2. Нажмите SuiteBundles.
+3. Нажмите пакет 35405.
+4. Нажмите папку src.</value>
+  </data>
+  <data name="custpage_farsetupdisposalform_help" page="systemsetup" xml:space="preserve">
+    <value>Введите внутренний идентификатор предпочитаемой формы счета-фактуры для создания записи счета-фактуры на продажу при ликвидации актива путем продажи. Если поле оставлено пустым, в качестве формы счета-фактуры будет использоваться предпочитаемая форма по умолчанию.</value>
+  </data>
+  <data name="custpage_farsetupsummary_help" page="systemsetup" xml:space="preserve">
+    <value>Выберите вариант «Подготовить сводку журналов к»:
+Родительский элемент - Свести значения подактивов к родительскому элементу и создать одну журнальную запись, включающую родительские и дочерние значения за период.
+«Подкатегория» - Свести значения к подкатегории и создать одну журнальную запись на подкатегорию за период. Этот вариант можно выбрать, если реализованы «Категории ремонта и обслуживания» и «Подкатегории ремонта и обслуживания».
+«Тип актива» - Свести значения по типу актива.</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, чтобы разрешить амортизацию активов до даты амортизации за пределами текущего периода. Снимите флажок, чтобы амортизировать активы только в текущем периоде.</value>
+  </data>
+  <data name="custpage_allowvalueedit_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, чтобы дать администраторам полное разрешение редактировать значения в записях активов.
+Если этот флажок не установлен, записи активов нельзя редактировать. См. раздел «Ограничение редактирования значений активов» для списка полей, которые нельзя редактировать.
+Чтобы разрешить другим пользователям редактировать значения активов, выберите дополнительные роли в поле «Роли пользователя».</value>
+  </data>
+  <data name="custpage_allownegativecost_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, чтобы разрешить администраторам (и другим ролям с правом редактировать значения активов) вводить отрицательные значения для первоначальной стоимости актива, текущей стоимости, ликвидационной стоимости — в записях активов.</value>
+  </data>
+  <data name="custpage_userrole_help" page="systemsetup" xml:space="preserve">
+    <value>Включено, когда отмечено поле «Разрешить изменение номинальной стоимости актива». Чтобы выбрать две или несколько ролей, нажмите и удерживайте клавишу CTRL, пока вы нажимаете на каждую роль в поле «Роли пользователя».</value>
+  </data>
+  <data name="custpage_propapprovedonly_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, если вы хотите предлагать активы только из утвержденных операций. Снимите флажок, чтобы включить автоматическое предложение активов из всех новых операций, проведенных по счету главной книги, вне зависимости от статуса операции (например, «утверждено» или «ожидается утверждение»).</value>
+  </data>
+  <data name="custpage_followacctperiod_help" page="systemsetup" xml:space="preserve">
+    <value>Включите это параметр, чтобы использовать даты учетного периода для журнальных записей амортизации. Это применяется, если формат периода не является календарными месяцами.</value>
+  </data>
+  <data name="custpage_allowbypassue_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, чтобы обойти сценарии события пользователя и рабочие процессы для пользовательских записей во время процесса амортизации. Снимите флажок, если вы выполняете пользовательские сценарии и/или рабочие процессы на записях, которые будут обновлены в процессе амортизации.</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, чтобы использовать пользовательскую форму журнальной записи</value>
+  </data>
+  <data name="custpage_adminallreports_help" page="systemsetup" xml:space="preserve">
+    <value>Установите флажок, чтобы разрешить администраторам просматривать отчеты, сформированные другими пользователями</value>
+  </data>
+  
+  <!-- Asset Split -->
+  <data name="custrecord_assetsplit_title" page="assetsplit" xml:space="preserve">
+    <value>Разделение актива</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetsplit" xml:space="preserve">
+    <value>Основная информация</value>
+  </data>
+  <data name="custpage_group_splitdetails" page="assetsplit" xml:space="preserve">
+    <value>Подробное описание разделения</value>
+  </data>
+  <data name="custpage_newlbl" page="assetsplit" xml:space="preserve">
+    <value>Значения нового актива:</value>
+  </data>
+  <data name="custpage_oldlbl" page="assetsplit" xml:space="preserve">
+    <value>Значения старого актива:</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetsplit" xml:space="preserve">
+    <value>Методы налогообложения</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetsplit" xml:space="preserve">
+    <value>Бухгалтерская книга</value>
+  </data>
+  <data name="custpage_altmethod" page="assetsplit" xml:space="preserve">
+    <value>Изменить метод</value>
+  </data>
+  <data name="custpage_assetid" page="assetsplit" xml:space="preserve">
+    <value>Ид/Название актива</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetsplit" xml:space="preserve">
+    <value>Описание актива</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetsplit" xml:space="preserve">
+    <value>Серийный номер актива</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetsplit" xml:space="preserve">
+    <value>Альтернативный номер актива</value>
+  </data>
+  <data name="custpage_assettype" page="assetsplit" xml:space="preserve">
+    <value>Тип актива</value>
+  </data>
+  <data name="custpage_assetcost" page="assetsplit" xml:space="preserve">
+    <value>Первоначальная стоимость</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetsplit" xml:space="preserve">
+    <value>Текущая стоимость</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetsplit" xml:space="preserve">
+    <value>Ликвидационная стоимость</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetsplit" xml:space="preserve">
+    <value>Метод амортизации</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetsplit" xml:space="preserve">
+    <value>Срок службы актива</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetsplit" xml:space="preserve">
+    <value>Текущая балансовая стоимость</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetsplit" xml:space="preserve">
+    <value>Амортизация к настоящему времени</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetsplit" xml:space="preserve">
+    <value>Последний период амортизации</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetsplit" xml:space="preserve">
+    <value>Сумма последней амортизации</value>
+  </data>
+  <data name="custpage_assetdeprstartdate" page="assetsplit" xml:space="preserve">
+    <value>Дата начала амортизации</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetsplit" xml:space="preserve">
+    <value>Дата последней амортизации</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetsplit" xml:space="preserve">
+    <value>Статус актива</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetsplit" xml:space="preserve">
+    <value>Количество</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetsplit" xml:space="preserve">
+    <value>Дочерняя организация</value>
+  </data>
+  <data name="custpage_splitquantity" page="assetsplit" xml:space="preserve">
+    <value>Количество разделения</value>
+  </data>
+  <data name="splitquantity_help" page="assetsplit" xml:space="preserve">
+    <value>Введите значение, меньшее чем количество активов.</value>
+  </data>
+  <!--help texts -->
+  <data name="custpage_newqty_help" page="assetsplit" xml:space="preserve">
+    <value>Количество, отдельное от оригинального актива. Теперь это станет количеством нового актива.</value>
+  </data>
+  <data name="custpage_newoc_help" page="assetsplit" xml:space="preserve">
+    <value>Оригинальная (закупочная) цена по умолчанию для нового актива на основании оригинальной цены оригинального актива и разделенного количества. Введите новое значение, если вы не хотите использовать оригинальную цену по умолчанию.</value>
+  </data>
+  <data name="custpage_newcc_help" page="assetsplit" xml:space="preserve">
+    <value>Текущая цена по умолчанию для нового актива на основании текущей цены оригинального актива и разделенного количества. Введите новое значение, если вы не хотите использовать текущую цену по умолчанию.</value>
+  </data>
+  <data name="custpage_newnbv_help" page="assetsplit" xml:space="preserve">
+    <value>Текущая балансовая стоимость для нового актива по умолчанию основывается на балансовой стоимости оригинального актива и разделенного количества. Введите новое значение, если вы не хотите использовать балансовую стоимость по умолчанию.  Обратите внимание, что сумма балансовой стоимости плюс амортизация к настоящему времени должна равняться текущей стоимости.</value>
+  </data>
+  <data name="custpage_newdeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>Общая сумма амортизации по умолчанию, начисленная на новый актив к настоящему времени основан на разделенном количестве и суммы амортизации оригинального актива к настоящему времени. Введите новое значение, если вы не хотите использовать общую сумму амортизации по умолчанию. Обратите внимание, что сумма балансовой стоимости плюс амортизация к настоящему времени должна равняться текущей стоимости.</value>
+  </data>
+  <data name="custpage_newrv_help" page="assetsplit" xml:space="preserve">
+    <value>Стоимость нового актива по умолчанию на конец срока службы. Значение основано на разделенном количестве и ликвидационной стоимости оригинального актива.  Введите новое значение, если вы не хотите использовать ликвидационную стоимость по умолчанию.</value>
+  </data>
+  <data name="custpage_newlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>Сумма последней амортизации по умолчанию для нового актива на основании разделенного количества и суммы последней амортизации оригинального актива. Введите новое значение, если вы не хотите использовать сумму последней амортизации по умолчанию.</value>
+  </data>
+  <data name="custpage_oldqty_help" page="assetsplit" xml:space="preserve">
+    <value>Оставшееся количество оригинального актива.</value>
+  </data>
+  <data name="custpage_oldoc_help" page="assetsplit" xml:space="preserve">
+    <value>Оставшаяся исходная стоимость актива на основании разделенного количества.</value>
+  </data>
+  <data name="custpage_oldcc_help" page="assetsplit" xml:space="preserve">
+    <value>Текущая цена по умолчанию для нового актива на основании текущей цены оригинального актива и разделенного количества.</value>
+  </data>
+  <data name="custpage_oldnbv_help" page="assetsplit" xml:space="preserve">
+    <value>Оставшаяся балансовая стоимость оригинального актива на основании разделенного количества.</value>
+  </data>
+  <data name="custpage_olddeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>Оставшаяся сумма амортизации, начисленная на оригинальный актив к настоящему времени на основании разделенного количества.</value>
+  </data>
+  <data name="custpage_oldrv_help" page="assetsplit" xml:space="preserve">
+    <value>Оставшаяся стоимость оригинального актива на конец срока службы. Значение на основании разделенного количества.</value>
+  </data>
+  <data name="custpage_oldlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>Оставшаяся сумма последней амортизации для оригинального актива на основании разделенного количества.</value>
+  </data>
+
+  <!-- Asset Disposal -->
+  <data name="custrecord_assetdisposal_title" page="assetdisposal" xml:space="preserve">
+    <value>Продажа/ликвидация актива</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetdisposal" xml:space="preserve">
+    <value>Основная информация</value>
+  </data>
+  <data name="custpage_group_disposaldetail" page="assetdisposal" xml:space="preserve">
+    <value>Подробные данные о ликвидации</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetdisposal" xml:space="preserve">
+    <value>Методы налогообложения</value>
+  </data>
+  <data name="custpage_assetid" page="assetdisposal" xml:space="preserve">
+    <value>Ид/Название актива</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetdisposal" xml:space="preserve">
+    <value>Выберите идентификатор или название актива, который необходимо ликвидировать.</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetdisposal" xml:space="preserve">
+    <value>Описание актива</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetdisposal" xml:space="preserve">
+    <value>Серийный номер актива</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetdisposal" xml:space="preserve">
+    <value>Альтернативный номер актива</value>
+  </data>
+  <data name="custpage_assettype" page="assetdisposal" xml:space="preserve">
+    <value>Тип актива</value>
+  </data>
+  <data name="custpage_assetcost" page="assetdisposal" xml:space="preserve">
+    <value>Первоначальная стоимость</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetdisposal" xml:space="preserve">
+    <value>Текущая стоимость</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetdisposal" xml:space="preserve">
+    <value>Ликвидационная стоимость</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetdisposal" xml:space="preserve">
+    <value>Метод амортизации</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetdisposal" xml:space="preserve">
+    <value>Срок службы актива</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetdisposal" xml:space="preserve">
+    <value>Текущая балансовая стоимость</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetdisposal" xml:space="preserve">
+    <value>Амортизация к настоящему времени</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetdisposal" xml:space="preserve">
+    <value>Последний период амортизации</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetdisposal" xml:space="preserve">
+    <value>Сумма последней амортизации</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetdisposal" xml:space="preserve">
+    <value>Дата последней амортизации</value>
+  </data>
+  <data name="custpage_assetdeprperiod" page="assetdisposal" xml:space="preserve">
+    <value>Период амортизации</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetdisposal" xml:space="preserve">
+    <value>Метод пересмотра</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetdisposal" xml:space="preserve">
+    <value>Статус актива</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetdisposal" xml:space="preserve">
+    <value>Количество</value>
+  </data>
+  <data name="custpage_disposaldate" page="assetdisposal" xml:space="preserve">
+    <value>Дата ликвидации</value>
+  </data>
+  <data name="custpage_disposaltype" page="assetdisposal" xml:space="preserve">
+    <value>Тип ликвидации</value>
+  </data>
+  <data name="custpage_assetquantdisposed" page="assetdisposal" xml:space="preserve">
+    <value>Ликвидированное количество</value>
+  </data>
+  <data name="custpage_disposalitem" page="assetdisposal" xml:space="preserve">
+    <value>Продаваемая номенклатура</value>
+  </data>
+  <data name="custpage_customer" page="assetdisposal" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+  <data name="custpage_salesamount" page="assetdisposal" xml:space="preserve">
+    <value>Сумма продаж</value>
+  </data>
+  <data name="custpage_taxcode" page="assetdisposal" xml:space="preserve">
+    <value>Код налога с продаж</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetdisposal" xml:space="preserve">
+    <value>Дочерняя организация</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetdisposal" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdisposal" xml:space="preserve">
+    <value>Бухгалтерская книга</value>
+  </data>
+  <data name="custpage_altmethod" page="assetdisposal" xml:space="preserve">
+    <value>Изменить метод</value>
+  </data>
+  <data name="custpage_html_assetdisposed" page="assetdisposal" xml:space="preserve">
+    <value>НЕЛИКВИДИРОВАННЫЙ АКТИВ!</value>
+  </data>
+  <data name="custpage_html_invoicefail" page="assetdisposal" xml:space="preserve">
+    <value>Сбой при создании счета-фактуры для продажи актива.</value>
+  </data>
+  <data name="custpage_html_checksetup" page="assetdisposal" xml:space="preserve">
+    <value>Проверьте настройку записи актива на несовместимые и/или отсутствующие данные.</value>
+  </data>
+  <data name="custpage_html_journalfail" page="assetdisposal" xml:space="preserve">
+    <value>Журнальная запись для продажи актива не создана.</value>
+  </data>
+  <data name="custpage_html_journal_writeofffail" page="assetdisposal" xml:space="preserve">
+    <value>Журнальная запись для списания актива не создана.</value>
+  </data>
+  <data name="custpage_assetquantdisposed_help" page="assetdisposal" xml:space="preserve">
+    <value>Ликвидированное количество не может быть больше количества активов.</value>
+  </data>
+  <data name="custpage_disposaldate_help" page="assetdisposal" xml:space="preserve">
+    <value>Дата ликвидации не может быть раньше последней даты амортизации.</value>
+  </data>
+  <data name="custpage_disposalitem_help" page="assetdisposal" xml:space="preserve">
+    <value>Можно выбрать только нескладскую номенклатуру для продажи или перепродажи.</value>
+  </data>
+  <data name="custpage_filterslocation_help" page="assetdisposal" xml:space="preserve">
+    <value>Если включена функция «Множественные склады» (MLI), для ликвидации актива через продажу необходимо установить значение «Местоположение». Если доступно, значение местоположения копируется из записи FAM - Актив по умолчанию, его нельзя редактировать для предупреждения неотслеживаемых переводов между местоположениями. Если недоступно из записи актива, необходимо выбрать значение в списке «Местоположение» на странице «Продажа/ликвидация».</value>
+  </data>
+  <data name="custpage_salesamount_help" page="assetdisposal" xml:space="preserve">
+    <value>Сумма продажи должна быть больше нуля.</value>
+  </data>
+  <data name="custpage_taxcode_help" page="assetdisposal" xml:space="preserve">
+    <value>Выберите код налога, применяемый в дочерней организации клиента.</value>
+  </data>
+  <data name="custpage_salememo" page="assetdisposal" xml:space="preserve">
+    <value>Продажа актива (0)</value>
+  </data>
+  <data name="custpage_writeoffmemo" page="assetdisposal" xml:space="preserve">
+    <value>Списание актива (0)</value>
+  </data>
+  <data name="custpage_nodispacc" page="assetdisposal" xml:space="preserve">
+     <value>Актив нельзя ликвидировать, потому что не настроены следующие счета ликвидации для: (0)</value>
+  </data>
+  <data name="custpage_inactiveacc" page="assetdisposal" xml:space="preserve">
+     <value>Актив нельзя ликвидировать, потому что неактивны следующие счета ликвидации для: (0)</value>
+  </data>
+  <data name="custpage_invoicefail" page="assetdisposal" xml:space="preserve">
+     <value>Сбой при создании счета-фактуры</value>
+  </data>
+  <data name="custpage_quantityerror" page="assetdisposal" xml:space="preserve">
+     <value>Количество для ликвидации должно быть от (0) до (1)</value>
+  </data>
+
+  <!-- Asset Depreciation Schedule Report V2 (Portrait) -->
+  <data name="custrecord_deprecationschedule2_title" page="depreciationschedule2" xml:space="preserve">
+    <value>Плановый отчет по амортизации актива</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule2" xml:space="preserve">
+    <value>Балансовая стоимость</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>Периодическая амортизация</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule2" xml:space="preserve">
+    <value>Тип(ы) актива</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule2" xml:space="preserve">
+    <value>Дочерние организации</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule2" xml:space="preserve">
+    <value>Включить дочерние объекты</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule2" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule2" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule2" xml:space="preserve">
+    <value>Класс</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule2" xml:space="preserve">
+    <value>Выберите</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>Метод амортизации</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule2" xml:space="preserve">
+    <value>Дата начала</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule2" xml:space="preserve">
+    <value>Дата окончания</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule2" xml:space="preserve">
+    <value>Все активы</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule2" xml:space="preserve">
+    <value>Все активы, кроме сданных в аренду</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule2" xml:space="preserve">
+    <value>Только сданные в аренду</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>Метод учета</value>
+  </data>
+  <data name="custpage_html_asset" page="depreciationschedule2" xml:space="preserve">
+    <value>Актив</value>
+  </data>
+  <data name="custpage_message_filestorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>Невозможно сохранить временные данные, требуемые для отчета (nlapiSubmitFile)</value>
+  </data>
+  <data name="custpage_message_temporarydata" page="depreciationschedule2" xml:space="preserve">
+    <value>Временные данные для планового отчета по амортизации для Управления основными средствами (FAM)</value>
+  </data>
+  <data name="custpage_html_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>График амортизации актива - амортизация за период</value>
+  </data>
+  <data name="custpage_html_nbv" page="depreciationschedule2" xml:space="preserve">
+    <value>График амортизации актива - остаточная стоимость</value>
+  </data>
+  <data name="custpage_html_periodtotal" page="depreciationschedule2" xml:space="preserve">
+    <value>Всего за период</value>
+  </data>
+  <data name="custpage_html_assetno" page="depreciationschedule2" xml:space="preserve">
+    <value>Актив №</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="depreciationschedule2" xml:space="preserve">
+    <value>Описание актива</value>
+  </data>
+  <data name="custpage_deprschedreport" page="depreciationschedule2" xml:space="preserve">
+    <value>Плановый отчет по амортизации для Управления основными средствами (FAM)</value>
+  </data>
+  <data name="custpage_html_reporttruncated" page="depreciationschedule2" xml:space="preserve">
+    <value>Отчет обрезан, достигнут максимальный объем хранения.</value>
+  </data>
+  <data name="custpage_message_reportstorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>Невозможно сохранить результаты отчета (nlapiSubmitFile)</value>
+  </data>
+  <data name="custpage_html_fam" page="depreciationschedule2" xml:space="preserve">
+    <value>Управление основными средствами (FAM)</value>
+  </data>
+  <data name="custpage_html_noassetfound" page="depreciationschedule2" xml:space="preserve">
+    <value>Для планового отчета не найдено активов</value>
+  </data>
+
+  <!-- Asset Creation Status -->
+  <data name="custrecord_assetcreation_title" page="assetcreation" xml:space="preserve">
+    <value>Создание нового актива</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetcreation" xml:space="preserve">
+    <value>Тип(ы) актива</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetcreation" xml:space="preserve">
+    <value>Дочерняя организация</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetcreation" xml:space="preserve">
+    <value>Включить дочерние объекты</value>
+  </data>
+  <data name="custrecord_creationstatus_title" page="assetcreation" xml:space="preserve">
+    <value>Статус создания актива</value>
+  </data>
+  <data name="custrecord_html_currentstatus" page="assetcreation" xml:space="preserve">
+    <value>Текущий статус</value>
+  </data>
+  <data name="custrecord_resultstatus" page="assetcreation" xml:space="preserve">
+    <value>Какова текущая ситуация?</value>
+  </data>
+  <data name="custrecord_generationcomplete" page="assetcreation" xml:space="preserve">
+    <value>Формирование актива завершено.</value>
+  </data>
+  <data name="custrecord_creatingasset" page="assetcreation" xml:space="preserve">
+    <value>Создание активов для типов активов: (0)</value>
+  </data>
+  <data name="custrecord_transactionprocessed" page="assetcreation" xml:space="preserve">
+    <value>(0) операций обработано, создано (1) новых активов.</value>
+  </data>
+  <data name="custrecord_allassettypes" page="assetcreation" xml:space="preserve">
+    <value>Все типы активов</value>
+  </data>
+
+  <!-- Asset Revaluation -->
+  <data name="custrecord_assetrevaluation_title" page="assetrevaluation" xml:space="preserve">
+    <value>Переоценка актива</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetrevaluation" xml:space="preserve">
+    <value>Основная информация</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetrevaluation" xml:space="preserve">
+    <value>Выберите идентификатор или название актива, который необходимо переоценить.</value>
+  </data>
+  <data name="custpage_assetid" page="assetrevaluation" xml:space="preserve">
+    <value>Ид/Название актива</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetrevaluation" xml:space="preserve">
+    <value>Описание актива</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetrevaluation" xml:space="preserve">
+    <value>Серийный номер актива</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetrevaluation" xml:space="preserve">
+    <value>Альтернативный номер актива</value>
+  </data>
+  <data name="custpage_assettype" page="assetrevaluation" xml:space="preserve">
+    <value>Тип актива</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetrevaluation" xml:space="preserve">
+    <value>Текущая стоимость</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Ликвидационная стоимость</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetrevaluation" xml:space="preserve">
+    <value>Метод амортизации</value>
+  </data>
+  <data name="custpage_depmethodlbl" page="clientpage" xml:space="preserve">
+    <value>Метод амортизации</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>Срок службы актива</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Текущая балансовая стоимость</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetrevaluation" xml:space="preserve">
+    <value>Метод пересмотра</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetrevaluation" xml:space="preserve">
+    <value>Статус актива</value>
+  </data>
+  <data name="custpage_writedownamount" page="assetrevaluation" xml:space="preserve">
+    <value>Сумма частичного списания</value>
+  </data>
+  <data name="custpage_newresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Скорректированная ликвидационная стоимость</value>
+  </data>
+  <data name="custpage_newlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>Скорректированный срок службы</value>
+  </data>
+  <data name="custpage_newdeprmethod" page="assetrevaluation" xml:space="preserve">
+    <value>Скорректированный метод амортизации</value>
+  </data>
+  <data name="custpage_revaluationmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Ссылка на операцию</value>
+  </data>
+  <data name="custpage_revaluationdate" page="assetrevaluation" xml:space="preserve">
+    <value>Дата операции</value>
+  </data>
+  <data name="custpage_lastdeprperiod" page="clientpage" xml:space="preserve">
+    <value>Последний период амортизации</value>
+  </data>
+  <data name="custpage_residualvalueerrror" page="assetrevaluation" xml:space="preserve">
+    <value>Ликвидационная стоимость превышает первоначальную стоимость или текущую стоимость</value>
+  </data>
+  <data name="custpage_defaultrevmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Переоценка актива (FAM)</value>
+  </data>
+  <data name="custpage_defaultwdmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Частичное списание актива (FAM)</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetrevaluation" xml:space="preserve">
+    <value>Бухгалтерские книги</value>
+  </data>
+  <data name="custpage_writedownperc" page="assetrevaluation" xml:space="preserve">
+    <value>% частичного списания</value>
+  </data>
+  <data name="custpage_newdeprmethod_help" page="assetrevaluation" xml:space="preserve">
+    <value>Новый метод амортизации для использования при амортизации актива после переоценки.</value>
+  </data>
+  <data name="custpage_newlifetime_help" page="assetrevaluation" xml:space="preserve">
+    <value>Новый срок службы актива после переоценки.</value>
+  </data>
+  <data name="custpage_newresidualvalue_help" page="assetrevaluation" xml:space="preserve">
+    <value>Новая ликвидационная стоимость актива после переоценки.</value>
+  </data>
+  <data name="custpage_writedownperc_help" page="assetrevaluation" xml:space="preserve">
+    <value>Введите для автоматического заполнения суммы частичного списания в подсписке ниже.</value>
+  </data>
+  <data name="custpage_revaluationdate_help" page="assetrevaluation" xml:space="preserve">
+    <value>Введите дату журнальной записи для этой операции.</value>
+  </data>
+  <data name="custpage_revaluationmemo_help" page="assetrevaluation" xml:space="preserve">
+    <value>Введите ссылку для определения журнальной записи для этой операции.</value>
+  </data>
+  <data name="custpage_writedownamount_help" page="assetrevaluation" xml:space="preserve">
+    <value>Введите сумму частичного списания. Эта сумма вычитается из текущей балансовой стоимости</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetrevaluation" xml:space="preserve">
+    <value>Выберите бухгалтерские книги, связанные с этим активом.</value>
+  </data>
+  <data name="custpage_groupdeprerror" page="assetrevaluation" xml:space="preserve">
+      <value>Переоценка невозможна для альтернативной амортизации группового начисления амортизации</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>Переоценка невозможна для записей с датами переоценки ранее даты последней амортизации.</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>Переоценка невозможна для записей с датами переоценки ранее даты последней амортизации.</value>
+  </data>
+  <data name="custpage_wdacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Счет частичного списания отсутствует или неактивен</value>
+  </data>
+  <data name="custpage_assetacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Счет активов отсутствует или неактивен</value>
+  </data>
+  <data name="custpage_depracct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Счет амортизации отсутствует или неактивен</value>
+  </data>
+  <data name="custpage_deprchargeacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Счет начисления амортизации отсутствует или неактивен</value>
+  </data>
+  <data name="custpage_plugin_not_parent_asset" page="assetrevaluation" xml:space="preserve">
+      <value>Предоставленный идентификатор записи актива не является родительским активом метода налогообложения для переоценки.</value>
+  </data>
+  <data name="custpage_no_tax_or_asset" page="assetrevaluation" xml:space="preserve">
+      <value>Необходимо предоставить идентификатор записи актива или идентификатор метода налогообложения для переоценки.</value>
+  </data>
+
+
+
+  <!-- Asset report -->
+  <data name="custrecord_assetregister_title" page="assetregister" xml:space="preserve">
+    <value>Отчет по реестру активов</value>
+  </data>
+  <data name="custrecord_assetregisterdetail_title" page="assetregister" xml:space="preserve">
+    <value>Подробный отчет по реестру активов</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetregister" xml:space="preserve">
+    <value>Тип(ы) актива</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetregister" xml:space="preserve">
+    <value>Дочерняя организация</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetregister" xml:space="preserve">
+    <value>Включить дочерние объекты</value>
+  </data>
+  <data name="custpage_filtermsselect" page="assetregister" xml:space="preserve">
+    <value>Выберите</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetregister" xml:space="preserve">
+    <value>Метод амортизации</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetregister" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetregister" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetregister" xml:space="preserve">
+    <value>Класс</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetregister" xml:space="preserve">
+    <value>Дата начала периода</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetregister" xml:space="preserve">
+    <value>Дата окончания периода</value>
+  </data>
+  <data name="custpage_html_fam" page="assetregister" xml:space="preserve">
+    <value>Управление основными средствами</value>
+  </data>
+  <data name="custpage_html_transdate" page="assetregister" xml:space="preserve">
+    <value>Дата операции</value>
+  </data>
+  <data name="custpage_html_cost" page="assetregister" xml:space="preserve">
+    <value>Стоимость</value>
+  </data>
+  <data name="custpage_html_accdepreciation" page="assetregister" xml:space="preserve">
+    <value>Накопленный износ</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetregister" xml:space="preserve">
+    <value>Балансовая стоимость</value>
+  </data>
+  <data name="custpage_html_acquisitiondate" page="assetregister" xml:space="preserve">
+    <value>Дата приобретения</value>
+  </data>
+  <data name="custpage_html_assettype" page="assetregister" xml:space="preserve">
+    <value>Тип актива</value>
+  </data>
+  <data name="custpage_html_assetmanagement" page="assetregister" xml:space="preserve">
+    <value>(0) Управление активами</value>
+  </data>
+  <data name="custpage_html_assetname" page="assetregister" xml:space="preserve">
+    <value>Название актива</value>
+  </data>
+  <data name="custpage_html_description" page="assetregister" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="custpage_html_additions" page="assetregister" xml:space="preserve">
+    <value>Добавления</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetregister" xml:space="preserve">
+    <value>Амортизация</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetregister" xml:space="preserve">
+    <value>Все активы</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetregister" xml:space="preserve">
+    <value>Все активы, кроме сданных в аренду</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetregister" xml:space="preserve">
+    <value>Только сданные в аренду</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetregister" xml:space="preserve">
+    <value>Метод учета</value>
+  </data>
+  <data name="custrecord_html_assetregisterdetail" page="assetregister" xml:space="preserve">
+    <value>Подробный реестр активов</value>
+  </data>
+
+  <!--System Status -->
+  <data name="custrecord_systemstatus_title" page="systemstatus" xml:space="preserve">
+    <value>Статус амортизации актива</value>
+  </data>
+  <data name="custpage_currentstatus" page="systemstatus" xml:space="preserve">
+    <value>Текущий статус</value>
+  </data>
+  <data name="custpage_resultstatus" page="systemstatus" xml:space="preserve">
+    <value>Какова текущая ситуация?</value>
+  </data>
+  <data name="custpage_depreciatestatus1" page="systemstatus" xml:space="preserve">
+    <value>Амортизация типов активов:</value>
+  </data>
+  <data name="custpage_deprcomplete" page="systemstatus" xml:space="preserve">
+    <value>Завершено</value>
+  </data>
+  
+  <!--Generate History -->
+  <data name="custrecord_generatehistory_title" page="generatehistory" xml:space="preserve">
+    <value>Создать журнал актива</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="generatehistory" xml:space="preserve">
+    <value>Тип(ы) актива</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="generatehistory" xml:space="preserve">
+    <value>Дочерняя организация</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="generatehistory" xml:space="preserve">
+    <value>Включить дочерние объекты</value>
+  </data>
+  <data name="custpage_filtersmethod" page="generatehistory" xml:space="preserve">
+    <value>Метод амортизации</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod1" page="generatehistory" xml:space="preserve">
+    <value>Метод амортизации 1</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod2" page="generatehistory" xml:space="preserve">
+    <value>Метод амортизации 2</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod3" page="generatehistory" xml:space="preserve">
+    <value>Метод амортизации 3</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod4" page="generatehistory" xml:space="preserve">
+    <value>Метод амортизации 4</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod5" page="generatehistory" xml:space="preserve">
+    <value>Метод амортизации 5</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod6" page="generatehistory" xml:space="preserve">
+    <value>Метод амортизации 6</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod7" page="generatehistory" xml:space="preserve">
+    <value>Метод амортизации 7</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod8" page="generatehistory" xml:space="preserve">
+    <value>Метод амортизации 8</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod9" page="generatehistory" xml:space="preserve">
+    <value>Метод амортизации 9</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_ok" page="depreciationmethod" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="custpage_error" page="depreciationmethod" xml:space="preserve">
+    <value>ОШИБКА</value>
+  </data>
+
+  <!-- Asset Depreciation -->
+  <data name="custrecord_assetdepreciation_title" page="assetdepreciation" xml:space="preserve">
+    <value>Амортизировать активы</value>
+  </data>
+  <data name="custfield_errormessage" page="assetdepreciation" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="custpage_futuredateerror" page="assetdepreciation" xml:space="preserve">
+    <value>Дата периода амортизации не может быть будущим периодом.</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetdepreciation" xml:space="preserve">
+    <value>Тип(ы) актива</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetdepreciation" xml:space="preserve">
+    <value>Дочерняя организация</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetdepreciation" xml:space="preserve">
+    <value>Включить дочерние объекты</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdepreciation" xml:space="preserve">
+    <value>Бухгалтерские книги</value>
+  </data>
+  <data name="custpage_deprperiod" page="assetdepreciation" xml:space="preserve">
+    <value>Период амортизации</value>
+  </data>
+  <data name="custpage_postperiod" page="assetdepreciation" xml:space="preserve">
+    <value>Период разнесения</value>
+  </data>
+  <data name="custpage_deprmemo" page="assetdepreciation" xml:space="preserve">
+    <value>Ссылка на амортизацию</value>
+  </data>
+  <data name="custpage_assetdepreciation" page="assetdepreciation" xml:space="preserve">
+    <value>Амортизация актива</value>
+  </data>
+  <data name="custpage_deprmemo_help" page="assetdepreciation" xml:space="preserve">
+    <value>Введите ссылку на амортизацию, которая будет использована в качестве основной ссылки для всех формируемых журналов. Оставьте пустым, чтоб использовать ссылку по умолчанию.</value>
+  </data>
+  <data name="custpage_deprperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>Введите дату, по которой начисляется амортизация на активы. Обратите внимание, что дата проводки всегда будет в конце месяца.</value>
+  </data>
+  <data name="custpage_postperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>Выберите период для проведения этой операции. Если период закрыт, в него нельзя вносить проводки.</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetdepreciation" xml:space="preserve">
+    <value>Выберите бухгалтерские книги, связанные с этим активом.</value>
+  </data>
+  <data name="client_depr_subsbooksmismatch" page="assetdepreciation" xml:space="preserve">
+    <value>Дочерние компании в операции не связана с выбранными бухгалтерскими книгами.</value>
+  </data>
+
+  <!-- Depreciation Schedule Report -->
+  <data name="custrecord_depreciationschedule_title" page="depreciationschedule" xml:space="preserve">
+    <value>Плановый отчет по амортизации актива</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule" xml:space="preserve">
+    <value>Тип актива</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule" xml:space="preserve">
+    <value>Балансовая стоимость</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule" xml:space="preserve">
+    <value>Периодическая амортизация</value>
+  </data>
+  <data name="custpage_saveresults" page="depreciationschedule" xml:space="preserve">
+    <value>Сохранить результаты</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule" xml:space="preserve">
+    <value>Дочерняя организация</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule" xml:space="preserve">
+    <value>Включить дочерние объекты</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule" xml:space="preserve">
+    <value>Класс</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule" xml:space="preserve">
+    <value>Выберите</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule" xml:space="preserve">
+    <value>Метод амортизации</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule" xml:space="preserve">
+    <value>Дата начала</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule" xml:space="preserve">
+    <value>Дата окончания</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule" xml:space="preserve">
+    <value>Все активы</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule" xml:space="preserve">
+    <value>Все активы, кроме сданных в аренду</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule" xml:space="preserve">
+    <value>Только сданные в аренду</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule" xml:space="preserve">
+    <value>Метод учета</value>
+  </data>
+  <data name="custpage_filterenddate_help" page="depreciationschedule" xml:space="preserve">
+    <value>Введите или выберите дату окончания для нужного отчетного периода.</value>
+  </data>
+  <data name="custpage_filterstartdate_help" page="depreciationschedule" xml:space="preserve">
+    <value>Введите или выберите дату начала для нужного отчетного периода.</value>
+  </data>
+  <data name="custpage_netbookvalue_help" page="depreciationschedule" xml:space="preserve">
+    <value>Установите флажок, если вы хотите отражать в HTML-отчете только месячный прогноз по балансовой стоимости.</value>
+  </data>
+  <data name="custpage_perioddepr_help" page="depreciationschedule" xml:space="preserve">
+    <value>Установите флажок, если вы хотите отражать в HTML-отчете только месячный прогноз по амортизации.</value>
+  </data>
+  <data name="custpage_saveresults_help" page="depreciationschedule" xml:space="preserve">
+    <value>Параметр «Сохранить результаты» используется для формирования записей графика амортизации на срок службы актива и для сохранения записей в записи актива. Если параметр «Сохранить результаты» включен, система будет игнорировать поля «Дата начала», «Дата окончания», «Балансовая стоимость» и «Периодическая амортизация», чтобы в таблице «Журнал амортизации» всегда содержался полный график амортизации на срок службы актива. Значения, введенные в поля «Дата начала», «Дата окончания», «Балансовая стоимость» и «Периодическая амортизация» будут использованы только для формирования HTML-отчетов.</value>
+  </data>
+
+  <!-- Bulk Transfer -->
+  <data name="custpage_bulktransfer_title" page="bulktransfer" xml:space="preserve">
+    <value>Массовый перевод активов</value>
+  </data>
+  <data name="custpage_uploadhelp" page="bulktransfer" xml:space="preserve">
+    <value>Можно загрузить импорт CSV-файла для обновления полей «Дочерняя компания», «Подразделение», «Класс», «Местоположение» и «Тип актива» для множества активов.</value>
+  </data>
+  <data name="custpage_settinghelp" page="bulktransfer" xml:space="preserve">
+    <value>Чтобы записать журнальную запись после перевода, убедитесь, что включен параметр «Провести в подразделение, класс или местоположение» (Основные средства &gt; Настройка&gt; Настройка системы).</value>
+  </data>
+  <data name="custpage_uploadboth" page="bulktransfer" xml:space="preserve">
+    <value>Не загружайте файл CSV при одновременном переводе типа актива и дочерней компании.</value>
+  </data>
+  <data name="custpage_samplefile" page="bulktransfer" xml:space="preserve">
+    <value>Нажмите (здесь) для получения файла-образца.</value>
+  </data>
+  <data name="custpage_nofileuploaderror" page="bulktransfer" xml:space="preserve">
+    <value>Сбой при загрузке файлов.</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_html_formulainstruction" page="depreciationmethodformula" xml:space="preserve">
+    <value>Используйте следующие операторы и символы (чувствительны к регистру) для определения формулы амортизации:</value>
+  </data>
+  <data name="custpage_html_formulahelp1" page="depreciationmethodformula" xml:space="preserve">
+    <value>^ (в степени, т.е. 5^2 = 5 в квадрате)</value>
+  </data>
+  <data name="custpage_html_formulahelp2" page="depreciationmethodformula" xml:space="preserve">
+    <value>() * / + -</value>
+  </data>
+  <data name="custpage_html_formulahelp3" page="depreciationmethodformula" xml:space="preserve">
+    <value>любое число с десятичными дробями (напр. 12345,67)</value>
+  </data>
+  <data name="custpage_html_formulahelp4" page="depreciationmethodformula" xml:space="preserve">
+    <value>~ (максимальное значение из двух, т.е. 2~5 = 5)</value>
+  </data>
+  <data name="custpage_html_formulahelp5" page="depreciationmethodformula" xml:space="preserve">
+    <value>OC (исходная стоимость актива)</value>
+  </data>
+  <data name="custpage_html_formulahelp6" page="depreciationmethodformula" xml:space="preserve">
+    <value>CC (текущая стоимость актива)</value>
+  </data>
+  <data name="custpage_html_formulahelp7" page="depreciationmethodformula" xml:space="preserve">
+    <value>NB (остаточная стоимость)</value>
+  </data>
+  <data name="custpage_html_formulahelp8" page="depreciationmethodformula" xml:space="preserve">
+    <value>RV (ликвидационная стоимость)</value>
+  </data>
+  <data name="custpage_html_formulahelp9" page="depreciationmethodformula" xml:space="preserve">
+    <value>AL (срок службы актива)</value>
+  </data>
+  <data name="custpage_html_formulahelp10" page="depreciationmethodformula" xml:space="preserve">
+    <value>CP (текущий период или текущий возраст)</value>
+  </data>
+  <data name="custpage_html_formulahelp11" page="depreciationmethodformula" xml:space="preserve">
+    <value>TD (общая сумма амортизации)</value>
+  </data>
+  <data name="custpage_html_formulahelp12" page="depreciationmethodformula" xml:space="preserve">
+    <value>CU (текущее использование)</value>
+  </data>
+  <data name="custpage_html_formulahelp13" page="depreciationmethodformula" xml:space="preserve">
+    <value>LU (использование в течение срока службы)</value>
+  </data>
+  <data name="custpage_html_formulahelp14" page="depreciationmethodformula" xml:space="preserve">
+    <value>LD (сумма последней амортизации)</value>
+  </data>
+  <data name="custpage_html_formulahelp15" page="depreciationmethodformula" xml:space="preserve">
+    <value>DH (кол-во дней в текущем периоде)</value>
+  </data>
+  <data name="custpage_html_formulahelp16" page="depreciationmethodformula" xml:space="preserve">
+    <value>PB (остаточная стоимость в предыдущем году)</value>
+  </data>
+  <data name="custpage_html_formulahelp17" page="depreciationmethodformula" xml:space="preserve">
+    <value>DP (число дней в периоде)</value>
+  </data>
+  <data name="custpage_html_formulahelp18" page="depreciationmethodformula" xml:space="preserve">
+    <value>FY (кол-во дней в финансовом году)</value>
+  </data>
+
+  <!-- BG Process Record -->
+  <data name="custpage_bgprocess_deleteerror" page="bgprocess" xml:space="preserve">
+    <value>Этот экземпляр процесса невозможно удалить из-за статуса процесса: (0)</value>
+  </data>
+  <data name="list_bgprocess_queue" page="bgprocess" xml:space="preserve">
+    <value>В очереди</value>
+  </data>
+  <data name="list_bgprocess_inprogress" page="bgprocess" xml:space="preserve">
+    <value>Выполняется</value>
+  </data>
+  <data name="list_bgprocess_completed" page="bgprocess" xml:space="preserve">
+    <value>Завершено</value>
+  </data>
+  <data name="list_bgprocess_completedwitherrors" page="bgprocess" xml:space="preserve">
+    <value>Завершено с ошибками</value>
+  </data>
+  <data name="list_bgprocess_failed" page="bgprocess" xml:space="preserve">
+    <value>Неудачно</value>
+  </data>
+  <data name="list_bgprocess_revert" page="bgprocess" xml:space="preserve">
+    <value>Неудачно - выполняется отмена изменений</value>
+  </data>
+
+  <!-- BG Queue Record -->
+  <data name="custpage_bgqueue_deleteerror" page="bgqueue" xml:space="preserve">
+    <value>Этот экземпляр очереди невозможно удалить из-за статуса связанного экземпляра процесса: (0)</value>
+  </data>
+
+  <!-- CLIENT SIDE MESSAGES AND ALERTS -->
+  <data name="client_assetrecord_notnegative" page="clientpage" xml:space="preserve">
+     <value>(0) не может иметь отрицательное значение</value>
+  </data>
+  <data name="client_assetrecord_greatererror" page="clientpage" xml:space="preserve">
+     <value>(0) не может быть больше (1)</value>
+  </data>
+  <data name="client_systemsetup_negativecheck" page="clientpage" xml:space="preserve">
+     <value>Имеются существующие активы с отрицательной стоимостью. Отключение этого параметра в настоящее время запрещено. Обратитесь в справочный центр для получения дополнительной информации.</value>
+  </data>
+  <data name="client_subdept_notmatch" page="clientpage" xml:space="preserve">
+     <value>Дочерняя компания и подразделение не совпадают.</value>
+  </data>
+  <data name="client_subloc_notmatch" page="clientpage" xml:space="preserve">
+     <value>Дочерняя компания и местоположение не совпадают.</value>
+  </data>
+  <data name="client_subclass_notmatch" page="clientpage" xml:space="preserve">
+     <value>Дочерняя компания и класс не совпадают.</value>
+  </data>
+  <data name="client_assetrecord_outdated" page="clientpage" xml:space="preserve">
+     <value>Запись актива, с которой вы работаете, недавно была изменена. Нажмите «Обновить», чтобы получить самую последнюю запись актива.</value>
+  </data>
+  <data name="client_assetrecord_dateerror" page="clientpage" xml:space="preserve">
+     <value>Дата начала должна быть раньше даты окончания</value>
+  </data>
+  <data name="client_assetrecord_fieldadjust" page="clientpage" xml:space="preserve">
+     <value>(0) скорректировано автоматически из-за изменений (1)</value>
+  </data>
+  <data name="client_assetrecord_enddateadjust" page="clientpage" xml:space="preserve">
+    <value>(0) округлено в меньшую сторону для отражения нового (1)</value>
+  </data>
+  <data name="client_leavepage" page="clientpage" xml:space="preserve">
+     <value>Данные, которые вы ввели на этой странице, не были сохранены и будут потеряны. Нажмите ОК для продолжения.</value>
+  </data>
+  <data name="client_accounting_methods" page="clientpage" xml:space="preserve">
+     <value>Методы учета</value>
+  </data>
+  <data name="client_tax_methods" page="clientpage" xml:space="preserve">
+     <value>Методы налогообложения</value>
+  </data>
+  <data name="client_journals" page="clientpage" xml:space="preserve">
+     <value>Журналы</value>
+  </data>
+  <data name="client_multibookdisabled" page="clientpage" xml:space="preserve">
+     <value>Нельзя выбрать бухгалтерскую книгу, если функция «Бухучет в множестве книг» отключена.</value>
+  </data>
+  <data name="client_primarybook" page="clientpage" xml:space="preserve">
+     <value>Вы можете выбрать второстепенные книги только для методов налогообложения.</value>
+  </data>
+  <data name="client_pendingbook" page="clientpage" xml:space="preserve">
+     <value>Необходимо выбрать активную бухгалтерскую книгу.</value>
+  </data>
+  <data name="client_booksubsidiary_mismatch" page="clientpage" xml:space="preserve">
+     <value>Выберите бухгалтерскую книгу, связанную с дочерней компанией актива.</value>
+  </data>
+  <data name="client_invalid_deprenddate" page="clientpage" xml:space="preserve">
+     <value>Недопустимый ввод (0) для значений (1) и (2)</value>
+  </data>
+  <data name="client_enable_bypass" page="clientpage" xml:space="preserve">
+     <value>Если вы включите этот параметр, сценарии событий пользователей и рабочие процессы для пользовательских записей не будут запускаться во время амортизации. Продолжить?</value>
+  </data>
+  <data name="client_asset_disposed" page="clientpage" xml:space="preserve">
+    <value>Актив уже ликвидирован</value>
+  </data>
+  <data name="client_select_book" page="clientpage" xml:space="preserve">
+    <value>Выберите бухгалтерские книги</value>
+  </data>
+  <data name="client_match_current_error" page="clientpage" xml:space="preserve">
+      <value>(0) не должно совпадать с текущим (1).</value>
+  </data>
+  <data name="client_newrvdiffsign" page="clientpage" xml:space="preserve">
+      <value>(0) не может превышать нулевое значение.</value>
+  </data>
+  <data name="client_lesserthan_error" page="clientpage" xml:space="preserve">
+     <value>(0) не может быть меньше (1)</value>
+  </data>
+  <data name="client_newdepmeth_diffperiod" page="clientpage" xml:space="preserve">
+     <value>Выбранный скорректированный метод амортизации должен иметь такой же период амортизации, как текущий метод амортизации.</value>
+  </data>
+  <data name="client_enter_value" page="clientpage" xml:space="preserve">
+    <value>Введите значение(я) для: (0)</value>
+  </data>
+  <data name="client_subsidiary_match" page="clientpage" xml:space="preserve">
+    <value>Дочерняя компания выбранного (0) не совпадает с дочерней компанией этого актива.</value>
+  </data>
+  <data name="client_report_confirm_delete" page="clientpage" xml:space="preserve">
+    <value>Это удалит текущий отчет. Продолжить?</value>
+  </data>
+  
+  <!-- FAM_Split_CS.js -->
+  <data name="client_assetsplit_invalidsplitquantity" page="clientpage" xml:space="preserve">
+    <value>Недействительное количество разделения</value>
+  </data>
+  <data name="client_assetsplit_entervalue" page="clientpage" xml:space="preserve">
+    <value>Введите значение для количества разделения</value>
+  </data>
+  <data name="client_assetsplit_greatererror" page="clientpage" xml:space="preserve">
+    <value>Количество разделения не может быть равным или больше количества</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method" page="clientpage" xml:space="preserve">
+    <value>Метод учета - текущая стоимость должна быть равна балансовой стоимости плюс амортизация к настоящему времени.</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method2" page="clientpage" xml:space="preserve">
+    <value>Нажмите «Обновить» для пересчета, используя текущую стоимость.</value>
+  </data>
+  <data name="client_assetsplit_equalerror_tax" page="clientpage" xml:space="preserve">
+    <value>Метод налогообложения (0) - текущая стоимость должна быть равна балансовой стоимость плюс амортизация к настоящему времени</value>
+  </data>
+  <data name="client_assetsplit_quantity1" page="clientpage" xml:space="preserve">
+    <value>Разделение актива доступно для активов с количеством более одного (1).</value>
+  </data> 
+  <data name="client_assetsplit_invalid_status" page="clientpage" xml:space="preserve">
+    <value>Разделение актива недоступно для полностью амортизированных и ликвидированных активов.</value>
+  </data> 
+  
+  <!-- FAM_CS_AltMethod_Client.js -->
+  <data name="client_altmethod_subsidiaryrequired" page="clientpage" xml:space="preserve">
+     <value>Для этого метода требуется дочерняя компания.</value>
+  </data>
+  <data name="client_altmethod_improperconvention" page="clientpage" xml:space="preserve">
+     <value>Метод амортизации не поддерживает выбранный принцип.</value>
+  </data>
+  <data name="client_altmethod_subsidiarymismatch" page="clientpage" xml:space="preserve">
+     <value>Дочерняя компания альтернативного метода не совпадает с дочерней компанией этого актива.</value>
+  </data>
+
+
+  <!-- ncFAR_AltDeprClient.js -->
+  <data name="client_altdepr_assetalreadyused" page="clientpage" xml:space="preserve">
+     <value>(0) уже используется этим активом. Выберите другой альтернативный метод.</value>
+  </data>
+  <data name="client_altdepr_assetlifetimewarning" page="clientpage" xml:space="preserve">
+     <value>Предупреждение: введенный срок службы актива превышает срок службы актива</value>
+  </data>
+  <data name="client_altdepr_assetlifetimeerror" page="clientpage" xml:space="preserve">
+     <value>Альтернативный срок службы актива не может превышать срок службы актива</value>
+  </data>
+  <data name="client_altdepr_nomethodfound" page="clientpage" xml:space="preserve">
+     <value>Для выбранной подкатегории не определен альтернативный метод. Перейдите в Основные средства &gt; Настройка &gt; Альтернативные методы для обновления списка.</value>
+  </data>
+  <data name="client_altdepr_disposedtaxmethod" page="clientpage" xml:space="preserve">
+     <value>Невозможно назначить бухгалтерскую книгу ликвидированному/полностью амортизированному методу налогообложения.</value>
+  </data>
+
+  <!-- ncFAR_AssetRecordClient_AllForms.js -->
+  <data name="client_assetrecord_specifydepreciationrules" page="clientpage" xml:space="preserve">
+    <value>Следует указать правила амортизации.</value>
+  </data>
+  <data name="client_assetrecord_specifysubsidiary" page="clientpage" xml:space="preserve">
+    <value>Следует указать дочернюю компанию.</value>
+  </data>
+  <data name="client_assetrecord_recordbeingpooled" page="clientpage" xml:space="preserve">
+     <value>Изменение дочерней компании не разрешено, потому что запись альтернативной амортизации относится к пулу.</value>
+  </data>
+  <data name="client_assetrecord_assetnotallowed" page="clientpage" xml:space="preserve">
+     <value>Счета неосновных активов не разрешены для Активного счета. Обратитесь к администратору.</value>
+  </data>
+  <data name="client_assetrecord_deprnotallowed" page="clientpage" xml:space="preserve">
+     <value>Счет неосновных активов не разрешен для счета амортизации. Обратитесь к администратору.</value>
+  </data>
+  <data name="client_assetrecord_cannotdelete" page="clientpage" xml:space="preserve">
+     <value>Этот актив невозможно удалить, потому что он активный для амортизации. Ликвидируйте актив, если хотите удалить его.</value>
+  </data>
+  <data name="client_assetrecord_confirmsubsidiarychange" page="clientpage" xml:space="preserve">
+    <value>Убедитесь, что вы сохранили изменения, прежде чем переводить актив в другую дочернюю компанию. Иначе изменения не будут учтены.
+
+В противном случае можно сначала обновить дочернюю компанию, до внесения дальнейших изменений в запись актива.
+
+Продолжить?</value>
+  </data>
+
+  <!-- ncFAR_DefaultAltDeprClient.js -->
+  <data name="client_defaultaltdepr_alreadyused" page="clientpage" xml:space="preserve">
+     <value>(0) уже используется этим типом активов. Выберите другой альтернативный метод.</value>
+  </data>
+  <data name="client_defaultaltdepr_addnotallowed" page="clientpage" xml:space="preserve">
+    <value>Создание новых записей FAM - Альтернативная амортизация по умолчанию из списка записей не разрешено.
+
+Перейдите в запись типа актива и добавьте новую запись с вкладки «Бухгалтерские книги»</value>
+  </data>
+  <!-- ncFAR_DeprMethodClientScripts.js script not found-->
+  <data name="client_deprmethod_failedtovalidate2" page="clientpage" xml:space="preserve">
+     <value>Проверка функции не выполнена.</value>
+  </data>
+  <data name="client_deprmethod_validationfailed" page="clientpage" xml:space="preserve">
+     <value>Проверка не выполнена</value>
+  </data>
+  <data name="client_deprmethod_dp_annually_invalid" page="clientpage" xml:space="preserve">
+     <value>DP нельзя использовать, если период амортизации - ежегодно</value>
+  </data>
+
+  <!-- Disposal Client Messages -->
+  <data name="client_disposal_alreadydisposed" page="clientpage" xml:space="preserve">
+     <value>Этот актив уже ликвидирован.</value>
+  </data>
+  <data name="client_disposal_cannotbegreater" page="clientpage" xml:space="preserve">
+     <value>Ликвидированное количество не может быть больше количества активов.</value>
+  </data>
+  <data name="client_disposal_saleamountgreater" page="clientpage" xml:space="preserve">
+     <value>Сумма продажи должна быть больше нуля.</value>
+  </data>
+  <data name="client_disposal_selectcustomer" page="clientpage" xml:space="preserve">
+     <value>Выберите клиента.</value>
+  </data>
+  <data name="client_disposal_selectsaleitem" page="clientpage" xml:space="preserve">
+     <value>Выберите продаваемые товары.</value>
+  </data>
+  <data name="client_disposal_selectlocation" page="clientpage" xml:space="preserve">
+     <value>Выберите местоположение.</value>
+  </data>
+  <data name="client_disposal_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Актив обрабатывается для ликвидации. Дождитесь окончания процесса ликвидации до инициализации новой ликвидации этого актива.</value>
+  </data>
+  <data name="client_disposal_acctnotexist" page="clientpage" xml:space="preserve">
+     <value>Убедитесь, что параметры «Списание», «Ликвидация», «Амортизация» и «Счета актива» были настроены и активированы до обработки.
+Ликвидация может быть невозможной для следующего: (0)</value>
+  </data>
+  <data name="client_disposal_dateearlierthanldd" page="clientpage" xml:space="preserve">
+    <value>Дата ликвидации (0) не может быть раньше последней даты амортизации (1).</value>
+  </data>
+  <data name="client_disposal_plugin_no_assetid" page="clientpage" xml:space="preserve">
+    <value>Идентификатор актива не определен.</value>
+  </data>
+  <data name="client_disposal_plugin_invalid_type" page="clientpage" xml:space="preserve">
+    <value>Недействительный тип ликвидации для актива: (0))</value>
+  </data>
+  
+  <!-- ncFAR_ProposalAltDeprClient.js -->
+  <data name="client_proposalaltdepr_selectbeingused" page="clientpage" xml:space="preserve">
+     <value>(0) уже используется этим предложением актива. Выберите другой альтернативный метод.</value>
+  </data>
+
+  <!-- ncFAR_RevaluationClientScripts.js -->
+  <data name="client_revaluation_disposed" page="clientpage" xml:space="preserve">
+     <value>Этот актив уже ликвидирован.</value>
+  </data>
+  <data name="client_assetnotset" page="clientpage" xml:space="preserve">
+     <value>Один или несколько счетов активов не настроены, переоценка невозможна.</value>
+  </data>
+  <data name="client_revaluation_notsupplied" page="clientpage" xml:space="preserve">
+    <value>Следует указать данные переоценки</value>
+  </data>
+  <data name="client_revaluation_zeronbv" page="clientpage" xml:space="preserve">
+    <value>Полностью амортизированный актив нельзя переоценить.</value>
+  </data>
+  <data name="client_revaluation_zerocc" page="clientpage" xml:space="preserve">
+    <value>Невозможно частичное списание актива с нулевой текущей стоимостью.</value>
+  </data>
+  <data name="client_revaluation_rvoverzero" page="clientpage" xml:space="preserve">
+    <value>Новая ликвидационная стоимость не может превышать нулевое значение.</value>
+  </data>
+  <data name="client_role_nopermission" page="clientpage" xml:space="preserve">
+    <value>У этой роли нет разрешения на редактирование записи актива.</value>
+  </data>
+  <data name="client_status_nobgprocess" page="clientpage" xml:space="preserve">
+    <value>Процессы в фоновом режиме не обнаружены.</value>
+  </data>
+  <data name="client_change_accountingbook" page="clientpage" xml:space="preserve">
+    <value>Изменение бухгалтерской книги не разрешено.</value>
+  </data>
+  <data name="client_revaluation_needcompute" page="clientpage" xml:space="preserve">
+    <value>Переоценку актива необходимо рассчитать до ее обработки.</value>
+  </data>
+  <data name="client_revaluation_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Актив в настоящее время обрабатывается для ликвидации. Дождитесь окончания процесса переоценки для инициализации новой переоценки этого актива.</value>
+  </data>
+  <data name="client_revaluation_wdacct_notset" page="clientpage" xml:space="preserve">
+     <value>Актив невозможно переоценить, потому что не настроены следующие счета частичного списания: (0)</value>
+  </data>
+  <data name="client_revaluation_transdate_warn" page="clientpage" xml:space="preserve">
+     <value>Дата переоценки в некоторых записях ранее даты последней амортизации. Эти записи не будут переоценены. </value>
+  </data>
+  <data name="client_greater_than_zerovalue" page="clientpage" xml:space="preserve">
+    <value>Введите значение больше нуля для (0).</value>
+  </data>
+  <data name="client_change_zerowd" page="clientpage" xml:space="preserve">
+    <value>Введите ненулевое значение для суммы частичного списания.</value>
+  </data>
+  <data name="client_no_reval_det_supplied" page="clientpage" xml:space="preserve">
+      <value>Следует указать данные переоценки.</value>
+  </data>
+
+  <!-- FAM_AssetTransfer_CS.js -->
+  <data name="client_assettransfer_subsidiarybookid" page="clientpage" xml:space="preserve">
+     <value>У актива есть бухгалтерская книга, не связанная с дочерней организацией назначения. Актив будет переведен, но методы налогообложения в бухгалтерской книге не будут включены.</value>
+  </data>
+  <data name="client_assettransfer_subsidiarymethod" page="clientpage" xml:space="preserve">
+     <value>У актива есть альтернативный метод, не связанный с дочерней организацией назначения. Актив будет переведен, но методы налогообложения в этом альтернативном методе не будут включены.</value>
+  </data>
+  <data name="client_assettransfer_emptysubat" page="clientpage" xml:space="preserve">
+     <value>Дочерняя компания/тип актива записи актива не может быть пустым.</value>
+  </data>
+  <data name="client_assettransfer_nochange" page="clientpage" xml:space="preserve">
+     <value>Значения поля назначения перевода активов должны отличаться от оригинала.</value>
+  </data>
+  <data name="client_assettransfer_notransferacct" page="clientpage" xml:space="preserve">
+     <value>Не существует записи счета перевода актива для исходной дочерней компании и дочерней компании назначения.</value>
+  </data>
+  <data name="client_assettransfer_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Актив в настоящее время обрабатывается для перевода. Дождитесь окончания процесса перевода до инициализации нового перевода этого актива.</value>
+  </data>
+  <data name="client_assettransfer_bulkbgpexists" page="clientpage" xml:space="preserve">
+     <value>В настоящее время обрабатывается запрос на массовый перевод активов. Дождитесь окончания процесса перевода до инициализации нового перевода.</value>
+  </data>
+  <data name="client_assettransfer_warnbgpexists" page="clientpage" xml:space="preserve">
+     <value>В настоящее время обрабатывается запрос на массовый перевод активов. Вы не сможете подать запрос на новый перевод актива.</value>
+  </data>
+  <data name="client_assettransfer_atassetacct" page="clientpage" xml:space="preserve">
+     <value>У выбранного типа актива нет счета актива.</value>
+  </data>
+  <data name="client_assettransfer_atdepracct" page="clientpage" xml:space="preserve">
+     <value>У выбранного типа актива нет счета амортизации.</value>
+  </data>
+  <data name="client_assettransfer_cdl_mandatory" page="clientpage" xml:space="preserve">
+
+  </data>
+
+    <!-- FAM_AssetRecordTransfer.js -->
+  <data name="client_assettransfer_invalid_sub_bookid" xml:space="preserve">
+     <value>Бухгалтерская книга для этого метода налогообложения не связана с дочерней организацией назначения. Метод налогообложения не будет переведен.</value>
+  </data>
+  <data name="client_assettransfer_invalid_sub_altmeth" xml:space="preserve">
+     <value>Альтернативный метод для этого метода налогообложения не связан с дочерней организацией назначения. Метод налогообложения не будет переведен.</value>
+  </data>
+  <data name="client_assettransfer_no_tax_meth_acct" xml:space="preserve">
+     <value>У комбинации альтернативного метода и идентификатора книги для данного метода налогообложения нет записи в типе актива назначения. Счета метода налогообложения останутся пустыми.</value>
+  </data>
+  <data name="custpage_transfer_asset_undefined" xml:space="preserve">
+    <value>Запись актива для перевода не существует: (0)</value>
+  </data>
+
+    <!-- FAM_AssetTransferCSV.js -->
+    <data name="message_errorfile" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Ошибка извлечения информации файла перевода актива.</value>
+    </data>
+    <data name="message_toomanyfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Слишком много полей</value>
+    </data>
+    <data name="message_toofewfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Слишком мало полей</value>
+    </data>
+    <data name="message_duplicateasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Дубликат записи для идентификатора актива: (0)</value>
+    </data>
+    <data name="message_headertoofew" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Неполные данные для перевода актива. У файла должны быть значения для поля «Актив» плюс по крайней мере одно из следующих полей: «Тип актива», «Дочерняя компания», «Класс», «Подразделение» и «Местоположение».</value>
+    </data>
+    <data name="message_headerassetmissing" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Введите значения для актива</value>
+    </data>
+    <data name="message_headernotallowed" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Поле заголовка (0) не разрешено. Файл может содержать только следующие заголовки: «Актив», «Тип актива», «Дочерняя компания», «Класс», «Подразделение» и «Местоположение».</value>
+    </data>
+    <data name="message_duplicateheader" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Имеется несколько экземпляров поля заголовка: (0). Удалите столбцы-дубликаты.</value>
+    </data>
+    <data name="message_subsidiarybookid" page="assettransfercsv_ss" xml:space="preserve">
+        <value>У актива есть бухгалтерская книга, не связанная с дочерней организацией назначения. Актив будет переведен, но методы налогообложения в бухгалтерской книге не будут включены.</value>
+    </data>
+    <data name="message_subsidiarymethod" page="assettransfercsv_ss" xml:space="preserve">
+        <value>У актива есть альтернативный метод, не связанный с дочерней организацией назначения. Актив будет переведен, но методы налогообложения в этом альтернативном методе не будут включены.</value>
+    </data>
+    <data name="message_emptysubat" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Дочерняя компания/тип актива записи актива не может быть пустым.</value>
+    </data>
+    <data name="message_nochange" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Значения поля назначения перевода активов должны отличаться от оригинала.</value>
+    </data>
+    <data name="message_notransferacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Не существует записи счета перевода актива для исходной дочерней компании и дочерней компании назначения.</value>
+    </data>
+    <data name="message_subdept_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Дочерняя компания и подразделение не совпадают.</value>
+    </data>
+    <data name="message_subloc_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Дочерняя компания и местоположение не совпадают.</value>
+    </data>
+    <data name="message_subclass_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Дочерняя компания и класс не совпадают.</value>
+    </data>
+    <data name="message_atassetacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>У выбранного типа актива нет счета актива.</value>
+    </data>
+    <data name="message_atdepracct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>У выбранного типа актива нет счета амортизации.</value>
+    </data>
+    <data name="message_cdl_mandatory" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Нельзя сбросить подразделение/класс/местоположение, потому что эти поля являются обязательными</value>
+    </data>
+    <data name="message_invalidasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Актив не существует или не активный</value>
+    </data>
+    <data name="message_onetransfertype" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Перевод типа актива не разрешен при переводе в другие «Дочернюю компанию», «Класс», «Подразделение» и «Местоположение»</value>
+    </data>
+    <data name="message_nonexistentfld" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Одно или несколько полей назначения не существуют или неактивны</value>
+    </data>
+
+  <!-- Ext Js Messages -->
+  <data name="extjs_message_title" page="clientpage" xml:space="preserve">
+    <value>Основные средства</value>
+  </data>
+  <data name="extjs_processing" page="clientpage" xml:space="preserve">
+    <value>Обрабатывается</value>
+  </data>
+  <data name="extjs_reading_asset" page="clientpage" xml:space="preserve">
+    <value>Чтение актива</value>
+  </data>
+  <data name="extjs_clearing_data" page="clientpage" xml:space="preserve">
+    <value>Сброс данных</value>
+  </data>
+  <data name="extjs_loading_data" page="clientpage" xml:space="preserve">
+    <value>Загрузка данных</value>
+  </data>
+  <data name="extjs_refreshing_data" page="clientpage" xml:space="preserve">
+    <value>Обновление данных</value>
+  </data>
+  <data name="extjs_initializing" page="clientpage" xml:space="preserve">
+    <value>Инициализация</value>
+  </data>
+  <data name="extjs_initializing_error" page="clientpage" xml:space="preserve">
+    <value>Ошибка инициализации</value>
+  </data>
+  <data name="extjs_reloading" page="clientpage" xml:space="preserve">
+    <value>Перегрузка</value>
+  </data>
+  <data name="extjs_done" page="clientpage" xml:space="preserve">
+     <value>Готово</value>
+  </data>
+
+
+  <!-- Background Processing -->
+  <data name="custpage_error_internal" xml:space="preserve">
+    <value>Этот Suitelet предназначен только для внутреннего использования!</value>
+  </data>
+  <data name="custpage_error_postmethod" xml:space="preserve">
+    <value>Непредвиденный метод POST.</value>
+  </data>
+
+  <!-- Constants -->
+  <data name="custpage_constant_accountingmethod" xml:space="preserve">
+    <value>Метод учета</value>
+  </data>
+  <data name="custpage_constant_allassets" xml:space="preserve">
+    <value>Все активы</value>
+  </data>
+  <data name="custpage_constant_exceptleased" xml:space="preserve">
+    <value>Все активы, кроме сданных в аренду</value>
+  </data>
+  <data name="custpage_constant_onlyaassets" xml:space="preserve">
+    <value>Только сданные в аренду активы</value>
+  </data>
+
+
+  <!-- Server Scripts/Undefined -->
+  <data name="custpage_html_tangible" xml:space="preserve">
+    <value>Материальные активы</value>
+  </data>
+  <data name="custpage_desc_schedulereport" xml:space="preserve">
+    <value>Плановый отчет по управлению основными средствами</value>
+  </data>
+  <data name="custpage_html_fam" xml:space="preserve">
+    <value>Управление основными средствами (FAM)</value>
+  </data>
+  <data name="custpage_accounts_missing" xml:space="preserve">
+    <value>Отсутствует один или несколько счетов для разнесения.</value>
+  </data>
+  <data name="custpage_transfer_account_missing" xml:space="preserve">
+    <value>Невозможно обнаружить действительные счета перевода от зависимого:(0) в зависимый:(1)</value>
+  </data>
+  <data name="custpage_transfer_tax_method_account_missing" xml:space="preserve">
+    <value>Отсутствует счет амортизации/актива метода налогообложения</value>
+  </data>
+  <data name="custpage_errordepreciation" xml:space="preserve">
+    <value>Ошибка расчета амортизации</value>
+  </data>
+  <data name="custpage_transactionfailed" xml:space="preserve">
+    <value>Сбой при операции</value>
+  </data>
+  <data name="custpage_fields_missing" xml:space="preserve">
+    <value>Введите значение(я) для: (0)</value>
+  </data>
+  <data name="custpage_fields_inactive" xml:space="preserve">
+    <value>Следующие поля неактивны: (0)</value>
+  </data>
+  <data name="custpage_outside_period" xml:space="preserve">
+    <value>Указанная дата операции вне рамок диапазона дат вашего учетного периода.</value>
+  </data>
+  <data name="custpage_setupmissing" xml:space="preserve">
+    <value>Запись настройки системы управления основными средствами отсутствует или не завершена. Невозможно определить настройки системы.</value>
+  </data>
+  <data name="custpage_settingmissing" xml:space="preserve">
+    <value>Ошибка прочтения настроек системы</value>
+  </data>
+  <data name="custpage_invalid_acctsub_combo" xml:space="preserve">
+    <value>Недопустимая комбинация счета (0) - дочерней компании. Идентификатор актива: (1)</value>
+  </data>
+
+  <!-- Buttons -->
+  <data name="custrecord_assetproposal_refreshbutton" page="assetproposal" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="custrecord_assetproposal_proposebutton" page="assetproposal" xml:space="preserve">
+    <value>Предложить новые активы</value>
+  </data>
+  <data name="custrecord_assetproposal_generatebutton" page="assetproposal" xml:space="preserve">
+    <value>Сформировать активы</value>
+  </data>
+  <data name="custrecord_assetproposal_rejectbutton" page="assetproposal" xml:space="preserve">
+    <value>Отклонить предложения</value>
+  </data>
+  <data name="custrecord_famreports_generatebutton" page="famreports" xml:space="preserve">
+    <value>Сформировать</value>
+  </data>
+  <data name="custrecord_assetsummary_generatebutton" page="assetsummary" xml:space="preserve">
+    <value>Сгенерировать отчет</value>
+  </data>
+  <data name="custrecord_systemsetup_savebutton" page="systemsetup" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="custrecord_systemsetup_submitbutton" page="systemsetup" xml:space="preserve">
+    <value>Передать</value>
+  </data>
+  <data name="custrecord_assetsplit_refreshbutton" page="assetsplit" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="custrecord_assetsplit_splitbutton" page="assetsplit" xml:space="preserve">
+    <value>Разделение</value>
+  </data>
+  <data name="custrecord_assetdisposal_refreshbutton" page="assetdisposal" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="custrecord_assetdisposal_disposebutton" page="assetdisposal" xml:space="preserve">
+    <value>Ликвидировать</value>
+  </data>
+  <data name="custrecord_depreciationschedule2_generatebutton" page="depreciationschedule2" xml:space="preserve">
+    <value>Сгенерировать отчет</value>
+  </data>
+  <data name="custrecord_assetcreation_createbutton" page="assetcreation" xml:space="preserve">
+    <value>Создать активы</value>
+  </data>
+  <data name="custrecord_creationstatus_refreshbutton" page="assetcreation" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="custrecord_assetrevaluation_refreshbutton" page="assetrevaluation" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="custrecord_assetrevaluation_processbutton" page="assetrevaluation" xml:space="preserve">
+    <value>Переоценка процесса</value>
+  </data>
+  <data name="custrecord_assetrevaluation_calculatebutton" page="assetrevaluation" xml:space="preserve">
+    <value>Рассчитать</value>
+  </data>
+  <data name="custrecord_assetregister_generatebutton" page="assetregister" xml:space="preserve">
+    <value>Сгенерировать отчет</value>
+  </data>
+  <data name="custrecord_maintenance_savebutton" page="maintenance" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="custrecord_maintenance_resetbutton" page="maintenance" xml:space="preserve">
+    <value>Сброс</value>
+  </data>
+  <data name="custrecord_systemstatus_refreshbutton" page="systemstatus" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="custrecord_generatehistory_generatebutton" page="generatehistory" xml:space="preserve">
+    <value>Создать журнал</value>
+  </data>
+  <data name="custrecord_assetdepreciation_depreciatebutton" page="assetdepreciation" xml:space="preserve">
+    <value>Амортизировать активы</value>
+  </data>
+  <data name="custrecord_depreciationschedule_generatebutton" page="depreciationschedule" xml:space="preserve">
+    <value>Сгенерировать отчет</value>
+  </data>
+  <data name="custrecord_reportstatus_refreshbutton" page="reportstatus" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="custrecord_reportstatus2_refreshbutton" page="reportstatus2" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="custrecord_assettransfer_refreshbutton" page="assettransfer" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="custrecord_assettransfer_transferbutton" page="assettransfer" xml:space="preserve">
+    <value>Обработка перевода</value>
+  </data>
+  <data name="custrecord_assettransfer_importcsv" page="assettransfer" xml:space="preserve">
+    <value>Импорт CSV</value>
+  </data>
+  <data name="custrecord_bulktransfer_submitbutton" page="bulktransfer" xml:space="preserve">
+    <value>Передать</value>
+  </data>
+  <data name="custrecord_bulktransfer_cancelbutton" page="bulktransfer" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+
+  <!-- Asset Record -->
+  <data name="assetrecord_assettypehelp" xml:space="preserve">
+    <value>Тип актива по умолчанию определяет конфигурацию актива и используется для классификации активов в отчетах и других процессах.</value>
+  </data>
+  <data name="assetrecord_assetdescrhelp" xml:space="preserve">
+    <value>Краткое описание актива.</value>
+  </data>
+  <data name="assetrecord_subshelp" xml:space="preserve">
+    <value>Дочерняя компания, связанная с этой записью.</value>
+  </data>
+  <data name="assetrecord_includechildhelp" xml:space="preserve">
+    <value>Установите флажок, чтобы включить активы дочерних компаний.</value>
+  </data>
+
+  <data name="assetrecord_assetserialnohelp" xml:space="preserve">
+    <value>Серийный номер, который можно использовать для отслеживания или идентификации актива.</value>
+  </data>
+  <data name="assetrecord_assetalternatenohelp" xml:space="preserve">
+    <value>Дополнительный номер ссылки на актив.</value>
+  </data>
+  <data name="assetrecord_assetcosthelp" xml:space="preserve">
+    <value>Оригинальная (закупочная) цена актива.</value>
+  </data>
+  <data name="assetrecord_assetcurrentcosthelp" xml:space="preserve">
+    <value>Текущая стоимость актива.  Включает любые суммы частичного списания, примененные к активу.</value>
+  </data>
+  <data name="assetrecord_residualvalpercenthelp" xml:space="preserve">
+    <value>Значение в процентах от первоначальной стоимости. которое актив будет стоить на конец срока службы. Например, актив, приобретенный за 1000,00, может стоить 100,00 в конце срока службы, т. е. остаточная стоимость в процентном выражении будет равна 10 % (10 % от 1000,00 равно 100,00).
+Внесение остаточной стоимости всегда изменяет значение по умолчанию, вычисленное в процентах.</value>
+  </data>
+  <data name="assetrecord_residualvalhelp" xml:space="preserve">
+    <value>Стоимость актива на конец срока службы. Например, актив, приобретенный за 1000,00, в конце срока службы может стоить 100,00.
+
+Внесение остаточной стоимости всегда изменяет значение по умолчанию, рассчитанное в процентах.</value>
+  </data>
+  <data name="assetrecord_assetacctmethodhelp" xml:space="preserve">
+    <value>Выберите метод амортизации (формула) для использования при амортизации актива.  Этот метод учета будет использоваться для расчета значений, которые будут введены в бухгалтерскую систему.</value>
+  </data>
+  <data name="assetrecord_assetperiodconvhelp" xml:space="preserve">
+    <value>Выберите принцип для определения года: 1. 12 месяцев по 30 дней в каждом - этот принцип обычно используется в Северной Америке и Европе, обеспечивая равномерную месячную амортизацию. 2. Точное количество дней в месяце, 365 дней в году - этот принцип обычно используется в Австралии и Новой Зеландии, обеспечивая неравномерную амортизацию в течение года</value>
+  </data>
+  <data name="assetrecord_assetlifetimehelp" xml:space="preserve">
+    <value>Ожидаемый срок службы актива, кратно периоду амортизации (т.е. если период амортизации месяц, укажите срок службы в месяцах).</value>
+  </data>
+  <data name="assetrecord_assetdeprperiodhelp" xml:space="preserve">
+    <value>Частота, с которой следует проводить амортизацию актива.</value>
+  </data>
+  <data name="assetrecord_assetlifetimeusagehelp" xml:space="preserve">
+    <value>Если амортизация актива начисляется исходя из его использования (например, километрах пробега транспортного средства) значение использования за срок службы указывает на итоговое количество единиц для этого актива.  Когда итоговое значение единиц равно использованию за срок службы, это означает, что срок службы актива закончился.</value>
+  </data>
+  <data name="assetrecord_assetnetbookvaluehelp" xml:space="preserve">
+    <value>Текущая оценка актива по торговому праву.</value>
+  </data>
+  <data name="assetrecord_assetcumulativedeprhelp" xml:space="preserve">
+    <value>Общая сумма амортизации, начисленная на актив к настоящему времени</value>
+  </data>
+  <data name="assetrecord_assetstatushelp" xml:space="preserve">
+    <value>Статус актива: новый, амортизированный, полностью амортизированный или ликвидированный</value>
+  </data>
+  <data name="assetrecord_assetcustomerlocationhelp" xml:space="preserve">
+    <value>Расположение клиента, у которой был приобретен актив.</value>
+  </data>
+  <data name="assetrecord_assetcurrencyhelp" xml:space="preserve">
+    <value>Валюта, в которой первоначально была указана стоимость актива.</value>
+  </data>
+  <data name="assetrecord_assetcurrencyidhelp" xml:space="preserve">
+    <value>Внутренний идентификатор валюты актива.</value>
+  </data>
+  <data name="assetrecord_assetfixedratehelp" xml:space="preserve">
+    <value>Фиксированный курс пересчета, между валютой первоначальной стоимости (валютой актива) и основной валютой компании или дочерней компании, которой принадлежит актив.</value>
+  </data>
+  <data name="assetrecord_assetcustodianhelp" xml:space="preserve">
+    <value>Сотрудник, ответственный за актив.</value>
+  </data>
+  <data name="assetrecord_assetphysicallochelp" xml:space="preserve">
+    <value>Указывает обычное местоположение актива.</value>
+  </data>
+  <data name="assetrecord_assetincludesreportschelp" xml:space="preserve">
+    <value>Указывает, должен ли актив быть включен в сводный отчет по активам.  По умолчанию в этот отчет включены все активы.</value>
+  </data>
+  <data name="assetrecord_assetpurchasedatehelp" xml:space="preserve">
+    <value>Дата закупки актива.</value>
+  </data>
+  <data name="assetrecord_assetdeprstartdatehelp" xml:space="preserve">
+    <value>Дата начала амортизации актива. Например, актив мог быть приобретен, но не получен, и введен в эксплуатацию пару месяцев спустя.</value>
+  </data>
+  <data name="assetrecord_assetdeprenddatehelp" xml:space="preserve">
+    <value>Дата предположительного окончания начисления амортизации.  По умолчанию является датой начала амортизации актива плюс срок службы.</value>
+  </data>
+  <data name="assetrecord_assetlastdeprperiodhelp" xml:space="preserve">
+    <value>Номер периода (в пределах срока службы актива), в котором последний раз проводилась амортизация актива.</value>
+  </data>
+  <data name="assetrecord_assetlastdepramounthelp" xml:space="preserve">
+    <value>Значение самой последней амортизации актива.</value>
+  </data>
+  <data name="assetrecord_assetlastdeprdatehelp" xml:space="preserve">
+    <value>Дата самой последней амортизации актива.</value>
+  </data>
+  <data name="assetrecord_assetdepractivehelp" xml:space="preserve">
+    <value>Указывает на то, что этот актив является активным и включен в расчет амортизации.  Если актив относится к работе, то он может быть настроен таким образом, что станет активным автоматически после завершении работы.</value>
+  </data>
+  <data name="assetrecord_assetdisptypehelp" xml:space="preserve">
+    <value>Тип, которым был ликвидирован актив. </value>
+  </data>
+  <data name="assetrecord_assetcustomerhelp" xml:space="preserve">
+    <value>Клиент, которому был продан актив.</value>
+  </data>
+  <data name="assetrecord_assetqtyhelp" xml:space="preserve">
+    <value>Количество этого актива.</value>
+  </data>
+  <data name="assetrecord_assetrevisionmethodhelp" xml:space="preserve">
+    <value>Контролирует, как исправления (переоценка) влияют на актив.  Когда выбран "Текущий период", амортизация актива до настоящего времени пересчитывается на основании исправленных значений, а разница между рассчитанной амортизацией и ранее проведенной амортизацией заносится на текущий период.  Когда выбран «Оставшийся срок службы», исправление относится к активу только после этого момента, и затрагивает только будущие расчеты амортизации.</value>
+  </data>
+  <data name="assetrecord_assetnamehelp" xml:space="preserve">
+    <value>Название актива, с которым связана данная запись.</value>
+  </data>
+  <data name="assetrecord_assetlocationhelp" xml:space="preserve">
+    <value>Выберите местоположение, если вы хотите включить в отчет только активы, связанные с определенным местоположением.</value>
+  </data>
+  <data name="assetrecord_assetdepartmenthelp" xml:space="preserve">
+    <value>Выберите подразделение, если вы хотите включить в отчет только активы, связанные с определенным подразделением.</value>
+  </data>
+  <data name="assetrecord_assetclasshelp" xml:space="preserve">
+    <value>Выберите класс, если вы хотите включить в отчет только активы, связанные с определенным классом.</value>
+  </data>
+  <data name="assetrecord_report_subshelp" xml:space="preserve">
+    <value>Выберите дочернюю компанию или дочерние компании, по которым необходимо сформировать отчет.</value>
+  </data>
+  <data name="assetrecord_report_assetacctmethodhelp" xml:space="preserve">
+    <value>Выберите метод амортизации.</value>
+  </data>
+  <data name="assetrecord_report_includechildhelp" xml:space="preserve">
+    <value>Отметьте это поле, если вы хотите включить активы дочерних компаний в отчет.</value>
+  </data>
+  <data name="assetrecord_report_assettypehelp" xml:space="preserve">
+    <value>Выберите один или несколько типов актива для классификации активов в отчете. Обратите внимание на то, что значения по умолчанию будут назначены большинству конфигураций активов на основании типа актива.</value>
+  </data>
+  <data name="assetrecord_assetperiodstartdatehelp" xml:space="preserve">
+    <value>Введите или выберите дату начала для формирования отчетного периода.</value>
+  </data>
+  <data name="assetrecord_assetperiodenddatehelp" xml:space="preserve">
+    <value>Введите или выберите дату окончания для формирования отчетного периода.</value>
+  </data>
+  <data name="assetrecord_report_acctngbookhelp" xml:space="preserve">
+    <value>Выберите бухгалтерскую книгу или книги, по которым необходимо сформировать отчет.</value>
+  </data>
+  <data name="assetrecord_report_typehelp" xml:space="preserve">
+    <value>Выберите тип отчета для формирования.</value>
+  </data>
+
+  <!-- Alternate Depreciation Record -->
+  <data name="client_altdepr_currency_mismatch" page="clientpage" xml:space="preserve">
+     <value>Валюта альтернативной амортизации должна совпадать с валютой бухгалтерской книги, если выбрана бухгалтерская книга.
+     В противном случае валюта должна совпадать с основной валютой дочерней компании или компании.</value>
+  </data>
+</root>

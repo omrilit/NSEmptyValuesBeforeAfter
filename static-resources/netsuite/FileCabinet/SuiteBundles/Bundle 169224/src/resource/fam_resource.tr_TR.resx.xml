@@ -1,0 +1,2766 @@
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+
+  <xsd:schema id="root" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element msdata:IsDataSet="true" name="root">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="page" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+                <xsd:element minOccurs="0" msdata:Ordinal="2" name="comment" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute msdata:Ordinal="1" name="name" type="xsd:string" use="required"/>
+              <xsd:attribute msdata:Ordinal="3" name="type" type="xsd:string"/>
+              <xsd:attribute msdata:Ordinal="4" name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+    <!--
+      ###Enumaration of PAGES.. for tracing only###
+      assetcreation - Asset Creation
+      assetdepreciation - Asset Depreciation
+      assetdisposal - Asset Disposal
+      assetproposal - Asset Proposal
+      assetregister - Asset Register Report/Asset Register Detail
+      assetrevaluation - Asset Revaluation
+      assetsplit - Asset Split
+      assetsummary - Asset Summary Report
+      depreciationschedule - Asset Depreciation Schedule
+      depreciationschedule2 - Asset Depreciation Schedule (Portrait)
+      depreciationmethod - Depreciation Method
+      famreports - Fixed Assets Reports
+      generatehistory - Generate Asset History
+      reportstatus - FAM - Report Status
+      reportstatus2 - Asset Report Status (sc)
+      systemsetup - System Setup
+      systemstatus - System Status
+      maintenance - Language Management
+      depreciationmethodformula - Depreciation Method
+      clientpage - Entries intended for client messages
+  -->
+
+  <!-- Page Screen Title -->
+  <data name="maintenance_screen_assetcreation" page="maintenance" xml:space="preserve">
+    <value>Varlık Oluşturma</value>
+  </data>
+  <data name="maintenance_screen_assetdisposal" page="maintenance" xml:space="preserve">
+    <value>Varlık Elden Çıkarma</value>
+  </data>
+  <data name="maintenance_screen_assetproposal" page="maintenance" xml:space="preserve">
+    <value>Varlık Teklifi</value>
+  </data>
+  <data name="maintenance_screen_assetrevaluation" page="maintenance" xml:space="preserve">
+    <value>Varlık Yeniden Değerleme</value>
+  </data>
+  <data name="maintenance_screen_assetsplit" page="maintenance" xml:space="preserve">
+    <value>Varlık Bölme</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule2" page="maintenance" xml:space="preserve">
+    <value>Amortisman Tablosu (Portre)</value>
+  </data>
+  <data name="maintenance_screen_systemsetup" page="maintenance" xml:space="preserve">
+    <value>Sistem Ayarı</value>
+  </data>
+  <data name="maintenance_screen_maintenance" page="maintenance" xml:space="preserve">
+    <value>Toplu Güncelleme Çevirisi-FAM</value>
+  </data>
+  <data name="maintenance_screen_assetdepreciation" page="maintenance" xml:space="preserve">
+    <value>Varlık Amortismanı</value>
+  </data>
+  <data name="maintenance_screen_assetregister" page="maintenance" xml:space="preserve">
+    <value>Varlık Kayıt Raporu</value>
+  </data>
+  <data name="maintenance_screen_assetsummary" page="maintenance" xml:space="preserve">
+    <value>Varlık Özet Raporu</value>
+  </data>
+  <data name="maintenance_screen_backgroundprocessing" page="maintenance" xml:space="preserve">
+    <value>Arka Plan İşleme</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule" page="maintenance" xml:space="preserve">
+    <value>Amortisman Tablosu</value>
+  </data>
+  <data name="maintenance_screen_generatehistory" page="maintenance" xml:space="preserve">
+    <value>Geçmiş Oluştur</value>
+  </data>
+  <data name="maintenance_screen_reportstatus" page="maintenance" xml:space="preserve">
+    <value>Varlık Kayıt Rapor Durumu</value>
+  </data>
+  <data name="maintenance_screen_systemstatus" page="maintenance" xml:space="preserve">
+    <value>Sistem Durumu</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethod" page="maintenance" xml:space="preserve">
+    <value>Amortisman Yöntemi</value>
+  </data>
+  <data name="maintenance_screen_reportstatus2" page="maintenance" xml:space="preserve">
+    <value>Amortisman Tablosu Rapor Durumu</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethodformula" page="maintenance" xml:space="preserve">
+    <value>Amortisman Formülü</value>
+  </data>
+  <data name="maintenance_screen_clientpage" page="maintenance" xml:space="preserve">
+    <value>İstemci Uyarı Mesajları</value>
+  </data>
+
+  <!-- Localization Maintenance Page -->
+  <data name="maintenance_description_jp" page="maintenance" xml:space="preserve">
+    <value>Ad - Japonya JP</value>
+  </data>
+  <data name="maintenance_description_default" page="maintenance" xml:space="preserve">
+    <value>Ad - İngilizce ABD</value>
+  </data>
+  <data name="maintenance_select_language" page="maintenance" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="custpage_translations_header" page="maintenance" xml:space="preserve">
+    <value>Toplu Güncelleme Çevirisi-FAM</value>
+  </data>
+  <data name="custpage_translations_en_US_header" page="maintenance" xml:space="preserve">
+    <value>ABD</value>
+  </data>
+  <data name="custpage_translations_ja_JP_header" page="maintenance" xml:space="preserve">
+    <value>Japonya</value>
+  </data>
+  <data name="custpage_translations_custom_header" page="maintenance" xml:space="preserve">
+    <value>Çeviri -</value>
+  </data>
+  <data name="custpage_translations_custom_header_us" page="maintenance" xml:space="preserve">
+    <value>abd</value>
+  </data>
+  <data name="custpage_translations_custom_header_jp" page="maintenance" xml:space="preserve">
+    <value>jp</value>
+  </data>
+  <data name="custpage_translations_screen_header" page="maintenance" xml:space="preserve">
+    <value>Ekran</value>
+  </data>
+  <data name="custpage_translations_common_fields" page="maintenance" xml:space="preserve">
+    <value>Genel Alanlar</value>
+  </data>
+
+  <!-- Asset Proposal Page -->
+  <data name="custrecord_assetproposal_title" page="assetproposal" xml:space="preserve">
+    <value>Varlık Teklifi</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetproposal" xml:space="preserve">
+    <value>Varlık Türleri</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetproposal" xml:space="preserve">
+    <value>Bağlı Kuruluş(lar)</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetproposal" xml:space="preserve">
+    <value>Alt Kategorileri Dahil Et</value>
+    </data>
+  <data name="custpage_selectpage" page="assetproposal" xml:space="preserve">
+    <value>Sayfa Seç</value>
+  </data>
+  <data name="custpage_rowperpage" page="assetproposal" xml:space="preserve">
+    <value>Sayfa Başına Teklifler</value>
+  </data>
+  <data name="proposals" page="assetproposal" xml:space="preserve">
+    <value>Teklif Edilen Varlıklar</value>
+    </data>
+  <data name="marked" page="assetproposal" xml:space="preserve">
+    <value>Seç</value>
+    </data>
+  <data name="editurl" page="assetproposal" xml:space="preserve">
+    <value>Düzenle</value>
+    </data>
+  <data name="custrecord_propsourceid" page="assetproposal" xml:space="preserve">
+    <value>İşlem</value>
+    </data>
+  <data name="custrecord_propassettype" page="assetproposal" xml:space="preserve">
+    <value>Varlık Türü</value>
+    </data>
+  <data name="custrecord_propassetdescr" page="assetproposal" xml:space="preserve">
+    <value>Açıklama</value>
+    </data>
+  <data name="custrecord_propaccmethod" page="assetproposal" xml:space="preserve">
+    <value>Amortisman Yöntemi</value>
+    </data>
+  <data name="custrecord_propassetcost" page="assetproposal" xml:space="preserve">
+    <value>Başlangıç Maliyeti</value>
+    </data>
+  <data name="custrecord_propresidvalue" page="assetproposal" xml:space="preserve">
+    <value>Kalan Değer</value>
+    </data>
+  <data name="custrecord_propassetlifetime" page="assetproposal" xml:space="preserve">
+    <value>Ömür</value>
+  </data>
+  <data name="custrecord_propsubsid" page="assetproposal" xml:space="preserve">
+    <value>Bağlı Kuruluş</value>
+  </data>
+  <data name="custpage_nopropselected" page="assetproposal" xml:space="preserve">
+    <value>Oluşturulmak için bir teklif seçilmemiş.</value>
+  </data>
+
+  <!-- Asset Transfer Page -->
+  <data name="custrecord_assettransfer_title" page="assettransfer" xml:space="preserve">
+    <value>Varlık Aktarma</value>
+  </data>
+  <data name="custpage_assetid" page="assettransfer" xml:space="preserve">
+    <value>Varlık Kimliği/Adı</value>
+  </data>
+  <data name="custpage_assetid_help" page="assettransfer" xml:space="preserve">
+    <value>Aktarmak istediğiniz varlığın kimliğini veya adını seçin.</value>
+  </data>
+  <data name="custpage_assettype" page="assettransfer" xml:space="preserve">
+    <value>Varlık Türü</value>
+  </data>
+  <data name="custpage_assettype_help" page="assettransfer" xml:space="preserve">
+    <value>Bu varlık için Varlık Türü.</value>
+  </data>
+  <data name="custpage_newassettype" page="assettransfer" xml:space="preserve">
+    <value>Varlık Türü</value>
+  </data>
+  <data name="custpage_newassettype_help" page="assettransfer" xml:space="preserve">
+    <value>Bu varlığı aktarmak istediğiniz Varlık Kimliğini seçin.</value>
+  </data>
+  <data name="custpage_assetsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>Bağlı Kuruluş</value>
+  </data>
+  <data name="custpage_assetsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>Varlığın mevcut bağlı kuruluşu.</value>
+  </data>
+  <data name="custpage_newsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>Bağlı Kuruluş</value>
+  </data>
+  <data name="custpage_newsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>Bu varlığı aktarmak istediğiniz Bağlı Kuruluşu seçin.</value>
+  </data>
+  <data name="custpage_assetclass" page="assettransfer" xml:space="preserve">
+    <value>Sınıf</value>
+  </data>
+  <data name="custpage_assetclass_help" page="assettransfer" xml:space="preserve">
+    <value>Varlığın mevcut sınıfı.</value>
+  </data>
+  <data name="custpage_newclass" page="assettransfer" xml:space="preserve">
+    <value>Sınıf</value>
+  </data>
+  <data name="custpage_newclass_help" page="assettransfer" xml:space="preserve">
+    <value>Bu varlığı aktarmak istediğiniz Sınıfı seçin.</value>
+  </data>
+  <data name="custpage_assetdepartment" page="assettransfer" xml:space="preserve">
+    <value>Departman</value>
+  </data>
+  <data name="custpage_assetdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>Varlığın mevcut departmanı.</value>
+  </data>
+  <data name="custpage_newdepartment" page="assettransfer" xml:space="preserve">
+    <value>Departman</value>
+  </data>
+  <data name="custpage_newdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>Bu varlığı aktarmak istediğiniz Departmanı seçin.</value>
+  </data>
+  <data name="custpage_assetlocation" page="assettransfer" xml:space="preserve">
+    <value>Konum</value>
+  </data>
+  <data name="custpage_assetlocation_help" page="assettransfer" xml:space="preserve">
+    <value>Varlığın mevcut konumu.</value>
+  </data>
+  <data name="custpage_newlocation" page="assettransfer" xml:space="preserve">
+    <value>Konum</value>
+  </data>
+  <data name="custpage_newlocation_help" page="assettransfer" xml:space="preserve">
+    <value>Bu varlığı aktarmak istediğiniz Konumu seçin.</value>
+  </data>
+  <data name="custpage_assetdescription" page="assettransfer" xml:space="preserve">
+    <value>Varlık Açıklaması</value>
+  </data>
+  <data name="custpage_assetdescription_help" page="assettransfer" xml:space="preserve">
+    <value>Varlığın açıklaması burada görüntülenir.</value>
+  </data>
+  <data name="custpage_assetserialno" page="assettransfer" xml:space="preserve">
+    <value>Varlık Seri Numarası</value>
+  </data>
+  <data name="custpage_assetserialno_help" page="assettransfer" xml:space="preserve">
+    <value>Varlığı izlemek veya tanımlamak için kullanılan bir seri numarası.</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assettransfer" xml:space="preserve">
+    <value>Alternatif Varlık Numarası</value>
+  </data>
+  <data name="custpage_assetalternateno_help" page="assettransfer" xml:space="preserve">
+    <value>Ek varlık referans numarası</value>
+  </data>
+  <data name="custpage_assetorigcost" page="assettransfer" xml:space="preserve">
+    <value>Orijinal Maliyet</value>
+  </data>
+  <data name="custpage_assetorigcost_help" page="assettransfer" xml:space="preserve">
+    <value>Varlığın orijinal (satın alım) maliyeti.</value>
+  </data>
+  <data name="custpage_assetcurrcost" page="assettransfer" xml:space="preserve">
+    <value>Cari Defter Değeri</value>
+  </data>
+  <data name="custpage_assetcurrcost_help" page="assettransfer" xml:space="preserve">
+    <value>Varlığın cari net değerlemesi.</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assettransfer" xml:space="preserve">
+    <value>Varlık Ömrü</value>
+  </data>
+  <data name="custpage_assetlifetime_help" page="assettransfer" xml:space="preserve">
+    <value>Varlığın, amortisman dönemi katları cinsinden beklenen ömrü (örn. aylık amortize ediliyorsa ay cinsinden ömür girin).</value>
+  </data>
+  <data name="custpage_assetlastdepr" page="assettransfer" xml:space="preserve">
+    <value>Son Amortisman Dönemi</value>
+  </data>
+  <data name="custpage_assetlastdepr_help" page="assettransfer" xml:space="preserve">
+    <value>Varlığın en son amortize edildiği dönem sayısı (varlığın ömrü içinde).</value>
+  </data>
+  <data name="custpage_assetstatus" page="assettransfer" xml:space="preserve">
+    <value>Varlık Durumu</value>
+  </data>
+  <data name="custpage_assetstatus_help" page="assettransfer" xml:space="preserve">
+    <value>Varlığın mevcut durumu.</value>
+  </data>
+  <data name="custpage_assetcurrency" page="assettransfer" xml:space="preserve">
+    <value>Para Birimi</value>
+  </data>
+  <data name="custpage_assetcurrency_help" page="assettransfer" xml:space="preserve">
+    <value>Bağlı kuruluşun defter temel para birimi.</value>
+  </data>
+
+  <!-- Process Instance Status Page -->
+  <data name="custpage_processstatus_title" page="processstatus" xml:space="preserve">
+    <value>İşlem Durumu</value>
+  </data>
+  <data name="custpage_processid" page="processstatus" xml:space="preserve">
+    <value>Son İşlemler: </value>
+  </data>
+  <data name="custpage_currentprocess" page="processstatus" xml:space="preserve">
+    <value>Mevcut İşlem(ler): </value>
+  </data>
+  <data name="custpage_processstatus" page="processstatus" xml:space="preserve">
+    <value>Mevcut İşlem Durumu: </value>
+  </data>
+  <data name="custpage_prevprocess" page="processstatus" xml:space="preserve">
+    <value>Önceki İşlemler: </value>
+  </data>
+  <data name="custpage_nopending" page="processstatus" xml:space="preserve">
+    <value>Bekleyen İşlem Yok</value>
+  </data>
+  <data name="custpage_nocurrent" page="processstatus" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="custpage_rendering" page="processstatus" xml:space="preserve">
+    <value>İşleniyor...</value>
+  </data>
+  <data name="custpage_deprnone" page="processstatus" xml:space="preserve">
+    <value>(0) varlık amortize edildi.</value>
+  </data>
+    <data name="custpage_depracctmethods" page="processstatus" xml:space="preserve">
+    <value>Muhasebe Yöntemi Amortize Ediliyor </value>
+  </data>
+  <data name="custpage_depracctmethods_count" page="processstatus" xml:space="preserve">
+    <value>muhasebe yöntemi amortize edildi.</value>
+  </data>
+  <data name="custpage_deprtaxmethods" page="processstatus" xml:space="preserve">
+    <value>Vergi Yöntemleri Amortize Ediliyor </value>
+  </data>
+  <data name="custpage_deprtaxmethods_count" page="processstatus" xml:space="preserve">
+    <value>vergi yöntemleri amortize edildi.</value>
+  </data>
+  <data name="custpage_writingdepr_amounts" page="processstatus" xml:space="preserve">
+    <value>Amortisman Yevmiye Defterine Yazılıyor </value>
+  </data>
+  <data name="custpage_deprhistory_count" page="processstatus" xml:space="preserve">
+    <value>amortisman geçmişi işlendi.</value>
+  </data>
+  <data name="custpage_status_allassettype" page="processstatus" xml:space="preserve">
+    <value>Tüm Varlık Türleri</value>
+  </data>
+  <data name="custpage_procstatus_dispose" page="processstatus" xml:space="preserve">
+    <value>Varlık Elden Çıkarılıyor </value>
+  </data>
+  <data name="custpage_procstatus_dispose_count" page="processstatus" xml:space="preserve">
+    <value>varlıklar elden çıkarıldı.</value>
+  </data>
+  <data name="custpage_procstatus_reval" page="processstatus" xml:space="preserve">
+    <value>Varlık Yeniden Değerleniyor </value>
+  </data>
+  <data name="custpage_procstatus_reval_count" page="processstatus" xml:space="preserve">
+    <value>varlıklar yeniden değerlendi.</value>
+  </data>
+  <data name="custpage_procstatus_split" page="processstatus" xml:space="preserve">
+    <value>Varlık Bölünüyor </value>
+  </data>
+  <data name="custpage_procstatus_split_count" page="processstatus" xml:space="preserve">
+    <value>varlıklar bölündü.</value>
+  </data>
+  <data name="custpage_procstatus_transfer" page="processstatus" xml:space="preserve">
+    <value>Varlık Aktarılıyor </value>
+  </data>
+  <data name="custpage_procstatus_transfer_count" page="processstatus" xml:space="preserve">
+    <value>varlıklar aktarıldı.</value>
+  </data>
+  <data name="custpage_procstatus_gen" page="processstatus" xml:space="preserve">
+    <value>Varlık Oluşturuluyor </value>
+  </data>
+  <data name="custpage_procstatus_gen_count" page="processstatus" xml:space="preserve">
+    <value>varlıklar oluşturuldu.</value>
+  </data>
+  <data name="custpage_procstatus_prop" page="processstatus" xml:space="preserve">
+    <value>Varlık Teklif Ediliyor </value>
+  </data>
+  <data name="custpage_procstatus_prop_count" page="processstatus" xml:space="preserve">
+    <value>varlıklar teklif edildi.</value>
+  </data>
+  <data name="custpage_procstatus_schedreport_count" page="processstatus" xml:space="preserve">
+    <value>raporlar oluşturuldu.</value>
+  </data>
+  <data name="custpage_rep_gen_asset_register" page="processstatus" xml:space="preserve">
+    <value>Varlık Kayıt Raporu Oluşturuluyor</value>
+  </data>
+  <data name="custpage_rep_gen_asset_summary" page="processstatus" xml:space="preserve">
+    <value>Varlık Özet Raporu Oluşturuluyor</value>
+  </data>
+  <data name="custpage_rep_gen_depr_sched" page="processstatus" xml:space="preserve">
+    <value>Amortisman Tablosu Raporu Oluşturuluyor</value>
+  </data>
+  <data name="custpage_report_generation_count" page="processstatus" xml:space="preserve">
+    <value>kayıtlar dahil edildi.</value>
+  </data>
+  <data name="custpage_view_report_as" page="processstatus" xml:space="preserve">
+    <value>raporu farklı görüntüle:</value>
+  </data>
+  <data name="custpage_procstatus_create" page="processstatus" xml:space="preserve">
+    <value>Varlık Oluşturuluyor </value>
+  </data>
+  <data name="custpage_procstatus_create_count" page="processstatus" xml:space="preserve">
+    <value>varlıklar oluşturuldu.</value>
+  </data>
+  <data name="custpage_view_proppage" page="processstatus" xml:space="preserve">
+    <value>teklif sayfasını görüntüle</value>
+  </data>
+  
+  <!-- Asset Summary Page -->
+  <data name="custrecord_assetsummary_title" page="assetsummary" xml:space="preserve">
+    <value>Varlık Özet Raporu</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetsummary" xml:space="preserve">
+    <value>Varlık Türleri</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetsummary" xml:space="preserve">
+    <value>Bağlı Kuruluş(lar)</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetsummary" xml:space="preserve">
+    <value>Alt Kategorileri Dahil Et</value>
+    </data>
+  <data name="custpage_filtermsselect" page="assetsummary" xml:space="preserve">
+    <value>Seç</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetsummary" xml:space="preserve">
+    <value>Amortisman Yöntemi</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetsummary" xml:space="preserve">
+    <value>Konum</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetsummary" xml:space="preserve">
+    <value>Departman</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetsummary" xml:space="preserve">
+    <value>Sınıf</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetsummary" xml:space="preserve">
+    <value>Dönem Başlangıç Tarihi</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetsummary" xml:space="preserve">
+    <value>Dönem Bitiş Tarihi</value>
+  </data>
+  <data name="custpage_html_tangible" page="assetsummary" xml:space="preserve">
+    <value>Maddi Duran Varlıklar</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="assetsummary" xml:space="preserve">
+    <value>Maliyet veya Değerleme</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetsummary" xml:space="preserve">
+    <value>Amortisman</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetsummary" xml:space="preserve">
+    <value>Net Defter Değeri</value>
+  </data>
+  <data name="custpage_html_at" page="assetsummary" xml:space="preserve">
+    <value>(0)</value>
+  </data>
+  <data name="custpage_html_additions" page="assetsummary" xml:space="preserve">
+    <value>İlaveler</value>
+  </data>
+  <data name="custpage_html_disposals" page="assetsummary" xml:space="preserve">
+    <value>Elden Çıkarılanlar</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="assetsummary" xml:space="preserve">
+    <value>Dönem için gider</value>
+  </data>
+  <data name="custpage_html_adjustments" page="assetsummary" xml:space="preserve">
+    <value>Düzeltmeler</value>
+  </data>
+  <data name="custpage_html_fam" page="assetsummary" xml:space="preserve">
+    <value>Duran Varlık Yönetimi</value>
+  </data>
+  <data name="custpage_html_total" page="assetsummary" xml:space="preserve">
+    <value>Toplam</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetsummary" xml:space="preserve">
+    <value>Tüm Varlıklar</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetsummary" xml:space="preserve">
+    <value>Kiralananlar Hariç Tüm Varlıklar</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetsummary" xml:space="preserve">
+    <value>Yalnızca Kiralananlar</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetsummary" xml:space="preserve">
+    <value>Muhasebe Yöntemi (Seçenek)</value>
+  </data>
+  
+  
+  <!-- Fixed Assets Reports -->
+  <data name="custrecord_famreports_title" page="famreports" xml:space="preserve">
+    <value>Duran Varlıklar Raporu</value>
+  </data>
+  <data name="custpage_reporttype" page="famreports" xml:space="preserve">
+    <value>Rapor Türü</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="famreports" xml:space="preserve">
+    <value>Varlık Türü (Türleri)</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="famreports" xml:space="preserve">
+    <value>Bağlı Kuruluş(lar)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="famreports" xml:space="preserve">
+    <value>Alt Kategorileri Dahil Et</value>
+  </data>
+  <data name="custpage_filteracctngbook" page="famreports" xml:space="preserve">
+    <value>Muhasebe Defter(ler)i</value>
+  </data>
+  <data name="custpage_filtermsselect" page="famreports" xml:space="preserve">
+    <value>Dahil edilecek varlıklar</value>
+  </data>
+  <data name="custpage_filtersmethod" page="famreports" xml:space="preserve">
+    <value>Alternatif Amortisman</value>
+  </data>
+  <data name="custpage_filterslocation" page="famreports" xml:space="preserve">
+    <value>Konumlar</value>
+  </data>
+  <data name="custpage_filtersdept" page="famreports" xml:space="preserve">
+    <value>Departman(lar)</value>
+  </data>
+  <data name="custpage_filtersclass" page="famreports" xml:space="preserve">
+    <value>Sınıflar</value>
+  </data>
+  <data name="custpage_filterstartdate" page="famreports" xml:space="preserve">
+    <value>Başlangıç Tarihi</value>
+  </data>
+  <data name="custpage_filterenddate" page="famreports" xml:space="preserve">
+    <value>Bitiş Tarihi</value>
+  </data>
+  <data name="custpage_html_tangible" page="famreports" xml:space="preserve">
+    <value>Maddi Duran Varlıklar</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="famreports" xml:space="preserve">
+    <value>Maliyet veya Değerleme</value>
+  </data>
+  <data name="custpage_html_depreciation" page="famreports" xml:space="preserve">
+    <value>Amortisman</value>
+  </data>
+  <data name="custpage_html_nbv" page="famreports" xml:space="preserve">
+    <value>Net Defter Değeri</value>
+  </data>
+  <data name="custpage_html_at" page="famreports" xml:space="preserve">
+    <value>(0)</value>
+  </data>
+  <data name="custpage_html_additions" page="famreports" xml:space="preserve">
+    <value>İlaveler</value>
+  </data>
+  <data name="custpage_html_disposals" page="famreports" xml:space="preserve">
+    <value>Elden Çıkarılanlar</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="famreports" xml:space="preserve">
+    <value>Dönem için gider</value>
+  </data>
+  <data name="custpage_html_adjustments" page="famreports" xml:space="preserve">
+    <value>Düzeltmeler</value>
+  </data>
+  <data name="custpage_html_fam" page="famreports" xml:space="preserve">
+    <value>Duran Varlık Yönetimi</value>
+  </data>
+  <data name="custpage_html_total" page="famreports" xml:space="preserve">
+    <value>Toplam</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="famreports" xml:space="preserve">
+    <value>Tüm Varlıklar</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="famreports" xml:space="preserve">
+    <value>Kiralananlar Hariç Tüm Varlıklar</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="famreports" xml:space="preserve">
+    <value>Yalnızca Kiralananlar</value>
+  </data>
+  <data name="custpage_dropdown_report_assetregister" page="famreports" xml:space="preserve">
+    <value>Varlık Kaydı</value>
+  </data>
+  <data name="custpage_dropdown_report_assetsummary" page="famreports" xml:space="preserve">
+    <value>Varlık Özeti</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_nbv" page="famreports" xml:space="preserve">
+    <value>Amortisman Tablosu Net Defter Değeri</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_pd" page="famreports" xml:space="preserve">
+    <value>Amortisman Tablosu Dönemi Amortisman</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="famreports" xml:space="preserve">
+    <value>Muhasebe Yöntemi</value>
+  </data>
+  <data name="custpage_saveresults_help" page="famreports" xml:space="preserve">
+    <value>Tahmini Tutarları Kaydet, oluşturulan amortisman tablosu girişlerini (bir varlığın ömrü boyunca) varlık kaydına kaydetmenizi sağlar. Etkinleştirildiğinde, sistem Başlangıç Tarihi, Bitiş Tarihi, Net Defter Değeri ve Dönem Amortismanı'nı yok sayar. Bu, Amortisman Geçmişi tablosunda, varlığın ömrü boyunca her zaman tam bir amortisman tablosu olmasını sağlar. Başlangıç Tarihi, Bitiş Tarihi, Net Defter Değeri ve Dönem Amortismanı alanlarına girilen değerler yalnızca oluşturulan rapor için kullanılır.</value>
+  </data>
+  <data name="custpage_saveresults" page="famreports" xml:space="preserve">
+    <value>Tahmini Tutarları Kaydet</value>
+  </data>
+  <data name="custpage_assetinclude_help" page="famreports" xml:space="preserve">
+    <value>Rapora şu varlıkların hangisinin dahil edileceğini seçin: Tüm Varlıklar, Kiralananlar Hariç Tüm Varlıklar veya Yalnızca Kiralananlar.</value>
+  </data>
+  <data name="custpage_nodataforreport" page="famreports" xml:space="preserve">
+    <value>Rapor verileri, seçtiğiniz filtrelerin kombinasyonu için kullanılamaz.</value>
+  </data>
+  <data name="custpage_dropddown_none" page="famreports" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+
+  <!-- Report Status -->
+  <data name="custpage_currentstatus" page="reportstatus" xml:space="preserve">
+    <value>Mevcut Durum</value>
+  </data>
+  <data name="custpage_resultstatus" page="reportstatus" xml:space="preserve">
+    <value>Öğeler nerede duruyor?</value>
+  </data>
+  <data name="custpage_reportavailable" page="reportstatus" xml:space="preserve">
+    <value>Rapor sonuçları kullanılabilir</value>
+  </data>
+  <data name="custpage_generatereportassettypes" page="reportstatus" xml:space="preserve">
+    <value>Rapor Varlık Türleri Oluşturma:</value>
+  </data>
+  <data name="custpage_generatereport" page="reportstatus" xml:space="preserve">
+    <value>Rapor Oluştur: </value>
+  </data>
+  <data name="custpage_assetprocessed" page="reportstatus" xml:space="preserve">
+    <value>(0) varlık işlendi.</value>
+  </data>
+  <data name="custpage_reportlink" page="reportstatus" xml:space="preserve">
+    <value>burada</value>
+  </data>
+  <data name="custpage_errorfile" page="reportstatus" xml:space="preserve">
+    <value>Rapor dosyası bilgileri alınırken hata oluştu</value>
+  </data>
+  <data name="custpage_generatingreport" page="reportstatus" xml:space="preserve">
+    <value>Rapor oluşturuluyor:</value>
+  </data>
+  <data name="custpage_reportcomplete" page="reportstatus" xml:space="preserve">
+    <value>Rapor oluşturma tamamlandı.</value>
+  </data>
+  <data name="custpage_processfailed" page="reportstatus" xml:space="preserve">
+    <value>İşleme başarısız.</value>
+  </data>
+
+  <!-- Report Status Depreciation -->
+  <data name="custrecord_reportstatus_title" page="reportstatus2" xml:space="preserve">
+    <value>Amortisman Tablosu Rapor Durumu</value>
+  </data>
+  <data name="custpage_html_currentstatus" page="reportstatus2" xml:space="preserve">
+    <value>Mevcut Durum</value>
+  </data>
+  <data name="custpage_html_resultstatus" page="reportstatus2" xml:space="preserve">
+    <value>Öğeler nerede duruyor?</value>
+  </data>
+  <data name="custpage_html_assetprocessed" page="reportstatus2" xml:space="preserve">
+    <value>(0) varlık işlendi.</value>
+  </data>
+  <data name="custpage_html_reportavailable" page="reportstatus2" xml:space="preserve">
+    <value>Rapor sonuçları kullanılabilir</value>
+  </data>
+  <data name="custpage_html_reportlink" page="reportstatus2" xml:space="preserve">
+    <value>burada</value>
+  </data>
+  <data name="custpage_html_generatereport" page="reportstatus2" xml:space="preserve">
+    <value>Rapor oluşturuluyor: (0)</value>
+  </data>
+  <data name="custpage_html_processfailed" page="reportstatus2" xml:space="preserve">
+    <value>İşleme başarısız.</value>
+  </data>
+  <data name="custpage_html_errorfile" page="reportstatus2" xml:space="preserve">
+    <value>Rapor dosyası bilgileri alınırken hata oluştu</value>
+  </data>
+  <data name="custpage_html_assetno" page="reportstatus2" xml:space="preserve">
+    <value>Varlık No.</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="reportstatus2" xml:space="preserve">
+    <value>Varlık Açıklaması</value>
+  </data>
+
+
+  <data name="custrecord_famreportshist_title" page="famreportshistory" xml:space="preserve">
+    <value>Duran Varlıklar Rapor Geçmişi</value>
+  </data>  
+  <data name="custpage_showingdays" page="famreportshistory" xml:space="preserve">
+    <value>Son (0) günden raporlar gösteriliyor.</value>
+  </data>
+  <data name="custpage_group_reporthistory" page="famreportshistory" xml:space="preserve">
+    <value>Duran Varlık Raporları</value>
+  </data>
+  <data name="custpage_reports_dategen" page="famreportshistory" xml:space="preserve">
+    <value>Oluşturulma Tarihi</value>
+  </data>
+  <data name="custpage_reports_reptype" page="famreportshistory" xml:space="preserve">
+    <value>Tür</value>
+  </data>
+  <data name="custpage_reports_repstartdate" page="famreportshistory" xml:space="preserve">
+    <value>Başlangıç Tarihi</value>
+  </data>
+  <data name="custpage_reports_rependdate" page="famreportshistory" xml:space="preserve">
+    <value>Bitiş Tarihi</value>
+  </data>
+  <data name="custpage_reports_fileoptions" page="famreportshistory" xml:space="preserve">
+    <value>Dosya Seçenekleri</value>
+  </data>
+  <data name="custpage_reports_viewas" page="famreportshistory" xml:space="preserve">
+    <value>Farklı Görüntüle: </value>
+  </data>
+  <data name="custpage_reports_delete" page="famreportshistory" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="custpage_reports_repowner" page="famreportshistory" xml:space="preserve">
+    <value>Sahip</value>
+  </data>
+  <data name="custpage_error_filepermissioninsuf" page="famreportshistory" xml:space="preserve">
+    <value>Bu rolün Görüntüle veya daha yüksek dosya izni yok.</value>
+  </data>
+  <data name="custpage_button_all_reports" page="famreportshistory" xml:space="preserve">
+    <value>Tüm Raporları Göster</value>
+  </data>
+  <data name="custpage_button_my_reports" page="famreportshistory" xml:space="preserve">
+    <value>Raporlarımı Göster</value>
+  </data>
+
+  <!-- System Setup Page -->
+  <data name="custrecord_systemsetup_title" page="systemsetup" xml:space="preserve">
+    <value>Duran Varlıklar Yönetimi</value>
+  </data>
+  <data name="custrecord_systemsetup_settingstab" page="systemsetup" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalktab" page="systemsetup" xml:space="preserve">
+    <value>SuiteTalk</value>
+  </data>
+  <data name="custrecord_systemsetup_featurestab" page="systemsetup" xml:space="preserve">
+    <value>Özellikler</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalkdesc" page="systemsetup" xml:space="preserve">
+    <value>SuiteTalk (web hizmetleri) için kullanılacak kimlik bilgilerini girin</value>
+  </data>
+  <data name="custpage_filtermsselect" page="systemsetup" xml:space="preserve">
+    <value>Seç</value>
+  </data>
+  <data name="custpage_filtersmethod" page="systemsetup" xml:space="preserve">
+    <value>Amortisman Yöntemi</value>
+  </data>
+  <data name="custpage_filterslocation" page="systemsetup" xml:space="preserve">
+    <value>Konum</value>
+  </data>
+  <data name="custpage_filtersdept" page="systemsetup" xml:space="preserve">
+    <value>Departman</value>
+  </data>
+  <data name="custpage_filtersclass" page="systemsetup" xml:space="preserve">
+    <value>Sınıf</value>
+  </data>
+  <data name="custpage_filterstartdate" page="systemsetup" xml:space="preserve">
+    <value>Dönem Başlangıç Tarihi</value>
+  </data>
+  <data name="custpage_filterenddate" page="systemsetup" xml:space="preserve">
+    <value>Dönem Bitiş Tarihi</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import" page="systemsetup" xml:space="preserve">
+    <value>CSV İçe Aktarımında Sunucu Komut Dosyalarını Çalıştır</value>
+  </data>
+  <data name="custpage_farsetuppostlocation" page="systemsetup" xml:space="preserve">
+    <value>Konum Değişikliğinde Kaydet</value>
+  </data>
+  <data name="custpage_farsetuppostclass" page="systemsetup" xml:space="preserve">
+    <value>Sınıf Değişikliğinde Kaydet</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment" page="systemsetup" xml:space="preserve">
+    <value>Departman Değişikliğinde Kaydet</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock" page="systemsetup" xml:space="preserve">
+    <value>AP Kilitliyse Sonraki Açık Döneme Kaydet</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock_help" page="systemsetup" xml:space="preserve">
+    <value>AP kilitliyse sonraki açık döneme kaydetmeye izin vermek için bu kutuyu işaretleyin. AP kilitli olsa dahi cari döneme kaydetmeye izin vermek için bu kutunun işaretini kaldırın.</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock" page="systemsetup" xml:space="preserve">
+    <value>AR Kilitliyse Sonraki Açık Döneme Kaydet</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock_help" page="systemsetup" xml:space="preserve">
+    <value>AR kilitliyse sonraki açık döneme kaydetmeye izin vermek için bu kutuyu işaretleyin. AR kilitli olsa dahi cari döneme kaydetmeye izin vermek için bu kutunun işaretini kaldırın.</value>
+  </data>
+  <data name="custpage_allow_non_fixedasset_account" page="systemsetup" xml:space="preserve">
+    <value>Sabit Olmayan Varlık Hesap Türlerine İzin Ver</value>
+  </data>
+  <data name="custpage_farsetupsummary" page="systemsetup" xml:space="preserve">
+    <value>Yevmiye Defterlerini Özetleme Kriteri</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations" page="systemsetup" xml:space="preserve">
+    <value>İleri Tarihli Amortismana İzin Ver</value>
+  </data>
+  <data name="custpage_allowvalueedit" page="systemsetup" xml:space="preserve">
+    <value>Varlık Değeri Düzenlemeye İzin Ver</value>
+  </data>
+  <data name="custpage_allownegativecost" page="systemsetup" xml:space="preserve">
+    <value>Eksi Varlık Maliyetine İzin Ver</value>
+  </data>
+  <data name="custpage_userrole_help1" page="systemsetup" xml:space="preserve">
+    <value>Varlık Değeri Düzenlemeye İzin Ver, Yöneticiye varlık kayıtlarındaki değerleri düzenlemek için tam izin verir.</value>
+  </data>
+  <data name="custpage_userrole_help2" page="systemsetup" xml:space="preserve">
+    <value>Diğer kullanıcıların varlık değerlerini düzenlemesine izin vermek için ek roller de seçebilirsiniz.</value>
+  </data>
+  <data name="custpage_userrole" page="systemsetup" xml:space="preserve">
+    <value>Kullanıcı Rolleri</value>
+  </data>
+  <data name="custpage_propapprovedonly" page="systemsetup" xml:space="preserve">
+    <value>Yalnızca Onaylı İşlemleri Teklif Et</value>
+  </data>
+  <data name="custpage_followacctperiod" page="systemsetup" xml:space="preserve">
+    <value>Amortisman için Muhasebe Dönemi Tarihleri Kullan</value>
+  </data>
+  <data name="custpage_allowbypassue" page="systemsetup" xml:space="preserve">
+    <value>Amortisman Sırasında Özel Kayıt UE Komut Dosyalarını Geç</value>
+  </data>
+  <data name="custpage_constrainal" page="systemsetup" xml:space="preserve">
+    <value>Alternatif Varlık Ömrü Sınırla</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction" page="systemsetup" xml:space="preserve">
+    <value>Özel Yevmiye Defterleri Kullan</value>
+  </data>
+  <data name="custpage_adminallreports" page="systemsetup" xml:space="preserve">
+    <value>Yöneticilerin Tüm Raporları Görüntülemesine İzin Ver</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount" page="systemsetup" xml:space="preserve">
+    <value>Amortisman Hesabı kullanarak değer düşür</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym" page="systemsetup" xml:space="preserve">
+    <value>Tam sayı (0 d.p.) Para Birimleri</value>
+  </data>
+  <data name="custpage_farsetupresrej" page="systemsetup" xml:space="preserve">
+    <value>Teklif Reddetme Yeteneğini Kısıtla</value>
+  </data>
+  <data name="custpage_farsetupreportfolder" page="systemsetup" xml:space="preserve">
+    <value>Raporlama için kullanılacak klasör (dahili kimlik)</value>
+  </data>
+  <data name="custpage_farsetupdisposalform" page="systemsetup" xml:space="preserve">
+    <value>Varlık Elden Çıkarma Fatura Formu (dahili kimlik)</value>
+  </data>
+  <data name="custpage_farsetupsubsidsenabled" page="systemsetup" xml:space="preserve">
+    <value>Bağlı Kuruluşlar</value>
+  </data>
+  <data name="custpage_farsetupdeptsenabled" page="systemsetup" xml:space="preserve">
+    <value>Departmanlar</value>
+  </data>
+  <data name="custpage_farsetuplocationsenabled" page="systemsetup" xml:space="preserve">
+    <value>Konumlar</value>
+  </data>
+  <data name="custpage_farsetupclassesenabled" page="systemsetup" xml:space="preserve">
+    <value>Sınıflar</value>
+  </data>
+  <data name="custpage_farsetupjobsenabled" page="systemsetup" xml:space="preserve">
+    <value>İşler</value>
+  </data>
+  <data name="custpage_farsetupmulticurrenabled" page="systemsetup" xml:space="preserve">
+    <value>Çoklu Para Birimleri</value>
+  </data>
+  <data name="custpage_admin_only_field" page="systemsetup" xml:space="preserve">
+    <value>Yalnızca Yönetici</value>
+  </data>
+  <data name="custpage_html_adminonly" page="systemsetup" xml:space="preserve">
+    <value>Yalnızca yöneticiler bu sayfaya erişebilir.</value>
+  </data>
+  <data name="custpage_dropdown_none" page="systemsetup" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="custpage_dropdown_parent" page="systemsetup" xml:space="preserve">
+    <value>Üst</value>
+  </data>
+  <data name="custpage_dropdown_subcategory" page="systemsetup" xml:space="preserve">
+    <value>Alt Kategori</value>
+  </data>
+  <data name="custpage_dropdown_assettype" page="systemsetup" xml:space="preserve">
+    <value>Varlık Türü</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import_help" page="systemsetup" xml:space="preserve">
+  <value>Orta ömürlü varlıkların kayıtlarını içe aktarıyorsanız bu kutuyu işaretlemeyin.
+Bu kutu işaretliyse ve Sunucu SuiteScript ve Tetikleme Akışlarını Çalıştır (Ayarlar &gt; İçe Aktar &gt; CSV İçe Aktarma Tercihleri) kutusu da işaretliyse Kümülatif Amortisman, Son Amortisman Tarihi ve Son Amortisman Dönemi gibi bilgiler, doğru tutarlar içe aktarma dosyasında olsa dahi 0 varsayılan değerleriyle otomatik olarak doldurulur.</value>
+  </data>
+  <data name="custpage_farsetuppostlocation_help" page="systemsetup" xml:space="preserve">
+    <value>Varlıklar konum değişikliği olduğu takdirde, eşlik eden Yevmiye Defteri Girişleriyle aktarılacaksa bu kutuyu işaretleyin.</value>
+  </data>
+  <data name="custpage_farsetuppostclass_help" page="systemsetup" xml:space="preserve">
+    <value>Varlıklar sınıf değişikliği olduğu takdirde, eşlik eden Yevmiye Defteri Girişleriyle aktarılacaksa bu kutuyu işaretleyin.</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment_help" page="systemsetup" xml:space="preserve">
+    <value>Varlıklar departman değişikliği olduğu takdirde, eşlik eden Yevmiye Defteri Girişleriyle aktarılacaksa bu kutuyu işaretleyin.</value>
+  </data>
+  <data name="custpage_constrainal_help" page="systemsetup" xml:space="preserve">
+    <value>Varlık Ömrü (AL) değeri varlığın ömründen fazla olan alternatif bir amortisman kaydına yapılabilecek ilaveleri sınırlamak için bu kutuyu işaretleyin.</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount_help" page="systemsetup" xml:space="preserve">
+    <value>Değer düşürme tutarını amortisman hesabına kaydetmek için bu kutuyu işaretleyin. Değer düşürme tutarını varlık hesabına kaydetmek için kutunun işaretini kaldırın.</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym_help" page="systemsetup" xml:space="preserve">
+    <value>Para birimleri için ondalık hanesiz şekilde bir veya daha fazla para birimi simgesi girin (örn. JPY, birden fazla değeri virgül ile ayırın).</value>
+  </data>
+  <data name="custpage_farsetupresrej_help" page="systemsetup" xml:space="preserve">
+    <value>Bu seçenek işaretlenirse Teklifleri Reddet düğmesi yalnızca Yönetici rolü olan kullanıcılar tarafından erişildiğinde Varlık Teklifi sayfasında görüntülenir.</value>
+  </data>
+  <data name="custpage_farsetupreportfolder_help" page="systemsetup" xml:space="preserve">
+    <value>Duran Varlık raporlarının kaydedildiği Dosya Saklama Alanında Duran Varlık Kayıt Raporları klasörünün Dahili Kimliğini girin. NetSuite hesabınızda Duran Varlık Kayıt Raporları klasörünün dahili kimliğini görmek için:
+1. Belgeler &gt; Dosyalar &gt; Dosya Saklama Alanı'na gidin.
+2. SuiteBundles'a tıklayın.
+3. Paket 35405'e tıklayın.
+4. Src klasörüne tıklayın.</value>
+  </data>
+  <data name="custpage_farsetupdisposalform_help" page="systemsetup" xml:space="preserve">
+    <value>Bir varlık Satış ile elden çıkarılırken Satış Faturası kaydını oluşturmak için kullanılacak tercih edilen Fatura formunun Dahili Kimliğini girin. Bu alan boş bırakılırsa varsayılan tercih edilen form, Fatura formu olarak kullanılır.</value>
+  </data>
+  <data name="custpage_farsetupsummary_help" page="systemsetup" xml:space="preserve">
+    <value>Bir Yevmiye Defterlerini Özetleme kriteri seçin:
+Üst - Alt varlıkların değerlerini üste yuvarlayın ve dönem başına üst ve alt değerleri dahil etmek üzere bir yevmiye defteri girişi oluşturun.
+Alt Kategori - Değerleri alt kategoriye yuvarlayın ve dönem başına alt kategori başına bir yevmiye defteri girişi oluşturun. Bu seçenek yalnızca Onarım ve Bakım Kategorileri, Onarım ve Bakım Alt Kategorileri uygulandıysa seçilebilir.
+Varlık Türü - Değerleri varlık türüne göre yuvarlayın.</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations_help" page="systemsetup" xml:space="preserve">
+    <value>Varlıkların, o cari dönemin ötesindeki bir amortisman tarihine kadar amortize edilmesine izin vermek için bu kutuyu işaretleyin. Varlıkları yalnızca cari döneme kadar amortize etmek için kutunun işaretini kaldırın.</value>
+  </data>
+  <data name="custpage_allowvalueedit_help" page="systemsetup" xml:space="preserve">
+    <value>Yöneticilere varlık kayıtlarındaki değerleri düzenlemek için tam izin vermek amacıyla bu kutuyu işaretleyin.
+Bu kutu işaretlenmezse varlık kayıtları düzenlenemez. Düzenlenemeyecek alanların listesi için bkz. Varlık Değerlerinin Düzenlenmesinin Kısıtlanması.
+Diğer kullanıcıların varlık değerlerini düzenlemesine izin vermek için Kullanıcı Rolleri alanından ek roller seçin.</value>
+  </data>
+  <data name="custpage_allownegativecost_help" page="systemsetup" xml:space="preserve">
+    <value>Yöneticilerin (ve varlık değerlerini düzenleme izni olan diğer rollerin) varlık kayıtlarında —orijinal maliyet, cari maliyet ve kalan değer için—eksi değerler girmesine izin vermek için bunu işaretleyin.</value>
+  </data>
+  <data name="custpage_userrole_help" page="systemsetup" xml:space="preserve">
+    <value>Varlık Değeri Düzenlemeye İzin Ver kutusu işaretlendiğinde bu etkinleştirilir. İki veya daha fazla rol seçmek için Kullanıcı Rolleri alanında her bir role tıklarken CTRL tuşunu basılı tutun.</value>
+  </data>
+  <data name="custpage_propapprovedonly_help" page="systemsetup" xml:space="preserve">
+    <value>Yalnızca onaylanmış işlemlerden varlıklar teklif etmek istiyorsanız bu kutuyu işaretleyin. İşlem durumundan bağımsız olarak duran varlık genel muhasebe defteri hesaplarına kaydedilen tüm yeni işlemlerden varlıkların otomatik teklifini etkinleştirmek için bu kutunun işaretini kaldırın (örneğin, onaylanmış veya onay bekleyen).</value>
+  </data>
+  <data name="custpage_followacctperiod_help" page="systemsetup" xml:space="preserve">
+    <value>Amortisman yevmiye defteri girişi için muhasebe dönemi tarihlerini kullanmak amacıyla bu tercihi etkinleştirin. Bu, Dönem Biçimi Takvim Ayı cinsinden değilse uygulanabilir.</value>
+  </data>
+  <data name="custpage_allowbypassue_help" page="systemsetup" xml:space="preserve">
+    <value>Amortisman İşlemi esnasında özel kayıtlar için Kullanıcı-Olay komut dosyalarını ve iş akışlarını geçmek için bu kutuyu işaretleyin. Amortisman İşlemi esnasında güncellenecek kayıtlar üzerinde özel komut dosyaları ve/veya iş akışları yürütüyorsanız bu kutunun işaretini kaldırın.</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction_help" page="systemsetup" xml:space="preserve">
+    <value>Özel yevmiye defteri girişi formu kullanmak için bu kutuyu işaretleyin</value>
+  </data>
+  <data name="custpage_adminallreports_help" page="systemsetup" xml:space="preserve">
+    <value>Yöneticilerin, diğer kullanıcılar tarafından oluşturulan raporları görüntülemesine izin vermek için bu kutuyu işaretleyin</value>
+  </data>
+  
+  <!-- Asset Split -->
+  <data name="custrecord_assetsplit_title" page="assetsplit" xml:space="preserve">
+    <value>Varlık Bölme</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetsplit" xml:space="preserve">
+    <value>Birincil Bilgiler</value>
+  </data>
+  <data name="custpage_group_splitdetails" page="assetsplit" xml:space="preserve">
+    <value>Bölme Ayrıntıları</value>
+  </data>
+  <data name="custpage_newlbl" page="assetsplit" xml:space="preserve">
+    <value>Yeni Varlık Değerleri:</value>
+  </data>
+  <data name="custpage_oldlbl" page="assetsplit" xml:space="preserve">
+    <value>Eski Varlık Değerleri:</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetsplit" xml:space="preserve">
+    <value>Vergi Yöntemleri</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetsplit" xml:space="preserve">
+    <value>Muhasebe Defteri</value>
+  </data>
+  <data name="custpage_altmethod" page="assetsplit" xml:space="preserve">
+    <value>Alternatif Yöntem</value>
+  </data>
+  <data name="custpage_assetid" page="assetsplit" xml:space="preserve">
+    <value>Varlık Kimliği/Adı</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetsplit" xml:space="preserve">
+    <value>Varlık Açıklaması</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetsplit" xml:space="preserve">
+    <value>Varlık Seri Numarası</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetsplit" xml:space="preserve">
+    <value>Alternatif Varlık Numarası</value>
+  </data>
+  <data name="custpage_assettype" page="assetsplit" xml:space="preserve">
+    <value>Varlık Türü</value>
+  </data>
+  <data name="custpage_assetcost" page="assetsplit" xml:space="preserve">
+    <value>Orijinal Maliyet</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetsplit" xml:space="preserve">
+    <value>Cari Maliyet</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetsplit" xml:space="preserve">
+    <value>Kalan Değer</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetsplit" xml:space="preserve">
+    <value>Amortisman Yöntemi</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetsplit" xml:space="preserve">
+    <value>Varlık Ömrü</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetsplit" xml:space="preserve">
+    <value>Cari Defter Değeri</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetsplit" xml:space="preserve">
+    <value>Bugüne Kadarki Amortisman</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetsplit" xml:space="preserve">
+    <value>Son Amortisman Dönemi</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetsplit" xml:space="preserve">
+    <value>Son Amortisman Tutarı</value>
+  </data>
+  <data name="custpage_assetdeprstartdate" page="assetsplit" xml:space="preserve">
+    <value>Amortisman Başlangıç Tarihi</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetsplit" xml:space="preserve">
+    <value>Son Amortisman Tarihi</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetsplit" xml:space="preserve">
+    <value>Varlık Durumu</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetsplit" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetsplit" xml:space="preserve">
+    <value>Bağlı Kuruluş</value>
+  </data>
+  <data name="custpage_splitquantity" page="assetsplit" xml:space="preserve">
+    <value>Miktarı Böl</value>
+  </data>
+  <data name="splitquantity_help" page="assetsplit" xml:space="preserve">
+    <value>Lütfen Varlık Miktarından düşük bir değer girin.</value>
+  </data>
+  <!--help texts -->
+  <data name="custpage_newqty_help" page="assetsplit" xml:space="preserve">
+    <value>Orijinal varlıktan ayrılmış miktar. Bu artık yeni varlığın miktarı haline gelir.</value>
+  </data>
+  <data name="custpage_newoc_help" page="assetsplit" xml:space="preserve">
+    <value>Orijinal varlığın orijinal maliyeti ve bölme miktarına dayanarak yeni varlık için varsayılan orijinal (satın alma) maliyeti. Varsayılan orijinal maliyeti kullanmak istemiyorsanız yeni bir değer girin.</value>
+  </data>
+  <data name="custpage_newcc_help" page="assetsplit" xml:space="preserve">
+    <value>Orijinal varlığın cari maliyeti ve bölme miktarına dayanarak yeni varlık için varsayılan cari maliyet. Varsayılan cari maliyeti kullanmak istemiyorsanız yeni bir değer girin.</value>
+  </data>
+  <data name="custpage_newnbv_help" page="assetsplit" xml:space="preserve">
+    <value>Orijinal varlığın net defter değeri ve bölme miktarına dayanarak yeni varlık için varsayılan net defter değerlemesi. Varsayılan net defter değerini kullanmak istemiyorsanız yeni bir değer girin.  Net Defter Değeri ve Bugüne Kadarki Amortisman'ın Cari Maliyet'e eşit olması gerektiğini unutmayın.</value>
+  </data>
+  <data name="custpage_newdeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>Orijinal varlığın Bugüne Kadarki Amortisman tutarına ve bölme miktarına dayanarak yeni varlık için bugüne kadar uygulanan varsayılan toplam amortisman tutarı. Varsayılan toplam amortisman tutarını kullanmak istemiyorsanız yeni bir değer girin. Net Defter Değeri ve Bugüne Kadarki Amortisman'ın Cari Maliyet'e eşit olması gerektiğini unutmayın.</value>
+  </data>
+  <data name="custpage_newrv_help" page="assetsplit" xml:space="preserve">
+    <value>Yeni varlığın, ömrünün sonundaki varsayılan değeri. Bu değer, orijinal varlığın Kalan Değeri ve bölme miktarını temel alır.  Varsayılan kalan değeri kullanmak istemiyorsanız yeni bir değer girin.</value>
+  </data>
+  <data name="custpage_newlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>Orijinal varlığın Son Amortisman Tutarı ve bölme miktarına dayanarak yeni varlık için varsayılan son amortisman tutarı. Varsayılan son amortisman tutarını kullanmak istemiyorsanız yeni bir değer girin.</value>
+  </data>
+  <data name="custpage_oldqty_help" page="assetsplit" xml:space="preserve">
+    <value>Orijinal varlık için kalan tutar.</value>
+  </data>
+  <data name="custpage_oldoc_help" page="assetsplit" xml:space="preserve">
+    <value>Bölme miktarına dayanılarak orijinal varlık için kalan orijinal maliyet.</value>
+  </data>
+  <data name="custpage_oldcc_help" page="assetsplit" xml:space="preserve">
+    <value>Bölme miktarına dayanılarak orijinal varlık için kalan cari maliyet.</value>
+  </data>
+  <data name="custpage_oldnbv_help" page="assetsplit" xml:space="preserve">
+    <value>Bölme miktarına dayanılarak orijinal varlık için kalan cari defter değerlemesi.</value>
+  </data>
+  <data name="custpage_olddeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>Bölme miktarına dayanılarak orijinal varlığa bugüne kadar uygulanan kalan amortisman tutarı.</value>
+  </data>
+  <data name="custpage_oldrv_help" page="assetsplit" xml:space="preserve">
+    <value>Orijinal varlığın, ömrünün sonundaki kalan değeri. Bu değer, bölme miktarını temel alır.</value>
+  </data>
+  <data name="custpage_oldlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>Bölme miktarına dayanılarak orijinal varlık için kalan son amortisman tutarı.</value>
+  </data>
+
+  <!-- Asset Disposal -->
+  <data name="custrecord_assetdisposal_title" page="assetdisposal" xml:space="preserve">
+    <value>Varlık Satış/Elden Çıkarma</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetdisposal" xml:space="preserve">
+    <value>Birincil Bilgiler</value>
+  </data>
+  <data name="custpage_group_disposaldetail" page="assetdisposal" xml:space="preserve">
+    <value>Elden Çıkarma Ayrıntıları</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetdisposal" xml:space="preserve">
+    <value>Vergi Yöntemleri</value>
+  </data>
+  <data name="custpage_assetid" page="assetdisposal" xml:space="preserve">
+    <value>Varlık Kimliği/Adı</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetdisposal" xml:space="preserve">
+    <value>Elden çıkarmak istediğiniz varlığın kimliğini veya adını seçin.</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetdisposal" xml:space="preserve">
+    <value>Varlık Açıklaması</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetdisposal" xml:space="preserve">
+    <value>Varlık Seri Numarası</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetdisposal" xml:space="preserve">
+    <value>Alternatif Varlık Numarası</value>
+  </data>
+  <data name="custpage_assettype" page="assetdisposal" xml:space="preserve">
+    <value>Varlık Türü</value>
+  </data>
+  <data name="custpage_assetcost" page="assetdisposal" xml:space="preserve">
+    <value>Orijinal Maliyet</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetdisposal" xml:space="preserve">
+    <value>Cari Maliyet</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetdisposal" xml:space="preserve">
+    <value>Kalan Değer</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetdisposal" xml:space="preserve">
+    <value>Amortisman Yöntemi</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetdisposal" xml:space="preserve">
+    <value>Varlık Ömrü</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetdisposal" xml:space="preserve">
+    <value>Cari Defter Değeri</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetdisposal" xml:space="preserve">
+    <value>Bugüne Kadarki Amortisman</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetdisposal" xml:space="preserve">
+    <value>Son Amortisman Dönemi</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetdisposal" xml:space="preserve">
+    <value>Son Amortisman Tutarı</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetdisposal" xml:space="preserve">
+    <value>Son Amortisman Tarihi</value>
+  </data>
+  <data name="custpage_assetdeprperiod" page="assetdisposal" xml:space="preserve">
+    <value>Amortisman Dönemi</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetdisposal" xml:space="preserve">
+    <value>Revizyon Yöntemi</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetdisposal" xml:space="preserve">
+    <value>Varlık Durumu</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetdisposal" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="custpage_disposaldate" page="assetdisposal" xml:space="preserve">
+    <value>Elden Çıkarma Tarihi</value>
+  </data>
+  <data name="custpage_disposaltype" page="assetdisposal" xml:space="preserve">
+    <value>Elden Çıkarma Türü</value>
+  </data>
+  <data name="custpage_assetquantdisposed" page="assetdisposal" xml:space="preserve">
+    <value>Elden Çıkarılmış Miktar</value>
+  </data>
+  <data name="custpage_disposalitem" page="assetdisposal" xml:space="preserve">
+    <value>Satış Kalemi</value>
+  </data>
+  <data name="custpage_customer" page="assetdisposal" xml:space="preserve">
+    <value>Müşteri</value>
+  </data>
+  <data name="custpage_salesamount" page="assetdisposal" xml:space="preserve">
+    <value>Satış Tutarı</value>
+  </data>
+  <data name="custpage_taxcode" page="assetdisposal" xml:space="preserve">
+    <value>Satış Vergisi Kodu</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetdisposal" xml:space="preserve">
+    <value>Bağlı Kuruluş</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetdisposal" xml:space="preserve">
+    <value>Konum</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdisposal" xml:space="preserve">
+    <value>Muhasebe Defteri</value>
+  </data>
+  <data name="custpage_altmethod" page="assetdisposal" xml:space="preserve">
+    <value>Alternatif Yöntem</value>
+  </data>
+  <data name="custpage_html_assetdisposed" page="assetdisposal" xml:space="preserve">
+    <value>VARLIK ELDEN ÇIKARILMAMIŞ!</value>
+  </data>
+  <data name="custpage_html_invoicefail" page="assetdisposal" xml:space="preserve">
+    <value>Varlık satışı için fatura oluşturulamadı.</value>
+  </data>
+  <data name="custpage_html_checksetup" page="assetdisposal" xml:space="preserve">
+    <value>Varlık kaydı ayarını uyumsuz ve/veya eksik veriler için kontrol edin.</value>
+  </data>
+  <data name="custpage_html_journalfail" page="assetdisposal" xml:space="preserve">
+    <value>Varlık satışı için yevmiye defteri girişi oluşturulmadı.</value>
+  </data>
+  <data name="custpage_html_journal_writeofffail" page="assetdisposal" xml:space="preserve">
+    <value>Varlık iptali için yevmiye defteri girişi oluşturulmadı.</value>
+  </data>
+  <data name="custpage_assetquantdisposed_help" page="assetdisposal" xml:space="preserve">
+    <value>Elden Çıkarılan Miktar, Varlık Miktarından büyük olamaz.</value>
+  </data>
+  <data name="custpage_disposaldate_help" page="assetdisposal" xml:space="preserve">
+    <value>Elden çıkarma tarihi Son Amortisman Tarihinden önce olamaz.</value>
+  </data>
+  <data name="custpage_disposalitem_help" page="assetdisposal" xml:space="preserve">
+    <value>Satış veya Tekrar Satış için yalnızca Envanter Dışı Kalemler seçilebilir.</value>
+  </data>
+  <data name="custpage_filterslocation_help" page="assetdisposal" xml:space="preserve">
+    <value>Çok Konumlu Envanter (MLI) özelliği etkinleştirilmişse, varlığın Satış ile elden çıkarılması bir Konum değeri ayarlanmasını gerektirir. Kullanılabilir ise konum değeri varsayılan olarak FAM Varlık kaydından alınır ve izlenmeyen konum aktarımlarını önlemek için düzenlenemez. Varlık kaydından kullanılamıyorsa Satış/Elden Çıkarma sayfasındaki Konum listesindeki değeri seçmeniz gerekir.</value>
+  </data>
+  <data name="custpage_salesamount_help" page="assetdisposal" xml:space="preserve">
+    <value>Satış tutarı sıfırdan büyük olmalıdır.</value>
+  </data>
+  <data name="custpage_taxcode_help" page="assetdisposal" xml:space="preserve">
+    <value>Müşterinin Bağlı Kuruluşu için geçerli bir Vergi Kodu seçin.</value>
+  </data>
+  <data name="custpage_salememo" page="assetdisposal" xml:space="preserve">
+    <value>Varlık Satışı (0)</value>
+  </data>
+  <data name="custpage_writeoffmemo" page="assetdisposal" xml:space="preserve">
+    <value>Varlık İptali (0)</value>
+  </data>
+  <data name="custpage_nodispacc" page="assetdisposal" xml:space="preserve">
+     <value>Aşağıdaki elden çıkarma hesapları ayarlanmadığından varlık elden çıkarılamıyor: (0)</value>
+  </data>
+  <data name="custpage_inactiveacc" page="assetdisposal" xml:space="preserve">
+     <value>Aşağıdaki elden çıkarma hesapları aktif olmadığından varlık elden çıkarılamıyor: (0)</value>
+  </data>
+  <data name="custpage_invoicefail" page="assetdisposal" xml:space="preserve">
+     <value>Fatura Oluşturulamıyor</value>
+  </data>
+  <data name="custpage_quantityerror" page="assetdisposal" xml:space="preserve">
+     <value>Elden Çıkarılmış Miktar (0) ve (1) arasında olmalıdır</value>
+  </data>
+
+  <!-- Asset Depreciation Schedule Report V2 (Portrait) -->
+  <data name="custrecord_deprecationschedule2_title" page="depreciationschedule2" xml:space="preserve">
+    <value>Varlık Amortismanı Tablosu Raporu</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule2" xml:space="preserve">
+    <value>Net Defter Değeri</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>Dönem Amortismanı</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule2" xml:space="preserve">
+    <value>Varlık Türleri</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule2" xml:space="preserve">
+    <value>Bağlı Kuruluşlar</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule2" xml:space="preserve">
+    <value>Alt Kategorileri Dahil Et</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule2" xml:space="preserve">
+    <value>Konum</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule2" xml:space="preserve">
+    <value>Departman</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule2" xml:space="preserve">
+    <value>Sınıf</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule2" xml:space="preserve">
+    <value>Seç</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>Amortisman Yöntemi</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule2" xml:space="preserve">
+    <value>Başlangıç Tarihi</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule2" xml:space="preserve">
+    <value>Bitiş Tarihi</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule2" xml:space="preserve">
+    <value>Tüm Varlıklar</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule2" xml:space="preserve">
+    <value>Kiralananlar Hariç Tüm Varlıklar</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule2" xml:space="preserve">
+    <value>Yalnızca Kiralananlar</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>Muhasebe Yöntemi</value>
+  </data>
+  <data name="custpage_html_asset" page="depreciationschedule2" xml:space="preserve">
+    <value>Varlık</value>
+  </data>
+  <data name="custpage_message_filestorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>Rapor için gerekli geçici veriler depolanamıyor (nlapiSubmitFile)</value>
+  </data>
+  <data name="custpage_message_temporarydata" page="depreciationschedule2" xml:space="preserve">
+    <value>Duran Varlık Yönetimi Amortisman Tablosu raporu için gereken geçici veriler</value>
+  </data>
+  <data name="custpage_html_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>Varlık Amortisman Tablosu - Dönem Amortismanı</value>
+  </data>
+  <data name="custpage_html_nbv" page="depreciationschedule2" xml:space="preserve">
+    <value>Varlık Amortisman Tablosu - Net Defter Değeri</value>
+  </data>
+  <data name="custpage_html_periodtotal" page="depreciationschedule2" xml:space="preserve">
+    <value>Dönem Toplamı</value>
+  </data>
+  <data name="custpage_html_assetno" page="depreciationschedule2" xml:space="preserve">
+    <value>Varlık No.</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="depreciationschedule2" xml:space="preserve">
+    <value>Varlık Açıklaması</value>
+  </data>
+  <data name="custpage_deprschedreport" page="depreciationschedule2" xml:space="preserve">
+    <value>Duran Varlık Yönetimi Amortisman Tablosu Raporu</value>
+  </data>
+  <data name="custpage_html_reporttruncated" page="depreciationschedule2" xml:space="preserve">
+    <value>Rapor kesildi, maksimum depolama boyutuna ulaştı.</value>
+  </data>
+  <data name="custpage_message_reportstorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>Rapor sonuçları depolanamıyor (nlapiSubmitFile)</value>
+  </data>
+  <data name="custpage_html_fam" page="depreciationschedule2" xml:space="preserve">
+    <value>Duran Varlık Yönetimi</value>
+  </data>
+  <data name="custpage_html_noassetfound" page="depreciationschedule2" xml:space="preserve">
+    <value>Tablo raporu için bir varlık bulunamadı</value>
+  </data>
+
+  <!-- Asset Creation Status -->
+  <data name="custrecord_assetcreation_title" page="assetcreation" xml:space="preserve">
+    <value>Yeni Varlık Oluşturma</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetcreation" xml:space="preserve">
+    <value>Varlık Türleri</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetcreation" xml:space="preserve">
+    <value>Bağlı Kuruluşlar</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetcreation" xml:space="preserve">
+    <value>Alt Kategorileri Dahil Et</value>
+  </data>
+  <data name="custrecord_creationstatus_title" page="assetcreation" xml:space="preserve">
+    <value>Varlık Oluşturma Durumu</value>
+  </data>
+  <data name="custrecord_html_currentstatus" page="assetcreation" xml:space="preserve">
+    <value>Mevcut Durum</value>
+  </data>
+  <data name="custrecord_resultstatus" page="assetcreation" xml:space="preserve">
+    <value>Öğeler nerede duruyor?</value>
+  </data>
+  <data name="custrecord_generationcomplete" page="assetcreation" xml:space="preserve">
+    <value>Varlık Oluşturma tamamlandı.</value>
+  </data>
+  <data name="custrecord_creatingasset" page="assetcreation" xml:space="preserve">
+    <value>Varlık Türleri için Varlıklar Oluşturuluyor: (0)</value>
+  </data>
+  <data name="custrecord_transactionprocessed" page="assetcreation" xml:space="preserve">
+    <value>(0) işlem işlendi, (1) yeni varlık oluşturuldu.</value>
+  </data>
+  <data name="custrecord_allassettypes" page="assetcreation" xml:space="preserve">
+    <value>Tüm Varlık Türleri</value>
+  </data>
+
+  <!-- Asset Revaluation -->
+  <data name="custrecord_assetrevaluation_title" page="assetrevaluation" xml:space="preserve">
+    <value>Varlık Yeniden Değerleme</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetrevaluation" xml:space="preserve">
+    <value>Birincil Bilgiler</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetrevaluation" xml:space="preserve">
+    <value>Yeniden değerlemek istediğiniz varlığın kimliğini veya adını seçin.</value>
+  </data>
+  <data name="custpage_assetid" page="assetrevaluation" xml:space="preserve">
+    <value>Varlık Kimliği/Adı</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetrevaluation" xml:space="preserve">
+    <value>Varlık Açıklaması</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetrevaluation" xml:space="preserve">
+    <value>Varlık Seri Numarası</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetrevaluation" xml:space="preserve">
+    <value>Alternatif Varlık Numarası</value>
+  </data>
+  <data name="custpage_assettype" page="assetrevaluation" xml:space="preserve">
+    <value>Varlık Türü</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetrevaluation" xml:space="preserve">
+    <value>Cari Maliyet</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Kalan Değer</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetrevaluation" xml:space="preserve">
+    <value>Amortisman Yöntemi</value>
+  </data>
+  <data name="custpage_depmethodlbl" page="clientpage" xml:space="preserve">
+    <value>Amortisman Yöntemi</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>Varlık Ömrü</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Cari Defter Değeri</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetrevaluation" xml:space="preserve">
+    <value>Revizyon Yöntemi</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetrevaluation" xml:space="preserve">
+    <value>Varlık Durumu</value>
+  </data>
+  <data name="custpage_writedownamount" page="assetrevaluation" xml:space="preserve">
+    <value>Değer Düşürme Tutarı</value>
+  </data>
+  <data name="custpage_newresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Düz. Kalan Değer</value>
+  </data>
+  <data name="custpage_newlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>Düz. Ömür</value>
+  </data>
+  <data name="custpage_newdeprmethod" page="assetrevaluation" xml:space="preserve">
+    <value>Düz. Amortisman Yöntemi</value>
+  </data>
+  <data name="custpage_revaluationmemo" page="assetrevaluation" xml:space="preserve">
+    <value>İşlem Referansı</value>
+  </data>
+  <data name="custpage_revaluationdate" page="assetrevaluation" xml:space="preserve">
+    <value>İşlem Tarihi</value>
+  </data>
+  <data name="custpage_lastdeprperiod" page="clientpage" xml:space="preserve">
+    <value>Son Amortisman Dönemi</value>
+  </data>
+  <data name="custpage_residualvalueerrror" page="assetrevaluation" xml:space="preserve">
+    <value>Kalan Değer, Orijinal Maliyeti veya Cari Maliyeti aşıyor</value>
+  </data>
+  <data name="custpage_defaultrevmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Varlık yeniden değerleme (FAM)</value>
+  </data>
+  <data name="custpage_defaultwdmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Varlık değer düşürme (FAM)</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetrevaluation" xml:space="preserve">
+    <value>Muhasebe Defterleri</value>
+  </data>
+  <data name="custpage_writedownperc" page="assetrevaluation" xml:space="preserve">
+    <value>Değer Düşürme %</value>
+  </data>
+  <data name="custpage_newdeprmethod_help" page="assetrevaluation" xml:space="preserve">
+    <value>Bu varlığı yeniden değerleme sonrasında amortize etmek için kullanılacak yeni amortisman yöntemi.</value>
+  </data>
+  <data name="custpage_newlifetime_help" page="assetrevaluation" xml:space="preserve">
+    <value>Varlığın yeniden değerleme sonrasında yeni ömrü.</value>
+  </data>
+  <data name="custpage_newresidualvalue_help" page="assetrevaluation" xml:space="preserve">
+    <value>Varlığın yeniden değerleme sonrasında yeni kalan değeri.</value>
+  </data>
+  <data name="custpage_writedownperc_help" page="assetrevaluation" xml:space="preserve">
+    <value>Aşağıda alt listede değer düşürme tutarını otomatik doldurmak için girin.</value>
+  </data>
+  <data name="custpage_revaluationdate_help" page="assetrevaluation" xml:space="preserve">
+    <value>Bu işleme ait yevmiye defteri girişi için bir tarih girin.</value>
+  </data>
+  <data name="custpage_revaluationmemo_help" page="assetrevaluation" xml:space="preserve">
+    <value>Bu işleme ait yevmiye defteri girişini belirlemek için bir referans girin.</value>
+  </data>
+  <data name="custpage_writedownamount_help" page="assetrevaluation" xml:space="preserve">
+    <value>Bir değer düşürme tutarı girin. Bu tutar, cari net defter değerinden çıkartılır.</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetrevaluation" xml:space="preserve">
+    <value>Bu varlıkla ilişkili Muhasebe Defterlerini seçin.</value>
+  </data>
+  <data name="custpage_groupdeprerror" page="assetrevaluation" xml:space="preserve">
+      <value>Grup Amortize Etme Alternatif Amortismanlar için yeniden değerleme yapılamaz</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>Yeniden değerleme tarihleri son amortisman tarihinden önce olan kayıtlar için yeniden değerleme yapılamaz.</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>Yeniden değerleme tarihleri son amortisman tarihinden önce olan kayıtlar için yeniden değerleme yapılamaz.</value>
+  </data>
+  <data name="custpage_wdacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Eksik veya Aktif Olmayan Değer Düşürme Hesabı</value>
+  </data>
+  <data name="custpage_assetacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Eksik veya Aktif Olmayan Varlık Hesabı</value>
+  </data>
+  <data name="custpage_depracct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Eksik veya Aktif Olmayan Amortisman Hesabı</value>
+  </data>
+  <data name="custpage_deprchargeacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Eksik veya Aktif Olmayan Amortisman Gider Hesabı</value>
+  </data>
+  <data name="custpage_plugin_not_parent_asset" page="assetrevaluation" xml:space="preserve">
+      <value>Temin edilen Varlık Kaydı Kimliği, yeniden değerlenecek Vergi Yönteminin Üst Varlığı değildir.</value>
+  </data>
+  <data name="custpage_no_tax_or_asset" page="assetrevaluation" xml:space="preserve">
+      <value>Yeniden değerlenecek Varlık Kaydı Kimliği veya Vergi Yöntemi sağlanmalıdır.</value>
+  </data>
+
+
+
+  <!-- Asset report -->
+  <data name="custrecord_assetregister_title" page="assetregister" xml:space="preserve">
+    <value>Varlık Kayıt Raporu</value>
+  </data>
+  <data name="custrecord_assetregisterdetail_title" page="assetregister" xml:space="preserve">
+    <value>Varlık Kaydı Ayrıntılı Raporu</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetregister" xml:space="preserve">
+    <value>Varlık Türü (Türleri)</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetregister" xml:space="preserve">
+    <value>Bağlı Kuruluş(lar)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetregister" xml:space="preserve">
+    <value>Alt Kategorileri Dahil Et</value>
+  </data>
+  <data name="custpage_filtermsselect" page="assetregister" xml:space="preserve">
+    <value>Seç</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetregister" xml:space="preserve">
+    <value>Amortisman Yöntemi</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetregister" xml:space="preserve">
+    <value>Konum</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetregister" xml:space="preserve">
+    <value>Departman</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetregister" xml:space="preserve">
+    <value>Sınıf</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetregister" xml:space="preserve">
+    <value>Dönem Başlangıç Tarihi</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetregister" xml:space="preserve">
+    <value>Dönem Bitiş Tarihi</value>
+  </data>
+  <data name="custpage_html_fam" page="assetregister" xml:space="preserve">
+    <value>Duran Varlık Yönetimi</value>
+  </data>
+  <data name="custpage_html_transdate" page="assetregister" xml:space="preserve">
+    <value>İşlem Tarihi</value>
+  </data>
+  <data name="custpage_html_cost" page="assetregister" xml:space="preserve">
+    <value>Maliyet</value>
+  </data>
+  <data name="custpage_html_accdepreciation" page="assetregister" xml:space="preserve">
+    <value>Birikmiş Amortisman</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetregister" xml:space="preserve">
+    <value>NBV</value>
+  </data>
+  <data name="custpage_html_acquisitiondate" page="assetregister" xml:space="preserve">
+    <value>Alış Tarihi</value>
+  </data>
+  <data name="custpage_html_assettype" page="assetregister" xml:space="preserve">
+    <value>Varlık Türü</value>
+  </data>
+  <data name="custpage_html_assetmanagement" page="assetregister" xml:space="preserve">
+    <value>(0) Varlık Yönetimi</value>
+  </data>
+  <data name="custpage_html_assetname" page="assetregister" xml:space="preserve">
+    <value>Varlık Adı</value>
+  </data>
+  <data name="custpage_html_description" page="assetregister" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="custpage_html_additions" page="assetregister" xml:space="preserve">
+    <value>İlaveler</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetregister" xml:space="preserve">
+    <value>Amortisman</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetregister" xml:space="preserve">
+    <value>Tüm Varlıklar</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetregister" xml:space="preserve">
+    <value>Kiralananlar Hariç Tüm Varlıklar</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetregister" xml:space="preserve">
+    <value>Yalnızca Kiralananlar</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetregister" xml:space="preserve">
+    <value>Muhasebe Yöntemi</value>
+  </data>
+  <data name="custrecord_html_assetregisterdetail" page="assetregister" xml:space="preserve">
+    <value>Varlık Kaydı Ayrıntısı</value>
+  </data>
+
+  <!--System Status -->
+  <data name="custrecord_systemstatus_title" page="systemstatus" xml:space="preserve">
+    <value>Varlık Amortismanı Durumu</value>
+  </data>
+  <data name="custpage_currentstatus" page="systemstatus" xml:space="preserve">
+    <value>Mevcut Durum</value>
+  </data>
+  <data name="custpage_resultstatus" page="systemstatus" xml:space="preserve">
+    <value>Öğeler nerede duruyor?</value>
+  </data>
+  <data name="custpage_depreciatestatus1" page="systemstatus" xml:space="preserve">
+    <value>Amortize Edilen Varlık Türleri:</value>
+  </data>
+  <data name="custpage_deprcomplete" page="systemstatus" xml:space="preserve">
+    <value>Tamamlandı</value>
+  </data>
+  
+  <!--Generate History -->
+  <data name="custrecord_generatehistory_title" page="generatehistory" xml:space="preserve">
+    <value>Varlık Geçmişi Oluştur</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="generatehistory" xml:space="preserve">
+    <value>Varlık Türü (Türleri)</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="generatehistory" xml:space="preserve">
+    <value>Bağlı Kuruluş(lar)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="generatehistory" xml:space="preserve">
+    <value>Alt Kategorileri Dahil Et</value>
+  </data>
+  <data name="custpage_filtersmethod" page="generatehistory" xml:space="preserve">
+    <value>Amortisman Yöntemi</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod1" page="generatehistory" xml:space="preserve">
+    <value>Amortisman Yöntemi 1</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod2" page="generatehistory" xml:space="preserve">
+    <value>Amortisman Yöntemi 2</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod3" page="generatehistory" xml:space="preserve">
+    <value>Amortisman Yöntemi 3</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod4" page="generatehistory" xml:space="preserve">
+    <value>Amortisman Yöntemi 4</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod5" page="generatehistory" xml:space="preserve">
+    <value>Amortisman Yöntemi 5</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod6" page="generatehistory" xml:space="preserve">
+    <value>Amortisman Yöntemi 6</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod7" page="generatehistory" xml:space="preserve">
+    <value>Amortisman Yöntemi 7</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod8" page="generatehistory" xml:space="preserve">
+    <value>Amortisman Yöntemi 8</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod9" page="generatehistory" xml:space="preserve">
+    <value>Amortisman Yöntemi 9</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_ok" page="depreciationmethod" xml:space="preserve">
+    <value>TAMAM</value>
+  </data>
+  <data name="custpage_error" page="depreciationmethod" xml:space="preserve">
+    <value>HATA</value>
+  </data>
+
+  <!-- Asset Depreciation -->
+  <data name="custrecord_assetdepreciation_title" page="assetdepreciation" xml:space="preserve">
+    <value>Varlıkları Amortize Et</value>
+  </data>
+  <data name="custfield_errormessage" page="assetdepreciation" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="custpage_futuredateerror" page="assetdepreciation" xml:space="preserve">
+    <value>Amortisman Dönemi Tarihi Gelecekteki bir Dönem Olamaz.</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetdepreciation" xml:space="preserve">
+    <value>Varlık Türü (Türleri)</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetdepreciation" xml:space="preserve">
+    <value>Bağlı Kuruluş(lar)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetdepreciation" xml:space="preserve">
+    <value>Alt Kategorileri Dahil Et</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdepreciation" xml:space="preserve">
+    <value>Muhasebe Defter(ler)i</value>
+  </data>
+  <data name="custpage_deprperiod" page="assetdepreciation" xml:space="preserve">
+    <value>Amortisman Dönemi</value>
+  </data>
+  <data name="custpage_postperiod" page="assetdepreciation" xml:space="preserve">
+    <value>Kaydetme Dönemi</value>
+  </data>
+  <data name="custpage_deprmemo" page="assetdepreciation" xml:space="preserve">
+    <value>Amortisman Referansı</value>
+  </data>
+  <data name="custpage_assetdepreciation" page="assetdepreciation" xml:space="preserve">
+    <value>Varlık Amortismanı</value>
+  </data>
+  <data name="custpage_deprmemo_help" page="assetdepreciation" xml:space="preserve">
+    <value>Tüm oluşturulan günlüklerde temel referans olarak kullanılacak bir amortisman referansı girin. Varsayılan referansı kullanmak için boş bırakın.</value>
+  </data>
+  <data name="custpage_deprperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>Varlıkların ona kadar amortize edileceği bir tarih girin. Kaydedilen tarihin her zaman ay sonu olacağını unutmayın.</value>
+  </data>
+  <data name="custpage_postperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>Bu işlemi kaydetmek istediğiniz dönemi seçin. Bir dönem kapatılmışsa o döneme kaydedemezsiniz.</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetdepreciation" xml:space="preserve">
+    <value>Bu varlıkla ilişkili Muhasebe Defterlerini seçin.</value>
+  </data>
+  <data name="client_depr_subsbooksmismatch" page="assetdepreciation" xml:space="preserve">
+    <value>Seçilen muhasebe defterleri, seçilen bağlı kuruluşlarla ilişkili değil.</value>
+  </data>
+
+  <!-- Depreciation Schedule Report -->
+  <data name="custrecord_depreciationschedule_title" page="depreciationschedule" xml:space="preserve">
+    <value>Varlık Amortismanı Tablosu Raporu</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule" xml:space="preserve">
+    <value>Varlık Türü</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule" xml:space="preserve">
+    <value>Net Defter Değeri</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule" xml:space="preserve">
+    <value>Dönem Amortismanı</value>
+  </data>
+  <data name="custpage_saveresults" page="depreciationschedule" xml:space="preserve">
+    <value>Sonuçları Kaydet</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule" xml:space="preserve">
+    <value>Bağlı Kuruluşlar</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule" xml:space="preserve">
+    <value>Alt Kategorileri Dahil Et</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule" xml:space="preserve">
+    <value>Konum</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule" xml:space="preserve">
+    <value>Departman</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule" xml:space="preserve">
+    <value>Sınıf</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule" xml:space="preserve">
+    <value>Seç</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule" xml:space="preserve">
+    <value>Amortisman Yöntemi</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule" xml:space="preserve">
+    <value>Başlangıç Tarihi</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule" xml:space="preserve">
+    <value>Bitiş Tarihi</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule" xml:space="preserve">
+    <value>Tüm Varlıklar</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule" xml:space="preserve">
+    <value>Kiralananlar Hariç Tüm Varlıklar</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule" xml:space="preserve">
+    <value>Yalnızca Kiralananlar</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule" xml:space="preserve">
+    <value>Muhasebe Yöntemi</value>
+  </data>
+  <data name="custpage_filterenddate_help" page="depreciationschedule" xml:space="preserve">
+    <value>İstediğiniz rapor dönemi için bir bitiş tarihi girin veya seçin.</value>
+  </data>
+  <data name="custpage_filterstartdate_help" page="depreciationschedule" xml:space="preserve">
+    <value>İstediğiniz rapor dönemi için bir başlangıç tarihi girin veya seçin.</value>
+  </data>
+  <data name="custpage_netbookvalue_help" page="depreciationschedule" xml:space="preserve">
+    <value>Yalnızca aylık net defter değeri tahmininin HTML raporunda görüntülenmesini istiyorsanız bu kutuyu işaretleyin.</value>
+  </data>
+  <data name="custpage_perioddepr_help" page="depreciationschedule" xml:space="preserve">
+    <value>Yalnızca aylık amortisman tahmininin HTML raporunda görüntülenmesini istiyorsanız bu kutuyu işaretleyin.</value>
+  </data>
+  <data name="custpage_saveresults_help" page="depreciationschedule" xml:space="preserve">
+    <value>Sonuçları Kaydet, bir varlığın ömrü için Amortisman Tablosu girişleri oluşturmak ve girişleri varlık kaydına kaydetmek için kullanılır. Sonuçları Kaydet işaretlendiğinde sistem Amortisman Geçmişi tablosunda, varlığın ömrü boyunca her zaman tam bir amortisman tablosu olmasını sağlamak amacıyla Başlangıç Tarihi, Bitiş Tarihi, Net Defter Değeri ve Dönem Amortismanını yok sayar. Başlangıç Tarihi, Bitiş Tarihi, Net Defter Değeri ve Dönem Amortismanı alanlarına girilen değerler yalnızca oluşturulan HTML raporu için kullanılır.</value>
+  </data>
+
+  <!-- Bulk Transfer -->
+  <data name="custpage_bulktransfer_title" page="bulktransfer" xml:space="preserve">
+    <value>Toplu Varlık Aktarma</value>
+  </data>
+  <data name="custpage_uploadhelp" page="bulktransfer" xml:space="preserve">
+    <value>Birden fazla varlık için Bağlı Kuruluş, Departman, Sınıf, Konum ve Varlık Türü'nü güncellemek üzere CSV İçe Aktarma dosyanızı yükleyebilirsiniz.</value>
+  </data>
+  <data name="custpage_settinghelp" page="bulktransfer" xml:space="preserve">
+    <value>Aktarım üzerine yevmiye defteri girişini kaydetmek için, Departman, Sınıf veya Konum tercihine Kaydet'in (Duran Varlıklar &gt; Ayarlar &gt; Sistem Ayarı) etkinleştirildiğinden emin olun.</value>
+  </data>
+  <data name="custpage_uploadboth" page="bulktransfer" xml:space="preserve">
+    <value>Lütfen CSV dosyasını Varlık Türü ve Bağlı Kuruluş aktarımıyla yüklemeyin.</value>
+  </data>
+  <data name="custpage_samplefile" page="bulktransfer" xml:space="preserve">
+    <value>Bir örnek dosya için (buraya) tıklayın.</value>
+  </data>
+  <data name="custpage_nofileuploaderror" page="bulktransfer" xml:space="preserve">
+    <value>Dosya Yüklenemedi.</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_html_formulainstruction" page="depreciationmethodformula" xml:space="preserve">
+    <value>Amortisman formülünü tanımlamak için aşağıdaki işleçleri ve simgeleri (büyük küçük harfe duyarlıdır) kullanın:</value>
+  </data>
+  <data name="custpage_html_formulahelp1" page="depreciationmethodformula" xml:space="preserve">
+    <value>^ (üssü, örn. 5^2 = 5'in karesi)</value>
+  </data>
+  <data name="custpage_html_formulahelp2" page="depreciationmethodformula" xml:space="preserve">
+    <value>() * / + -</value>
+  </data>
+  <data name="custpage_html_formulahelp3" page="depreciationmethodformula" xml:space="preserve">
+    <value>ondalıklı herhangi bir sayı (örn. 12345,67)</value>
+  </data>
+  <data name="custpage_html_formulahelp4" page="depreciationmethodformula" xml:space="preserve">
+    <value>~ (iki değerin maksimumu, örn. 2~5 = 5)</value>
+  </data>
+  <data name="custpage_html_formulahelp5" page="depreciationmethodformula" xml:space="preserve">
+    <value>OC (orijinal varlık maliyeti)</value>
+  </data>
+  <data name="custpage_html_formulahelp6" page="depreciationmethodformula" xml:space="preserve">
+    <value>CC (cari varlık maliyeti)</value>
+  </data>
+  <data name="custpage_html_formulahelp7" page="depreciationmethodformula" xml:space="preserve">
+    <value>NB (net defter değeri)</value>
+  </data>
+  <data name="custpage_html_formulahelp8" page="depreciationmethodformula" xml:space="preserve">
+    <value>RV (kalan değer)</value>
+  </data>
+  <data name="custpage_html_formulahelp9" page="depreciationmethodformula" xml:space="preserve">
+    <value>AL (varlık ömrü)</value>
+  </data>
+  <data name="custpage_html_formulahelp10" page="depreciationmethodformula" xml:space="preserve">
+    <value>CP (cari dönem veya cari yaş)</value>
+  </data>
+  <data name="custpage_html_formulahelp11" page="depreciationmethodformula" xml:space="preserve">
+    <value>TD (toplam amortisman tutarı)</value>
+  </data>
+  <data name="custpage_html_formulahelp12" page="depreciationmethodformula" xml:space="preserve">
+    <value>CU (cari kullanım)</value>
+  </data>
+  <data name="custpage_html_formulahelp13" page="depreciationmethodformula" xml:space="preserve">
+    <value>LU (ömür kullanımı)</value>
+  </data>
+  <data name="custpage_html_formulahelp14" page="depreciationmethodformula" xml:space="preserve">
+    <value>LD (son amortisman tutarı)</value>
+  </data>
+  <data name="custpage_html_formulahelp15" page="depreciationmethodformula" xml:space="preserve">
+    <value>DH (cari dönemde tutulan gün)</value>
+  </data>
+  <data name="custpage_html_formulahelp16" page="depreciationmethodformula" xml:space="preserve">
+    <value>PB (önceki yılın net defter değeri)</value>
+  </data>
+  <data name="custpage_html_formulahelp17" page="depreciationmethodformula" xml:space="preserve">
+    <value>DP (bir dönemdeki gün sayısı)</value>
+  </data>
+  <data name="custpage_html_formulahelp18" page="depreciationmethodformula" xml:space="preserve">
+    <value>FY (bir mali yıldaki gün sayısı)</value>
+  </data>
+
+  <!-- BG Process Record -->
+  <data name="custpage_bgprocess_deleteerror" page="bgprocess" xml:space="preserve">
+    <value>Bu işlem örneği, işleme durumu nedeniyle silinemiyor: (0)</value>
+  </data>
+  <data name="list_bgprocess_queue" page="bgprocess" xml:space="preserve">
+    <value>Kuyruğa Eklendi</value>
+  </data>
+  <data name="list_bgprocess_inprogress" page="bgprocess" xml:space="preserve">
+    <value>Sürüyor</value>
+  </data>
+  <data name="list_bgprocess_completed" page="bgprocess" xml:space="preserve">
+    <value>Tamamlandı</value>
+  </data>
+  <data name="list_bgprocess_completedwitherrors" page="bgprocess" xml:space="preserve">
+    <value>Hatalar ile Tamamlandı</value>
+  </data>
+  <data name="list_bgprocess_failed" page="bgprocess" xml:space="preserve">
+    <value>Başarısız</value>
+  </data>
+  <data name="list_bgprocess_revert" page="bgprocess" xml:space="preserve">
+    <value>Başarısız - Değişiklikler İptal Ediliyor</value>
+  </data>
+
+  <!-- BG Queue Record -->
+  <data name="custpage_bgqueue_deleteerror" page="bgqueue" xml:space="preserve">
+    <value>Bu kuyruk örneği, ilişkili işleme örneği durumu nedeniyle silinemiyor: (0)</value>
+  </data>
+
+  <!-- CLIENT SIDE MESSAGES AND ALERTS -->
+  <data name="client_assetrecord_notnegative" page="clientpage" xml:space="preserve">
+     <value>(0) eksi değer olamaz</value>
+  </data>
+  <data name="client_assetrecord_greatererror" page="clientpage" xml:space="preserve">
+     <value>(0), (1) değerinden fazla olamaz</value>
+  </data>
+  <data name="client_systemsetup_negativecheck" page="clientpage" xml:space="preserve">
+     <value>Eksi maliyetli mevcut varlıklar var. Bu seçeneğin devre dışı bırakılmasına izin verilmiyor. Lütfen daha fazla ayrıntı için yardım merkezine bakın.</value>
+  </data>
+  <data name="client_subdept_notmatch" page="clientpage" xml:space="preserve">
+     <value>Bağlı Kuruluş ve departman eşleşmiyor.</value>
+  </data>
+  <data name="client_subloc_notmatch" page="clientpage" xml:space="preserve">
+     <value>Bağlı Kuruluş ve konum eşleşmiyor.</value>
+  </data>
+  <data name="client_subclass_notmatch" page="clientpage" xml:space="preserve">
+     <value>Bağlı Kuruluş ve sınıf eşleşmiyor.</value>
+  </data>
+  <data name="client_assetrecord_outdated" page="clientpage" xml:space="preserve">
+     <value>Çalıştığınız varlık kaydı yeni değişmiş. En son varlık kaydını almak için yenileye tıklayın.</value>
+  </data>
+  <data name="client_assetrecord_dateerror" page="clientpage" xml:space="preserve">
+     <value>Başlangıç Tarihi, Bitiş Tarihinden önce olmalıdır</value>
+  </data>
+  <data name="client_assetrecord_fieldadjust" page="clientpage" xml:space="preserve">
+     <value>(0), (1) ile değişiklikler nedeniyle otomatik ayarlandı</value>
+  </data>
+  <data name="client_assetrecord_enddateadjust" page="clientpage" xml:space="preserve">
+    <value>(0), yeni (1) değerini yansıtacak şekilde aşağı yuvarlanacak</value>
+  </data>
+  <data name="client_leavepage" page="clientpage" xml:space="preserve">
+     <value>Bu sayfaya girdiğiniz veriler kaydedilmedi ve kaybolacak. Devam etmek için Tamam'a basın.</value>
+  </data>
+  <data name="client_accounting_methods" page="clientpage" xml:space="preserve">
+     <value>Muhasebe Yöntemleri</value>
+  </data>
+  <data name="client_tax_methods" page="clientpage" xml:space="preserve">
+     <value>Vergi Yöntemleri</value>
+  </data>
+  <data name="client_journals" page="clientpage" xml:space="preserve">
+     <value>Yevmiye Defterleri</value>
+  </data>
+  <data name="client_multibookdisabled" page="clientpage" xml:space="preserve">
+     <value>Çok Defterli Muhasebe özelliği devre dışı bırakıldığında bir Muhasebe Defteri seçemezsiniz.</value>
+  </data>
+  <data name="client_primarybook" page="clientpage" xml:space="preserve">
+     <value>Yalnızca vergi yöntemleri için İkincil Defterler seçebilirsiniz.</value>
+  </data>
+  <data name="client_pendingbook" page="clientpage" xml:space="preserve">
+     <value>Aktif bir Muhasebe Defteri seçmelisiniz.</value>
+  </data>
+  <data name="client_booksubsidiary_mismatch" page="clientpage" xml:space="preserve">
+     <value>Lütfen varlığın bağlı kuruluşuyla ilişkili bir muhasebe defteri seçin.</value>
+  </data>
+  <data name="client_invalid_deprenddate" page="clientpage" xml:space="preserve">
+     <value>Girilen (0), (1) ve (2) değerleri için geçersiz</value>
+  </data>
+  <data name="client_enable_bypass" page="clientpage" xml:space="preserve">
+     <value>Bu tercihi etkinleştirdiğinizde, özel kayıtlar için iş akışları ve Kullanıcı Olay komut dosyaları amortisman sırasında tetiklenmez. Devam etmek istiyor musunuz?</value>
+  </data>
+  <data name="client_asset_disposed" page="clientpage" xml:space="preserve">
+    <value>Varlık zaten elden çıkarılmış</value>
+  </data>
+  <data name="client_select_book" page="clientpage" xml:space="preserve">
+    <value>Lütfen Muhasebe Defter(ler)i seçin</value>
+  </data>
+  <data name="client_match_current_error" page="clientpage" xml:space="preserve">
+      <value>(0), cari (1) ile eşleşmemelidir.</value>
+  </data>
+  <data name="client_newrvdiffsign" page="clientpage" xml:space="preserve">
+      <value>(0) sıfır değerinin üzerine çıkamaz.</value>
+  </data>
+  <data name="client_lesserthan_error" page="clientpage" xml:space="preserve">
+     <value>(0), (1) değerinden düşük olamaz</value>
+  </data>
+  <data name="client_newdepmeth_diffperiod" page="clientpage" xml:space="preserve">
+     <value>Seçilen Ayarlanmış Amortisman Yöntemi, cari Amortisman Yöntemi ile aynı Amortisman Yöntemine sahip olmalıdır.</value>
+  </data>
+  <data name="client_enter_value" page="clientpage" xml:space="preserve">
+    <value>Lütfen şunun için değerler girin: (0)</value>
+  </data>
+  <data name="client_subsidiary_match" page="clientpage" xml:space="preserve">
+    <value>Seçilen (0) bağlı kuruluşu, bu Varlığın bağlı kuruluşuyla eşleşmiyor.</value>
+  </data>
+  <data name="client_report_confirm_delete" page="clientpage" xml:space="preserve">
+    <value>Bu, mevcut raporu silecek. Devam etmek istiyor musunuz?</value>
+  </data>
+  
+  <!-- FAM_Split_CS.js -->
+  <data name="client_assetsplit_invalidsplitquantity" page="clientpage" xml:space="preserve">
+    <value>Bölme miktarı geçerli değil</value>
+  </data>
+  <data name="client_assetsplit_entervalue" page="clientpage" xml:space="preserve">
+    <value>Lütfen Bölme Miktarı için bir değer girin</value>
+  </data>
+  <data name="client_assetsplit_greatererror" page="clientpage" xml:space="preserve">
+    <value>Bölme Miktarı, Miktara eşit veya daha yüksek olamaz</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method" page="clientpage" xml:space="preserve">
+    <value>Muhasebe Yöntemi - Cari maliyet, defter değeri artı bugüne kadarki amortismana eşit olmalıdır.</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method2" page="clientpage" xml:space="preserve">
+    <value>Cari maliyet kullanarak yeniden hesaplamak için Yenile'yi tıklayın.</value>
+  </data>
+  <data name="client_assetsplit_equalerror_tax" page="clientpage" xml:space="preserve">
+    <value>Vergi Yöntemi (0) - Cari maliyet, defter değeri artı bugüne kadarki amortismana eşit olmalıdır</value>
+  </data>
+  <data name="client_assetsplit_quantity1" page="clientpage" xml:space="preserve">
+    <value>Varlık bölme, bir (1) miktardan fazlası olan varlıklar için kullanılabilir.</value>
+  </data> 
+  <data name="client_assetsplit_invalid_status" page="clientpage" xml:space="preserve">
+    <value>Varlık bölme, tamamen amortize edilmiş ve elden çıkarılmış varlıklar için kullanılamaz.</value>
+  </data> 
+  
+  <!-- FAM_CS_AltMethod_Client.js -->
+  <data name="client_altmethod_subsidiaryrequired" page="clientpage" xml:space="preserve">
+     <value>Bu yöntem için bağlı kuruluş gerekir.</value>
+  </data>
+  <data name="client_altmethod_improperconvention" page="clientpage" xml:space="preserve">
+     <value>Amortisman yöntemi, seçilen düzeni desteklemiyor.</value>
+  </data>
+  <data name="client_altmethod_subsidiarymismatch" page="clientpage" xml:space="preserve">
+     <value>Alternatif Yöntemin bağlı kuruluşu, bu Varlığın Bağlı kuruluşuyla eşleşmiyor.</value>
+  </data>
+
+
+  <!-- ncFAR_AltDeprClient.js -->
+  <data name="client_altdepr_assetalreadyused" page="clientpage" xml:space="preserve">
+     <value>(0) bu Varlık tarafından zaten kullanılıyor. Lütfen başka bir Alternatif Yöntem seçin.</value>
+  </data>
+  <data name="client_altdepr_assetlifetimewarning" page="clientpage" xml:space="preserve">
+     <value>Uyarı: Girilen Varlık Ömrü, Varlık Ömrününkini aşıyor</value>
+  </data>
+  <data name="client_altdepr_assetlifetimeerror" page="clientpage" xml:space="preserve">
+     <value>Alternatif Varlık Ömrü, Varlık Ömrününkini aşamaz</value>
+  </data>
+  <data name="client_altdepr_nomethodfound" page="clientpage" xml:space="preserve">
+     <value>Seçilen bağlı kuruluş için Alternatif Yöntem tanımlı değil. Listeyi güncellemek için Duran Varlıklar &gt; Ayarlar &gt; Alternatif Yöntemler'e gidin.</value>
+  </data>
+  <data name="client_altdepr_disposedtaxmethod" page="clientpage" xml:space="preserve">
+     <value>Elden Çıkarılmış/Tamamen Amortize Edilmiş Vergi Yöntemine Muhasebe Defteri Atanamaz.</value>
+  </data>
+
+  <!-- ncFAR_AssetRecordClient_AllForms.js -->
+  <data name="client_assetrecord_specifydepreciationrules" page="clientpage" xml:space="preserve">
+    <value>Amortisman Kuralları belirtilmelidir.</value>
+  </data>
+  <data name="client_assetrecord_specifysubsidiary" page="clientpage" xml:space="preserve">
+    <value>Bağlı kuruluş belirtilmelidir.</value>
+  </data>
+  <data name="client_assetrecord_recordbeingpooled" page="clientpage" xml:space="preserve">
+     <value>Bir Alternatif Amortisman kaydı bir Havuza ait olduğundan Bağlı Kuruluşun değiştirilmesine izin verilmiyor.</value>
+  </data>
+  <data name="client_assetrecord_assetnotallowed" page="clientpage" xml:space="preserve">
+     <value>Varlık Hesabı için Sabit Olmayan Varlık hesabına izin verilmez. Lütfen yöneticinize başvurun.</value>
+  </data>
+  <data name="client_assetrecord_deprnotallowed" page="clientpage" xml:space="preserve">
+     <value>Amortisman Hesabı için Sabit Olmayan Varlık hesabına izin verilmez. Lütfen yöneticinize başvurun.</value>
+  </data>
+  <data name="client_assetrecord_cannotdelete" page="clientpage" xml:space="preserve">
+     <value>Bu varlık, amortisman için aktif olduğundan silinemez. Kaldırmak istiyorsanız lütfen varlığı elden çıkarın.</value>
+  </data>
+  <data name="client_assetrecord_confirmsubsidiarychange" page="clientpage" xml:space="preserve">
+    <value>Varlığı başka bir bağlı kuruluşa aktarmadan önce değişikliklerinizi kaydettiğinizden emin olun. Aksi halde, değişiklikleriniz iptal edilecek.
+
+Alternatif olarak varlık kaydına başka değişiklikler yapmadan önce bağlı kuruluşu güncelleyebilirsiniz.
+
+Devam etmek istiyor musunuz?</value>
+  </data>
+
+  <!-- ncFAR_DefaultAltDeprClient.js -->
+  <data name="client_defaultaltdepr_alreadyused" page="clientpage" xml:space="preserve">
+     <value>(0) bu Varlık Türü tarafından zaten kullanılıyor. Lütfen başka bir Alternatif Yöntem seçin.</value>
+  </data>
+  <data name="client_defaultaltdepr_addnotallowed" page="clientpage" xml:space="preserve">
+    <value>Yeni FAM oluşturma - Kayıt listesinden Varsayılan Alt Amortisman kayıtlarına izin verilmiyor.
+
+Lütfen bir Varlık Türü kaydına gidin ve Muhasebe Defterleri sekmesinden yeni bir kayıt ekleyin</value>
+  </data>
+  <!-- ncFAR_DeprMethodClientScripts.js script not found-->
+  <data name="client_deprmethod_failedtovalidate2" page="clientpage" xml:space="preserve">
+     <value>İşlev doğrulanamadı.</value>
+  </data>
+  <data name="client_deprmethod_validationfailed" page="clientpage" xml:space="preserve">
+     <value>Doğrulama Başarısız Oldu</value>
+  </data>
+  <data name="client_deprmethod_dp_annually_invalid" page="clientpage" xml:space="preserve">
+     <value>Amortisman Dönemi Yıllık ise DP kullanılamaz</value>
+  </data>
+
+  <!-- Disposal Client Messages -->
+  <data name="client_disposal_alreadydisposed" page="clientpage" xml:space="preserve">
+     <value>Bu varlık zaten elden çıkarılmış.</value>
+  </data>
+  <data name="client_disposal_cannotbegreater" page="clientpage" xml:space="preserve">
+     <value>Elden Çıkarılan Miktar, Varlık Miktarından büyük olamaz.</value>
+  </data>
+  <data name="client_disposal_saleamountgreater" page="clientpage" xml:space="preserve">
+     <value>Satış tutarı sıfırdan büyük olmalıdır.</value>
+  </data>
+  <data name="client_disposal_selectcustomer" page="clientpage" xml:space="preserve">
+     <value>Lütfen bir Müşteri seçin.</value>
+  </data>
+  <data name="client_disposal_selectsaleitem" page="clientpage" xml:space="preserve">
+     <value>Lütfen bir Satış Kalemi seçin.</value>
+  </data>
+  <data name="client_disposal_selectlocation" page="clientpage" xml:space="preserve">
+     <value>Lütfen bir Konum seçin.</value>
+  </data>
+  <data name="client_disposal_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Bu varlık şu anda elden çıkarma için işleniyor. Bu varlık için başka bir elden çıkarma başlatmadan önce lütfen elden çıkarma işleminin bitmesini bekleyin.</value>
+  </data>
+  <data name="client_disposal_acctnotexist" page="clientpage" xml:space="preserve">
+     <value>Devam etmeden önce İptal, Elden Çıkarma, Amortisman ve Varlık Hesaplarının ayarlandığından ve aktif olduğundan emin olun.
+Elden çıkarma aşağıdakiler için mümkün olamaz: (0)</value>
+  </data>
+  <data name="client_disposal_dateearlierthanldd" page="clientpage" xml:space="preserve">
+    <value>Elden Çıkarma Tarihi '(0)' Son Amortisman Tarihi '(1)' öncesinde olamaz.</value>
+  </data>
+  <data name="client_disposal_plugin_no_assetid" page="clientpage" xml:space="preserve">
+    <value>Varlık Kimliği tanımlı değil.</value>
+  </data>
+  <data name="client_disposal_plugin_invalid_type" page="clientpage" xml:space="preserve">
+    <value>Varlık için geçersiz elden çıkarma türü: (0))</value>
+  </data>
+  
+  <!-- ncFAR_ProposalAltDeprClient.js -->
+  <data name="client_proposalaltdepr_selectbeingused" page="clientpage" xml:space="preserve">
+     <value>(0) bu Varlık Teklifi tarafından zaten kullanılıyor. Lütfen başka bir Alternatif Yöntem seçin.</value>
+  </data>
+
+  <!-- ncFAR_RevaluationClientScripts.js -->
+  <data name="client_revaluation_disposed" page="clientpage" xml:space="preserve">
+     <value>Bu varlık elden çıkarılmış.</value>
+  </data>
+  <data name="client_assetnotset" page="clientpage" xml:space="preserve">
+     <value>Bir veya daha fazla varlık hesabı ayarlanmamış, yeniden değerleme mümkün olmayabilir.</value>
+  </data>
+  <data name="client_revaluation_notsupplied" page="clientpage" xml:space="preserve">
+    <value>Yeniden değerleme ayrıntıları temin edilmelidir</value>
+  </data>
+  <data name="client_revaluation_zeronbv" page="clientpage" xml:space="preserve">
+    <value>Tamamen amortize edilmiş varlık yeniden değerlenemez.</value>
+  </data>
+  <data name="client_revaluation_zerocc" page="clientpage" xml:space="preserve">
+    <value>Sıfır cari maliyetli bir varlığın değeri düşürülemez.</value>
+  </data>
+  <data name="client_revaluation_rvoverzero" page="clientpage" xml:space="preserve">
+    <value>Yeni Kalan Değer sıfır değerinin üzerine çıkamaz.</value>
+  </data>
+  <data name="client_role_nopermission" page="clientpage" xml:space="preserve">
+    <value>Bu rolün Varlık kaydını düzenleme izni yok.</value>
+  </data>
+  <data name="client_status_nobgprocess" page="clientpage" xml:space="preserve">
+    <value>Arka Plan İşlemi bulunamadı.</value>
+  </data>
+  <data name="client_change_accountingbook" page="clientpage" xml:space="preserve">
+    <value>Muhasebe Defteri değiştirmeye İzin verilmiyor.</value>
+  </data>
+  <data name="client_revaluation_needcompute" page="clientpage" xml:space="preserve">
+    <value>Varlık yeniden değerlemenin işlenebilmesi için önce hesaplanması gerekir.</value>
+  </data>
+  <data name="client_revaluation_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Bu varlık şu anda yeniden değerleme için işleniyor. Bu varlık için başka bir yeniden değerleme başlatmadan önce lütfen yeniden değerleme işleminin bitmesini bekleyin.</value>
+  </data>
+  <data name="client_revaluation_wdacct_notset" page="clientpage" xml:space="preserve">
+     <value>Aşağıdaki değer düşürme hesapları ayarlanmadığından, varlık yeniden değerlenemiyor: (0)</value>
+  </data>
+  <data name="client_revaluation_transdate_warn" page="clientpage" xml:space="preserve">
+     <value>Bazı kayıtlarda yeniden değerleme tarihi son amortisman tarihinden önce. Bu kayıtlar yeniden değerlenmeyecek. </value>
+  </data>
+  <data name="client_greater_than_zerovalue" page="clientpage" xml:space="preserve">
+    <value>Lütfen (0) için sıfırdan yüksek değer girin.</value>
+  </data>
+  <data name="client_change_zerowd" page="clientpage" xml:space="preserve">
+    <value>Lütfen Değer Düşürme Tutarı için Sıfır Olmayan bir Değer girin.</value>
+  </data>
+  <data name="client_no_reval_det_supplied" page="clientpage" xml:space="preserve">
+      <value>Yeniden değerleme ayrıntıları temin edilmelidir.</value>
+  </data>
+
+  <!-- FAM_AssetTransfer_CS.js -->
+  <data name="client_assettransfer_subsidiarybookid" page="clientpage" xml:space="preserve">
+     <value>Varlığın, hedef bağlı kuruluşla ilişkili olmayan bir muhasebe defteri var. Varlık aktarılacak, ancak bu muhasebe defterindeki vergi yöntemleri dahil edilmeyecek.</value>
+  </data>
+  <data name="client_assettransfer_subsidiarymethod" page="clientpage" xml:space="preserve">
+     <value>Varlığın, hedef bağlı kuruluşla ilişkili olmayan bir alternatif yöntemi var. Varlık aktarılacak, ancak bu alternatif yöntemdeki vergi yöntemleri dahil edilmeyecek.</value>
+  </data>
+  <data name="client_assettransfer_emptysubat" page="clientpage" xml:space="preserve">
+     <value>Varlık kaydı Bağlı Kuruluş/Varlık Türü boş olamaz.</value>
+  </data>
+  <data name="client_assettransfer_nochange" page="clientpage" xml:space="preserve">
+     <value>Varlık Aktarma hedef alan değerleri, orijinalden farklı olmalıdır.</value>
+  </data>
+  <data name="client_assettransfer_notransferacct" page="clientpage" xml:space="preserve">
+     <value>Kaynak ve hedef bağlı kuruluşlar için var olan bir Varlık Aktarma Hesabı kaydı yok.</value>
+  </data>
+  <data name="client_assettransfer_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Bu varlık şu anda aktarma için işleniyor. Bu varlık için başka bir aktarma başlatmadan önce lütfen aktarma işleminin bitmesini bekleyin.</value>
+  </data>
+  <data name="client_assettransfer_bulkbgpexists" page="clientpage" xml:space="preserve">
+     <value>Bir Toplu Varlık Aktarma isteği şu anda işleniyor. Başka bir aktarma başlatmadan önce lütfen aktarma işleminin bitmesini bekleyin.</value>
+  </data>
+  <data name="client_assettransfer_warnbgpexists" page="clientpage" xml:space="preserve">
+     <value>Bir Toplu Varlık Aktarma isteği şu anda işleniyor. Yeni bir Varlık Aktarma isteği gönderemeyebilirsiniz.</value>
+  </data>
+  <data name="client_assettransfer_atassetacct" page="clientpage" xml:space="preserve">
+     <value>Seçilen Varlık Türünün bir Varlık Hesabı yok.</value>
+  </data>
+  <data name="client_assettransfer_atdepracct" page="clientpage" xml:space="preserve">
+     <value>Seçilen Varlık Türünün bir Amortisman Hesabı yok.</value>
+  </data>
+  <data name="client_assettransfer_cdl_mandatory" page="clientpage" xml:space="preserve">
+     <value>Zorunlu olduğundan Departman/Sınıf/Konum &lt;YOK&gt;  olarak ayarlanamaz.</value>
+  </data>
+
+    <!-- FAM_AssetRecordTransfer.js -->
+  <data name="client_assettransfer_invalid_sub_bookid" xml:space="preserve">
+     <value>Bu Vergi Yöntemi için Muhasebe Defteri, hedef bağlı kuruluşla ilişkili değil. Vergi Yöntemi aktarılmayacak.</value>
+  </data>
+  <data name="client_assettransfer_invalid_sub_altmeth" xml:space="preserve">
+     <value>Bu Vergi Yöntemi için Alternatif Yöntem, hedef bağlı kuruluşla ilişkili değil. Vergi Yöntemi aktarılmayacak.</value>
+  </data>
+  <data name="client_assettransfer_no_tax_meth_acct" xml:space="preserve">
+     <value>Bu Vergi Yöntemi için Alternatif Yöntem ve Defter Kimliği kombinasyonunun hedef Varlık Türünde bir girişi yok. Vergi Yöntemi hesapları boş bırakılacak.</value>
+  </data>
+  <data name="custpage_transfer_asset_undefined" xml:space="preserve">
+    <value>Aktarma için Varlık Kaydı yok:(0)</value>
+  </data>
+
+    <!-- FAM_AssetTransferCSV.js -->
+    <data name="message_errorfile" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Varlık aktarma dosyası bilgileri alınırken hata oluştu.</value>
+    </data>
+    <data name="message_toomanyfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Çok Fazla Alan</value>
+    </data>
+    <data name="message_toofewfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Çok Az Alan</value>
+    </data>
+    <data name="message_duplicateasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Varlık kimliği için yinelenen giriş: (0)</value>
+    </data>
+    <data name="message_headertoofew" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Varlık aktarımı için veriler eksik. Dosyada, Varlık için değerler, artı şunlardan en az biri olmalıdır: Varlık Türü, Bağlı Kuruluş, Sınıf, Departman ve Konum.</value>
+    </data>
+    <data name="message_headerassetmissing" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Lütfen varlık için değerler girin</value>
+    </data>
+    <data name="message_headernotallowed" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Başlık alanına (0) izin verilmiyor. Dosyada yalnızca şu başlıklar olabilir: Varlık, Varlık Türü, Bağlı Kuruluş, Sınıf, Departman ve Konum.</value>
+    </data>
+    <data name="message_duplicateheader" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Başlık alanının birden fazla örneği var: (0). Lütfen yinelenen sütunları kaldırın.</value>
+    </data>
+    <data name="message_subsidiarybookid" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Varlığın, hedef bağlı kuruluşla ilişkili olmayan bir muhasebe defteri var. Varlık aktarılacak, ancak bu muhasebe defterindeki vergi yöntemleri dahil edilmeyecek.</value>
+    </data>
+    <data name="message_subsidiarymethod" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Varlığın, hedef bağlı kuruluşla ilişkili olmayan bir alternatif yöntemi var. Varlık aktarılacak, ancak bu alternatif yöntemdeki vergi yöntemleri dahil edilmeyecek.</value>
+    </data>
+    <data name="message_emptysubat" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Varlık kaydı Bağlı Kuruluş/Varlık Türü boş olamaz.</value>
+    </data>
+    <data name="message_nochange" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Varlık Aktarma hedef alan değerleri, orijinalden farklı olmalıdır.</value>
+    </data>
+    <data name="message_notransferacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Kaynak ve hedef bağlı kuruluşlar için var olan bir Varlık Aktarma Hesabı kaydı yok.</value>
+    </data>
+    <data name="message_subdept_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Bağlı Kuruluş ve departman eşleşmiyor.</value>
+    </data>
+    <data name="message_subloc_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Bağlı Kuruluş ve konum eşleşmiyor.</value>
+    </data>
+    <data name="message_subclass_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Bağlı Kuruluş ve sınıf eşleşmiyor.</value>
+    </data>
+    <data name="message_atassetacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Seçilen Varlık Türünün bir Varlık Hesabı yok.</value>
+    </data>
+    <data name="message_atdepracct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Seçilen Varlık Türünün bir Amortisman Hesabı yok.</value>
+    </data>
+    <data name="message_cdl_mandatory" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Zorunlu olduğundan Departman/Sınıf/Konum ayarı kaldırılamaz</value>
+    </data>
+    <data name="message_invalidasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Varlık mevcut değil veya aktif değil</value>
+    </data>
+    <data name="message_onetransfertype" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Farklı bir Bağlı Kuruluş, Sınıf, Departman veya Konuma aktarılırken Varlık Türü aktarımına izin verilmez</value>
+    </data>
+    <data name="message_nonexistentfld" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Hedef alanların bir veya daha fazlası mevcut değil ya da aktif değil</value>
+    </data>
+
+  <!-- Ext Js Messages -->
+  <data name="extjs_message_title" page="clientpage" xml:space="preserve">
+    <value>Duran Varlıklar</value>
+  </data>
+  <data name="extjs_processing" page="clientpage" xml:space="preserve">
+    <value>İşleniyor</value>
+  </data>
+  <data name="extjs_reading_asset" page="clientpage" xml:space="preserve">
+    <value>Varlık Okunuyor</value>
+  </data>
+  <data name="extjs_clearing_data" page="clientpage" xml:space="preserve">
+    <value>Veriler Temizleniyor</value>
+  </data>
+  <data name="extjs_loading_data" page="clientpage" xml:space="preserve">
+    <value>Veriler Yükleniyor</value>
+  </data>
+  <data name="extjs_refreshing_data" page="clientpage" xml:space="preserve">
+    <value>Veriler Yenileniyor</value>
+  </data>
+  <data name="extjs_initializing" page="clientpage" xml:space="preserve">
+    <value>Başlatılıyor</value>
+  </data>
+  <data name="extjs_initializing_error" page="clientpage" xml:space="preserve">
+    <value>Başlatma Hatası</value>
+  </data>
+  <data name="extjs_reloading" page="clientpage" xml:space="preserve">
+    <value>Yeniden yükleniyor</value>
+  </data>
+  <data name="extjs_done" page="clientpage" xml:space="preserve">
+     <value>Tamam</value>
+  </data>
+
+
+  <!-- Background Processing -->
+  <data name="custpage_error_internal" xml:space="preserve">
+    <value>Bu suitelet yalnızca dahili kullanım içindir!</value>
+  </data>
+  <data name="custpage_error_postmethod" xml:space="preserve">
+    <value>Beklenmedik KAYDETME yöntemi.</value>
+  </data>
+
+  <!-- Constants -->
+  <data name="custpage_constant_accountingmethod" xml:space="preserve">
+    <value>Muhasebe Yöntemi</value>
+  </data>
+  <data name="custpage_constant_allassets" xml:space="preserve">
+    <value>Tüm Varlıklar</value>
+  </data>
+  <data name="custpage_constant_exceptleased" xml:space="preserve">
+    <value>Kiralananlar Hariç Tüm Varlıklar</value>
+  </data>
+  <data name="custpage_constant_onlyaassets" xml:space="preserve">
+    <value>Yalnızca Kiralanan Varlıklar</value>
+  </data>
+
+
+  <!-- Server Scripts/Undefined -->
+  <data name="custpage_html_tangible" xml:space="preserve">
+    <value>Maddi Duran Varlıklar</value>
+  </data>
+  <data name="custpage_desc_schedulereport" xml:space="preserve">
+    <value>Duran Varlık Yönetimi Tablosu Raporu</value>
+  </data>
+  <data name="custpage_html_fam" xml:space="preserve">
+    <value>Duran Varlık Yönetimi</value>
+  </data>
+  <data name="custpage_accounts_missing" xml:space="preserve">
+    <value>Bir ya da daha fazla deftere kaydetme hesabı eksik.</value>
+  </data>
+  <data name="custpage_transfer_account_missing" xml:space="preserve">
+    <value>Aktarım hesapları alt:(0) öğesinden alt:(1) öğesine konumlanamıyor</value>
+  </data>
+  <data name="custpage_transfer_tax_method_account_missing" xml:space="preserve">
+    <value>Eksik Vergi Yöntemi Varlık/Amortisman hesabı</value>
+  </data>
+  <data name="custpage_errordepreciation" xml:space="preserve">
+    <value>Amortisman hesaplaması başarısız</value>
+  </data>
+  <data name="custpage_transactionfailed" xml:space="preserve">
+    <value>İşlem Başarısız</value>
+  </data>
+  <data name="custpage_fields_missing" xml:space="preserve">
+    <value>Lütfen şunun için değerler girin: (0)</value>
+  </data>
+  <data name="custpage_fields_inactive" xml:space="preserve">
+    <value>Aşağıdaki alanlar etkin değil: (0)</value>
+  </data>
+  <data name="custpage_outside_period" xml:space="preserve">
+    <value>Belirttiğiniz işlem tarihi muhasebe döneminizin tarih aralığında yer almıyor.</value>
+  </data>
+  <data name="custpage_setupmissing" xml:space="preserve">
+    <value>Duran Varlık Yönetimi Sistem Ayarı kaydı yok veya tamamlanmamış. Sistem ayarları belirlenemiyor.</value>
+  </data>
+  <data name="custpage_settingmissing" xml:space="preserve">
+    <value>Sistem Ayarları Okunamıyor</value>
+  </data>
+  <data name="custpage_invalid_acctsub_combo" xml:space="preserve">
+    <value>Geçersiz (0) Hesap-Bağlı Kuruluş kombinasyonu. Varlık Kimliği: (1)</value>
+  </data>
+
+  <!-- Buttons -->
+  <data name="custrecord_assetproposal_refreshbutton" page="assetproposal" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="custrecord_assetproposal_proposebutton" page="assetproposal" xml:space="preserve">
+    <value>Yeni Varlıklar Teklif Et</value>
+  </data>
+  <data name="custrecord_assetproposal_generatebutton" page="assetproposal" xml:space="preserve">
+    <value>Varlık Oluştur</value>
+  </data>
+  <data name="custrecord_assetproposal_rejectbutton" page="assetproposal" xml:space="preserve">
+    <value>Teklifleri Reddet</value>
+  </data>
+  <data name="custrecord_famreports_generatebutton" page="famreports" xml:space="preserve">
+    <value>Oluştur</value>
+  </data>
+  <data name="custrecord_assetsummary_generatebutton" page="assetsummary" xml:space="preserve">
+    <value>Rapor Oluştur</value>
+  </data>
+  <data name="custrecord_systemsetup_savebutton" page="systemsetup" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="custrecord_systemsetup_submitbutton" page="systemsetup" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="custrecord_assetsplit_refreshbutton" page="assetsplit" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="custrecord_assetsplit_splitbutton" page="assetsplit" xml:space="preserve">
+    <value>Böl</value>
+  </data>
+  <data name="custrecord_assetdisposal_refreshbutton" page="assetdisposal" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="custrecord_assetdisposal_disposebutton" page="assetdisposal" xml:space="preserve">
+    <value>Elden Çıkar</value>
+  </data>
+  <data name="custrecord_depreciationschedule2_generatebutton" page="depreciationschedule2" xml:space="preserve">
+    <value>Rapor Oluştur</value>
+  </data>
+  <data name="custrecord_assetcreation_createbutton" page="assetcreation" xml:space="preserve">
+    <value>Varlık Oluştur</value>
+  </data>
+  <data name="custrecord_creationstatus_refreshbutton" page="assetcreation" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="custrecord_assetrevaluation_refreshbutton" page="assetrevaluation" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="custrecord_assetrevaluation_processbutton" page="assetrevaluation" xml:space="preserve">
+    <value>İşlem Yeniden Değerleme</value>
+  </data>
+  <data name="custrecord_assetrevaluation_calculatebutton" page="assetrevaluation" xml:space="preserve">
+    <value>Hesapla</value>
+  </data>
+  <data name="custrecord_assetregister_generatebutton" page="assetregister" xml:space="preserve">
+    <value>Rapor Oluştur</value>
+  </data>
+  <data name="custrecord_maintenance_savebutton" page="maintenance" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="custrecord_maintenance_resetbutton" page="maintenance" xml:space="preserve">
+    <value>Sıfırla</value>
+  </data>
+  <data name="custrecord_systemstatus_refreshbutton" page="systemstatus" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="custrecord_generatehistory_generatebutton" page="generatehistory" xml:space="preserve">
+    <value>Geçmiş Oluştur</value>
+  </data>
+  <data name="custrecord_assetdepreciation_depreciatebutton" page="assetdepreciation" xml:space="preserve">
+    <value>Varlıkları Amortize Et</value>
+  </data>
+  <data name="custrecord_depreciationschedule_generatebutton" page="depreciationschedule" xml:space="preserve">
+    <value>Rapor Oluştur</value>
+  </data>
+  <data name="custrecord_reportstatus_refreshbutton" page="reportstatus" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="custrecord_reportstatus2_refreshbutton" page="reportstatus2" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="custrecord_assettransfer_refreshbutton" page="assettransfer" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="custrecord_assettransfer_transferbutton" page="assettransfer" xml:space="preserve">
+    <value>Aktarımı İşle</value>
+  </data>
+  <data name="custrecord_assettransfer_importcsv" page="assettransfer" xml:space="preserve">
+    <value>CSV İçe Aktar</value>
+  </data>
+  <data name="custrecord_bulktransfer_submitbutton" page="bulktransfer" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="custrecord_bulktransfer_cancelbutton" page="bulktransfer" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+
+  <!-- Asset Record -->
+  <data name="assetrecord_assettypehelp" xml:space="preserve">
+    <value>Varlık Türü, varlık yapılandırmasının çoğunu varsayılan yapar ve raporlarda ve diğer işlemlerde varlıkları sınıflandırmak için kullanılır.</value>
+  </data>
+  <data name="assetrecord_assetdescrhelp" xml:space="preserve">
+    <value>Varlığın kısa açıklaması.</value>
+  </data>
+  <data name="assetrecord_subshelp" xml:space="preserve">
+    <value>Bu kayıtla ilişkilendirilmiş bağlı kuruluş.</value>
+  </data>
+  <data name="assetrecord_includechildhelp" xml:space="preserve">
+    <value>Alt bağlı kuruluşların varlıklarını dahil etmek için bu kutuyu işaretleyin.</value>
+  </data>
+
+  <data name="assetrecord_assetserialnohelp" xml:space="preserve">
+    <value>Varlığı izlemek veya tanımlamak için kullanılabilecek bir seri numarası.</value>
+  </data>
+  <data name="assetrecord_assetalternatenohelp" xml:space="preserve">
+    <value>Ek varlık referans numarası.</value>
+  </data>
+  <data name="assetrecord_assetcosthelp" xml:space="preserve">
+    <value>Varlığın orijinal (satın alım) maliyeti.</value>
+  </data>
+  <data name="assetrecord_assetcurrentcosthelp" xml:space="preserve">
+    <value>Varlığın cari maliyeti.  Bu, varlığa uygulanmış herhangi bir değer düşürme tutarını içerir.</value>
+  </data>
+  <data name="assetrecord_residualvalpercenthelp" xml:space="preserve">
+    <value>Varlığın, ömrünün sonundaki orijinal maliyetinin yüzde değeri. Örneğin, 1000.00 TL'ye alınmış varlığın ederi, ömrünün sonunda 100,00 TL olabilir, yani kalan değer yüzdesi %10 olacaktır (1.000,00'in %10'u 100,00'dür).
+Bir Kalan Değer girilmesi, yüzde kullanılarak hesaplanan varsayılan değeri her zaman geçersiz kılar.</value>
+  </data>
+  <data name="assetrecord_residualvalhelp" xml:space="preserve">
+    <value>Varlığın, ömrünün sonunda edeceği değer. Örneğin, 1.000,00 TL'ye alınmış varlığın ederi, ömrünün sonunda 100,00 TL olabilir.
+
+Bir Kalan Değer girilmesi, yüzde kullanılarak hesaplanan varsayılan değeri her zaman geçersiz kılar.</value>
+  </data>
+  <data name="assetrecord_assetacctmethodhelp" xml:space="preserve">
+    <value>Bu varlık amortize edilirken kullanılacak amortisman yöntemini (formül) seçin.  Bu Muhasebe Yöntemi, muhasebe sistemine girilecek değerleri hesaplamak için kullanılır.</value>
+  </data>
+  <data name="assetrecord_assetperiodconvhelp" xml:space="preserve">
+    <value>Bir yılı tanımlamak için kullanılacak düzeni seçin:
+1. Her biri 30 günlük 12 ay - Bu düzen genelde Kuzey Amerika ve Avrupa'da kullanılır ve daha eşbiçimli aylık amortisman oluşturur.
+2. Bir ay içindeki tam gün sayısı, yılda 365 gün - Bu düzen genelde Avustralya ve Yeni Zelanda'da kullanılır ve yıl içinde eşit olmayan amortisman oluşturur.</value>
+  </data>
+  <data name="assetrecord_assetlifetimehelp" xml:space="preserve">
+    <value>Varlığın, amortisman dönemi katları cinsinden beklenen ömrü (örn. aylık amortize ediliyorsa ay cinsinden ömür girin).</value>
+  </data>
+  <data name="assetrecord_assetdeprperiodhelp" xml:space="preserve">
+    <value>Bu varlığın amortismanının gerçekleşmesi gereken sıklık.</value>
+  </data>
+  <data name="assetrecord_assetlifetimeusagehelp" xml:space="preserve">
+    <value>Varlığın amortismanı, o varlığın kullanımına göre yönetiliyorsa (örn. aracın yaptığı km), Ömür Kullanımı rakamı, varlık için kullanılabilir toplam birim sayısını belirtir.  Bugüne kadarki toplam kullanım Ömür Kullanımı'na eşit olduğunda varlık, ömrünün sonuna gelmiş demektir.</value>
+  </data>
+  <data name="assetrecord_assetnetbookvaluehelp" xml:space="preserve">
+    <value>Varlığın cari net değerlemesi.</value>
+  </data>
+  <data name="assetrecord_assetcumulativedeprhelp" xml:space="preserve">
+    <value>Varlığa bugüne kadar uygulanan toplam amortisman tutarı</value>
+  </data>
+  <data name="assetrecord_assetstatushelp" xml:space="preserve">
+    <value>Varlığın durumu: Yeni, Amortize Ediliyor, Tamamen Amortize Edilmiş veya Elden Çıkarılmış</value>
+  </data>
+  <data name="assetrecord_assetcustomerlocationhelp" xml:space="preserve">
+    <value>Varlığın satın alındığı müşterinin konumu.</value>
+  </data>
+  <data name="assetrecord_assetcurrencyhelp" xml:space="preserve">
+    <value>Varlığın ilk olarak ifade edildiği para birimi.</value>
+  </data>
+  <data name="assetrecord_assetcurrencyidhelp" xml:space="preserve">
+    <value>Varlık para biriminin Dahili Kimliği.</value>
+  </data>
+  <data name="assetrecord_assetfixedratehelp" xml:space="preserve">
+    <value>Varlığın şirketi veya bağlı kuruluş için temel para birimi ve orijinal maliyet para birimi (varlık para birimi) arasındaki sabit döviz kuru.</value>
+  </data>
+  <data name="assetrecord_assetcustodianhelp" xml:space="preserve">
+    <value>Varlıktan sorumlu çalışan.</value>
+  </data>
+  <data name="assetrecord_assetphysicallochelp" xml:space="preserve">
+    <value>Varlığın normalde bulunduğu yeri belirtir.</value>
+  </data>
+  <data name="assetrecord_assetincludesreportschelp" xml:space="preserve">
+    <value>Varlığın Varlık Özeti Raporu'na dahil edilmesi gerekip gerekmediğini belirtir.  Varsayılan olarak tüm varlıklar rapora dahil edilir.</value>
+  </data>
+  <data name="assetrecord_assetpurchasedatehelp" xml:space="preserve">
+    <value>Varlığın satın alım tarihi.</value>
+  </data>
+  <data name="assetrecord_assetdeprstartdatehelp" xml:space="preserve">
+    <value>Varlık amortismanının başlayacağı tarih. Örneğin, bir varlık satın alınabilir ancak iki ay sonraya kadar teslim alınmayabilir veya hizmete sokulmayabilir.</value>
+  </data>
+  <data name="assetrecord_assetdeprenddatehelp" xml:space="preserve">
+    <value>Varlığın amortismanının bitmesi beklenen tarih.  Bu, varlığın amortisman başlangıç tarihi artı, kullanılabilir ömür olarak varsayılandır.</value>
+  </data>
+  <data name="assetrecord_assetlastdeprperiodhelp" xml:space="preserve">
+    <value>Varlığın en son amortize edildiği dönem sayısı (varlığın ömrü içinde).</value>
+  </data>
+  <data name="assetrecord_assetlastdepramounthelp" xml:space="preserve">
+    <value>Bu varlığın en son amortismanının değeri.</value>
+  </data>
+  <data name="assetrecord_assetlastdeprdatehelp" xml:space="preserve">
+    <value>Bu varlığın en son amortisman tarihi.</value>
+  </data>
+  <data name="assetrecord_assetdepractivehelp" xml:space="preserve">
+    <value>Varlığın aktif olup olmadığını ve amortisman işlemeye dahil edilip edilmediğini belirtir.  Varlık bir işle ilişkiliyse iş tamamlandığında otomatik olarak aktif hale gelmek üzere ayarlanabilir.</value>
+  </data>
+  <data name="assetrecord_assetdisptypehelp" xml:space="preserve">
+    <value>Varlığın elden çıkarılma türü. </value>
+  </data>
+  <data name="assetrecord_assetcustomerhelp" xml:space="preserve">
+    <value>Varlığın satıldığı müşteri.</value>
+  </data>
+  <data name="assetrecord_assetqtyhelp" xml:space="preserve">
+    <value>Bu varlığın miktarı.</value>
+  </data>
+  <data name="assetrecord_assetrevisionmethodhelp" xml:space="preserve">
+    <value>Revizyonların (yeniden değerleme) varlığı nasıl etkilediğini kontrol eder.  "Cari Dönem" seçildiğinde, varlığın o bugüne kadarki amortismanı, revize edilmiş değerler kullanılarak yeniden hesaplanır ve hesaplanan amortisman ile önceden deftere işlenen amortisman arasındaki fark, cari döneme girilir.  "Kalan Ömür" seçildiğinde, revizyon varlığa bu noktadan itibaren uygulanır, yani yalnızca gelecekteki amortisman hesaplamalarını etkiler.</value>
+  </data>
+  <data name="assetrecord_assetnamehelp" xml:space="preserve">
+    <value>Bu kaydın ilişkili olduğu varlığın adı.</value>
+  </data>
+  <data name="assetrecord_assetlocationhelp" xml:space="preserve">
+    <value>Raporun yalnızca belirli bir konumla ilişkili varlıkları içermesini istiyorsanız, bir konum seçin.</value>
+  </data>
+  <data name="assetrecord_assetdepartmenthelp" xml:space="preserve">
+    <value>Raporun yalnızca belirli bir departmanla ilişkili varlıkları içermesini istiyorsanız bir departman seçin.</value>
+  </data>
+  <data name="assetrecord_assetclasshelp" xml:space="preserve">
+    <value>Raporun yalnızca belirli bir sınıfla ilişkili varlıkları içermesini istiyorsanız, bir sınıf seçin.</value>
+  </data>
+  <data name="assetrecord_report_subshelp" xml:space="preserve">
+    <value>Bir rapor oluşturmak istediğiniz bağlı kuruluşu veya bağlı kuruluşları seçin.</value>
+  </data>
+  <data name="assetrecord_report_assetacctmethodhelp" xml:space="preserve">
+    <value>Amortisman yöntemini seçin.</value>
+  </data>
+  <data name="assetrecord_report_includechildhelp" xml:space="preserve">
+    <value>Rapora alt bağlı kuruluşların varlıklarını dahil etmek için bu kutuyu işaretleyin.</value>
+  </data>
+  <data name="assetrecord_report_assettypehelp" xml:space="preserve">
+    <value>Raporda varlıkları sınıflandırmak için bir veya daha fazla varlık türü seçin. Varsayılan değerlerin, varlık türüne göre çoğu varlık yapılandırmasına atanacağını unutmayın.</value>
+  </data>
+  <data name="assetrecord_assetperiodstartdatehelp" xml:space="preserve">
+    <value>Oluşturmak istediğiniz rapor dönemi için bir başlangıç tarihi girin veya seçin.</value>
+  </data>
+  <data name="assetrecord_assetperiodenddatehelp" xml:space="preserve">
+    <value>Oluşturmak istediğiniz rapor dönemi için bir bitiş tarihi girin veya seçin.</value>
+  </data>
+  <data name="assetrecord_report_acctngbookhelp" xml:space="preserve">
+    <value>Bir rapor oluşturmak istediğiniz muhasebe defterini veya defterlerini seçin.</value>
+  </data>
+  <data name="assetrecord_report_typehelp" xml:space="preserve">
+    <value>Oluşturulacak rapor türünü seçin.</value>
+  </data>
+
+  <!-- Alternate Depreciation Record -->
+  <data name="client_altdepr_currency_mismatch" page="clientpage" xml:space="preserve">
+     <value>Bir Muhasebe Defteri Para Birimi seçildiğinde, Alternatif Amortisman Para birimi, Muhasebe Defteri para birimiyle eşleşmelidir.
+     Aksi halde, para birimi Bağlı Kuruluş veya Şirket temel para birimiyle eşleşmelidir.</value>
+  </data>
+</root>

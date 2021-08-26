@@ -1,0 +1,2766 @@
+﻿<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+
+  <xsd:schema id="root" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element msdata:IsDataSet="true" name="root">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="page" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+                <xsd:element minOccurs="0" msdata:Ordinal="2" name="comment" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute msdata:Ordinal="1" name="name" type="xsd:string" use="required"/>
+              <xsd:attribute msdata:Ordinal="3" name="type" type="xsd:string"/>
+              <xsd:attribute msdata:Ordinal="4" name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+    <!--
+      ###Enumaration of PAGES.. for tracing only###
+      assetcreation - Asset Creation
+      assetdepreciation - Asset Depreciation
+      assetdisposal - Asset Disposal
+      assetproposal - Asset Proposal
+      assetregister - Asset Register Report/Asset Register Detail
+      assetrevaluation - Asset Revaluation
+      assetsplit - Asset Split
+      assetsummary - Asset Summary Report
+      depreciationschedule - Asset Depreciation Schedule
+      depreciationschedule2 - Asset Depreciation Schedule (Portrait)
+      depreciationmethod - Depreciation Method
+      famreports - Fixed Assets Reports
+      generatehistory - Generate Asset History
+      reportstatus - FAM - Report Status
+      reportstatus2 - Asset Report Status (sc)
+      systemsetup - System Setup
+      systemstatus - System Status
+      maintenance - Language Management
+      depreciationmethodformula - Depreciation Method
+      clientpage - Entries intended for client messages
+  -->
+
+  <!-- Page Screen Title -->
+  <data name="maintenance_screen_assetcreation" page="maintenance" xml:space="preserve">
+    <value>Creazione beni</value>
+  </data>
+  <data name="maintenance_screen_assetdisposal" page="maintenance" xml:space="preserve">
+    <value>Smaltimento beni</value>
+  </data>
+  <data name="maintenance_screen_assetproposal" page="maintenance" xml:space="preserve">
+    <value>Proposta bene</value>
+  </data>
+  <data name="maintenance_screen_assetrevaluation" page="maintenance" xml:space="preserve">
+    <value>Rivalutazione beni</value>
+  </data>
+  <data name="maintenance_screen_assetsplit" page="maintenance" xml:space="preserve">
+    <value>Divisione beni</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule2" page="maintenance" xml:space="preserve">
+    <value>Programma svalutazione (verticale)</value>
+  </data>
+  <data name="maintenance_screen_systemsetup" page="maintenance" xml:space="preserve">
+    <value>Impostazione sistema</value>
+  </data>
+  <data name="maintenance_screen_maintenance" page="maintenance" xml:space="preserve">
+    <value>Aggiornamento traduzione in massa - FAM</value>
+  </data>
+  <data name="maintenance_screen_assetdepreciation" page="maintenance" xml:space="preserve">
+    <value>Svalutazione beni</value>
+  </data>
+  <data name="maintenance_screen_assetregister" page="maintenance" xml:space="preserve">
+    <value>Report registro beni</value>
+  </data>
+  <data name="maintenance_screen_assetsummary" page="maintenance" xml:space="preserve">
+    <value>Report riepilogo beni</value>
+  </data>
+  <data name="maintenance_screen_backgroundprocessing" page="maintenance" xml:space="preserve">
+    <value>Elaborazione in background</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule" page="maintenance" xml:space="preserve">
+    <value>Programma svalutazione</value>
+  </data>
+  <data name="maintenance_screen_generatehistory" page="maintenance" xml:space="preserve">
+    <value>Genera storico</value>
+  </data>
+  <data name="maintenance_screen_reportstatus" page="maintenance" xml:space="preserve">
+    <value>Stato report registro beni</value>
+  </data>
+  <data name="maintenance_screen_systemstatus" page="maintenance" xml:space="preserve">
+    <value>Stato sistema</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethod" page="maintenance" xml:space="preserve">
+    <value>Metodo di svalutazione</value>
+  </data>
+  <data name="maintenance_screen_reportstatus2" page="maintenance" xml:space="preserve">
+    <value>Stato report del programma di svalutazione</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethodformula" page="maintenance" xml:space="preserve">
+    <value>Formula di svalutazione</value>
+  </data>
+  <data name="maintenance_screen_clientpage" page="maintenance" xml:space="preserve">
+    <value>Messaggi di avviso client</value>
+  </data>
+
+  <!-- Localization Maintenance Page -->
+  <data name="maintenance_description_jp" page="maintenance" xml:space="preserve">
+    <value>Nome - Giappone JP</value>
+  </data>
+  <data name="maintenance_description_default" page="maintenance" xml:space="preserve">
+    <value>Nome - Italiano IT</value>
+  </data>
+  <data name="maintenance_select_language" page="maintenance" xml:space="preserve">
+    <value>Lingua</value>
+  </data>
+  <data name="custpage_translations_header" page="maintenance" xml:space="preserve">
+    <value>Aggiornamento traduzione in massa - FAM</value>
+  </data>
+  <data name="custpage_translations_en_US_header" page="maintenance" xml:space="preserve">
+    <value>IT</value>
+  </data>
+  <data name="custpage_translations_ja_JP_header" page="maintenance" xml:space="preserve">
+    <value>Giappone</value>
+  </data>
+  <data name="custpage_translations_custom_header" page="maintenance" xml:space="preserve">
+    <value>Traduzione -</value>
+  </data>
+  <data name="custpage_translations_custom_header_us" page="maintenance" xml:space="preserve">
+    <value>it</value>
+  </data>
+  <data name="custpage_translations_custom_header_jp" page="maintenance" xml:space="preserve">
+    <value>jp</value>
+  </data>
+  <data name="custpage_translations_screen_header" page="maintenance" xml:space="preserve">
+    <value>Schermo</value>
+  </data>
+  <data name="custpage_translations_common_fields" page="maintenance" xml:space="preserve">
+    <value>Campi comuni</value>
+  </data>
+
+  <!-- Asset Proposal Page -->
+  <data name="custrecord_assetproposal_title" page="assetproposal" xml:space="preserve">
+    <value>Proposta bene</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetproposal" xml:space="preserve">
+    <value>Tipo di bene/beni</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetproposal" xml:space="preserve">
+    <value>Filiale/i</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetproposal" xml:space="preserve">
+    <value>Includi bambini</value>
+    </data>
+  <data name="custpage_selectpage" page="assetproposal" xml:space="preserve">
+    <value>Seleziona pagina</value>
+  </data>
+  <data name="custpage_rowperpage" page="assetproposal" xml:space="preserve">
+    <value>Proposte per pagina</value>
+  </data>
+  <data name="proposals" page="assetproposal" xml:space="preserve">
+    <value>Beni proposti</value>
+    </data>
+  <data name="marked" page="assetproposal" xml:space="preserve">
+    <value>Seleziona</value>
+    </data>
+  <data name="editurl" page="assetproposal" xml:space="preserve">
+    <value>Modifica</value>
+    </data>
+  <data name="custrecord_propsourceid" page="assetproposal" xml:space="preserve">
+    <value>Transazione</value>
+    </data>
+  <data name="custrecord_propassettype" page="assetproposal" xml:space="preserve">
+    <value>Tipo di bene</value>
+    </data>
+  <data name="custrecord_propassetdescr" page="assetproposal" xml:space="preserve">
+    <value>Descrizione</value>
+    </data>
+  <data name="custrecord_propaccmethod" page="assetproposal" xml:space="preserve">
+    <value>Metodo di svalutazione</value>
+    </data>
+  <data name="custrecord_propassetcost" page="assetproposal" xml:space="preserve">
+    <value>Costo iniziale</value>
+    </data>
+  <data name="custrecord_propresidvalue" page="assetproposal" xml:space="preserve">
+    <value>Valore residuo</value>
+    </data>
+  <data name="custrecord_propassetlifetime" page="assetproposal" xml:space="preserve">
+    <value>Durata di vita</value>
+  </data>
+  <data name="custrecord_propsubsid" page="assetproposal" xml:space="preserve">
+    <value>Filiale</value>
+  </data>
+  <data name="custpage_nopropselected" page="assetproposal" xml:space="preserve">
+    <value>Nessun proposta selezionata da generare.</value>
+  </data>
+
+  <!-- Asset Transfer Page -->
+  <data name="custrecord_assettransfer_title" page="assettransfer" xml:space="preserve">
+    <value>Trasferimento beni</value>
+  </data>
+  <data name="custpage_assetid" page="assettransfer" xml:space="preserve">
+    <value>Nome/ID bene</value>
+  </data>
+  <data name="custpage_assetid_help" page="assettransfer" xml:space="preserve">
+    <value>Selezionare l'ID o il nome del bene che si desidera trasferire.</value>
+  </data>
+  <data name="custpage_assettype" page="assettransfer" xml:space="preserve">
+    <value>Tipo di bene</value>
+  </data>
+  <data name="custpage_assettype_help" page="assettransfer" xml:space="preserve">
+    <value>Tipo di bene per questo bene.</value>
+  </data>
+  <data name="custpage_newassettype" page="assettransfer" xml:space="preserve">
+    <value>Tipo di bene</value>
+  </data>
+  <data name="custpage_newassettype_help" page="assettransfer" xml:space="preserve">
+    <value>Selezionare il tipo di bene in cui si desidera trasferire questo bene.</value>
+  </data>
+  <data name="custpage_assetsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>Filiale</value>
+  </data>
+  <data name="custpage_assetsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>Filiale attuale del bene.</value>
+  </data>
+  <data name="custpage_newsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>Filiale</value>
+  </data>
+  <data name="custpage_newsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>Selezionare la filiale in cui si desidera trasferire questo bene.</value>
+  </data>
+  <data name="custpage_assetclass" page="assettransfer" xml:space="preserve">
+    <value>Classe</value>
+  </data>
+  <data name="custpage_assetclass_help" page="assettransfer" xml:space="preserve">
+    <value>Classe attuale del bene.</value>
+  </data>
+  <data name="custpage_newclass" page="assettransfer" xml:space="preserve">
+    <value>Classe</value>
+  </data>
+  <data name="custpage_newclass_help" page="assettransfer" xml:space="preserve">
+    <value>Selezionare la classe in cui si desidera trasferire questo bene.</value>
+  </data>
+  <data name="custpage_assetdepartment" page="assettransfer" xml:space="preserve">
+    <value>Reparto</value>
+  </data>
+  <data name="custpage_assetdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>Reparto attuale del bene.</value>
+  </data>
+  <data name="custpage_newdepartment" page="assettransfer" xml:space="preserve">
+    <value>Reparto</value>
+  </data>
+  <data name="custpage_newdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>Selezionare il reparto in cui si desidera trasferire questo bene.</value>
+  </data>
+  <data name="custpage_assetlocation" page="assettransfer" xml:space="preserve">
+    <value>Posizione</value>
+  </data>
+  <data name="custpage_assetlocation_help" page="assettransfer" xml:space="preserve">
+    <value>Posizione attuale del bene.</value>
+  </data>
+  <data name="custpage_newlocation" page="assettransfer" xml:space="preserve">
+    <value>Posizione</value>
+  </data>
+  <data name="custpage_newlocation_help" page="assettransfer" xml:space="preserve">
+    <value>Selezionare la posizione in cui si desidera trasferire questo bene.</value>
+  </data>
+  <data name="custpage_assetdescription" page="assettransfer" xml:space="preserve">
+    <value>Descrizione bene</value>
+  </data>
+  <data name="custpage_assetdescription_help" page="assettransfer" xml:space="preserve">
+    <value>La descrizione del bene viene visualizzata qui.</value>
+  </data>
+  <data name="custpage_assetserialno" page="assettransfer" xml:space="preserve">
+    <value>Numero di serie del bene</value>
+  </data>
+  <data name="custpage_assetserialno_help" page="assettransfer" xml:space="preserve">
+    <value>Il numero di serie utilizzato per tracciare o identificare il bene.</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assettransfer" xml:space="preserve">
+    <value>Numero bene alternativo</value>
+  </data>
+  <data name="custpage_assetalternateno_help" page="assettransfer" xml:space="preserve">
+    <value>Numero di riferimento aggiuntivo per il bene</value>
+  </data>
+  <data name="custpage_assetorigcost" page="assettransfer" xml:space="preserve">
+    <value>Costo originale</value>
+  </data>
+  <data name="custpage_assetorigcost_help" page="assettransfer" xml:space="preserve">
+    <value>Costo originale (di acquisto) del bene.</value>
+  </data>
+  <data name="custpage_assetcurrcost" page="assettransfer" xml:space="preserve">
+    <value>Valore contabile attuale</value>
+  </data>
+  <data name="custpage_assetcurrcost_help" page="assettransfer" xml:space="preserve">
+    <value>L'attuale valore contabile del bene.</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assettransfer" xml:space="preserve">
+    <value>Vita del bene</value>
+  </data>
+  <data name="custpage_assetlifetime_help" page="assettransfer" xml:space="preserve">
+    <value>La durata di vita prevista per il bene, in multipli del periodo di svalutazione (es. se la svalutazione è mensile, inserire la durata di vita in mesi).</value>
+  </data>
+  <data name="custpage_assetlastdepr" page="assettransfer" xml:space="preserve">
+    <value>Periodo ultima svalutazione</value>
+  </data>
+  <data name="custpage_assetlastdepr_help" page="assettransfer" xml:space="preserve">
+    <value>Il numero di periodo (entro la durata di vita del bene) più recente durante il quale il bene è stato svalutato.</value>
+  </data>
+  <data name="custpage_assetstatus" page="assettransfer" xml:space="preserve">
+    <value>Stato del bene</value>
+  </data>
+  <data name="custpage_assetstatus_help" page="assettransfer" xml:space="preserve">
+    <value>Stato corrente del bene.</value>
+  </data>
+  <data name="custpage_assetcurrency" page="assettransfer" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
+  <data name="custpage_assetcurrency_help" page="assettransfer" xml:space="preserve">
+    <value>Valuta contabile di base della filiale.</value>
+  </data>
+
+  <!-- Process Instance Status Page -->
+  <data name="custpage_processstatus_title" page="processstatus" xml:space="preserve">
+    <value>Stato transazione</value>
+  </data>
+  <data name="custpage_processid" page="processstatus" xml:space="preserve">
+    <value>Ultimi processi: </value>
+  </data>
+  <data name="custpage_currentprocess" page="processstatus" xml:space="preserve">
+    <value>Processi correnti: </value>
+  </data>
+  <data name="custpage_processstatus" page="processstatus" xml:space="preserve">
+    <value>Stato del processo corrente: </value>
+  </data>
+  <data name="custpage_prevprocess" page="processstatus" xml:space="preserve">
+    <value>Processi precedenti: </value>
+  </data>
+  <data name="custpage_nopending" page="processstatus" xml:space="preserve">
+    <value>Nessun processo in sospeso</value>
+  </data>
+  <data name="custpage_nocurrent" page="processstatus" xml:space="preserve">
+    <value>Nessuno</value>
+  </data>
+  <data name="custpage_rendering" page="processstatus" xml:space="preserve">
+    <value>Elaborazione in corso...</value>
+  </data>
+  <data name="custpage_deprnone" page="processstatus" xml:space="preserve">
+    <value>(0) beni sono stati svalutati.</value>
+  </data>
+    <data name="custpage_depracctmethods" page="processstatus" xml:space="preserve">
+    <value>Svalutazione dei metodi contabili in corso </value>
+  </data>
+  <data name="custpage_depracctmethods_count" page="processstatus" xml:space="preserve">
+    <value>metodi contabili sono stati svalutati.</value>
+  </data>
+  <data name="custpage_deprtaxmethods" page="processstatus" xml:space="preserve">
+    <value>Svalutazione dei metodi di imposta in corso </value>
+  </data>
+  <data name="custpage_deprtaxmethods_count" page="processstatus" xml:space="preserve">
+    <value>metodi di imposta sono stati svalutati.</value>
+  </data>
+  <data name="custpage_writingdepr_amounts" page="processstatus" xml:space="preserve">
+    <value>Scrittura della svalutazione sul registro in corso</value>
+  </data>
+  <data name="custpage_deprhistory_count" page="processstatus" xml:space="preserve">
+    <value>storico di svalutazione elaborato.</value>
+  </data>
+  <data name="custpage_status_allassettype" page="processstatus" xml:space="preserve">
+    <value>Tutti i tipi di beni</value>
+  </data>
+  <data name="custpage_procstatus_dispose" page="processstatus" xml:space="preserve">
+    <value>Cessione beni in corso </value>
+  </data>
+  <data name="custpage_procstatus_dispose_count" page="processstatus" xml:space="preserve">
+    <value>beni sono stati ceduti.</value>
+  </data>
+  <data name="custpage_procstatus_reval" page="processstatus" xml:space="preserve">
+    <value>Rivalutazione dei beni in corso </value>
+  </data>
+  <data name="custpage_procstatus_reval_count" page="processstatus" xml:space="preserve">
+    <value>beni sono stati rivalutati.</value>
+  </data>
+  <data name="custpage_procstatus_split" page="processstatus" xml:space="preserve">
+    <value>Divisione dei beni in corso </value>
+  </data>
+  <data name="custpage_procstatus_split_count" page="processstatus" xml:space="preserve">
+    <value>beni sono stati divisi.</value>
+  </data>
+  <data name="custpage_procstatus_transfer" page="processstatus" xml:space="preserve">
+    <value>Trasferimento dei beni in corso </value>
+  </data>
+  <data name="custpage_procstatus_transfer_count" page="processstatus" xml:space="preserve">
+    <value>beni sono stati trasferiti.</value>
+  </data>
+  <data name="custpage_procstatus_gen" page="processstatus" xml:space="preserve">
+    <value>Generazione dei beni in corso </value>
+  </data>
+  <data name="custpage_procstatus_gen_count" page="processstatus" xml:space="preserve">
+    <value>beni sono stati generati.</value>
+  </data>
+  <data name="custpage_procstatus_prop" page="processstatus" xml:space="preserve">
+    <value>Proposta dei beni in corso </value>
+  </data>
+  <data name="custpage_procstatus_prop_count" page="processstatus" xml:space="preserve">
+    <value>beni sono stati proposti.</value>
+  </data>
+  <data name="custpage_procstatus_schedreport_count" page="processstatus" xml:space="preserve">
+    <value>report sono stati generati.</value>
+  </data>
+  <data name="custpage_rep_gen_asset_register" page="processstatus" xml:space="preserve">
+    <value>Generazione report del registro beni in corso</value>
+  </data>
+  <data name="custpage_rep_gen_asset_summary" page="processstatus" xml:space="preserve">
+    <value>Generazione report di riepilogo beni in corso</value>
+  </data>
+  <data name="custpage_rep_gen_depr_sched" page="processstatus" xml:space="preserve">
+    <value>Generazione report del programma di svalutazione in corso</value>
+  </data>
+  <data name="custpage_report_generation_count" page="processstatus" xml:space="preserve">
+    <value>registrazioni incluse.</value>
+  </data>
+  <data name="custpage_view_report_as" page="processstatus" xml:space="preserve">
+    <value>visualizza report come:</value>
+  </data>
+  <data name="custpage_procstatus_create" page="processstatus" xml:space="preserve">
+    <value>Creazione dei beni in corso </value>
+  </data>
+  <data name="custpage_procstatus_create_count" page="processstatus" xml:space="preserve">
+    <value>beni sono stati creati.</value>
+  </data>
+  <data name="custpage_view_proppage" page="processstatus" xml:space="preserve">
+    <value>visualizza pagina proposta</value>
+  </data>
+  
+  <!-- Asset Summary Page -->
+  <data name="custrecord_assetsummary_title" page="assetsummary" xml:space="preserve">
+    <value>Report di riepilogo beni</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetsummary" xml:space="preserve">
+    <value>Tipo di bene/beni</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetsummary" xml:space="preserve">
+    <value>Filiale/i</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetsummary" xml:space="preserve">
+    <value>Includi figli</value>
+    </data>
+  <data name="custpage_filtermsselect" page="assetsummary" xml:space="preserve">
+    <value>Seleziona</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetsummary" xml:space="preserve">
+    <value>Metodo di svalutazione</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetsummary" xml:space="preserve">
+    <value>Posizione</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetsummary" xml:space="preserve">
+    <value>Reparto</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetsummary" xml:space="preserve">
+    <value>Classe</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetsummary" xml:space="preserve">
+    <value>Data inizio periodo</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetsummary" xml:space="preserve">
+    <value>Data termine periodo</value>
+  </data>
+  <data name="custpage_html_tangible" page="assetsummary" xml:space="preserve">
+    <value>Cespiti fissi tangibili</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="assetsummary" xml:space="preserve">
+    <value>Costo o valutazione</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetsummary" xml:space="preserve">
+    <value>Svalutazione</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetsummary" xml:space="preserve">
+    <value>Valore contabile netto</value>
+  </data>
+  <data name="custpage_html_at" page="assetsummary" xml:space="preserve">
+    <value>A (0)</value>
+  </data>
+  <data name="custpage_html_additions" page="assetsummary" xml:space="preserve">
+    <value>Aggiunte</value>
+  </data>
+  <data name="custpage_html_disposals" page="assetsummary" xml:space="preserve">
+    <value>Cessioni</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="assetsummary" xml:space="preserve">
+    <value>Costo per il periodo</value>
+  </data>
+  <data name="custpage_html_adjustments" page="assetsummary" xml:space="preserve">
+    <value>Rettifiche</value>
+  </data>
+  <data name="custpage_html_fam" page="assetsummary" xml:space="preserve">
+    <value>Gestione cespiti fissi</value>
+  </data>
+  <data name="custpage_html_total" page="assetsummary" xml:space="preserve">
+    <value>Totale</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetsummary" xml:space="preserve">
+    <value>Tutti i beni</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetsummary" xml:space="preserve">
+    <value>Tutti i beni ad eccezione di quelli in leasing</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetsummary" xml:space="preserve">
+    <value>Solo beni in leasing</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetsummary" xml:space="preserve">
+    <value>Metodo contabile (opzione)</value>
+  </data>
+  
+  
+  <!-- Fixed Assets Reports -->
+  <data name="custrecord_famreports_title" page="famreports" xml:space="preserve">
+    <value>Report cespiti fissi</value>
+  </data>
+  <data name="custpage_reporttype" page="famreports" xml:space="preserve">
+    <value>Tipo report</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="famreports" xml:space="preserve">
+    <value>Tipo di bene/beni</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="famreports" xml:space="preserve">
+    <value>Filiale/i</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="famreports" xml:space="preserve">
+    <value>Includi figli</value>
+  </data>
+  <data name="custpage_filteracctngbook" page="famreports" xml:space="preserve">
+    <value>Registri contabili</value>
+  </data>
+  <data name="custpage_filtermsselect" page="famreports" xml:space="preserve">
+    <value>Beni da includere</value>
+  </data>
+  <data name="custpage_filtersmethod" page="famreports" xml:space="preserve">
+    <value>Svalutazione alternativa</value>
+  </data>
+  <data name="custpage_filterslocation" page="famreports" xml:space="preserve">
+    <value>Posizioni</value>
+  </data>
+  <data name="custpage_filtersdept" page="famreports" xml:space="preserve">
+    <value>Reparti</value>
+  </data>
+  <data name="custpage_filtersclass" page="famreports" xml:space="preserve">
+    <value>Classi</value>
+  </data>
+  <data name="custpage_filterstartdate" page="famreports" xml:space="preserve">
+    <value>Data inizio</value>
+  </data>
+  <data name="custpage_filterenddate" page="famreports" xml:space="preserve">
+    <value>Data termine</value>
+  </data>
+  <data name="custpage_html_tangible" page="famreports" xml:space="preserve">
+    <value>Cespiti fissi tangibili</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="famreports" xml:space="preserve">
+    <value>Costo o valutazione</value>
+  </data>
+  <data name="custpage_html_depreciation" page="famreports" xml:space="preserve">
+    <value>Svalutazione</value>
+  </data>
+  <data name="custpage_html_nbv" page="famreports" xml:space="preserve">
+    <value>Valore contabile netto</value>
+  </data>
+  <data name="custpage_html_at" page="famreports" xml:space="preserve">
+    <value>A (0)</value>
+  </data>
+  <data name="custpage_html_additions" page="famreports" xml:space="preserve">
+    <value>Aggiunte</value>
+  </data>
+  <data name="custpage_html_disposals" page="famreports" xml:space="preserve">
+    <value>Cessioni</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="famreports" xml:space="preserve">
+    <value>Costo per il periodo</value>
+  </data>
+  <data name="custpage_html_adjustments" page="famreports" xml:space="preserve">
+    <value>Rettifiche</value>
+  </data>
+  <data name="custpage_html_fam" page="famreports" xml:space="preserve">
+    <value>Gestione cespiti fissi</value>
+  </data>
+  <data name="custpage_html_total" page="famreports" xml:space="preserve">
+    <value>Totale</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="famreports" xml:space="preserve">
+    <value>Tutti i beni</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="famreports" xml:space="preserve">
+    <value>Tutti i beni ad eccezione di quelli in leasing</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="famreports" xml:space="preserve">
+    <value>Solo beni in leasing</value>
+  </data>
+  <data name="custpage_dropdown_report_assetregister" page="famreports" xml:space="preserve">
+    <value>Registro cespiti</value>
+  </data>
+  <data name="custpage_dropdown_report_assetsummary" page="famreports" xml:space="preserve">
+    <value>Riepilogo beni</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_nbv" page="famreports" xml:space="preserve">
+    <value>Programma di svalutazione - Valore contabile netto</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_pd" page="famreports" xml:space="preserve">
+    <value>Programma di svalutazione - Periodo di svalutazione</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="famreports" xml:space="preserve">
+    <value>Metodo contabile</value>
+  </data>
+  <data name="custpage_saveresults_help" page="famreports" xml:space="preserve">
+    <value>Salva importi previsione consente di salvare le voci di svalutazione generate (per la durata della vita di un bene) nella registrazione dei beni. Quando questa funzione è abilitata, il sistema ignora la data di inizio, la data di fine, il valore contabile e il periodo di svalutazione. In questo modo è possibile assicurare che la tabella Storico di svalutazione disponga sempre di un programma di svalutazione durante la vita del bene. I valori immessi nei campi Data inizio, Data fine, Valore contabile netto e Periodo svalutazione vengono utilizzati solo per il report generato.</value>
+  </data>
+  <data name="custpage_saveresults" page="famreports" xml:space="preserve">
+    <value>Salva importi previsione</value>
+  </data>
+  <data name="custpage_assetinclude_help" page="famreports" xml:space="preserve">
+    <value>Selezionare quale dei beni seguenti si desidera includere nel report: Tutti i beni, Tutti i beni fuorché quelli in leasing o Solo beni in leasing.</value>
+  </data>
+  <data name="custpage_nodataforreport" page="famreports" xml:space="preserve">
+    <value>Dati report non è disponibile nella combinazione di filtri selezionata.</value>
+  </data>
+  <data name="custpage_dropddown_none" page="famreports" xml:space="preserve">
+    <value>Nessuno</value>
+  </data>
+
+  <!-- Report Status -->
+  <data name="custpage_currentstatus" page="reportstatus" xml:space="preserve">
+    <value>Stato corrente</value>
+  </data>
+  <data name="custpage_resultstatus" page="reportstatus" xml:space="preserve">
+    <value>Qual è la situazione?</value>
+  </data>
+  <data name="custpage_reportavailable" page="reportstatus" xml:space="preserve">
+    <value>Risultati report disponibili</value>
+  </data>
+  <data name="custpage_generatereportassettypes" page="reportstatus" xml:space="preserve">
+    <value>Generazione dei tipi di beni del report in corso:</value>
+  </data>
+  <data name="custpage_generatereport" page="reportstatus" xml:space="preserve">
+    <value>Genera report: </value>
+  </data>
+  <data name="custpage_assetprocessed" page="reportstatus" xml:space="preserve">
+    <value>(0) beni sono stati elaborati.</value>
+  </data>
+  <data name="custpage_reportlink" page="reportstatus" xml:space="preserve">
+    <value>qui</value>
+  </data>
+  <data name="custpage_errorfile" page="reportstatus" xml:space="preserve">
+    <value>Errore nel recupero delle informazioni del file report</value>
+  </data>
+  <data name="custpage_generatingreport" page="reportstatus" xml:space="preserve">
+    <value>Generazione report in corso per</value>
+  </data>
+  <data name="custpage_reportcomplete" page="reportstatus" xml:space="preserve">
+    <value>Generazione report completata.</value>
+  </data>
+  <data name="custpage_processfailed" page="reportstatus" xml:space="preserve">
+    <value>Elaborazione non riuscita.</value>
+  </data>
+
+  <!-- Report Status Depreciation -->
+  <data name="custrecord_reportstatus_title" page="reportstatus2" xml:space="preserve">
+    <value>Stato report del programma di svalutazione</value>
+  </data>
+  <data name="custpage_html_currentstatus" page="reportstatus2" xml:space="preserve">
+    <value>Stato corrente</value>
+  </data>
+  <data name="custpage_html_resultstatus" page="reportstatus2" xml:space="preserve">
+    <value>Qual è la situazione?</value>
+  </data>
+  <data name="custpage_html_assetprocessed" page="reportstatus2" xml:space="preserve">
+    <value>(0) beni sono stati elaborati.</value>
+  </data>
+  <data name="custpage_html_reportavailable" page="reportstatus2" xml:space="preserve">
+    <value>Risultati report disponibili</value>
+  </data>
+  <data name="custpage_html_reportlink" page="reportstatus2" xml:space="preserve">
+    <value>qui</value>
+  </data>
+  <data name="custpage_html_generatereport" page="reportstatus2" xml:space="preserve">
+    <value>Generazione report in corso per: (0)</value>
+  </data>
+  <data name="custpage_html_processfailed" page="reportstatus2" xml:space="preserve">
+    <value>Elaborazione non riuscita.</value>
+  </data>
+  <data name="custpage_html_errorfile" page="reportstatus2" xml:space="preserve">
+    <value>Errore nel recupero delle informazioni del file report</value>
+  </data>
+  <data name="custpage_html_assetno" page="reportstatus2" xml:space="preserve">
+    <value>Bene N.</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="reportstatus2" xml:space="preserve">
+    <value>Descrizione bene</value>
+  </data>
+
+
+  <data name="custrecord_famreportshist_title" page="famreportshistory" xml:space="preserve">
+    <value>Cronologia report cespiti fissi</value>
+  </data>  
+  <data name="custpage_showingdays" page="famreportshistory" xml:space="preserve">
+    <value>Visualizzazione in corso dei report relativi agli ultimi (0) giorni.</value>
+  </data>
+  <data name="custpage_group_reporthistory" page="famreportshistory" xml:space="preserve">
+    <value>Report cespiti fissi</value>
+  </data>
+  <data name="custpage_reports_dategen" page="famreportshistory" xml:space="preserve">
+    <value>Data generata</value>
+  </data>
+  <data name="custpage_reports_reptype" page="famreportshistory" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="custpage_reports_repstartdate" page="famreportshistory" xml:space="preserve">
+    <value>Data inizio</value>
+  </data>
+  <data name="custpage_reports_rependdate" page="famreportshistory" xml:space="preserve">
+    <value>Data termine</value>
+  </data>
+  <data name="custpage_reports_fileoptions" page="famreportshistory" xml:space="preserve">
+    <value>Opzioni file</value>
+  </data>
+  <data name="custpage_reports_viewas" page="famreportshistory" xml:space="preserve">
+    <value>Visualizza come: </value>
+  </data>
+  <data name="custpage_reports_delete" page="famreportshistory" xml:space="preserve">
+    <value>Elimina</value>
+  </data>
+  <data name="custpage_reports_repowner" page="famreportshistory" xml:space="preserve">
+    <value>Proprietario</value>
+  </data>
+  <data name="custpage_error_filepermissioninsuf" page="famreportshistory" xml:space="preserve">
+    <value>Il ruolo non dispone dei permessi di visualizzazione o del file superiore.</value>
+  </data>
+  <data name="custpage_button_all_reports" page="famreportshistory" xml:space="preserve">
+    <value>Mostra tutti i report</value>
+  </data>
+  <data name="custpage_button_my_reports" page="famreportshistory" xml:space="preserve">
+    <value>Mostra report personali</value>
+  </data>
+
+  <!-- System Setup Page -->
+  <data name="custrecord_systemsetup_title" page="systemsetup" xml:space="preserve">
+    <value>Gestione cespiti fissi</value>
+  </data>
+  <data name="custrecord_systemsetup_settingstab" page="systemsetup" xml:space="preserve">
+    <value>Impostazioni</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalktab" page="systemsetup" xml:space="preserve">
+    <value>SuiteTalk</value>
+  </data>
+  <data name="custrecord_systemsetup_featurestab" page="systemsetup" xml:space="preserve">
+    <value>Caratteristiche</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalkdesc" page="systemsetup" xml:space="preserve">
+    <value>Digita credenziali da utilizzare per comunicazioni SuiteTalk (servizio web)</value>
+  </data>
+  <data name="custpage_filtermsselect" page="systemsetup" xml:space="preserve">
+    <value>Seleziona</value>
+  </data>
+  <data name="custpage_filtersmethod" page="systemsetup" xml:space="preserve">
+    <value>Metodo di svalutazione</value>
+  </data>
+  <data name="custpage_filterslocation" page="systemsetup" xml:space="preserve">
+    <value>Posizione</value>
+  </data>
+  <data name="custpage_filtersdept" page="systemsetup" xml:space="preserve">
+    <value>Reparto</value>
+  </data>
+  <data name="custpage_filtersclass" page="systemsetup" xml:space="preserve">
+    <value>Classe</value>
+  </data>
+  <data name="custpage_filterstartdate" page="systemsetup" xml:space="preserve">
+    <value>Data inizio periodo</value>
+  </data>
+  <data name="custpage_filterenddate" page="systemsetup" xml:space="preserve">
+    <value>Data termine periodo</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import" page="systemsetup" xml:space="preserve">
+    <value>Esegui Server script su CSV Import</value>
+  </data>
+  <data name="custpage_farsetuppostlocation" page="systemsetup" xml:space="preserve">
+    <value>Registra in cambio posizione</value>
+  </data>
+  <data name="custpage_farsetuppostclass" page="systemsetup" xml:space="preserve">
+    <value>Registra in cambio classe</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment" page="systemsetup" xml:space="preserve">
+    <value>Registra in cambio reparto</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock" page="systemsetup" xml:space="preserve">
+    <value>Registra nel prossimo periodo aperto se C/Fornitori è bloccato</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella per consentire la registrazione nel successivo periodo aperto se C/Fornitori è bloccato. Azzerare questa casella per consentire la registrazione del periodo corrente anche se C/Fornitori è bloccato.</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock" page="systemsetup" xml:space="preserve">
+    <value>Registra nel prossimo periodo aperto se C/Clienti è bloccato</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella per consentire la registrazione nel successivo periodo aperto se C/Clienti è bloccato. Azzerare questa casella per consentire la registrazione del periodo corrente anche se C/Clienti è bloccato.</value>
+  </data>
+  <data name="custpage_allow_non_fixedasset_account" page="systemsetup" xml:space="preserve">
+    <value>Consenti tipi di conti cespiti non fissi</value>
+  </data>
+  <data name="custpage_farsetupsummary" page="systemsetup" xml:space="preserve">
+    <value>Riassumi registri da</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations" page="systemsetup" xml:space="preserve">
+    <value>Consenti svalutazioni con data futura</value>
+  </data>
+  <data name="custpage_allowvalueedit" page="systemsetup" xml:space="preserve">
+    <value>Consenti modifica valore dei beni</value>
+  </data>
+  <data name="custpage_allownegativecost" page="systemsetup" xml:space="preserve">
+    <value>Consenti costi di beni negativi</value>
+  </data>
+  <data name="custpage_userrole_help1" page="systemsetup" xml:space="preserve">
+    <value>Il consenso alla modifica del valore dei beni fornisce all'amministratore tutti i permessi di modifica dei valori nelle registrazioni dei beni.</value>
+  </data>
+  <data name="custpage_userrole_help2" page="systemsetup" xml:space="preserve">
+    <value>È possibile anche selezionare ruoli aggiuntivi per consentire agli altri utenti di modificare i valori dei beni.</value>
+  </data>
+  <data name="custpage_userrole" page="systemsetup" xml:space="preserve">
+    <value>Ruoli utente</value>
+  </data>
+  <data name="custpage_propapprovedonly" page="systemsetup" xml:space="preserve">
+    <value>Proponi solo transazioni approvate</value>
+  </data>
+  <data name="custpage_followacctperiod" page="systemsetup" xml:space="preserve">
+    <value>Utilizza le date del periodo contabile per la svalutazione</value>
+  </data>
+  <data name="custpage_allowbypassue" page="systemsetup" xml:space="preserve">
+    <value>Ignora gli script UE di registrazione personalizzata durante la svalutazione</value>
+  </data>
+  <data name="custpage_constrainal" page="systemsetup" xml:space="preserve">
+    <value>Limita la vita dei beni alternativi</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction" page="systemsetup" xml:space="preserve">
+    <value>Utilizza registri personalizzati</value>
+  </data>
+  <data name="custpage_adminallreports" page="systemsetup" xml:space="preserve">
+    <value>Consenti a tutti gli amministratori di visualizzare tutti i report</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount" page="systemsetup" xml:space="preserve">
+    <value>Riduci valore utilizzando Conto svalutazione</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym" page="systemsetup" xml:space="preserve">
+    <value>Valute intere (0 dec.)</value>
+  </data>
+  <data name="custpage_farsetupresrej" page="systemsetup" xml:space="preserve">
+    <value>Limita possibilità di rifiutare le proposte</value>
+  </data>
+  <data name="custpage_farsetupreportfolder" page="systemsetup" xml:space="preserve">
+    <value>Cartella da utilizzare per i report (ID interno)</value>
+  </data>
+  <data name="custpage_farsetupdisposalform" page="systemsetup" xml:space="preserve">
+    <value>Modulo fattura cessione beni (ID interno)</value>
+  </data>
+  <data name="custpage_farsetupsubsidsenabled" page="systemsetup" xml:space="preserve">
+    <value>Filiali</value>
+  </data>
+  <data name="custpage_farsetupdeptsenabled" page="systemsetup" xml:space="preserve">
+    <value>Reparti</value>
+  </data>
+  <data name="custpage_farsetuplocationsenabled" page="systemsetup" xml:space="preserve">
+    <value>Posizioni</value>
+  </data>
+  <data name="custpage_farsetupclassesenabled" page="systemsetup" xml:space="preserve">
+    <value>Classi</value>
+  </data>
+  <data name="custpage_farsetupjobsenabled" page="systemsetup" xml:space="preserve">
+    <value>Lavori</value>
+  </data>
+  <data name="custpage_farsetupmulticurrenabled" page="systemsetup" xml:space="preserve">
+    <value>Valute multiple</value>
+  </data>
+  <data name="custpage_admin_only_field" page="systemsetup" xml:space="preserve">
+    <value>Solo amministratore</value>
+  </data>
+  <data name="custpage_html_adminonly" page="systemsetup" xml:space="preserve">
+    <value>Solo gli amministratori possono accedere a questa pagina.</value>
+  </data>
+  <data name="custpage_dropdown_none" page="systemsetup" xml:space="preserve">
+    <value>Nessuno</value>
+  </data>
+  <data name="custpage_dropdown_parent" page="systemsetup" xml:space="preserve">
+    <value>Padre</value>
+  </data>
+  <data name="custpage_dropdown_subcategory" page="systemsetup" xml:space="preserve">
+    <value>Sotto-categoria</value>
+  </data>
+  <data name="custpage_dropdown_assettype" page="systemsetup" xml:space="preserve">
+    <value>Tipo di bene</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import_help" page="systemsetup" xml:space="preserve">
+  <value>Non spuntare questa casella se si stanno importando le registrazioni dei beni di vita intermedia.
+Se questa casella viene spuntata insieme alla casella Avvia Server SuiteScript e Trigger Workflows (Impostazioni &gt; Importa &gt; Preferenze di importazione CSV), informazioni quali Svalutazione cumulativa, Data ultima svalutazione e Periodo ultima svalutazione verranno automaticamente compilate con valori predefiniti uguali a 0, anche se gli importi effettivi sono inclusi nel file da importare.</value>
+  </data>
+  <data name="custpage_farsetuppostlocation_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella se i valori saranno trasferiti durante il cambio posizione, con le scritture contabili allegate.</value>
+  </data>
+  <data name="custpage_farsetuppostclass_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella se i beni saranno trasferiti durante il cambio classe, con le scritture contabili allegate.</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella se i beni saranno trasferiti durante il cambio reparto, con le scritture contabili allegate.</value>
+  </data>
+  <data name="custpage_constrainal_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella per limitare l'aggiunta alla registrazione di un bene di un metodo di svalutazione alternativo il cui valore di Vita del bene (AL) è maggiore della durata di vita del bene.</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella per registrare l'importo di riduzione del valore nel conto di svalutazione. Azzerare questa casella di controllo per registrare l'importo di riduzione del valore nel conto cespiti.</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym_help" page="systemsetup" xml:space="preserve">
+    <value>Immettere uno o più simboli di valute (ad esempio JPY, separando più valori con ;) per le valute senza numeri decimali.</value>
+  </data>
+  <data name="custpage_farsetupresrej_help" page="systemsetup" xml:space="preserve">
+    <value>Se questa opzione viene selezionata, il pulsante Rifiuta proposte verrà visualizzato solo nella pagina Proposta bene quando gli utenti vi accedono con il ruolo Amministratore.</value>
+  </data>
+  <data name="custpage_farsetupreportfolder_help" page="systemsetup" xml:space="preserve">
+    <value>Immettere l'ID interno della cartella Report registro cespiti fissi nell'archivio in cui sono stati salvati i report Cespiti fissi. Per visualizzare l'ID interno della cartella Report registro cespiti fissi nel proprio account NetSuite:
+1. Andare a Documenti &gt; File &gt; Archivio.
+2. Fare clic su SuiteBundles.
+3. Fare clic su Bundle 35405.
+4. Fare clic sulla cartella src.</value>
+  </data>
+  <data name="custpage_farsetupdisposalform_help" page="systemsetup" xml:space="preserve">
+    <value>Immettere l'ID interno del modulo di fattura preferito da utilizzare per creare la registrazione Fattura vendite quando si cede un bene con la vendita. Se questo campo viene lasciato vuoto, come modulo di fattura verrà utilizzato il modulo preferito predefinito.</value>
+  </data>
+  <data name="custpage_farsetupsummary_help" page="systemsetup" xml:space="preserve">
+    <value>Selezionare un'opzione da Riassumi registri:
+Padre - Scorrere i valori dei sotto-beni fino a padre e creare una scrittura contabile per includere i valori padre e figlio in base al periodo.
+Sotto-categoria - Scorrere i valori fino a sotto-categoria e creare una scrittura contabile in base alla sotto-categoria e al periodo. Questa opzione può essere selezionata solo se le opzioni Categoria Riparazione e manutenzione e Sotto-categorie Riparazione e manutenzione sono state implementate.
+Tipo bene - Scorrere i valori in base al tipo di bene.</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella per consentire la svalutazione dei beni sino a una data di svalutazione successiva al periodo corrente. Azzerare la casella per svalutare i beni solo relativamente al periodo corrente.</value>
+  </data>
+  <data name="custpage_allowvalueedit_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella per fornire agli amministratori tutti i permessi per modificare i valori nelle registrazioni dei beni.
+Se questa casella non viene spuntata, tali registrazioni non possono essere modificate. Si veda Limitare la modifica dei valori dei beni per l'elenco dei campi che non possono essere modificati.
+Per consentire ad altri utenti di modificare i valori dei beni, selezionare ruoli aggiuntivi nel campo Ruoli utente.</value>
+  </data>
+  <data name="custpage_allownegativecost_help" page="systemsetup" xml:space="preserve">
+    <value>Selezionare questa opzione per consentire agli amministratori, insieme ad altri ruoli che dispongano dei permessi necessari per modificare i valori dei beni, di inserire valori negativi nella registrazione dei beni relativi al costo originale, al costo corrente e al valore residuo.</value>
+  </data>
+  <data name="custpage_userrole_help" page="systemsetup" xml:space="preserve">
+    <value>Questa funzione è abilitata quando viene spuntata la casella Consenti modifica valore dei beni. Per selezionare due o più ruoli, tenere premuto il tasto CTRL durante la selezione di ciascun ruolo nel campo Ruoli utente.</value>
+  </data>
+  <data name="custpage_propapprovedonly_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella se si desidera proporre i beni solo dalle transazioni che sono state approvate. Azzerare questa casella per abilitare la proposta automatica dei beni da tutte le nuove transazioni che sono state pubblicate rispetto agli account giornale contabilità generale a prescindere dallo stato della transazione (ad esempio, se questa è stata approvata o è in attesa di approvazione).</value>
+  </data>
+  <data name="custpage_followacctperiod_help" page="systemsetup" xml:space="preserve">
+    <value>Abilitare questa preferenza per utilizzare le date del periodo di contabilità relative alla scrittura contabile di svalutazione. Ciò è applicabile se il formato del periodo non è impostato come Mesi calendario.</value>
+  </data>
+  <data name="custpage_allowbypassue_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella per ignorare gli script Evento utente e i flussi di lavoro per le registrazioni personalizzate durante il processo di svalutazione. Azzerare questa casella se si stanno eseguendo gli script personalizzati e/o se si intende aggiornare i flussi di lavoro nelle registrazioni durante il processo di svalutazione.</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella per utilizzare un modulo di scrittura contabile personalizzato</value>
+  </data>
+  <data name="custpage_adminallreports_help" page="systemsetup" xml:space="preserve">
+    <value>Spuntare questa casella per consentire agli amministratori di visualizzare i report generati da altri utenti</value>
+  </data>
+  
+  <!-- Asset Split -->
+  <data name="custrecord_assetsplit_title" page="assetsplit" xml:space="preserve">
+    <value>Divisione beni</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetsplit" xml:space="preserve">
+    <value>Informazioni Primarie</value>
+  </data>
+  <data name="custpage_group_splitdetails" page="assetsplit" xml:space="preserve">
+    <value>Dettagli suddivisione</value>
+  </data>
+  <data name="custpage_newlbl" page="assetsplit" xml:space="preserve">
+    <value>Nuovi valori beni:</value>
+  </data>
+  <data name="custpage_oldlbl" page="assetsplit" xml:space="preserve">
+    <value>Valori precedenti beni:</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetsplit" xml:space="preserve">
+    <value>Metodi di imposta</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetsplit" xml:space="preserve">
+    <value>Registri contabili</value>
+  </data>
+  <data name="custpage_altmethod" page="assetsplit" xml:space="preserve">
+    <value>Metodo alternativo</value>
+  </data>
+  <data name="custpage_assetid" page="assetsplit" xml:space="preserve">
+    <value>Nome/ID bene</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetsplit" xml:space="preserve">
+    <value>Descrizione bene</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetsplit" xml:space="preserve">
+    <value>Numero di serie del bene</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetsplit" xml:space="preserve">
+    <value>Numero bene alternativo</value>
+  </data>
+  <data name="custpage_assettype" page="assetsplit" xml:space="preserve">
+    <value>Tipo di bene</value>
+  </data>
+  <data name="custpage_assetcost" page="assetsplit" xml:space="preserve">
+    <value>Costo originale</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetsplit" xml:space="preserve">
+    <value>Costo attuale</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetsplit" xml:space="preserve">
+    <value>Valore residuo</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetsplit" xml:space="preserve">
+    <value>Metodo di svalutazione</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetsplit" xml:space="preserve">
+    <value>Vita del bene</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetsplit" xml:space="preserve">
+    <value>Valore contabile attuale</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetsplit" xml:space="preserve">
+    <value>Svalutazione alla data</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetsplit" xml:space="preserve">
+    <value>Periodo ultima svalutazione</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetsplit" xml:space="preserve">
+    <value>Importo ultima svalutazione</value>
+  </data>
+  <data name="custpage_assetdeprstartdate" page="assetsplit" xml:space="preserve">
+    <value>Data inizio svalutazione</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetsplit" xml:space="preserve">
+    <value>Data ultima svalutazione</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetsplit" xml:space="preserve">
+    <value>Stato del bene</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetsplit" xml:space="preserve">
+    <value>Quantità</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetsplit" xml:space="preserve">
+    <value>Filiale</value>
+  </data>
+  <data name="custpage_splitquantity" page="assetsplit" xml:space="preserve">
+    <value>Suddivisione Quantità</value>
+  </data>
+  <data name="splitquantity_help" page="assetsplit" xml:space="preserve">
+    <value>Immettere un valore inferiore alla quantità del bene.</value>
+  </data>
+  <!--help texts -->
+  <data name="custpage_newqty_help" page="assetsplit" xml:space="preserve">
+    <value>La quantità separata dal bene originale. Questa quantità diventerà adesso quella del nuovo bene.</value>
+  </data>
+  <data name="custpage_newoc_help" page="assetsplit" xml:space="preserve">
+    <value>Il costo originale predefinito (acquisto) del nuovo bene in base al costo originale del bene originale e alla quantità suddivisa. Immettere un nuovo valore se non si desidera utilizzare il costo originale predefinito.</value>
+  </data>
+  <data name="custpage_newcc_help" page="assetsplit" xml:space="preserve">
+    <value>Il costo corrente predefinito del nuovo bene in base al costo corrente del bene originale e alla quantità suddivisa. Immettere un nuovo valore se non si desidera utilizzare il costo corrente predefinito.</value>
+  </data>
+  <data name="custpage_newnbv_help" page="assetsplit" xml:space="preserve">
+    <value>Il valore contabile corrente predefinito del nuovo bene in base al valore contabile del bene originale e alla quantità suddivisa. Immettere un nuovo valore se non si desidera utilizzare il valore contabile predefinito.  Si noti che la somma del valore contabile e della svalutazione odierna deve essere uguale al costo attuale.</value>
+  </data>
+  <data name="custpage_newdeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>L'importo totale della svalutazione predefinita applicata alla data odierna al bene in base alla quantità di suddivisione e all'importo di svalutazione odierna del bene. Immettere un valore nuovo se non si desidera utilizzare l'importo totale di svalutazione. Si noti che la somma del valore contabile e della svalutazione odierna deve essere uguale al costo attuale.</value>
+  </data>
+  <data name="custpage_newrv_help" page="assetsplit" xml:space="preserve">
+    <value>Il valore predefinito del nuovo bene al termine della sua vita. Questo valore si basa sulla quantità suddivisa e sul valore residuo del bene originale.  Immettere un nuovo valore se non si desidera utilizzare il valore residuo predefinito.</value>
+  </data>
+  <data name="custpage_newlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>L'importo dell'ultima svalutazione predefinito del nuovo bene in base alla quantità suddivisa e all'importo dell'ultima svalutazione del bene originale. Immettere un valore nuovo se non si desidera utilizzare l'importo ultima svalutazione predefinito.</value>
+  </data>
+  <data name="custpage_oldqty_help" page="assetsplit" xml:space="preserve">
+    <value>La quantità restante per il bene originale.</value>
+  </data>
+  <data name="custpage_oldoc_help" page="assetsplit" xml:space="preserve">
+    <value>Il costo originale restante per il bene originale in base alla quantità suddivisa.</value>
+  </data>
+  <data name="custpage_oldcc_help" page="assetsplit" xml:space="preserve">
+    <value>Il costo attuale restante del bene originale in base alla quantità suddivisa.</value>
+  </data>
+  <data name="custpage_oldnbv_help" page="assetsplit" xml:space="preserve">
+    <value>Il valore contabile corrente restante del bene originale in base alla quantità suddivisa.</value>
+  </data>
+  <data name="custpage_olddeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>L'importo di svalutazione restante applicato alla data odierna per il bene originale sulla quantità suddivisa.</value>
+  </data>
+  <data name="custpage_oldrv_help" page="assetsplit" xml:space="preserve">
+    <value>Il valore rimanente del bene originale al termine della sua durata di vita. Il valore si basa sulla quantità suddivisa.</value>
+  </data>
+  <data name="custpage_oldlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>L'importo ultima svalutazione restante del bene originale in base alla quantità suddivisa.</value>
+  </data>
+
+  <!-- Asset Disposal -->
+  <data name="custrecord_assetdisposal_title" page="assetdisposal" xml:space="preserve">
+    <value>Vendita/cessione beni</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetdisposal" xml:space="preserve">
+    <value>Informazioni Primarie</value>
+  </data>
+  <data name="custpage_group_disposaldetail" page="assetdisposal" xml:space="preserve">
+    <value>Dettagli cessione</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetdisposal" xml:space="preserve">
+    <value>Metodi di imposta</value>
+  </data>
+  <data name="custpage_assetid" page="assetdisposal" xml:space="preserve">
+    <value>Nome/ID bene</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetdisposal" xml:space="preserve">
+    <value>Selezionare l'ID o il nome del bene che si desidera cedere.</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetdisposal" xml:space="preserve">
+    <value>Descrizione bene</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetdisposal" xml:space="preserve">
+    <value>Numero di serie del bene</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetdisposal" xml:space="preserve">
+    <value>Numero bene alternativo</value>
+  </data>
+  <data name="custpage_assettype" page="assetdisposal" xml:space="preserve">
+    <value>Tipo di bene</value>
+  </data>
+  <data name="custpage_assetcost" page="assetdisposal" xml:space="preserve">
+    <value>Costo originale</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetdisposal" xml:space="preserve">
+    <value>Costo attuale</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetdisposal" xml:space="preserve">
+    <value>Valore residuo</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetdisposal" xml:space="preserve">
+    <value>Metodo di svalutazione</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetdisposal" xml:space="preserve">
+    <value>Vita del bene</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetdisposal" xml:space="preserve">
+    <value>Valore contabile attuale</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetdisposal" xml:space="preserve">
+    <value>Svalutazione alla data</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetdisposal" xml:space="preserve">
+    <value>Periodo ultima svalutazione</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetdisposal" xml:space="preserve">
+    <value>Importo ultima svalutazione</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetdisposal" xml:space="preserve">
+    <value>Data ultima svalutazione</value>
+  </data>
+  <data name="custpage_assetdeprperiod" page="assetdisposal" xml:space="preserve">
+    <value>Periodo di svalutazione</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetdisposal" xml:space="preserve">
+    <value>Metodo di revisione</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetdisposal" xml:space="preserve">
+    <value>Stato del bene</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetdisposal" xml:space="preserve">
+    <value>Quantità</value>
+  </data>
+  <data name="custpage_disposaldate" page="assetdisposal" xml:space="preserve">
+    <value>Data cessione</value>
+  </data>
+  <data name="custpage_disposaltype" page="assetdisposal" xml:space="preserve">
+    <value>Tipo cessione</value>
+  </data>
+  <data name="custpage_assetquantdisposed" page="assetdisposal" xml:space="preserve">
+    <value>Quantità ceduta</value>
+  </data>
+  <data name="custpage_disposalitem" page="assetdisposal" xml:space="preserve">
+    <value>Voce vendita</value>
+  </data>
+  <data name="custpage_customer" page="assetdisposal" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="custpage_salesamount" page="assetdisposal" xml:space="preserve">
+    <value>Importo vendite</value>
+  </data>
+  <data name="custpage_taxcode" page="assetdisposal" xml:space="preserve">
+    <value>Codice Imposta sulle vendite</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetdisposal" xml:space="preserve">
+    <value>Filiale</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetdisposal" xml:space="preserve">
+    <value>Posizione</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdisposal" xml:space="preserve">
+    <value>Registri contabili</value>
+  </data>
+  <data name="custpage_altmethod" page="assetdisposal" xml:space="preserve">
+    <value>Metodo alternativo</value>
+  </data>
+  <data name="custpage_html_assetdisposed" page="assetdisposal" xml:space="preserve">
+    <value>BENE NON CEDUTO!</value>
+  </data>
+  <data name="custpage_html_invoicefail" page="assetdisposal" xml:space="preserve">
+    <value>Impossibile creare la fattura per la vendita del bene.</value>
+  </data>
+  <data name="custpage_html_checksetup" page="assetdisposal" xml:space="preserve">
+    <value>Verificare impostazione del record dei beni alla ricerca di dati incompatibili e/o mancanti.</value>
+  </data>
+  <data name="custpage_html_journalfail" page="assetdisposal" xml:space="preserve">
+    <value>Scrittura contabile per vendita beni non creata.</value>
+  </data>
+  <data name="custpage_html_journal_writeofffail" page="assetdisposal" xml:space="preserve">
+    <value>Scrittura contabile per cancellazione beni non creata.</value>
+  </data>
+  <data name="custpage_assetquantdisposed_help" page="assetdisposal" xml:space="preserve">
+    <value>La quantità ceduta non può superare la quantità del bene.</value>
+  </data>
+  <data name="custpage_disposaldate_help" page="assetdisposal" xml:space="preserve">
+    <value>La data di cessione non può essere precedente alla data dell'ultima svalutazione.</value>
+  </data>
+  <data name="custpage_disposalitem_help" page="assetdisposal" xml:space="preserve">
+    <value>È possibile selezionare solo voci non di inventario in vendita o rivendita.</value>
+  </data>
+  <data name="custpage_filterslocation_help" page="assetdisposal" xml:space="preserve">
+    <value>Se la funzione Inventario multilocazione (MLI, Multi-Location Inventory) è abilitata, la cessione dei beni per vendita richiede l'importazione di un valore Posizione. Se disponibile, il valore della posizione è originato per impostazione predefinita dalla registrazione FAM-bene e non può essere modificato onde prevenire trasferimenti di posizione non tracciati. Se non disponibile dalla registrazione dei beni, è necessario selezionare il valore nell'elenco Posizione della pagina Vendita/Cessione.</value>
+  </data>
+  <data name="custpage_salesamount_help" page="assetdisposal" xml:space="preserve">
+    <value>L'importo delle vendite deve essere maggiore a zero.</value>
+  </data>
+  <data name="custpage_taxcode_help" page="assetdisposal" xml:space="preserve">
+    <value>Selezionare un codice di imposta applicabile alla filiale del cliente.</value>
+  </data>
+  <data name="custpage_salememo" page="assetdisposal" xml:space="preserve">
+    <value>Vendita beni (0)</value>
+  </data>
+  <data name="custpage_writeoffmemo" page="assetdisposal" xml:space="preserve">
+    <value>Storno beni (0)</value>
+  </data>
+  <data name="custpage_nodispacc" page="assetdisposal" xml:space="preserve">
+     <value>Il bene non può essere ceduto in quanto gli importi di cessione seguenti non sono stati impostati per: (0)</value>
+  </data>
+  <data name="custpage_inactiveacc" page="assetdisposal" xml:space="preserve">
+     <value>Il bene non può essere ceduto in quanto gli importi di cessione seguenti non sono attivi: (0)</value>
+  </data>
+  <data name="custpage_invoicefail" page="assetdisposal" xml:space="preserve">
+     <value>Impossibile creare la fattura</value>
+  </data>
+  <data name="custpage_quantityerror" page="assetdisposal" xml:space="preserve">
+     <value>La quantità ceduta deve essere compresa tra (0) e (1)</value>
+  </data>
+
+  <!-- Asset Depreciation Schedule Report V2 (Portrait) -->
+  <data name="custrecord_deprecationschedule2_title" page="depreciationschedule2" xml:space="preserve">
+    <value>Report del programma di svalutazione beni</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule2" xml:space="preserve">
+    <value>Valore contabile</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>Periodo svalutazione</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule2" xml:space="preserve">
+    <value>Tipo di bene/beni</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule2" xml:space="preserve">
+    <value>Filiali</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule2" xml:space="preserve">
+    <value>Includi figli</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule2" xml:space="preserve">
+    <value>Posizione</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule2" xml:space="preserve">
+    <value>Reparto</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule2" xml:space="preserve">
+    <value>Classe</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule2" xml:space="preserve">
+    <value>Seleziona</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>Metodo di svalutazione</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule2" xml:space="preserve">
+    <value>Data inizio</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule2" xml:space="preserve">
+    <value>Data termine</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule2" xml:space="preserve">
+    <value>Tutti i beni</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule2" xml:space="preserve">
+    <value>Tutti i beni ad eccezione di quelli in leasing</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule2" xml:space="preserve">
+    <value>Solo beni in leasing</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>Metodo contabile</value>
+  </data>
+  <data name="custpage_html_asset" page="depreciationschedule2" xml:space="preserve">
+    <value>Bene</value>
+  </data>
+  <data name="custpage_message_filestorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>Impossibile archiviare dati temporanei necessari per report (nlapiSubmitFile)</value>
+  </data>
+  <data name="custpage_message_temporarydata" page="depreciationschedule2" xml:space="preserve">
+    <value>Dati temporanei necessari per il report del programma di svalutazione gestione cespiti fissi</value>
+  </data>
+  <data name="custpage_html_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>Programma di svalutazione beni - Periodo di svalutazione</value>
+  </data>
+  <data name="custpage_html_nbv" page="depreciationschedule2" xml:space="preserve">
+    <value>Programma di svalutazione beni - Valore contabile</value>
+  </data>
+  <data name="custpage_html_periodtotal" page="depreciationschedule2" xml:space="preserve">
+    <value>Totale periodo</value>
+  </data>
+  <data name="custpage_html_assetno" page="depreciationschedule2" xml:space="preserve">
+    <value>Bene N.</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="depreciationschedule2" xml:space="preserve">
+    <value>Descrizione bene</value>
+  </data>
+  <data name="custpage_deprschedreport" page="depreciationschedule2" xml:space="preserve">
+    <value>Report del programma di svalutazione gestione cespiti fissi</value>
+  </data>
+  <data name="custpage_html_reporttruncated" page="depreciationschedule2" xml:space="preserve">
+    <value>Report troncato, dimensione archiviazione massima raggiunta.</value>
+  </data>
+  <data name="custpage_message_reportstorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>Impossibile archiviare i risultati del report (nlapiSubmitFile)</value>
+  </data>
+  <data name="custpage_html_fam" page="depreciationschedule2" xml:space="preserve">
+    <value>Gestione cespiti fissi</value>
+  </data>
+  <data name="custpage_html_noassetfound" page="depreciationschedule2" xml:space="preserve">
+    <value>Nessun bene trovato per il report di programmazione</value>
+  </data>
+
+  <!-- Asset Creation Status -->
+  <data name="custrecord_assetcreation_title" page="assetcreation" xml:space="preserve">
+    <value>Creazione nuovo bene</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetcreation" xml:space="preserve">
+    <value>Tipo di bene/beni</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetcreation" xml:space="preserve">
+    <value>Filiale/i</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetcreation" xml:space="preserve">
+    <value>Includi figli</value>
+  </data>
+  <data name="custrecord_creationstatus_title" page="assetcreation" xml:space="preserve">
+    <value>Stato creazione beni</value>
+  </data>
+  <data name="custrecord_html_currentstatus" page="assetcreation" xml:space="preserve">
+    <value>Stato corrente</value>
+  </data>
+  <data name="custrecord_resultstatus" page="assetcreation" xml:space="preserve">
+    <value>Qual è la situazione?</value>
+  </data>
+  <data name="custrecord_generationcomplete" page="assetcreation" xml:space="preserve">
+    <value>Generazione bene completata.</value>
+  </data>
+  <data name="custrecord_creatingasset" page="assetcreation" xml:space="preserve">
+    <value>Creazione beni per tipi di beni: (0)</value>
+  </data>
+  <data name="custrecord_transactionprocessed" page="assetcreation" xml:space="preserve">
+    <value>(0) transazioni sono state elaborate, (1) nuovi beni sono stati creati.</value>
+  </data>
+  <data name="custrecord_allassettypes" page="assetcreation" xml:space="preserve">
+    <value>Tutti i tipi di beni</value>
+  </data>
+
+  <!-- Asset Revaluation -->
+  <data name="custrecord_assetrevaluation_title" page="assetrevaluation" xml:space="preserve">
+    <value>Rivalutazione beni</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetrevaluation" xml:space="preserve">
+    <value>Informazioni primarie</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetrevaluation" xml:space="preserve">
+    <value>Selezionare l'ID o il nome del bene che si desidera rivalutare.</value>
+  </data>
+  <data name="custpage_assetid" page="assetrevaluation" xml:space="preserve">
+    <value>Nome/ID bene</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetrevaluation" xml:space="preserve">
+    <value>Descrizione bene</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetrevaluation" xml:space="preserve">
+    <value>Numero di serie del bene</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetrevaluation" xml:space="preserve">
+    <value>Numero bene alternativo</value>
+  </data>
+  <data name="custpage_assettype" page="assetrevaluation" xml:space="preserve">
+    <value>Tipo di bene</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetrevaluation" xml:space="preserve">
+    <value>Costo attuale</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Valore residuo</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetrevaluation" xml:space="preserve">
+    <value>Metodo di svalutazione</value>
+  </data>
+  <data name="custpage_depmethodlbl" page="clientpage" xml:space="preserve">
+    <value>Metodo di svalutazione</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>Vita del bene</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Valore contabile attuale</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetrevaluation" xml:space="preserve">
+    <value>Metodo di revisione</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetrevaluation" xml:space="preserve">
+    <value>Stato del bene</value>
+  </data>
+  <data name="custpage_writedownamount" page="assetrevaluation" xml:space="preserve">
+    <value>Importo di riduzione valore</value>
+  </data>
+  <data name="custpage_newresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Valore residuo rett.</value>
+  </data>
+  <data name="custpage_newlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>Durata di vita rett.</value>
+  </data>
+  <data name="custpage_newdeprmethod" page="assetrevaluation" xml:space="preserve">
+    <value>Metodo di svalutazione rett.</value>
+  </data>
+  <data name="custpage_revaluationmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Riferimento transazione</value>
+  </data>
+  <data name="custpage_revaluationdate" page="assetrevaluation" xml:space="preserve">
+    <value>Data transazione</value>
+  </data>
+  <data name="custpage_lastdeprperiod" page="clientpage" xml:space="preserve">
+    <value>Periodo ultima svalutazione</value>
+  </data>
+  <data name="custpage_residualvalueerrror" page="assetrevaluation" xml:space="preserve">
+    <value>Il valore residuo supera il costo originale o il costo attuale</value>
+  </data>
+  <data name="custpage_defaultrevmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Rivalutazione beni (FAM)</value>
+  </data>
+  <data name="custpage_defaultwdmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Riduzione valore beni (FAM)</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetrevaluation" xml:space="preserve">
+    <value>Registri contabili</value>
+  </data>
+  <data name="custpage_writedownperc" page="assetrevaluation" xml:space="preserve">
+    <value>% riduzione valore</value>
+  </data>
+  <data name="custpage_newdeprmethod_help" page="assetrevaluation" xml:space="preserve">
+    <value>Il nuovo metodo di svalutazione da utilizzare per svalutare questo bene dopo la rivalutazione.</value>
+  </data>
+  <data name="custpage_newlifetime_help" page="assetrevaluation" xml:space="preserve">
+    <value>La nuova vita del bene dopo la rivalutazione.</value>
+  </data>
+  <data name="custpage_newresidualvalue_help" page="assetrevaluation" xml:space="preserve">
+    <value>Il nuovo valore residuali del bene dopo la rivalutazione.</value>
+  </data>
+  <data name="custpage_writedownperc_help" page="assetrevaluation" xml:space="preserve">
+    <value>Immettere per compilare automaticamente l'importo di riduzione del valore nel sotto-elenco seguente.</value>
+  </data>
+  <data name="custpage_revaluationdate_help" page="assetrevaluation" xml:space="preserve">
+    <value>Immettere una data per la scrittura contabile di questa transazione.</value>
+  </data>
+  <data name="custpage_revaluationmemo_help" page="assetrevaluation" xml:space="preserve">
+    <value>Immettere un riferimento per identificare la scrittura contabile di questa transazione.</value>
+  </data>
+  <data name="custpage_writedownamount_help" page="assetrevaluation" xml:space="preserve">
+    <value>Immettere un importo di riduzione valore. Questo importo viene detratto dal valore contabile attuale</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetrevaluation" xml:space="preserve">
+    <value>Selezionare i registri contabili che sono associati a questo bene.</value>
+  </data>
+  <data name="custpage_groupdeprerror" page="assetrevaluation" xml:space="preserve">
+      <value>La rivalutazione non è possibile per la svalutazione alternativa della svalutazione gruppi</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>La rivalutazione non è possibile per registrazioni con date di rivalutazione precedenti alla data dell'ultima svalutazione.</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>La rivalutazione non è possibile per registrazioni con date di rivalutazione precedenti alla data dell'ultima svalutazione.</value>
+  </data>
+  <data name="custpage_wdacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Conto di svalutazione mancante o inattivo</value>
+  </data>
+  <data name="custpage_assetacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Conto cespiti mancante o inattivo</value>
+  </data>
+  <data name="custpage_depracct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Conto svalutazione mancante o inattivo</value>
+  </data>
+  <data name="custpage_deprchargeacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Conto addebito svalutazione mancante o inattivo</value>
+  </data>
+  <data name="custpage_plugin_not_parent_asset" page="assetrevaluation" xml:space="preserve">
+      <value>L'ID della registrazione del bene fornito non è un Bene padre o un Metodo imposta da rivalutare.</value>
+  </data>
+  <data name="custpage_no_tax_or_asset" page="assetrevaluation" xml:space="preserve">
+      <value>Per la rivalutazione è necessario fornire l'ID della registrazione del bene o l'ID del metodo imposta.</value>
+  </data>
+
+
+
+  <!-- Asset report -->
+  <data name="custrecord_assetregister_title" page="assetregister" xml:space="preserve">
+    <value>Report registro beni</value>
+  </data>
+  <data name="custrecord_assetregisterdetail_title" page="assetregister" xml:space="preserve">
+    <value>Report dettagli registro beni</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetregister" xml:space="preserve">
+    <value>Tipo di bene/beni</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetregister" xml:space="preserve">
+    <value>Filiale/i</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetregister" xml:space="preserve">
+    <value>Includi figli</value>
+  </data>
+  <data name="custpage_filtermsselect" page="assetregister" xml:space="preserve">
+    <value>Seleziona</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetregister" xml:space="preserve">
+    <value>Metodo di svalutazione</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetregister" xml:space="preserve">
+    <value>Posizione</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetregister" xml:space="preserve">
+    <value>Reparto</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetregister" xml:space="preserve">
+    <value>Classe</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetregister" xml:space="preserve">
+    <value>Data inizio periodo</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetregister" xml:space="preserve">
+    <value>Data termine periodo</value>
+  </data>
+  <data name="custpage_html_fam" page="assetregister" xml:space="preserve">
+    <value>Gestione cespiti fissi</value>
+  </data>
+  <data name="custpage_html_transdate" page="assetregister" xml:space="preserve">
+    <value>Data transazione</value>
+  </data>
+  <data name="custpage_html_cost" page="assetregister" xml:space="preserve">
+    <value>Costo</value>
+  </data>
+  <data name="custpage_html_accdepreciation" page="assetregister" xml:space="preserve">
+    <value>Svalutazione accumulata</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetregister" xml:space="preserve">
+    <value>NBV</value>
+  </data>
+  <data name="custpage_html_acquisitiondate" page="assetregister" xml:space="preserve">
+    <value>Data di acquisizione</value>
+  </data>
+  <data name="custpage_html_assettype" page="assetregister" xml:space="preserve">
+    <value>Tipo di bene</value>
+  </data>
+  <data name="custpage_html_assetmanagement" page="assetregister" xml:space="preserve">
+    <value>(0) Gestione cespiti</value>
+  </data>
+  <data name="custpage_html_assetname" page="assetregister" xml:space="preserve">
+    <value>Nome bene</value>
+  </data>
+  <data name="custpage_html_description" page="assetregister" xml:space="preserve">
+    <value>Descrizione</value>
+  </data>
+  <data name="custpage_html_additions" page="assetregister" xml:space="preserve">
+    <value>Aggiunte</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetregister" xml:space="preserve">
+    <value>Deprezzamento</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetregister" xml:space="preserve">
+    <value>Tutti i beni</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetregister" xml:space="preserve">
+    <value>Tutti i beni ad eccezione di quelli in leasing</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetregister" xml:space="preserve">
+    <value>Solo beni in leasing</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetregister" xml:space="preserve">
+    <value>Metodo contabile</value>
+  </data>
+  <data name="custrecord_html_assetregisterdetail" page="assetregister" xml:space="preserve">
+    <value>Dettagli registro beni</value>
+  </data>
+
+  <!--System Status -->
+  <data name="custrecord_systemstatus_title" page="systemstatus" xml:space="preserve">
+    <value>Stato svalutazione beni</value>
+  </data>
+  <data name="custpage_currentstatus" page="systemstatus" xml:space="preserve">
+    <value>Stato corrente</value>
+  </data>
+  <data name="custpage_resultstatus" page="systemstatus" xml:space="preserve">
+    <value>Qual è la situazione?</value>
+  </data>
+  <data name="custpage_depreciatestatus1" page="systemstatus" xml:space="preserve">
+    <value>Tipi di bene in svalutazione:</value>
+  </data>
+  <data name="custpage_deprcomplete" page="systemstatus" xml:space="preserve">
+    <value>Completato</value>
+  </data>
+  
+  <!--Generate History -->
+  <data name="custrecord_generatehistory_title" page="generatehistory" xml:space="preserve">
+    <value>Genera storico beni</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="generatehistory" xml:space="preserve">
+    <value>Tipo di bene/beni</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="generatehistory" xml:space="preserve">
+    <value>Filiale/i</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="generatehistory" xml:space="preserve">
+    <value>Includi figli</value>
+  </data>
+  <data name="custpage_filtersmethod" page="generatehistory" xml:space="preserve">
+    <value>Metodo di svalutazione</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod1" page="generatehistory" xml:space="preserve">
+    <value>Metodo di svalutazione 1</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod2" page="generatehistory" xml:space="preserve">
+    <value>Metodo di svalutazione 2</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod3" page="generatehistory" xml:space="preserve">
+    <value>Metodo di svalutazione 3</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod4" page="generatehistory" xml:space="preserve">
+    <value>Metodo di svalutazione 4</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod5" page="generatehistory" xml:space="preserve">
+    <value>Metodo di svalutazione 5</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod6" page="generatehistory" xml:space="preserve">
+    <value>Metodo di svalutazione 6</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod7" page="generatehistory" xml:space="preserve">
+    <value>Metodo di svalutazione 7</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod8" page="generatehistory" xml:space="preserve">
+    <value>Metodo di svalutazione 8</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod9" page="generatehistory" xml:space="preserve">
+    <value>Metodo di svalutazione 9</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_ok" page="depreciationmethod" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="custpage_error" page="depreciationmethod" xml:space="preserve">
+    <value>ERRORE</value>
+  </data>
+
+  <!-- Asset Depreciation -->
+  <data name="custrecord_assetdepreciation_title" page="assetdepreciation" xml:space="preserve">
+    <value>Svaluta beni</value>
+  </data>
+  <data name="custfield_errormessage" page="assetdepreciation" xml:space="preserve">
+    <value>Errore</value>
+  </data>
+  <data name="custpage_futuredateerror" page="assetdepreciation" xml:space="preserve">
+    <value>La data del periodo di svalutazione non può essere impostata in un periodo futuro.</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetdepreciation" xml:space="preserve">
+    <value>Tipo di bene/beni</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetdepreciation" xml:space="preserve">
+    <value>Filiale/i</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetdepreciation" xml:space="preserve">
+    <value>Includi figli</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdepreciation" xml:space="preserve">
+    <value>Registri contabili</value>
+  </data>
+  <data name="custpage_deprperiod" page="assetdepreciation" xml:space="preserve">
+    <value>Periodo di svalutazione</value>
+  </data>
+  <data name="custpage_postperiod" page="assetdepreciation" xml:space="preserve">
+    <value>Periodo di registrazione</value>
+  </data>
+  <data name="custpage_deprmemo" page="assetdepreciation" xml:space="preserve">
+    <value>Riferimento di svalutazione</value>
+  </data>
+  <data name="custpage_assetdepreciation" page="assetdepreciation" xml:space="preserve">
+    <value>Svalutazione beni</value>
+  </data>
+  <data name="custpage_deprmemo_help" page="assetdepreciation" xml:space="preserve">
+    <value>Immettere un riferimento della svalutazione da utilizzare come riferimento di base su tutti i registri generati. Lasciare vuoto per utilizzare il riferimento predefinito.</value>
+  </data>
+  <data name="custpage_deprperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>Immettere una data fino alla quale i beni saranno svalutati. Si noti che la data registrata è sempre fine mese.</value>
+  </data>
+  <data name="custpage_postperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>Selezionare il periodo in cui si desidera registrare questa transazione. Se un periodo è stato chiuso, non è possibile effettuare una registrazione in tale periodo.</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetdepreciation" xml:space="preserve">
+    <value>Selezionare i registri contabili che sono associati a questo bene.</value>
+  </data>
+  <data name="client_depr_subsbooksmismatch" page="assetdepreciation" xml:space="preserve">
+    <value>I registri contabili selezionati non sono associati alle filiali selezionate.</value>
+  </data>
+
+  <!-- Depreciation Schedule Report -->
+  <data name="custrecord_depreciationschedule_title" page="depreciationschedule" xml:space="preserve">
+    <value>Report del programma di svalutazione beni</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule" xml:space="preserve">
+    <value>Tipo di bene</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule" xml:space="preserve">
+    <value>Valore contabile</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule" xml:space="preserve">
+    <value>Periodo svalutazione</value>
+  </data>
+  <data name="custpage_saveresults" page="depreciationschedule" xml:space="preserve">
+    <value>Salva risultati</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule" xml:space="preserve">
+    <value>Filiale/i</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule" xml:space="preserve">
+    <value>Includi figli</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule" xml:space="preserve">
+    <value>Posizione</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule" xml:space="preserve">
+    <value>Reparto</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule" xml:space="preserve">
+    <value>Classe</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule" xml:space="preserve">
+    <value>Seleziona</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule" xml:space="preserve">
+    <value>Metodo di svalutazione</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule" xml:space="preserve">
+    <value>Data inizio</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule" xml:space="preserve">
+    <value>Data termine</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule" xml:space="preserve">
+    <value>Tutti i beni</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule" xml:space="preserve">
+    <value>Tutti i beni ad eccezione di quelli in leasing</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule" xml:space="preserve">
+    <value>Solo beni in leasing</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule" xml:space="preserve">
+    <value>Metodo contabile</value>
+  </data>
+  <data name="custpage_filterenddate_help" page="depreciationschedule" xml:space="preserve">
+    <value>Immettere o selezionare una data di fine per il periodo del report desiderato.</value>
+  </data>
+  <data name="custpage_filterstartdate_help" page="depreciationschedule" xml:space="preserve">
+    <value>Immettere o selezionare una data di inizio per il periodo del report desiderato.</value>
+  </data>
+  <data name="custpage_netbookvalue_help" page="depreciationschedule" xml:space="preserve">
+    <value>Spuntare questa casella se nel report HTML si desidera visualizzare solo la previsione mensile del valore contabile.</value>
+  </data>
+  <data name="custpage_perioddepr_help" page="depreciationschedule" xml:space="preserve">
+    <value>Spuntare questa casella se nel report HTML si desidera visualizzare solo la previsione mensile della svalutazione.</value>
+  </data>
+  <data name="custpage_saveresults_help" page="depreciationschedule" xml:space="preserve">
+    <value>Salva risultati viene utilizzato per generare gli inserimenti del Programma svalutazione per la durata di vita di un bene e per salvare gli inserimenti nella registrazione del bene. Quando viene selezionata l'opzione Salva risultati, il sistema ignora Data inizio, Data fine, Valore contabile e Periodo svalutazione per assicurare che la tabella Storico svalutazione contenga sempre un programma di svalutazione completo per la vita di un bene. I valori immessi nei campi Data inizio, Data fine, Valore contabile e Periodo svalutazione vengono utilizzati solo per il report HTML generato.</value>
+  </data>
+
+  <!-- Bulk Transfer -->
+  <data name="custpage_bulktransfer_title" page="bulktransfer" xml:space="preserve">
+    <value>Trasferimento beni in blocco</value>
+  </data>
+  <data name="custpage_uploadhelp" page="bulktransfer" xml:space="preserve">
+    <value>È possibile caricare un file di importazione CSV per aggiornare dati quali Filiale, Reparto, Classe, Posizione e Tipo di bene relativi a diversi beni.</value>
+  </data>
+  <data name="custpage_settinghelp" page="bulktransfer" xml:space="preserve">
+    <value>Per registrare la scrittura contabile una volta effettuato il trasferimento, assicurarsi che la preferenza Posta in reparto, Classe o Posizione (Cespiti fissi &gt; Impostazioni &gt; Impostazione sistema) sia abilitata.</value>
+  </data>
+  <data name="custpage_uploadboth" page="bulktransfer" xml:space="preserve">
+    <value>Non caricare un file CSV contenente il tipo di bene e il trasferimento filiale.</value>
+  </data>
+  <data name="custpage_samplefile" page="bulktransfer" xml:space="preserve">
+    <value>Per visualizzare un file di esempio, fare clic (qui).</value>
+  </data>
+  <data name="custpage_nofileuploaderror" page="bulktransfer" xml:space="preserve">
+    <value>Impossibile caricare il file.</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_html_formulainstruction" page="depreciationmethodformula" xml:space="preserve">
+    <value>Utilizzare gli operatori e i simboli seguenti (distingue tra maiuscole e minuscole) per definire la formula di svalutazione:</value>
+  </data>
+  <data name="custpage_html_formulahelp1" page="depreciationmethodformula" xml:space="preserve">
+    <value>^ (alla potenza di, cioè 5^2 = 5 al quadrato)</value>
+  </data>
+  <data name="custpage_html_formulahelp2" page="depreciationmethodformula" xml:space="preserve">
+    <value>() * / + -</value>
+  </data>
+  <data name="custpage_html_formulahelp3" page="depreciationmethodformula" xml:space="preserve">
+    <value>qualsiasi numero con decimali (es. 12345,67)</value>
+  </data>
+  <data name="custpage_html_formulahelp4" page="depreciationmethodformula" xml:space="preserve">
+    <value>~ (massimo di due valori, cioè 2~5 = 5)</value>
+  </data>
+  <data name="custpage_html_formulahelp5" page="depreciationmethodformula" xml:space="preserve">
+    <value>OC (costo originale del bene)</value>
+  </data>
+  <data name="custpage_html_formulahelp6" page="depreciationmethodformula" xml:space="preserve">
+    <value>CC (costo attuale del bene)</value>
+  </data>
+  <data name="custpage_html_formulahelp7" page="depreciationmethodformula" xml:space="preserve">
+    <value>NB (valore contabile)</value>
+  </data>
+  <data name="custpage_html_formulahelp8" page="depreciationmethodformula" xml:space="preserve">
+    <value>RV (valore residuo)</value>
+  </data>
+  <data name="custpage_html_formulahelp9" page="depreciationmethodformula" xml:space="preserve">
+    <value>AL (durata di vita del bene)</value>
+  </data>
+  <data name="custpage_html_formulahelp10" page="depreciationmethodformula" xml:space="preserve">
+    <value>CP (periodo attuale o età attuale)</value>
+  </data>
+  <data name="custpage_html_formulahelp11" page="depreciationmethodformula" xml:space="preserve">
+    <value>TD (importo deprezzamento totale)</value>
+  </data>
+  <data name="custpage_html_formulahelp12" page="depreciationmethodformula" xml:space="preserve">
+    <value>CU (uso corrente)</value>
+  </data>
+  <data name="custpage_html_formulahelp13" page="depreciationmethodformula" xml:space="preserve">
+    <value>LU (uso nella vita)</value>
+  </data>
+  <data name="custpage_html_formulahelp14" page="depreciationmethodformula" xml:space="preserve">
+    <value>LD (Importo ultima svalutazione)</value>
+  </data>
+  <data name="custpage_html_formulahelp15" page="depreciationmethodformula" xml:space="preserve">
+    <value>DH (giorni del periodo attuale)</value>
+  </data>
+  <data name="custpage_html_formulahelp16" page="depreciationmethodformula" xml:space="preserve">
+    <value>PB (valore contabile anno precedente)</value>
+  </data>
+  <data name="custpage_html_formulahelp17" page="depreciationmethodformula" xml:space="preserve">
+    <value>DP (numero di giorni in un periodo)</value>
+  </data>
+  <data name="custpage_html_formulahelp18" page="depreciationmethodformula" xml:space="preserve">
+    <value>FY (numero di giorni in un anno fiscale)</value>
+  </data>
+
+  <!-- BG Process Record -->
+  <data name="custpage_bgprocess_deleteerror" page="bgprocess" xml:space="preserve">
+    <value>Questa istanza del processo non può essere eliminata a causa dello stato del processo: (0)</value>
+  </data>
+  <data name="list_bgprocess_queue" page="bgprocess" xml:space="preserve">
+    <value>In coda</value>
+  </data>
+  <data name="list_bgprocess_inprogress" page="bgprocess" xml:space="preserve">
+    <value>In corso</value>
+  </data>
+  <data name="list_bgprocess_completed" page="bgprocess" xml:space="preserve">
+    <value>Completato</value>
+  </data>
+  <data name="list_bgprocess_completedwitherrors" page="bgprocess" xml:space="preserve">
+    <value>Completato con errori</value>
+  </data>
+  <data name="list_bgprocess_failed" page="bgprocess" xml:space="preserve">
+    <value>Errore</value>
+  </data>
+  <data name="list_bgprocess_revert" page="bgprocess" xml:space="preserve">
+    <value>Errore - Ripristino modifiche in corso</value>
+  </data>
+
+  <!-- BG Queue Record -->
+  <data name="custpage_bgqueue_deleteerror" page="bgqueue" xml:space="preserve">
+    <value>Questa istanza nella coda non può essere eliminata a causa dello stato dell'istanza del processo associato: (0)</value>
+  </data>
+
+  <!-- CLIENT SIDE MESSAGES AND ALERTS -->
+  <data name="client_assetrecord_notnegative" page="clientpage" xml:space="preserve">
+     <value>(0) non può essere un valore negativo</value>
+  </data>
+  <data name="client_assetrecord_greatererror" page="clientpage" xml:space="preserve">
+     <value>(0) non può essere maggiore di (1)</value>
+  </data>
+  <data name="client_systemsetup_negativecheck" page="clientpage" xml:space="preserve">
+     <value>Vi sono beni esistenti con costi negativi. Non è attualmente consentito disabilitare l'opzione. Contattare l'assistenza per maggiori dettagli.</value>
+  </data>
+  <data name="client_subdept_notmatch" page="clientpage" xml:space="preserve">
+     <value>La filiale e il reparto non corrispondono.</value>
+  </data>
+  <data name="client_subloc_notmatch" page="clientpage" xml:space="preserve">
+     <value>La filiale e la posizione non corrispondono.</value>
+  </data>
+  <data name="client_subclass_notmatch" page="clientpage" xml:space="preserve">
+     <value>La filiale e la classe non corrispondono.</value>
+  </data>
+  <data name="client_assetrecord_outdated" page="clientpage" xml:space="preserve">
+     <value>La registrazione del bene con cui si sta lavorando è stata modificata recentemente. Fare clic su Aggiorna per recuperare la registrazione dei beni più recente.</value>
+  </data>
+  <data name="client_assetrecord_dateerror" page="clientpage" xml:space="preserve">
+     <value>La data di inizio deve essere precedente a quella di fine</value>
+  </data>
+  <data name="client_assetrecord_fieldadjust" page="clientpage" xml:space="preserve">
+     <value>(0) è stato regolato automaticamente a causa delle modifiche con (1)</value>
+  </data>
+  <data name="client_assetrecord_enddateadjust" page="clientpage" xml:space="preserve">
+    <value>(0) sarà arrotondato per difetto per riflettere il nuovo (1)</value>
+  </data>
+  <data name="client_leavepage" page="clientpage" xml:space="preserve">
+     <value>I dati inseriti su questa pagina non sono stati salvati e andranno perduti. Premere OK per continuare.</value>
+  </data>
+  <data name="client_accounting_methods" page="clientpage" xml:space="preserve">
+     <value>Metodi contabili</value>
+  </data>
+  <data name="client_tax_methods" page="clientpage" xml:space="preserve">
+     <value>Metodi di imposta</value>
+  </data>
+  <data name="client_journals" page="clientpage" xml:space="preserve">
+     <value>Registri</value>
+  </data>
+  <data name="client_multibookdisabled" page="clientpage" xml:space="preserve">
+     <value>Non è possibile selezionare un registro contabile se la contabilità multiregistro è stata disabilitata.</value>
+  </data>
+  <data name="client_primarybook" page="clientpage" xml:space="preserve">
+     <value>È possibile selezionare solo i registri secondari per metodi di imposta.</value>
+  </data>
+  <data name="client_pendingbook" page="clientpage" xml:space="preserve">
+     <value>È necessario selezionare un registro contabile attivo.</value>
+  </data>
+  <data name="client_booksubsidiary_mismatch" page="clientpage" xml:space="preserve">
+     <value>Selezionare un registro contabile associato alla filiale del bene.</value>
+  </data>
+  <data name="client_invalid_deprenddate" page="clientpage" xml:space="preserve">
+     <value>Il valore (0) immesso non è valido per i valori (1) e (2)</value>
+  </data>
+  <data name="client_enable_bypass" page="clientpage" xml:space="preserve">
+     <value>Quando viene abilitata questa preferenza, gli script Evento utente e i flussi di lavoro delle registrazioni personalizzate non sono attivati durante la svalutazione. Continuare?</value>
+  </data>
+  <data name="client_asset_disposed" page="clientpage" xml:space="preserve">
+    <value>Il bene è stato già ceduto</value>
+  </data>
+  <data name="client_select_book" page="clientpage" xml:space="preserve">
+    <value>Selezionare Registri contabili</value>
+  </data>
+  <data name="client_match_current_error" page="clientpage" xml:space="preserve">
+      <value>(0) non deve corrispondere al valore (1) corrente.</value>
+  </data>
+  <data name="client_newrvdiffsign" page="clientpage" xml:space="preserve">
+      <value>(0) non può superare il valore zero.</value>
+  </data>
+  <data name="client_lesserthan_error" page="clientpage" xml:space="preserve">
+     <value>(0) non può essere minore di (1)</value>
+  </data>
+  <data name="client_newdepmeth_diffperiod" page="clientpage" xml:space="preserve">
+     <value>Il metodo di svalutazione rettificato deve avere lo stesso periodo di svalutazione del metodo di svalutazione corrente.</value>
+  </data>
+  <data name="client_enter_value" page="clientpage" xml:space="preserve">
+    <value>Immettere i valori per: (0)</value>
+  </data>
+  <data name="client_subsidiary_match" page="clientpage" xml:space="preserve">
+    <value>La filiale del (0) selezionato non corrisponde alla filiale di questo bene.</value>
+  </data>
+  <data name="client_report_confirm_delete" page="clientpage" xml:space="preserve">
+    <value>Questo eliminerà il report corrente. Continuare?</value>
+  </data>
+  
+  <!-- FAM_Split_CS.js -->
+  <data name="client_assetsplit_invalidsplitquantity" page="clientpage" xml:space="preserve">
+    <value>Quantità suddivisa non valida</value>
+  </data>
+  <data name="client_assetsplit_entervalue" page="clientpage" xml:space="preserve">
+    <value>Inserire un valore per la quantità suddivisa</value>
+  </data>
+  <data name="client_assetsplit_greatererror" page="clientpage" xml:space="preserve">
+    <value>La quantità suddivisa non può essere uguale o maggiore della quantità</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method" page="clientpage" xml:space="preserve">
+    <value>Metodo contabile - Il costo attuale deve essere equivalente al valore contabile più la svalutazione a oggi.</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method2" page="clientpage" xml:space="preserve">
+    <value>Fare clic su Aggiorna per il ricalcolo utilizzando il costo attuale.</value>
+  </data>
+  <data name="client_assetsplit_equalerror_tax" page="clientpage" xml:space="preserve">
+    <value>Metodo di imposta (0) - Il costo attuale deve eguagliare il valore contabile più la svalutazione a oggi</value>
+  </data>
+  <data name="client_assetsplit_quantity1" page="clientpage" xml:space="preserve">
+    <value>La divisione dei beni è disponibile per i beni che dispongono di una quantità superiore di (1).</value>
+  </data> 
+  <data name="client_assetsplit_invalid_status" page="clientpage" xml:space="preserve">
+    <value>La divisione dei beni non è disponibile per la svalutazione e la cessione complete dei beni.</value>
+  </data> 
+  
+  <!-- FAM_CS_AltMethod_Client.js -->
+  <data name="client_altmethod_subsidiaryrequired" page="clientpage" xml:space="preserve">
+     <value>La filiale è obbligatoria per questo metodo.</value>
+  </data>
+  <data name="client_altmethod_improperconvention" page="clientpage" xml:space="preserve">
+     <value>Il metodo di svalutazione non supporta la convenzione selezionata.</value>
+  </data>
+  <data name="client_altmethod_subsidiarymismatch" page="clientpage" xml:space="preserve">
+     <value>La filiale del metodo alternativo non corrisponde alla filiale di questo bene.</value>
+  </data>
+
+
+  <!-- ncFAR_AltDeprClient.js -->
+  <data name="client_altdepr_assetalreadyused" page="clientpage" xml:space="preserve">
+     <value>(0) è già in uso da questo bene. Selezionare un altro metodo alternativo.</value>
+  </data>
+  <data name="client_altdepr_assetlifetimewarning" page="clientpage" xml:space="preserve">
+     <value>Attenzione: la durata di vita del bene inserita supera la durata di vita del bene</value>
+  </data>
+  <data name="client_altdepr_assetlifetimeerror" page="clientpage" xml:space="preserve">
+     <value>La durata di vita del bene alternativo non può superare quella della durata di vita del bene</value>
+  </data>
+  <data name="client_altdepr_nomethodfound" page="clientpage" xml:space="preserve">
+     <value>Non è stato definito nessun metodo alternativo per la filiale selezionata. Andare a Cespiti fissi &gt; Impostazioni &gt; Metodi alternativi per aggiornare l'elenco.</value>
+  </data>
+  <data name="client_altdepr_disposedtaxmethod" page="clientpage" xml:space="preserve">
+     <value>Impossibile assegnare il registro contabile al metodo di imposta Ceduto/Deprezzato completo.</value>
+  </data>
+
+  <!-- ncFAR_AssetRecordClient_AllForms.js -->
+  <data name="client_assetrecord_specifydepreciationrules" page="clientpage" xml:space="preserve">
+    <value>Devono essere specificate le regole di svalutazione.</value>
+  </data>
+  <data name="client_assetrecord_specifysubsidiary" page="clientpage" xml:space="preserve">
+    <value>Deve essere specificata la filiale.</value>
+  </data>
+  <data name="client_assetrecord_recordbeingpooled" page="clientpage" xml:space="preserve">
+     <value>Non è consentito modificare la filiale poiché il record di svalutazione alternativa appartiene a un gruppo.</value>
+  </data>
+  <data name="client_assetrecord_assetnotallowed" page="clientpage" xml:space="preserve">
+     <value>Conto cespiti non fissi non è consentito per Conto cespiti. Contattare l'amministratore.</value>
+  </data>
+  <data name="client_assetrecord_deprnotallowed" page="clientpage" xml:space="preserve">
+     <value>Conto cespiti non fissi non è consentito per Conto svalutazione. Contattare l'amministratore.</value>
+  </data>
+  <data name="client_assetrecord_cannotdelete" page="clientpage" xml:space="preserve">
+     <value>Questo bene non può essere eliminato in quanto è attivo per la svalutazione. Cedere il bene se si desidera rimuoverlo.</value>
+  </data>
+  <data name="client_assetrecord_confirmsubsidiarychange" page="clientpage" xml:space="preserve">
+    <value>Assicurarsi di aver salvato le modifiche prima di trasferire il bene a un'altra filiale. In caso contrario, le modifiche saranno rifiutate.
+
+In alternativa, aggiornare la filiale prima di apportare ulteriori modifiche alla registrazione dei beni.
+
+Continuare?</value>
+  </data>
+
+  <!-- ncFAR_DefaultAltDeprClient.js -->
+  <data name="client_defaultaltdepr_alreadyused" page="clientpage" xml:space="preserve">
+     <value>(0) è già in uso da questo tipo di bene. Selezionare un altro metodo alternativo.</value>
+  </data>
+  <data name="client_defaultaltdepr_addnotallowed" page="clientpage" xml:space="preserve">
+    <value>Non è consentita la creazione di nuove registrazioni FAM - Deprezzamento alt predefinito dall'elenco delle registrazioni.
+
+Andare a una registrazione Tipo di bene e aggiungere una nuova registrazione dalla scheda Registri contabili</value>
+  </data>
+  <!-- ncFAR_DeprMethodClientScripts.js script not found-->
+  <data name="client_deprmethod_failedtovalidate2" page="clientpage" xml:space="preserve">
+     <value>Funzione di convalida fallita.</value>
+  </data>
+  <data name="client_deprmethod_validationfailed" page="clientpage" xml:space="preserve">
+     <value>Convalida non riuscita</value>
+  </data>
+  <data name="client_deprmethod_dp_annually_invalid" page="clientpage" xml:space="preserve">
+     <value>Non è possibile utilizzare DP se il periodo di svalutazione è impostato su Annuale</value>
+  </data>
+
+  <!-- Disposal Client Messages -->
+  <data name="client_disposal_alreadydisposed" page="clientpage" xml:space="preserve">
+     <value>Questo bene è già stato ceduto.</value>
+  </data>
+  <data name="client_disposal_cannotbegreater" page="clientpage" xml:space="preserve">
+     <value>La quantità ceduta non può superare la quantità del bene.</value>
+  </data>
+  <data name="client_disposal_saleamountgreater" page="clientpage" xml:space="preserve">
+     <value>L'importo delle vendite deve essere maggiore a zero.</value>
+  </data>
+  <data name="client_disposal_selectcustomer" page="clientpage" xml:space="preserve">
+     <value>Selezionare un cliente.</value>
+  </data>
+  <data name="client_disposal_selectsaleitem" page="clientpage" xml:space="preserve">
+     <value>Selezionare un voce di vendita.</value>
+  </data>
+  <data name="client_disposal_selectlocation" page="clientpage" xml:space="preserve">
+     <value>Selezionare una posizione.</value>
+  </data>
+  <data name="client_disposal_bgpexists" page="clientpage" xml:space="preserve">
+     <value>La cessione di questo bene è attualmente in corso. Attendere il termine del processo di cessione prima di iniziarne un altro per questo bene.</value>
+  </data>
+  <data name="client_disposal_acctnotexist" page="clientpage" xml:space="preserve">
+     <value>Prima di continuare, assicurarsi che le opzioni Storno, Cessione, Svalutazione e Conto cespiti siano stati configurate e siano attive.
+Potrebbe non essere possibile effettuare la cessione per i seguenti: (0)</value>
+  </data>
+  <data name="client_disposal_dateearlierthanldd" page="clientpage" xml:space="preserve">
+    <value>La data di cessione "(0)" non può essere precedente alla data dell'ultima svalutazione "(1)".</value>
+  </data>
+  <data name="client_disposal_plugin_no_assetid" page="clientpage" xml:space="preserve">
+    <value>ID bene non specificato.</value>
+  </data>
+  <data name="client_disposal_plugin_invalid_type" page="clientpage" xml:space="preserve">
+    <value>Tipo di cessione del bene non valido: (0)</value>
+  </data>
+  
+  <!-- ncFAR_ProposalAltDeprClient.js -->
+  <data name="client_proposalaltdepr_selectbeingused" page="clientpage" xml:space="preserve">
+     <value>(0) è già in uso da questa proposta di bene. Selezionare un altro metodo alternativo.</value>
+  </data>
+
+  <!-- ncFAR_RevaluationClientScripts.js -->
+  <data name="client_revaluation_disposed" page="clientpage" xml:space="preserve">
+     <value>Questo bene è stato ceduto.</value>
+  </data>
+  <data name="client_assetnotset" page="clientpage" xml:space="preserve">
+     <value>Uno o più conti cespiti non sono impostati. Impossibile effettuare la rivalutazione.</value>
+  </data>
+  <data name="client_revaluation_notsupplied" page="clientpage" xml:space="preserve">
+    <value>Devono essere forniti i dettagli sulla rivalutazione</value>
+  </data>
+  <data name="client_revaluation_zeronbv" page="clientpage" xml:space="preserve">
+    <value>Un bene che è completamente svalutato non può essere rivalutato.</value>
+  </data>
+  <data name="client_revaluation_zerocc" page="clientpage" xml:space="preserve">
+    <value>Impossibile ridurre il valore di un bene con un costo corrente pari a zero.</value>
+  </data>
+  <data name="client_revaluation_rvoverzero" page="clientpage" xml:space="preserve">
+    <value>Il nuovo valore residuo non può superare lo zero.</value>
+  </data>
+  <data name="client_role_nopermission" page="clientpage" xml:space="preserve">
+    <value>Questo ruolo non ha il permesso per modificare il record dei beni.</value>
+  </data>
+  <data name="client_status_nobgprocess" page="clientpage" xml:space="preserve">
+    <value>Nessuna elaborazione in background trovata.</value>
+  </data>
+  <data name="client_change_accountingbook" page="clientpage" xml:space="preserve">
+    <value>Non è consentito modificare il registro contabile.</value>
+  </data>
+  <data name="client_revaluation_needcompute" page="clientpage" xml:space="preserve">
+    <value>La rivalutazione del bene deve essere calcolata prima che il bene sia elaborato.</value>
+  </data>
+  <data name="client_revaluation_bgpexists" page="clientpage" xml:space="preserve">
+     <value>La rivalutazione di questo bene è attualmente in corso. Attendere il termine del processo di rivalutazione prima di iniziarne un altro per questo bene.</value>
+  </data>
+  <data name="client_revaluation_wdacct_notset" page="clientpage" xml:space="preserve">
+     <value>Non è possibile rivalutare il bene in quanto i conti di svalutazione seguenti non sono stati impostati: (0)</value>
+  </data>
+  <data name="client_revaluation_transdate_warn" page="clientpage" xml:space="preserve">
+     <value>La data di rivalutazione di alcune registrazioni è precedente a quella dell'ultima svalutazione. Queste registrazioni non saranno rivalutate. </value>
+  </data>
+  <data name="client_greater_than_zerovalue" page="clientpage" xml:space="preserve">
+    <value>Immettere un valore maggiore di zero per (0).</value>
+  </data>
+  <data name="client_change_zerowd" page="clientpage" xml:space="preserve">
+    <value>Immettere un valore diverso da zero per l'importo di riduzione valore.</value>
+  </data>
+  <data name="client_no_reval_det_supplied" page="clientpage" xml:space="preserve">
+      <value>Fornire i dettagli della rivalutazione.</value>
+  </data>
+
+  <!-- FAM_AssetTransfer_CS.js -->
+  <data name="client_assettransfer_subsidiarybookid" page="clientpage" xml:space="preserve">
+     <value>Il bene dispone di un registro contabile che non è associato alla filiale di destinazione. Il bene sarà trasferito, ma il metodo di imposta di questo registro contabile non sarà incluso.</value>
+  </data>
+  <data name="client_assettransfer_subsidiarymethod" page="clientpage" xml:space="preserve">
+     <value>Il bene dispone di un metodo alternativo che non è stato associato alla filiale di destinazione. Il bene sarà trasferito, ma i metodi di imposta presenti in questo metodo alternativo non saranno inclusi.</value>
+  </data>
+  <data name="client_assettransfer_emptysubat" page="clientpage" xml:space="preserve">
+     <value>I campi Filiale registrazione bene/Tipo di bene non possono essere vuoti.</value>
+  </data>
+  <data name="client_assettransfer_nochange" page="clientpage" xml:space="preserve">
+     <value>I valori del campo di destinazione Trasferimento bene devono essere diversi da quelli del campo di origine.</value>
+  </data>
+  <data name="client_assettransfer_notransferacct" page="clientpage" xml:space="preserve">
+     <value>Non esiste alcuna registrazione Conto trasferimento bene per le filiali di origine e di destinazione.</value>
+  </data>
+  <data name="client_assettransfer_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Il trasferimento di questo bene è attualmente in corso. Attendere il termine del processo di trasferimento prima di iniziarne un altro per questo bene.</value>
+  </data>
+  <data name="client_assettransfer_bulkbgpexists" page="clientpage" xml:space="preserve">
+     <value>La richiesta di trasferimento in blocco di beni è attualmente in corso. Attendere il termine del processo di trasferimento prima di iniziare un altro trasferimento.</value>
+  </data>
+  <data name="client_assettransfer_warnbgpexists" page="clientpage" xml:space="preserve">
+     <value>La richiesta di trasferimento in blocco di beni è attualmente in corso. Non è possibile inviare una nuova richiesta di trasferimento beni.</value>
+  </data>
+  <data name="client_assettransfer_atassetacct" page="clientpage" xml:space="preserve">
+     <value>Il tipo di bene selezionato non dispone di un conto cespiti.</value>
+  </data>
+  <data name="client_assettransfer_atdepracct" page="clientpage" xml:space="preserve">
+     <value>Il tipo di bene selezionato non dispone di un conto di svalutazione.</value>
+  </data>
+  <data name="client_assettransfer_cdl_mandatory" page="clientpage" xml:space="preserve">
+     <value>Non è possibile impostare Reparto/Classe/Posizione su &lt;NESSUNO&gt; in quanto il campo è obbligatorio.</value>
+  </data>
+
+    <!-- FAM_AssetRecordTransfer.js -->
+  <data name="client_assettransfer_invalid_sub_bookid" xml:space="preserve">
+     <value>Il registro contabile di questo metodo di imposta non è associato alla filiale di destinazione. Il metodo di imposta non sarà trasferito.</value>
+  </data>
+  <data name="client_assettransfer_invalid_sub_altmeth" xml:space="preserve">
+     <value>Il metodo alternativo di questo metodo di imposta non è associato alla filiale di destinazione. Il metodo di imposta non sarà trasferito.</value>
+  </data>
+  <data name="client_assettransfer_no_tax_meth_acct" xml:space="preserve">
+     <value>La combinazione tra il metodo alternativo e l'ID del registro di questo metodo di imposta non dispone di un inserimento nel tipo di bene di destinazione. I conti del metodo di imposta saranno lasciati vuoti.</value>
+  </data>
+  <data name="custpage_transfer_asset_undefined" xml:space="preserve">
+    <value>La registrazione del bene per il trasferimento non esiste: (0)</value>
+  </data>
+
+    <!-- FAM_AssetTransferCSV.js -->
+    <data name="message_errorfile" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Errore durante il recupero delle informazioni del file di trasferimento del bene.</value>
+    </data>
+    <data name="message_toomanyfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Numero eccessivo di campi</value>
+    </data>
+    <data name="message_toofewfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Numero ridotto di campi</value>
+    </data>
+    <data name="message_duplicateasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Inserimenti duplicati per l'ID del ben: (0)</value>
+    </data>
+    <data name="message_headertoofew" page="assettransfercsv_ss" xml:space="preserve">
+        <value>I dati per il trasferimento del bene non sono completi. Il file deve disporre dei valori per il bene, oltre ad almeno i seguenti dati: Tipo di bene, Filiale, Classe, Reparto e Posizione.</value>
+    </data>
+    <data name="message_headerassetmissing" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Immettere i valori relativi al bene</value>
+    </data>
+    <data name="message_headernotallowed" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Il campo intestazione (0) non è consentito. Il file può contenere solo le intestazioni seguenti: Bene, Tipo di bene, Filiale, Classe, Reparto e Posizione.</value>
+    </data>
+    <data name="message_duplicateheader" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Sono presenti più istanze del campo intestazione: (0). Rimuovere le colonne duplicate.</value>
+    </data>
+    <data name="message_subsidiarybookid" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Il bene dispone di un registro contabile che non è associato alla filiale di destinazione. Il bene sarà trasferito, ma il metodo di imposta di questo registro contabile non sarà incluso.</value>
+    </data>
+    <data name="message_subsidiarymethod" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Il bene dispone di un metodo alternativo che non è stato associato alla filiale di destinazione. Il bene sarà trasferito, ma i metodi di imposta presenti in questo metodo alternativo non saranno inclusi.</value>
+    </data>
+    <data name="message_emptysubat" page="assettransfercsv_ss" xml:space="preserve">
+        <value>I campi Filiale registrazione bene/Tipo di bene non possono essere vuoti.</value>
+    </data>
+    <data name="message_nochange" page="assettransfercsv_ss" xml:space="preserve">
+        <value>I valori del campo di destinazione Trasferimento bene devono essere diversi da quelli del campo di origine.</value>
+    </data>
+    <data name="message_notransferacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Non esiste alcuna registrazione Conto trasferimento bene per le filiali di origine e di destinazione.</value>
+    </data>
+    <data name="message_subdept_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>La filiale e il reparto non corrispondono.</value>
+    </data>
+    <data name="message_subloc_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>La filiale e la posizione non corrispondono.</value>
+    </data>
+    <data name="message_subclass_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>La filiale e la classe non corrispondono.</value>
+    </data>
+    <data name="message_atassetacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Il tipo di bene selezionato non dispone di un conto cespiti.</value>
+    </data>
+    <data name="message_atdepracct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Il tipo di bene selezionato non dispone di un conto di svalutazione.</value>
+    </data>
+    <data name="message_cdl_mandatory" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Non è possibile ignorare l'impostazione di Reparto/Classe/Posizione in quanto il campo è obbligatorio</value>
+    </data>
+    <data name="message_invalidasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Il bene non esiste o non è attivo</value>
+    </data>
+    <data name="message_onetransfertype" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Il trasferimento del tipo di bene non è concesso durante il trasferimento verso una filiale, una classe, un reparto o una posizione diversa</value>
+    </data>
+    <data name="message_nonexistentfld" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Uno o più campi di destinazione non esistono o non sono attivi</value>
+    </data>
+
+  <!-- Ext Js Messages -->
+  <data name="extjs_message_title" page="clientpage" xml:space="preserve">
+    <value>Cespiti fissi</value>
+  </data>
+  <data name="extjs_processing" page="clientpage" xml:space="preserve">
+    <value>Elaborazione in corso</value>
+  </data>
+  <data name="extjs_reading_asset" page="clientpage" xml:space="preserve">
+    <value>Lettura del bene in corso</value>
+  </data>
+  <data name="extjs_clearing_data" page="clientpage" xml:space="preserve">
+    <value>Eliminazione dei dati in corso</value>
+  </data>
+  <data name="extjs_loading_data" page="clientpage" xml:space="preserve">
+    <value>Caricamento dei dati in corso</value>
+  </data>
+  <data name="extjs_refreshing_data" page="clientpage" xml:space="preserve">
+    <value>Aggiornamento dei dati in corso</value>
+  </data>
+  <data name="extjs_initializing" page="clientpage" xml:space="preserve">
+    <value>Inizializzazione in corso</value>
+  </data>
+  <data name="extjs_initializing_error" page="clientpage" xml:space="preserve">
+    <value>Errore durante l'inizializzazione</value>
+  </data>
+  <data name="extjs_reloading" page="clientpage" xml:space="preserve">
+    <value>Ricaricamento in corso</value>
+  </data>
+  <data name="extjs_done" page="clientpage" xml:space="preserve">
+     <value>Fine</value>
+  </data>
+
+
+  <!-- Background Processing -->
+  <data name="custpage_error_internal" xml:space="preserve">
+    <value>Questa suitelet è solo per uso interno!</value>
+  </data>
+  <data name="custpage_error_postmethod" xml:space="preserve">
+    <value>Metodo POST imprevisto.</value>
+  </data>
+
+  <!-- Constants -->
+  <data name="custpage_constant_accountingmethod" xml:space="preserve">
+    <value>Metodo contabile</value>
+  </data>
+  <data name="custpage_constant_allassets" xml:space="preserve">
+    <value>Tutti i beni</value>
+  </data>
+  <data name="custpage_constant_exceptleased" xml:space="preserve">
+    <value>Tutti i beni ad eccezione di quelli in leasing</value>
+  </data>
+  <data name="custpage_constant_onlyaassets" xml:space="preserve">
+    <value>Solo beni in leasing</value>
+  </data>
+
+
+  <!-- Server Scripts/Undefined -->
+  <data name="custpage_html_tangible" xml:space="preserve">
+    <value>Cespiti fissi tangibili</value>
+  </data>
+  <data name="custpage_desc_schedulereport" xml:space="preserve">
+    <value>Report programma di gestione cespiti fissi</value>
+  </data>
+  <data name="custpage_html_fam" xml:space="preserve">
+    <value>Gestione cespiti fissi</value>
+  </data>
+  <data name="custpage_accounts_missing" xml:space="preserve">
+    <value>Uno o più conti di registrazione sono mancanti.</value>
+  </data>
+  <data name="custpage_transfer_account_missing" xml:space="preserve">
+    <value>Impossibile individuare conti di trasferimento validi dalla filiale: (0) alla filiale: (1)</value>
+  </data>
+  <data name="custpage_transfer_tax_method_account_missing" xml:space="preserve">
+    <value>Bene metodo di imposta/Conto di svalutazione mancante</value>
+  </data>
+  <data name="custpage_errordepreciation" xml:space="preserve">
+    <value>Calcolo svalutazione non riuscito</value>
+  </data>
+  <data name="custpage_transactionfailed" xml:space="preserve">
+    <value>Transazione non riuscita</value>
+  </data>
+  <data name="custpage_fields_missing" xml:space="preserve">
+    <value>Immettere i valori per: (0)</value>
+  </data>
+  <data name="custpage_fields_inactive" xml:space="preserve">
+    <value>I campi seguenti non sono attivi: (0)</value>
+  </data>
+  <data name="custpage_outside_period" xml:space="preserve">
+    <value>La data della transazione indicata non rispetta gli estremi del periodo di contabilità.</value>
+  </data>
+  <data name="custpage_setupmissing" xml:space="preserve">
+    <value>Record dell'impostazione del sistema gestione cespiti mancante o incompleto. Impossibile determinare le impostazioni di sistema.</value>
+  </data>
+  <data name="custpage_settingmissing" xml:space="preserve">
+    <value>Errore nella lettura delle impostazioni di sistema</value>
+  </data>
+  <data name="custpage_invalid_acctsub_combo" xml:space="preserve">
+    <value>Combinazione filiale-conto (0) non valida. ID bene: (1)</value>
+  </data>
+
+  <!-- Buttons -->
+  <data name="custrecord_assetproposal_refreshbutton" page="assetproposal" xml:space="preserve">
+    <value>Aggiorna</value>
+  </data>
+  <data name="custrecord_assetproposal_proposebutton" page="assetproposal" xml:space="preserve">
+    <value>Proponi nuovi beni</value>
+  </data>
+  <data name="custrecord_assetproposal_generatebutton" page="assetproposal" xml:space="preserve">
+    <value>Genera beni</value>
+  </data>
+  <data name="custrecord_assetproposal_rejectbutton" page="assetproposal" xml:space="preserve">
+    <value>Rifiuta proposte</value>
+  </data>
+  <data name="custrecord_famreports_generatebutton" page="famreports" xml:space="preserve">
+    <value>Crea</value>
+  </data>
+  <data name="custrecord_assetsummary_generatebutton" page="assetsummary" xml:space="preserve">
+    <value>Crea report</value>
+  </data>
+  <data name="custrecord_systemsetup_savebutton" page="systemsetup" xml:space="preserve">
+    <value>Salva</value>
+  </data>
+  <data name="custrecord_systemsetup_submitbutton" page="systemsetup" xml:space="preserve">
+    <value>Invia</value>
+  </data>
+  <data name="custrecord_assetsplit_refreshbutton" page="assetsplit" xml:space="preserve">
+    <value>Aggiorna</value>
+  </data>
+  <data name="custrecord_assetsplit_splitbutton" page="assetsplit" xml:space="preserve">
+    <value>Dividi</value>
+  </data>
+  <data name="custrecord_assetdisposal_refreshbutton" page="assetdisposal" xml:space="preserve">
+    <value>Aggiorna</value>
+  </data>
+  <data name="custrecord_assetdisposal_disposebutton" page="assetdisposal" xml:space="preserve">
+    <value>Cessione</value>
+  </data>
+  <data name="custrecord_depreciationschedule2_generatebutton" page="depreciationschedule2" xml:space="preserve">
+    <value>Crea report</value>
+  </data>
+  <data name="custrecord_assetcreation_createbutton" page="assetcreation" xml:space="preserve">
+    <value>Crea beni</value>
+  </data>
+  <data name="custrecord_creationstatus_refreshbutton" page="assetcreation" xml:space="preserve">
+    <value>Aggiorna</value>
+  </data>
+  <data name="custrecord_assetrevaluation_refreshbutton" page="assetrevaluation" xml:space="preserve">
+    <value>Aggiorna</value>
+  </data>
+  <data name="custrecord_assetrevaluation_processbutton" page="assetrevaluation" xml:space="preserve">
+    <value>Rivalutazione processo</value>
+  </data>
+  <data name="custrecord_assetrevaluation_calculatebutton" page="assetrevaluation" xml:space="preserve">
+    <value>Calcola</value>
+  </data>
+  <data name="custrecord_assetregister_generatebutton" page="assetregister" xml:space="preserve">
+    <value>Crea report</value>
+  </data>
+  <data name="custrecord_maintenance_savebutton" page="maintenance" xml:space="preserve">
+    <value>Salva</value>
+  </data>
+  <data name="custrecord_maintenance_resetbutton" page="maintenance" xml:space="preserve">
+    <value>Azzera</value>
+  </data>
+  <data name="custrecord_systemstatus_refreshbutton" page="systemstatus" xml:space="preserve">
+    <value>Aggiorna</value>
+  </data>
+  <data name="custrecord_generatehistory_generatebutton" page="generatehistory" xml:space="preserve">
+    <value>Genera storico</value>
+  </data>
+  <data name="custrecord_assetdepreciation_depreciatebutton" page="assetdepreciation" xml:space="preserve">
+    <value>Svaluta beni</value>
+  </data>
+  <data name="custrecord_depreciationschedule_generatebutton" page="depreciationschedule" xml:space="preserve">
+    <value>Crea report</value>
+  </data>
+  <data name="custrecord_reportstatus_refreshbutton" page="reportstatus" xml:space="preserve">
+    <value>Aggiorna</value>
+  </data>
+  <data name="custrecord_reportstatus2_refreshbutton" page="reportstatus2" xml:space="preserve">
+    <value>Aggiorna</value>
+  </data>
+  <data name="custrecord_assettransfer_refreshbutton" page="assettransfer" xml:space="preserve">
+    <value>Aggiorna</value>
+  </data>
+  <data name="custrecord_assettransfer_transferbutton" page="assettransfer" xml:space="preserve">
+    <value>Trasferimento processo</value>
+  </data>
+  <data name="custrecord_assettransfer_importcsv" page="assettransfer" xml:space="preserve">
+    <value>Importazione CSV</value>
+  </data>
+  <data name="custrecord_bulktransfer_submitbutton" page="bulktransfer" xml:space="preserve">
+    <value>Invia</value>
+  </data>
+  <data name="custrecord_bulktransfer_cancelbutton" page="bulktransfer" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+
+  <!-- Asset Record -->
+  <data name="assetrecord_assettypehelp" xml:space="preserve">
+    <value>Il tipo di bene che predefinisce gran parte della configurazione del bene ed è utilizzato per suddividere in categorie i beni nei report e in altre procedure.</value>
+  </data>
+  <data name="assetrecord_assetdescrhelp" xml:space="preserve">
+    <value>Una breve descrizione del bene.</value>
+  </data>
+  <data name="assetrecord_subshelp" xml:space="preserve">
+    <value>La filiale associata con questo record.</value>
+  </data>
+  <data name="assetrecord_includechildhelp" xml:space="preserve">
+    <value>Spuntare questa casella per includere i beni delle filiali subordinate.</value>
+  </data>
+
+  <data name="assetrecord_assetserialnohelp" xml:space="preserve">
+    <value>Un numero di serie che può essere utilizzato per tracciare o identificare un bene.</value>
+  </data>
+  <data name="assetrecord_assetalternatenohelp" xml:space="preserve">
+    <value>Un numero di riferimento aggiuntivo per il bene.</value>
+  </data>
+  <data name="assetrecord_assetcosthelp" xml:space="preserve">
+    <value>Il costo originale (di acquisto) del bene.</value>
+  </data>
+  <data name="assetrecord_assetcurrentcosthelp" xml:space="preserve">
+    <value>Il costo attuale del bene. Ciò include tutti gli importi di riduzione del valore che sono stati applicati al bene.</value>
+  </data>
+  <data name="assetrecord_residualvalpercenthelp" xml:space="preserve">
+    <value>Il valore percentuale che avrà il bene alla fine della sua durata di vita. Ad esempio, un bene acquistato per 1000 potrebbe valere 100 alla fine della sua vita, pertanto la percentuale di valore residuo sarebbe pari al 10% (il 10% di 1000 è 100).
+L'inserimento di un valore residuo sovrascrive sempre il valore predefinito calcolato usando la percentuale.</value>
+  </data>
+  <data name="assetrecord_residualvalhelp" xml:space="preserve">
+    <value>Il valore che avrà il bene alla fine della sua durata di vita. Ad esempio, un bene acquistato per 1000,00 può valere 100,00 alla fine della sua durata di vita.
+
+L'inserimento di un valore residuo sovrascrive sempre il valore predefinito calcolato usando la percentuale.</value>
+  </data>
+  <data name="assetrecord_assetacctmethodhelp" xml:space="preserve">
+    <value>Selezionare il metodo di svalutazione (formula) da utilizzare al momento della svalutazione di questo bene. Questo metodo contabile viene utilizzato per calcolare i valori che saranno inseriti nel sistema di contabilità.</value>
+  </data>
+  <data name="assetrecord_assetperiodconvhelp" xml:space="preserve">
+    <value>Selezionare la convenzione per definire un anno:
+1. 12 mesi di 30 giorni ciascuno - Generalmente, questa convenzione viene utilizzata in Nord America e in Europa e produce svalutazioni mensili più uniformi.
+2. Numero esatto di giorni in un mese. L'anno contiene 365 giorni - Generalmente, questa convenzione viene utilizzata in Australia e Nuova Zelanda e produce svalutazioni annuali non uniformi.</value>
+  </data>
+  <data name="assetrecord_assetlifetimehelp" xml:space="preserve">
+    <value>La durata di vita prevista per il bene, in multipli del periodo di svalutazione (es. se la svalutazione è mensile, inserire la durata di vita in mesi).</value>
+  </data>
+  <data name="assetrecord_assetdeprperiodhelp" xml:space="preserve">
+    <value>La frequenza con cui la svalutazione di questo bene dovrebbe verificarsi.</value>
+  </data>
+  <data name="assetrecord_assetlifetimeusagehelp" xml:space="preserve">
+    <value>Se la svalutazione del bene è governata dall'uso del bene (es. chilometraggio del veicolo), il valore dell'uso di vita rappresenta il numero totale delle unità disponibili per il bene.  Quando l'uso totale alla data equivale all'uso di vita, il bene avrà raggiunto la fine della sua vita.</value>
+  </data>
+  <data name="assetrecord_assetnetbookvaluehelp" xml:space="preserve">
+    <value>L'attuale valore contabile del bene.</value>
+  </data>
+  <data name="assetrecord_assetcumulativedeprhelp" xml:space="preserve">
+    <value>L'importo totale della svalutazione applicata alla data odierna al bene</value>
+  </data>
+  <data name="assetrecord_assetstatushelp" xml:space="preserve">
+    <value>Lo stato del bene: Nuovo, In svalutazione, Totalmente svalutato o Ceduto</value>
+  </data>
+  <data name="assetrecord_assetcustomerlocationhelp" xml:space="preserve">
+    <value>La località del cliente da cui è stato acquistato il bene.</value>
+  </data>
+  <data name="assetrecord_assetcurrencyhelp" xml:space="preserve">
+    <value>La valuta in cui era originariamente espresso il costo del bene.</value>
+  </data>
+  <data name="assetrecord_assetcurrencyidhelp" xml:space="preserve">
+    <value>ID interno della valuta del bene.</value>
+  </data>
+  <data name="assetrecord_assetfixedratehelp" xml:space="preserve">
+    <value>Un tasso di cambio fisso, tra la valuta del costo originale (valuta del bene) e la valuta base dell'azienda o della filiale del bene.</value>
+  </data>
+  <data name="assetrecord_assetcustodianhelp" xml:space="preserve">
+    <value>Il dipendente responsabile del bene.</value>
+  </data>
+  <data name="assetrecord_assetphysicallochelp" xml:space="preserve">
+    <value>Indica dove è posizionato normalmente il bene.</value>
+  </data>
+  <data name="assetrecord_assetincludesreportschelp" xml:space="preserve">
+    <value>Indica se il bene deve essere incluso nel riepilogo dei beni.  Per impostazione predefinita, tutti i beni sono inclusi nel report.</value>
+  </data>
+  <data name="assetrecord_assetpurchasedatehelp" xml:space="preserve">
+    <value>La data di acquisto del bene.</value>
+  </data>
+  <data name="assetrecord_assetdeprstartdatehelp" xml:space="preserve">
+    <value>Inizio della svalutazione del bene. Ad esempio, un bene potrebbe essere stato acquistato ma non ricevuto o messo in servizio fino a due mesi dopo.</value>
+  </data>
+  <data name="assetrecord_assetdeprenddatehelp" xml:space="preserve">
+    <value>Si prevede il termine della data di svalutazione del bene.  Ciò è predefinito per la data di inizio di svalutazione del bene, oltre al tempo di vita utile.</value>
+  </data>
+  <data name="assetrecord_assetlastdeprperiodhelp" xml:space="preserve">
+    <value>Il numero del periodo (nella vita del bene) in cui il bene è stato svalutato maggiormente di recente.</value>
+  </data>
+  <data name="assetrecord_assetlastdepramounthelp" xml:space="preserve">
+    <value>Il valore della più recente svalutazione di questo bene.</value>
+  </data>
+  <data name="assetrecord_assetlastdeprdatehelp" xml:space="preserve">
+    <value>La data della più recente svalutazione di questo bene.</value>
+  </data>
+  <data name="assetrecord_assetdepractivehelp" xml:space="preserve">
+    <value>Indica se il bene è attivo e incluso nella procedura di svalutazione.  Se il bene è correlato a un lavoro, potrebbe essere impostato per diventare automaticamente attivo quando il lavoro è completato.</value>
+  </data>
+  <data name="assetrecord_assetdisptypehelp" xml:space="preserve">
+    <value>Il tipo per cui il bene è stato ceduto. </value>
+  </data>
+  <data name="assetrecord_assetcustomerhelp" xml:space="preserve">
+    <value>Cliente a cui è stato venduto il bene</value>
+  </data>
+  <data name="assetrecord_assetqtyhelp" xml:space="preserve">
+    <value>La quantità per questo bene.</value>
+  </data>
+  <data name="assetrecord_assetrevisionmethodhelp" xml:space="preserve">
+    <value>Controlla come le revisioni (rivalutazione) influiscono sul bene.  Quando viene selezionato 'Periodo attuale', la svalutazione del bene alla data è ricalcolata utilizzando i valori rivisti e la differenza tra la svalutazione calcolata e la svalutazione postata precedentemente è inserita nel periodo corrente.  Quando viene selezionato "Vita rimanente", la revisione si applica solo al bene da quel momento in avanti, in modo da influire solo sui calcoli di svalutazione futuri.</value>
+  </data>
+  <data name="assetrecord_assetnamehelp" xml:space="preserve">
+    <value>Il nome del bene cui è stata associata questa registrazione.</value>
+  </data>
+  <data name="assetrecord_assetlocationhelp" xml:space="preserve">
+    <value>Selezionare una posizione se si desidera che nel report siano inclusi solo i beni associati a una determinata posizione.</value>
+  </data>
+  <data name="assetrecord_assetdepartmenthelp" xml:space="preserve">
+    <value>Selezionare un reparto se si desidera che nel report siano inclusi solo i beni associati a un determinato reparto.</value>
+  </data>
+  <data name="assetrecord_assetclasshelp" xml:space="preserve">
+    <value>Selezionare una classe se si desidera che nel report siano inclusi solo i beni associati a una determinata classe.</value>
+  </data>
+  <data name="assetrecord_report_subshelp" xml:space="preserve">
+    <value>Selezionare le filiali per le quali si desidera generare un report.</value>
+  </data>
+  <data name="assetrecord_report_assetacctmethodhelp" xml:space="preserve">
+    <value>Selezionare il metodo di svalutazione.</value>
+  </data>
+  <data name="assetrecord_report_includechildhelp" xml:space="preserve">
+    <value>Spuntare questa casella per includere i beni delle filiali subordinate nel report.</value>
+  </data>
+  <data name="assetrecord_report_assettypehelp" xml:space="preserve">
+    <value>Selezionare uno o più tipi di bene per categorizzare i beni nel report. Si noti che i valori predefiniti verranno assegnati alla maggior parte della configurazione dei beni sul tipo di bene.</value>
+  </data>
+  <data name="assetrecord_assetperiodstartdatehelp" xml:space="preserve">
+    <value>Immettere o selezionare una data di inizio relativa al periodo del report che si desidera generare.</value>
+  </data>
+  <data name="assetrecord_assetperiodenddatehelp" xml:space="preserve">
+    <value>Immettere o selezionare una data di fine relativa al periodo del report che si desidera generare.</value>
+  </data>
+  <data name="assetrecord_report_acctngbookhelp" xml:space="preserve">
+    <value>Selezionare i registri contabili per i quali si desidera generare un report.</value>
+  </data>
+  <data name="assetrecord_report_typehelp" xml:space="preserve">
+    <value>Selezionare il tipo di report da generare.</value>
+  </data>
+
+  <!-- Alternate Depreciation Record -->
+  <data name="client_altdepr_currency_mismatch" page="clientpage" xml:space="preserve">
+     <value>Quando viene selezionato un registro contabile, la valuta della svalutazione corrente deve corrispondere a quella del registro contabile.
+     In caso contrario, la valuta deve corrispondere a quella di base della filiale o della società.</value>
+  </data>
+</root>

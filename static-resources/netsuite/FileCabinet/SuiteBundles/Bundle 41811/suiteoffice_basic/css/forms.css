@@ -1,0 +1,12 @@
+html, body { font-family: Arial, Helvetica, sans-serif; margin:0; padding:0;}
+.form{}
+.form-group{ position: relative;}
+.form .inputreq, .form .input{background-color: <%=getRecordAttribute('178','1','custrecord_wd_config_cp_bgformtext','#3399c0')%>; border: medium none; color: <%=getRecordAttribute('178','1','custrecord_wd_config_cp_colorformtext','#fff')%>; font-size: 14px; padding: 10px 40px 10px 15px; transition:all 0.4s linear; -webkit-transition:all 0.4s linear; -moz-transition:all 0.4s linear; -ms-transition:all 0.4s linear; width: 100%;}
+.form .inputreq:hover, .form .inputreq:focus, .form .inputreq:active, .form .input:hover, .form .input:focus, .form .input:active{background-color: <%=getRecordAttribute('178','1','custrecord_wd_config_cp_bgformtextactive','#41ACD3')%>;}
+.form .btn{background-color: transparent; border: medium none; color: <%=getRecordAttribute('178','1','custrecord_wd_config_cp_colorformtxtico','#fff')%>; cursor: pointer; font-size: 16px; margin: 8px 0; padding: 0; position: absolute; right: 10px; top: 0;}
+.form .btn:hover{color: <%=getRecordAttribute('178','1','custrecord_wd_config_cp_colformtxticoact','#C4E1ED')%>;}
+.form.default .btn{background-image: none; border: medium none; border-radius: 1px; color:<%=getRecordAttribute('178','1','custrecord_wd_config_cp_colorformtxtico','#fff')%>; cursor:pointer; font-size: 14px; font-weight: 200; padding: 10px 30px; text-shadow: inherit;transition:all 0.4s linear; -webkit-transition:all 0.4s linear; -moz-transition:all 0.4s linear; -ms-transition:all 0.4s linear;position: inherit;height:auto; width:auto;}
+.form.default .btn.btn-primary{background-color: #F15921; border: medium none; border-radius: 1px; color: #ffffff; font-size: 15px; font-weight: 600; padding: 10px 30px;}
+.form p{ color: #fff;font-family: Open Sans,Helvetica; font-size: 14px;margin: 10px 0;}
+.form.default .inputreq, .form.default .input{ background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; color: #555; display: block; font-size: 14px; height: 34px; line-height: 1.42857; padding: 6px 12px; transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; width: 100%;}
+.form.default textarea.inputreq{height: auto;}

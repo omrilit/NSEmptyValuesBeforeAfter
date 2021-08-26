@@ -1,0 +1,283 @@
+<!-----------------------------------------------------------------
+ * Description: All Template QuickStart.
+ * 
+ * @author: Alfonso Terron
+ * @Email : aterron@netsuite.com
+ * @copyright (c) 2000-2012, NetSuite Inc.
+ * @version 1.1                                 @Date: 17/06/2014 
+ * 
+ ------------------------------------------------------------------>
+<!-- General Loading -->
+<script id="loading-tmpl" type="text/template">
+<div class="loading" style="background:url('/site/suiteoffice/img/loader-48.gif');width: 48px;height: 48px;"></div>
+</script>
+
+<script id="sort_wrap_tmpl" type="text/template">
+	<div class="sorting"></div>
+</script>
+
+<!-- Pagination template responsive -->
+<script id="pagination-tmpl" type="text/template">
+<div class="row sort"> 
+<ul class="pagination">
+	<li><span>{{result}}</span></li>
+	<li><a href="{{prev}}">&laquo;</a></li>
+	{{pages}}
+	<li><a href="{{next}}">&raquo;</a></li>
+</ul>
+</div>
+</script>
+
+<!-- Left Wrap template responsive -->
+<script id="left-wrap-tmpl" type="text/template">
+<div class="panel-group" id="accordion">
+{{body}}
+</div>
+</script>
+
+<!-- Left Cell template responsive -->
+<script id="left-cell-tmpl" type="text/template">
+  <div class="panel panel-default">
+    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse_1">
+      <a href="#">{{title}}</a>
+    </div>
+    <div id="collapse_1" class="panel-collapse collapse">
+      <div class="panel-body">
+        {{hrefs}}
+      </div>
+    </div>
+  </div>   
+</script>
+
+<!-- Show Friendly menssage -->
+<script id="showmessage_temp" type="text/template">
+<div role="alert" class="col-xs-12 alert alert-{{type}}" style="display:none;">
+{{textmesagge}}
+<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+</div>
+</script>
+
+<!-- Lead Time -->
+<script id="leadtime_msg_temp" type="text/template">
+<h5>{{msgOutStock}}: <span class="no"> &nbsp;<b>{{date}}</b></span></h5>
+</script>
+
+<script id="dropdown_temp" type="text/template">
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="{{dropdownid}}" data-toggle="dropdown">
+    {{title}}
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="{{dropdownid}}"></ul>
+</div>
+</script>
+
+<script id="dropdown_op_temp" type="text/template">
+<li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-value={{value}}>{{text}}</a></li>
+</script>
+
+<!-- Global Search Cell -->
+<script id="globalsearch-cell-tmpl" type="text/template">
+<li data-item="{{internalid}}" data-action="selectItem">
+	<a href="{{itemurl}}">
+		<img alt="{{storedisplayname}}" src="{{storedisplaythumbnail}}">
+		<div class="info">
+			<span class="name">{{storedisplayname}}</span>
+			<span class="price">{{onlinecustomerprice}}</span>
+		</div>
+	</a>
+	<button class="btn" data-item="{{internalid}}">
+</li>
+</script>
+
+<!-- Slider Cell -->
+<script id="slider-cell-tmpl" type="text/template">
+<div class="item {{banner}} {{active}}" style="background-image :url('{{image}}');">
+	<div class="shadow-layer">
+		<div class="carousel-caption pos-{{txtPos}}">
+			<a href="{{link}}">
+				<h2>{{title}}</h2>
+			</a>
+			<p>{{text}}</p>
+			<p style="display:{{btndisplay}}"><a href="{{link}}" class="btn btn-lg btn-primary">{{btn}}<i class="icon fa fa-chevron-right"></i></a></p>
+		</div>
+	</div>
+</div>
+</script>
+
+<!-- Quick Buy -->
+<script id="qb-cell-tmpl" type="text/template">
+<li data-item="{{internalid}}">
+	<a href="{{itemurl}}">
+		<img alt="{{storedisplayname}}" src="{{storedisplaythumbnail}}">
+		<div class="info">
+			<span class="name">{{storedisplayname}}</span>
+			<span class="price">{{onlinecustomerprice}}</span>
+		</div>
+	</a>
+</li>
+</script>
+
+<!-- Create Quote BTN -->
+<script id="createquote-btn" type="text/template">
+<span id="tbl_createaquote">
+	<button type="submit" class="btn btn-primary" id="createaquote" name="createaquote" >Create a Quote</button>
+</span>
+</script>
+
+<!-- Marketing Zone temp -->
+<script id="marketingzone_item_tmpl" type="text/template">
+<div class="col-xs-6 col-sm-3 cell">
+<a  class='thumbnail'  href="{{itemurl}}" title='{{displayname}}'>
+	<img src="{{storedisplaythumbnail}}" alt='{{displayname}}'>
+</a>
+<h3>
+	<a href="{{itemurl}}">{{storedisplayname}}</a>
+</h3>
+<div class='price'>${{onlinecustomerprice}}</div>
+</div>
+</script>
+
+<!-- Related Item tmpl -->
+<script id="related_item_tmpl" type="text/template">
+<div class="col-xs-6 col-sm-3 cell">
+<a  class='thumbnail'  href="{{itemurl}}" title='{{displayname}}'>
+	<img src="{{storedisplaythumbnail}}" alt='{{displayname}}'>
+</a>
+<h3>
+	<a href="{{itemurl}}">{{storedisplayname}}</a>
+</h3>
+</div>
+</script>
+
+<!-- Compare Products tmpl -->
+<script id="compare_wrap_tmpl" type="text/template">
+<div class="row">
+	<div class="col-md-2 cell"></div>
+	{{cells}}
+</div>
+<div class="row specs">
+	<div class="col-md-2 cell first-column">
+		<ul>{{otherinfo}}</ul>
+	</div>
+	{{rowsotherinfo}}
+</div>
+</script>
+
+<script id="compare_cell_tmpl" type="text/template">
+<div class="col-md-{{colwidth}} cell" data-item="{{internalid}}">	
+	<a  class='thumbnail'  href="{{itemurl}}" title='{{displayname}}'>
+		<img src="{{storedisplaythumbnail}}" alt='{{displayname}}'>
+	</a>
+<a class="remove btn btn-xs btn-default" data-itemid="{{internalid}}">Remove</a>
+	<h3><a href="{{itemurl}}">{{storedisplayname}}</a></h3>
+	<div class='price'>${{onlinecustomerprice}}</div>   
+</div>    
+</script>
+
+<script id="compare_rowotherinfo_tmpl" type="text/template">
+<div class="col-md-{{colwidth}} cell" data-item="{{internalid}}">
+	<ul class="other-info">
+		{{fieldstemp}}
+	</ul>
+</div>
+</script>
+
+<!-- WishList Templates -->
+<script id="wishlist_list_temp" type="text/template">
+<div class="form-group list-{{internalid}}">
+	<input type="checkbox" id="{{internalid}}" data-listid="{{internalid}}">
+	<label for="{{internalid}}" class="control-label">{{name}}</label>
+</div>
+</script>
+
+<script id="wishlist_priority_temp" type="text/template">
+<select id="priority" class="form-control">
+<option value="1">Low</option>
+<option value="2">Medium</option>
+<option value="3">High</option>
+</select>
+</script>
+
+<script id="wishlist_rowlist_temp" type="text/template">
+<div class="row" data-listid="{{internalid}}">
+    <div class="col-sm-8 info">
+        <a href="#" data-acction="viewList"><h2 class="name">{{name}}</h2></a>
+        <span class="date">Last updated {{lastmodified}} {{modifyby}}</span>        
+        <p class="description">Notes: <span>{{custrecord_wl_description}}</span></p>		
+		{{owner}}		
+		<i class="fa fa-{{shared}} icon sharedicon" data-toggle="tooltip" data-placement="top" data-shared="{{shared}}" title="{{tooltiptext}}"></i>		
+    </div>
+    <div class="col-sm-4">
+        <a href="#" class="btn btn-primary right" data-acction="addlisttocart">Add list to cart</a>        
+		<a href="#" class="col-xs-12 a-right" data-acction="{{removelist}}">{{removetext}}</a>
+        <a href="#" class="col-xs-12 a-right" data-acction="editList">Edit</a>
+    </div>
+    <div class="clearfix"></div>
+    <hr>
+</div>
+</script>
+
+<script id="wishlist_rowlistjoin_temp" type="text/template">
+<div class="row" data-listid="{{internalid}}">
+    <div class="col-sm-8 info">
+        <h2 class="name">{{name}}</h2>
+		{{owner}}
+        <span class="date">Last updated {{lastmodified}} by <b>{{lastmodifiedby}}</b></span>        
+        <p class="description">Notes: <span>{{custrecord_wl_description}}</span></p>
+		<i class="fa fa-{{shared}} icon sharedicon" data-toggle="tooltip" data-placement="top" data-shared="{{shared}}" title="{{tooltiptext}}"></i>		
+    </div>
+    <div class="col-sm-4">
+		<a role="button" class="btn btn-primary right" data-acction="joininlist">Join this list</a>
+		<input type="password" class="form-control" id="list-pass" placeholder="Your list Guest Access Code (Optional)">
+	</div>
+    <div class="clearfix"></div>
+    <hr>
+</div>
+</script>
+
+<script id="wishlist_rowitem_temp" type="text/template">
+<div class="row" data-lineid="{{internalid}}" data-itemid="{{itemid}}">
+    <div class="col-sm-10 cell">
+        <a href="#" class="thumbnail">
+            <img alt="{{custrecord_wl_line_item}}" src="{{storedisplaythumbnail}}">
+        </a>
+        <h3><a href="{{itemurl}}">{{storedisplayname}}</a></h3>
+        <div class="price">Unite price: <span>${{onlinecustomerprice}}</span></div>
+        <div class="qty">Quantity: <span>{{custrecord_wl_line_quantity}}</span></div>
+        <div class="priority">Priority: <span>{{custrecord_wl_line_priority}}</span></div>
+    </div>
+    <div class="col-sm-2">
+                <a href="#" class="btn btn-primary right" data-itemid="{{itemid}}" data-acction="addtocart">Add to cart</a>
+                <a href="#" class="col-xs-12 a-right" data-acction="removeLine">Delete</a>
+                <a href="#" class="col-xs-12 a-right" data-acction="editLine">Edit</a>
+				<a href="#" class="col-xs-12 a-right" data-acction="moveLine">Move</a>
+            </div>
+    <div class="clearfix"></div>
+    <hr>
+</div>
+</script>
+
+<script id="wishlist_rowlistedti_temp" type="text/template">
+<form role="form">
+<div class="form-group">
+<label for="new-list-name">Your list name</label>
+<input type="email" class="form-control name" id="new-list-name" placeholder="Your list name">
+</div>
+<div class="checkbox shared">
+<label>
+<input type="checkbox">Check this field to make your list public
+</label>
+</div>
+<div class="form-group password" style="display:none;">
+<label for="new-list-pass">Your public list Guest Access Code (optional)</label>
+<input type="password" class="form-control" id="new-list-pass" placeholder="Your new Guest Access Code">
+<label for="new-list-msg">Please, insert customers emails to shared</label>
+<textarea class="form-control emails" id="new-list-emails" rows="3" placeholder="Insert emails ex: example@ex.com; example2@ex.com;"></textarea>
+</div>
+<div class="form-group">
+<label for="new-list-msg">Notes for your list (optional)</label>
+<textarea class="form-control description" id="new-list-msg" rows="3"></textarea>
+</div>
+</form>
+</script>

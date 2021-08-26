@@ -1,0 +1,2766 @@
+﻿<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+
+  <xsd:schema id="root" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element msdata:IsDataSet="true" name="root">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="page" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+                <xsd:element minOccurs="0" msdata:Ordinal="2" name="comment" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute msdata:Ordinal="1" name="name" type="xsd:string" use="required"/>
+              <xsd:attribute msdata:Ordinal="3" name="type" type="xsd:string"/>
+              <xsd:attribute msdata:Ordinal="4" name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>ข้อความ/Microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+    <!--
+      ###Enumaration of PAGES.. for tracing only###
+      assetcreation - Asset Creation
+      assetdepreciation - Asset Depreciation
+      assetdisposal - Asset Disposal
+      assetproposal - Asset Proposal
+      assetregister - Asset Register Report/Asset Register Detail
+      assetrevaluation - Asset Revaluation
+      assetsplit - Asset Split
+      assetsummary - Asset Summary Report
+      depreciationschedule - Asset Depreciation Schedule
+      depreciationschedule2 - Asset Depreciation Schedule (Portrait)
+      depreciationmethod - Depreciation Method
+      famreports - Fixed Assets Reports
+      generatehistory - Generate Asset History
+      reportstatus - FAM - Report Status
+      reportstatus2 - Asset Report Status (sc)
+      systemsetup - System Setup
+      systemstatus - System Status
+      maintenance - Language Management
+      depreciationmethodformula - Depreciation Method
+      clientpage - Entries intended for client messages
+  -->
+
+  <!-- Page Screen Title -->
+  <data name="maintenance_screen_assetcreation" page="maintenance" xml:space="preserve">
+    <value>การสร้างสินทรัพย์</value>
+  </data>
+  <data name="maintenance_screen_assetdisposal" page="maintenance" xml:space="preserve">
+    <value>การจำหน่ายจ่ายโอนสินทรัพย์</value>
+  </data>
+  <data name="maintenance_screen_assetproposal" page="maintenance" xml:space="preserve">
+    <value>ข้อเสนอของสินทรัพย์</value>
+  </data>
+  <data name="maintenance_screen_assetrevaluation" page="maintenance" xml:space="preserve">
+    <value>การประเมินราคาสินทรัพย์</value>
+  </data>
+  <data name="maintenance_screen_assetsplit" page="maintenance" xml:space="preserve">
+    <value>การแยกสินทรัพย์</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule2" page="maintenance" xml:space="preserve">
+    <value>ตารางเวลาค่าเสื่อมราคา (แนวตั้ง)</value>
+  </data>
+  <data name="maintenance_screen_systemsetup" page="maintenance" xml:space="preserve">
+    <value>การตั้งค่าระบบ</value>
+  </data>
+  <data name="maintenance_screen_maintenance" page="maintenance" xml:space="preserve">
+    <value>อัพเดตคำแปลจำนวนมาก-FAM</value>
+  </data>
+  <data name="maintenance_screen_assetdepreciation" page="maintenance" xml:space="preserve">
+    <value>ค่าเสื่อมราคาของสินทรัพย์</value>
+  </data>
+  <data name="maintenance_screen_assetregister" page="maintenance" xml:space="preserve">
+    <value>รายงานการลงทะเบียนสินทรัพย์</value>
+  </data>
+  <data name="maintenance_screen_assetsummary" page="maintenance" xml:space="preserve">
+    <value>รายงานสรุปสินทรัพย์</value>
+  </data>
+  <data name="maintenance_screen_backgroundprocessing" page="maintenance" xml:space="preserve">
+    <value>การประมวลผลเบื้องหลัง</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule" page="maintenance" xml:space="preserve">
+    <value>ตารางเวลาค่าเสื่อมราคา</value>
+  </data>
+  <data name="maintenance_screen_generatehistory" page="maintenance" xml:space="preserve">
+    <value>สร้างประวัติ</value>
+  </data>
+  <data name="maintenance_screen_reportstatus" page="maintenance" xml:space="preserve">
+    <value>สถานะของรายงานการลงทะเบียนสินทรัพย์</value>
+  </data>
+  <data name="maintenance_screen_systemstatus" page="maintenance" xml:space="preserve">
+    <value>สถานะของระบบ</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethod" page="maintenance" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="maintenance_screen_reportstatus2" page="maintenance" xml:space="preserve">
+    <value>สถานะของรายงานตารางเวลาค่าเสื่อมราคา</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethodformula" page="maintenance" xml:space="preserve">
+    <value>สูตรของค่าเสื่อมราคา</value>
+  </data>
+  <data name="maintenance_screen_clientpage" page="maintenance" xml:space="preserve">
+    <value>ข้อความเตือนลูกค้า</value>
+  </data>
+
+  <!-- Localization Maintenance Page -->
+  <data name="maintenance_description_jp" page="maintenance" xml:space="preserve">
+    <value>ชื่อ - ภาษาญี่ปุ่น JP</value>
+  </data>
+  <data name="maintenance_description_default" page="maintenance" xml:space="preserve">
+    <value>ชื่อ - ภาษาอังกฤษ US</value>
+  </data>
+  <data name="maintenance_select_language" page="maintenance" xml:space="preserve">
+    <value>ภาษา</value>
+  </data>
+  <data name="custpage_translations_header" page="maintenance" xml:space="preserve">
+    <value>อัพเดตคำแปลจำนวนมาก-FAM</value>
+  </data>
+  <data name="custpage_translations_en_US_header" page="maintenance" xml:space="preserve">
+    <value>US</value>
+  </data>
+  <data name="custpage_translations_ja_JP_header" page="maintenance" xml:space="preserve">
+    <value>ญี่ปุ่น</value>
+  </data>
+  <data name="custpage_translations_custom_header" page="maintenance" xml:space="preserve">
+    <value>คำแปล -</value>
+  </data>
+  <data name="custpage_translations_custom_header_us" page="maintenance" xml:space="preserve">
+    <value>us</value>
+  </data>
+  <data name="custpage_translations_custom_header_jp" page="maintenance" xml:space="preserve">
+    <value>jp</value>
+  </data>
+  <data name="custpage_translations_screen_header" page="maintenance" xml:space="preserve">
+    <value>หน้าจอ</value>
+  </data>
+  <data name="custpage_translations_common_fields" page="maintenance" xml:space="preserve">
+    <value>ฟิลด์ทั่วไป</value>
+  </data>
+
+  <!-- Asset Proposal Page -->
+  <data name="custrecord_assetproposal_title" page="assetproposal" xml:space="preserve">
+    <value>ข้อเสนอของสินทรัพย์</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetproposal" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetproposal" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetproposal" xml:space="preserve">
+    <value>รวมรายการย่อย</value>
+    </data>
+  <data name="custpage_selectpage" page="assetproposal" xml:space="preserve">
+    <value>เลือกหน้า</value>
+  </data>
+  <data name="custpage_rowperpage" page="assetproposal" xml:space="preserve">
+    <value>ข้อเสนอต่อหน้า</value>
+  </data>
+  <data name="proposals" page="assetproposal" xml:space="preserve">
+    <value>สินทรัพย์ที่เสนอ</value>
+    </data>
+  <data name="marked" page="assetproposal" xml:space="preserve">
+    <value>เลือก</value>
+    </data>
+  <data name="editurl" page="assetproposal" xml:space="preserve">
+    <value>แก้ไข</value>
+    </data>
+  <data name="custrecord_propsourceid" page="assetproposal" xml:space="preserve">
+    <value>ธุรกรรม</value>
+    </data>
+  <data name="custrecord_propassettype" page="assetproposal" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+    </data>
+  <data name="custrecord_propassetdescr" page="assetproposal" xml:space="preserve">
+    <value>คำอธิบาย</value>
+    </data>
+  <data name="custrecord_propaccmethod" page="assetproposal" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา</value>
+    </data>
+  <data name="custrecord_propassetcost" page="assetproposal" xml:space="preserve">
+    <value>ต้นทุนเริ่มต้น</value>
+    </data>
+  <data name="custrecord_propresidvalue" page="assetproposal" xml:space="preserve">
+    <value>มูลค่าคงเหลือ</value>
+    </data>
+  <data name="custrecord_propassetlifetime" page="assetproposal" xml:space="preserve">
+    <value>ช่วงชีวิต</value>
+  </data>
+  <data name="custrecord_propsubsid" page="assetproposal" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+  </data>
+  <data name="custpage_nopropselected" page="assetproposal" xml:space="preserve">
+    <value>ไม่ได้เลือกข้อเสนอที่จะสร้าง</value>
+  </data>
+
+  <!-- Asset Transfer Page -->
+  <data name="custrecord_assettransfer_title" page="assettransfer" xml:space="preserve">
+    <value>การโอนสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetid" page="assettransfer" xml:space="preserve">
+    <value>ชื่อ/ID สินทรัพย์</value>
+  </data>
+  <data name="custpage_assetid_help" page="assettransfer" xml:space="preserve">
+    <value>เลือกชื่อ/ID สินทรัพย์ที่คุณต้องการโอน</value>
+  </data>
+  <data name="custpage_assettype" page="assettransfer" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_assettype_help" page="assettransfer" xml:space="preserve">
+    <value>ประเภทสินทรัพย์ของสินทรัพย์นี้</value>
+  </data>
+  <data name="custpage_newassettype" page="assettransfer" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_newassettype_help" page="assettransfer" xml:space="preserve">
+    <value>เลือกประเภทสินทรัพย์ที่คุณต้องการโอนสินทรัพย์นี้ไป</value>
+  </data>
+  <data name="custpage_assetsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+  </data>
+  <data name="custpage_assetsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>บริษัทในเครือปัจจุบันของสินทรัพย์นี้</value>
+  </data>
+  <data name="custpage_newsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+  </data>
+  <data name="custpage_newsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>เลือกบริษัทในเครือที่คุณต้องการโอนสินทรัพย์นี้ไป</value>
+  </data>
+  <data name="custpage_assetclass" page="assettransfer" xml:space="preserve">
+    <value>คลาส</value>
+  </data>
+  <data name="custpage_assetclass_help" page="assettransfer" xml:space="preserve">
+    <value>คลาสปัจจุบันของสินทรัพย์</value>
+  </data>
+  <data name="custpage_newclass" page="assettransfer" xml:space="preserve">
+    <value>คลาส</value>
+  </data>
+  <data name="custpage_newclass_help" page="assettransfer" xml:space="preserve">
+    <value>เลือกคลาสที่คุณต้องการโอนสินทรัพย์นี้ไป</value>
+  </data>
+  <data name="custpage_assetdepartment" page="assettransfer" xml:space="preserve">
+    <value>แผนก</value>
+  </data>
+  <data name="custpage_assetdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>แผนกปัจจุบันของสินทรัพย์</value>
+  </data>
+  <data name="custpage_newdepartment" page="assettransfer" xml:space="preserve">
+    <value>แผนก</value>
+  </data>
+  <data name="custpage_newdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>เลือกแผนกที่คุณต้องการโอนสินทรัพย์นี้ไป</value>
+  </data>
+  <data name="custpage_assetlocation" page="assettransfer" xml:space="preserve">
+    <value>สถานที่ตั้ง</value>
+  </data>
+  <data name="custpage_assetlocation_help" page="assettransfer" xml:space="preserve">
+    <value>สถานที่ตั้งปัจจุบันของสินทรัพย์</value>
+  </data>
+  <data name="custpage_newlocation" page="assettransfer" xml:space="preserve">
+    <value>สถานที่ตั้ง</value>
+  </data>
+  <data name="custpage_newlocation_help" page="assettransfer" xml:space="preserve">
+    <value>เลือกแผนกที่คุณต้องการโอนสินทรัพย์นี้ไป</value>
+  </data>
+  <data name="custpage_assetdescription" page="assettransfer" xml:space="preserve">
+    <value>คำอธิบายสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetdescription_help" page="assettransfer" xml:space="preserve">
+    <value>คำอธิบายสินทรัพย์นี้แสดงอยู่ที่นี่</value>
+  </data>
+  <data name="custpage_assetserialno" page="assettransfer" xml:space="preserve">
+    <value>ซีเรียลนัมเบอร์ของสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetserialno_help" page="assettransfer" xml:space="preserve">
+    <value>ซีเรียลนัมเบอร์ที่ใช้เพื่อติดตามหรือระบุสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assettransfer" xml:space="preserve">
+    <value>หมายเลขสินทรัพย์อื่น</value>
+  </data>
+  <data name="custpage_assetalternateno_help" page="assettransfer" xml:space="preserve">
+    <value>หมายเลขอ้างอิงสินทรัพย์เพิ่มเติม</value>
+  </data>
+  <data name="custpage_assetorigcost" page="assettransfer" xml:space="preserve">
+    <value>ต้นทุนดั้งเดิม</value>
+  </data>
+  <data name="custpage_assetorigcost_help" page="assettransfer" xml:space="preserve">
+    <value>ต้นทุน (ซื้อ) ดั้งเดิมของสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetcurrcost" page="assettransfer" xml:space="preserve">
+    <value>มูลค่าทางบัญชีปัจจุบัน</value>
+  </data>
+  <data name="custpage_assetcurrcost_help" page="assettransfer" xml:space="preserve">
+    <value>มูลค่าตามบัญชีในปัจจุบันของสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assettransfer" xml:space="preserve">
+    <value>ช่วงชีวิตของสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetlifetime_help" page="assettransfer" xml:space="preserve">
+    <value>ช่วงชีวิตที่คาดของสินทรัพย์ในรอบบัญชีค่าเสื่อมราคาหลายๆ แบบ (ตัวอย่างเช่น ถ้าค่าเสื่อมราคาเป็นรายเดือน ให้กรอกช่วงชีวิตเป็นเดือน)</value>
+  </data>
+  <data name="custpage_assetlastdepr" page="assettransfer" xml:space="preserve">
+    <value>รอบบัญชีค่าเสื่อมราคาล่าสุด</value>
+  </data>
+  <data name="custpage_assetlastdepr_help" page="assettransfer" xml:space="preserve">
+    <value>จำนวนรอบบัญชี (ภายในช่วงชีวิตของสินทรัพย์) ที่ซึ่งสินทรัพย์ถูกตัดค่าเสื่อมราคาครั้งล่าสุด</value>
+  </data>
+  <data name="custpage_assetstatus" page="assettransfer" xml:space="preserve">
+    <value>สถานะสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetstatus_help" page="assettransfer" xml:space="preserve">
+    <value>สถานะปัจจุบันของสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetcurrency" page="assettransfer" xml:space="preserve">
+    <value>สกุลเงิน</value>
+  </data>
+  <data name="custpage_assetcurrency_help" page="assettransfer" xml:space="preserve">
+    <value>สกุลเงินนพื้นฐานในสมุดบัญชีของบริษัทในเครือ</value>
+  </data>
+
+  <!-- Process Instance Status Page -->
+  <data name="custpage_processstatus_title" page="processstatus" xml:space="preserve">
+    <value>สถานะทรานแซกชัน</value>
+  </data>
+  <data name="custpage_processid" page="processstatus" xml:space="preserve">
+    <value>กระบวนการล่าสุด: </value>
+  </data>
+  <data name="custpage_currentprocess" page="processstatus" xml:space="preserve">
+    <value>กระบวนการปัจจุบัน: </value>
+  </data>
+  <data name="custpage_processstatus" page="processstatus" xml:space="preserve">
+    <value>สถานะกระบวนการปัจจุบัน: </value>
+  </data>
+  <data name="custpage_prevprocess" page="processstatus" xml:space="preserve">
+    <value>กระบวนการก่อนหน้า: </value>
+  </data>
+  <data name="custpage_nopending" page="processstatus" xml:space="preserve">
+    <value>ไม่มีกระบวนการค้างอยู่</value>
+  </data>
+  <data name="custpage_nocurrent" page="processstatus" xml:space="preserve">
+    <value>ไม่มี</value>
+  </data>
+  <data name="custpage_rendering" page="processstatus" xml:space="preserve">
+    <value>กำลังแสดง...</value>
+  </data>
+  <data name="custpage_deprnone" page="processstatus" xml:space="preserve">
+    <value>(0) สินทรัพย์ถูกตัดค่าเสื่อมราคา</value>
+  </data>
+    <data name="custpage_depracctmethods" page="processstatus" xml:space="preserve">
+    <value>คิดค่าเสื่อมราคาของวิธีการทางบัญชี </value>
+  </data>
+  <data name="custpage_depracctmethods_count" page="processstatus" xml:space="preserve">
+    <value>คิดค่าเสื่อมราคาวิธีการทางบัญชีแล้ว</value>
+  </data>
+  <data name="custpage_deprtaxmethods" page="processstatus" xml:space="preserve">
+    <value>คิดค่าเสื่อมราคาวิธีการทางภาษี </value>
+  </data>
+  <data name="custpage_deprtaxmethods_count" page="processstatus" xml:space="preserve">
+    <value>คิดค่าเสื่อมราคาวิธีการทางภาษีแล้ว</value>
+  </data>
+  <data name="custpage_writingdepr_amounts" page="processstatus" xml:space="preserve">
+    <value>เขียนค่าเสื่อมราคาลงในสมุดรายวัน </value>
+  </data>
+  <data name="custpage_deprhistory_count" page="processstatus" xml:space="preserve">
+    <value>ประมวลผลประวัติของค่าเสื่อมราคาแล้ว</value>
+  </data>
+  <data name="custpage_status_allassettype" page="processstatus" xml:space="preserve">
+    <value>ประเภทสินทรัพย์ทั้งหมด</value>
+  </data>
+  <data name="custpage_procstatus_dispose" page="processstatus" xml:space="preserve">
+    <value>จำหน่ายจ่ายโอนสินทรัพย์ </value>
+  </data>
+  <data name="custpage_procstatus_dispose_count" page="processstatus" xml:space="preserve">
+    <value>สินทรัพย์ถูกจำหน่ายจ่ายโอนแล้ว</value>
+  </data>
+  <data name="custpage_procstatus_reval" page="processstatus" xml:space="preserve">
+    <value>ประเมินราคาสินทรัพย์ </value>
+  </data>
+  <data name="custpage_procstatus_reval_count" page="processstatus" xml:space="preserve">
+    <value>ประเมินราคาสินทรัพย์แล้ว</value>
+  </data>
+  <data name="custpage_procstatus_split" page="processstatus" xml:space="preserve">
+    <value>แยกสินทรัพย์ </value>
+  </data>
+  <data name="custpage_procstatus_split_count" page="processstatus" xml:space="preserve">
+    <value>แยกสินทรัพย์แล้ว</value>
+  </data>
+  <data name="custpage_procstatus_transfer" page="processstatus" xml:space="preserve">
+    <value>โอนสินทรัพย์ </value>
+  </data>
+  <data name="custpage_procstatus_transfer_count" page="processstatus" xml:space="preserve">
+    <value>โอนสินทรัพย์แล้ว</value>
+  </data>
+  <data name="custpage_procstatus_gen" page="processstatus" xml:space="preserve">
+    <value>สร้างสินทรัพย์ </value>
+  </data>
+  <data name="custpage_procstatus_gen_count" page="processstatus" xml:space="preserve">
+    <value>สร้างสินทรัพย์แล้ว</value>
+  </data>
+  <data name="custpage_procstatus_prop" page="processstatus" xml:space="preserve">
+    <value>เสนอสินทรัพย์ </value>
+  </data>
+  <data name="custpage_procstatus_prop_count" page="processstatus" xml:space="preserve">
+    <value>เสนอสินทรัพย์แล้ว</value>
+  </data>
+  <data name="custpage_procstatus_schedreport_count" page="processstatus" xml:space="preserve">
+    <value>สร้างรายงานแล้ว</value>
+  </data>
+  <data name="custpage_rep_gen_asset_register" page="processstatus" xml:space="preserve">
+    <value>สร้างรายงานแสดงความเคลื่อนไหวของสินทรัพย์</value>
+  </data>
+  <data name="custpage_rep_gen_asset_summary" page="processstatus" xml:space="preserve">
+    <value>สร้างรายงานสรุปสินทรัพย์</value>
+  </data>
+  <data name="custpage_rep_gen_depr_sched" page="processstatus" xml:space="preserve">
+    <value>สร้างรายงานตารางเวลาการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_report_generation_count" page="processstatus" xml:space="preserve">
+    <value>รวมระเบียนข้อมูลแล้ว</value>
+  </data>
+  <data name="custpage_view_report_as" page="processstatus" xml:space="preserve">
+    <value>ดูรายงานเป็น:</value>
+  </data>
+  <data name="custpage_procstatus_create" page="processstatus" xml:space="preserve">
+    <value>สร้างสินทรัพย์ </value>
+  </data>
+  <data name="custpage_procstatus_create_count" page="processstatus" xml:space="preserve">
+    <value>สร้างสินทรัพย์แล้ว</value>
+  </data>
+  <data name="custpage_view_proppage" page="processstatus" xml:space="preserve">
+    <value>ดูหน้าข้อเสนอ</value>
+  </data>
+  
+  <!-- Asset Summary Page -->
+  <data name="custrecord_assetsummary_title" page="assetsummary" xml:space="preserve">
+    <value>รายงานสรุปสินทรัพย์</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetsummary" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetsummary" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetsummary" xml:space="preserve">
+    <value>รวมรายการย่อย</value>
+    </data>
+  <data name="custpage_filtermsselect" page="assetsummary" xml:space="preserve">
+    <value>เลือก</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetsummary" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetsummary" xml:space="preserve">
+    <value>สถานที่ตั้ง</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetsummary" xml:space="preserve">
+    <value>แผนก</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetsummary" xml:space="preserve">
+    <value>คลาส</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetsummary" xml:space="preserve">
+    <value>วันที่เริ่มต้นของระยะเวลา</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetsummary" xml:space="preserve">
+    <value>วันที่สิ้นสุดของระยะเวลา</value>
+  </data>
+  <data name="custpage_html_tangible" page="assetsummary" xml:space="preserve">
+    <value>สินทรัพย์ถาวรที่ชัดเจน</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="assetsummary" xml:space="preserve">
+    <value>ต้นทุนหรือการประเมินราคา</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetsummary" xml:space="preserve">
+    <value>ค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetsummary" xml:space="preserve">
+    <value>มูลค่าทางบัญชีสุทธิ</value>
+  </data>
+  <data name="custpage_html_at" page="assetsummary" xml:space="preserve">
+    <value>ที่ (0)</value>
+  </data>
+  <data name="custpage_html_additions" page="assetsummary" xml:space="preserve">
+    <value>ส่วนเพิ่มเติม</value>
+  </data>
+  <data name="custpage_html_disposals" page="assetsummary" xml:space="preserve">
+    <value>การจำหน่ายจ่ายโอน</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="assetsummary" xml:space="preserve">
+    <value>ค่าธรรมเนียมสำหรับช่วงเวลา</value>
+  </data>
+  <data name="custpage_html_adjustments" page="assetsummary" xml:space="preserve">
+    <value>การปรับ</value>
+  </data>
+  <data name="custpage_html_fam" page="assetsummary" xml:space="preserve">
+    <value>การจัดการสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custpage_html_total" page="assetsummary" xml:space="preserve">
+    <value>ยอดรวม</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetsummary" xml:space="preserve">
+    <value>สินทรัพย์ทั้งหมด</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetsummary" xml:space="preserve">
+    <value>สินทรัพย์ทั้งหมดยกเว้นที่เช่าซื้อ</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetsummary" xml:space="preserve">
+    <value>เช่าซื้อเท่านั้น</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetsummary" xml:space="preserve">
+    <value>วิธีการทางบัญชี (ตัวเลือก)</value>
+  </data>
+  
+  
+  <!-- Fixed Assets Reports -->
+  <data name="custrecord_famreports_title" page="famreports" xml:space="preserve">
+    <value>รายงานสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custpage_reporttype" page="famreports" xml:space="preserve">
+    <value>ประเภทรายงาน</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="famreports" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="famreports" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="famreports" xml:space="preserve">
+    <value>รวมรายการย่อย</value>
+  </data>
+  <data name="custpage_filteracctngbook" page="famreports" xml:space="preserve">
+    <value>สมุดบัญชี</value>
+  </data>
+  <data name="custpage_filtermsselect" page="famreports" xml:space="preserve">
+    <value>สินทรัพย์ที่จะรวม</value>
+  </data>
+  <data name="custpage_filtersmethod" page="famreports" xml:space="preserve">
+    <value>ค่าเสื่อมราคาอื่น</value>
+  </data>
+  <data name="custpage_filterslocation" page="famreports" xml:space="preserve">
+    <value>สถานที่ตั้ง</value>
+  </data>
+  <data name="custpage_filtersdept" page="famreports" xml:space="preserve">
+    <value>แผนก</value>
+  </data>
+  <data name="custpage_filtersclass" page="famreports" xml:space="preserve">
+    <value>คลาส</value>
+  </data>
+  <data name="custpage_filterstartdate" page="famreports" xml:space="preserve">
+    <value>วันที่เริ่มต้น</value>
+  </data>
+  <data name="custpage_filterenddate" page="famreports" xml:space="preserve">
+    <value>วันที่สิ้นสุด</value>
+  </data>
+  <data name="custpage_html_tangible" page="famreports" xml:space="preserve">
+    <value>สินทรัพย์ถาวรที่ชัดเจน</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="famreports" xml:space="preserve">
+    <value>ต้นทุนหรือการประเมินราคา</value>
+  </data>
+  <data name="custpage_html_depreciation" page="famreports" xml:space="preserve">
+    <value>ค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_html_nbv" page="famreports" xml:space="preserve">
+    <value>มูลค่าทางบัญชีสุทธิ</value>
+  </data>
+  <data name="custpage_html_at" page="famreports" xml:space="preserve">
+    <value>ที่ (0)</value>
+  </data>
+  <data name="custpage_html_additions" page="famreports" xml:space="preserve">
+    <value>ส่วนเพิ่มเติม</value>
+  </data>
+  <data name="custpage_html_disposals" page="famreports" xml:space="preserve">
+    <value>การจำหน่ายจ่ายโอน</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="famreports" xml:space="preserve">
+    <value>ค่าธรรมเนียมสำหรับช่วงเวลา</value>
+  </data>
+  <data name="custpage_html_adjustments" page="famreports" xml:space="preserve">
+    <value>การปรับ</value>
+  </data>
+  <data name="custpage_html_fam" page="famreports" xml:space="preserve">
+    <value>การจัดการสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custpage_html_total" page="famreports" xml:space="preserve">
+    <value>ยอดรวม</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="famreports" xml:space="preserve">
+    <value>สินทรัพย์ทั้งหมด</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="famreports" xml:space="preserve">
+    <value>สินทรัพย์ทั้งหมดยกเว้นที่เช่าซื้อ</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="famreports" xml:space="preserve">
+    <value>เช่าซื้อเท่านั้น</value>
+  </data>
+  <data name="custpage_dropdown_report_assetregister" page="famreports" xml:space="preserve">
+    <value>รายงานสดงรายการความเคลื่อนไหวของสินทรัพย์</value>
+  </data>
+  <data name="custpage_dropdown_report_assetsummary" page="famreports" xml:space="preserve">
+    <value>สรุปสินทรัพย์</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_nbv" page="famreports" xml:space="preserve">
+    <value>ตารางเวลาค่าเสื่อมราคา - มูลค่าทางบัญชีสุทธิ</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_pd" page="famreports" xml:space="preserve">
+    <value>ตารางเวลาค่าเสื่อมราคา - ค่าเสื่อมราคาตามช่วงเวลา</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="famreports" xml:space="preserve">
+    <value>วิธีการทางบัญชี</value>
+  </data>
+  <data name="custpage_saveresults_help" page="famreports" xml:space="preserve">
+    <value>บันทึกจำนวนตามคาดการณ์ทำให้คุณสามารถบันทึกรายการตารางเวลาค่าเสื่อมราคาที่สร้างขึ้น (สำหรับช่วงชีวิตของสินทรัพย์) ในระเบียนข้อมูลสินทรัพย์ เมื่อเปิดใช้งาน ระบบจะไม่สนใจวันที่เริ่มต้น วันที่สิ้นสุด มูลค่าทางบัญชีสุทธิ และค่าเสื่อมราคาตามช่วงเวลา ซึ่งจะทำให้แน่ใจว่าตารางประวัติของค่าเสื่อมราคาจะมีตารางค่าเสื่อมราคาที่ครบถ้วนสมบูรณ์ตลอดอายุสินทรัพย์ ค่าที่ป้อนในฟิลด์วันที่เริ่มต้น วันที่สิ้นสุด มูลค่าทางบัญชีสุทธิ และค่าเสื่อมราคาตามช่วงเวลาจะนำมาใช้ก็ต่อเมื่อใช้สำหรับรายงานที่สร้างขึ้น</value>
+  </data>
+  <data name="custpage_saveresults" page="famreports" xml:space="preserve">
+    <value>บันทึกจำนวนตามการคาดการณ์</value>
+  </data>
+  <data name="custpage_assetinclude_help" page="famreports" xml:space="preserve">
+    <value>เลือกว่าสินทรัพย์ใดต่อไปนี้จะรวมอยู่ในรายงาน: สินทรัพย์ทั้งหมด สินทรัพย์ทั้งหมดยกเว้นที่เช่าซื้อ หรือเช่าซื้อเท่านั้น</value>
+  </data>
+  <data name="custpage_nodataforreport" page="famreports" xml:space="preserve">
+    <value>ไม่มีข้อมูลรายงานสำหรับชุดตัวกรองที่คุณเลือก</value>
+  </data>
+  <data name="custpage_dropddown_none" page="famreports" xml:space="preserve">
+    <value>ไม่มี</value>
+  </data>
+
+  <!-- Report Status -->
+  <data name="custpage_currentstatus" page="reportstatus" xml:space="preserve">
+    <value>สถานะปัจจุบัน</value>
+  </data>
+  <data name="custpage_resultstatus" page="reportstatus" xml:space="preserve">
+    <value>สิ่งต่างๆ อยู่ที่ไหนบ้าง?</value>
+  </data>
+  <data name="custpage_reportavailable" page="reportstatus" xml:space="preserve">
+    <value>มีผลของรายงาน</value>
+  </data>
+  <data name="custpage_generatereportassettypes" page="reportstatus" xml:space="preserve">
+    <value>การสร้างรายงานประเภทสินทรัพย์:</value>
+  </data>
+  <data name="custpage_generatereport" page="reportstatus" xml:space="preserve">
+    <value>สร้างรายงาน: </value>
+  </data>
+  <data name="custpage_assetprocessed" page="reportstatus" xml:space="preserve">
+    <value>ประมวลผล (0) สินทรัพย์แล้ว</value>
+  </data>
+  <data name="custpage_reportlink" page="reportstatus" xml:space="preserve">
+    <value>ที่นี่</value>
+  </data>
+  <data name="custpage_errorfile" page="reportstatus" xml:space="preserve">
+    <value>การรับข้อมูลไฟล์รายงานผิดพลาด</value>
+  </data>
+  <data name="custpage_generatingreport" page="reportstatus" xml:space="preserve">
+    <value>สร้างรายงานสำหรับ</value>
+  </data>
+  <data name="custpage_reportcomplete" page="reportstatus" xml:space="preserve">
+    <value>สร้างรายงานเสร็จเรียบร้อย</value>
+  </data>
+  <data name="custpage_processfailed" page="reportstatus" xml:space="preserve">
+    <value>ประมวลผลล้มเหลว</value>
+  </data>
+
+  <!-- Report Status Depreciation -->
+  <data name="custrecord_reportstatus_title" page="reportstatus2" xml:space="preserve">
+    <value>สถานะของรายงานตารางเวลาค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_html_currentstatus" page="reportstatus2" xml:space="preserve">
+    <value>สถานะปัจจุบัน</value>
+  </data>
+  <data name="custpage_html_resultstatus" page="reportstatus2" xml:space="preserve">
+    <value>สิ่งต่างๆ อยู่ที่ไหนบ้าง?</value>
+  </data>
+  <data name="custpage_html_assetprocessed" page="reportstatus2" xml:space="preserve">
+    <value>ประมวลผล (0) สินทรัพย์แล้ว</value>
+  </data>
+  <data name="custpage_html_reportavailable" page="reportstatus2" xml:space="preserve">
+    <value>มีผลของรายงาน</value>
+  </data>
+  <data name="custpage_html_reportlink" page="reportstatus2" xml:space="preserve">
+    <value>ที่นี่</value>
+  </data>
+  <data name="custpage_html_generatereport" page="reportstatus2" xml:space="preserve">
+    <value>สร้างรายงานสำหรับ: (0)</value>
+  </data>
+  <data name="custpage_html_processfailed" page="reportstatus2" xml:space="preserve">
+    <value>ประมวลผลล้มเหลว</value>
+  </data>
+  <data name="custpage_html_errorfile" page="reportstatus2" xml:space="preserve">
+    <value>การรับข้อมูลไฟล์รายงานผิดพลาด</value>
+  </data>
+  <data name="custpage_html_assetno" page="reportstatus2" xml:space="preserve">
+    <value>หมายเลขสินทรัพย์</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="reportstatus2" xml:space="preserve">
+    <value>คำอธิบายสินทรัพย์</value>
+  </data>
+
+
+  <data name="custrecord_famreportshist_title" page="famreportshistory" xml:space="preserve">
+    <value>ประวัติรายงานสินทรัพย์ถาวร</value>
+  </data>  
+  <data name="custpage_showingdays" page="famreportshistory" xml:space="preserve">
+    <value>แสดงรายงานจาก (0) วันที่ผ่านมา</value>
+  </data>
+  <data name="custpage_group_reporthistory" page="famreportshistory" xml:space="preserve">
+    <value>รายงานสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custpage_reports_dategen" page="famreportshistory" xml:space="preserve">
+    <value>สร้างวันที่แล้ว</value>
+  </data>
+  <data name="custpage_reports_reptype" page="famreportshistory" xml:space="preserve">
+    <value>ประเภท</value>
+  </data>
+  <data name="custpage_reports_repstartdate" page="famreportshistory" xml:space="preserve">
+    <value>วันที่เริ่มต้น</value>
+  </data>
+  <data name="custpage_reports_rependdate" page="famreportshistory" xml:space="preserve">
+    <value>วันที่สิ้นสุด</value>
+  </data>
+  <data name="custpage_reports_fileoptions" page="famreportshistory" xml:space="preserve">
+    <value>ตัวเลือกไฟล์</value>
+  </data>
+  <data name="custpage_reports_viewas" page="famreportshistory" xml:space="preserve">
+    <value>ดูเป็น: </value>
+  </data>
+  <data name="custpage_reports_delete" page="famreportshistory" xml:space="preserve">
+    <value>ลบ</value>
+  </data>
+  <data name="custpage_reports_repowner" page="famreportshistory" xml:space="preserve">
+    <value>เจ้าของ</value>
+  </data>
+  <data name="custpage_error_filepermissioninsuf" page="famreportshistory" xml:space="preserve">
+    <value>Role นี้ไม่มีสิทธิ์ดูไฟล์หรือสิทธิ์ที่สูงกว่า</value>
+  </data>
+  <data name="custpage_button_all_reports" page="famreportshistory" xml:space="preserve">
+    <value>แสดงรายงานทั้งหมด</value>
+  </data>
+  <data name="custpage_button_my_reports" page="famreportshistory" xml:space="preserve">
+    <value>แสดงรายงานของฉัน</value>
+  </data>
+
+  <!-- System Setup Page -->
+  <data name="custrecord_systemsetup_title" page="systemsetup" xml:space="preserve">
+    <value>การจัดการสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custrecord_systemsetup_settingstab" page="systemsetup" xml:space="preserve">
+    <value>การตั้งค่า</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalktab" page="systemsetup" xml:space="preserve">
+    <value>SuiteTalk</value>
+  </data>
+  <data name="custrecord_systemsetup_featurestab" page="systemsetup" xml:space="preserve">
+    <value>คุณลักษณะ</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalkdesc" page="systemsetup" xml:space="preserve">
+    <value>กรอกข้อมูลประจำตัวเพื่อใช้สำหรับการสื่อสาร SuiteTalk (บริการบนเว็บ)</value>
+  </data>
+  <data name="custpage_filtermsselect" page="systemsetup" xml:space="preserve">
+    <value>เลือก</value>
+  </data>
+  <data name="custpage_filtersmethod" page="systemsetup" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_filterslocation" page="systemsetup" xml:space="preserve">
+    <value>สถานที่ตั้ง</value>
+  </data>
+  <data name="custpage_filtersdept" page="systemsetup" xml:space="preserve">
+    <value>แผนก</value>
+  </data>
+  <data name="custpage_filtersclass" page="systemsetup" xml:space="preserve">
+    <value>คลาส</value>
+  </data>
+  <data name="custpage_filterstartdate" page="systemsetup" xml:space="preserve">
+    <value>วันที่เริ่มต้นของระยะเวลา</value>
+  </data>
+  <data name="custpage_filterenddate" page="systemsetup" xml:space="preserve">
+    <value>วันที่สิ้นสุดของระยะเวลา</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import" page="systemsetup" xml:space="preserve">
+    <value>เรียกใช้สคริปต์เซิร์ฟเวอร์เมื่ออิมพอร์ต CSV</value>
+  </data>
+  <data name="custpage_farsetuppostlocation" page="systemsetup" xml:space="preserve">
+    <value>โพสต์เมื่อมีการเปลี่ยนแปลงตำแหน่ง</value>
+  </data>
+  <data name="custpage_farsetuppostclass" page="systemsetup" xml:space="preserve">
+    <value>โพสต์เมื่อมีการเปลี่ยนแปลงคลาส</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment" page="systemsetup" xml:space="preserve">
+    <value>โพสต์เมื่อมีการเปลี่ยนแปลงแผนก</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock" page="systemsetup" xml:space="preserve">
+    <value>ลงบัญชีในรอบบัญชีถัดไปที่เปิดถ้า AP ถูกล็อก</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock_help" page="systemsetup" xml:space="preserve">
+    <value>ทำเครื่องหมายในกล่องนี้ เพื่ออนุญาตการลงบัญชีในรอบบัญชีถัดไปที่เปิด ถ้า AP ถูกล็อก เอาเครื่องหมายออกจากกล่องนี้ เพื่ออนุญาตการลงบัญชีในรอบบัญชีปัจจุบัน แม้ AP จะถูกล็อกอยู่ก็ตาม</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock" page="systemsetup" xml:space="preserve">
+    <value>ลงบัญชีในรอบบัญชีถัดไปถ้า AR ถูกล็อก</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock_help" page="systemsetup" xml:space="preserve">
+    <value>ทำเครื่องหมายในกล่องนี้ เพื่ออนุญาตการลงบัญชีในรอบบัญชีถัดไปที่เปิด ถ้า AR ถูกล็อก เอาเครื่องหมายออกจากกล่องนี้ เพื่ออนุญาตการลงบัญชีในรอบบัญชีปัจจุบัน แม้ AR จะถูกล็อกอยู่ก็ตาม</value>
+  </data>
+  <data name="custpage_allow_non_fixedasset_account" page="systemsetup" xml:space="preserve">
+    <value>อนุญาตบัญชีประเภทสินทรัพย์ที่ไม่ถาวร</value>
+  </data>
+  <data name="custpage_farsetupsummary" page="systemsetup" xml:space="preserve">
+    <value>สรุปสมุดรายวันโดย</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations" page="systemsetup" xml:space="preserve">
+    <value>อนุญาตค่าเสื่อมราคาในวันที่ที่เป็นอนาคต</value>
+  </data>
+  <data name="custpage_allowvalueedit" page="systemsetup" xml:space="preserve">
+    <value>อนุญาตการแก้ไขมูลค่าของสินทรัพย์</value>
+  </data>
+  <data name="custpage_allownegativecost" page="systemsetup" xml:space="preserve">
+    <value>อนุญาตต้นทุนค่าเสื่อมราคาของสินทรัพย์ที่เป็นลบ</value>
+  </data>
+  <data name="custpage_userrole_help1" page="systemsetup" xml:space="preserve">
+    <value>อนุญาตการแก้ไขค่าสินทรัพย์ให้การอนุญาตแก่ผู้ดูแลระบบอย่างเต็มที่ในการแก้ไขค่าในระเบียนข้อมูลสินทรัพย์</value>
+  </data>
+  <data name="custpage_userrole_help2" page="systemsetup" xml:space="preserve">
+    <value>คุณยังสามารถเลือก Role เพิ่มเติมเพื่ออนุญาตให้ผู้ใช้อื่นๆ แก้ไขค่าของสินทรัพย์ได้อีกด้วย</value>
+  </data>
+  <data name="custpage_userrole" page="systemsetup" xml:space="preserve">
+    <value>Role ผู้ใช้</value>
+  </data>
+  <data name="custpage_propapprovedonly" page="systemsetup" xml:space="preserve">
+    <value>ข้อเสนอธุรกรรมที่อนุมัติเท่านั้น</value>
+  </data>
+  <data name="custpage_followacctperiod" page="systemsetup" xml:space="preserve">
+    <value>วันที่ปิดรอบระยะเวลาบัญชี</value>
+  </data>
+  <data name="custpage_allowbypassue" page="systemsetup" xml:space="preserve">
+    <value>ข้ามสคริปต์ UE ระเบียนข้อมูลที่สร้างเองในระหว่างคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_constrainal" page="systemsetup" xml:space="preserve">
+    <value>จำกัดอายุของสินทรัพย์อื่นๆ</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction" page="systemsetup" xml:space="preserve">
+    <value>ใช้สมุดรายวันที่สร้างเอง</value>
+  </data>
+  <data name="custpage_adminallreports" page="systemsetup" xml:space="preserve">
+    <value>อนุญาตให้ผู้ดูแลระบบดูรายงานทั้งหมด</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount" page="systemsetup" xml:space="preserve">
+    <value>บันทึกโดยใช้บัญชีค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym" page="systemsetup" xml:space="preserve">
+    <value>จำนวนเต็ม (0 d.p.) สกุลเงิน</value>
+  </data>
+  <data name="custpage_farsetupresrej" page="systemsetup" xml:space="preserve">
+    <value>จำกัดความสามารถเพื่อปฏิเสธข้อเสนอ</value>
+  </data>
+  <data name="custpage_farsetupreportfolder" page="systemsetup" xml:space="preserve">
+    <value>โฟลเดอร์ที่จะใช้ในการรายงาน (ID ภายใน)</value>
+  </data>
+  <data name="custpage_farsetupdisposalform" page="systemsetup" xml:space="preserve">
+    <value>แบบฟอร์มใบแจ้งหนี้การจำหน่ายจ่ายโอนสินทรัพย์ (ID ภายใน)</value>
+  </data>
+  <data name="custpage_farsetupsubsidsenabled" page="systemsetup" xml:space="preserve">
+    <value>บริษัทสาขา</value>
+  </data>
+  <data name="custpage_farsetupdeptsenabled" page="systemsetup" xml:space="preserve">
+    <value>แผนก</value>
+  </data>
+  <data name="custpage_farsetuplocationsenabled" page="systemsetup" xml:space="preserve">
+    <value>สถานที่ตั้ง</value>
+  </data>
+  <data name="custpage_farsetupclassesenabled" page="systemsetup" xml:space="preserve">
+    <value>คลาส</value>
+  </data>
+  <data name="custpage_farsetupjobsenabled" page="systemsetup" xml:space="preserve">
+    <value>งาน</value>
+  </data>
+  <data name="custpage_farsetupmulticurrenabled" page="systemsetup" xml:space="preserve">
+    <value>หลายสกุลเงิน</value>
+  </data>
+  <data name="custpage_admin_only_field" page="systemsetup" xml:space="preserve">
+    <value>ผู้ดูแลเท่านั้น</value>
+  </data>
+  <data name="custpage_html_adminonly" page="systemsetup" xml:space="preserve">
+    <value>เฉพาะผู้ดูแลระบบเท่านั้นที่เข้าใช้หน้านี้ได้</value>
+  </data>
+  <data name="custpage_dropdown_none" page="systemsetup" xml:space="preserve">
+    <value>ไม่มี</value>
+  </data>
+  <data name="custpage_dropdown_parent" page="systemsetup" xml:space="preserve">
+    <value>Parent</value>
+  </data>
+  <data name="custpage_dropdown_subcategory" page="systemsetup" xml:space="preserve">
+    <value>หมวดหมู่ย่อย</value>
+  </data>
+  <data name="custpage_dropdown_assettype" page="systemsetup" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import_help" page="systemsetup" xml:space="preserve">
+  <value>อย่าทำเครื่องหมายที่กล่องนี้หากคุณกำลังนำเข้าระเบียนข้อมูลของสินทรัพย์ที่อยู่ในช่วงกลางของช่วงชีวิต
+ถ้าทำเครื่องหมายที่กล่องนี้ และทำเครื่องหมายที่กล่อง รัน Server SuiteScript และทริกเกอร์ Workflow (การตั้งค่า &gt; อิมพอร์ต &gt; กำหนดค่าการนำเข้า CSV) ด้วย จากนั้นเป็นข้อมูลต่างๆ เช่น ค่าเสื่อมราคารวม วันที่คิดค่าเสื่อมราคาล่าสุด และรอบบัญชีค่าเสื่อมราคาล่าสุด จะถูกสร้างด้วยค่าดีฟอลต์ที่เป็น 0 ถึงแม้ว่าจำนวนที่แท้จริงจะถูกรวมไว้ในไฟล์อิมพอร์ต</value>
+  </data>
+  <data name="custpage_farsetuppostlocation_help" page="systemsetup" xml:space="preserve">
+    <value>ทำเครื่องหมายที่กล่องนี้้ถ้าจะโอนสินทรัพย์ไปพร้อมกับรายการบันทึกในสมุดรายวันที่คู่กันเมื่อเปลี่ยนสถานที่ตั้ง</value>
+  </data>
+  <data name="custpage_farsetuppostclass_help" page="systemsetup" xml:space="preserve">
+    <value>ทำเครื่องหมายที่กล่องนี้้ถ้าจะโอนสินทรัพย์ไปพร้อมกับรายการบันทึกในสมุดรายวันที่คู่กันเมื่อเปลี่ยนคลาส</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment_help" page="systemsetup" xml:space="preserve">
+    <value>ทำเครื่องหมายที่กล่องนี้้ถ้าจะโอนสินทรัพย์ไปพร้อมกับรายการบันทึกในสมุดรายวันที่คู่กันเมื่อเปลี่ยนแผนก</value>
+  </data>
+  <data name="custpage_constrainal_help" page="systemsetup" xml:space="preserve">
+    <value>ทำเครื่องหมายที่กล่องนี้เพื่อจำกัดการเพิ่มระเบียนข้อมูลสินทรัพย์ของวิธีค่าเสื่อมราคาอื่น ซึ่งมีค่าอายุสินทรัพย์ (AL) มากกว่าช่วงชีวิตของสินทรัพย์</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount_help" page="systemsetup" xml:space="preserve">
+    <value>ทำเครื่องหมายที่กล่องนี้เพื่อลงมูลค่าที่บันทึกในบัญชีค่าเสื่อมราคา ล้างกล่องกาเครื่องหมายเพื่อลงมูลค่าที่บันทึกในบัญชีสินทรัพย์</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym_help" page="systemsetup" xml:space="preserve">
+    <value>กรอกสัญลักษณ์สกุลเงินหนึ่งรายการขึ้นไป (ตัวอย่างเช่น JPY แยกค่าหลายรายการด้วย ,) สำหรับสกุลเงินที่ไม่มีจุดทศนิยม</value>
+  </data>
+  <data name="custpage_farsetupresrej_help" page="systemsetup" xml:space="preserve">
+    <value>ถ้าเลือกตัวเลือกนี้ ปุ่มปฏิเสธข้อเสนอจะปรากฏบนหน้าข้อเสนอของสินทรัพย์ เมื่อผู้ใช้ใน Role ผู้ดูแลระบบเข้าถึง</value>
+  </data>
+  <data name="custpage_farsetupreportfolder_help" page="systemsetup" xml:space="preserve">
+    <value>ป้อน ID ภายในของโฟลเดอร์รายงานแสดงรายการความเคลื่อนไหวของสินทรัพย์ถาวรในที่เก็บไฟล์ ซึ่งบันทึกรายงานสินทรัพย์ถาวร ถ้าต้องการดู ID ภายในของโฟลเดอร์รายงานแสดงรายการความเคลื่อนไหวของสินทรัพย์ถาวร ในบัญชี NetSuite ของคุณ:
+1. ไปที่ เอกสาร &gt; ไฟล์ &gt; ที่เก็บไฟล์
+2. คลิก SuiteBundle.
+3. คลิก กลุ่ม 35405.
+4. คลิกโฟลเดอร์ src</value>
+  </data>
+  <data name="custpage_farsetupdisposalform_help" page="systemsetup" xml:space="preserve">
+    <value>ป้อน ID ภายในของแบบฟอร์มอินวอยซ์ที่ต้องการใช้สร้างระเบียนข้อมูลใบแจ้งหนี้เมื่อจำหน่ายจ่ายโอนสินทรัพย์โดยการขาย ถ้าฟิลด์นี้ว่าง จะใช้ค่าดีฟอลต์ของแบบฟอร์มที่ต้องการเป็นแบบฟอร์มอินวอยซ์</value>
+  </data>
+  <data name="custpage_farsetupsummary_help" page="systemsetup" xml:space="preserve">
+    <value>เลือกสรุปสมุดรายวันโดยตัวเลือก:
+Parent - ย้ายค่าของสินทรัพย์ย่อยไปยัง Parent แล้วสร้างรายการบันทึกในสมุดรายวันหนึ่งรายการเพื่อรวมค่า Parent และ Child ต่อรอบบัญชี
+หมวดหมู่ย่อย - ย้ายค่าไปยังหมวดหมู่ย่อย แล้วสร้างรายการสมุดรายวันขึ้นหนึ่งรายการต่อหมวดหมู่ย่อยต่อรอบบัญชี เลือกตัวเลือกได้ก็ต่อเมื่อใช้หมวดหมู่ซ่อมแซมและบำรุงรักษา และหมวดหมู่ย่อยซ่อมแซมละบำรุงรักษา
+ประเภทสินทรัพย์ - แสดงค่าตามประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations_help" page="systemsetup" xml:space="preserve">
+    <value>กาเครื่องหมายที่กล่องนี้เพื่ออนุญาตให้คิดค่าเสื่อมราคาสินทรัพย์จนถึงวันที่คิดค่าเสื่อมราคาซึ่งอยู่หลังรอบบัญชีปัจจุบัน ไม่กาเครื่องหมายที่กล่องนี้เพื่อคิดค่าเสื่อมราคาสินทรัพย์ที่มีค่าเสื่อมราคาจนถึงรอบบัญชีปัจจุบันเท่านั้น</value>
+  </data>
+  <data name="custpage_allowvalueedit_help" page="systemsetup" xml:space="preserve">
+    <value>ทำเครื่องหมายที่กล่องนี้เพื่อให้สิทธิ์เต็มที่แก่ผู้ดูแลระบบในนการแก้ไขค่าในสินทรัพย์
+ถ้าไม่ทำเครื่องหมายที่กล่องนี้ จะไม่สามารถแก้ไขระเบียนข้อมูลสินทรัพย์ได้ โปรดดูการแก้ไขค่าสินทรัพย์ของรายการฟิลด์ที่ไม่สามารถแก้ไขได้
+ถ้าต้องการอนุญาตให้ผู้ใช้แก้ไขค่าสินทรัพย์ ให้เลือก Role เพิ่มเติมจากฟิลด์ Role ผู้ใช้</value>
+  </data>
+  <data name="custpage_allownegativecost_help" page="systemsetup" xml:space="preserve">
+    <value>กาเครื่องหมายที่กล่องนี้เพื่ออนุญาตให้ผู้ดูแลระบบ (รวมถึงบทบาทอื่นๆ ที่มีสิทธฺิ์แก้ไขมูลค่าสินทรัพย์) ป้อนค่าลบสำหรับต้นทุนดั้งเดิมของสินทรัพย์ ต้นทุนปัจจุบัน และมูลค่าคงเหลือในระเบียนข้อมูลสินทรัพย์</value>
+  </data>
+  <data name="custpage_userrole_help" page="systemsetup" xml:space="preserve">
+    <value>ตัวเลือกนี้จะเปิดใช้งานเมื่อทำเครื่องหมายที่กล่องอนุญาตการแก้ไขมูลค่าของสินทรัพย์ ถ้าต้องการเลือก Role ตั้งแต่ 2 Role ขึ้นไป ให้กดปุ่ม CTRL ค้างไว้ในขณะที่คุณคลิกที่แต่ละ Role ในฟิลด์ Role ผู้ใช้</value>
+  </data>
+  <data name="custpage_propapprovedonly_help" page="systemsetup" xml:space="preserve">
+    <value>โปรดทำเครื่องหมายในกล่องนี้ ถ้าคุณต้องการนำเสนอสินทรัพย์เฉพาะจากธุรกรรมที่ได้รับอนุมัติแล้วเท่านั้น ล้างเครื่องหมายที่กล่องนี้เพื่อเปิดใช้งานข้อเสนอสินทรัพย์จากธุรกรรมใหม่ทั้งหมดที่ลงกระทบกับบัญชีแยกประเภททั่วไปสินทรัพย์ถาวรโดยอัตโนมัติ ไม่ว่าสถานะธุรกรรมจะเป็นเช่นไร (ตัวอย่างเช่น อนุมัติแล้ว หรือรอการอนุมัติ)</value>
+  </data>
+  <data name="custpage_followacctperiod_help" page="systemsetup" xml:space="preserve">
+    <value>เปิดใช้งานการกำหนดค่านี้เพื่อใช้วันที่ปิดรอบระยะเวลาบัญชีสำหรับรายการสมุดรายวันค่าเสื่อมราคา สามารถใช้การตั้งค่านี้ได้หากรูปแบบรอบบัญชีไม่ได้อยู่ในเดิอนในปฏิทิน</value>
+  </data>
+  <data name="custpage_allowbypassue_help" page="systemsetup" xml:space="preserve">
+    <value>ทำเครื่องหมายที่กล่องนี้เพื่อละเว้นสคริปต์อีเวนต์ของผู้ใช้และเวิร์กโฟลว์สำหรับระเบียนข้อมูลที่สร้างเองในระหว่างกระบวนการคิดค่าเสื่อมราคา ล้างเครื่องหมายที่กล่องนี้หากคุณกำลังรันสคริปต์ที่สร้างเอง และ/หรือเวิร์กโฟลว์บนระเบียนข้อมูลที่จะถูกอัปเดตในระหว่างกระบวนการคิดค่าเสื่อมราคา</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction_help" page="systemsetup" xml:space="preserve">
+    <value>ทำเครื่องหมายที่กล่องนี้เพื่อใช้แบบฟอร์มรายการบันทึกในสมุดรายวันที่สร้างเอง</value>
+  </data>
+  <data name="custpage_adminallreports_help" page="systemsetup" xml:space="preserve">
+    <value>ทำเครื่องหมายที่กล่องนี้เพื่ออนุญาตให้ผู้ดูแลระบบดูรายงานที่ผู้ใช้คนอื่นสร้างขึ้น</value>
+  </data>
+  
+  <!-- Asset Split -->
+  <data name="custrecord_assetsplit_title" page="assetsplit" xml:space="preserve">
+    <value>การแยกสินทรัพย์</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetsplit" xml:space="preserve">
+    <value>ข้อมูลหลัก</value>
+  </data>
+  <data name="custpage_group_splitdetails" page="assetsplit" xml:space="preserve">
+    <value>แยกรายละเอียด</value>
+  </data>
+  <data name="custpage_newlbl" page="assetsplit" xml:space="preserve">
+    <value>มูลค่าสินทรัพย์ใหม่:</value>
+  </data>
+  <data name="custpage_oldlbl" page="assetsplit" xml:space="preserve">
+    <value>มูลค่าสินทรัพย์เก่า:</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetsplit" xml:space="preserve">
+    <value>วิธีภาษี</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetsplit" xml:space="preserve">
+    <value>สมุดบัญชี</value>
+  </data>
+  <data name="custpage_altmethod" page="assetsplit" xml:space="preserve">
+    <value>วิธีอื่น</value>
+  </data>
+  <data name="custpage_assetid" page="assetsplit" xml:space="preserve">
+    <value>ชื่อ/ID สินทรัพย์</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetsplit" xml:space="preserve">
+    <value>คำอธิบายสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetsplit" xml:space="preserve">
+    <value>ซีเรียลนัมเบอร์ของสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetsplit" xml:space="preserve">
+    <value>หมายเลขสินทรัพย์อื่น</value>
+  </data>
+  <data name="custpage_assettype" page="assetsplit" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetcost" page="assetsplit" xml:space="preserve">
+    <value>ต้นทุนดั้งเดิม</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetsplit" xml:space="preserve">
+    <value>ต้นทุนปัจจุบัน</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetsplit" xml:space="preserve">
+    <value>มูลค่าคงเหลือ</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetsplit" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetsplit" xml:space="preserve">
+    <value>ช่วงชีวิตของสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetsplit" xml:space="preserve">
+    <value>มูลค่าทางบัญชีปัจจุบัน</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetsplit" xml:space="preserve">
+    <value>ค่าเสื่อมราคาจนถึงวันนี้</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetsplit" xml:space="preserve">
+    <value>รอบบัญชีค่าเสื่อมราคาล่าสุด</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetsplit" xml:space="preserve">
+    <value>มูลค่าค่าเสื่อมราคาล่าสุด</value>
+  </data>
+  <data name="custpage_assetdeprstartdate" page="assetsplit" xml:space="preserve">
+    <value>วันที่เริ่มค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetsplit" xml:space="preserve">
+    <value>วันที่ค่าเสื่อมราคาล่าสุด</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetsplit" xml:space="preserve">
+    <value>สถานะสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetsplit" xml:space="preserve">
+    <value>ปริมาณ</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetsplit" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+  </data>
+  <data name="custpage_splitquantity" page="assetsplit" xml:space="preserve">
+    <value>แยกจำนวน</value>
+  </data>
+  <data name="splitquantity_help" page="assetsplit" xml:space="preserve">
+    <value>โปรดใส่ค่าที่น้อยกว่าจำนวนสินทรัพย์</value>
+  </data>
+  <!--help texts -->
+  <data name="custpage_newqty_help" page="assetsplit" xml:space="preserve">
+    <value>จำนวนที่แยกจากสินทรัพย์ดั้งเดิม ซึ่งตอนนี้จะกลายเป็นจำนวนสินทรัพย์ใหม่</value>
+  </data>
+  <data name="custpage_newoc_help" page="assetsplit" xml:space="preserve">
+    <value>ต้นทุน (ซื้อ) ดั้งเดิมที่เป็นค่าดีฟอลต์ของสินทรัพย์ใหม่จะขึ้นอยู่กับต้นทุนดั้งเดิมของสินทรัพย์ดั้งเดิม และจำนวนที่แยก ป้อนค่าใหม่ถ้าคุณไม่ต้องการใช้ต้นทุนดั้งเดิมที่เป็นค่าดีฟอลต์</value>
+  </data>
+  <data name="custpage_newcc_help" page="assetsplit" xml:space="preserve">
+    <value>ต้นทุนปัจจุบันที่เป็นค่าดีฟอลต์ของสินทรัพย์ใหม่จะขึ้นอยู่กับต้นทุนปัจจุบันของสินทรัพย์ดั้งเดิม และจำนวนที่แยก ป้อนค่าใหม่ถ้าคุณไม่ต้องการใช้ต้นทุนปัจจุบันที่เป็นค่าดีฟอลต์</value>
+  </data>
+  <data name="custpage_newnbv_help" page="assetsplit" xml:space="preserve">
+    <value>ค่าดีฟอลต์ของมูลค่าทางบัญชีในปัจจุบันของสินทรัพย์ใหม่จะขึ้นกับมูลค่าทางบัญชีสุทธิของสินทรัพย์ดั้งเดิมและจำนวนที่แยก ป้อนค่าใหม่ถ้าคุณไม่ต้องการใช้ค่าดีฟอลต์ของมูลค่าทางบัญชีสุทธิ  โปรดทราบว่าผลรวมของมูลค่าทางบัญชีสุทธิกับค่าเสื่อมราคาจนถึงปัจจุบันต้องเท่ากับต้นทุนปัจจุบัน</value>
+  </data>
+  <data name="custpage_newdeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>ค่าดีฟอลต์ของยอดรวมค่าเสื่อมราคาที่ใช้กับสินทรัพย์ใหม่จนถึงปัจจุบันจะยึดตามจำนวนที่แยกและค่าเสื่อมราคาจนถึงปัจจุบันของสินทรัพย์ดั้งเดิม ป้อนค่าใหม่ถ้าคุณไม่ต้องการใช้ค่าดีฟอลต์ของยอดรวมค่าเสื่อมราคา โปรดทราบว่าผลรวมของมูลค่าทางบัญชีสุทธิกับค่าเสื่อมราคาจนถึงปัจจุบันต้องเท่ากับต้นทุนปัจจุบัน</value>
+  </data>
+  <data name="custpage_newrv_help" page="assetsplit" xml:space="preserve">
+    <value>ค่าดีฟอลต์ของมูลค่่าสินทรัพย์ใหม่เมื่อหมดช่วงชีวิต ค่านี้จะยึดตามจำนวนที่แยกและมูลค่าคงเหลือของสินทรัพย์ดั้งเดิม  ป้อนค่าใหม่ถ้าคุณไม่ต้องการใช้ค่าดีฟอลต์ของมูลค่าคงเหลือ</value>
+  </data>
+  <data name="custpage_newlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>ค่าดีฟอลต์ของค่าเสื่อมราคาล่าสุดของสินทรัพย์ใหม่จะยึดตามจำนวนที่แยกและค่าเสื่อมราคาล่าสุดของสินทรัพย์ดั้งเดิม ป้อนค่าใหม่หากคุณไม่ต้องการใช้ค่าดีฟอลต์ของค่าเสื่อมราคาล่าสุด</value>
+  </data>
+  <data name="custpage_oldqty_help" page="assetsplit" xml:space="preserve">
+    <value>จำนวนคงเหลือของสินทรัพย์ดั้งเดิม</value>
+  </data>
+  <data name="custpage_oldoc_help" page="assetsplit" xml:space="preserve">
+    <value>ต้นทุนดั้งเดิมของสินทรัพย์ดั้งเดิมที่คงเหลืออยู่จะยึดตามจำนวนที่แยก</value>
+  </data>
+  <data name="custpage_oldcc_help" page="assetsplit" xml:space="preserve">
+    <value>ต้นทุนปัจจุบันที่คงเหลืออยู่ของสินทรัพย์ดั้งเดิมจะยึดตามจำนวนที่แยก</value>
+  </data>
+  <data name="custpage_oldnbv_help" page="assetsplit" xml:space="preserve">
+    <value>มูลค่าทางบัญชีปัจจุบันที่คงเหลืออยู่ของสินทรัพย์ดั้งเดิมจะยึดตามจำนวนที่แยก</value>
+  </data>
+  <data name="custpage_olddeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>จำนวนค่าเสื่อมราคาที่คงเหลืออยู่ที่นำไปใช้กับสินทรัพย์ดั้งเดิมจนถึงปัจจุบันจะยึดตามจำนวนที่แยก</value>
+  </data>
+  <data name="custpage_oldrv_help" page="assetsplit" xml:space="preserve">
+    <value>มูลค่าคงเหลือของสินทรัพย์ปัจจุบัน ณ เวลาสิ้นสุดช่วงชีวิต ค่านี้จะยึดตามจำนวนที่แยก</value>
+  </data>
+  <data name="custpage_oldlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>ค่าเสื่อมราคาล่าสุดของสินทรัพย์ดั้งเดิมจะยึดตามจำนวนที่แยก</value>
+  </data>
+
+  <!-- Asset Disposal -->
+  <data name="custrecord_assetdisposal_title" page="assetdisposal" xml:space="preserve">
+    <value>การขาย/จำหน่ายจ่ายโอนสินทรัพย์</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetdisposal" xml:space="preserve">
+    <value>ข้อมูลหลัก</value>
+  </data>
+  <data name="custpage_group_disposaldetail" page="assetdisposal" xml:space="preserve">
+    <value>รายละเอียดการจำหน่ายจ่ายโอน</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetdisposal" xml:space="preserve">
+    <value>วิธีภาษี</value>
+  </data>
+  <data name="custpage_assetid" page="assetdisposal" xml:space="preserve">
+    <value>ชื่อ/ID สินทรัพย์</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetdisposal" xml:space="preserve">
+    <value>เลือก ID หรือชื่อสินทรัพย์ที่คุณต้องการจำหน่าย</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetdisposal" xml:space="preserve">
+    <value>คำอธิบายสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetdisposal" xml:space="preserve">
+    <value>ซีเรียลนัมเบอร์ของสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetdisposal" xml:space="preserve">
+    <value>หมายเลขสินทรัพย์อื่น</value>
+  </data>
+  <data name="custpage_assettype" page="assetdisposal" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetcost" page="assetdisposal" xml:space="preserve">
+    <value>ต้นทุนดั้งเดิม</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetdisposal" xml:space="preserve">
+    <value>ต้นทุนปัจจุบัน</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetdisposal" xml:space="preserve">
+    <value>มูลค่าคงเหลือ</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetdisposal" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetdisposal" xml:space="preserve">
+    <value>ช่วงชีวิตของสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetdisposal" xml:space="preserve">
+    <value>มูลค่าทางบัญชีปัจจุบัน</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetdisposal" xml:space="preserve">
+    <value>ค่าเสื่อมราคาจนถึงวันนี้</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetdisposal" xml:space="preserve">
+    <value>รอบบัญชีค่าเสื่อมราคาล่าสุด</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetdisposal" xml:space="preserve">
+    <value>มูลค่าค่าเสื่อมราคาล่าสุด</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetdisposal" xml:space="preserve">
+    <value>วันที่ค่าเสื่อมราคาล่าสุด</value>
+  </data>
+  <data name="custpage_assetdeprperiod" page="assetdisposal" xml:space="preserve">
+    <value>รอบบัญชีค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetdisposal" xml:space="preserve">
+    <value>วิธีทบทวน</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetdisposal" xml:space="preserve">
+    <value>สถานะสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetdisposal" xml:space="preserve">
+    <value>ปริมาณ</value>
+  </data>
+  <data name="custpage_disposaldate" page="assetdisposal" xml:space="preserve">
+    <value>วันที่จำหน่ายจ่ายโอน</value>
+  </data>
+  <data name="custpage_disposaltype" page="assetdisposal" xml:space="preserve">
+    <value>ประเภทการจำหน่ายจ่ายโอน</value>
+  </data>
+  <data name="custpage_assetquantdisposed" page="assetdisposal" xml:space="preserve">
+    <value>จำนวนที่จำหน่ายจ่ายโอน</value>
+  </data>
+  <data name="custpage_disposalitem" page="assetdisposal" xml:space="preserve">
+    <value>ขายสินค้า</value>
+  </data>
+  <data name="custpage_customer" page="assetdisposal" xml:space="preserve">
+    <value>ลูกค้า</value>
+  </data>
+  <data name="custpage_salesamount" page="assetdisposal" xml:space="preserve">
+    <value>ยอดขาย</value>
+  </data>
+  <data name="custpage_taxcode" page="assetdisposal" xml:space="preserve">
+    <value>รหัสภาษีการขาย</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetdisposal" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetdisposal" xml:space="preserve">
+    <value>สถานที่ตั้ง</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdisposal" xml:space="preserve">
+    <value>สมุดบัญชี</value>
+  </data>
+  <data name="custpage_altmethod" page="assetdisposal" xml:space="preserve">
+    <value>วิธีอื่น</value>
+  </data>
+  <data name="custpage_html_assetdisposed" page="assetdisposal" xml:space="preserve">
+    <value>สินทรัพย์ไม่ถูกจำหน่ายจ่ายโอน!</value>
+  </data>
+  <data name="custpage_html_invoicefail" page="assetdisposal" xml:space="preserve">
+    <value>สร้างใบแจ้งหนี้สำหรับการขายสินทรัพย์ล้มเหลว</value>
+  </data>
+  <data name="custpage_html_checksetup" page="assetdisposal" xml:space="preserve">
+    <value>ตรวจสอบการตั้งค่าระเบียนข้อมูลสินทรัพย์เพื่อหาข้อมูลที่ไม่สามารถใช้งานด้วยได้ และ/หรือข้อมูลที่ขาดหาย</value>
+  </data>
+  <data name="custpage_html_journalfail" page="assetdisposal" xml:space="preserve">
+    <value>ยังไม่ได้สร้างรายการบันทึกในสมุดรายวันสำหรับการขายสินทรัพย์</value>
+  </data>
+  <data name="custpage_html_journal_writeofffail" page="assetdisposal" xml:space="preserve">
+    <value>ยังไม่ได้สร้างรายการบันทึกในสมุดรายวันสำหรับการจำหน่ายออกสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetquantdisposed_help" page="assetdisposal" xml:space="preserve">
+    <value>จำนวนที่จำหน่ายจ่ายโอนต้องไม่มากกว่าจำนวนของสินทรัพย์</value>
+  </data>
+  <data name="custpage_disposaldate_help" page="assetdisposal" xml:space="preserve">
+    <value>วันที่จำหน่ายจ่ายโอนไม่สามารถมาก่อนวันที่คิดค่าเสื่อมราคาครั้งล่าสุดได้</value>
+  </data>
+  <data name="custpage_disposalitem_help" page="assetdisposal" xml:space="preserve">
+    <value>เลือกได้เฉพาะสินค้าที่ไม่อยู่ในสินค้าคงคลังสำหรับการขายต่อ</value>
+  </data>
+  <data name="custpage_filterslocation_help" page="assetdisposal" xml:space="preserve">
+    <value>ถ้าคุณลักษณะเปิดใช้งานสินค้าคงคลังแบบหลายที่ตั้ง (MLI) จำหน่ายจ่ายโอนสินทรัพย์โดยการขายต้องตั้งค่าสถานที่ตั้ง ตามค่าดีฟอลต์ ค่าสถานที่ตั้งจะนำมาจากระเบียนข้อมูล FAM - สินทรัพย์ หากมี และไม่สามารถแก้ไขได้เพื่อป้องกันการโอนนสถานที่ตั้งโดยไม่มีการติดตาม หากไม่มีข้อมูลในระเบียนข้อมูลสินทรัพย์ คุณต้องเลือกค่าในรายการสถานที่ตั้งบนหน้าการขาย/การจำหน่ายจ่ายโอน</value>
+  </data>
+  <data name="custpage_salesamount_help" page="assetdisposal" xml:space="preserve">
+    <value>จำนวนการขายต้องมากกว่าศูนย์</value>
+  </data>
+  <data name="custpage_taxcode_help" page="assetdisposal" xml:space="preserve">
+    <value>เลือกรหัสภาษีที่เหมาะสมสำหรับบริษัทในเครือของลูกค้า</value>
+  </data>
+  <data name="custpage_salememo" page="assetdisposal" xml:space="preserve">
+    <value>สินทรัพย์ที่ขาย (0)</value>
+  </data>
+  <data name="custpage_writeoffmemo" page="assetdisposal" xml:space="preserve">
+    <value>สินทรัพย์ที่จำหน่ายออก (0)</value>
+  </data>
+  <data name="custpage_nodispacc" page="assetdisposal" xml:space="preserve">
+     <value>ไม่สามารถจำหน่ายสินทรัพย์ออกได้เพราะไม่ได้ตั้งค่าบัญชีการจำหน่ายจ่ายโอน:(0)</value>
+  </data>
+  <data name="custpage_inactiveacc" page="assetdisposal" xml:space="preserve">
+     <value>ไม่สามารถจำหน่ายสินทรัพย์ออกได้ เพราะบัญชีการจำหน่ายจ่ายโอนต่อไปนี้ไม่ได้เปิดใช้งาน:(0)</value>
+  </data>
+  <data name="custpage_invoicefail" page="assetdisposal" xml:space="preserve">
+     <value>สร้างใบแจ้งหนี้ล้มเหลว</value>
+  </data>
+  <data name="custpage_quantityerror" page="assetdisposal" xml:space="preserve">
+     <value>จำนวนที่จำหน่ายจ่ายโอนต้องอยู่ระหว่าง (0) และ (1)</value>
+  </data>
+
+  <!-- Asset Depreciation Schedule Report V2 (Portrait) -->
+  <data name="custrecord_deprecationschedule2_title" page="depreciationschedule2" xml:space="preserve">
+    <value>รายงานตารางเวลาค่าเสื่อมราคาของสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule2" xml:space="preserve">
+    <value>มูลค่าทางบัญชีสุทธิ</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>ค่าเสื่อมราคาตามช่วงเวลา</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule2" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule2" xml:space="preserve">
+    <value>บริษัทสาขา</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule2" xml:space="preserve">
+    <value>รวมรายการย่อย</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule2" xml:space="preserve">
+    <value>สถานที่ตั้ง</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule2" xml:space="preserve">
+    <value>แผนก</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule2" xml:space="preserve">
+    <value>คลาส</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule2" xml:space="preserve">
+    <value>เลือก</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule2" xml:space="preserve">
+    <value>วันที่เริ่มต้น</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule2" xml:space="preserve">
+    <value>วันที่สิ้นสุด</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule2" xml:space="preserve">
+    <value>สินทรัพย์ทั้งหมด</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule2" xml:space="preserve">
+    <value>สินทรัพย์ทั้งหมดยกเว้นที่เช่าซื้อ</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule2" xml:space="preserve">
+    <value>เช่าซื้อเท่านั้น</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>วิธีการทางบัญชี</value>
+  </data>
+  <data name="custpage_html_asset" page="depreciationschedule2" xml:space="preserve">
+    <value>สินทรัพย์</value>
+  </data>
+  <data name="custpage_message_filestorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>ไม่สามารถเก็บรักษาข้อมูลชั่วคราวที่จำเป็นต่อรายงานได้ (nlapiSubmitFile)</value>
+  </data>
+  <data name="custpage_message_temporarydata" page="depreciationschedule2" xml:space="preserve">
+    <value>ข้อมูลชั่วคราวที่จำเป็นสำหรับรายงานตารางเวลาค่าเสื่อมราคาในการจัดการสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custpage_html_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>ตารางเวลาค่าเสื่อมราคาสินทรัพย์ - ค่าเสื่อมราคาตามช่วงเวลา</value>
+  </data>
+  <data name="custpage_html_nbv" page="depreciationschedule2" xml:space="preserve">
+    <value>ตารางเวลาค่าเสื่อมราคาสินทรัพย์ - มูลค่าทางบัญชีสุทธิ</value>
+  </data>
+  <data name="custpage_html_periodtotal" page="depreciationschedule2" xml:space="preserve">
+    <value>รวมช่วงเวลา</value>
+  </data>
+  <data name="custpage_html_assetno" page="depreciationschedule2" xml:space="preserve">
+    <value>หมายเลขสินทรัพย์</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="depreciationschedule2" xml:space="preserve">
+    <value>คำอธิบายสินทรัพย์</value>
+  </data>
+  <data name="custpage_deprschedreport" page="depreciationschedule2" xml:space="preserve">
+    <value>รายงานตารางเวลาค่าเสื่อมราคาของการจัดการสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custpage_html_reporttruncated" page="depreciationschedule2" xml:space="preserve">
+    <value>รายงานถูกตัด เนื่องจากถึงขนาดการเก็บรักษาสูงสุดแล้ว</value>
+  </data>
+  <data name="custpage_message_reportstorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>ไม่สามารถเก็บรักษาผลของรายงานได้ (nlapiSubmitFile)</value>
+  </data>
+  <data name="custpage_html_fam" page="depreciationschedule2" xml:space="preserve">
+    <value>การจัดการสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custpage_html_noassetfound" page="depreciationschedule2" xml:space="preserve">
+    <value>ไม่พบสินทรัพย์สำหรับรายงานตารางเวลา</value>
+  </data>
+
+  <!-- Asset Creation Status -->
+  <data name="custrecord_assetcreation_title" page="assetcreation" xml:space="preserve">
+    <value>การสร้างสินทรัพย์ใหม่</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetcreation" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetcreation" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetcreation" xml:space="preserve">
+    <value>รวมรายการย่อย</value>
+  </data>
+  <data name="custrecord_creationstatus_title" page="assetcreation" xml:space="preserve">
+    <value>สถานะการสร้างสินทรัพย์</value>
+  </data>
+  <data name="custrecord_html_currentstatus" page="assetcreation" xml:space="preserve">
+    <value>สถานะปัจจุบัน</value>
+  </data>
+  <data name="custrecord_resultstatus" page="assetcreation" xml:space="preserve">
+    <value>สิ่งต่างๆ อยู่ที่ไหนบ้าง?</value>
+  </data>
+  <data name="custrecord_generationcomplete" page="assetcreation" xml:space="preserve">
+    <value>สร้างสินทรัพย์เสร็จสมบูรณ์</value>
+  </data>
+  <data name="custrecord_creatingasset" page="assetcreation" xml:space="preserve">
+    <value>การสร้างสินทรัพย์สำหรับประเภทสินทรัพย์: (0)</value>
+  </data>
+  <data name="custrecord_transactionprocessed" page="assetcreation" xml:space="preserve">
+    <value>ประมวลผลแล้ว (0) ธุรกรรม สร้างสินทรัพย์ใหม่แล้ว (1)</value>
+  </data>
+  <data name="custrecord_allassettypes" page="assetcreation" xml:space="preserve">
+    <value>ประเภทสินทรัพย์ทั้งหมด</value>
+  </data>
+
+  <!-- Asset Revaluation -->
+  <data name="custrecord_assetrevaluation_title" page="assetrevaluation" xml:space="preserve">
+    <value>การประเมินราคาสินทรัพย์</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetrevaluation" xml:space="preserve">
+    <value>ข้อมูลหลัก</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetrevaluation" xml:space="preserve">
+    <value>เลือก ID หรือชื่อของสินทรัพย์ที่คุณต้องการประเมินค่า</value>
+  </data>
+  <data name="custpage_assetid" page="assetrevaluation" xml:space="preserve">
+    <value>ชื่อ/ID สินทรัพย์</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetrevaluation" xml:space="preserve">
+    <value>คำอธิบายสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetrevaluation" xml:space="preserve">
+    <value>ซีเรียลนัมเบอร์ของสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetrevaluation" xml:space="preserve">
+    <value>หมายเลขสินทรัพย์อื่น</value>
+  </data>
+  <data name="custpage_assettype" page="assetrevaluation" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetrevaluation" xml:space="preserve">
+    <value>ต้นทุนปัจจุบัน</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>มูลค่าคงเหลือ</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetrevaluation" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_depmethodlbl" page="clientpage" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>ช่วงชีวิตของสินทรัพย์</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetrevaluation" xml:space="preserve">
+    <value>มูลค่าทางบัญชีปัจจุบัน</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetrevaluation" xml:space="preserve">
+    <value>วิธีทบทวน</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetrevaluation" xml:space="preserve">
+    <value>สถานะสินทรัพย์</value>
+  </data>
+  <data name="custpage_writedownamount" page="assetrevaluation" xml:space="preserve">
+    <value>มูลค่าที่บันทึก</value>
+  </data>
+  <data name="custpage_newresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>มูลค่าคงเหลือที่ปรับแล้ว</value>
+  </data>
+  <data name="custpage_newlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>ช่วงชีวิตที่ปรับแล้ว</value>
+  </data>
+  <data name="custpage_newdeprmethod" page="assetrevaluation" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคาที่ปรับแล้ว</value>
+  </data>
+  <data name="custpage_revaluationmemo" page="assetrevaluation" xml:space="preserve">
+    <value>หมายเลขอ้างอิงธุรกรรม</value>
+  </data>
+  <data name="custpage_revaluationdate" page="assetrevaluation" xml:space="preserve">
+    <value>วันที่ธุรกรรม</value>
+  </data>
+  <data name="custpage_lastdeprperiod" page="clientpage" xml:space="preserve">
+    <value>รอบบัญชีค่าเสื่อมราคาล่าสุด</value>
+  </data>
+  <data name="custpage_residualvalueerrror" page="assetrevaluation" xml:space="preserve">
+    <value>มูลค่าคงเหลือเกินต้นทุนดั้งเดิมหรือต้นทุนปัจจุบัน</value>
+  </data>
+  <data name="custpage_defaultrevmemo" page="assetrevaluation" xml:space="preserve">
+    <value>การประเมินราคาสินทรัพย์ (FAM)</value>
+  </data>
+  <data name="custpage_defaultwdmemo" page="assetrevaluation" xml:space="preserve">
+    <value>การบันทึกสินทรัพย์ (FAM)</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetrevaluation" xml:space="preserve">
+    <value>สมุดบัญชี</value>
+  </data>
+  <data name="custpage_writedownperc" page="assetrevaluation" xml:space="preserve">
+    <value>บันทึก %</value>
+  </data>
+  <data name="custpage_newdeprmethod_help" page="assetrevaluation" xml:space="preserve">
+    <value>วิธีการของค่าเสื่อมราคาใหม่ที่จะใช้เพื่อคิดค่าเสื่อมราคาของสินทรัพย์นี้</value>
+  </data>
+  <data name="custpage_newlifetime_help" page="assetrevaluation" xml:space="preserve">
+    <value>ช่วงชีวิตใหม่ของสินทรัพย์หลังจากประเมินราคา</value>
+  </data>
+  <data name="custpage_newresidualvalue_help" page="assetrevaluation" xml:space="preserve">
+    <value>มูลค่าคงเหลือใหม่ของสินทรัพยืหลังประเมินราคา</value>
+  </data>
+  <data name="custpage_writedownperc_help" page="assetrevaluation" xml:space="preserve">
+    <value>ป้อนเพื่อกรอกจำนวนที่บันทึกลงในรายการย่อยด้านล่างโดยอัตโนมัติ</value>
+  </data>
+  <data name="custpage_revaluationdate_help" page="assetrevaluation" xml:space="preserve">
+    <value>ป้อนวันที่ของรายการสมุดรายวันของธุรกรรมนี้</value>
+  </data>
+  <data name="custpage_revaluationmemo_help" page="assetrevaluation" xml:space="preserve">
+    <value>ป้อนหมายเลขอ้างอิงเพื่อระบุรายการสมุดรายวันของธุรกรรมนี้</value>
+  </data>
+  <data name="custpage_writedownamount_help" page="assetrevaluation" xml:space="preserve">
+    <value>ป้อนจำนวนที่ลงบันทึก จำนวนนี้จะถูกลบออกจากมูลค่าทางบัญชีสุทธิในปัจจุบัน</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetrevaluation" xml:space="preserve">
+    <value>เลือกสมุดบัญชีที่เชื่อมโยงกับสินทรัพย์นี้</value>
+  </data>
+  <data name="custpage_groupdeprerror" page="assetrevaluation" xml:space="preserve">
+      <value>ไม่สามารถประเมินค่าเสื่อมราคาอื่นในการคิดค่าเสื่อมราคากลุ่ม</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>ไม่สามารถประเมินค่าของระเบียนข้อมูลที่มีวันที่การประเมินค่าก่อนวันที่คิดค่าเสื่อมราคาล่าสุด</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>ไม่สามารถประเมินค่าของระเบียนข้อมูลที่มีวันที่ประเมินค่าก่อนวันที่คิดค่าเสื่อมราคาล่าสุด</value>
+  </data>
+  <data name="custpage_wdacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>ไม่่มีบัญชีการบันทึกหรือบัญชีการบันทึกไม่เปิดใช้งาน</value>
+  </data>
+  <data name="custpage_assetacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>ไม่มีบัญชีสินทรัพย์หรือบัญชีสินทรัพย์ไม่เปิดใช้งาน</value>
+  </data>
+  <data name="custpage_depracct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>ไม่มีบัญชีค่าเสื่อมราคาหรือบัญชีค่าเสื่อมราคาไม่เปิดใช้งาน</value>
+  </data>
+  <data name="custpage_deprchargeacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>ไม่มีบัญชีค่าธรรมเนียมค่าเสื่อมราคาหรือบัญชีค่าธรรมเนียมค่าเสื่อมราคาไม่เปิดใช้งาน</value>
+  </data>
+  <data name="custpage_plugin_not_parent_asset" page="assetrevaluation" xml:space="preserve">
+      <value>ID ระเบียนข้อมูลสินทรัพย์ที่ระบุไม่ใช่สินทรัพย์ Parent ของวิธีการทางภาษีที่จะประเมินราคา</value>
+  </data>
+  <data name="custpage_no_tax_or_asset" page="assetrevaluation" xml:space="preserve">
+      <value>ต้องระบุ ID ระเบียนข้อมูลสินทรัพย์หรือ ID วิธีการทางภาษีที่จะประเมินราคา</value>
+  </data>
+
+
+
+  <!-- Asset report -->
+  <data name="custrecord_assetregister_title" page="assetregister" xml:space="preserve">
+    <value>รายงานการลงทะเบียนสินทรัพย์</value>
+  </data>
+  <data name="custrecord_assetregisterdetail_title" page="assetregister" xml:space="preserve">
+    <value>รายงานรายละเอียดการลงทะเบียนสินทรัพย์</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetregister" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetregister" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetregister" xml:space="preserve">
+    <value>รวมรายการย่อย</value>
+  </data>
+  <data name="custpage_filtermsselect" page="assetregister" xml:space="preserve">
+    <value>เลือก</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetregister" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetregister" xml:space="preserve">
+    <value>สถานที่ตั้ง</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetregister" xml:space="preserve">
+    <value>แผนก</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetregister" xml:space="preserve">
+    <value>คลาส</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetregister" xml:space="preserve">
+    <value>วันที่เริ่มต้นของระยะเวลา</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetregister" xml:space="preserve">
+    <value>วันที่สิ้นสุดของระยะเวลา</value>
+  </data>
+  <data name="custpage_html_fam" page="assetregister" xml:space="preserve">
+    <value>การจัดการสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custpage_html_transdate" page="assetregister" xml:space="preserve">
+    <value>วันที่ธุรกรรม</value>
+  </data>
+  <data name="custpage_html_cost" page="assetregister" xml:space="preserve">
+    <value>ต้นทุน</value>
+  </data>
+  <data name="custpage_html_accdepreciation" page="assetregister" xml:space="preserve">
+    <value>ค่าเสื่อมราคาสะสม</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetregister" xml:space="preserve">
+    <value>NBV</value>
+  </data>
+  <data name="custpage_html_acquisitiondate" page="assetregister" xml:space="preserve">
+    <value>วันที่ได้รับ</value>
+  </data>
+  <data name="custpage_html_assettype" page="assetregister" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_html_assetmanagement" page="assetregister" xml:space="preserve">
+    <value>การจัดการสินทรัพย์ (0)</value>
+  </data>
+  <data name="custpage_html_assetname" page="assetregister" xml:space="preserve">
+    <value>ชื่อสินทรัพย์</value>
+  </data>
+  <data name="custpage_html_description" page="assetregister" xml:space="preserve">
+    <value>คำอธิบาย</value>
+  </data>
+  <data name="custpage_html_additions" page="assetregister" xml:space="preserve">
+    <value>ส่วนเพิ่มเติม</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetregister" xml:space="preserve">
+    <value>ค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetregister" xml:space="preserve">
+    <value>สินทรัพย์ทั้งหมด</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetregister" xml:space="preserve">
+    <value>สินทรัพย์ทั้งหมดยกเว้นที่เช่าซื้อ</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetregister" xml:space="preserve">
+    <value>เช่าซื้อเท่านั้น</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetregister" xml:space="preserve">
+    <value>วิธีการทางบัญชี</value>
+  </data>
+  <data name="custrecord_html_assetregisterdetail" page="assetregister" xml:space="preserve">
+    <value>รายละเอียดการลงทะเบียนสินทรัพย์</value>
+  </data>
+
+  <!--System Status -->
+  <data name="custrecord_systemstatus_title" page="systemstatus" xml:space="preserve">
+    <value>สถานะค่าเสื่อมราคาของสินทรัพย์</value>
+  </data>
+  <data name="custpage_currentstatus" page="systemstatus" xml:space="preserve">
+    <value>สถานะปัจจุบัน</value>
+  </data>
+  <data name="custpage_resultstatus" page="systemstatus" xml:space="preserve">
+    <value>สิ่งต่างๆ อยู่ที่ไหนบ้าง?</value>
+  </data>
+  <data name="custpage_depreciatestatus1" page="systemstatus" xml:space="preserve">
+    <value>ประเภทสินทรัพย์ที่คิดค่าเสื่อมราคา:</value>
+  </data>
+  <data name="custpage_deprcomplete" page="systemstatus" xml:space="preserve">
+    <value>เสร็จสมบูรณ์</value>
+  </data>
+  
+  <!--Generate History -->
+  <data name="custrecord_generatehistory_title" page="generatehistory" xml:space="preserve">
+    <value>สร้างประวัติสินทรัพย์</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="generatehistory" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="generatehistory" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="generatehistory" xml:space="preserve">
+    <value>รวมรายการย่อย</value>
+  </data>
+  <data name="custpage_filtersmethod" page="generatehistory" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod1" page="generatehistory" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา 1</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod2" page="generatehistory" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา 2</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod3" page="generatehistory" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา 3</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod4" page="generatehistory" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา 4</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod5" page="generatehistory" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา 5</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod6" page="generatehistory" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา 6</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod7" page="generatehistory" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา 7</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod8" page="generatehistory" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา 8</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod9" page="generatehistory" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา 9</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_ok" page="depreciationmethod" xml:space="preserve">
+    <value>ตกลง</value>
+  </data>
+  <data name="custpage_error" page="depreciationmethod" xml:space="preserve">
+    <value>ข้อผิดพลาด</value>
+  </data>
+
+  <!-- Asset Depreciation -->
+  <data name="custrecord_assetdepreciation_title" page="assetdepreciation" xml:space="preserve">
+    <value>สินทรัพย์ที่มีค่าเสื่อมราคา</value>
+  </data>
+  <data name="custfield_errormessage" page="assetdepreciation" xml:space="preserve">
+    <value>ข้อผิดพลาด</value>
+  </data>
+  <data name="custpage_futuredateerror" page="assetdepreciation" xml:space="preserve">
+    <value>วันที่ของช่วงเวลาค่าเสื่อมราคาไม่สามารถเป็นช่วงเวลาในอนาคตได้</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetdepreciation" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetdepreciation" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetdepreciation" xml:space="preserve">
+    <value>รวมรายการย่อย</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdepreciation" xml:space="preserve">
+    <value>สมุดบัญชี</value>
+  </data>
+  <data name="custpage_deprperiod" page="assetdepreciation" xml:space="preserve">
+    <value>รอบบัญชีค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_postperiod" page="assetdepreciation" xml:space="preserve">
+    <value>รอบบัญชีที่ลงรายการ</value>
+  </data>
+  <data name="custpage_deprmemo" page="assetdepreciation" xml:space="preserve">
+    <value>หมายเลขอ้างอิงของค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_assetdepreciation" page="assetdepreciation" xml:space="preserve">
+    <value>ค่าเสื่อมราคาของสินทรัพย์</value>
+  </data>
+  <data name="custpage_deprmemo_help" page="assetdepreciation" xml:space="preserve">
+    <value>ป้อนหมายเลขอ้างอิงค่าเสื่อมราคาที่จะใช้เป็นหมายเลขอ้างอิงฐาานบนสมุดรายวันทั้งหมดที่สร้างขึ้น เว้นว่างเพื่อใช้ค่าดีฟอลต์ของหมายเลขอ้างอิง</value>
+  </data>
+  <data name="custpage_deprperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>ป้อนวันทีุ่สุดท้ายซึ่งจะคิดค่าเสื่อมราคาสินทรัพย์ โปรดทราบว่าวันที่ลงบัญชีจะต้องเป็นวันสิ้นเดือนเสมอ</value>
+  </data>
+  <data name="custpage_postperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>เลือกรอบบัญชีที่คุณต้องการลงบัญชีธุรกรรมนี้ ถ้ารอบบัญชีปิด คุณจะไม่สามารถลงบัญชีในรอบบัญชีนั้นได้</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetdepreciation" xml:space="preserve">
+    <value>เลือกสมุดบัญชีที่เชื่อมโยงกับสินทรัพย์นี้</value>
+  </data>
+  <data name="client_depr_subsbooksmismatch" page="assetdepreciation" xml:space="preserve">
+    <value>สมุดบัญชีที่เลือกไม่ได้เชื่อมโยงกับบริษัทในเครือที่เลือก</value>
+  </data>
+
+  <!-- Depreciation Schedule Report -->
+  <data name="custrecord_depreciationschedule_title" page="depreciationschedule" xml:space="preserve">
+    <value>รายงานตารางเวลาค่าเสื่อมราคาของสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule" xml:space="preserve">
+    <value>ประเภทสินทรัพย์</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule" xml:space="preserve">
+    <value>มูลค่าทางบัญชีสุทธิ</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule" xml:space="preserve">
+    <value>ค่าเสื่อมราคาตามช่วงเวลา</value>
+  </data>
+  <data name="custpage_saveresults" page="depreciationschedule" xml:space="preserve">
+    <value>บันทึกผลลัพธ์</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule" xml:space="preserve">
+    <value>บริษัทในเครือ</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule" xml:space="preserve">
+    <value>รวมรายการย่อย</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule" xml:space="preserve">
+    <value>สถานที่ตั้ง</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule" xml:space="preserve">
+    <value>แผนก</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule" xml:space="preserve">
+    <value>คลาส</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule" xml:space="preserve">
+    <value>เลือก</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule" xml:space="preserve">
+    <value>วิธีการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule" xml:space="preserve">
+    <value>วันที่เริ่มต้น</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule" xml:space="preserve">
+    <value>วันที่สิ้นสุด</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule" xml:space="preserve">
+    <value>สินทรัพย์ทั้งหมด</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule" xml:space="preserve">
+    <value>สินทรัพย์ทั้งหมดยกเว้นที่เช่าซื้อ</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule" xml:space="preserve">
+    <value>เช่าซื้อเท่านั้น</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule" xml:space="preserve">
+    <value>วิธีการทางบัญชี</value>
+  </data>
+  <data name="custpage_filterenddate_help" page="depreciationschedule" xml:space="preserve">
+    <value>ป้อนหรือเลือกวันที่สิ้นสุดของรอบบัญชีรายงานที่คุณต้องการ</value>
+  </data>
+  <data name="custpage_filterstartdate_help" page="depreciationschedule" xml:space="preserve">
+    <value>ป้อนหรือเลือกวันที่เริ่มต้นสำหรับรอบบัญชีรายงานที่คุณต้องการ</value>
+  </data>
+  <data name="custpage_netbookvalue_help" page="depreciationschedule" xml:space="preserve">
+    <value>ทำเครื่องหมายในกล่องนี้ถ้าคุณต้องการให้แสดงเฉพาะการคาดการณ์มูลค่าทางบัญชีสุทธิประจำเดือนในรายงาน HTML</value>
+  </data>
+  <data name="custpage_perioddepr_help" page="depreciationschedule" xml:space="preserve">
+    <value>ทำเครื่องหมายในกล่องนี้ถ้าคุณต้องการให้แสดงเฉพาะการคาดการณ์ค่าเสื่อมราคาประจำเดือนในรายงาน HTML</value>
+  </data>
+  <data name="custpage_saveresults_help" page="depreciationschedule" xml:space="preserve">
+    <value>ใช้ บันทึกผลลัพธ์ เพื่อสร้างรายการตารางเวลาการคิดค่าเสื่อมราคาสำหรับช่วงชีวิตของสินทรัพย์ และสำหรับบันทึกรายการในระเบียนข้อมูลสินทรัพย์ เมื่อทำเครื่องหมายที่ตัวเลือก บันทึกผลลัพธ์ ระบบจะไม่สนใจวันที่เริ่มต้น วันที่สิ้นสุด มูลค่าทางบัญชีสุทธิ และค่าเสื่อมราคาตามช่วงเวลา เพื่อให้แน่ใจว่าตารางประวัติค่าเสื่อมราคาจะมีตารางเวลาการคิดค่าเสื่อมราคาที่ครบถ้วนสำหรับช่วงชีวิตของสินทรัพย์เสมอ ค่าที่ป้อนในฟิลด์วันที่เริ่มต้น วันที่สิ้นสุด มูลค่าทางบัญชีสุทธิ และค่าเสื่อมราคาตามช่วงเวลาจะนำมาใช้สำหรับรายงาน HTML ที่สร้างขึ้น</value>
+  </data>
+
+  <!-- Bulk Transfer -->
+  <data name="custpage_bulktransfer_title" page="bulktransfer" xml:space="preserve">
+    <value>การโอนสินทรัพย์จำนวนมาก</value>
+  </data>
+  <data name="custpage_uploadhelp" page="bulktransfer" xml:space="preserve">
+    <value>คุณสามารถอัพโหลดไฟล์นำเข้า CSV เพื่ออัปเดตบริษัทในเครือ แผนก คลาส สถานที่ตั้ง และประเภทสินทรัพย์สำหรับสินทรัพย์หลายรายการได้</value>
+  </data>
+  <data name="custpage_settinghelp" page="bulktransfer" xml:space="preserve">
+    <value>ถ้าต้องการบันทึกรายการบันทึกในสมุดรายวันเมื่อโอน โปรดตรวจดูให้แน่ใจว่าได้เปิดใช้งานการกำหนดค่าการลงบัญชีบนแผนก คลาส หรือสถานที่ตั้ง (สินทรัพย์ถาวร &gt; การตั้งค่า &gt; การตั้งค่าระบบ)</value>
+  </data>
+  <data name="custpage_uploadboth" page="bulktransfer" xml:space="preserve">
+    <value>โปรดอย่าอัพโหลดไฟล์ CSV โดยโอนทั้งข้อมูลประเภทสินทรัพย์และบริษัทในเครือ</value>
+  </data>
+  <data name="custpage_samplefile" page="bulktransfer" xml:space="preserve">
+    <value>คลิก (ที่นี่) เพื่อดูไฟล์ตัวอย่าง</value>
+  </data>
+  <data name="custpage_nofileuploaderror" page="bulktransfer" xml:space="preserve">
+    <value>อัพโหลดไฟล์ไม่สำเร็จ</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_html_formulainstruction" page="depreciationmethodformula" xml:space="preserve">
+    <value>ใช้ตัวดำเนินการและสัญลักษณ์ต่อไปนี้ (ไวต่อตัวอักษรเล็กใหญ่) เพื่อกำหนดสูตรของค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_html_formulahelp1" page="depreciationmethodformula" xml:space="preserve">
+    <value>^ (กับกำลังของ ตัวอย่างเช่น 5^2 = 5 ยกกำลังสอง)</value>
+  </data>
+  <data name="custpage_html_formulahelp2" page="depreciationmethodformula" xml:space="preserve">
+    <value>() * / + -</value>
+  </data>
+  <data name="custpage_html_formulahelp3" page="depreciationmethodformula" xml:space="preserve">
+    <value>ตัวเลขใดๆ ที่มีทศนิยม (ตัวอย่างเช่น 12345.67)</value>
+  </data>
+  <data name="custpage_html_formulahelp4" page="depreciationmethodformula" xml:space="preserve">
+    <value>~ (สูงสุดสองค่า ตัวอย่างเช่น 2~5 = 5)</value>
+  </data>
+  <data name="custpage_html_formulahelp5" page="depreciationmethodformula" xml:space="preserve">
+    <value>OC (ต้นทุนดั้งเดิมของสินทรัพย์)</value>
+  </data>
+  <data name="custpage_html_formulahelp6" page="depreciationmethodformula" xml:space="preserve">
+    <value>CC (ต้นทุนปัจจุบันของสินทรัพย์)</value>
+  </data>
+  <data name="custpage_html_formulahelp7" page="depreciationmethodformula" xml:space="preserve">
+    <value>NB (มูลค่าทางบัญชีสุทธิ)</value>
+  </data>
+  <data name="custpage_html_formulahelp8" page="depreciationmethodformula" xml:space="preserve">
+    <value>RV (มูลค่าคงเหลือ)</value>
+  </data>
+  <data name="custpage_html_formulahelp9" page="depreciationmethodformula" xml:space="preserve">
+    <value>AL (ช่วงชีวิตของสินทรัพย์)</value>
+  </data>
+  <data name="custpage_html_formulahelp10" page="depreciationmethodformula" xml:space="preserve">
+    <value>CP (ช่วงเวลาปัจจุบัน หรือ อายุปัจจุบัน)</value>
+  </data>
+  <data name="custpage_html_formulahelp11" page="depreciationmethodformula" xml:space="preserve">
+    <value>TD (มูลค่ารวมของค่าเสื่อมราคา)</value>
+  </data>
+  <data name="custpage_html_formulahelp12" page="depreciationmethodformula" xml:space="preserve">
+    <value>CU (การใช้ปัจจุบัน)</value>
+  </data>
+  <data name="custpage_html_formulahelp13" page="depreciationmethodformula" xml:space="preserve">
+    <value>LU (การใช้ช่วงชีวิต)</value>
+  </data>
+  <data name="custpage_html_formulahelp14" page="depreciationmethodformula" xml:space="preserve">
+    <value>LD (มูลค่าค่าเสื่อมราคาล่าสุด)</value>
+  </data>
+  <data name="custpage_html_formulahelp15" page="depreciationmethodformula" xml:space="preserve">
+    <value>DH (จำนวนวันที่อยู่ในช่วงเวลาปัจจุบัน)</value>
+  </data>
+  <data name="custpage_html_formulahelp16" page="depreciationmethodformula" xml:space="preserve">
+    <value>PB (มูลค่าทางบัญชีสุทธิของปีก่อนหน้า)</value>
+  </data>
+  <data name="custpage_html_formulahelp17" page="depreciationmethodformula" xml:space="preserve">
+    <value>DP (จำนวนวันในรอบบัญชี)</value>
+  </data>
+  <data name="custpage_html_formulahelp18" page="depreciationmethodformula" xml:space="preserve">
+    <value>FY (จำนวนวันในปีงบประมาณ)</value>
+  </data>
+
+  <!-- BG Process Record -->
+  <data name="custpage_bgprocess_deleteerror" page="bgprocess" xml:space="preserve">
+    <value>ลบอินสแตนซ์กระบวนการนี้ไม่ได้เพราะสถานะกระบวนการ: (0)</value>
+  </data>
+  <data name="list_bgprocess_queue" page="bgprocess" xml:space="preserve">
+    <value>ที่จัดคิว</value>
+  </data>
+  <data name="list_bgprocess_inprogress" page="bgprocess" xml:space="preserve">
+    <value>กำลังดำเนินการ</value>
+  </data>
+  <data name="list_bgprocess_completed" page="bgprocess" xml:space="preserve">
+    <value>เสร็จสมบูรณ์</value>
+  </data>
+  <data name="list_bgprocess_completedwitherrors" page="bgprocess" xml:space="preserve">
+    <value>เสร็จสมบูรณ์โดยมีข้อผิดพลาด</value>
+  </data>
+  <data name="list_bgprocess_failed" page="bgprocess" xml:space="preserve">
+    <value>ล้มเหลว</value>
+  </data>
+  <data name="list_bgprocess_revert" page="bgprocess" xml:space="preserve">
+    <value>ล้มเหลว - กำลังเปลี่ยนกลับคืน</value>
+  </data>
+
+  <!-- BG Queue Record -->
+  <data name="custpage_bgqueue_deleteerror" page="bgqueue" xml:space="preserve">
+    <value>ลบคิวอินสแตนซ์นี้ไม่ได้เพราะสถานะอินสแตนซ์กระบวนการที่เชื่อมโยง: (0)</value>
+  </data>
+
+  <!-- CLIENT SIDE MESSAGES AND ALERTS -->
+  <data name="client_assetrecord_notnegative" page="clientpage" xml:space="preserve">
+     <value>(0) ไม่สามารถเป็นค่าลบได้</value>
+  </data>
+  <data name="client_assetrecord_greatererror" page="clientpage" xml:space="preserve">
+     <value>(0) ไม่สามารถสูงกว่า (1)</value>
+  </data>
+  <data name="client_systemsetup_negativecheck" page="clientpage" xml:space="preserve">
+     <value>มีสินทรัพย์ที่มีต้นทุนเป็นลบอยู่ ไม่ได้รับอนุญาตให้ปิดใช้ตัวเลือกนี้ในขณะนี้ โปรดตรวจสอบศูนย์การช่วยเหลือ เพื่อดูรายละเอียดเพิ่มเติม</value>
+  </data>
+  <data name="client_subdept_notmatch" page="clientpage" xml:space="preserve">
+     <value>บริษัทในเครือและแผนกไม่ตรงกัน</value>
+  </data>
+  <data name="client_subloc_notmatch" page="clientpage" xml:space="preserve">
+     <value>บริษัทในเครือและสถานที่ตั้งไม่ตรงกัน</value>
+  </data>
+  <data name="client_subclass_notmatch" page="clientpage" xml:space="preserve">
+     <value>บริษัทในเครือและคลาสไม่ตรงกัน</value>
+  </data>
+  <data name="client_assetrecord_outdated" page="clientpage" xml:space="preserve">
+     <value>ระเบียนข้อมูลสินทรัพย์ที่คุณกำลังทำงานด้วยเพิ่งเปลี่ยนแปลงไป คลิกรีเฟรชเพื่อดูระเบียนข้อมูลสินทรัพย์ล่าสุด</value>
+  </data>
+  <data name="client_assetrecord_dateerror" page="clientpage" xml:space="preserve">
+     <value>วันที่เริ่มต้นจะต้องมาก่อนวันที่สิ้นสุด</value>
+  </data>
+  <data name="client_assetrecord_fieldadjust" page="clientpage" xml:space="preserve">
+     <value>(0) ถูกปรับโดยอัตโนมัติเนื่องจากมีการเปลี่ยนแปลงกับ (1)</value>
+  </data>
+  <data name="client_assetrecord_enddateadjust" page="clientpage" xml:space="preserve">
+    <value>(0) จะถูกปัดเศษลงเพื่อให้สอดคล้องกับค่า (1) ใหม่</value>
+  </data>
+  <data name="client_leavepage" page="clientpage" xml:space="preserve">
+     <value>ข้อมูลที่คุณป้อนในหน้านี้ยังไม่ถูกบันทึกและจะสูญหาย กด ตกลง เพื่อดำเนินการ</value>
+  </data>
+  <data name="client_accounting_methods" page="clientpage" xml:space="preserve">
+     <value>วิธีการทางบัญชี</value>
+  </data>
+  <data name="client_tax_methods" page="clientpage" xml:space="preserve">
+     <value>วิธีภาษี</value>
+  </data>
+  <data name="client_journals" page="clientpage" xml:space="preserve">
+     <value>สมุดรายวัน</value>
+  </data>
+  <data name="client_multibookdisabled" page="clientpage" xml:space="preserve">
+     <value>คุณไม่สามารถเลือกสมุดบัญชีได้หากปิดใช้งานคุณลักษณะการบัญชีแบบหลายสมุดบัญชี</value>
+  </data>
+  <data name="client_primarybook" page="clientpage" xml:space="preserve">
+     <value>คุณสามารถเลือกได้เฉพาะสมุดบัญชีรองสำหรับวิธีการทางภาษี</value>
+  </data>
+  <data name="client_pendingbook" page="clientpage" xml:space="preserve">
+     <value>คุณต้องเลือกสมุดบัญชีที่ใช้งานอยู่</value>
+  </data>
+  <data name="client_booksubsidiary_mismatch" page="clientpage" xml:space="preserve">
+     <value>โปรดเลือกสมุดบัญชีที่เชื่อมโยงกับบริษัทในเครือของสินทรัพย์</value>
+  </data>
+  <data name="client_invalid_deprenddate" page="clientpage" xml:space="preserve">
+     <value>(0) ที่ป้อนไม่ถูกต้องสำหรับค่า (1) และ (2)</value>
+  </data>
+  <data name="client_enable_bypass" page="clientpage" xml:space="preserve">
+     <value>เมื่อคุณเปิดใช้งานการกำหนดค่านี้ สคริปต์เหตุการณ์ผู้ใช้และเวิร์กโฟลว์ของระเบียนข้อมูลที่สร้างเองจะไม่ถูกทริกเกอร์ในระหว่างคิดค่าเสื่อมราคา ต้องการดำเนินการต่อหรือไม่</value>
+  </data>
+  <data name="client_asset_disposed" page="clientpage" xml:space="preserve">
+    <value>สินทรัพย์นี้ถูกจำหน่ายจ่ายโอนแล้ว</value>
+  </data>
+  <data name="client_select_book" page="clientpage" xml:space="preserve">
+    <value>โปรดเลือกสมุดบัญชี</value>
+  </data>
+  <data name="client_match_current_error" page="clientpage" xml:space="preserve">
+      <value>(0) ต้องไม่ตรงกับ (1) ปัจจุบัน</value>
+  </data>
+  <data name="client_newrvdiffsign" page="clientpage" xml:space="preserve">
+      <value>(0) มากกว่าค่าศูนย์ไม่ได้</value>
+  </data>
+  <data name="client_lesserthan_error" page="clientpage" xml:space="preserve">
+     <value>(0) น้อยกว่า (1) ไม่ได้</value>
+  </data>
+  <data name="client_newdepmeth_diffperiod" page="clientpage" xml:space="preserve">
+     <value>วิธีการคิดค่าเสื่อมราคาที่ปรับแล้วที่เลือกต้องมีรอบบัญชีการคิดค่าเสื่อมราคาเหมือนกับวิธีการคิดค่าเสื่อมราคาปัจจุบัน</value>
+  </data>
+  <data name="client_enter_value" page="clientpage" xml:space="preserve">
+    <value>โปรดป้อนค่าสำหรับ: (0)</value>
+  </data>
+  <data name="client_subsidiary_match" page="clientpage" xml:space="preserve">
+    <value>บริษัทในเครือของ (0) ที่เลือกไม่ตรงกับบริษัทในเครือของสินทรัพย์นี้</value>
+  </data>
+  <data name="client_report_confirm_delete" page="clientpage" xml:space="preserve">
+    <value>การดำเนินการนี้จะลบรายงานปัจจุบัน ต้องการดำเนินการต่อหรือไม่</value>
+  </data>
+  
+  <!-- FAM_Split_CS.js -->
+  <data name="client_assetsplit_invalidsplitquantity" page="clientpage" xml:space="preserve">
+    <value>จำนวนที่แยกไม่ถูกต้อง</value>
+  </data>
+  <data name="client_assetsplit_entervalue" page="clientpage" xml:space="preserve">
+    <value>โปรดใส่ค่าสำหรับการแยกจำนวน</value>
+  </data>
+  <data name="client_assetsplit_greatererror" page="clientpage" xml:space="preserve">
+    <value>จำนวนที่แยกไม่สามารถเท่ากับหรือมากกว่าจำนวนได้</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method" page="clientpage" xml:space="preserve">
+    <value>วิธีการบัญชี - ต้นทุนปัจจุบันจะต้องเท่ากับมูลค่าทางบัญชีบวกกับค่าเสื่อมราคาจนถึงวันนี้</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method2" page="clientpage" xml:space="preserve">
+    <value>คลิก Refresh เพื่อประเมินค่าอีกครั้งโดยใช้ต้นทุนปัจจุบัน</value>
+  </data>
+  <data name="client_assetsplit_equalerror_tax" page="clientpage" xml:space="preserve">
+    <value>วิธีภาษี (0) - ต้นทุนปัจจุบันจะต้องเท่ากับมูลค่าทางบัญชีบวกกับค่าเสื่อมราคาจนถึงวันนี้</value>
+  </data>
+  <data name="client_assetsplit_quantity1" page="clientpage" xml:space="preserve">
+    <value>การแยกสินทรัพย์จะทำได้กับสินทรัพย์ที่มีจำนวนมากกว่าหนึ่ง</value>
+  </data> 
+  <data name="client_assetsplit_invalid_status" page="clientpage" xml:space="preserve">
+    <value>ไม่สามารถแยกสินทรัพย์ที่เสื่อมค่าโดยสิ้นเชิงหรือจำหน่ายจ่ายโอนไปแล้วได้</value>
+  </data> 
+  
+  <!-- FAM_CS_AltMethod_Client.js -->
+  <data name="client_altmethod_subsidiaryrequired" page="clientpage" xml:space="preserve">
+     <value>ต้องกำหนดบริษัทในเครือสำหรับวิธีนี้</value>
+  </data>
+  <data name="client_altmethod_improperconvention" page="clientpage" xml:space="preserve">
+     <value>วิธีการคิดค่าเสื่อมราคาไม่สนับสนุนข้อตกลงที่เลือก</value>
+  </data>
+  <data name="client_altmethod_subsidiarymismatch" page="clientpage" xml:space="preserve">
+     <value>บริษัทในเครือของวิธีอื่นไม่ตรงกับบริษัทในเครือของสินทรัพย์นี้</value>
+  </data>
+
+
+  <!-- ncFAR_AltDeprClient.js -->
+  <data name="client_altdepr_assetalreadyused" page="clientpage" xml:space="preserve">
+     <value>(0) ถูกใช้โดยสินทรัพย์นี้แล้ว โปรดเลือกวิธีอื่นแบบอื่น</value>
+  </data>
+  <data name="client_altdepr_assetlifetimewarning" page="clientpage" xml:space="preserve">
+     <value>คำเตือน: ช่วงชีวิตของสินทรัพย์ที่กรอกเกินกว่าช่วงชีวิตของสินทรัพย์</value>
+  </data>
+  <data name="client_altdepr_assetlifetimeerror" page="clientpage" xml:space="preserve">
+     <value>ช่วงชีวิตอื่นของสินทรัพย์ไม่สามารถเกินกว่าช่วงชีวิตของสินทรัพย์ได้</value>
+  </data>
+  <data name="client_altdepr_nomethodfound" page="clientpage" xml:space="preserve">
+     <value>ไม่มีการระบุวิธีอื่นสำหรับบริษัทในเครือที่เลือก ไปที่ สินทรัพย์ถาวร &gt; การตั้งค่า &gt; วิธีอื่น เพื่ออัพเดตรายการนี้</value>
+  </data>
+  <data name="client_altdepr_disposedtaxmethod" page="clientpage" xml:space="preserve">
+     <value>ไม่สามารถกำหนดสมุดบัญชีให้กับวิธีภาษีที่จำหน่ายจ่ายโอนแล้ว/เสื่อมราคาโดยสิ้นเชิงแล้ว</value>
+  </data>
+
+  <!-- ncFAR_AssetRecordClient_AllForms.js -->
+  <data name="client_assetrecord_specifydepreciationrules" page="clientpage" xml:space="preserve">
+    <value>ต้องระบุกฎการคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="client_assetrecord_specifysubsidiary" page="clientpage" xml:space="preserve">
+    <value>ต้องระบุบริษัทในเครือ</value>
+  </data>
+  <data name="client_assetrecord_recordbeingpooled" page="clientpage" xml:space="preserve">
+     <value>ไม่อนุญาตให้เปลี่ยนบริษัทสาขา เนื่องจากระเบียนข้อมูลค่าเสื่อมราคาอื่นเป็นของพูล</value>
+  </data>
+  <data name="client_assetrecord_assetnotallowed" page="clientpage" xml:space="preserve">
+     <value>ไม่อนุญาตให้มีบัญชีสินทรัพย์ไม่ถาวรสำหรับบัญชีสินทรัพย์ โปรดติดต่อผู้ดูแลระบบ</value>
+  </data>
+  <data name="client_assetrecord_deprnotallowed" page="clientpage" xml:space="preserve">
+     <value>ไม่อนุญาตให้มีบัญชีสินทรัพย์ไม่ถาวรสำหรับบัญชีค่าเสื่อมราคา โปรดติดต่อผู้ดูแลระบบ</value>
+  </data>
+  <data name="client_assetrecord_cannotdelete" page="clientpage" xml:space="preserve">
+     <value>ลบสินทรัพย์นี้ไม่ได้เพราะคิดค่าเสื่อมราคาอยู่ โปรดจำหน่ายสินทรัพย์ออกถ้าคุณต้องการลบสินทรัพย์นี้</value>
+  </data>
+  <data name="client_assetrecord_confirmsubsidiarychange" page="clientpage" xml:space="preserve">
+    <value>โปรดตรวจดูให้แน่ใจว่าคุณได้บันทึกการเปลี่ยนแปลงก่อนที่คุณจะโอนสินทรัพย์ไปยังบริษัทในเครืออื่น มิฉะนั้น การเปลี่ยนแปลงจะถูกยกเลิก
+
+หรือคุณสามารถอัปเดตบริษัทในเครือก่อน แล้วค่อยทำการเปลี่ยนแปลงระเบียนข้อมูลสินทรัพย์เพิ่มเติม
+
+ต้องการดำเนินการต่อหรือไม่</value>
+  </data>
+
+  <!-- ncFAR_DefaultAltDeprClient.js -->
+  <data name="client_defaultaltdepr_alreadyused" page="clientpage" xml:space="preserve">
+     <value>(0) ถูกใช้โดยประเภทสินทรัพย์นี้แล้ว โปรดเลือกวิธีอื่นแบบอื่น</value>
+  </data>
+  <data name="client_defaultaltdepr_addnotallowed" page="clientpage" xml:space="preserve">
+    <value>ไม่อนุญาตให้สร้างระเบียนข้อมูล FAM - ค่าดีฟอลต์การคิดค่าเสื่อมราคาอื่น ใหม่จากรายการระเบียนข้อมูล
+
+โปรดไปที่ระเบียนข้อมูลประเภทสินทรัพย์ แล้วเพิ่มแท็บระเบียนข้อมูลใหม่จากสมุดบัญชี</value>
+  </data>
+  <!-- ncFAR_DeprMethodClientScripts.js script not found-->
+  <data name="client_deprmethod_failedtovalidate2" page="clientpage" xml:space="preserve">
+     <value>การยืนยันฟังก์ชันล้มเหลว</value>
+  </data>
+  <data name="client_deprmethod_validationfailed" page="clientpage" xml:space="preserve">
+     <value>การยืนยันล้มเหลว</value>
+  </data>
+  <data name="client_deprmethod_dp_annually_invalid" page="clientpage" xml:space="preserve">
+     <value>ไม่สามารถใช้ DP ได้หากรอบบัญชีค่าเสื่อมราคาเป็นรายปี</value>
+  </data>
+
+  <!-- Disposal Client Messages -->
+  <data name="client_disposal_alreadydisposed" page="clientpage" xml:space="preserve">
+     <value>สินทรัพย์นี้ถูกจำหน่ายจ่ายโอนแล้ว</value>
+  </data>
+  <data name="client_disposal_cannotbegreater" page="clientpage" xml:space="preserve">
+     <value>จำนวนที่จำหน่ายจ่ายโอนต้องไม่มากกว่าจำนวนของสินทรัพย์</value>
+  </data>
+  <data name="client_disposal_saleamountgreater" page="clientpage" xml:space="preserve">
+     <value>จำนวนการขายต้องมากกว่าศูนย์</value>
+  </data>
+  <data name="client_disposal_selectcustomer" page="clientpage" xml:space="preserve">
+     <value>โปรดเลือกลูกค้า</value>
+  </data>
+  <data name="client_disposal_selectsaleitem" page="clientpage" xml:space="preserve">
+     <value>โปรดเลือกรายการขาย</value>
+  </data>
+  <data name="client_disposal_selectlocation" page="clientpage" xml:space="preserve">
+     <value>โปรดเลือกสถานที่ตั้ง</value>
+  </data>
+  <data name="client_disposal_bgpexists" page="clientpage" xml:space="preserve">
+     <value>ขณะนี้สินทรัพย์นี้กำลังถูกดำเนินการเพื่อจำหน่ายจ่ายโอน โปรดรอให้กระบวนการจำหน่ายจ่ายโอนเสร็จสิ้นก่อนเริ่มจำหน่ายจ่ายโอนสินทรัพย์นี้</value>
+  </data>
+  <data name="client_disposal_acctnotexist" page="clientpage" xml:space="preserve">
+     <value>โปรดตรวจสอบให้แน่ใจว่าได้ตั้งค่าบัญชีหนี้สูญ การจำหน่ายจ่ายโอน ค่าเสื่อมราคา และสินทรัพย์และเปิดใช้งานก่อนดำเนินการต่อ
+ไม่สามารถจำหน่ายจ่ายโอนกได้สำหรับรายการต่อไปนี้: (0)</value>
+  </data>
+  <data name="client_disposal_dateearlierthanldd" page="clientpage" xml:space="preserve">
+    <value>วันที่จำหน่ายจ่ายโอน '(0)' จะอยู่ก่อนวันที่คิดค่าเสื่อมราคาล่าสุด '(1)' ไม่ได้</value>
+  </data>
+  <data name="client_disposal_plugin_no_assetid" page="clientpage" xml:space="preserve">
+    <value>ไม่ได้กำหนด ID สินทรัพย์</value>
+  </data>
+  <data name="client_disposal_plugin_invalid_type" page="clientpage" xml:space="preserve">
+    <value>ประเภทการจำหน่ายจ่ายโอนของสินทรัพย์ไม่ถูกต้อง: (0))</value>
+  </data>
+  
+  <!-- ncFAR_ProposalAltDeprClient.js -->
+  <data name="client_proposalaltdepr_selectbeingused" page="clientpage" xml:space="preserve">
+     <value>(0) ถูกใช้โดยข้อเสนอของสินทรัพย์นี้แล้ว โปรดเลือกวิธีอื่นแบบอื่น</value>
+  </data>
+
+  <!-- ncFAR_RevaluationClientScripts.js -->
+  <data name="client_revaluation_disposed" page="clientpage" xml:space="preserve">
+     <value>สินทรัพย์นี้ได้ถูกจำหน่ายจ่ายโอนแล้ว</value>
+  </data>
+  <data name="client_assetnotset" page="clientpage" xml:space="preserve">
+     <value>ไม่ตั้งตั้งค่าบัญชีสินทรัพย์ จึงไม่สามารถประเมินราคาได้</value>
+  </data>
+  <data name="client_revaluation_notsupplied" page="clientpage" xml:space="preserve">
+    <value>ต้องมีรายละเอียดการประเมินราคาอีกครั้งด้วย</value>
+  </data>
+  <data name="client_revaluation_zeronbv" page="clientpage" xml:space="preserve">
+    <value>สินทรัพย์ที่เสื่อมค่าโดยสินเชิงจะไม่สามารถประเมินราคาได้</value>
+  </data>
+  <data name="client_revaluation_zerocc" page="clientpage" xml:space="preserve">
+    <value>ไม่สามารถบันทึกกสินทรัพย์ที่มีต้นทุนปัจจุบันเป็นศูนย์ได้</value>
+  </data>
+  <data name="client_revaluation_rvoverzero" page="clientpage" xml:space="preserve">
+    <value>มูลค่าคงเหลือจะมากกว่าค่าศูนย์ไม่ได้</value>
+  </data>
+  <data name="client_role_nopermission" page="clientpage" xml:space="preserve">
+    <value>Role นี้ไม่มีสิทธิ์แก้ไขระเบียนข้อมูลสินทรัพย์</value>
+  </data>
+  <data name="client_status_nobgprocess" page="clientpage" xml:space="preserve">
+    <value>ไม่พบกระบวนการพื้นหลัง</value>
+  </data>
+  <data name="client_change_accountingbook" page="clientpage" xml:space="preserve">
+    <value>ไม่อนุญาตให้เปลี่ยนสมุดบัญชี</value>
+  </data>
+  <data name="client_revaluation_needcompute" page="clientpage" xml:space="preserve">
+    <value>ต้องประเมินราคาสินทรัพย์ก่อนจึงจะสามารถประมวลผลได้</value>
+  </data>
+  <data name="client_revaluation_bgpexists" page="clientpage" xml:space="preserve">
+     <value>ขณะนี้กำลังประมวลผลเพื่อประเมินราคาสินทรัพย์นี้อยู่ โปรดรอให้กระบวนการประเมินราคาเสร็จสิ้นก่อนเริ่มการประเมินราคาสินทรัพย์นี้อีก</value>
+  </data>
+  <data name="client_revaluation_wdacct_notset" page="clientpage" xml:space="preserve">
+     <value>ไม่สามารถประเมินราคาสินทรัพย์นี้ได้เพราะไม่ได้ตั้งค่าบัญชีการบันทึกต่อไปนี้:(0)</value>
+  </data>
+  <data name="client_revaluation_transdate_warn" page="clientpage" xml:space="preserve">
+     <value>วันที่ประเมินราคาของบางระเบียนข้อมูลมาก่อนวันที่คิดค่าเสื่อมราคาล่าสุด ระเบียนข้อมูลเหล่านี้จะไม่ถูกประเมินราคา </value>
+  </data>
+  <data name="client_greater_than_zerovalue" page="clientpage" xml:space="preserve">
+    <value>โปรดป้อนค่าที่มากกว่าศูนย์สำหรับ (0)</value>
+  </data>
+  <data name="client_change_zerowd" page="clientpage" xml:space="preserve">
+    <value>โปรดป้อนค่าที่ไม่ใช่ศูนย์สำหรับจำนวนที่ลงบันทึก</value>
+  </data>
+  <data name="client_no_reval_det_supplied" page="clientpage" xml:space="preserve">
+      <value>ต้องระบุรายละเอียดการประเมินราคา</value>
+  </data>
+
+  <!-- FAM_AssetTransfer_CS.js -->
+  <data name="client_assettransfer_subsidiarybookid" page="clientpage" xml:space="preserve">
+     <value>สินทรัพย์มีสมุดบัญชีที่ไม่เชื่อมโยงกับบริษัทในเครือปลายทาง ระบบจะโอนสินทรัพย์ แต่จะไม่รวมวิธีภาษีในสมุดบัญชีนี้</value>
+  </data>
+  <data name="client_assettransfer_subsidiarymethod" page="clientpage" xml:space="preserve">
+     <value>สินทรัพย์มีวิธีอื่นที่ไม่เชื่อมโยงกับบริษัทในเครือปลายทาง ระบบจะโอนสินทรัพย์ แต่จะไม่รวมวิธีภาษีในวิธีอื่นนี้</value>
+  </data>
+  <data name="client_assettransfer_emptysubat" page="clientpage" xml:space="preserve">
+     <value>บริษัทในเครือระเบียนข้อมูลสินทรัพย์/ประเภทสินทรัพย์จะว่างไม่ได้</value>
+  </data>
+  <data name="client_assettransfer_nochange" page="clientpage" xml:space="preserve">
+     <value>ค่าฟิลด์ปลายทางการโอนสินทรัพย์ต้องแตกต่างจากค่าดั้งเดิม</value>
+  </data>
+  <data name="client_assettransfer_notransferacct" page="clientpage" xml:space="preserve">
+     <value>ไม่มีระเบียนข้อมูลบัญชีการโอนสินทรัพย์สำหรับบริษัทในเครือต้นทางและปลายทาง</value>
+  </data>
+  <data name="client_assettransfer_bgpexists" page="clientpage" xml:space="preserve">
+     <value>ขณะนี้กำลังประมวลผลเพื่อโอนสินทรัพย์นี้อยู่ โปรดรอให้กระบวนการโอนเสร็จสิ้นก่อนเริ่มการโอนสินทรัพย์นี้อีก</value>
+  </data>
+  <data name="client_assettransfer_bulkbgpexists" page="clientpage" xml:space="preserve">
+     <value>ขณะนี้กำลังประมวลผลคำขอการโอนสินทรัพย์จำนวนมากอยู่ โปรดรอให้กระบวนการโอนเสร็จสิ้นก่อนเริ่มการโอนอื่น</value>
+  </data>
+  <data name="client_assettransfer_warnbgpexists" page="clientpage" xml:space="preserve">
+     <value>ขณะนี้กำลังประมวลผลคำขอการโอนสินทรัพย์จำนวนมากอยู่ คุณไม่สามารถส่งคำขอการโอนสินทรัพย์ใหม่ได้</value>
+  </data>
+  <data name="client_assettransfer_atassetacct" page="clientpage" xml:space="preserve">
+     <value>ประเภทสินทรัพย์ที่เลือกไม่มีบัญชีสินทรัพย์</value>
+  </data>
+  <data name="client_assettransfer_atdepracct" page="clientpage" xml:space="preserve">
+     <value>ประเภทสินทรัพย์ที่เลือกไม่มีบัญชีค่าเสื่อมราคา</value>
+  </data>
+  <data name="client_assettransfer_cdl_mandatory" page="clientpage" xml:space="preserve">
+     <value>ตั้งค่าแผนก/คลาส/สถานที่ตั้งเป็น &lt;ไม่มี&gt; ไม่ได้เพราะต้องกรอก</value>
+  </data>
+
+    <!-- FAM_AssetRecordTransfer.js -->
+  <data name="client_assettransfer_invalid_sub_bookid" xml:space="preserve">
+     <value>สมุดบัญชีของวิธีภาษีนี้ไม่เชื่อมโยงกับบริษัทในเครือปลายทาง ระบบจะไม่โอนวิธีภาษี</value>
+  </data>
+  <data name="client_assettransfer_invalid_sub_altmeth" xml:space="preserve">
+     <value>วิธีอื่นสำหรับวิธีภาษีนี้ไม่เชื่อมโยงกับบริษัทในเครือปลายทาง ระบบจะไม่โอนวิธีภาษี</value>
+  </data>
+  <data name="client_assettransfer_no_tax_meth_acct" xml:space="preserve">
+     <value>ไม่มีรายการวิธีอื่นและ ID สมุดบัญชีสำหรับวิธีภาษีนี้ในประเภทสินทรัพย์ปลายทาง บัญชีวิธีภาษีจะถูกปล่อยว่าง</value>
+  </data>
+  <data name="custpage_transfer_asset_undefined" xml:space="preserve">
+    <value>ไม่มีระเบียนข้อมูลสินทรัพย์สำหรับการโอน: (0)</value>
+  </data>
+
+    <!-- FAM_AssetTransferCSV.js -->
+    <data name="message_errorfile" page="assettransfercsv_ss" xml:space="preserve">
+        <value>เกิดข้อผิดพลาดในขณะเรียกข้อมูลไฟล์การโอนสินทรัพย์</value>
+    </data>
+    <data name="message_toomanyfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>มีฟิลด์มากเกินไป</value>
+    </data>
+    <data name="message_toofewfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>มีฟิลด์น้อยเกินไป</value>
+    </data>
+    <data name="message_duplicateasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>รายการ ID สินทรัพย์ซ้ำกัน: (0)</value>
+    </data>
+    <data name="message_headertoofew" page="assettransfercsv_ss" xml:space="preserve">
+        <value>ข้อมูลสำหรับการโอนสินทรัพย์ไม่สมบูรณ์ ไฟล์ต้องมีค่าของสินทรัพย์ และรายการใดรายการหนึ่งต่อไปนี้อย่างน้อยหนึ่งรายการ: ประเภทสินทรัพย์, บริษัทในเครือ, คลาส, แผนก และสถานที่ตั้ง</value>
+    </data>
+    <data name="message_headerassetmissing" page="assettransfercsv_ss" xml:space="preserve">
+        <value>โปรดใส่ค่าสำหรับสินทรัพย์</value>
+    </data>
+    <data name="message_headernotallowed" page="assettransfercsv_ss" xml:space="preserve">
+        <value>ไม่อนุญาตให้มีฟิลด์ส่วนหัว (0) ไฟล์สามารถมีได้เฉพาะส่วนหัวต่อไปนี้: สินทรัพย์, ประเภทสินทรัพย์, บริษัทในเครือ, คลาส, แผนก และสถานที่ตั้ง</value>
+    </data>
+    <data name="message_duplicateheader" page="assettransfercsv_ss" xml:space="preserve">
+        <value>มีอินสแตนซ์หลายอินสแตนซ์ของฟิลด์ส่วนหัว: (0) โปรดลบคอลัมน์ที่ไม่ถูกต้อง</value>
+    </data>
+    <data name="message_subsidiarybookid" page="assettransfercsv_ss" xml:space="preserve">
+        <value>สินทรัพย์มีสมุดบัญชีที่ไม่เชื่อมโยงกับบริษัทในเครือปลายทาง ระบบจะโอนสินทรัพย์ แต่จะไม่รวมวิธีภาษีในสมุดบัญชีนี้</value>
+    </data>
+    <data name="message_subsidiarymethod" page="assettransfercsv_ss" xml:space="preserve">
+        <value>สินทรัพย์มีวิธีอื่นที่ไม่เชื่อมโยงกับบริษัทในเครือปลายทาง ระบบจะโอนสินทรัพย์ แต่จะไม่รวมวิธีภาษีในวิธีอื่นนี้</value>
+    </data>
+    <data name="message_emptysubat" page="assettransfercsv_ss" xml:space="preserve">
+        <value>บริษัทในเครือระเบียนข้อมูลสินทรัพย์/ประเภทสินทรัพย์จะว่างไม่ได้</value>
+    </data>
+    <data name="message_nochange" page="assettransfercsv_ss" xml:space="preserve">
+        <value>ค่าฟิลด์ปลายทางการโอนสินทรัพย์ต้องแตกต่างจากค่าดั้งเดิม</value>
+    </data>
+    <data name="message_notransferacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>ไม่มีระเบียนข้อมูลบัญชีการโอนสินทรัพย์สำหรับบริษัทในเครือต้นทางและปลายทาง</value>
+    </data>
+    <data name="message_subdept_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>บริษัทในเครือและแผนกไม่ตรงกัน</value>
+    </data>
+    <data name="message_subloc_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>บริษัทในเครือและสถานที่ตั้งไม่ตรงกัน</value>
+    </data>
+    <data name="message_subclass_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>บริษัทในเครือและคลาสไม่ตรงกัน</value>
+    </data>
+    <data name="message_atassetacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>ประเภทสินทรัพย์ที่เลือกไม่มีบัญชีสินทรัพย์</value>
+    </data>
+    <data name="message_atdepracct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>ประเภทสินทรัพย์ที่เลือกไม่มีบัญชีค่าเสื่อมราคา</value>
+    </data>
+    <data name="message_cdl_mandatory" page="assettransfercsv_ss" xml:space="preserve">
+        <value>ยกเลิกการตั้งค่าแผนก/คลาส/สถานที่ตั้งไม่ได้เพราะต้องกรอก</value>
+    </data>
+    <data name="message_invalidasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>ไม่มีสินทรัพย์หรือสินทรัพย์ไม่ได้ใช้งานอยู่</value>
+    </data>
+    <data name="message_onetransfertype" page="assettransfercsv_ss" xml:space="preserve">
+        <value>ไม่อนุญาตให้โอนประเภทสินทรัพย์ขณะโอนบริษัทในเครือ คลาส แผนก หรือสถานที่ตั้งอื่น</value>
+    </data>
+    <data name="message_nonexistentfld" page="assettransfercsv_ss" xml:space="preserve">
+        <value>ฟิลด์ปลายทางบางฟิลด์ไม่มีอยู่หรือไม่ได้ใช้งาน</value>
+    </data>
+
+  <!-- Ext Js Messages -->
+  <data name="extjs_message_title" page="clientpage" xml:space="preserve">
+    <value>สินทรัพย์ถาวร</value>
+  </data>
+  <data name="extjs_processing" page="clientpage" xml:space="preserve">
+    <value>การประมวลผล</value>
+  </data>
+  <data name="extjs_reading_asset" page="clientpage" xml:space="preserve">
+    <value>กำลังอ่านสินทรัพย์</value>
+  </data>
+  <data name="extjs_clearing_data" page="clientpage" xml:space="preserve">
+    <value>กำลังล้างข้อมูล</value>
+  </data>
+  <data name="extjs_loading_data" page="clientpage" xml:space="preserve">
+    <value>กำลังโหลดข้อมูล</value>
+  </data>
+  <data name="extjs_refreshing_data" page="clientpage" xml:space="preserve">
+    <value>กำลังรีเฟรชข้อมูล</value>
+  </data>
+  <data name="extjs_initializing" page="clientpage" xml:space="preserve">
+    <value>กำลังเตรียมใช้งาน</value>
+  </data>
+  <data name="extjs_initializing_error" page="clientpage" xml:space="preserve">
+    <value>เกิดข้อผิดพลาดในการเตรียมใช้งาน</value>
+  </data>
+  <data name="extjs_reloading" page="clientpage" xml:space="preserve">
+    <value>กำลังโหลดใหม่</value>
+  </data>
+  <data name="extjs_done" page="clientpage" xml:space="preserve">
+     <value>เสร็จสิ้น</value>
+  </data>
+
+
+  <!-- Background Processing -->
+  <data name="custpage_error_internal" xml:space="preserve">
+    <value>(Suitelet นี้สำหรับใช้ภายในเท่านั้น)</value>
+  </data>
+  <data name="custpage_error_postmethod" xml:space="preserve">
+    <value>วิธีลงบัญชีที่ไม่คาดคิด</value>
+  </data>
+
+  <!-- Constants -->
+  <data name="custpage_constant_accountingmethod" xml:space="preserve">
+    <value>วิธีการทางบัญชี</value>
+  </data>
+  <data name="custpage_constant_allassets" xml:space="preserve">
+    <value>สินทรัพย์ทั้งหมด</value>
+  </data>
+  <data name="custpage_constant_exceptleased" xml:space="preserve">
+    <value>สินทรัพย์ทั้งหมดยกเว้นที่เช่าซื้อ</value>
+  </data>
+  <data name="custpage_constant_onlyaassets" xml:space="preserve">
+    <value>สินทรัพย์ที่เช่าซื้อเท่านั้น</value>
+  </data>
+
+
+  <!-- Server Scripts/Undefined -->
+  <data name="custpage_html_tangible" xml:space="preserve">
+    <value>สินทรัพย์ถาวรที่ชัดเจน</value>
+  </data>
+  <data name="custpage_desc_schedulereport" xml:space="preserve">
+    <value>รายงานตารางเวลาการจัดการสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custpage_html_fam" xml:space="preserve">
+    <value>การจัดการสินทรัพย์ถาวร</value>
+  </data>
+  <data name="custpage_accounts_missing" xml:space="preserve">
+    <value>ไม่มีการลงบัญชีบางรายการ</value>
+  </data>
+  <data name="custpage_transfer_account_missing" xml:space="preserve">
+    <value>ไม่สามารถค้นหาบัญชีการโอนที่ถูกต้องจากย่อย: (0) ไปยังย่อย: (1)</value>
+  </data>
+  <data name="custpage_transfer_tax_method_account_missing" xml:space="preserve">
+    <value>ไม่มีวิธีภาษีบัญชีสินทรัพย์/การคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="custpage_errordepreciation" xml:space="preserve">
+    <value>การคำนวณภาษีล้มเหลว</value>
+  </data>
+  <data name="custpage_transactionfailed" xml:space="preserve">
+    <value>ธุรกรรมล้มเหลว</value>
+  </data>
+  <data name="custpage_fields_missing" xml:space="preserve">
+    <value>โปรดป้อนค่าสำหรับ: (0)</value>
+  </data>
+  <data name="custpage_fields_inactive" xml:space="preserve">
+    <value>ฟิลด์ต่อไปนี้ไม่ได้ใช้งานอยู่: (0)</value>
+  </data>
+  <data name="custpage_outside_period" xml:space="preserve">
+    <value>วันที่ธุรกรรมที่คุณระบุไม่ได้อยู่ในช่วงวันที่รอบระยะเวลาบัญชีของคุณ</value>
+  </data>
+  <data name="custpage_setupmissing" xml:space="preserve">
+    <value>ระเบียนข้อมูลการตั้งค่าระบบการจัดการสินทรัพย์ถาวรขาดหายหรือไม่สมบูรณ์ ไม่สามารถกำหนดการตั้งค่าระบบได้</value>
+  </data>
+  <data name="custpage_settingmissing" xml:space="preserve">
+    <value>การอ่านการตั้งค่าระบบล้มเหลว</value>
+  </data>
+  <data name="custpage_invalid_acctsub_combo" xml:space="preserve">
+    <value>บัญชี-บริษัทในเครือ (0) ไม่ถูกต้อง ID สินทรัพย์: (1)</value>
+  </data>
+
+  <!-- Buttons -->
+  <data name="custrecord_assetproposal_refreshbutton" page="assetproposal" xml:space="preserve">
+    <value>รีเฟรช</value>
+  </data>
+  <data name="custrecord_assetproposal_proposebutton" page="assetproposal" xml:space="preserve">
+    <value>เสนอสินทรัพย์ใหม่</value>
+  </data>
+  <data name="custrecord_assetproposal_generatebutton" page="assetproposal" xml:space="preserve">
+    <value>สร้างสินทรัพย์</value>
+  </data>
+  <data name="custrecord_assetproposal_rejectbutton" page="assetproposal" xml:space="preserve">
+    <value>ปฏิเสธข้อเสนอ</value>
+  </data>
+  <data name="custrecord_famreports_generatebutton" page="famreports" xml:space="preserve">
+    <value>สร้าง</value>
+  </data>
+  <data name="custrecord_assetsummary_generatebutton" page="assetsummary" xml:space="preserve">
+    <value>สร้างรายงาน</value>
+  </data>
+  <data name="custrecord_systemsetup_savebutton" page="systemsetup" xml:space="preserve">
+    <value>บันทึก</value>
+  </data>
+  <data name="custrecord_systemsetup_submitbutton" page="systemsetup" xml:space="preserve">
+    <value>ส่ง</value>
+  </data>
+  <data name="custrecord_assetsplit_refreshbutton" page="assetsplit" xml:space="preserve">
+    <value>รีเฟรช</value>
+  </data>
+  <data name="custrecord_assetsplit_splitbutton" page="assetsplit" xml:space="preserve">
+    <value>การแยกบัญชี</value>
+  </data>
+  <data name="custrecord_assetdisposal_refreshbutton" page="assetdisposal" xml:space="preserve">
+    <value>รีเฟรช</value>
+  </data>
+  <data name="custrecord_assetdisposal_disposebutton" page="assetdisposal" xml:space="preserve">
+    <value>จำหน่ายจ่ายโอน</value>
+  </data>
+  <data name="custrecord_depreciationschedule2_generatebutton" page="depreciationschedule2" xml:space="preserve">
+    <value>สร้างรายงาน</value>
+  </data>
+  <data name="custrecord_assetcreation_createbutton" page="assetcreation" xml:space="preserve">
+    <value>สร้างสินทรัพย์</value>
+  </data>
+  <data name="custrecord_creationstatus_refreshbutton" page="assetcreation" xml:space="preserve">
+    <value>รีเฟรช</value>
+  </data>
+  <data name="custrecord_assetrevaluation_refreshbutton" page="assetrevaluation" xml:space="preserve">
+    <value>รีเฟรช</value>
+  </data>
+  <data name="custrecord_assetrevaluation_processbutton" page="assetrevaluation" xml:space="preserve">
+    <value>การประเมินราคาขั้นตอนอีกครั้ง</value>
+  </data>
+  <data name="custrecord_assetrevaluation_calculatebutton" page="assetrevaluation" xml:space="preserve">
+    <value>คำนวณ</value>
+  </data>
+  <data name="custrecord_assetregister_generatebutton" page="assetregister" xml:space="preserve">
+    <value>สร้างรายงาน</value>
+  </data>
+  <data name="custrecord_maintenance_savebutton" page="maintenance" xml:space="preserve">
+    <value>บันทึก</value>
+  </data>
+  <data name="custrecord_maintenance_resetbutton" page="maintenance" xml:space="preserve">
+    <value>รีเซ็ต</value>
+  </data>
+  <data name="custrecord_systemstatus_refreshbutton" page="systemstatus" xml:space="preserve">
+    <value>รีเฟรช</value>
+  </data>
+  <data name="custrecord_generatehistory_generatebutton" page="generatehistory" xml:space="preserve">
+    <value>สร้างประวัติ</value>
+  </data>
+  <data name="custrecord_assetdepreciation_depreciatebutton" page="assetdepreciation" xml:space="preserve">
+    <value>สินทรัพย์ที่มีค่าเสื่อมราคา</value>
+  </data>
+  <data name="custrecord_depreciationschedule_generatebutton" page="depreciationschedule" xml:space="preserve">
+    <value>สร้างรายงาน</value>
+  </data>
+  <data name="custrecord_reportstatus_refreshbutton" page="reportstatus" xml:space="preserve">
+    <value>รีเฟรช</value>
+  </data>
+  <data name="custrecord_reportstatus2_refreshbutton" page="reportstatus2" xml:space="preserve">
+    <value>รีเฟรช</value>
+  </data>
+  <data name="custrecord_assettransfer_refreshbutton" page="assettransfer" xml:space="preserve">
+    <value>รีเฟรช</value>
+  </data>
+  <data name="custrecord_assettransfer_transferbutton" page="assettransfer" xml:space="preserve">
+    <value>ดำเนินการโอน</value>
+  </data>
+  <data name="custrecord_assettransfer_importcsv" page="assettransfer" xml:space="preserve">
+    <value>อิมพอร์ต CSV</value>
+  </data>
+  <data name="custrecord_bulktransfer_submitbutton" page="bulktransfer" xml:space="preserve">
+    <value>ส่ง</value>
+  </data>
+  <data name="custrecord_bulktransfer_cancelbutton" page="bulktransfer" xml:space="preserve">
+    <value>ยกเลิก</value>
+  </data>
+
+  <!-- Asset Record -->
+  <data name="assetrecord_assettypehelp" xml:space="preserve">
+    <value>ประเภทสินทรัพย์จะใช้ค่าดีฟอลต์ส่วนมากของการกำหนดค่าสินทรัพย์ และใช้เพื่อจัดหมวดหมู่สินทรัพย์ในรายงานและกระบวนการอื่น</value>
+  </data>
+  <data name="assetrecord_assetdescrhelp" xml:space="preserve">
+    <value>คำอธิบายโดยย่อของสินทรัพย์</value>
+  </data>
+  <data name="assetrecord_subshelp" xml:space="preserve">
+    <value>บริษัทในเครือที่เชื่อมโยงกับระเบียนข้อมูลนี้</value>
+  </data>
+  <data name="assetrecord_includechildhelp" xml:space="preserve">
+    <value>ทำเครื่องหมายที่กล่องนี้เพื่อรวมสินทรัพย์ของบริษัทในเครือ Child</value>
+  </data>
+
+  <data name="assetrecord_assetserialnohelp" xml:space="preserve">
+    <value>ซีเรียลนัมเบอร์ที่สามารถใช้เพื่อติดตามหรือระบุสินทรัพย์</value>
+  </data>
+  <data name="assetrecord_assetalternatenohelp" xml:space="preserve">
+    <value>หมายเลขอ้างอิงสินทรัพย์เพิ่มเติม</value>
+  </data>
+  <data name="assetrecord_assetcosthelp" xml:space="preserve">
+    <value>ต้นทุน (ซื้อ) ดั้งเดิมของสินทรัพย์</value>
+  </data>
+  <data name="assetrecord_assetcurrentcosthelp" xml:space="preserve">
+    <value>ต้นทุนปัจจุบันของสินทรัพย์  ซึ่งจะรวมจำนวนที่เขียนลงไปใดๆ ที่จะถูกนำไปใช้กับสินทรัพย์นี้</value>
+  </data>
+  <data name="assetrecord_residualvalpercenthelp" xml:space="preserve">
+    <value>ค่าเปอร์เซ็นต์ของต้นทุนดั้งเดิมที่สินทรัพย์จะมีค่าที่ตอนปลายของช่วงชีวิต ตัวอย่างเช่น สินทรัพย์ที่ซื้อมาในราคา 1,000.00 อาจมีมูลค่า 100.00 เมื่อสิ้นสุดช่วงชีวิต ดังนั้น เปอร์เซ็นต์มูลค่าคงเหลือจะเป็น 10% (10% ของ 1,000.00 คือ 100.00)
+การกรอกค่าที่คงค้างจะเขียนทับค่าดีฟอลต์ที่คำนวณโดยใช้เปอร์เซ็นต์</value>
+  </data>
+  <data name="assetrecord_residualvalhelp" xml:space="preserve">
+    <value>ค่าที่สินทรัพย์จะมีค่าที่ตอนปลายของช่วงชีวิต ตัวอย่างเช่น สินทรัพย์ที่ซื้อมาในราคา 1,000.00 อาจมีค่า 100.00 ที่ตอนปลายของช่วงชีวิต
+
+การกรอกค่าที่คงค้างจะเขียนทับค่าดีฟอลต์ที่คำนวณโดยใช้เปอร์เซ็นต์</value>
+  </data>
+  <data name="assetrecord_assetacctmethodhelp" xml:space="preserve">
+    <value>เลือกวิธีการของค่าเสื่อมราคา (สูตร) ที่จะใช้เมื่อคิดค่าเสื่อมราคาของสินทรัพย์นี้  วิธีการทางบัญชีนี้จะถูกใช้ในการคำนวณค่าที่จะถูกกรอกลงในระบบการบัญชี</value>
+  </data>
+  <data name="assetrecord_assetperiodconvhelp" xml:space="preserve">
+    <value>เลือกข้อตกลงเพื่อใช้นิยามปี:
+1. 12 เดือนๆ ละ 30 วัน - ข้อตกลงนี้ใช้ทั่วไปในอเมริกาเหนือและยุโรป และให้ค่าเสื่อมราคารายเดือนที่สม่ำเสมอกว่า
+2. จำนวนวันที่แท้จริงในเดือน หนึ่งปีมี 365 วัน - ข้อตกลงนี้ใช้ทั่วไปในออสเตรเลียและนิวซีแลนด์ และให้ค่าเสื่อมราคาที่ไม่สม่ำเสมอภายในปี</value>
+  </data>
+  <data name="assetrecord_assetlifetimehelp" xml:space="preserve">
+    <value>ช่วงชีวิตที่คาดของสินทรัพย์ในรอบบัญชีค่าเสื่อมราคาหลายๆ แบบ (ตัวอย่างเช่น ถ้าค่าเสื่อมราคาเป็นรายเดือน ให้กรอกช่วงชีวิตเป็นเดือน)</value>
+  </data>
+  <data name="assetrecord_assetdeprperiodhelp" xml:space="preserve">
+    <value>ความถี่ที่จะเกิดค่าเสื่อมราคาของสินทรัพย์นี้</value>
+  </data>
+  <data name="assetrecord_assetlifetimeusagehelp" xml:space="preserve">
+    <value>ถ้าค่าเสื่อมราคาของสินทรัพย์ถูกควบคุมโดยการใช้ที่เกิดจากสินทรัพย์นั้น (ตัวอย่างเช่น ไมล์ของยานพาหนะ) ตัวเลขการใช้ตลอดช่วงชีวิตจะแสดงจำนวนหน่วยที่มีเหลืออยู่ของสินทรัพย์  เมื่อการใช้รวมต่อวันที่เท่ากับการใช้ในช่วงชีวิต สินทรัพย์จถึงจุดสิ้นสุดของช่วงชีวิต</value>
+  </data>
+  <data name="assetrecord_assetnetbookvaluehelp" xml:space="preserve">
+    <value>มูลค่าตามบัญชีในปัจจุบันของสินทรัพย์</value>
+  </data>
+  <data name="assetrecord_assetcumulativedeprhelp" xml:space="preserve">
+    <value>จำนวนค่าเสื่อมราคารวมที่นำไปใช้กับวันที่กับสินทรัพย์</value>
+  </data>
+  <data name="assetrecord_assetstatushelp" xml:space="preserve">
+    <value>สถานะของสินทรัพย์: ใหม่ กำลังตัดค่าเสื่อมราคา ถูกตัดค่าเสื่อมราคาหมดสิ้นแล้ว หรือ จำหน่ายจ่ายโอน</value>
+  </data>
+  <data name="assetrecord_assetcustomerlocationhelp" xml:space="preserve">
+    <value>สถานที่ตั้งของลูกค้าที่ซื้อสินทรัพย์นี้มา</value>
+  </data>
+  <data name="assetrecord_assetcurrencyhelp" xml:space="preserve">
+    <value>สกุลเงินตั้งเดิมที่ใช้แสดงต้นทุนสินทรัพย์</value>
+  </data>
+  <data name="assetrecord_assetcurrencyidhelp" xml:space="preserve">
+    <value>ID ภายในของสกุลเงินสินทรัพย์</value>
+  </data>
+  <data name="assetrecord_assetfixedratehelp" xml:space="preserve">
+    <value>อัตราแลกเปลี่ยนแบบตายตัวระหว่างสกุลเงินดั้งเดิม (สกุลเงินของสินทรัพย์) และสกุลเงินฐานของบริษัทหรือบริษัทในเครือที่เป็นเจ้าของสินทรัพย์</value>
+  </data>
+  <data name="assetrecord_assetcustodianhelp" xml:space="preserve">
+    <value>พนักงานที่รับผิดชอบต่อสินทรัพย์</value>
+  </data>
+  <data name="assetrecord_assetphysicallochelp" xml:space="preserve">
+    <value>ระบุตำแหน่งที่ตั้งตามปกติของสินทรัพย์</value>
+  </data>
+  <data name="assetrecord_assetincludesreportschelp" xml:space="preserve">
+    <value>ระบุว่าควรรวมสินทรัพย์ในรายงานสรุปสินทรัพย์หรือไม่  ตามค่าดีฟอลต์ สินทรัพย์ทั้งหมดจะถูกรวมอยู่ในรายงาน</value>
+  </data>
+  <data name="assetrecord_assetpurchasedatehelp" xml:space="preserve">
+    <value>วันที่ซื้อสินทรัพย์</value>
+  </data>
+  <data name="assetrecord_assetdeprstartdatehelp" xml:space="preserve">
+    <value>วันที่จะเริ่มคิดค่าเสื่อมราคาของสินทรัพย์ ตัวอย่างเช่น สินทรัพย์อาจถูกซื้อแล้ว แต่ยังไม่ได้รับเข้าระบบหรือใช้งาน จนผ่านไปสองถึงสามเดือน</value>
+  </data>
+  <data name="assetrecord_assetdeprenddatehelp" xml:space="preserve">
+    <value>วันที่คาดว่าค่าเสื่อมราคาของสินค้าจะตัดจนหมดสิ้น  ค่าดีฟอลต์นี้สำหรับวันที่เริ่มต้นของค่าเสื่อมราคาของสินทรัพย์บวกด้วยช่วงชีวิตที่ใช้งานได้</value>
+  </data>
+  <data name="assetrecord_assetlastdeprperiodhelp" xml:space="preserve">
+    <value>จำนวนรอบบัญชี (ภายในช่วงชีวิตของสินทรัพย์) ที่ซึ่งสินทรัพย์ถูกตัดค่าเสื่อมราคาครั้งล่าสุด</value>
+  </data>
+  <data name="assetrecord_assetlastdepramounthelp" xml:space="preserve">
+    <value>มูลค่าค่าเสื่อมราคาล่าสุดของสินทรัพย์นี้</value>
+  </data>
+  <data name="assetrecord_assetlastdeprdatehelp" xml:space="preserve">
+    <value>วันที่คิดค่าเสื่อมราคาล่าสุดของสินทรัพย์นี้</value>
+  </data>
+  <data name="assetrecord_assetdepractivehelp" xml:space="preserve">
+    <value>ระบุว่าสินทรัพย์ใดที่ใช้งานอยู่และรวมอยู่ในขั้นตอนของค่าเสื่อมราคาแล้ว  ถ้าสินทรัพย์นั้นเชื่อมโยงกับงาน ก็อาจตั้งให้กลับมาใช้งานได้โดยอัตโนมัติเมื่องานนั้นเสร็จสมบูรณ์</value>
+  </data>
+  <data name="assetrecord_assetdisptypehelp" xml:space="preserve">
+    <value>ประเภทซึ่งสินทรัพย์ถูกจำหน่ายจ่ายโอน </value>
+  </data>
+  <data name="assetrecord_assetcustomerhelp" xml:space="preserve">
+    <value>ลูกค้าที่สินทรัพย์นี้ถูกขายให้</value>
+  </data>
+  <data name="assetrecord_assetqtyhelp" xml:space="preserve">
+    <value>ปริมาณของสินทรัพย์นี้</value>
+  </data>
+  <data name="assetrecord_assetrevisionmethodhelp" xml:space="preserve">
+    <value>ควบคุมว่าการแก้ไขทบทวน (การประเมินราคาใหม่) จะส่งผลต่อสินทรัพย์อย่างไร  เมื่อเลือก 'รอบบัญชีปัจจุบัน' ค่าเสื่อมราคาของสินทรัพย์จนถึงวันนี้จะถูกคำนวณอีกครั้งโดยใช้ค่าที่ได้รับการแก้ไขปรับปรุง และผลต่างระหว่างค่าเสื่อมราคาที่คำนวณออกมาได้และค่าเสื่อมราคาที่ลงบัญชีไปแล้วจะถูกกรอกในรอบบัญชีปัจจุบัน  เมื่อเลือก 'อายุคงเหลือ' การแก้ไขปรับปรุงจะทำกับสินทรัพย์จากจุดนี้เป็นต้นไป ดังนั้นจะส่งผลต่อการคำนวณค่าเสื่อมราคาในอนาคตเท่านั้น</value>
+  </data>
+  <data name="assetrecord_assetnamehelp" xml:space="preserve">
+    <value>ชื่อสินทรัพย์ที่เชื่อมโยงกับระเบียนข้อมูลนี้</value>
+  </data>
+  <data name="assetrecord_assetlocationhelp" xml:space="preserve">
+    <value>เลือกสถานที่ตั้งถ้าคุณต้องการรายงานเพื่อรวมเฉพาะสินทรัพย์ที่เชื่อมโยงกับสถานที่ตั้งแห่งใดแห่งหนึ่งโดยเฉพาะ</value>
+  </data>
+  <data name="assetrecord_assetdepartmenthelp" xml:space="preserve">
+    <value>เลือกแผนกถ้าคุณต้องการรายงานเพื่อรวมเฉพาะสินทรัพย์ที่เชื่อมโยงกับแผนกแห่งใดแห่งหนึ่งโดยเฉพาะ</value>
+  </data>
+  <data name="assetrecord_assetclasshelp" xml:space="preserve">
+    <value>เลือกคลาสถ้าคุณต้องการรายงานเพื่อรวมเฉพาะสินทรัพย์ที่เชื่อมโยงกับคลาสแห่งใดแห่งหนึ่งโดยเฉพาะ</value>
+  </data>
+  <data name="assetrecord_report_subshelp" xml:space="preserve">
+    <value>โปรดเลือกบริษัทในเครือหรือบริษัทในเครือย่อยที่ต้องการสร้างรายงาน</value>
+  </data>
+  <data name="assetrecord_report_assetacctmethodhelp" xml:space="preserve">
+    <value>เลือกวิธีคิดค่าเสื่อมราคา</value>
+  </data>
+  <data name="assetrecord_report_includechildhelp" xml:space="preserve">
+    <value>ทำเครื่องหมายที่กล่องนี้เพื่อรวมสินทรัพย์ของบริษัทในเครือ Child ในรายงาน</value>
+  </data>
+  <data name="assetrecord_report_assettypehelp" xml:space="preserve">
+    <value>เลือกประเภทสินทรัพย์เพื่อจัดหมวดหมู่สินทรัพย์ในรายงาน โปรดทราบว่าระบบจะกำหนดค่าดีฟอลต์ให้กับการกำหนดค่าสินทรัพย์ส่วนมากโดยยึดตามประเภทสินทรัพย์</value>
+  </data>
+  <data name="assetrecord_assetperiodstartdatehelp" xml:space="preserve">
+    <value>ป้อนหรือเลือกวันที่เริ่มต้นสำหรับรอบบัญชีรายงานที่คุณต้องการสร้าง</value>
+  </data>
+  <data name="assetrecord_assetperiodenddatehelp" xml:space="preserve">
+    <value>ป้อนหรือเลือกวันที่สิ้นสุดสำหรับรอบบัญชีรายงานที่คุณต้องการสร้าง</value>
+  </data>
+  <data name="assetrecord_report_acctngbookhelp" xml:space="preserve">
+    <value>เลือกสมุดบัญชีที่คุณต้องการสร้างรายงาน</value>
+  </data>
+  <data name="assetrecord_report_typehelp" xml:space="preserve">
+    <value>เลือกประเภทรายงานที่ต้องการสร้าง</value>
+  </data>
+
+  <!-- Alternate Depreciation Record -->
+  <data name="client_altdepr_currency_mismatch" page="clientpage" xml:space="preserve">
+     <value>สกุลเงินของการคิดค่าเสื่อมราคาอื่นต้องตรงกับสกุลเงินของสมุดบัญชีเมื่อเลือกสมุดบัญชี
+     มิฉะนั้น สกุลเงินต้องตรงกับสกุลเงินฐานของบริษัทในเครือหรือบริษัท</value>
+  </data>
+</root>

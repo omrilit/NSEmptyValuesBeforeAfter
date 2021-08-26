@@ -1,0 +1,246 @@
+<head>
+    <style>
+        body{
+            font-family: Arial, Verdana, Helvetica, stsong, msung, mhei, heiseimin, heiseikakugo, hygothic, hysmyeongjo; font-size: 10px;
+        }
+    </style>
+</head>
+<body size="A4-landscape">
+    <#assign subsidiary = "">
+    <#assign book = "">
+    <#assign year = "">
+    <#assign type = "">
+    
+    <#assign total1 = 0>
+    <#assign total2 = 0>
+    <#assign total3 = 0>
+    <#assign total4 = 0>
+    <#assign total5 = 0>
+    <#assign total6 = 0>
+    <#assign total7 = 0>
+    <#assign total8 = 0>
+    <#assign total9 = 0>
+    <#assign total10 = 0>
+    <#assign total11 = 0>
+    <#assign total12 = 0>
+    <#assign lineIndex = 0>
+    
+    <#list report.recmachcustrecord_fam_schedrepline_parent as line>
+        <#assign lineIndex = lineIndex + 1>
+        
+        <#if (subsidiary != "" && subsidiary != line.custrecord_fam_schedrepline_subsidiary) ||
+            (book != "" && book != line.custrecord_fam_schedrepline_book) ||
+            (year !=  "" && year != line.custrecord_fam_schedrepline_year) ||
+            (type !=  "" && type != line.custrecord_fam_schedrepline_type)>
+            
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="12" style="border-top-style: solid; border-top-width: 1px;"
+                        margin-bottom="1px"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td><p align="right">${total1?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${total2?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${total3?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${total4?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${total5?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${total6?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${total7?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${total8?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${total9?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${total10?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${total11?string["#,##0.00;(#,##0.00)"]}</p></td>
+                    <td><p align="right">${total12?string["#,##0.00;(#,##0.00)"]}</p></td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="12" style="border-top-style: solid; border-top-width: 1px;"
+                        margin-bottom="1px"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td colspan="12" style="border-top-style: solid; border-top-width: 1px;"
+                        margin-bottom="1px"></td>
+                </tr>
+            
+            <#assign total1 = 0>
+            <#assign total2 = 0>
+            <#assign total3 = 0>
+            <#assign total4 = 0>
+            <#assign total5 = 0>
+            <#assign total6 = 0>
+            <#assign total7 = 0>
+            <#assign total8 = 0>
+            <#assign total9 = 0>
+            <#assign total10 = 0>
+            <#assign total11 = 0>
+            <#assign total12 = 0>
+        </#if>
+        
+        <#if subsidiary != line.custrecord_fam_schedrepline_subsidiary ||
+            book != line.custrecord_fam_schedrepline_book>
+
+            <#assign subsidiary = line.custrecord_fam_schedrepline_subsidiary>
+            <#assign book = line.custrecord_fam_schedrepline_book>
+            <#assign year = "">
+            <#assign type = "">
+
+            <#if lineIndex gt 1>
+            </table> <pbr />
+            </#if>
+            <p style="font-size: 18px; color: #003399">
+                DSR_title_DSR
+            </p>
+            <table width="100%">
+                <tr><td colspan="16" style="font-weight: bold; font-size: 12px;"><p align="center">
+                    DSR_fam_DSR
+                    <#assign subcurr = "">
+                    <#if subsidiary != "0">
+                        <#assign subcurr = subcurr + subsidiary>
+                    </#if>
+                    <#assign subcurr = subcurr + " " + line.custrecord_fam_schedrepline_currency>
+                    <#if subcurr != " ">
+                        - ${subcurr}
+                    </#if>
+                </p></td></tr>
+                
+                <#if book != "0">
+                    <tr><td colspan="16"><p align="center">${book}</p></td></tr>
+                </#if>
+                
+                <tr><td colspan="16"><p align="center">
+                    ${report.custrecord_fam_deprschedreport_altmet} -
+                    ${report.custrecord_fam_deprschedreport_assetsinc}
+                </p></td></tr>
+                
+                <tr><td colspan="16"><p align="center">
+                    ${report.custrecord_fam_deprschedreport_reptype}
+                </p></td></tr>
+                
+                <tr><td colspan="16" style="font-weight: bold;"><p align="center">
+                    DSR_from_DSR ${report.custrecord_fam_deprschedreport_startdate?string["MMM yyyy"]} DSR_to_DSR
+                    ${report.custrecord_fam_deprschedreport_enddate?string["MMM yyyy"]}
+                </p></td></tr>
+        </#if>
+
+        <#if year != line.custrecord_fam_schedrepline_year ||
+            type != line.custrecord_fam_schedrepline_type>
+
+            <#assign year = line.custrecord_fam_schedrepline_year>
+            <#assign type = line.custrecord_fam_schedrepline_type>
+            
+            <tr><td colspan="16" style="font-weight: bold;"><p align="left">
+                Fiscal Year ${year} - ${type}
+            </p></td></tr>
+
+            <tr>
+                <td><p align="left">DSR_id_DSR</p></td>
+                <td><p align="left">DSR_name_DSR</p></td>
+                <td><p align="left">DSR_al_DSR</p></td>
+                <td><p align="left">DSR_deprmethod_DSR</p></td>
+                <td><p align="right">DSR_jan_DSR</p></td>
+                <td><p align="right">DSR_feb_DSR</p></td>
+                <td><p align="right">DSR_mar_DSR</p></td>
+                <td><p align="right">DSR_apr_DSR</p></td>
+                <td><p align="right">DSR_may_DSR</p></td>
+                <td><p align="right">DSR_jun_DSR</p></td>
+                <td><p align="right">DSR_jul_DSR</p></td>
+                <td><p align="right">DSR_aug_DSR</p></td>
+                <td><p align="right">DSR_sep_DSR</p></td>
+                <td><p align="right">DSR_oct_DSR</p></td>
+                <td><p align="right">DSR_nov_DSR</p></td>
+                <td><p align="right">DSR_dec_DSR</p></td>
+            </tr>
+        </#if>
+
+        <tr>
+            <td><p align="left">${line.custrecord_fam_schedrepline_assetid}</p></td>
+            <td><p align="left">${line.custrecord_fam_schedrepline_assetname}</p></td>
+            <td><p align="left">${line.custrecord_fam_schedrepline_assetlife}</p></td>
+            <td><p align="left">${line.custrecord_fam_schedrepline_method}</p></td>
+            <td><p align="right">
+                ${line.custrecord_fam_schedrepline_p1?string["#,##0.00;(#,##0.00)"]}
+            </p></td>
+            <td><p align="right">
+                ${line.custrecord_fam_schedrepline_p2?string["#,##0.00;(#,##0.00)"]}
+            </p></td>
+            <td><p align="right">
+                ${line.custrecord_fam_schedrepline_p3?string["#,##0.00;(#,##0.00)"]}
+            </p></td>
+            <td><p align="right">
+                ${line.custrecord_fam_schedrepline_p4?string["#,##0.00;(#,##0.00)"]}
+            </p></td>
+            <td><p align="right">
+                ${line.custrecord_fam_schedrepline_p5?string["#,##0.00;(#,##0.00)"]}
+            </p></td>
+            <td><p align="right">
+                ${line.custrecord_fam_schedrepline_p6?string["#,##0.00;(#,##0.00)"]}
+            </p></td>
+            <td><p align="right">
+                ${line.custrecord_fam_schedrepline_p7?string["#,##0.00;(#,##0.00)"]}
+            </p></td>
+            <td><p align="right">
+                ${line.custrecord_fam_schedrepline_p8?string["#,##0.00;(#,##0.00)"]}
+            </p></td>
+            <td><p align="right">
+                ${line.custrecord_fam_schedrepline_p9?string["#,##0.00;(#,##0.00)"]}
+            </p></td>
+            <td><p align="right">
+                ${line.custrecord_fam_schedrepline_p10?string["#,##0.00;(#,##0.00)"]}
+            </p></td>
+            <td><p align="right">
+                ${line.custrecord_fam_schedrepline_p11?string["#,##0.00;(#,##0.00)"]}
+            </p></td>
+            <td><p align="right">
+                ${line.custrecord_fam_schedrepline_p12?string["#,##0.00;(#,##0.00)"]}
+            </p></td>
+        </tr>
+
+        <#assign total1 = total1 + line.custrecord_fam_schedrepline_p1>
+        <#assign total2 = total2 + line.custrecord_fam_schedrepline_p2>
+        <#assign total3 = total3 + line.custrecord_fam_schedrepline_p3>
+        <#assign total4 = total4 + line.custrecord_fam_schedrepline_p4>
+        <#assign total5 = total5 + line.custrecord_fam_schedrepline_p5>
+        <#assign total6 = total6 + line.custrecord_fam_schedrepline_p6>
+        <#assign total7 = total7 + line.custrecord_fam_schedrepline_p7>
+        <#assign total8 = total8 + line.custrecord_fam_schedrepline_p8>
+        <#assign total9 = total9 + line.custrecord_fam_schedrepline_p9>
+        <#assign total10 = total10 + line.custrecord_fam_schedrepline_p10>
+        <#assign total11 = total11 + line.custrecord_fam_schedrepline_p11>
+        <#assign total12 = total12 + line.custrecord_fam_schedrepline_p12>
+
+    </#list>
+
+        <tr>
+            <td colspan="4"></td>
+            <td colspan="12" style="border-top-style: solid; border-top-width: 1px;"
+                margin-bottom="1px"></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td><p align="right">${total1?string["#,##0.00;(#,##0.00)"]}</p></td>
+            <td><p align="right">${total2?string["#,##0.00;(#,##0.00)"]}</p></td>
+            <td><p align="right">${total3?string["#,##0.00;(#,##0.00)"]}</p></td>
+            <td><p align="right">${total4?string["#,##0.00;(#,##0.00)"]}</p></td>
+            <td><p align="right">${total5?string["#,##0.00;(#,##0.00)"]}</p></td>
+            <td><p align="right">${total6?string["#,##0.00;(#,##0.00)"]}</p></td>
+            <td><p align="right">${total7?string["#,##0.00;(#,##0.00)"]}</p></td>
+            <td><p align="right">${total8?string["#,##0.00;(#,##0.00)"]}</p></td>
+            <td><p align="right">${total9?string["#,##0.00;(#,##0.00)"]}</p></td>
+            <td><p align="right">${total10?string["#,##0.00;(#,##0.00)"]}</p></td>
+            <td><p align="right">${total11?string["#,##0.00;(#,##0.00)"]}</p></td>
+            <td><p align="right">${total12?string["#,##0.00;(#,##0.00)"]}</p></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td colspan="12" style="border-top-style: solid; border-top-width: 1px;"
+                margin-bottom="1px"></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td colspan="12" style="border-top-style: solid; border-top-width: 1px;"
+                margin-bottom="1px"></td>
+        </tr>
+    </table>
+</body>

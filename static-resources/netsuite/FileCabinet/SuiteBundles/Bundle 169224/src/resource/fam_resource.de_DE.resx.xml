@@ -1,0 +1,2920 @@
+﻿<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+
+  <xsd:schema id="root" xmlns="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element msdata:IsDataSet="true" name="root">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="page" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+                <xsd:element minOccurs="0" msdata:Ordinal="2" name="comment" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute msdata:Ordinal="1" name="name" type="xsd:string" use="required"/>
+              <xsd:attribute msdata:Ordinal="3" name="type" type="xsd:string"/>
+              <xsd:attribute msdata:Ordinal="4" name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+    <!--
+      ###Enumaration of PAGES.. for tracing only###
+      assetcreation - Asset Creation
+      assetdepreciation - Asset Depreciation
+      assetdisposal - Asset Disposal
+      assetproposal - Asset Proposal
+      assetregister - Asset Register Report/Asset Register Detail
+      assetrevaluation - Asset Revaluation
+      assetsplit - Asset Split
+      assetsummary - Asset Summary Report
+      depreciationschedule - Asset Depreciation Schedule
+      depreciationschedule2 - Asset Depreciation Schedule (Portrait)
+      depreciationmethod - Depreciation Method
+      famreports - Fixed Assets Reports
+      generatehistory - Generate Asset History
+      reportstatus - FAM - Report Status
+      reportstatus2 - Asset Report Status (sc)
+      systemsetup - System Setup
+      systemstatus - System Status
+      maintenance - Language Management
+      depreciationmethodformula - Depreciation Method
+      clientpage - Entries intended for client messages
+  -->
+
+  <!-- Page Screen Title -->
+  <data name="maintenance_screen_assetcreation" page="maintenance" xml:space="preserve">
+    <value>Erstellung Vermögensgegenstand</value>
+  </data>
+  <data name="maintenance_screen_assetdisposal" page="maintenance" xml:space="preserve">
+    <value>Veräußerung Vermögensgegenstand</value>
+  </data>
+  <data name="maintenance_screen_assetproposal" page="maintenance" xml:space="preserve">
+    <value>Angebot Vermögensgegenstand</value>
+  </data>
+  <data name="maintenance_screen_assetrevaluation" page="maintenance" xml:space="preserve">
+    <value>Neubewertung Vermögensgegenstand</value>
+  </data>
+  <data name="maintenance_screen_assetsplit" page="maintenance" xml:space="preserve">
+<value>Split Vermögensgegenstand</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule2" page="maintenance" xml:space="preserve">
+    <value>Abschreibungsplan (Hochformat)</value>
+  </data>
+  <data name="maintenance_screen_systemsetup" page="maintenance" xml:space="preserve">
+  <value>Systemeinrichtung</value>
+  </data>
+  <data name="maintenance_screen_maintenance" page="maintenance" xml:space="preserve">
+    <value>Mengenaktualisierungen für Übersetzungs-FAM</value>
+  </data>
+  <data name="maintenance_screen_assetdepreciation" page="maintenance" xml:space="preserve">
+    <value>Abschreibung Vermögensgegenstand</value>
+  </data>
+  <data name="maintenance_screen_assetregister" page="maintenance" xml:space="preserve">
+    <value>Bericht Vermögensgegenstand-Register</value>
+  </data>
+  <data name="maintenance_screen_assetsummary" page="maintenance" xml:space="preserve">
+    <value>Übersichtsbericht Vermögensgegenstand</value>
+  </data>
+  <data name="maintenance_screen_backgroundprocessing" page="maintenance" xml:space="preserve">
+    <value>Hintergrundbearbeitung</value>
+  </data>
+  <data name="maintenance_screen_depreciationschedule" page="maintenance" xml:space="preserve">
+    <value>Abschreibungsplan</value>
+  </data>
+  <data name="maintenance_screen_generatehistory" page="maintenance" xml:space="preserve">
+    <value>Verlauf erstellen</value>
+  </data>
+  <data name="maintenance_screen_reportstatus" page="maintenance" xml:space="preserve">
+    <value>Berichtsstatus Vermögensgegenstand-Register</value>
+  </data>
+  <data name="maintenance_screen_systemstatus" page="maintenance" xml:space="preserve">
+    <value>Systemstatus</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethod" page="maintenance" xml:space="preserve">
+    <value>Abschreibungsmethode</value>
+  </data>
+  <data name="maintenance_screen_reportstatus2" page="maintenance" xml:space="preserve">
+    <value>Berichtsstatus Abschreibungsplan</value>
+  </data>
+  <data name="maintenance_screen_depreciationmethodformula" page="maintenance" xml:space="preserve">
+    <value>Abschreibungsformel</value>
+  </data>
+  <data name="maintenance_screen_clientpage" page="maintenance" xml:space="preserve">
+    <value>Client-Benachrichtigungen</value>
+  </data>
+
+  <!-- Localization Maintenance Page -->
+  <data name="maintenance_description_jp" page="maintenance" xml:space="preserve">
+    <value>Name - Japan JP</value>
+  </data>
+  <data name="maintenance_description_default" page="maintenance" xml:space="preserve">
+    <value>Name - Englisch US</value>
+  </data>
+  <data name="maintenance_select_language" page="maintenance" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="custpage_translations_header" page="maintenance" xml:space="preserve">
+    <value>Mengenaktualisierungen für Übersetzungs-FAM</value>
+  </data>
+  <data name="custpage_translations_en_US_header" page="maintenance" xml:space="preserve">
+    <value>US</value>
+  </data>
+  <data name="custpage_translations_ja_JP_header" page="maintenance" xml:space="preserve">
+    <value>Japan</value>
+  </data>
+  <data name="custpage_translations_custom_header" page="maintenance" xml:space="preserve">
+    <value>Übersetzung -</value>
+  </data>
+  <data name="custpage_translations_custom_header_us" page="maintenance" xml:space="preserve">
+    <value>us</value>
+  </data>
+  <data name="custpage_translations_custom_header_jp" page="maintenance" xml:space="preserve">
+    <value>jp</value>
+  </data>
+  <data name="custpage_translations_screen_header" page="maintenance" xml:space="preserve">
+    <value>Bildschirm</value>
+  </data>
+  <data name="custpage_translations_common_fields" page="maintenance" xml:space="preserve">
+    <value>Häufige Datenfelder</value>
+  </data>
+
+  <!-- Asset Proposal Page -->
+  <data name="custrecord_assetproposal_title" page="assetproposal" xml:space="preserve">
+    <value>Angebot Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetproposal" xml:space="preserve">
+    <value>Vermögensgegenstandsart(en)</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetproposal" xml:space="preserve">
+    <value>Niederlassung(en)</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetproposal" xml:space="preserve">
+    <value>Untergeordnete einschließen</value>
+    </data>
+  <data name="custpage_selectpage" page="assetproposal" xml:space="preserve">
+    <value>Seite wählen</value>
+  </data>
+  <data name="custpage_rowperpage" page="assetproposal" xml:space="preserve">
+    <value>Angebote pro Seite</value>
+  </data>
+  <data name="proposals" page="assetproposal" xml:space="preserve">
+    <value>Angebotene Vermögensgegenstände</value>
+    </data>
+  <data name="marked" page="assetproposal" xml:space="preserve">
+    <value>Auswählen</value>
+    </data>
+  <data name="editurl" page="assetproposal" xml:space="preserve">
+    <value>Bearbeiten</value>
+    </data>
+  <data name="custrecord_propsourceid" page="assetproposal" xml:space="preserve">
+    <value>Transaktion</value>
+    </data>
+  <data name="custrecord_propassettype" page="assetproposal" xml:space="preserve">
+    <value>Vermögensgegenstandsart</value>
+    </data>
+  <data name="custrecord_propassetdescr" page="assetproposal" xml:space="preserve">
+    <value>Beschreibung</value>
+    </data>
+  <data name="custrecord_propaccmethod" page="assetproposal" xml:space="preserve">
+    <value>Abschreibungsmethode</value>
+    </data>
+  <data name="custrecord_propassetcost" page="assetproposal" xml:space="preserve">
+    <value>Ursprüngliche Kosten</value>
+    </data>
+  <data name="custrecord_propresidvalue" page="assetproposal" xml:space="preserve">
+    <value>Verbleibender Wert</value>
+    </data>
+  <data name="custrecord_propassetlifetime" page="assetproposal" xml:space="preserve">
+    <value>Lebensdauer</value>
+  </data>
+  <data name="custrecord_propsubsid" page="assetproposal" xml:space="preserve">
+    <value>Niederlassung</value>
+  </data>
+  <data name="custpage_nopropselected" page="assetproposal" xml:space="preserve">
+    <value>Es wurden keine Angebote zum Generieren ausgewählt.</value>
+  </data>
+
+  <!-- Asset Transfer Page -->
+  <data name="custrecord_assettransfer_title" page="assettransfer" xml:space="preserve">
+    <value>Vermögensgegenstand-Transfer</value>
+  </data>
+  <data name="custpage_assetid" page="assettransfer" xml:space="preserve">
+ <value>Identifizierungscode/Name Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetid_help" page="assettransfer" xml:space="preserve">
+    <value>Wählen Sie den Identifizierungscode oder den Namen des Vermögensgegenstands aus, den Sie übertragen möchten.</value>
+  </data>
+  <data name="custpage_assettype" page="assettransfer" xml:space="preserve">
+    <value>Vermögensgegenstandsart</value>
+  </data>
+  <data name="custpage_assettype_help" page="assettransfer" xml:space="preserve">
+    <value>Vermögensgegenstandsart für diesen Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_newassettype" page="assettransfer" xml:space="preserve">
+    <value>Vermögensgegenstandsart</value>
+  </data>
+  <data name="custpage_newassettype_help" page="assettransfer" xml:space="preserve">
+    <value>Wählen Sie die Vermögensgegenstandsart aus, zu der Sie diesen Vermögensgegenstand übertragen möchten.</value>
+  </data>
+  <data name="custpage_assetsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>Niederlassung</value>
+  </data>
+  <data name="custpage_assetsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>Aktuelle Niederlassung des Vermögensgegenstands</value>
+  </data>
+  <data name="custpage_newsubsidiary" page="assettransfer" xml:space="preserve">
+    <value>Niederlassung</value>
+  </data>
+  <data name="custpage_newsubsidiary_help" page="assettransfer" xml:space="preserve">
+    <value>Wählen Sie die Niederlassung aus, zu der Sie diesen Vermögensgegenstand übertragen möchten.</value>
+  </data>
+  <data name="custpage_assetclass" page="assettransfer" xml:space="preserve">
+    <value>Klasse</value>
+  </data>
+  <data name="custpage_assetclass_help" page="assettransfer" xml:space="preserve">
+    <value>Aktuelle Klasse des Vermögensgegenstands.</value>
+  </data>
+  <data name="custpage_newclass" page="assettransfer" xml:space="preserve">
+    <value>Klasse</value>
+  </data>
+  <data name="custpage_newclass_help" page="assettransfer" xml:space="preserve">
+    <value>Wählen Sie die Klasse aus, zu der Sie diesen Vermögensgegenstand übertragen möchten.</value>
+  </data>
+  <data name="custpage_assetdepartment" page="assettransfer" xml:space="preserve">
+    <value>Abteilung</value>
+  </data>
+  <data name="custpage_assetdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>Aktuelle Abteilung des Vermögensgegenstands.</value>
+  </data>
+  <data name="custpage_newdepartment" page="assettransfer" xml:space="preserve">
+    <value>Abteilung</value>
+  </data>
+  <data name="custpage_newdepartment_help" page="assettransfer" xml:space="preserve">
+    <value>Wählen Sie die Abteilung aus, zu der Sie diesen Vermögensgegenstand übertragen möchten.</value>
+  </data>
+  <data name="custpage_assetlocation" page="assettransfer" xml:space="preserve">
+    <value>Standort</value>
+  </data>
+  <data name="custpage_assetlocation_help" page="assettransfer" xml:space="preserve">
+    <value>Aktueller Standort des Vermögensgegenstands.</value>
+  </data>
+  <data name="custpage_newlocation" page="assettransfer" xml:space="preserve">
+    <value>Standort</value>
+  </data>
+  <data name="custpage_newlocation_help" page="assettransfer" xml:space="preserve">
+    <value>Wählen Sie den Standort aus, zu dem Sie diesen Vermögensgegenstand übertragen möchten.</value>
+  </data>
+  <data name="custpage_assetdescription" page="assettransfer" xml:space="preserve">
+    <value>Beschreibung Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetdescription_help" page="assettransfer" xml:space="preserve">
+    <value>Hier wird die Beschreibung des Vermögensgegenstands angezeigt.</value>
+  </data>
+  <data name="custpage_assetserialno" page="assettransfer" xml:space="preserve">
+    <value>Seriennummer Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetserialno_help" page="assettransfer" xml:space="preserve">
+    <value>Die Seriennummer, um den Vermögensgegenstand zu verfolgen oder zu identifizieren.</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assettransfer" xml:space="preserve">
+    <value>Alternative Vermögensgegenstandsnummer</value>
+  </data>
+  <data name="custpage_assetalternateno_help" page="assettransfer" xml:space="preserve">
+    <value>Zusätzliche Referenznummer des Vermögensgegenstands.</value>
+  </data>
+  <data name="custpage_assetorigcost" page="assettransfer" xml:space="preserve">
+    <value>Ursprüngliche Kosten</value>
+  </data>
+  <data name="custpage_assetorigcost_help" page="assettransfer" xml:space="preserve">
+    <value>Die ursprünglichen (Bezugs-)Kosten des Vermögensgegenstands.</value>
+  </data>
+  <data name="custpage_assetcurrcost" page="assettransfer" xml:space="preserve">
+    <value>Aktueller Buchwert</value>
+  </data>
+  <data name="custpage_assetcurrcost_help" page="assettransfer" xml:space="preserve">
+    <value>Die aktuelle Journalbewertung des Vermögensgegenstands.</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assettransfer" xml:space="preserve">
+    <value>Lebensdauer Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetlifetime_help" page="assettransfer" xml:space="preserve">
+    <value>Die erwartete Lebensdauer des Vermögensgegenstands in Vielfachen der Abschreibungsperiode (z. B. geben Sie bei monatlicher Abschreibung die Lebensdauer in Monaten ein).</value>
+  </data>
+  <data name="custpage_assetlastdepr" page="assettransfer" xml:space="preserve">
+    <value>Letzte Abschreibungsperiode</value>
+  </data>
+  <data name="custpage_assetlastdepr_help" page="assettransfer" xml:space="preserve">
+    <value>Die Periodennummer (innerhalb der Lebensdauer des Vermögensgegenstands), in der zuletzt eine Abschreibung des Vermögensgegenstands stattfand.</value>
+  </data>
+  <data name="custpage_assetstatus" page="assettransfer" xml:space="preserve">
+    <value>Status Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetstatus_help" page="assettransfer" xml:space="preserve">
+    <value>Aktueller Status des Vermögensgegenstands</value>
+  </data>
+  <data name="custpage_assetcurrency" page="assettransfer" xml:space="preserve">
+    <value>Währung</value>
+  </data>
+  <data name="custpage_assetcurrency_help" page="assettransfer" xml:space="preserve">
+    <value>Die Ausgangswährung der Niederlassung.</value>
+  </data>
+
+  <!-- Process Instance Status Page -->
+  <data name="custpage_processstatus_title" page="processstatus" xml:space="preserve">
+    <value>Transaktionsstatus</value>
+  </data>
+  <data name="custpage_processid" page="processstatus" xml:space="preserve">
+    <value>Letzte Prozesse: </value>
+  </data>
+  <data name="custpage_currentprocess" page="processstatus" xml:space="preserve">
+    <value>Aktuelle(r) Prozess(e): </value>
+  </data>
+  <data name="custpage_processstatus" page="processstatus" xml:space="preserve">
+    <value>Aktueller Prozessstatus: </value>
+  </data>
+  <data name="custpage_prevprocess" page="processstatus" xml:space="preserve">
+    <value>Vorherige(r) Prozess(e): </value>
+  </data>
+  <data name="custpage_nopending" page="processstatus" xml:space="preserve">
+    <value>Keine ausstehenden Prozesse</value>
+  </data>
+  <data name="custpage_nocurrent" page="processstatus" xml:space="preserve">
+    <value>Keine/r</value>
+  </data>
+  <data name="custpage_rendering" page="processstatus" xml:space="preserve">
+    <value>Wird gerendert ...</value>
+  </data>
+  <data name="custpage_deprnone" page="processstatus" xml:space="preserve">
+    <value>Abschreibung von (0) Vermögensgegenstand/-gegenständen.</value>
+  </data>
+    <data name="custpage_depracctmethods" page="processstatus" xml:space="preserve">
+    <value>Abschreibung von Buchhaltungsmethoden </value>
+  </data>
+  <data name="custpage_depracctmethods_count" page="processstatus" xml:space="preserve">
+    <value>Buchhaltungsmethoden wurden abgeschrieben.</value>
+  </data>
+  <data name="custpage_deprtaxmethods" page="processstatus" xml:space="preserve">
+    <value>Abschreibung von Steuermethoden </value>
+  </data>
+  <data name="custpage_deprtaxmethods_count" page="processstatus" xml:space="preserve">
+    <value>Steuermethoden wurden abgeschrieben.</value>
+  </data>
+  <data name="custpage_writingdepr_amounts" page="processstatus" xml:space="preserve">
+    <value>Abschreibung zu Journal hinzufügen </value>
+  </data>
+  <data name="custpage_deprhistory_count" page="processstatus" xml:space="preserve">
+    <value>Abschreibungsverlauf verarbeitet.</value>
+  </data>
+  <data name="custpage_status_allassettype" page="processstatus" xml:space="preserve">
+    <value>Alle Vermögensgegenstandsarten</value>
+  </data>
+  <data name="custpage_procstatus_dispose" page="processstatus" xml:space="preserve">
+    <value>Veräußerung Vermögensgegenstand </value>
+  </data>
+  <data name="custpage_procstatus_dispose_count" page="processstatus" xml:space="preserve">
+    <value>Vermögensgegenstände wurden veräußert.</value>
+  </data>
+  <data name="custpage_procstatus_reval" page="processstatus" xml:space="preserve">
+    <value>Neubewertung Vermögensgegenstand </value>
+  </data>
+  <data name="custpage_procstatus_reval_count" page="processstatus" xml:space="preserve">
+    <value>Vermögensgegenstände wurden neu bewertet.</value>
+  </data>
+  <data name="custpage_procstatus_split" page="processstatus" xml:space="preserve">
+    <value>Splitting Vermögensgegenstand </value>
+  </data>
+  <data name="custpage_procstatus_split_count" page="processstatus" xml:space="preserve">
+    <value>Vermögensgegenstände wurden gesplittet.</value>
+  </data>
+  <data name="custpage_procstatus_transfer" page="processstatus" xml:space="preserve">
+    <value>Transfer Vermögensgegenstand </value>
+  </data>
+  <data name="custpage_procstatus_transfer_count" page="processstatus" xml:space="preserve">
+    <value>Vermögensgegenstände wurden übertragen.</value>
+  </data>
+  <data name="custpage_procstatus_gen" page="processstatus" xml:space="preserve">
+    <value>Erstellung Vermögensgegenstand </value>
+  </data>
+  <data name="custpage_procstatus_gen_count" page="processstatus" xml:space="preserve">
+    <value>Vermögensgegenstände wurden erstellt.</value>
+  </data>
+  <data name="custpage_procstatus_prop" page="processstatus" xml:space="preserve">
+    <value>Angebot Vermögensgegenstand </value>
+  </data>
+  <data name="custpage_procstatus_prop_count" page="processstatus" xml:space="preserve">
+    <value>Vermögensgegenstände wurden angeboten.</value>
+  </data>
+  <data name="custpage_procstatus_schedreport_count" page="processstatus" xml:space="preserve">
+    <value>Berichte wurden generiert.</value>
+  </data>
+  <data name="custpage_rep_gen_asset_register" page="processstatus" xml:space="preserve">
+    <value>Erstellung Bericht Vermögensgegenstand-Register</value>
+  </data>
+  <data name="custpage_rep_gen_asset_summary" page="processstatus" xml:space="preserve">
+    <value>Erstellung Übersichtsbericht Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_rep_gen_depr_sched" page="processstatus" xml:space="preserve">
+   <value>Erstellung Bericht Abschreibungsplan</value>
+  </data>
+  <data name="custpage_report_generation_count" page="processstatus" xml:space="preserve">
+    <value>Datensätze enthalten.</value>
+  </data>
+  <data name="custpage_view_report_as" page="processstatus" xml:space="preserve">
+    <value>Bericht anzeigen als:</value>
+  </data>
+  <data name="custpage_procstatus_create" page="processstatus" xml:space="preserve">
+    <value>Erstellung Vermögensgegenstand </value>
+  </data>
+  <data name="custpage_procstatus_create_count" page="processstatus" xml:space="preserve">
+    <value>Vermögensgegenstände wurden erstellt.</value>
+  </data>
+  <data name="custpage_view_proppage" page="processstatus" xml:space="preserve">
+    <value>Angebotsseite anzeigen</value>
+  </data>
+  
+  <!-- Asset Summary Page -->
+  <data name="custrecord_assetsummary_title" page="assetsummary" xml:space="preserve">
+    <value>Übersichtsbericht Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetsummary" xml:space="preserve">
+    <value>Vermögensgegenstandsart(en)</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetsummary" xml:space="preserve">
+    <value>Niederlassung(en)</value>
+    </data>
+  <data name="custpage_filtercbincchild" page="assetsummary" xml:space="preserve">
+    <value>Untergeordnete einschließen</value>
+    </data>
+  <data name="custpage_filtermsselect" page="assetsummary" xml:space="preserve">
+    <value>Auswählen</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetsummary" xml:space="preserve">
+    <value>Abschreibungsmethode</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetsummary" xml:space="preserve">
+    <value>Standort</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetsummary" xml:space="preserve">
+    <value>Abteilung</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetsummary" xml:space="preserve">
+    <value>Klasse</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetsummary" xml:space="preserve">
+    <value>Anfangsdatum der Periode</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetsummary" xml:space="preserve">
+    <value>Enddatum der Periode</value>
+  </data>
+  <data name="custpage_html_tangible" page="assetsummary" xml:space="preserve">
+    <value>Konkretes Anlagevermögen</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="assetsummary" xml:space="preserve">
+    <value>Kosten oder Bewertung</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetsummary" xml:space="preserve">
+    <value>Abschreibung</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetsummary" xml:space="preserve">
+    <value>Nettobuchwert</value>
+  </data>
+  <data name="custpage_html_at" page="assetsummary" xml:space="preserve">
+    <value>Bei (0)</value>
+  </data>
+  <data name="custpage_html_additions" page="assetsummary" xml:space="preserve">
+    <value>Ergänzungen</value>
+  </data>
+  <data name="custpage_html_disposals" page="assetsummary" xml:space="preserve">
+    <value>Veräußerungen</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="assetsummary" xml:space="preserve">
+    <value>Gebühr für die Periode</value>
+  </data>
+  <data name="custpage_html_adjustments" page="assetsummary" xml:space="preserve">
+    <value>Berichtigungen</value>
+  </data>
+  <data name="custpage_html_fam" page="assetsummary" xml:space="preserve">
+    <value>Anlagevermögensverwaltung</value>
+  </data>
+  <data name="custpage_html_total" page="assetsummary" xml:space="preserve">
+    <value>Gesamtsumme</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetsummary" xml:space="preserve">
+    <value>Alle Vermögensgegenstände</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetsummary" xml:space="preserve">
+    <value>Alle Vermögensgegenstände außer geleaste</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetsummary" xml:space="preserve">
+    <value>Nur geleaste</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetsummary" xml:space="preserve">
+    <value>Buchhaltungsmethode (Option)</value>
+  </data>
+  
+  
+  <!-- Fixed Assets Reports -->
+  <data name="custrecord_famreports_title" page="famreports" xml:space="preserve">
+    <value>Berichte Anlagevermögen</value>
+  </data>
+  <data name="custpage_reporttype" page="famreports" xml:space="preserve">
+    <value>Berichtsart</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="famreports" xml:space="preserve">
+    <value>Vermögensgegenstandsart(en)</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="famreports" xml:space="preserve">
+    <value>Niederlassung(en)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="famreports" xml:space="preserve">
+    <value>Untergeordnete einschließen</value>
+  </data>
+  <data name="custpage_filteracctngbook" page="famreports" xml:space="preserve">
+    <value>Geschäftsbücher</value>
+  </data>
+  <data name="custpage_filtermsselect" page="famreports" xml:space="preserve">
+    <value>Einzuschließende Vermögensgegenstände</value>
+  </data>
+  <data name="custpage_filtersmethod" page="famreports" xml:space="preserve">
+  <value>Alternative Abschreibung</value>
+  </data>
+  <data name="custpage_filterslocation" page="famreports" xml:space="preserve">
+    <value>Standort(e)</value>
+  </data>
+  <data name="custpage_filtersdept" page="famreports" xml:space="preserve">
+    <value>Abteilung(en)</value>
+  </data>
+  <data name="custpage_filtersclass" page="famreports" xml:space="preserve">
+    <value>Klasse(n)</value>
+  </data>
+  <data name="custpage_filterstartdate" page="famreports" xml:space="preserve">
+    <value>Startdatum</value>
+  </data>
+  <data name="custpage_filterenddate" page="famreports" xml:space="preserve">
+    <value>Enddatum</value>
+  </data>
+  <data name="custpage_html_tangible" page="famreports" xml:space="preserve">
+    <value>Konkretes Anlagevermögen</value>
+  </data>
+  <data name="custpage_html_costorvaluation" page="famreports" xml:space="preserve">
+    <value>Kosten oder Bewertung</value>
+  </data>
+  <data name="custpage_html_depreciation" page="famreports" xml:space="preserve">
+    <value>Abschreibung</value>
+  </data>
+  <data name="custpage_html_nbv" page="famreports" xml:space="preserve">
+    <value>Nettobuchwert</value>
+  </data>
+  <data name="custpage_html_at" page="famreports" xml:space="preserve">
+    <value>Bei (0)</value>
+  </data>
+  <data name="custpage_html_additions" page="famreports" xml:space="preserve">
+    <value>Ergänzungen</value>
+  </data>
+  <data name="custpage_html_disposals" page="famreports" xml:space="preserve">
+    <value>Veräußerungen</value>
+  </data>
+  <data name="custpage_html_chargeperiod" page="famreports" xml:space="preserve">
+    <value>Gebühr für die Periode</value>
+  </data>
+  <data name="custpage_html_adjustments" page="famreports" xml:space="preserve">
+    <value>Berichtigungen</value>
+  </data>
+  <data name="custpage_html_fam" page="famreports" xml:space="preserve">
+    <value>Anlagevermögensverwaltung</value>
+  </data>
+  <data name="custpage_html_total" page="famreports" xml:space="preserve">
+    <value>Gesamtsumme</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="famreports" xml:space="preserve">
+    <value>Alle Vermögensgegenstände</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="famreports" xml:space="preserve">
+    <value>Alle Vermögensgegenstände außer geleaste</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="famreports" xml:space="preserve">
+    <value>Nur geleaste</value>
+  </data>
+  <data name="custpage_dropdown_report_assetregister" page="famreports" xml:space="preserve">
+    <value>Register Vermögensgegenstände</value>
+  </data>
+  <data name="custpage_dropdown_report_assetsummary" page="famreports" xml:space="preserve">
+    <value>Übersicht Vermögensgegenstände</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_nbv" page="famreports" xml:space="preserve">
+    <value>Abschreibungsplan – Nettobuchwert</value>
+  </data>
+  <data name="custpage_dropdown_report_depshed_pd" page="famreports" xml:space="preserve">
+    <value>Abschreibungsplan – Periode Abschreibung</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="famreports" xml:space="preserve">
+    <value>Buchhaltungsmethode</value>
+  </data>
+  <data name="custpage_saveresults_help" page="famreports" xml:space="preserve">
+    <value>Mit „Prognosebeträge speichern“ können Sie die generierten Abschreibungsplan-Buchungen (für die Lebensdauer eines Vermögensgegenstands) im Vermögensgegenstand-Datensatz speichern. Wenn aktiviert, ignoriert das System Startdatum, Enddatum, Nettobuchwert und Periodenabschreibung. Dadurch wird sichergestellt, dass der Abschreibungsverlauf immer einen vollständigen Abschreibungsplan für die Lebensdauer des Vermögensgegenstands besitzt. Eingegebene Werte in den Datenfeldern „Startdatum“, „Enddatum“, „Nettobuchwert“ und „Abschreibungsperiode“ werden nur für den generierten Bericht verwendet.</value>
+  </data>
+  <data name="custpage_saveresults" page="famreports" xml:space="preserve">
+    <value>Prognosebeträge speichern</value>
+  </data>
+  <data name="custpage_assetinclude_help" page="famreports" xml:space="preserve">
+    <value>Wählen Sie, welche der folgenden Vermögensgegenstände im Bericht enthalten sein sollen: „Alle Vermögensgegenstände“, „Alle Vermögensgegenstände außer geleaste“ oder „Nur geleaste“.</value>
+  </data>
+  <data name="custpage_nodataforreport" page="famreports" xml:space="preserve">
+    <value>Berichtsdaten sind nicht verfügbar für Ihre Auswahl von Filtern.</value>
+  </data>
+  <data name="custpage_dropddown_none" page="famreports" xml:space="preserve">
+    <value>Keine/r</value>
+  </data>
+
+  <!-- Report Status -->
+  <data name="custpage_currentstatus" page="reportstatus" xml:space="preserve">
+    <value>Aktueller Status</value>
+  </data>
+  <data name="custpage_resultstatus" page="reportstatus" xml:space="preserve">
+    <value>Wie stehen die Dinge?</value>
+  </data>
+  <data name="custpage_reportavailable" page="reportstatus" xml:space="preserve">
+    <value>Berichtsergebnisse verfügbar</value>
+  </data>
+  <data name="custpage_generatereportassettypes" page="reportstatus" xml:space="preserve">
+    <value>Bericht für Vermögensgegenstandarten erstellen:</value>
+  </data>
+  <data name="custpage_generatereport" page="reportstatus" xml:space="preserve">
+    <value>Bericht erstellen: </value>
+  </data>
+  <data name="custpage_assetprocessed" page="reportstatus" xml:space="preserve">
+    <value>(0) Vermögensgegenstände wurden verarbeitet.</value>
+  </data>
+  <data name="custpage_reportlink" page="reportstatus" xml:space="preserve">
+    <value>hier</value>
+  </data>
+  <data name="custpage_errorfile" page="reportstatus" xml:space="preserve">
+    <value>Fehler bei der Abfrage der Informationen der Berichtsdatei</value>
+  </data>
+  <data name="custpage_generatingreport" page="reportstatus" xml:space="preserve">
+    <value>Bericht wird erstellt für</value>
+  </data>
+  <data name="custpage_reportcomplete" page="reportstatus" xml:space="preserve">
+    <value>Berichterstellung abgeschlossen.</value>
+  </data>
+  <data name="custpage_processfailed" page="reportstatus" xml:space="preserve">
+    <value>Verarbeitung fehlgeschlagen.</value>
+  </data>
+
+  <!-- Report Status Depreciation -->
+  <data name="custrecord_reportstatus_title" page="reportstatus2" xml:space="preserve">
+    <value>Berichtsstatus Abschreibungsplan</value>
+  </data>
+  <data name="custpage_html_currentstatus" page="reportstatus2" xml:space="preserve">
+    <value>Aktueller Status</value>
+  </data>
+  <data name="custpage_html_resultstatus" page="reportstatus2" xml:space="preserve">
+    <value>Wie stehen die Dinge?</value>
+  </data>
+  <data name="custpage_html_assetprocessed" page="reportstatus2" xml:space="preserve">
+    <value>(0) Vermögensgegenstände wurden verarbeitet.</value>
+  </data>
+  <data name="custpage_html_reportavailable" page="reportstatus2" xml:space="preserve">
+    <value>Berichtsergebnisse verfügbar</value>
+  </data>
+  <data name="custpage_html_reportlink" page="reportstatus2" xml:space="preserve">
+    <value>hier</value>
+  </data>
+  <data name="custpage_html_generatereport" page="reportstatus2" xml:space="preserve">
+    <value>Bericht wird erstellt für: (0)</value>
+  </data>
+  <data name="custpage_html_processfailed" page="reportstatus2" xml:space="preserve">
+    <value>Verarbeitung fehlgeschlagen.</value>
+  </data>
+  <data name="custpage_html_errorfile" page="reportstatus2" xml:space="preserve">
+    <value>Fehler bei der Abfrage der Informationen der Berichtsdatei</value>
+  </data>
+  <data name="custpage_html_assetno" page="reportstatus2" xml:space="preserve">
+    <value>Nr. Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="reportstatus2" xml:space="preserve">
+    <value>Beschreibung Vermögensgegenstand</value>
+  </data>
+
+
+  <data name="custrecord_famreportshist_title" page="famreportshistory" xml:space="preserve">
+    <value>Berichte Anlagevermögen Verlauf</value>
+  </data>  
+  <data name="custpage_showingdays" page="famreportshistory" xml:space="preserve">
+    <value>Es werden Berichte der letzte (0) Tage angezeigt.</value>
+  </data>
+  <data name="custpage_group_reporthistory" page="famreportshistory" xml:space="preserve">
+    <value>Berichte Anlagevermögen</value>
+  </data>
+  <data name="custpage_reports_dategen" page="famreportshistory" xml:space="preserve">
+    <value>Erstellungsdatum</value>
+  </data>
+  <data name="custpage_reports_reptype" page="famreportshistory" xml:space="preserve">
+    <value>Art</value>
+  </data>
+  <data name="custpage_reports_repstartdate" page="famreportshistory" xml:space="preserve">
+    <value>Startdatum</value>
+  </data>
+  <data name="custpage_reports_rependdate" page="famreportshistory" xml:space="preserve">
+    <value>Enddatum</value>
+  </data>
+  <data name="custpage_reports_fileoptions" page="famreportshistory" xml:space="preserve">
+    <value>Dateioptionen</value>
+  </data>
+  <data name="custpage_reports_viewas" page="famreportshistory" xml:space="preserve">
+    <value>Anzeigen als: </value>
+  </data>
+  <data name="custpage_reports_delete" page="famreportshistory" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="custpage_reports_repowner" page="famreportshistory" xml:space="preserve">
+    <value>Bearbeiter</value>
+  </data>
+  <data name="custpage_error_filepermissioninsuf" page="famreportshistory" xml:space="preserve">
+    <value>Diese Rolle hat nicht die Berechtigung „Anzeigen“ oder „Höhere Datei“.</value>
+  </data>
+  <data name="custpage_button_all_reports" page="famreportshistory" xml:space="preserve">
+    <value>Alle Berichte anzeigen</value>
+  </data>
+  <data name="custpage_button_my_reports" page="famreportshistory" xml:space="preserve">
+    <value>Meine Berichte anzeigen</value>
+  </data>
+
+  <!-- System Setup Page -->
+  <data name="custrecord_systemsetup_title" page="systemsetup" xml:space="preserve">
+    <value>Anlagevermögensverwaltung</value>
+  </data>
+  <data name="custrecord_systemsetup_settingstab" page="systemsetup" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalktab" page="systemsetup" xml:space="preserve">
+    <value>SuiteTalk</value>
+  </data>
+  <data name="custrecord_systemsetup_featurestab" page="systemsetup" xml:space="preserve">
+    <value>Merkmale</value>
+  </data>
+  <data name="custrecord_systemsetup_suitetalkdesc" page="systemsetup" xml:space="preserve">
+    <value>Geben Sie die Berechtigungen für die Nutzung von SuiteTalk (Web-Dienste) ein</value>
+  </data>
+  <data name="custpage_filtermsselect" page="systemsetup" xml:space="preserve">
+    <value>Auswählen</value>
+  </data>
+  <data name="custpage_filtersmethod" page="systemsetup" xml:space="preserve">
+    <value>Abschreibungsmethode</value>
+  </data>
+  <data name="custpage_filterslocation" page="systemsetup" xml:space="preserve">
+    <value>Standort</value>
+  </data>
+  <data name="custpage_filtersdept" page="systemsetup" xml:space="preserve">
+    <value>Abteilung</value>
+  </data>
+  <data name="custpage_filtersclass" page="systemsetup" xml:space="preserve">
+    <value>Klasse</value>
+  </data>
+  <data name="custpage_filterstartdate" page="systemsetup" xml:space="preserve">
+    <value>Anfangsdatum der Periode</value>
+  </data>
+  <data name="custpage_filterenddate" page="systemsetup" xml:space="preserve">
+    <value>Enddatum der Periode</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import" page="systemsetup" xml:space="preserve">
+    <value>Server-Skripts bei CSV-Import ausführen</value>
+  </data>
+  <data name="custpage_farsetuppostlocation" page="systemsetup" xml:space="preserve">
+    <value>Bei Standortänderung buchen</value>
+  </data>
+  <data name="custpage_farsetuppostclass" page="systemsetup" xml:space="preserve">
+    <value>Bei Klassenänderung buchen</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment" page="systemsetup" xml:space="preserve">
+    <value>Bei Abteilungsänderung buchen</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock" page="systemsetup" xml:space="preserve">
+    <value>Auf nächste offene Periode buchen, wenn Kreditorenbuchhaltung gesperrt ist</value>
+  </data>
+  <data name="custpage_farsetupcheckaplock_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, um die Buchung auf die nächste offene Periode zu erlauben, wenn die Kreditorenbuchhaltung gesperrt ist. Deaktivieren Sie dieses Kontrollkästchen, um die Buchung auf die aktuelle Periode zu erlauben, auch wenn die Kreditorenbuchhaltung gesperrt ist.</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock" page="systemsetup" xml:space="preserve">
+    <value>Auf nächste offene Periode buchen, wenn Debitorenbuchhaltung gesperrt ist</value>
+  </data>
+  <data name="custpage_farsetupcheckarlock_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, um die Buchung auf die nächste offene Periode zu erlauben, wenn die Debitorenbuchhaltung gesperrt ist. Deaktivieren Sie dieses Kontrollkästchen, um die Buchung auf die aktuelle Periode zu erlauben, auch wenn die Debitorenbuchhaltung gesperrt ist.</value>
+  </data>
+  <data name="custpage_allow_non_fixedasset_account" page="systemsetup" xml:space="preserve">
+    <value>Kontenarten für Nicht-Anlagevermögen erlauben</value>
+  </data>
+  <data name="custpage_farsetupsummary" page="systemsetup" xml:space="preserve">
+    <value>Journale zusammenfassen nach</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations" page="systemsetup" xml:space="preserve">
+    <value>Abschreibung mit Datum in Zukunft zulassen</value>
+  </data>
+  <data name="custpage_allowvalueedit" page="systemsetup" xml:space="preserve">
+    <value>Bearbeitung Vermögensgegenstandswert zulassen</value>
+  </data>
+  <data name="custpage_allownegativecost" page="systemsetup" xml:space="preserve">
+    <value>Negative Vermögensgegenstandskosten zulassen</value>
+  </data>
+  <data name="custpage_userrole_help1" page="systemsetup" xml:space="preserve">
+    <value>„Bearbeitung von Vermögensgegenstandswert zulassen“ gibt dem Administrator die uneingeschränkte Berechtigung, Werte in Vermögensgegenstands-Datensätzen zu bearbeiten.</value>
+  </data>
+  <data name="custpage_userrole_help2" page="systemsetup" xml:space="preserve">
+    <value>Sie können auch zusätzliche Rollen auswählen, um anderen Benutzern das Bearbeiten von Vermögensgegenstandswerten zu erlauben.</value>
+  </data>
+  <data name="custpage_userrole" page="systemsetup" xml:space="preserve">
+    <value>Benutzerrollen</value>
+  </data>
+  <data name="custpage_propapprovedonly" page="systemsetup" xml:space="preserve">
+    <value>Nur genehmigte Transaktionen anbieten</value>
+  </data>
+  <data name="custpage_followacctperiod" page="systemsetup" xml:space="preserve">
+    <value>Daten der Buchhaltungsperiode für Abschreibung verwenden</value>
+  </data>
+  <data name="custpage_allowbypassue" page="systemsetup" xml:space="preserve">
+    <value>UE-Skripte in benutzerdefinierten Datensätzen während Abschreibung umgehen</value>
+  </data>
+  <data name="custpage_constrainal" page="systemsetup" xml:space="preserve">
+    <value>Alternative Vermögensgegenstand-Lebensdauer einschränken</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction" page="systemsetup" xml:space="preserve">
+    <value>Benutzerdefinierte Journale verwenden</value>
+  </data>
+  <data name="custpage_adminallreports" page="systemsetup" xml:space="preserve">
+  <value>Administratoren erlauben, alle Berichte anzuzeigen</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount" page="systemsetup" xml:space="preserve">
+    <value>Wertberichtigung mit Abschreibungskonto</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym" page="systemsetup" xml:space="preserve">
+    <value>Ganze Zahl (0 d.p.) Währungen</value>
+  </data>
+  <data name="custpage_farsetupresrej" page="systemsetup" xml:space="preserve">
+    <value>Möglichkeit zum Ablehnen von Angeboten beschränken</value>
+  </data>
+  <data name="custpage_farsetupreportfolder" page="systemsetup" xml:space="preserve">
+   <value>Ordner, der für Berichtserstellung verwendet wird (interner Identifizierungscode)</value>
+  </data>
+  <data name="custpage_farsetupdisposalform" page="systemsetup" xml:space="preserve">
+<value>Rechnungsformular Veräußerung des Vermögensgegenstands (interner Identifizierungscode)</value>
+  </data>
+  <data name="custpage_farsetupsubsidsenabled" page="systemsetup" xml:space="preserve">
+    <value>Niederlassungen</value>
+  </data>
+  <data name="custpage_farsetupdeptsenabled" page="systemsetup" xml:space="preserve">
+    <value>Abteilungen</value>
+  </data>
+  <data name="custpage_farsetuplocationsenabled" page="systemsetup" xml:space="preserve">
+    <value>Standorte</value>
+  </data>
+  <data name="custpage_farsetupclassesenabled" page="systemsetup" xml:space="preserve">
+    <value>Klassen</value>
+  </data>
+  <data name="custpage_farsetupjobsenabled" page="systemsetup" xml:space="preserve">
+    <value>Jobs</value>
+  </data>
+  <data name="custpage_farsetupmulticurrenabled" page="systemsetup" xml:space="preserve">
+    <value>Mehrfachwährungen</value>
+  </data>
+  <data name="custpage_admin_only_field" page="systemsetup" xml:space="preserve">
+    <value>Nur Administratoren</value>
+  </data>
+  <data name="custpage_html_adminonly" page="systemsetup" xml:space="preserve">
+    <value>Nur Administratoren haben Zugriff auf diese Seite.</value>
+  </data>
+  <data name="custpage_dropdown_none" page="systemsetup" xml:space="preserve">
+    <value>Keine/r</value>
+  </data>
+  <data name="custpage_dropdown_parent" page="systemsetup" xml:space="preserve">
+    <value>Übergeordnet</value>
+  </data>
+  <data name="custpage_dropdown_subcategory" page="systemsetup" xml:space="preserve">
+    <value>Unterkategorie</value>
+  </data>
+  <data name="custpage_dropdown_assettype" page="systemsetup" xml:space="preserve">
+    <value>Vermögensgegenstandsart</value>
+  </data>
+  <data name="custpage_run_script_on_csv_import_help" page="systemsetup" xml:space="preserve">
+ <value>Deaktivieren Sie dieses Kontrollkästchen, wenn Sie Datensätze von vorhandenen Vermögensgegenständen importieren.
+Wenn dieses Kontrollkästchen und außerdem das Kontrollkästchen „Server-SuiteScript ausführen und Workflows auslösen“ („Einstellungen“ &gt; „Import“ &gt; „Einstellungen CSV-Import“) aktiviert ist, werden die Werte für „Kumulative Abschreibung“, „Letztes Abschreibungsdatum“ und „Letzte Abschreibungsperiode“ standardmäßig automatisch „0“, selbst wenn die Importdatei tatsächliche Werte enthält.</value>
+  </data>
+  <data name="custpage_farsetuppostlocation_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, wenn Vermögensgegenstände bei Standortänderung mit begleitenden Journalbuchungen transferiert werden.</value>
+  </data>
+  <data name="custpage_farsetuppostclass_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, wenn Vermögensgegenstände bei einer Klassenänderung mit begleitenden Journalbuchungen transferiert werden.</value>
+  </data>
+  <data name="custpage_farsetuppostdepartment_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, wenn Vermögensgegenstände bei einer Abteilungsänderung mit begleitenden Journalbuchungen transferiert werden.</value>
+  </data>
+  <data name="custpage_constrainal_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kästchen, um das Hinzufügen einer alternativen Abschreibungsmethode zu einem Vermögensgegenstand-Datensatz zu beschränken, deren Wert für „Lebensdauer Vermögensgegenstand (AL)“ größer als die Lebensdauer des Vermögensgegenstands ist.</value>
+  </data>
+  <data name="custpage_farsetupwdusedepraccount_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, um Wertminderungsbeträge im Konto für die Abschreibung zu verbuchen. Deaktivieren Sie dieses Kontrollkästchen, um Wertminderungsbeträge im Vermögensgegenstandskonto zu verbuchen.</value>
+  </data>
+  <data name="custpage_farsetupintcurrsym_help" page="systemsetup" xml:space="preserve">
+    <value>Geben Sie für Währungen ohne Dezimalstellen ein Währungssymbol oder mehrere ein (z. B. JPY, trennen Sie mehrere Werte mit einem Komma).</value>
+  </data>
+  <data name="custpage_farsetupresrej_help" page="systemsetup" xml:space="preserve">
+    <value>Wenn diese Option aktiviert ist, wird die Schaltfläche „Angebote ablehnen“ auf der Seite „Angebot Vermögensgegenstand“ nur angezeigt, wenn diese von Benutzern mit Administratorrolle geöffnet wird.</value>
+  </data>
+  <data name="custpage_farsetupreportfolder_help" page="systemsetup" xml:space="preserve">
+    <value>Geben Sie den internen Identifizierungscode des Ordners für Berichte des Anlagevermögen-Registers im Dateiablageordner ein, in dem die Berichte zum Anlagevermögen gespeichert werden. So können Sie den internen Identifizierungscode des Ordners für Berichte des Anlagevermögen-Registers in Ihrem NetSuite-Konto einsehen:
+1. Gehen Sie zu „Dokumente“ &gt; „Dateien“ &gt; „Dateiablageordner“.
+2. Klicken Sie auf „SuiteBundles“.
+3. Klicken Sie auf „Bündel 35405“.
+4. Klicken Sie auf den SRC-Ordner.</value>
+  </data>
+  <data name="custpage_farsetupdisposalform_help" page="systemsetup" xml:space="preserve">
+<value>Geben Sie den internen Identifizierungscode des bevorzugten Rechnungsformulars ein, das verwendet werden soll, um einen Datensatz für die Rechnung (Verkauf) zu erstellen, wenn ein Vermögensgegenstand durch Verkauf veräußert wird. Wenn dieses Datenfeld leer ist, wird das standardmäßig bevorzugte Formular als Rechnungsformular verwendet.</value>
+  </data>
+  <data name="custpage_farsetupsummary_help" page="systemsetup" xml:space="preserve">
+    <value>Wählen Sie eine Option von „Journale zusammenfassen nach“:
+Unterkategorie - Werte für die untergeordnete Kategorie hochsummieren und eine Journalbuchung pro untergeordnete Kategorie pro Periode erstellen. Diese Option kann nur ausgewählt werden, wenn die Kategorie „Reparatur und Wartung“ und die Unterkategorien von „Reparatur und Wartung“ implementiert wurden.
+Vermögensgegenstandsart - Werte nach Vermögensgegenstandsart hochsummieren.</value>
+  </data>
+  <data name="custpage_farsetupfuturedepreciations_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, um eine Abschreibung von Vermögensgegenständen bis zum Datum der Abschreibung zuzulassen, das über die aktuelle Periode hinausgeht. Deaktivieren Sie das Kontrollkästchen, damit eine Abschreibung der Vermögensgegenstände nur für die aktuelle Periode durchgeführt wird.</value>
+  </data>
+  <data name="custpage_allowvalueedit_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, um Administratoren die uneingeschränkte Berechtigung zu geben, Werte in Vermögensgegenstand-Datensätzen zu bearbeiten.
+Ist dieses Kontrollkästchen deaktiviert, können Vermögensgegenstand-Datensätze nicht bearbeitet werden. Unter „Bearbeitung von Vermögensgegenstandswerten begrenzen“ können Sie eine Liste der Datenfelder einsehen, die nicht bearbeitet werden können.
+Damit andere Benutzer Vermögensgegenstandswerte bearbeiten können, wählen Sie zusätzliche Rollen im Datenfeld „Benutzerrollen“ aus.</value>
+  </data>
+  <data name="custpage_allownegativecost_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, um Administratoren (und anderen Rollen mit der Berechtigung zur Bearbeitung von Vermögensgegenstandswerten) zu erlauben, in Vermögensgegenstand-Datensätzen negative Werte für „Ursprüngliche Kosten“, „Aktuelle Kosten“ und „Verbleibender Wert“ einzugeben.</value>
+  </data>
+  <data name="custpage_userrole_help" page="systemsetup" xml:space="preserve">
+    <value>Diese Option ist aktiviert, wenn das Kontrollkästchen „Bearbeitung Vermögensgegenstandswert zulassen“ aktiviert ist. Um zwei oder mehr Rollen auszuwählen, halten Sie die STRG-Taste gedrückt und klicken Sie auf die jeweilige Rolle im Datenfeld „Benutzerrollen“.</value>
+  </data>
+  <data name="custpage_propapprovedonly_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, wenn Sie nur Vermögensgegenstände von genehmigten Transaktionen anbieten möchten. Deaktivieren Sie dieses Kontrollkästchen, um automatisch Vermögensgegenstände von allen neuen Transaktionen anzubieten, die unabhängig vom Transaktionsstatus (z. B. „genehmigt“ oder „ausstehende Genehmigung“) in Anlagevermögen-Hauptbuchkonten verbucht wurden.</value>
+  </data>
+  <data name="custpage_followacctperiod_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie diese Einstellung, um die Buchhaltungsperiodendaten für die Abschreibungsjournalbuchungen zu verwenden. Dies ist anwendbar, wenn das Periodenformat nicht „Kalendermonate“ ist.</value>
+  </data>
+  <data name="custpage_allowbypassue_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, um die Benutzerereignis-Skripte und -Workflows für benutzerdefinierte Datensätze während des Abschreibungsprozesses zu umgehen. Deaktivieren Sie dieses Kontrollkästchen, wenn Sie benutzerdefinierte Skripte und/oder Workflows für Datensätze ausführen, die während des Abschreibungsprozesses aktualisiert werden.</value>
+  </data>  
+  <data name="custpage_allowcustomtransaction_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, um ein benutzerdefiniertes Journalbuchungsformular zu verwenden.</value>
+  </data>
+  <data name="custpage_adminallreports_help" page="systemsetup" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, um es Administratoren zu erlauben, von anderen Benutzern erstellte Berichte anzuzeigen.</value>
+  </data>
+  
+  <!-- Asset Split -->
+  <data name="custrecord_assetsplit_title" page="assetsplit" xml:space="preserve">
+    <value>Split Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetsplit" xml:space="preserve">
+    <value>Primärinformationen</value>
+  </data>
+  <data name="custpage_group_splitdetails" page="assetsplit" xml:space="preserve">
+    <value>Split-Details</value>
+  </data>
+  <data name="custpage_newlbl" page="assetsplit" xml:space="preserve">
+    <value>Neue Vermögensgegenstandswerte:</value>
+  </data>
+  <data name="custpage_oldlbl" page="assetsplit" xml:space="preserve">
+    <value>Alte Vermögensgegenstandswerte</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetsplit" xml:space="preserve">
+    <value>Steuermethoden</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetsplit" xml:space="preserve">
+    <value>Geschäftsbuch</value>
+  </data>
+  <data name="custpage_altmethod" page="assetsplit" xml:space="preserve">
+    <value>Alternative Methode</value>
+  </data>
+  <data name="custpage_assetid" page="assetsplit" xml:space="preserve">
+    <value>Identifizierungscode/Name Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetsplit" xml:space="preserve">
+    <value>Beschreibung Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetsplit" xml:space="preserve">
+    <value>Seriennummer Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetsplit" xml:space="preserve">
+    <value>Alternative Vermögensgegenstandsnummer</value>
+  </data>
+  <data name="custpage_assettype" page="assetsplit" xml:space="preserve">
+    <value>Vermögensgegenstandsart</value>
+  </data>
+  <data name="custpage_assetcost" page="assetsplit" xml:space="preserve">
+    <value>Ursprüngliche Kosten</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetsplit" xml:space="preserve">
+    <value>Aktuelle Kosten</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetsplit" xml:space="preserve">
+    <value>Verbleibender Wert</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetsplit" xml:space="preserve">
+    <value>Abschreibungsmethode</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetsplit" xml:space="preserve">
+    <value>Lebensdauer Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetsplit" xml:space="preserve">
+    <value>Aktueller Buchwert</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetsplit" xml:space="preserve">
+    <value>Abschreibung bis Datum</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetsplit" xml:space="preserve">
+    <value>Letzte Abschreibungsperiode</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetsplit" xml:space="preserve">
+    <value>Letzter Abschreibungsbetrag</value>
+  </data>
+  <data name="custpage_assetdeprstartdate" page="assetsplit" xml:space="preserve">
+    <value>Anfangsdatum Abschreibung</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetsplit" xml:space="preserve">
+    <value>Letztes Abschreibungsdatum</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetsplit" xml:space="preserve">
+    <value>Status Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetsplit" xml:space="preserve">
+    <value>Menge</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetsplit" xml:space="preserve">
+    <value>Niederlassung</value>
+  </data>
+  <data name="custpage_splitquantity" page="assetsplit" xml:space="preserve">
+    <value>Splitmenge</value>
+  </data>
+  <data name="splitquantity_help" page="assetsplit" xml:space="preserve">
+    <value>Bitte geben Sie einen Wert ein, der kleiner als die Menge des Vermögensgegenstands ist.</value>
+  </data>
+  <!--help texts -->
+  <data name="custpage_newqty_help" page="assetsplit" xml:space="preserve">
+    <value>Die vom ursprünglichen Vermögensgegenstand getrennte Menge. Dies wird nun die Menge des neuen Vermögensgegenstands.</value>
+  </data>
+  <data name="custpage_newoc_help" page="assetsplit" xml:space="preserve">
+    <value>Die ursprünglichen (Bezugs-)Standardkosten des neuen Vermögensgegenstands basierend auf den ursprünglichen Kosten und der Splitmenge des ursprünglichen Vermögensgegenstands. Geben Sie einen neuen Wert ein, wenn Sie nicht die standardmäßigen ursprünglichen Kosten verwenden möchten.</value>
+  </data>
+  <data name="custpage_newcc_help" page="assetsplit" xml:space="preserve">
+    <value>Die aktuellen Standardkosten für den neuen Vermögensgegenstand basierend auf den aktuellen Kosten und der Splitmenge des ursprünglichen Vermögensgegenstands. Geben Sie einen neuen Wert ein, wenn Sie nicht die standardmäßigen aktuellen Kosten verwenden möchten.</value>
+  </data>
+  <data name="custpage_newnbv_help" page="assetsplit" xml:space="preserve">
+    <value>Die standardmäßige aktuelle Journalbewertung des neuen Vermögensgegenstands basierend auf dem Nettobuchwert und der Splitmenge des ursprünglichen Vermögensgegenstands. Geben Sie einen neuen Wert ein, wenn Sie nicht den Standard-Nettobuchwert verwenden möchten.  Beachten Sie, dass die Summe des Nettobuchwerts und der bisherigen Abschreibung den aktuellen Kosten entsprechen muss.</value>
+  </data>
+  <data name="custpage_newdeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>Der gesamte Abschreibungswert, der bisher auf den neuen Vermögensgegenstand angewendet wurde, basierend auf der Splitmenge und dem bisherigen Abschreibungsbetrag des ursprünglichen Vermögensgegenstands. Geben Sie einen neuen Wert ein, wenn Sie nicht den Standard-Gesamtbetrag der Abschreibung verwenden möchten. Beachten Sie, dass die Summe des Nettobuchwerts und der bisherigen Abschreibung den aktuellen Kosten entsprechen muss.</value>
+  </data>
+  <data name="custpage_newrv_help" page="assetsplit" xml:space="preserve">
+    <value>Der Standardwert, den der neue Vermögensgegenstand am Ende seiner Lebensdauer wert sein wird. Dieser Wert basiert auf der Splitmenge und dem verbleibenden Wert des ursprünglichen Vermögensgegenstands.  Geben Sie einen neuen Wert ein, wenn Sie nicht den standardmäßigen verbleibenden Wert verwenden möchten.</value>
+  </data>
+  <data name="custpage_newlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>Der standardmäßige letzte Abschreibungsbetrag für den neuen Vermögensgegenstand basierend auf der Splitmenge und dem letzten Abschreibungsbetrag des ursprünglichen Vermögensgegenstands. Geben Sie einen neuen Wert ein, wenn Sie nicht den standardmäßigen letzten Abschreibungsbetrag verwenden möchten.</value>
+  </data>
+  <data name="custpage_oldqty_help" page="assetsplit" xml:space="preserve">
+    <value>Die verbleibende Menge für den ursprünglichen Vermögensgegenstand.</value>
+  </data>
+  <data name="custpage_oldoc_help" page="assetsplit" xml:space="preserve">
+    <value>Die verbleibenden ursprünglichen Kosten für den ursprünglichen Vermögensgegenstand basierend auf der Splitmenge.</value>
+  </data>
+  <data name="custpage_oldcc_help" page="assetsplit" xml:space="preserve">
+    <value>Die verbleibenden aktuellen Kosten für den ursprünglichen Vermögensgegenstand basierend auf der Splitmenge.</value>
+  </data>
+  <data name="custpage_oldnbv_help" page="assetsplit" xml:space="preserve">
+    <value>Die verbleibende aktuelle Buchbewertung für den ursprünglichen Vermögensgegenstand basierend auf der Splitmenge.</value>
+  </data>
+  <data name="custpage_olddeprtodate_help" page="assetsplit" xml:space="preserve">
+    <value>Der verbleibende Abschreibungsbetrag, der bisher auf den ursprünglichen Vermögensgegenstand angewendet wurde, basierend auf der Splitmenge.</value>
+  </data>
+  <data name="custpage_oldrv_help" page="assetsplit" xml:space="preserve">
+    <value>Der verbleibende Wert des ursprünglichen Vermögensgegenstands am Ende seiner Lebensdauer. Dieser Wert basiert auf der Splitmenge.</value>
+  </data>
+  <data name="custpage_oldlastdepramt_help" page="assetsplit" xml:space="preserve">
+    <value>Der verbleibende letzte Abschreibungsbetrag für den ursprünglichen Vermögensgegenstand basierend auf der Splitmenge.</value>
+  </data>
+
+  <!-- Asset Disposal -->
+  <data name="custrecord_assetdisposal_title" page="assetdisposal" xml:space="preserve">
+    <value>Verkauf/Veräußerung Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetdisposal" xml:space="preserve">
+    <value>Primärinformationen</value>
+  </data>
+  <data name="custpage_group_disposaldetail" page="assetdisposal" xml:space="preserve">
+    <value>Veräußerung Details</value>
+  </data>
+  <data name="custpage_group_taxmethods" page="assetdisposal" xml:space="preserve">
+    <value>Steuermethoden</value>
+  </data>
+  <data name="custpage_assetid" page="assetdisposal" xml:space="preserve">
+    <value>Identifizierungscode/Name Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetdisposal" xml:space="preserve">
+    <value>Wählen Sie den Identifizierungscode oder den Namen des Vermögensgegenstands aus, den Sie veräußern möchten.</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetdisposal" xml:space="preserve">
+    <value>Beschreibung Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetdisposal" xml:space="preserve">
+    <value>Seriennummer Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetdisposal" xml:space="preserve">
+    <value>Alternative Vermögensgegenstandsnummer</value>
+  </data>
+  <data name="custpage_assettype" page="assetdisposal" xml:space="preserve">
+    <value>Vermögensgegenstandsart</value>
+  </data>
+  <data name="custpage_assetcost" page="assetdisposal" xml:space="preserve">
+    <value>Ursprüngliche Kosten</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetdisposal" xml:space="preserve">
+    <value>Aktuelle Kosten</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetdisposal" xml:space="preserve">
+    <value>Verbleibender Wert</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetdisposal" xml:space="preserve">
+    <value>Abschreibungsmethode</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetdisposal" xml:space="preserve">
+    <value>Lebensdauer Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetdisposal" xml:space="preserve">
+    <value>Aktueller Buchwert</value>
+  </data>
+  <data name="custpage_assetdeprtodate" page="assetdisposal" xml:space="preserve">
+    <value>Bisherige Abschreibung</value>
+  </data>
+  <data name="custpage_assetcurrentage" page="assetdisposal" xml:space="preserve">
+    <value>Letzte Abschreibungsperiode</value>
+  </data>
+  <data name="custpage_assetlastdepramt" page="assetdisposal" xml:space="preserve">
+    <value>Letzter Abschreibungsbetrag</value>
+  </data>
+  <data name="custpage_assetlastdeprdate" page="assetdisposal" xml:space="preserve">
+    <value>Letztes Abschreibungsdatum</value>
+  </data>
+  <data name="custpage_assetdeprperiod" page="assetdisposal" xml:space="preserve">
+    <value>Abschreibungsperiode</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetdisposal" xml:space="preserve">
+    <value>Überarbeitungsmethode</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetdisposal" xml:space="preserve">
+    <value>Status Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetquantity" page="assetdisposal" xml:space="preserve">
+    <value>Menge</value>
+  </data>
+  <data name="custpage_disposaldate" page="assetdisposal" xml:space="preserve">
+    <value>Veräußerungsdatum</value>
+  </data>
+  <data name="custpage_disposaltype" page="assetdisposal" xml:space="preserve">
+    <value>Veräußerungsart</value>
+  </data>
+  <data name="custpage_assetquantdisposed" page="assetdisposal" xml:space="preserve">
+    <value>Menge veräußert</value>
+  </data>
+  <data name="custpage_disposalitem" page="assetdisposal" xml:space="preserve">
+    <value>Verkaufsartikel</value>
+  </data>
+  <data name="custpage_customer" page="assetdisposal" xml:space="preserve">
+    <value>Kunde</value>
+  </data>
+  <data name="custpage_salesamount" page="assetdisposal" xml:space="preserve">
+    <value>Verkaufsbetrag</value>
+  </data>
+  <data name="custpage_taxcode" page="assetdisposal" xml:space="preserve">
+    <value>Verkaufssteuercode</value>
+  </data>
+  <data name="custpage_subsidiary" page="assetdisposal" xml:space="preserve">
+    <value>Niederlassung</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetdisposal" xml:space="preserve">
+    <value>Standort</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdisposal" xml:space="preserve">
+    <value>Geschäftsbuch</value>
+  </data>
+  <data name="custpage_altmethod" page="assetdisposal" xml:space="preserve">
+    <value>Alternative Methode</value>
+  </data>
+  <data name="custpage_html_assetdisposed" page="assetdisposal" xml:space="preserve">
+    <value>VERMÖGENSGEGENSTAND NICHT VERÄUSSERT!</value>
+  </data>
+  <data name="custpage_html_invoicefail" page="assetdisposal" xml:space="preserve">
+    <value>Erstellen der Rechnung für den Verkauf des Vermögensgegenstands fehlgeschlagen.</value>
+  </data>
+  <data name="custpage_html_checksetup" page="assetdisposal" xml:space="preserve">
+    <value>Konfiguration des Vermögensgegenstand-Datensatzes auf inkompatible und/oder fehlende Daten überprüfen.</value>
+  </data>
+  <data name="custpage_html_journalfail" page="assetdisposal" xml:space="preserve">
+    <value>Journalbuchung für den Verkauf des Vermögensgegenstands nicht erstellt.</value>
+  </data>
+  <data name="custpage_html_journal_writeofffail" page="assetdisposal" xml:space="preserve">
+    <value>Journalbuchung für die Ausbuchung des Vermögensgegenstands nicht erstellt.</value>
+  </data>
+  <data name="custpage_assetquantdisposed_help" page="assetdisposal" xml:space="preserve">
+    <value>Die veräußerte Menge darf nicht größer als die verbleibende Menge des Vermögensgegenstands sein.</value>
+  </data>
+  <data name="custpage_disposaldate_help" page="assetdisposal" xml:space="preserve">
+    <value>Datum der Veräußerung darf nicht vor dem Datum der letzten Abschreibung liegen.</value>
+  </data>
+  <data name="custpage_disposalitem_help" page="assetdisposal" xml:space="preserve">
+    <value>Nur Bestandsposten und Nicht-Bestandsposten für den Verkauf oder den Weiterverkauf können ausgewählt werden.</value>
+  </data>
+  <data name="custpage_filterslocation_help" page="assetdisposal" xml:space="preserve">
+    <value>Wenn das Merkmal „Bestand an mehreren Standorten“ aktiviert ist, dann erfordert die Veräußerung des Vermögensgegenstands durch Verkauf das Festlegen eines Werts für den Standort. Der Wert des Standorts wird gegebenenfalls in der Standardeinstellung vom FAM-Vermögensgegenstand-Datensatz bezogen und kann nicht bearbeitet werden, um nicht erfasste Standorttransfers zu verhindern. Wenn der Wert im Vermögensgegenstand-Datensatz nicht verfügbar ist, müssen Sie ihn in der Standortliste auf der Seite „Verkauf/Veräußerung“ auswählen.</value>
+  </data>
+  <data name="custpage_salesamount_help" page="assetdisposal" xml:space="preserve">
+    <value>Verkaufsbetrag muss größer als null sein.</value>
+  </data>
+  <data name="custpage_taxcode_help" page="assetdisposal" xml:space="preserve">
+    <value>Wählen Sie einen Steuercode für die Niederlassung des Kunden.</value>
+  </data>
+  <data name="custpage_salememo" page="assetdisposal" xml:space="preserve">
+    <value>Verkauf Vermögensgegenstand (0)</value>
+  </data>
+  <data name="custpage_writeoffmemo" page="assetdisposal" xml:space="preserve">
+    <value>Ausbuchung Vermögensgegenstand (0)</value>
+  </data>
+  <data name="custpage_nodispacc" page="assetdisposal" xml:space="preserve">
+     <value>Der Vermögensgegenstand kann nicht veräußert werden, da die folgenden Veräußerungskonten nicht festgelegt wurden für: (0)</value>
+  </data>
+  <data name="custpage_inactiveacc" page="assetdisposal" xml:space="preserve">
+     <value>Diese Vermögensgegenstände können nicht veräußert werden, da die folgenden Veräußerungskonten inaktiv sind: (0)</value>
+  </data>
+  <data name="custpage_invoicefail" page="assetdisposal" xml:space="preserve">
+     <value>Rechnung konnte nicht erstellt werden.</value>
+  </data>
+  <data name="custpage_quantityerror" page="assetdisposal" xml:space="preserve">
+     <value>Veräußerte Menge muss zwischen (0) und (1) liegen.</value>
+  </data>
+
+  <!-- Asset Depreciation Schedule Report V2 (Portrait) -->
+  <data name="custrecord_deprecationschedule2_title" page="depreciationschedule2" xml:space="preserve">
+    <value>Abschreibungsplanbericht Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule2" xml:space="preserve">
+    <value>Nettobuchwert</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>Abschreibungsperiode</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule2" xml:space="preserve">
+    <value>Vermögensgegenstandsart(en)</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule2" xml:space="preserve">
+    <value>Niederlassungen</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule2" xml:space="preserve">
+    <value>Untergeordnete einschließen</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule2" xml:space="preserve">
+    <value>Standort</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule2" xml:space="preserve">
+    <value>Abteilung</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule2" xml:space="preserve">
+    <value>Klasse</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule2" xml:space="preserve">
+    <value>Auswählen</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>Abschreibungsmethode</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule2" xml:space="preserve">
+    <value>Startdatum</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule2" xml:space="preserve">
+    <value>Enddatum</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule2" xml:space="preserve">
+    <value>Alle Vermögensgegenstände</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule2" xml:space="preserve">
+    <value>Alle Vermögensgegenstände außer geleaste</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule2" xml:space="preserve">
+    <value>Nur geleaste</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule2" xml:space="preserve">
+    <value>Buchhaltungsmethode</value>
+  </data>
+  <data name="custpage_html_asset" page="depreciationschedule2" xml:space="preserve">
+    <value>Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_message_filestorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>Speichern der für den Bericht notwendigen temporären Daten nicht möglich (nlapiSubmitFile)</value>
+  </data>
+  <data name="custpage_message_temporarydata" page="depreciationschedule2" xml:space="preserve">
+    <value>Temporäre Daten, die für den Abschreibungsplanbericht der  Anlagevermögensverwaltung benötigt werden</value>
+  </data>
+  <data name="custpage_html_perioddepr" page="depreciationschedule2" xml:space="preserve">
+    <value>Abschreibungsplan Vermögensgegenstand - Periode Abschreibung</value>
+  </data>
+  <data name="custpage_html_nbv" page="depreciationschedule2" xml:space="preserve">
+    <value>Abschreibungsplan Vermögensgegenstand - Nettobuchwert</value>
+  </data>
+  <data name="custpage_html_periodtotal" page="depreciationschedule2" xml:space="preserve">
+    <value>Gesamtsumme der Periode</value>
+  </data>
+  <data name="custpage_html_assetno" page="depreciationschedule2" xml:space="preserve">
+    <value>Nr. Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_html_assetdescription" page="depreciationschedule2" xml:space="preserve">
+    <value>Beschreibung Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_deprschedreport" page="depreciationschedule2" xml:space="preserve">
+    <value>Abschreibungsplanbericht Anlagevermögensverwaltung</value>
+  </data>
+  <data name="custpage_html_reporttruncated" page="depreciationschedule2" xml:space="preserve">
+    <value>Bericht gekürzt, max. Speicherplatz erreicht.</value>
+  </data>
+  <data name="custpage_message_reportstorefail" page="depreciationschedule2" xml:space="preserve">
+    <value>Speichern der Berichtergebnisse nicht möglich (nlapiSubmitFile)</value>
+  </data>
+  <data name="custpage_html_fam" page="depreciationschedule2" xml:space="preserve">
+    <value>Anlagevermögensverwaltung</value>
+  </data>
+  <data name="custpage_html_noassetfound" page="depreciationschedule2" xml:space="preserve">
+    <value>Keine Vermögensgegenstände für geplanten Bericht gefunden.</value>
+  </data>
+
+  <!-- Asset Creation Status -->
+  <data name="custrecord_assetcreation_title" page="assetcreation" xml:space="preserve">
+    <value>Erstellung neuer Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetcreation" xml:space="preserve">
+    <value>Vermögensgegenstandsart(en)</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetcreation" xml:space="preserve">
+    <value>Niederlassung(en)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetcreation" xml:space="preserve">
+    <value>Untergeordnete einschließen</value>
+  </data>
+  <data name="custrecord_creationstatus_title" page="assetcreation" xml:space="preserve">
+    <value>Status Erstellung Vermögensgegenstand</value>
+  </data>
+  <data name="custrecord_html_currentstatus" page="assetcreation" xml:space="preserve">
+    <value>Aktueller Status</value>
+  </data>
+  <data name="custrecord_resultstatus" page="assetcreation" xml:space="preserve">
+    <value>Wie stehen die Dinge?</value>
+  </data>
+  <data name="custrecord_generationcomplete" page="assetcreation" xml:space="preserve">
+    <value>Vermögensgegenstand wurde erstellt.</value>
+  </data>
+  <data name="custrecord_creatingasset" page="assetcreation" xml:space="preserve">
+    <value>Vermögensgegenstand erstellen für Vermögensgegenstandarten: (0)</value>
+  </data>
+  <data name="custrecord_transactionprocessed" page="assetcreation" xml:space="preserve">
+    <value>(0) Transaktionen wurden verarbeitet, (1) neue Vermögensgegenstände wurden erstellt.</value>
+  </data>
+  <data name="custrecord_allassettypes" page="assetcreation" xml:space="preserve">
+    <value>Alle Vermögensgegenstandsarten</value>
+  </data>
+
+  <!-- Asset Revaluation -->
+  <data name="custrecord_assetrevaluation_title" page="assetrevaluation" xml:space="preserve">
+    <value>Neubewertung Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_group_primaryinfo" page="assetrevaluation" xml:space="preserve">
+    <value>Primärinformationen</value>
+  </data>
+  <data name="custpage_assetid_help" page="assetrevaluation" xml:space="preserve">
+    <value>Wähen Sie den Identifizierungscode oder den Namen des Vermögensgegenstands aus, den Sie neu bewerten möchten.</value>
+  </data>
+  <data name="custpage_assetid" page="assetrevaluation" xml:space="preserve">
+    <value>Identifizierungscode/Name Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetdescr" page="assetrevaluation" xml:space="preserve">
+    <value>Beschreibung Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetserialno" page="assetrevaluation" xml:space="preserve">
+    <value>Seriennummer Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetalternateno" page="assetrevaluation" xml:space="preserve">
+    <value>Alternative Vermögensgegenstandsnummer</value>
+  </data>
+  <data name="custpage_assettype" page="assetrevaluation" xml:space="preserve">
+    <value>Vermögensgegenstandsart</value>
+  </data>
+  <data name="custpage_assetcurrentcost" page="assetrevaluation" xml:space="preserve">
+    <value>Aktuelle Kosten</value>
+  </data>
+  <data name="custpage_assetresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Verbleibender Wert</value>
+  </data>
+  <data name="custpage_assetaccmethod" page="assetrevaluation" xml:space="preserve">
+    <value>Abschreibungsmethode</value>
+  </data>
+  <data name="custpage_depmethodlbl" page="clientpage" xml:space="preserve">
+    <value>Abschreibungsmethode</value>
+  </data>
+  <data name="custpage_assetlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>Lebensdauer Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_assetbookvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Aktueller Buchwert</value>
+  </data>
+  <data name="custpage_assetrevisionrules" page="assetrevaluation" xml:space="preserve">
+    <value>Überarbeitungsmethode</value>
+  </data>
+  <data name="custpage_assetstatus" page="assetrevaluation" xml:space="preserve">
+    <value>Status Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_writedownamount" page="assetrevaluation" xml:space="preserve">
+    <value>Wertberichtigungsbetrag</value>
+  </data>
+  <data name="custpage_newresidualvalue" page="assetrevaluation" xml:space="preserve">
+    <value>Berichtigter verbleibender Wert</value>
+  </data>
+  <data name="custpage_newlifetime" page="assetrevaluation" xml:space="preserve">
+    <value>Berichtigte Lebensdauer</value>
+  </data>
+  <data name="custpage_newdeprmethod" page="assetrevaluation" xml:space="preserve">
+    <value>Berichtigte Abschreibungsmethode</value>
+  </data>
+  <data name="custpage_revaluationmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Transaktionsreferenz</value>
+  </data>
+  <data name="custpage_revaluationdate" page="assetrevaluation" xml:space="preserve">
+    <value>Transaktionsdatum</value>
+  </data>
+  <data name="custpage_lastdeprperiod" page="clientpage" xml:space="preserve">
+    <value>Letzte Abschreibungsperiode</value>
+  </data>
+  <data name="custpage_residualvalueerrror" page="assetrevaluation" xml:space="preserve">
+    <value>Verbleibender Wert ist größer als ursprüngliche Kosten oder aktuelle Kosten</value>
+  </data>
+  <data name="custpage_defaultrevmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Neubewertung Vermögensgegenstand (FAM)</value>
+  </data>
+  <data name="custpage_defaultwdmemo" page="assetrevaluation" xml:space="preserve">
+    <value>Wertminderung Vermögensgegenstand (FAM)</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetrevaluation" xml:space="preserve">
+    <value>Geschäftsbücher</value>
+  </data>
+  <data name="custpage_writedownperc" page="assetrevaluation" xml:space="preserve">
+    <value>Wertminderung %</value>
+  </data>
+  <data name="custpage_newdeprmethod_help" page="assetrevaluation" xml:space="preserve">
+    <value>Die neue Abschreibungsmethode, die für die Abschreibung dieses Vermögensgegenstands nach der Neubewertung verwendet wird.</value>
+  </data>
+  <data name="custpage_newlifetime_help" page="assetrevaluation" xml:space="preserve">
+    <value>Die neue Lebensdauer des Vermögensgegenstands nach der Neubewertung.</value>
+  </data>
+  <data name="custpage_newresidualvalue_help" page="assetrevaluation" xml:space="preserve">
+    <value>Der neue verbleibende Wert des Vermögensgegenstands nach der Neubewertung.</value>
+  </data>
+  <data name="custpage_writedownperc_help" page="assetrevaluation" xml:space="preserve">
+    <value>Geben Sie den automatisch ausgefüllten Wertminderungsbetrag auf der folgenden Unterliste ein.</value>
+  </data>
+  <data name="custpage_revaluationdate_help" page="assetrevaluation" xml:space="preserve">
+    <value>Geben Sie ein Datum für die Journalbuchung für diese Transaktion ein.</value>
+  </data>
+  <data name="custpage_revaluationmemo_help" page="assetrevaluation" xml:space="preserve">
+    <value>Geben Sie eine Referenz ein, um die Journalbuchung für diese Transaktion zu identifizieren.</value>
+  </data>
+  <data name="custpage_writedownamount_help" page="assetrevaluation" xml:space="preserve">
+    <value>Geben Sie einen Wertberichtigungsbetrag ein. Dieser Betrag wird vom aktuellen Nettobuchwert abgezogen.</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetrevaluation" xml:space="preserve">
+    <value>Wählen Sie die Geschäftsbücher aus, die mit diesem Vermögensgegenstand verknüpft sind.</value>
+  </data>
+  <data name="custpage_groupdeprerror" page="assetrevaluation" xml:space="preserve">
+      <value>Neubewertung ist für Gruppenabschreibung von alternativen Abschreibungen nicht möglich.</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>Neubewertung ist nicht möglich für Datensätze mit Neubewertungsdaten, die vor dem letzten Abschreibungsdatum liegen.</value>
+  </data>
+  <data name="custpage_reval_date_error" page="assetrevaluation" xml:space="preserve">
+      <value>Neubewertung ist nicht möglich für Datensätze mit Neubewertungsdaten, die vor dem letzten Abschreibungsdatum liegen.</value>
+  </data>
+  <data name="custpage_wdacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Fehlendes oder inaktives Wertminderungskonto</value>
+  </data>
+  <data name="custpage_assetacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Fehlendes oder inaktives Vermögensgegenstandskonto</value>
+  </data>
+  <data name="custpage_depracct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Fehlendes oder inaktives Abschreibungskonto</value>
+  </data>
+  <data name="custpage_deprchargeacct_missing" page="assetrevaluation" xml:space="preserve">
+      <value>Fehlendes oder inaktives Abrechnungskonto Abschreibung</value>
+  </data>
+  <data name="custpage_plugin_not_parent_asset" page="assetrevaluation" xml:space="preserve">
+      <value>Der angegebene Identifizierungscode des Vermögensgegenstand-Datensatzes entspricht nicht dem übergeordneten Vermögensgegenstand der Steuermethode, der neubewertet werden soll.</value>
+  </data>
+  <data name="custpage_no_tax_or_asset" page="assetrevaluation" xml:space="preserve">
+      <value>Sie müssen entweder den Identifizierungscode des Vermögensgegenstand-Datensatzes oder der Steuermethode bereitstellen, der bzw. die neu bewertet werden soll.</value>
+  </data>
+
+
+
+  <!-- Asset report -->
+  <data name="custrecord_assetregister_title" page="assetregister" xml:space="preserve">
+    <value>Bericht Vermögensgegenstand-Register</value>
+  </data>
+  <data name="custrecord_assetregisterdetail_title" page="assetregister" xml:space="preserve">
+    <value>Detailbericht Vermögensgegenstand-Register</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetregister" xml:space="preserve">
+    <value>Vermögensgegenstandsart(en)</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetregister" xml:space="preserve">
+    <value>Niederlassung(en)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetregister" xml:space="preserve">
+    <value>Untergeordnete einschließen</value>
+  </data>
+  <data name="custpage_filtermsselect" page="assetregister" xml:space="preserve">
+    <value>Auswählen</value>
+  </data>
+  <data name="custpage_filtersmethod" page="assetregister" xml:space="preserve">
+    <value>Abschreibungsmethode</value>
+  </data>
+  <data name="custpage_filterslocation" page="assetregister" xml:space="preserve">
+    <value>Standort</value>
+  </data>
+  <data name="custpage_filtersdept" page="assetregister" xml:space="preserve">
+    <value>Abteilung</value>
+  </data>
+  <data name="custpage_filtersclass" page="assetregister" xml:space="preserve">
+    <value>Klasse</value>
+  </data>
+  <data name="custpage_filterstartdate" page="assetregister" xml:space="preserve">
+    <value>Anfangsdatum der Periode</value>
+  </data>
+  <data name="custpage_filterenddate" page="assetregister" xml:space="preserve">
+    <value>Enddatum der Periode</value>
+  </data>
+  <data name="custpage_html_fam" page="assetregister" xml:space="preserve">
+    <value>Anlagevermögensverwaltung</value>
+  </data>
+  <data name="custpage_html_transdate" page="assetregister" xml:space="preserve">
+    <value>Transaktionsdatum</value>
+  </data>
+  <data name="custpage_html_cost" page="assetregister" xml:space="preserve">
+    <value>Kosten</value>
+  </data>
+  <data name="custpage_html_accdepreciation" page="assetregister" xml:space="preserve">
+    <value>Kumulierte Abschreibung</value>
+  </data>
+  <data name="custpage_html_nbv" page="assetregister" xml:space="preserve">
+    <value>NBV</value>
+  </data>
+  <data name="custpage_html_acquisitiondate" page="assetregister" xml:space="preserve">
+    <value>Erwerbsdatum</value>
+  </data>
+  <data name="custpage_html_assettype" page="assetregister" xml:space="preserve">
+    <value>Vermögensgegenstandsart</value>
+  </data>
+  <data name="custpage_html_assetmanagement" page="assetregister" xml:space="preserve">
+    <value>(0) Vermögensgegenstands-Verwaltung</value>
+  </data>
+  <data name="custpage_html_assetname" page="assetregister" xml:space="preserve">
+    <value>Name Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_html_description" page="assetregister" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="custpage_html_additions" page="assetregister" xml:space="preserve">
+    <value>Ergänzungen</value>
+  </data>
+  <data name="custpage_html_depreciation" page="assetregister" xml:space="preserve">
+    <value>Abschreibung</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="assetregister" xml:space="preserve">
+    <value>Alle Vermögensgegenstände</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="assetregister" xml:space="preserve">
+    <value>Alle Vermögensgegenstände außer geleaste</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="assetregister" xml:space="preserve">
+    <value>Nur geleaste</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="assetregister" xml:space="preserve">
+    <value>Buchhaltungsmethode</value>
+  </data>
+  <data name="custrecord_html_assetregisterdetail" page="assetregister" xml:space="preserve">
+    <value>Detail Vermögensgegenstand-Register</value>
+  </data>
+
+  <!--System Status -->
+  <data name="custrecord_systemstatus_title" page="systemstatus" xml:space="preserve">
+    <value>Status Abschreibung Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_currentstatus" page="systemstatus" xml:space="preserve">
+    <value>Aktueller Status</value>
+  </data>
+  <data name="custpage_resultstatus" page="systemstatus" xml:space="preserve">
+    <value>Wie stehen die Dinge?</value>
+  </data>
+  <data name="custpage_depreciatestatus1" page="systemstatus" xml:space="preserve">
+    <value>Abschreibung Vermögensgegenstandarten:</value>
+  </data>
+  <data name="custpage_deprcomplete" page="systemstatus" xml:space="preserve">
+    <value>Abgeschlossen</value>
+  </data>
+  
+  <!--Generate History -->
+  <data name="custrecord_generatehistory_title" page="generatehistory" xml:space="preserve">
+    <value>Verlauf Vermögensgegenstand erstellen</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="generatehistory" xml:space="preserve">
+    <value>Vermögensgegenstandsart(en)</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="generatehistory" xml:space="preserve">
+    <value>Niederlassung(en)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="generatehistory" xml:space="preserve">
+    <value>Untergeordnete einschließen</value>
+  </data>
+  <data name="custpage_filtersmethod" page="generatehistory" xml:space="preserve">
+    <value>Abschreibungsmethode</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod1" page="generatehistory" xml:space="preserve">
+    <value>Abschreibungsmethode 1</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod2" page="generatehistory" xml:space="preserve">
+    <value>Abschreibungsmethode 2</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod3" page="generatehistory" xml:space="preserve">
+    <value>Abschreibungsmethode 3</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod4" page="generatehistory" xml:space="preserve">
+    <value>Abschreibungsmethode 4</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod5" page="generatehistory" xml:space="preserve">
+    <value>Abschreibungsmethode 5</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod6" page="generatehistory" xml:space="preserve">
+    <value>Abschreibungsmethode 6</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod7" page="generatehistory" xml:space="preserve">
+    <value>Abschreibungsmethode 7</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod8" page="generatehistory" xml:space="preserve">
+    <value>Abschreibungsmethode 8</value>
+  </data>
+  <data name="custpage_dropdown_deprmethod9" page="generatehistory" xml:space="preserve">
+    <value>Abschreibungsmethode 9</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_ok" page="depreciationmethod" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="custpage_error" page="depreciationmethod" xml:space="preserve">
+    <value>FEHLER</value>
+  </data>
+
+  <!-- Asset Depreciation -->
+  <data name="custrecord_assetdepreciation_title" page="assetdepreciation" xml:space="preserve">
+    <value>Vermögensgegenstände abschreiben</value>
+  </data>
+  <data name="custfield_errormessage" page="assetdepreciation" xml:space="preserve">
+    <value>Fehler</value>
+  </data>
+  <data name="custpage_futuredateerror" page="assetdepreciation" xml:space="preserve">
+    <value>Periodendatum der Abschreibung kann keine zukünftige Periode sein</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="assetdepreciation" xml:space="preserve">
+    <value>Vermögensgegenstandsart(en)</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="assetdepreciation" xml:space="preserve">
+    <value>Niederlassung(en)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="assetdepreciation" xml:space="preserve">
+    <value>Untergeordnete einschließen</value>
+  </data>
+  <data name="custpage_accountingbook" page="assetdepreciation" xml:space="preserve">
+    <value>Geschäftsbücher</value>
+  </data>
+  <data name="custpage_deprperiod" page="assetdepreciation" xml:space="preserve">
+    <value>Abschreibungsperiode</value>
+  </data>
+  <data name="custpage_postperiod" page="assetdepreciation" xml:space="preserve">
+    <value>Buchungsperiode</value>
+  </data>
+  <data name="custpage_deprmemo" page="assetdepreciation" xml:space="preserve">
+    <value>Abschreibungsreferenz</value>
+  </data>
+  <data name="custpage_assetdepreciation" page="assetdepreciation" xml:space="preserve">
+    <value>Abschreibung Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_deprmemo_help" page="assetdepreciation" xml:space="preserve">
+    <value>Geben Sie die Abschreibungsreferenz ein, die als Basisreferenz in allen erstellten Journalen verwendet werden soll. Lassen Sie dieses Feld leer, um die Standardreferenz zu verwenden.</value>
+  </data>
+  <data name="custpage_deprperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>Geben Sie ein Datum ein, an dem die Abschreibung der Vermögensgegenstände stattfindet. Beachten Sie, dass das Buchungsdatum immer am Monatsende ist.</value>
+  </data>
+  <data name="custpage_postperiod_help" page="assetdepreciation" xml:space="preserve">
+    <value>Wählen Sie die Periode aus, in der Sie diese Transaktion verbuchen möchten. Wenn eine Periode geschlossen ist, können Sie die Transaktion nicht in dieser Periode buchen.</value>
+  </data>
+  <data name="custpage_accountingbook_help" page="assetdepreciation" xml:space="preserve">
+    <value>Wählen Sie die Geschäftsbücher aus, die mit diesem Vermögensgegenstand verknüpft sind.</value>
+  </data>
+  <data name="client_depr_subsbooksmismatch" page="assetdepreciation" xml:space="preserve">
+    <value>Die ausgewählten Geschäftsbücher sind nicht mit den ausgewählten Niederlassungen verknüpft.</value>
+  </data>
+
+  <!-- Depreciation Schedule Report -->
+  <data name="custrecord_depreciationschedule_title" page="depreciationschedule" xml:space="preserve">
+    <value>Abschreibungsplanbericht Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_filtermsassettype" page="depreciationschedule" xml:space="preserve">
+    <value>Vermögensgegenstandsart</value>
+  </data>
+  <data name="custpage_netbookvalue" page="depreciationschedule" xml:space="preserve">
+    <value>Nettobuchwert</value>
+  </data>
+  <data name="custpage_perioddepr" page="depreciationschedule" xml:space="preserve">
+    <value>Abschreibungsperiode</value>
+  </data>
+  <data name="custpage_saveresults" page="depreciationschedule" xml:space="preserve">
+    <value>Ergebnisse speichern</value>
+  </data>
+  <data name="custpage_filtermssubsid" page="depreciationschedule" xml:space="preserve">
+    <value>Niederlassung(en)</value>
+  </data>
+  <data name="custpage_filtercbincchild" page="depreciationschedule" xml:space="preserve">
+    <value>Untergeordnete einschließen</value>
+  </data>
+  <data name="custpage_filterslocation" page="depreciationschedule" xml:space="preserve">
+    <value>Standort</value>
+  </data>
+  <data name="custpage_filtersdept" page="depreciationschedule" xml:space="preserve">
+    <value>Abteilung</value>
+  </data>
+  <data name="custpage_filtersclass" page="depreciationschedule" xml:space="preserve">
+    <value>Klasse</value>
+  </data>
+  <data name="custpage_filtermsselect" page="depreciationschedule" xml:space="preserve">
+    <value>Auswählen</value>
+  </data>
+  <data name="custpage_filtersmethod" page="depreciationschedule" xml:space="preserve">
+    <value>Abschreibungsmethode</value>
+  </data>
+  <data name="custpage_filterstartdate" page="depreciationschedule" xml:space="preserve">
+    <value>Startdatum</value>
+  </data>
+  <data name="custpage_filterenddate" page="depreciationschedule" xml:space="preserve">
+    <value>Enddatum</value>
+  </data>
+  <data name="custpage_dropdown_allassets" page="depreciationschedule" xml:space="preserve">
+    <value>Alle Vermögensgegenstände</value>
+  </data>
+  <data name="custpage_dropdown_exceptleased" page="depreciationschedule" xml:space="preserve">
+    <value>Alle Vermögensgegenstände außer geleaste</value>
+  </data>
+  <data name="custpage_dropdown_leasedonly" page="depreciationschedule" xml:space="preserve">
+    <value>Nur geleaste</value>
+  </data>
+  <data name="custpage_dropdown_accountingmethod" page="depreciationschedule" xml:space="preserve">
+    <value>Buchhaltungsmethode</value>
+  </data>
+  <data name="custpage_filterenddate_help" page="depreciationschedule" xml:space="preserve">
+    <value>Wählen Sie das Enddatum der gewünschten Berichtsperiode oder geben Sie es ein.</value>
+  </data>
+  <data name="custpage_filterstartdate_help" page="depreciationschedule" xml:space="preserve">
+    <value>Wählen Sie das Startdatum der gewünschten Berichtsperiode oder geben Sie es ein.</value>
+  </data>
+  <data name="custpage_netbookvalue_help" page="depreciationschedule" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, wenn der monatliche prognostizierte Nettobuchwert im HTML-Bericht angezeigt werden soll.</value>
+  </data>
+  <data name="custpage_perioddepr_help" page="depreciationschedule" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, wenn die monatliche prognostizierte Abschreibung im HTML-Bericht angezeigt werden soll.</value>
+  </data>
+  <data name="custpage_saveresults_help" page="depreciationschedule" xml:space="preserve">
+    <value>„Ergebnisse speichern“ wird verwendet, um Abschreibungsplan-Einträge für die Lebensdauer eines Vermögensgegenstands zu erstellen und um Eingaben im Vermögensgegenstand-Datensatz zu speichern. Wenn das Kontrollkästchen „Ergebnisse speichern“ aktiviert ist, ignoriert das System Startdatum, Enddatum, Nettobuchwert und Abschreibungsperiode, um sicherzustellen, dass die Tabelle des Abschreibungsverlaufs immer einen vollständigen Abschreibungsplan für die Lebensdauer des Vermögensgegenstands enthält. Die eingegebene Werte in den Datenfeldern „Startdatum“, „Enddatum“, „Nettobuchwert“ und „Abschreibungsperiode“ werden nur für den erstellten HTML-Bericht verwendet.</value>
+  </data>
+
+  <!-- Bulk Transfer -->
+  <data name="custpage_bulktransfer_title" page="bulktransfer" xml:space="preserve">
+    <value>Massentransfer Vermögensgegenstand</value>
+  </data>
+  <data name="custpage_uploadhelp" page="bulktransfer" xml:space="preserve">
+    <value>Sie können Ihre CSV-Importdatei hochladen, um „Niederlassung“, „Abteilung“, „Klasse“, „Standort“ und „Vermögensgegenstandsart“ für mehrere Vermögensgegenstände zu aktualisieren.</value>
+  </data>
+  <data name="custpage_settinghelp" page="bulktransfer" xml:space="preserve">
+    <value>Um beim Transfer Journalbuchungen zu erfassen, stellen Sie sicher, dass die Buchungseinstellung für „Abteilung“, „Klasse“ oder „Standort“ („Anlagevermögen“ &gt; „Einrichtung“ &gt; „Systemeinrichtung“) aktiviert ist.</value>
+  </data>
+  <data name="custpage_uploadboth" page="bulktransfer" xml:space="preserve">
+    <value>Laden Sie eine CSV-Datei bitte nicht sowohl mit Vermögensgegenstandsart- als auch Niederlassungstransfer hoch.</value>
+  </data>
+  <data name="custpage_samplefile" page="bulktransfer" xml:space="preserve">
+    <value>Klicken Sie (hier) für eine Beispieldatei.</value>
+  </data>
+  <data name="custpage_nofileuploaderror" page="bulktransfer" xml:space="preserve">
+    <value>Datei konnte nicht hochgeladen werden.</value>
+  </data>
+
+  <!-- Depreciation Method -->
+  <data name="custpage_html_formulainstruction" page="depreciationmethodformula" xml:space="preserve">
+    <value>Verwenden Sie die folgenden Operatoren und Symbole (auf Groß-/Kleinschreibung achten), um die Abschreibungsformel zu definieren:</value>
+  </data>
+  <data name="custpage_html_formulahelp1" page="depreciationmethodformula" xml:space="preserve">
+    <value>^ (Potenzierung, z. B. 5^2 = 5 zum Quadrat)</value>
+  </data>
+  <data name="custpage_html_formulahelp2" page="depreciationmethodformula" xml:space="preserve">
+    <value>() * / + -</value>
+  </data>
+  <data name="custpage_html_formulahelp3" page="depreciationmethodformula" xml:space="preserve">
+    <value>jede Zahl mit Dezimalstellen (z. B. 12345,67)</value>
+  </data>
+  <data name="custpage_html_formulahelp4" page="depreciationmethodformula" xml:space="preserve">
+    <value>~ (Maximalwert von zwei Werten, z. B. 2~5 = 5)</value>
+  </data>
+  <data name="custpage_html_formulahelp5" page="depreciationmethodformula" xml:space="preserve">
+    <value>OC (ursprüngliche Kosten des Vermögensgegenstands)</value>
+  </data>
+  <data name="custpage_html_formulahelp6" page="depreciationmethodformula" xml:space="preserve">
+    <value>CC (aktuelle Kosten des Vermögensgegenstands)</value>
+  </data>
+  <data name="custpage_html_formulahelp7" page="depreciationmethodformula" xml:space="preserve">
+    <value>NB (Nettobuchwert)</value>
+  </data>
+  <data name="custpage_html_formulahelp8" page="depreciationmethodformula" xml:space="preserve">
+    <value>RV (verbleibender Wert)</value>
+  </data>
+  <data name="custpage_html_formulahelp9" page="depreciationmethodformula" xml:space="preserve">
+    <value>AL (Lebensdauer des Vermögensgegenstands)</value>
+  </data>
+  <data name="custpage_html_formulahelp10" page="depreciationmethodformula" xml:space="preserve">
+    <value>CP (aktuelle Periode oder aktuelles Alter)</value>
+  </data>
+  <data name="custpage_html_formulahelp11" page="depreciationmethodformula" xml:space="preserve">
+    <value>TD (Gesamtbetrag Abschreibung)</value>
+  </data>
+  <data name="custpage_html_formulahelp12" page="depreciationmethodformula" xml:space="preserve">
+    <value>CU (aktuelle Nutzung)</value>
+  </data>
+  <data name="custpage_html_formulahelp13" page="depreciationmethodformula" xml:space="preserve">
+    <value>LU (Nutzung während Lebensdauer)</value>
+  </data>
+  <data name="custpage_html_formulahelp14" page="depreciationmethodformula" xml:space="preserve">
+    <value>LD (letzter Abschreibungsbetrag)</value>
+  </data>
+  <data name="custpage_html_formulahelp15" page="depreciationmethodformula" xml:space="preserve">
+    <value>DH (Verweildauer in Tagen in aktueller Periode)</value>
+  </data>
+  <data name="custpage_html_formulahelp16" page="depreciationmethodformula" xml:space="preserve">
+    <value>PB (Nettobuchwert des Vorjahres)</value>
+  </data>
+  <data name="custpage_html_formulahelp17" page="depreciationmethodformula" xml:space="preserve">
+    <value>DP (Anzahl von Tagen in einer Periode)</value>
+  </data>
+  <data name="custpage_html_formulahelp18" page="depreciationmethodformula" xml:space="preserve">
+    <value>FY (Anzahl von Tagen in einem fiskalischen Jahr)</value>
+  </data>
+
+  <!-- BG Process Record -->
+  <data name="custpage_bgprocess_deleteerror" page="bgprocess" xml:space="preserve">
+    <value>Diese Prozessinstanz kann nicht gelöscht werden, wegen Prozessstatus: (0)</value>
+  </data>
+  <data name="list_bgprocess_queue" page="bgprocess" xml:space="preserve">
+    <value>In Warteschlange</value>
+  </data>
+  <data name="list_bgprocess_inprogress" page="bgprocess" xml:space="preserve">
+    <value>In Bearbeitung</value>
+  </data>
+  <data name="list_bgprocess_completed" page="bgprocess" xml:space="preserve">
+    <value>Abgeschlossen</value>
+  </data>
+  <data name="list_bgprocess_completedwitherrors" page="bgprocess" xml:space="preserve">
+    <value>Abgeschlossen mit Fehlern</value>
+  </data>
+  <data name="list_bgprocess_failed" page="bgprocess" xml:space="preserve">
+    <value>Fehlgeschlagen</value>
+  </data>
+  <data name="list_bgprocess_revert" page="bgprocess" xml:space="preserve">
+    <value>Fehlgeschlagen – Änderungen werden rückgängig gemacht</value>
+  </data>
+
+  <!-- BG Queue Record -->
+  <data name="custpage_bgqueue_deleteerror" page="bgqueue" xml:space="preserve">
+    <value>Diese Warteschlangeninstanz kann nicht gelöscht werden, wegen Status der zugehörigen Prozessinstanz: (0)</value>
+  </data>
+
+  <!-- CLIENT SIDE MESSAGES AND ALERTS -->
+  <data name="client_assetrecord_notnegative" page="clientpage" xml:space="preserve">
+     <value>(0) darf kein negativer Wert sein</value>
+  </data>
+  <data name="client_assetrecord_greatererror" page="clientpage" xml:space="preserve">
+     <value>(0) darf nicht größer sein als (1)</value>
+  </data>
+  <data name="client_systemsetup_negativecheck" page="clientpage" xml:space="preserve">
+     <value>Es gibt vorhandene Vermögensgegenstände mit negativen Kosten. Deaktivierung dieser Option ist derzeit nicht erlaubt. Weitere Details finden Sie im Hilfe-Zentrum.</value>
+  </data>
+  <data name="client_subdept_notmatch" page="clientpage" xml:space="preserve">
+     <value>Niederlassung und Abteilung stimmen nicht überein.</value>
+  </data>
+  <data name="client_subloc_notmatch" page="clientpage" xml:space="preserve">
+     <value>Niederlassung und Standort stimmen nicht überein.</value>
+  </data>
+  <data name="client_subclass_notmatch" page="clientpage" xml:space="preserve">
+     <value>Niederlassung und Klasse stimmen nicht überein.</value>
+  </data>
+  <data name="client_assetrecord_outdated" page="clientpage" xml:space="preserve">
+     <value>Der Vermögensgegenstand-Datensatz, mit dem Sie arbeiten, wurde vor Kurzem geändert. Klicken sie auf „Aktualisieren“, um den Vermögensgegenstand-Datensatz zu aktualisieren.</value>
+  </data>
+  <data name="client_assetrecord_dateerror" page="clientpage" xml:space="preserve">
+     <value>Das Startdatum muss vor dem Enddatum liegen</value>
+  </data>
+  <data name="client_assetrecord_fieldadjust" page="clientpage" xml:space="preserve">
+     <value>(0) wurde wegen Änderung von (1) automatisch angepasst.</value>
+  </data>
+  <data name="client_assetrecord_enddateadjust" page="clientpage" xml:space="preserve">
+    <value>(0) wird abgerundet, um den neuen (1) widerzuspiegeln.</value>
+  </data>
+  <data name="client_leavepage" page="clientpage" xml:space="preserve">
+     <value>Daten, die Sie auf dieser Seite eingegeben haben, wurden nicht gespeichert und gehen verloren. Klicken Sie auf „OK“, um fortzufahren.</value>
+  </data>
+  <data name="client_accounting_methods" page="clientpage" xml:space="preserve">
+     <value>Buchhaltungsmethoden</value>
+  </data>
+  <data name="client_tax_methods" page="clientpage" xml:space="preserve">
+     <value>Steuermethoden</value>
+  </data>
+  <data name="client_journals" page="clientpage" xml:space="preserve">
+     <value>Journale</value>
+  </data>
+  <data name="client_multibookdisabled" page="clientpage" xml:space="preserve">
+     <value>Sie können kein Geschäftsbuch auswählen, wenn das Merkmal „Rechnungswesen mit mehreren Büchern“ deaktiviert ist.</value>
+  </data>
+  <data name="client_primarybook" page="clientpage" xml:space="preserve">
+     <value>Sie können sekundäre Bücher nur für Steuermethoden auswählen.</value>
+  </data>
+  <data name="client_pendingbook" page="clientpage" xml:space="preserve">
+     <value>Sie müssen ein aktives Geschäftsbuch auswählen.</value>
+  </data>
+  <data name="client_booksubsidiary_mismatch" page="clientpage" xml:space="preserve">
+     <value>Bitte wählen Sie ein Geschäftsbuch aus, das mit der Niederlassung des Vermögensgegenstands verknüpft ist.</value>
+  </data>
+  <data name="client_invalid_deprenddate" page="clientpage" xml:space="preserve">
+     <value>Ihre Eingabe (0) ist ungültig für die Werte (1) und (2).</value>
+  </data>
+  <data name="client_enable_bypass" page="clientpage" xml:space="preserve">
+     <value>Wenn Sie diese Einstellung aktivieren, werden Benutzerereignis-Skripte und -Workflows für benutzerdefinierte Datensätze nicht während der Abschreibung ausgelöst. Möchten Sie fortfahren?</value>
+  </data>
+  <data name="client_asset_disposed" page="clientpage" xml:space="preserve">
+    <value>Der Vermögensgegenstand wurde bereits veräußert.</value>
+  </data>
+  <data name="client_select_book" page="clientpage" xml:space="preserve">
+    <value>Bitte wählen Sie ein Geschäftsbuch bzw. mehrere Geschäftsbücher aus</value>
+  </data>
+  <data name="client_match_current_error" page="clientpage" xml:space="preserve">
+      <value>(0) darf nicht mit dem aktuellen (1) übereinstimmen.</value>
+  </data>
+  <data name="client_newrvdiffsign" page="clientpage" xml:space="preserve">
+      <value>(0) darf keinen höheren Wert als null haben.</value>
+  </data>
+  <data name="client_lesserthan_error" page="clientpage" xml:space="preserve">
+     <value>(0) darf nicht kleiner sein als (1)</value>
+  </data>
+  <data name="client_newdepmeth_diffperiod" page="clientpage" xml:space="preserve">
+     <value>Die ausgewählte berichtigte Abschreibungsmethode muss die gleiche Abschreibungsperiode wie die aktuelle Abschreibungsmethode aufweisen.</value>
+  </data>
+  <data name="client_enter_value" page="clientpage" xml:space="preserve">
+    <value>Geben Sie bitte einen Wert/Werte ein für: (0)</value>
+  </data>
+  <data name="client_subsidiary_match" page="clientpage" xml:space="preserve">
+    <value>Niederlassung des ausgewählten (0) stimmt nicht mit der Niederlassung dieses Vermögensgegenstands überein.</value>
+  </data>
+  <data name="client_report_confirm_delete" page="clientpage" xml:space="preserve">
+    <value>Dadurch wird der aktuelle Bericht gelöscht. Möchten Sie fortfahren?</value>
+  </data>
+  
+  <!-- FAM_Split_CS.js -->
+  <data name="client_assetsplit_invalidsplitquantity" page="clientpage" xml:space="preserve">
+    <value>Splitmenge nicht gültig</value>
+  </data>
+  <data name="client_assetsplit_entervalue" page="clientpage" xml:space="preserve">
+    <value>Bitte geben Sie einen Wert für die Splitmenge ein</value>
+  </data>
+  <data name="client_assetsplit_greatererror" page="clientpage" xml:space="preserve">
+    <value>Splitmenge darf nicht gleich oder größer als „Menge“ sein</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method" page="clientpage" xml:space="preserve">
+    <value>Buchhaltungsmethode - Aktuelle Kosten müssen gleich dem Buchwert plus bisherige Abschreibung sein.</value>
+  </data>
+  <data name="client_assetsplit_equalerror_method2" page="clientpage" xml:space="preserve">
+    <value>Klicken Sie auf „Aktualisieren“, um mit aktuellen Kosten neu zu berechnen.</value>
+  </data>
+  <data name="client_assetsplit_equalerror_tax" page="clientpage" xml:space="preserve">
+    <value>Steuermethode (0) - Aktuelle Kosten müssen gleich dem Buchwert plus bisherige Abschreibung sein</value>
+  </data>
+  <data name="client_assetsplit_quantity1" page="clientpage" xml:space="preserve">
+    <value>Vermögensgegenstand-Split ist für Vermögensgegenstände mit mehr als einer (1)-Menge verfügbar.</value>
+  </data> 
+  <data name="client_assetsplit_invalid_status" page="clientpage" xml:space="preserve">
+    <value>Vermögensgegenstand-Split ist nicht verfügbar für vollständig abgeschriebene und veräußerte Vermögensgegenstände.</value>
+  </data> 
+  
+  <!-- FAM_CS_AltMethod_Client.js -->
+  <data name="client_altmethod_subsidiaryrequired" page="clientpage" xml:space="preserve">
+     <value>„Niederlassung“ ist für diese Methode eine Pflichtangabe.</value>
+  </data>
+  <data name="client_altmethod_improperconvention" page="clientpage" xml:space="preserve">
+     <value>Die Abschreibungsmethode unterstützt nicht die ausgewählte Konvention.</value>
+  </data>
+  <data name="client_altmethod_subsidiarymismatch" page="clientpage" xml:space="preserve">
+     <value>Die Niederlassung von „Alternative Methode“ stimmt nicht mit der Niederlassung dieses Vermögensgegenstands überein.</value>
+  </data>
+
+
+  <!-- ncFAR_AltDeprClient.js -->
+  <data name="client_altdepr_assetalreadyused" page="clientpage" xml:space="preserve">
+     <value>(0) wird bereits von diesem Vermögensgegenstand verwendet. Bitte wählen Sie eine andere alternative Methode.</value>
+  </data>
+  <data name="client_altdepr_assetlifetimewarning" page="clientpage" xml:space="preserve">
+     <value>Warnung: Eingegebene Lebensdauer des Vermögensgegenstands ist größer als die Lebensdauer des Vermögensgegenstands</value>
+  </data>
+  <data name="client_altdepr_assetlifetimeerror" page="clientpage" xml:space="preserve">
+     <value>Die alternative Lebensdauer des Vermögensgegenstands darf die Lebensdauer des Vermögensgegenstands nicht übersteigen.</value>
+  </data>
+  <data name="client_altdepr_nomethodfound" page="clientpage" xml:space="preserve">
+     <value>Keine alternative Methode für die ausgewählte Niederlassung definiert. Gehen Sie zu „Anlagevermögen“ &gt; „Einrichtung“ &gt; „Alternative Methode“, um die Liste zu aktualisieren.</value>
+  </data>
+  <data name="client_altdepr_disposedtaxmethod" page="clientpage" xml:space="preserve">
+     <value>Geschäftsbuch kann nicht veräußerter/vollständig abgeschriebener Steuermethode zugewiesen werden.</value>
+  </data>
+
+  <!-- ncFAR_AssetRecordClient_AllForms.js -->
+  <data name="client_assetrecord_specifydepreciationrules" page="clientpage" xml:space="preserve">
+    <value>Abschreibungsregeln müssen angegeben werden.</value>
+  </data>
+  <data name="client_assetrecord_specifysubsidiary" page="clientpage" xml:space="preserve">
+    <value>Niederlassung muss angegeben werden.</value>
+  </data>
+  <data name="client_assetrecord_recordbeingpooled" page="clientpage" xml:space="preserve">
+     <value>Das Ändern der Niederlassung ist nicht gestattet, da ein alternativer Abschreibungsdatensatz zu einem Pool gehört.</value>
+  </data>
+  <data name="client_assetrecord_assetnotallowed" page="clientpage" xml:space="preserve">
+     <value>Konto für Nicht-Anlagevermögen ist für Vermögensgegenstandskonto nicht erlaubt. Bitte kontaktieren Sie Ihren Administrator.</value>
+  </data>
+  <data name="client_assetrecord_deprnotallowed" page="clientpage" xml:space="preserve">
+     <value>Konto für Nicht-Anlagevermögen ist für Abschreibungskonto nicht erlaubt. Bitte kontaktieren Sie Ihren Administrator.</value>
+  </data>
+  <data name="client_assetrecord_cannotdelete" page="clientpage" xml:space="preserve">
+     <value>Dieser Vermögensgegenstand kann nicht gelöscht werden, da er eine aktive Abschreibung aufweist. Bitte veräußern Sie den Vermögensgegenstand, wenn Sie ihn entfernen möchten.</value>
+  </data>
+  <data name="client_assetrecord_confirmsubsidiarychange" page="clientpage" xml:space="preserve">
+    <value>Vergewissern Sie sich, dass Sie Ihre Änderungen gespeichert haben, bevor Sie den Vermögensgegenstand zu einer anderen Niederlassung transferieren. Andernfalls werden Ihre Änderungen verworfen.
+
+Alternativ können Sie auch zuerst die Niederlassung aktualisieren, bevor Sie weitere Änderungen am Vermögensgegenstand durchführen.
+
+Möchten Sie fortfahren?</value>
+  </data>
+
+  <!-- ncFAR_DefaultAltDeprClient.js -->
+  <data name="client_defaultaltdepr_alreadyused" page="clientpage" xml:space="preserve">
+     <value>(0) wird bereits von dieser Vermögensgegenstandsart verwendet. Bitte wählen Sie eine andere alternative Methode.</value>
+  </data>
+  <data name="client_defaultaltdepr_addnotallowed" page="clientpage" xml:space="preserve">
+    <value>Die Erstellung eines neuen Datensatzes „FAM - Standardeinstellung Alt. Abschreibung“ ist nicht zulässig.
+
+Bitte gehen Sie zu einem Vermögensgegenstandsart-Datensatz und fügen Sie einen neuen Datensatz vom Tab „Geschäftsbücher“ hinzu.</value>
+  </data>
+  <!-- ncFAR_DeprMethodClientScripts.js script not found-->
+  <data name="client_deprmethod_failedtovalidate2" page="clientpage" xml:space="preserve">
+     <value>Validierung der Funktion fehlgeschlagen.</value>
+  </data>
+  <data name="client_deprmethod_validationfailed" page="clientpage" xml:space="preserve">
+     <value>Validierung fehlgeschlagen</value>
+  </data>
+  <data name="client_deprmethod_dp_annually_invalid" page="clientpage" xml:space="preserve">
+     <value>„DP“ kann nicht verwendet werden, wenn die Abschreibungsperiode „Jährlich“ ist</value>
+  </data>
+
+  <!-- Disposal Client Messages -->
+  <data name="client_disposal_alreadydisposed" page="clientpage" xml:space="preserve">
+     <value>Dieser Vermögensgegenstand wurde bereits veräußert.</value>
+  </data>
+  <data name="client_disposal_cannotbegreater" page="clientpage" xml:space="preserve">
+     <value>Die veräußerte Menge darf nicht größer als die verbleibende Menge des Vermögensgegenstands sein.</value>
+  </data>
+  <data name="client_disposal_saleamountgreater" page="clientpage" xml:space="preserve">
+     <value>Der Verkaufsbetrag muss größer als null sein.</value>
+  </data>
+  <data name="client_disposal_selectcustomer" page="clientpage" xml:space="preserve">
+     <value>Bitte wählen Sie einen Kunden aus.</value>
+  </data>
+  <data name="client_disposal_selectsaleitem" page="clientpage" xml:space="preserve">
+     <value>Bitte wählen Sie einen Verkaufsartikel aus.</value>
+  </data>
+  <data name="client_disposal_selectlocation" page="clientpage" xml:space="preserve">
+     <value>Bitte wählen Sie einen Standort aus.</value>
+  </data>
+  <data name="client_disposal_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Dieser Vermögensgegenstand wird zurzeit für die Veräußerung bearbeitet. Bitte warten Sie, bis der Veräußerungsvorgang abgeschlossen ist, bevor Sie eine weitere Veräußerung für diesen Vermögensgegenstand initiieren.</value>
+  </data>
+  <data name="client_disposal_acctnotexist" page="clientpage" xml:space="preserve">
+     <value>Stellen Sie sicher, dass die Wertminderungs-, Veräußerungs-, Abschreibungs- und Vermögensgegenstandskonten eingerichtet und aktiviert wurden, bevor Sie fortfahren.
+Veräußerung ist unter Umständen nicht möglich für: (0)</value>
+  </data>
+  <data name="client_disposal_dateearlierthanldd" page="clientpage" xml:space="preserve">
+    <value>Datum der Veräußerung „(0)“ darf nicht vor dem Datum „(1)“ der letzten Abschreibung liegen.</value>
+  </data>
+  <data name="client_disposal_plugin_no_assetid" page="clientpage" xml:space="preserve">
+    <value>Der Vermögensgegenstands-Identifizierungscode ist nicht definiert.</value>
+  </data>
+  <data name="client_disposal_plugin_invalid_type" page="clientpage" xml:space="preserve">
+    <value>Ungültige Veräußerungsart für Vermögensgegenstand: (0))</value>
+  </data>
+  
+  <!-- ncFAR_ProposalAltDeprClient.js -->
+  <data name="client_proposalaltdepr_selectbeingused" page="clientpage" xml:space="preserve">
+     <value>(0) wird bereits von diesem Vermögensgegenstand-Angebot verwendet. Bitte wählen Sie eine andere alternative Methode.</value>
+  </data>
+
+  <!-- ncFAR_RevaluationClientScripts.js -->
+  <data name="client_revaluation_disposed" page="clientpage" xml:space="preserve">
+     <value>Dieser Vermögensgegenstand wurde veräußert.</value>
+  </data>
+  <data name="client_assetnotset" page="clientpage" xml:space="preserve">
+     <value>Mindestens ein Vermögensgegenstandskonto wurde nicht festgelegt, Neubewertung ist möglicherweise nicht möglich.</value>
+  </data>
+  <data name="client_revaluation_notsupplied" page="clientpage" xml:space="preserve">
+    <value>Details für Neubewertung müssen angegeben werden</value>
+  </data>
+  <data name="client_revaluation_zeronbv" page="clientpage" xml:space="preserve">
+    <value>Ein Vermögensgegenstand, der vollständig abgeschrieben wurde, kann nicht neu bewertet werden.</value>
+  </data>
+  <data name="client_revaluation_zerocc" page="clientpage" xml:space="preserve">
+    <value>Sie können keine Wertminderung des Vermögensgegenstands ohne aktuelle Kosten durchführen.</value>
+  </data>
+  <data name="client_revaluation_rvoverzero" page="clientpage" xml:space="preserve">
+    <value>Der neue verbleibende Wert darf nicht größer als Null sein.</value>
+  </data>
+  <data name="client_role_nopermission" page="clientpage" xml:space="preserve">
+    <value>Diese Rolle verfügt nicht über die Rechte, den Vermögensgegenstand-Datensatz zu bearbeiten.</value>
+  </data>
+  <data name="client_status_nobgprocess" page="clientpage" xml:space="preserve">
+    <value>Kein Hintergrundprozess gefunden.</value>
+  </data>
+  <data name="client_change_accountingbook" page="clientpage" xml:space="preserve">
+    <value>Die Änderung des Geschäftsbuchs ist nicht zulässig.</value>
+  </data>
+  <data name="client_revaluation_needcompute" page="clientpage" xml:space="preserve">
+    <value>Die Neubewertung des Vermögensgegenstands muss zuerst berechnet werden, bevor dieser bearbeitet werden kann.</value>
+  </data>
+  <data name="client_revaluation_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Dieser Vermögensgegenstand wird zurzeit für die Neubewertung bearbeitet. Bitte warten Sie, bis der Neubewertungsvorgang abgeschlossen ist, bevor Sie eine weitere Neubewertung für diesen Vermögensgegenstand initiieren.</value>
+  </data>
+  <data name="client_revaluation_wdacct_notset" page="clientpage" xml:space="preserve">
+     <value>Der Vermögensgegenstand kann nicht neu bewertet werden, da die folgenden Wertminderungskonten nicht eingestellt wurden: (0)</value>
+  </data>
+  <data name="client_revaluation_transdate_warn" page="clientpage" xml:space="preserve">
+     <value>Das Neubewertungsdatum auf einigen Datensätzen liegt vor dem letzten Abschreibungsdatum. Diese Datensätze werden nicht neu bewertet. </value>
+  </data>
+  <data name="client_greater_than_zerovalue" page="clientpage" xml:space="preserve">
+    <value>Bitte geben Sie einen Wert größer als null ein für (0).</value>
+  </data>
+  <data name="client_change_zerowd" page="clientpage" xml:space="preserve">
+    <value>Bitte geben Sie einen anderen Wert als null für den Wertminderungsbetrag ein.</value>
+  </data>
+  <data name="client_no_reval_det_supplied" page="clientpage" xml:space="preserve">
+      <value>Details für Neubewertung müssen angegeben werden.</value>
+  </data>
+
+  <!-- FAM_AssetTransfer_CS.js -->
+  <data name="client_assettransfer_subsidiarybookid" page="clientpage" xml:space="preserve">
+     <value>Der Vermögensgegenstand hat ein Geschäftsbuch, das nicht mit der Zielniederlassung verknüpft ist. Der Vermögensgegenstand wird transferiert, doch die Steuermethoden in diesem Geschäftsbuch werden nicht enthalten sein.</value>
+  </data>
+  <data name="client_assettransfer_subsidiarymethod" page="clientpage" xml:space="preserve">
+     <value>Der Vermögensgegenstand hat eine alternative Methode, die nicht mit der Zielniederlassung verknüpft ist. Der Vermögensgegenstand wird transferiert, doch die Steuermethoden in dieser alternativen Methode werden nicht enthalten sein.</value>
+  </data>
+  <data name="client_assettransfer_emptysubat" page="clientpage" xml:space="preserve">
+     <value>Vermögensgegenstand-Datensatz „Niederlassung/Vermögensgegenstandart“ darf nicht leer sein.</value>
+  </data>
+  <data name="client_assettransfer_nochange" page="clientpage" xml:space="preserve">
+     <value>Die Zieldatenfeldwerte des Vermögensgegenstand-Transfers müssen sich von den Originalwerten unterscheiden.</value>
+  </data>
+  <data name="client_assettransfer_notransferacct" page="clientpage" xml:space="preserve">
+     <value>Es existiert kein Vermögensgegenstand-Transferkonto für die Quell- und Zielniederlassungen.</value>
+  </data>
+  <data name="client_assettransfer_bgpexists" page="clientpage" xml:space="preserve">
+     <value>Dieser Vermögensgegenstand wird zurzeit für den Transfer bearbeitet. Bitte warten Sie, bis der Transfervorgang abgeschlossen ist, bevor Sie einen weiteren Transfer für diesen Vermögensgegenstand initiieren.</value>
+  </data>
+  <data name="client_assettransfer_bulkbgpexists" page="clientpage" xml:space="preserve">
+     <value>Eine Anfrage für einen Massentransfer von Vermögensgegenständen wird zurzeit ausgeführt. Bitte warten Sie, bis der Transfervorgang abgeschlossen ist, bevor Sie einen weiteren Transfer initiieren.</value>
+  </data>
+  <data name="client_assettransfer_warnbgpexists" page="clientpage" xml:space="preserve">
+     <value>Eine Anfrage für einen Massentransfer von Vermögensgegenständen wird zurzeit ausgeführt. Unter Umständen können Sie keine neue Anfrage für einen Vermögensgegenstandstransfer übermitteln.</value>
+  </data>
+  <data name="client_assettransfer_atassetacct" page="clientpage" xml:space="preserve">
+     <value>Die ausgewählte Vermögensgegenstandsart hat kein Vermögensgegenstandskonto.</value>
+  </data>
+  <data name="client_assettransfer_atdepracct" page="clientpage" xml:space="preserve">
+     <value>Die ausgewählte Vermögensgegenstandsart hat kein Abschreibungskonto.</value>
+  </data>
+  <data name="client_assettransfer_cdl_mandatory" page="clientpage" xml:space="preserve">
+     <value>„Abteilung“/„Standort“/„Klasse“ kann nicht auf &lt;KEINE&gt; gesetzt werden, da diese Auswahl zwingend ist.</value>
+  </data>
+
+    <!-- FAM_AssetRecordTransfer.js -->
+  <data name="client_assettransfer_invalid_sub_bookid" xml:space="preserve">
+     <value>Das Geschäftsbuch für diese Steuermethode ist nicht mit der Zielniederlassung verknüpft. Die Steuermethode wird nicht übertragen.</value>
+  </data>
+  <data name="client_assettransfer_invalid_sub_altmeth" xml:space="preserve">
+     <value>Die alternative Methode für diese Steuermethode ist nicht mit der Zielniederlassung verknüpft. Die Steuermethode wird nicht übertragen.</value>
+  </data>
+  <data name="client_assettransfer_no_tax_meth_acct" xml:space="preserve">
+     <value>Die Kombination von „Alternative Methode“ und „Buch-Identifizierungscode“ für diese Steuermethode hat keine Buchung in der Ziel-Vermögensgegenstandsart. Die Steuermethodenkonten werden leer gelassen.</value>
+  </data>
+  <data name="custpage_transfer_asset_undefined" xml:space="preserve">
+    <value>Der zu übertragende Vermögensgegenstand-Datensatz existiert nicht: (0)</value>
+  </data>
+
+    <!-- FAM_AssetTransferCSV.js -->
+    <data name="message_errorfile" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Fehler beim Abrufen der Informationen zur Vermögensgegenstandstransferdatei.</value>
+    </data>
+    <data name="message_toomanyfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Zu viele Datenfelder</value>
+    </data>
+    <data name="message_toofewfields" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Zu wenige Datenfelder</value>
+    </data>
+    <data name="message_duplicateasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Doppelter Eintrag für „Vermögensgegenstand-Identifizierungscode“: (0)</value>
+    </data>
+    <data name="message_headertoofew" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Die Daten für den Vermögensgegenstandstransfer sind unvollständig. Die Datei muss Werte für den Vermögensgegenstand plus mindestens eine der folgenden Angaben enthalten: Vermögensgegenstandsart, Niederlassung, Klasse, Abteilung und Standort.</value>
+    </data>
+    <data name="message_headerassetmissing" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Geben Sie Werte für den Vermögensgegenstand ein.</value>
+    </data>
+    <data name="message_headernotallowed" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Das Kopfzeilenfeld (0) ist nicht zulässig. Die Datei darf nur die folgenden Kopfzeilen enthalten: Vermögensgegenstand, Vermögensgegenstandsart, Niederlassung, Klasse, Abteilung und Standort.</value>
+    </data>
+    <data name="message_duplicateheader" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Dieses Kopfzeilenfeld tritt mehrfach auf: (0). Bitte entfernen Sie die doppelten Spalten.</value>
+    </data>
+    <data name="message_subsidiarybookid" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Der Vermögensgegenstand hat ein Geschäftsbuch, das nicht mit der Zielniederlassung verknüpft ist. Der Vermögensgegenstand wird transferiert, doch die Steuermethoden in diesem Geschäftsbuch werden nicht enthalten sein.</value>
+    </data>
+    <data name="message_subsidiarymethod" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Der Vermögensgegenstand hat eine alternative Methode, die nicht mit der Zielniederlassung verknüpft ist. Der Vermögensgegenstand wird transferiert, doch die Steuermethoden in dieser alternativen Methode werden nicht enthalten sein.</value>
+    </data>
+    <data name="message_emptysubat" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Vermögensgegenstand-Datensatz „Niederlassung/Vermögensgegenstandart“ darf nicht leer sein.</value>
+    </data>
+    <data name="message_nochange" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Die Zieldatenfeldwerte des Vermögensgegenstand-Transfers müssen sich von den Originalwerten unterscheiden.</value>
+    </data>
+    <data name="message_notransferacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Es existiert kein Vermögensgegenstand-Transferkonto für die Quell- und Zielniederlassungen.</value>
+    </data>
+    <data name="message_subdept_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Niederlassung und Abteilung stimmen nicht überein.</value>
+    </data>
+    <data name="message_subloc_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Niederlassung und Standort stimmen nicht überein.</value>
+    </data>
+    <data name="message_subclass_notmatch" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Niederlassung und Klasse stimmen nicht überein.</value>
+    </data>
+    <data name="message_atassetacct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Die ausgewählte Vermögensgegenstandsart hat kein Vermögensgegenstandskonto.</value>
+    </data>
+    <data name="message_atdepracct" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Die ausgewählte Vermögensgegenstandsart hat kein Abschreibungskonto.</value>
+    </data>
+    <data name="message_cdl_mandatory" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Die Auswahl von „Abteilung“/„Standort“/„Klasse“ darf nicht aufgehoben werden, da diese Auswahl zwingend ist.</value>
+    </data>
+    <data name="message_invalidasset" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Vermögensgegenstand existiert nicht oder ist inaktiv.</value>
+    </data>
+    <data name="message_onetransfertype" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Vermögensgegenstandsart-Transfer ist nicht zulässig beim Transfer zu einer anderen Niederlassung, Klasse, Abteilung oder einem anderen Standort.</value>
+    </data>
+    <data name="message_nonexistentfld" page="assettransfercsv_ss" xml:space="preserve">
+        <value>Ein oder mehrere der Zieldatenfelder existieren nicht oder sind inaktiv.</value>
+    </data>
+
+  <!-- Ext Js Messages -->
+  <data name="extjs_message_title" page="clientpage" xml:space="preserve">
+    <value>Anlagevermögen</value>
+  </data>
+  <data name="extjs_processing" page="clientpage" xml:space="preserve">
+    <value>Verarbeitung</value>
+  </data>
+  <data name="extjs_reading_asset" page="clientpage" xml:space="preserve">
+    <value>Vermögensgegenstand wird gelesen</value>
+  </data>
+  <data name="extjs_clearing_data" page="clientpage" xml:space="preserve">
+    <value>Daten werden gelöscht</value>
+  </data>
+  <data name="extjs_loading_data" page="clientpage" xml:space="preserve">
+    <value>Daten werden geladen</value>
+  </data>
+  <data name="extjs_refreshing_data" page="clientpage" xml:space="preserve">
+    <value>Daten werden aktualisiert</value>
+  </data>
+  <data name="extjs_initializing" page="clientpage" xml:space="preserve">
+    <value>Initialisierung</value>
+  </data>
+  <data name="extjs_initializing_error" page="clientpage" xml:space="preserve">
+    <value>Fehler bei Initialisierung</value>
+  </data>
+  <data name="extjs_reloading" page="clientpage" xml:space="preserve">
+    <value>Neu laden</value>
+  </data>
+  <data name="extjs_done" page="clientpage" xml:space="preserve">
+     <value>Erledigt</value>
+  </data>
+
+
+  <!-- Background Processing -->
+  <data name="custpage_error_internal" xml:space="preserve">
+    <value>Dieses Suitelet ist nur für den internen Gebrauch!</value>
+  </data>
+  <data name="custpage_error_postmethod" xml:space="preserve">
+    <value>Unerwartete POST-Methode.</value>
+  </data>
+
+  <!-- Constants -->
+  <data name="custpage_constant_accountingmethod" xml:space="preserve">
+    <value>Buchhaltungsmethode</value>
+  </data>
+  <data name="custpage_constant_allassets" xml:space="preserve">
+    <value>Alle Vermögensgegenstände</value>
+  </data>
+  <data name="custpage_constant_exceptleased" xml:space="preserve">
+    <value>Alle Vermögensgegenstände außer geleaste</value>
+  </data>
+  <data name="custpage_constant_onlyaassets" xml:space="preserve">
+    <value>Nur geleaste Vermögensgegenstände</value>
+  </data>
+
+
+  <!-- Server Scripts/Undefined -->
+  <data name="custpage_html_tangible" xml:space="preserve">
+    <value>Konkrete Vermögensgegenstände</value>
+  </data>
+  <data name="custpage_desc_schedulereport" xml:space="preserve">
+    <value>Planbericht Anlagevermögensverwaltung</value>
+  </data>
+  <data name="custpage_html_fam" xml:space="preserve">
+    <value>Anlagevermögensverwaltung</value>
+  </data>
+  <data name="custpage_accounts_missing" xml:space="preserve">
+    <value>Mindestens ein Buchungskonto fehlt.</value>
+  </data>
+  <data name="custpage_transfer_account_missing" xml:space="preserve">
+    <value>Keine gültigen Transferkonten von Niederlassung: (0) zu Niederlassung: (1) gefunden</value>
+  </data>
+  <data name="custpage_transfer_tax_method_account_missing" xml:space="preserve">
+    <value>Fehlende Steuermethode Vermögensgegenstand/Abschreibungskonto</value>
+  </data>
+  <data name="custpage_errordepreciation" xml:space="preserve">
+    <value>Berechnung der Abschreibung fehlgeschlagen</value>
+  </data>
+  <data name="custpage_transactionfailed" xml:space="preserve">
+    <value>Transaktion fehlgeschlagen</value>
+  </data>
+  <data name="custpage_fields_missing" xml:space="preserve">
+    <value>Geben Sie bitte einen Wert/Werte ein für: (0)</value>
+  </data>
+  <data name="custpage_fields_inactive" xml:space="preserve">
+    <value>Die folgenden Datenfelder sind nicht aktiv: (0)</value>
+  </data>
+  <data name="custpage_outside_period" xml:space="preserve">
+    <value>Das angegebene Transaktionsdatum liegt nicht innerhalb des Datumsbereichs Ihrer Buchhaltungsperiode.</value>
+  </data>
+  <data name="custpage_setupmissing" xml:space="preserve">
+    <value>Der Datensatz „Anlagevermögensverwaltung Systemeinrichtung“ fehlt oder ist unvollständig. Systemeinstellungen können nicht ermittelt werden.</value>
+  </data>
+  <data name="custpage_settingmissing" xml:space="preserve">
+    <value>Fehler beim Lesen der Systemeinstellungen</value>
+  </data>
+  <data name="custpage_invalid_acctsub_combo" xml:space="preserve">
+    <value>Ungültige Kombination von (0)-Konto-Niederlassung. Vermögensgegenstands-Identifizierungscode: (1)</value>
+  </data>
+
+  <!-- Buttons -->
+  <data name="custrecord_assetproposal_refreshbutton" page="assetproposal" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="custrecord_assetproposal_proposebutton" page="assetproposal" xml:space="preserve">
+    <value>Neue Vermögensgegenstände anbieten</value>
+  </data>
+  <data name="custrecord_assetproposal_generatebutton" page="assetproposal" xml:space="preserve">
+    <value>Vermögensgegenstände erstellen</value>
+  </data>
+  <data name="custrecord_assetproposal_rejectbutton" page="assetproposal" xml:space="preserve">
+    <value>Angebote ablehnen</value>
+  </data>
+  <data name="custrecord_famreports_generatebutton" page="famreports" xml:space="preserve">
+    <value>Erstellen</value>
+  </data>
+  <data name="custrecord_assetsummary_generatebutton" page="assetsummary" xml:space="preserve">
+    <value>Bericht erstellen</value>
+  </data>
+  <data name="custrecord_systemsetup_savebutton" page="systemsetup" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="custrecord_systemsetup_submitbutton" page="systemsetup" xml:space="preserve">
+    <value>Übermitteln</value>
+  </data>
+  <data name="custrecord_assetsplit_refreshbutton" page="assetsplit" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="custrecord_assetsplit_splitbutton" page="assetsplit" xml:space="preserve">
+    <value>Teilen</value>
+  </data>
+  <data name="custrecord_assetdisposal_refreshbutton" page="assetdisposal" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="custrecord_assetdisposal_disposebutton" page="assetdisposal" xml:space="preserve">
+    <value>Veräußern</value>
+  </data>
+  <data name="custrecord_depreciationschedule2_generatebutton" page="depreciationschedule2" xml:space="preserve">
+    <value>Bericht erstellen</value>
+  </data>
+  <data name="custrecord_assetcreation_createbutton" page="assetcreation" xml:space="preserve">
+    <value>Vermögensgegenstände erstellen</value>
+  </data>
+  <data name="custrecord_creationstatus_refreshbutton" page="assetcreation" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="custrecord_assetrevaluation_refreshbutton" page="assetrevaluation" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="custrecord_assetrevaluation_processbutton" page="assetrevaluation" xml:space="preserve">
+    <value>Neubewertung verarbeiten</value>
+  </data>
+  <data name="custrecord_assetrevaluation_calculatebutton" page="assetrevaluation" xml:space="preserve">
+    <value>Berechnen</value>
+  </data>
+  <data name="custrecord_assetregister_generatebutton" page="assetregister" xml:space="preserve">
+    <value>Bericht erstellen</value>
+  </data>
+  <data name="custrecord_maintenance_savebutton" page="maintenance" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="custrecord_maintenance_resetbutton" page="maintenance" xml:space="preserve">
+    <value>Zurücksetzen</value>
+  </data>
+  <data name="custrecord_systemstatus_refreshbutton" page="systemstatus" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="custrecord_generatehistory_generatebutton" page="generatehistory" xml:space="preserve">
+    <value>Verlauf erstellen</value>
+  </data>
+  <data name="custrecord_assetdepreciation_depreciatebutton" page="assetdepreciation" xml:space="preserve">
+    <value>Vermögensgegenstände abschreiben</value>
+  </data>
+  <data name="custrecord_depreciationschedule_generatebutton" page="depreciationschedule" xml:space="preserve">
+    <value>Bericht erstellen</value>
+  </data>
+  <data name="custrecord_reportstatus_refreshbutton" page="reportstatus" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="custrecord_reportstatus2_refreshbutton" page="reportstatus2" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="custrecord_assettransfer_refreshbutton" page="assettransfer" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="custrecord_assettransfer_transferbutton" page="assettransfer" xml:space="preserve">
+    <value>Transfer verarbeiten</value>
+  </data>
+  <data name="custrecord_assettransfer_importcsv" page="assettransfer" xml:space="preserve">
+    <value>CSV importieren</value>
+  </data>
+  <data name="custrecord_bulktransfer_submitbutton" page="bulktransfer" xml:space="preserve">
+    <value>Übermitteln</value>
+  </data>
+  <data name="custrecord_bulktransfer_cancelbutton" page="bulktransfer" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+
+  <!-- Asset Record -->
+  <data name="assetrecord_assettypehelp" xml:space="preserve">
+    <value>„Vermögensgegenstandsart“ legt die meisten Standardeinstellungen für die Konfiguration des Vermögensgegenstands fest und wird verwendet, um die Vermögensgegenstände in Berichten und anderen Vorgängen zu kategorisieren.</value>
+  </data>
+  <data name="assetrecord_assetdescrhelp" xml:space="preserve">
+    <value>Eine Kurzbeschreibung des Vermögensgegenstands.</value>
+  </data>
+  <data name="assetrecord_subshelp" xml:space="preserve">
+    <value>Die Niederlassung, mit der dieser Datensatz verknüpft ist.</value>
+  </data>
+  <data name="assetrecord_includechildhelp" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, um Vermögensgegenstände von untergeordneten Niederlassungen einzuschließen.</value>
+  </data>
+
+  <data name="assetrecord_assetserialnohelp" xml:space="preserve">
+    <value>Eine Seriennummer, die verwendet werden kann, um den Vermögensgegenstand nachzuverfolgen oder zu identifizieren.</value>
+  </data>
+  <data name="assetrecord_assetalternatenohelp" xml:space="preserve">
+    <value>Zusätzliche Vermögensgegenstand-Referenznummer.</value>
+  </data>
+  <data name="assetrecord_assetcosthelp" xml:space="preserve">
+    <value>Die ursprünglichen (Bezugs-)Kosten des Vermögensgegenstands.</value>
+  </data>
+  <data name="assetrecord_assetcurrentcosthelp" xml:space="preserve">
+    <value>Die derzeitigen Kosten des Vermögensgegenstands. Dies beinhaltet alle Wertminderungsbeträge, die auf den Vermögensgegenstand angewendet wurden</value>
+  </data>
+  <data name="assetrecord_residualvalpercenthelp" xml:space="preserve">
+    <value>Der Prozentwert der ursprünglichen Kosten, die der Vermögensgegenstand am Ende der Lebensdauer wert sein wird. Wenn ein Vermögensgegenstand beispielsweise für 1.000,00 gekauft wird und am Ende seiner Lebensdauer noch 100,00 wert ist, dann beträgt der verbleibende Prozentwert 10 % (10 % von 1.000,00 sind 100,00).
+Die Eingabe eines verbleibenden Wertes überschreibt immer den Standardwert, der mithilfe des Prozentsatzes berechnet wurde.</value>
+  </data>
+  <data name="assetrecord_residualvalhelp" xml:space="preserve">
+    <value>Der Wert, den der Vermögensgegenstand am Ende der Lebensdauer wert sein wird. Zum Beispiel kann ein Vermögensgegenstand, der für 1.000,00 erworben wurde, am Ende seiner Lebensdauer 100,00 wert sein.
+
+Die Eingabe eines verbleibenden Wertes überschreibt immer den Standardwert, der mithilfe des Prozentsatzes berechnet wurde.</value>
+  </data>
+  <data name="assetrecord_assetacctmethodhelp" xml:space="preserve">
+    <value>Wählen Sie die Abschreibungsmethode (Formel), die für die Abschreibung dieses Vermögensgegenstands verwendet werden soll.  Diese Buchhaltungsmethode wird verwendet, um die Werte zu berechnen, die in das Buchhaltungssystem eingepflegt werden.</value>
+  </data>
+  <data name="assetrecord_assetperiodconvhelp" xml:space="preserve">
+    <value>Wählen Sie die Konvention, die für die Definition eines Jahres verwendet wird:
+1. 12 Monate mit jeweils 30 Tagen - Diese Konvention wird im Allgemeinen in Nordamerika und Europa verwendet und ergibt eine einheitlichere monatliche Abschreibung.
+2. Exakte Anzahl von Tagen in einem Monat, Jahr hat 365 Tage - Diese Konvention wird im Allgemeinen in Australien und Neuseeland verwendet und ergibt eine uneinheitliche Abschreibung innerhalb des Jahres.</value>
+  </data>
+  <data name="assetrecord_assetlifetimehelp" xml:space="preserve">
+    <value>Die erwartete Lebensdauer des Vermögensgegenstands in Vielfachen der Abschreibungsperiode (z. B. geben Sie bei monatlicher Abschreibung die Lebensdauer in Monaten ein).</value>
+  </data>
+  <data name="assetrecord_assetdeprperiodhelp" xml:space="preserve">
+    <value>Die Häufigkeit, mit der die Abschreibung dieses Vermögensgegenstands stattfinden soll.</value>
+  </data>
+  <data name="assetrecord_assetlifetimeusagehelp" xml:space="preserve">
+    <value>Wenn die Abschreibung des Vermögensgegenstands durch die Nutzung dieses Vermögensgegenstands geregelt wird (z. B. Fahrzeugkilometer), gibt der Wert für die lebenslange Nutzung die Gesamtsumme der für diesen Vermögensgegenstand verfügbaren Einheiten wieder.  Wenn die bisherige Gesamtnutzung der lebenslangen Nutzung entspricht, hat der Vermögensgegenstand das Ende seiner Lebensdauer erreicht.</value>
+  </data>
+  <data name="assetrecord_assetnetbookvaluehelp" xml:space="preserve">
+    <value>Die aktuelle Journalbewertung des Vermögensgegenstands.</value>
+  </data>
+  <data name="assetrecord_assetcumulativedeprhelp" xml:space="preserve">
+    <value>Der gesamte Abschreibungsbetrag, der bisher auf den Vermögensgegenstand angewendet wurde</value>
+  </data>
+  <data name="assetrecord_assetstatushelp" xml:space="preserve">
+    <value>Der Status des Vermögensgegenstands: „Neu“, „Abschreibung erfolgt“, „Abschreibung abgeschlossen“ oder „Veräußert“</value>
+  </data>
+  <data name="assetrecord_assetcustomerlocationhelp" xml:space="preserve">
+    <value>Der Standort des Kunden, von dem der Vermögensgegenstand gekauft wurde.</value>
+  </data>
+  <data name="assetrecord_assetcurrencyhelp" xml:space="preserve">
+    <value>Die Währung, in der die Kosten des Vermögensgegenstands ursprünglich angegeben wurden.</value>
+  </data>
+  <data name="assetrecord_assetcurrencyidhelp" xml:space="preserve">
+    <value>Interner Identifizierungscode der Währung des Vermögensgegenstands.</value>
+  </data>
+  <data name="assetrecord_assetfixedratehelp" xml:space="preserve">
+    <value>Fester Wechselkurs zwischen der Währung für die Kosten (Währung des Vermögensgegenstands) und der Ausgangswährung für die Firma oder Niederlassung des Vermögensgegenstands.</value>
+  </data>
+  <data name="assetrecord_assetcustodianhelp" xml:space="preserve">
+    <value>Der für den Vermögensgegenstand verantwortliche Angestellte.</value>
+  </data>
+  <data name="assetrecord_assetphysicallochelp" xml:space="preserve">
+    <value>Gibt an, an welchem Standort sich der Vermögensgegenstand normalerweise befindet.</value>
+  </data>
+  <data name="assetrecord_assetincludesreportschelp" xml:space="preserve">
+    <value>Gibt an, ob der Vermögensgegenstand in den Vermögensgegenstand-Übersichtsbericht einbezogen werden soll.  In der Standardeinstellung werden alle Vermögensgegenstände in den Bericht miteinbezogen.</value>
+  </data>
+  <data name="assetrecord_assetpurchasedatehelp" xml:space="preserve">
+    <value>Das Kaufdatum des Vermögensgegenstands.</value>
+  </data>
+  <data name="assetrecord_assetdeprstartdatehelp" xml:space="preserve">
+    <value>Das Datum, an dem die Abschreibung des Vermögensgegenstandes beginnt. Zum Beispiel kann ein Vermögensgegenstand erworben, aber nicht erhalten werden, oder er kann erst ein paar Monate später in Betrieb genommen werden.</value>
+  </data>
+  <data name="assetrecord_assetdeprenddatehelp" xml:space="preserve">
+    <value>Das Datum, an dem die Abschreibung des Vermögensgegenstands voraussichtlich abgeschlossen ist.  Dies ist standardmäßig das Startdatum der Abschreibung des Vermögensgegenstands plus die nutzbare Lebensdauer.</value>
+  </data>
+  <data name="assetrecord_assetlastdeprperiodhelp" xml:space="preserve">
+    <value>Die Periodennummer (innerhalb der Lebensdauer des Vermögensgegenstands), in der zuletzt eine Abschreibung des Vermögensgegenstands stattfand.</value>
+  </data>
+  <data name="assetrecord_assetlastdepramounthelp" xml:space="preserve">
+    <value>Der Wert der letzten Abschreibung dieses Vermögensgegenstands.</value>
+  </data>
+  <data name="assetrecord_assetlastdeprdatehelp" xml:space="preserve">
+    <value>Das Datum der letzten Abschreibung dieses Vermögensgegenstands.</value>
+  </data>
+  <data name="assetrecord_assetdepractivehelp" xml:space="preserve">
+    <value>Gibt an, ob der Vermögensgegenstand aktiv ist und bei der Abschreibung berücksichtigt wird. Wenn sich der Vermögensgegenstand auf einen Job bezieht, ist er möglicherweise so eingestellt, dass die Abschreibung automatisch beginnt, sobald der Job abgeschlossen ist.</value>
+  </data>
+  <data name="assetrecord_assetdisptypehelp" xml:space="preserve">
+    <value>Die Art, in der Vermögensgegenstand veräußert wurde. </value>
+  </data>
+  <data name="assetrecord_assetcustomerhelp" xml:space="preserve">
+    <value>Der Kunde, an den dieser Vermögensgegenstand verkauft wurde.</value>
+  </data>
+  <data name="assetrecord_assetqtyhelp" xml:space="preserve">
+    <value>Die Menge dieses Vermögensgegenstands.</value>
+  </data>
+  <data name="assetrecord_assetrevisionmethodhelp" xml:space="preserve">
+    <value>Bestimmt, wie Überarbeitungen (Neubewertung) den Vermögensgegenstand beeinflussen.  Wenn „Aktuelle Periode“ ausgewählt ist, wird die bisherige Abschreibung des Vermögensgegenstands mithilfe der überarbeiteten Werte neu berechnet, und die Differenz zwischen der berechneten Abschreibung und der zuvor gebuchten Abschreibung wird in der aktuellen Periode eingegeben.  Wenn „Verbleibende Lebensdauer“ ausgewählt ist, dann gilt die Überarbeitung nur ab dann für den Vermögensgegenstand, sodass nur zukünftige Berechnungen der Abschreibung betroffen sind.</value>
+  </data>
+  <data name="assetrecord_assetnamehelp" xml:space="preserve">
+    <value>Der Name des Vermögensgegenstands, mit dem dieser Datensatz verknüpft ist.</value>
+  </data>
+  <data name="assetrecord_assetlocationhelp" xml:space="preserve">
+    <value>Wählen Sie einen Standort, wenn der Bericht nur Vermögensgegenstände beinhalten soll, die mit einem spezifischen Standort verknüpft sind.</value>
+  </data>
+  <data name="assetrecord_assetdepartmenthelp" xml:space="preserve">
+    <value>Wählen Sie eine Abteilung, wenn der Bericht nur Vermögensgegenstände beinhalten soll, die mit einer spezifischen Abteilung verknüpft sind.</value>
+  </data>
+  <data name="assetrecord_assetclasshelp" xml:space="preserve">
+    <value>Wählen Sie eine Klasse, wenn der Bericht nur Vermögensgegenstände beinhalten soll, die mit einer spezifischen Klasse verknüpft sind.</value>
+  </data>
+  <data name="assetrecord_report_subshelp" xml:space="preserve">
+    <value>Wählen Sie die Niederlassung oder die Niederlassungen, für die ein Bericht generiert werden soll.</value>
+  </data>
+  <data name="assetrecord_report_assetacctmethodhelp" xml:space="preserve">
+    <value>Wählen Sie die Abschreibungsmethode aus.</value>
+  </data>
+  <data name="assetrecord_report_includechildhelp" xml:space="preserve">
+    <value>Aktivieren Sie dieses Kontrollkästchen, um Vermögensgegenstände von untergeordneten Niederlassungen in den Bericht einzuschließen.</value>
+  </data>
+  <data name="assetrecord_report_assettypehelp" xml:space="preserve">
+    <value>Wählen Sie eine oder mehrere Vermögensgegenstandsarten, um die Vermögensgegenstände im Bericht zu kategorisieren. Beachten Sie, dass den meisten der Vermögensgegenstände der Konfiguration Standardwerte basierend auf der Vermögensgegenstandsart zugewiesen werden.</value>
+  </data>
+  <data name="assetrecord_assetperiodstartdatehelp" xml:space="preserve">
+    <value>Wählen Sie oder geben Sie das Startdatum der Berichtsperiode ein, die Sie generieren möchten.</value>
+  </data>
+  <data name="assetrecord_assetperiodenddatehelp" xml:space="preserve">
+    <value>Wählen Sie oder geben Sie das Enddatum der Berichtsperiode ein, die Sie generieren möchten.</value>
+  </data>
+  <data name="assetrecord_report_acctngbookhelp" xml:space="preserve">
+    <value>Wählen Sie das Geschäftsbuch oder die Geschäftsbücher aus, für die Sie einen Bericht erstellen möchten.</value>
+  </data>
+  <data name="assetrecord_report_typehelp" xml:space="preserve">
+    <value>Wählen Sie die Art des Berichts aus, der erstellt werden soll.</value>
+  </data>
+
+  <!-- Alternate Depreciation Record -->
+  <data name="client_altdepr_currency_mismatch" page="clientpage" xml:space="preserve">
+     <value>Die Währung von „Alternative Abschreibung“ sollte mit der Geschäftsbuchwährung übereinstimmen, wenn ein Geschäftsbuch ausgewählt ist.
+     Andernfalls sollte die Währung mit der Ausgangswährung der Niederlassung oder Firma übereinstimmen.</value>
+  </data>
+  
+    <!-- FAM Report Templates -->
+    <!-- Asset Registry Report Template-->
+  <data name="ARR_desc_ARR" page="ARR_template" xml:space="preserve">
+     <value>Generated by FAM. Asset Register Report</value>
+  </data>
+  <data name="ARR_title_ARR" page="ARR_template" xml:space="preserve">
+     <value>Asset Register Report</value>
+  </data>
+  <data name="ARR_fam_ARR" page="ARR_template" xml:space="preserve">
+     <value>Fixed Assets Management</value>
+  </data>
+  <data name="ARR_begbal_ARR" page="ARR_template" xml:space="preserve">
+     <value>Beginning Balance</value>
+  </data>
+  <data name="ARR_assettype_ARR" page="ARR_template" xml:space="preserve">
+     <value>Asset Type</value>
+  </data>
+  <data name="ARR_id_ARR" page="ARR_template" xml:space="preserve">
+     <value>ID</value>
+  </data>
+  <data name="ARR_name_ARR" page="ARR_template" xml:space="preserve">
+     <value>Name</value>
+  </data>
+  <data name="ARR_deprstartdate_ARR" page="ARR_template" xml:space="preserve">
+     <value>Depreciation Start Date</value>
+  </data>
+  <data name="ARR_al_ARR" page="ARR_template" xml:space="preserve">
+     <value>AL</value>
+  </data>
+  <data name="ARR_cost_ARR" page="ARR_template" xml:space="preserve">
+     <value>Cost</value>
+  </data>
+  <data name="ARR_nbv_ARR" page="ARR_template" xml:space="preserve">
+     <value>Net Book Value</value>
+  </data>
+  <data name="ARR_acquisition_ARR" page="ARR_template" xml:space="preserve">
+     <value>Acquisition</value>
+  </data>
+  <data name="ARR_sale_ARR" page="ARR_template" xml:space="preserve">
+     <value>Sale</value>
+  </data>
+  <data name="ARR_disposals_ARR" page="ARR_template" xml:space="preserve">
+     <value>Disposals</value>
+  </data>
+  <data name="ARR_depreciation_ARR" page="ARR_template" xml:space="preserve">
+     <value>Depreciation</value>
+  </data>
+  <data name="ARR_revaluation_ARR" page="ARR_template" xml:space="preserve">
+     <value>Revaluation</value>
+  </data>
+  <data name="ARR_writedown_ARR" page="ARR_template" xml:space="preserve">
+     <value>Write Down</value>
+  </data>
+  <data name="ARR_subwithzero_ARR" page="ARR_template" xml:space="preserve">
+     <value>Subsidiaries with zero values</value>
+  </data>
+
+  <!-- Asset Summary Report Template-->
+  <data name="ASR_desc_ASR" page="ASR_template" xml:space="preserve">
+     <value>Generated by FAM. Asset Summary Report</value>
+  </data>
+  <data name="ASR_title_ASR" page="ASR_template" xml:space="preserve">
+     <value>Asset Summary Report</value>
+  </data>
+  <data name="ASR_fam_ASR" page="ASR_template" xml:space="preserve">
+     <value>Fixed Assets Management</value>
+  </data>
+  <data name="ASR_begbal_ASR" page="ASR_template" xml:space="preserve">
+     <value>Beginning Balance</value>
+  </data>
+  <data name="ASR_additions_ASR" page="ASR_template" xml:space="preserve">
+     <value>Additions</value>
+  </data>
+  <data name="ASR_sale_ASR" page="ASR_template" xml:space="preserve">
+     <value>Sale</value>
+  </data>
+  <data name="ASR_disposals_ASR" page="ASR_template" xml:space="preserve">
+     <value>Disposals</value>
+  </data>
+  <data name="ASR_revaluations_ASR" page="ASR_template" xml:space="preserve">
+     <value>Revaluations</value>
+  </data>
+  <data name="ASR_endbal_ASR" page="ASR_template" xml:space="preserve">
+     <value>Ending Balance</value>
+  </data>
+  <data name="ASR_subwithzero_ASR" page="ASR_template" xml:space="preserve">
+     <value>Subsidiaries with zero values</value>
+  </data>
+
+  <!-- Depreciation Schedule Report Template-->
+  <data name="DSR_desc_DSR" page="DSR_template" xml:space="preserve">
+     <value>Generated by FAM. Depreciation Schedule Report</value>
+  </data>
+  <data name="DSR_title_DSR" page="DSR_template" xml:space="preserve">
+     <value>Asset Depreciation Schedule Report</value>
+  </data>
+  <data name="DSR_fam_DSR" page="DSR_template" xml:space="preserve">
+     <value>Fixed Assets Management</value>
+  </data>
+  <data name="DSR_from_DSR" page="DSR_template" xml:space="preserve">
+     <value>From</value>
+  </data>
+  <data name="DSR_to_DSR" page="DSR_template" xml:space="preserve">
+     <value>to</value>
+  </data>
+  <data name="DSR_id_DSR" page="DSR_template" xml:space="preserve">
+     <value>ID</value>
+  </data>
+  <data name="DSR_name_DSR" page="DSR_template" xml:space="preserve">
+     <value>Name</value>
+  </data>
+  <data name="DSR_al_DSR" page="DSR_template" xml:space="preserve">
+     <value>AL</value>
+  </data>
+  <data name="DSR_deprmethod_DSR" page="DSR_template" xml:space="preserve">
+     <value>Depr Method</value>
+  </data>
+  <data name="DSR_jan_DSR" page="DSR_template" xml:space="preserve">
+     <value>Jan</value>
+  </data>
+  <data name="DSR_feb_DSR" page="DSR_template" xml:space="preserve">
+     <value>Feb</value>
+  </data>
+  <data name="DSR_mar_DSR" page="DSR_template" xml:space="preserve">
+     <value>Mar</value>
+  </data>
+  <data name="DSR_apr_DSR" page="DSR_template" xml:space="preserve">
+     <value>Apr</value>
+  </data>
+  <data name="DSR_may_DSR" page="DSR_template" xml:space="preserve">
+     <value>May</value>
+  </data>
+  <data name="DSR_jun_DSR" page="DSR_template" xml:space="preserve">
+     <value>Jun</value>
+  </data>
+  <data name="DSR_jul_DSR" page="DSR_template" xml:space="preserve">
+     <value>Jul</value>
+  </data>
+  <data name="DSR_aug_DSR" page="DSR_template" xml:space="preserve">
+     <value>Aug</value>
+  </data>
+  <data name="DSR_sep_DSR" page="DSR_template" xml:space="preserve">
+     <value>Sep</value>
+  </data>
+  <data name="DSR_oct_DSR" page="DSR_template" xml:space="preserve">
+     <value>Oct</value>
+  </data>
+  <data name="DSR_nov_DSR" page="DSR_template" xml:space="preserve">
+     <value>Nov</value>
+  </data>
+  <data name="DSR_dec_DSR" page="DSR_template" xml:space="preserve">
+     <value>Dec</value>
+  </data>
+  
+</root>

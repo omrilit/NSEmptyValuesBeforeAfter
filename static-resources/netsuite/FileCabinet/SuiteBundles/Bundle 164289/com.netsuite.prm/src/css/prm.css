@@ -1,0 +1,1084 @@
+/**
+ * © 2017 NetSuite Inc.  User may not copy, modify, distribute, or re-bundle or otherwise make available this code.
+ */
+
+body {
+    overflow: hidden;
+}
+
+.prm-form-window * {
+    font-family: Serif;
+    font-size: 14px;
+}
+
+.prm-form-window .x4-window-header * {
+    overflow: visible;
+}
+
+#prm-form-new-allocation-body div {
+    overflow: visible;
+}
+
+#prm-bind-14px {
+    font-size: 14px;
+}
+
+#prm-bind-13px {
+    font-size: 13px;
+}
+
+#prm-bind-12px {
+    font-size: 12px;
+}
+
+.x4-header-text {
+    padding-left: 3px;
+}
+
+.x4-hide-clip {
+    display: none;
+}
+
+.x4-window-plain .x4-window-body {
+    background-color: #FAFAFA !important;
+}
+.x4-window-body * {
+    color: #222222;
+}
+
+.x4-window-header-text-container-default {
+    /*margin-left: 3px !important;*/
+    margin-top: 4px !important;
+}
+
+.x4-fieldset-header-text {
+    font-weight: bold;
+}
+
+.x4-tip-default {
+    background-color: #ffffff;
+}
+
+.x4-panel-body {
+  border-color: #CCCCCC;
+  border-top-width: 1px;
+  border-top-color: #000000;
+  border-top-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  border-bottom-style: solid;
+  padding: 0;
+}
+
+.x4-column-header-text {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    color: rgb(128, 128, 128) !important;
+    white-space: normal !important;
+    text-transform: uppercase;
+}
+
+.x4-grid-locked .x4-grid-inner-locked {
+  border-right-width: 2px;
+  border-right-color: #ccc;
+  border-right-style: solid;
+}
+
+.prm-grid-header, .prm-grid-header .x4-column-header-over, .prm-grid-header .x4-column-header-last  {
+    background-image: none;
+    text-align: center !important;
+    border-right-width: 0px !important;
+}
+
+.prm-grid-group-header .x4-column-header-inner {
+    border-top-width: 0px !important;
+    border-top-color: rgb(191, 191, 191);
+    border-top-style: solid;
+    text-align: center !important;
+    border-bottom-width: 0px;
+    text-transform: uppercase;
+}
+
+#prm-grid-period1-titleEl, #prm-grid-period2-titleEl, #prm-grid-period3-titleEl {
+    cursor: pointer;
+    padding-top: 8px !important;
+}
+
+.x4-grid-header-ct {
+    background: rgb(217, 217, 217);
+}
+
+.prm-grid-group-header > .x4-column-header-inner:first-child {
+    height : 33px;
+}
+
+#prm-grid-normal .prm-grid-group-header .x4-column-header-inner {
+    background-image: url(../css/images/prm/open.png);
+    background-position: 99% 50%;
+    background-repeat: no-repeat;
+    padding-top: 5px;
+}
+
+#prm-grid-normal .prm-grid-group-header .x4-column-header-inner span {
+    color: #255599 !important;
+}
+
+.prm-grid-header .x4-column-header-inner {
+    background-image: none !important;
+    height: 100%;
+}
+
+#prm-grid-normal .prm-grid-group-header .x4-box-inner span {
+    color: rgb(128, 128, 128) !important;
+}
+
+.prm-grid-group-header  {
+    background-image: none;
+    background-color: rgb(217, 217, 217);
+    border-right-width: 1px;
+    border-right-color: rgb(191, 191, 191);
+    border-right-style: solid;
+    border-bottom-width: 0px;
+}
+
+.prm-grid-group-header .x4-column-header-over  {
+    background-image: none;
+    background-color: transparent;
+}
+
+.prm-project {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+}
+
+.x4-grid-row .prm-project {
+    color: rgb(64, 64, 64) !important;
+    background-color: rgb(242, 242, 242) !important;
+}
+
+.prm-large-data-icon {
+    background: url(../css/images/prm/more.png) no-repeat center center !important;
+}
+
+.prm-large-data-btn {
+    border: none;
+    background: transparent;
+    padding-top: 5px;
+}
+
+/* Styles used by Ext.ux.form.ItemSelector */
+
+.x4-form-multiselect-body .x4-boundlist .x4-mask {
+    background: none;
+}
+
+.x4-form-itemselector-body .x4-form-item {
+    margin: 0;
+}
+
+.x4-form-itemselector-top {
+}
+.x4-form-itemselector-up {
+    background: url(../css/images/prm/shuttle_cntl_arrows.png) no-repeat top left;
+    background-position: 4px -45px;
+}
+.x4-form-itemselector-add {
+    background: url(../css/images/prm/shuttle_cntl_arrows.png) no-repeat top left;
+    background-position: 6px -29px;
+}
+.x4-form-itemselector-remove {
+    background: url(../css/images/prm/shuttle_cntl_arrows.png) no-repeat top left;
+    background-position: 5px -11px;
+}
+.x4-form-itemselector-down {
+    background: url(../css/images/prm/shuttle_cntl_arrows.png) no-repeat top left;
+    background-position: 4px 6px;
+}
+.x4-form-itemselector-bottom {
+}
+
+#prm-large-data-item-selector #prm-large-data-item-selector-targetEl table {top: -1px!important;}
+
+#itemselector .x4-panel-header {
+    background-image: none;
+    background-color: #FFFFFF;
+}
+
+#itemselector .x4-panel-header, #itemselector .x4-panel-body {
+    border-color: #B5B8C8;
+}
+
+.prm-task {
+    color: #9E9E9E !important;
+    font-weight: bold !important;
+}
+
+.prm-assignment {
+    color: #000 !important;
+}
+
+.prm-multiple-allocation {
+    color: #255599 !important;
+    text-decoration: underline;
+}
+
+.prm-rejected-allocation {
+    color: red !important;
+}
+
+.prm-project-no-children span.x4-tree-node-text {
+    padding-left: 28px;
+}
+
+.prm-tooltip {
+    white-space: nowrap;
+}
+
+
+.prm-tooltip-padding {
+    padding: 15px;
+}
+
+.prm-tooltip {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    /*word-wrap: normal;*/
+}
+
+.prm-tooltip-data {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+    /*word-wrap: normal;*/
+}
+
+.prm-tooltip-data tr td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.prm-tooltip, .prm-tooltip * {
+    font: inherit;
+}
+
+.prm-tooltip .header {
+    /*background-color: #DCE1E8;*/
+}
+
+.prm-tooltip .header div {
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 18px !important;
+    color: #666666;
+    background: transparent url(../css/images/prm/allocateresources.png) no-repeat;
+    background-size: 25px 25px;
+    padding-left: 30px;
+}
+
+.prm-tooltip .employee-header div {
+    background: transparent url(../css/images/prm/recordTypeIcon-employee.png) no-repeat;
+    background-size: 25px 25px;
+}
+
+.prm-tooltip .vendor-header div {
+    background: transparent url(../css/images/prm/vendor.png) no-repeat;
+    background-size: 25px 25px;
+}
+
+.prm-tooltip .label {
+    text-align: right;
+    vertical-align: top;
+    color: #666666;
+    font-size: 14px;
+}
+
+.prm-tooltip .value {
+    vertical-align: top;
+    padding-left: 5px;
+    color: #666666;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.x4-grid-with-col-lines {
+    border-right-color: transparent;
+}
+
+#prm-grid .x4-grid-row * {
+    font-size: 13px !important; 
+}
+
+#prm-grid tr.x4-grid-tree-node-leaf td.x4-grid-cell-treecolumn div.x4-grid-cell-inner {
+    padding-left: 0px;
+}
+
+#prm-grid tr.x4-grid-tree-node-leaf.prm-type-task td.x4-grid-cell-treecolumn div.x4-grid-cell-inner {
+    color: #0000FF;
+}
+
+#prm-grid .x4-grid-row .x4-tree-node-text {
+    position: relative;
+    top: 0px;
+    left: 4px;
+} 
+
+#prm-grid tr.x4-grid-tree-node-leaf .x4-tree-node-text {
+    top: -2px;
+} 
+
+#prm-grid .x4-grid-cell-inner {
+    line-height: 20px;
+    padding: 2px 6px 2px;
+}
+
+#prm-grid-normal .x4-grid-cell-inner, .x4-grid-cell-prm-grid-percent-complete .x4-grid-cell-inner, .x4-grid-cell-prm-grid-hours-estimated .x4-grid-cell-inner {
+    text-align: center !important;
+}
+
+/* set classes for specific rows */
+.prm-last-resource .x4-grid-cell {
+    border-bottom-width: 1px !important;
+    border-bottom-color: #ccc;
+    border-bottom-style: solid;    
+}
+
+.prm-no-icon-menu a.x4-menu-item-link {
+    padding: 0;
+}
+
+.prm-no-icon-menu a.x4-menu-item-link div.x4-menu-item-icon {
+    display: none;
+}
+
+.prm-no-icon-menu a.x4-menu-item-link span.x4-menu-item-text {
+    margin: 0;
+    padding: 0 7px;
+}
+
+/* set classes for specific columns */
+.prm-non-working-day {
+    background: url(images/prm/pattern_non_working.png) !important; 
+}
+
+/* hide default Ext tree icons from grid */
+#prm-grid .x4-tree-icon, .prm-display-none {
+    display: none !important;
+}
+
+/* hide default Ext elbow icons from grid */
+#prm-grid img.x4-tree-elbow-img.x4-tree-elbow-empty, 
+#prm-grid img.x4-tree-elbow-img.x4-tree-elbow, 
+#prm-grid img.x4-tree-elbow-img.x4-tree-elbow-line,
+#prm-grid img.x4-tree-elbow-img.x4-tree-elbow-end {    
+    opacity: 0;
+    margin: 3px 0px 0px 6px;
+} 
+
+/* override default Ext expand/collapse icons on grid */
+#prm-grid .x4-tree-lines .x4-tree-elbow-end-plus, #prm-grid .x4-tree-lines .x4-tree-elbow-plus {
+    background: url(../css/images/prm/da-expand.png) no-repeat center center; 
+    margin: 3px 0px 0px 6px;
+} 
+
+#prm-grid .x4-tree-lines .x4-grid-tree-node-expanded .x4-tree-elbow-end-plus, #prm-grid .x4-tree-lines .x4-grid-tree-node-expanded .x4-tree-elbow-plus {
+    background: url(../css/images/prm/da-collapse.png) no-repeat center center;
+    margin: 3px 0px 0px 6px;
+} 
+
+#prm-view-toolbar {
+    background: #E0E6EF;
+    background-image: none;
+    border-color: #CCCCCC;
+}
+
+#prm-date-range {
+    font-size: 14px;
+    font-weight: bold;
+    color: #255599;
+}
+
+.prm-button-link-a {
+    text-decoration: none;
+}
+
+
+.x4-panel-body {
+    background-color: transparent;
+}
+
+.x4-panel-body-default {
+    border-color: #ccc;
+}
+
+.x4-btn {
+    /* unselectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.prm-rect-btn {
+    height: 28px;
+    background-image: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0px 12px 0px 12px;
+}
+
+.prm-rect-btn * {
+    height: 100% !important;
+}
+
+.prm-rect-btn .x4-btn-wrap {
+    margin-top: 0px;
+}
+
+.prm-rect-btn .x4-btn-inner {
+    line-height: 25px;
+    font-size: 14px !important;
+    padding: 0px;
+}
+
+.prm-rect-btn-gray {
+    border-color: #b2b2b2;
+    background-color: #e5e5e5;
+    background-image: -webkit-linear-gradient(top, #fafafa, #e5e5e5) !important; /* For Chrome and Safari */
+    background-image: -moz-linear-gradient(top, #fafafa, #e5e5e5) !important; /* For old Fx (3.6 to 15) */
+    background-image: -ms-linear-gradient(top, #fafafa, #e5e5e5) !important; /* For pre-releases of IE 10*/
+    background-image: -o-linear-gradient(top, #fafafa, #e5e5e5) !important; /* For old Opera (11.1 to 12.0) */
+    background-image: linear-gradient(to bottom, #fafafa, #e5e5e5) !important; /* Standard syntax; must be last */
+}
+
+.prm-rect-btn-gray:focus {
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+    -ms-box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+    box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+}
+
+.prm-rect-btn-gray:hover {
+    background-color: #e5e5e5;
+    background-image: none !important;
+}
+
+.prm-rect-btn-gray:active {
+    background-color: #b2b2b2;
+    background-image: none !important;
+}
+
+.prm-rect-btn-gray:disabled {
+    background-color: #e5e5e5;
+    background-image: none !important;
+    border: 1px solid #ccc;
+}
+
+.prm-rect-btn-gray .x4-btn-inner {
+    color: #333333;
+    font-weight: 600;
+}
+
+.prm-rect-btn-gray:disabled .x4-btn-inner {
+    color: #999999;
+}
+.prm-rect-btn-blue {
+    border-color: #125ab2;
+    background-color: #187bf2;
+    background-image: -webkit-linear-gradient(top, #4c9dff, #187bf2) !important; /* For Chrome and Safari */
+    background-image: -moz-linear-gradient(top, #4c9dff, #187bf2) !important; /* For old Fx (3.6 to 15) */
+    background-image: -ms-linear-gradient(top, #4c9dff, #187bf2) !important; /* For pre-releases of IE 10*/
+    background-image: -o-linear-gradient(top, #4c9dff, #187bf2) !important; /* For old Opera (11.1 to 12.0) */
+    background-image: linear-gradient(to bottom, #4c9dff, #187bf2) !important; /* Standard syntax; must be last */
+}
+
+.prm-rect-btn-blue:focus {
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+    -ms-box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+    box-shadow: 0px 0px 2px 2px rgba(24,123,242,.75);
+}
+
+.prm-rect-btn-blue:hover {
+    background-color: #1467cc;
+    background-image: none !important;
+}
+
+.prm-rect-btn-blue:active {
+    background-color: #004599;
+    background-image: none !important;
+}
+
+.prm-rect-btn-blue:disabled {
+    background-color: #e5e5e5;
+    background-image: none !important;
+    border: 1px solid #ccc;
+}
+
+.prm-rect-btn-blue .x4-btn-inner {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.prm-rect-btn-blue:disabled .x4-btn-inner {
+    color: #999999;
+}
+.prm-button-link-span {
+    font-size: 14px;
+    color: #255599;
+}
+
+.prm-btn-link-toggle-pressed .prm-button-link-span {
+    color: #333333;
+}
+
+.prm-btn-link-toggle-pressed a span.prm-button-link-span {
+    font-weight: bold;
+}
+
+#prm-btn-expand-all .prm-button-link-span, #prm-btn-collapse-all .prm-button-link-span {
+    text-transform: uppercase;
+}
+
+.prm-separator {
+    background-color: #b3b3b3;
+    width: 1px;
+    height: 28px;
+    margin: 0;
+}
+
+.prm-separator-small {
+    height: 15px;
+    margin: 3px 0px;
+}
+
+.prm-unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.prm-button-icon {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.prm-button-arrow  {
+    border:1px solid #CECECE;
+    background: #FFFFFF !important;
+    outline: none;
+    display: block;
+}
+
+.prm-button-icon .x4-btn-inner, .prm-button-icon .x4-btn-icon-el {
+    width: 16px;
+}
+
+.prm-icon-csv {
+    background: url(../css/images/prm/li-csv.png) no-repeat center center;
+}
+
+.prm-icon-xls {
+    background: url(../css/images/prm/li-excel.png) no-repeat center center;
+}
+
+.prm-icon-pdf {
+    background: url(../css/images/prm/li-pdf.png) no-repeat center center;
+}
+
+.prm-icon-print {
+    background: url(../css/images/prm/li-print.png) no-repeat center center;
+}
+
+.prm-icon-settings {
+    background: url(../css/images/prm/icon_cog.png) no-repeat center center;
+    background-size: 16px;
+}
+
+.prm-icon-pan-left {
+    background: url(../css/images/prm/da-prevwhite.png) no-repeat center center;
+    height: 17px !important;
+}
+
+.prm-icon-pan-right {
+    background: url(../css/images/prm/da-nextwhite.png) no-repeat center center;
+    height: 17px !important;
+}
+
+.prm-icon-info {
+    background: url(../css/images/prm/icon_info2.png) no-repeat center center;
+}
+
+.prm-icon-search {
+    background: url(../css/images/prm/icon_quicksearch2.png) no-repeat center center;
+}
+
+.prm-icon-select {
+    background: url(../css/images/prm/icon_select_arrow.png) no-repeat center center;
+    margin-left: 12px;
+}
+
+#prm-pnl-filters, #prm-pnl-filters-body, #prm-pnl-filters-outerCt, #prm-pnl-filters-innerCt, #prm-view-controls-row, #prm-view-controls-row-body, #prm-view-controls-row-innerCt {
+    overflow: visible;
+}
+
+#prm-pnl-filters-body {
+    border: none;
+}
+
+#prm-pnl-filters {
+    border: none;
+    background: transparent;
+    margin: 15px 1px 10px 1px;
+}
+
+#prm-pnl-filter-summary {
+    margin-top: 10px !important;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+    background-color: #EAEAEA;
+}
+
+#prm-pnl-filter-summary-body {
+    border: none;
+}
+
+#prm-tgl-filter-icon-linkEl {
+   padding-left: 22px;
+   background: url(../css/images/prm/da-collapse.png) no-repeat 5px 3px;
+}
+
+.prm-filter-hidden #prm-tgl-filter-icon-linkEl{
+   background: url(../css/images/prm/da-expand.png) no-repeat 5px 3px;
+}
+
+#filter-body{
+    margin-top: 5px;
+}
+
+#filter-body .x4-form-item {
+    float: left;
+    margin-left: 20px;
+    width: 150px;
+}
+
+#filter-body .x4-form-item-label {
+    font-weight: bold;
+}
+.filter-toggle-link {
+    font-weight: bold;
+    font-size: 13px !important;
+    color: #333333;
+    text-decoration: none;
+    display: block;
+}
+
+/*
+=================================================
+    Forms (Pop-Up) Classes
+=================================================
+*/
+
+/* imitate NS input text drop shadow */
+.x4-form-text:focus {
+    border: 1px solid #408FDB !important;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(64, 143, 219, 0.75);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(64, 143, 219, 0.75);
+    -ms-box-shadow: 0px 0px 2px 2px rgba(64, 143, 219, 0.75);
+    box-shadow: 0px 0px 2px 2px rgba(64, 143, 219, 0.75);
+}
+
+.x4-editor {
+    overflow: visible;
+}
+
+.icon-search {
+    background:url(../css/images/prm/20.png) no-repeat -266px -424px transparent !important;
+}
+
+.staticlist {
+    width: 460px;
+    height: 135px;
+    background: url(../css/images/prm/staticlist2.jpg) no-repeat;
+}
+
+.x4-window-plain .x4-window-body {
+    background-color: #FAFAFA !important;
+}
+
+.x4-window-body *{
+    color: #222222;
+    overflow: visible;
+}
+
+.x4-header-text {
+    padding-left: 3px;
+}
+
+.x4-window-header-text-container-default {
+    /*margin-left: 3px !important;*/
+    margin-top: 4px !important;
+}
+
+.prm-form-label {
+    padding: 5px;
+}
+
+.prm-color-picker .x4-panel-body {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.x4-fieldset-header {
+    padding: 0 !important;
+}
+
+.x4-fieldset-header-text {
+    font-weight: bold;
+}
+
+fieldset .toggle-link {
+}
+
+.x4-menu {
+    display: block;
+    opacity: 1;
+    background: #ffffff !important;
+}
+
+.x4-menu-scroll-top, .x4-menu-scroll-bottom {
+    background-image: none;
+}
+
+/* remove selection highlight for both grid & chart */
+.x4-grid-row-selected .x4-grid-td, .x4-grid-cell-selected {
+    background-color: transparent !important;
+}
+
+.x4-grid-row-over .x4-grid-cell-selected {
+    background-color: #efefef !important;
+}
+
+.x4-grid-row-over .x4-grid-td {
+    border-top-color: #fafafa;
+    border-bottom-color: #ededed;
+}
+
+.prm-last-resource.x4-grid-row-over .x4-grid-td {
+    border-bottom-color: #ccc;
+}
+
+.x4-grid-with-col-lines .x4-grid-cell {
+    border-right: 1px solid #ededed;
+}
+
+.x4-grid-with-col-lines .x4-grid-cell.prm-column-border-right {
+    border-right: 1px solid #ccc;
+}
+
+.prm-required-field {
+    background: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #C77F02;
+    padding: 0 2px;
+}
+.prm-action-header-icon {
+    background: url(../css/images/prm/da-actionsmenu.png) no-repeat center center !important;
+    margin:  0px 0px 0px 5px !important;
+    text-align: center !important;
+    display: block;
+    border: none !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-width: 0px !important;
+}
+
+.prm-action-cell-icon {
+    background: url(../css/images/prm/da-actionsmenu.png) no-repeat center center !important;
+    opacity: 0 !important;
+}
+
+.x4-grid-cell:hover .prm-action-cell-icon {
+    opacity: 1 !important;
+    width: 26px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+.x4-tree-view .x4-grid-cell-inner {
+    cursor: default;
+}
+
+/*----------------------------*/
+
+#prm-page-combo-box * {
+    cursor: hand;
+}
+
+#prm-page-combo-box-inputEl {
+    background: transparent;
+    border: none !important;
+    text-align: right;
+    padding: 0;
+    font-size: 12px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+    color: inherit;
+    
+    /* unselectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#prm-page-combo-box-triggerWrap .x4-form-trigger {
+    background: transparent url(../css/images/prm/dropdown.png) 0px 1px;
+    border-bottom: none;
+    width: 100%;
+}
+
+#prm-page-combo-box-triggerWrap .x4-trigger-cell {
+    background: transparent;
+    width: 20px !important;
+}
+
+#prm-page-combo-box-triggerWrap .x4-form-trigger-over {
+    border-bottom-color: transparent;
+    background-position: 0px 1px;
+}
+
+#prm-page-combo-box-triggerWrap .x4-form-trigger-wrap-focus .x4-form-trigger {
+    background-position: 0px 1px;
+}
+#prm-page-combo-box-triggerWrap .x4-form-trigger-wrap-focus .x4-form-trigger-over {
+    background-position: 0px 1px;
+}
+/*----------------------------*/
+
+
+#prm-paging-bound-list {
+    background: #F9F9F9;
+    border: 1px solid #ccc;
+}
+
+.prm-paging-bound-list-floating {
+    border-top-width: 1px;
+}
+
+.prm-paging-bound-list li.x4-boundlist-item { 
+    font-size: 12px;
+    border-style: none;
+    padding: 5px 20px 5px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+
+li.prm-paging-bound-list-selected {
+    background: transparent;
+    font-weight: bold;
+}
+
+li.prm-paging-bound-list-item-over {
+    border-color:#808080;
+    background: #999;
+    color: #FAFAFA;
+}
+
+input.x4-trigger-noedit, .prm-ldc-read-only input.x4-form-field {
+    color: #B3B3B3;
+    background: #EBEBEB;
+    /* unselectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* because core's css have everything important... */
+input[type="text"]:hover.x4-trigger-noedit, input[type="text"]:active.x4-trigger-noedit, input[type="text"]:focus.x4-trigger-noedit,
+.prm-ldc-read-only input:hover.x4-form-field, .prm-ldc-read-only input:active.x4-form-field, .prm-ldc-read-only input:focus.x4-form-field {
+    border: 1px solid #cccccc !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+tr.prm-type-task td.x4-grid-cell-prm-grid-name {
+    padding-left: 0px;
+}
+
+tr.prm-type-resource td.x4-grid-cell-prm-grid-name {
+    padding-left: 0px;
+}
+
+.x4-grid-tree-loading span {
+    font-style: normal;
+}
+
+.x4-grid-tree-loading .x4-tree-elbow-end-plus, .x4-grid-tree-loading .x4-tree-elbow-plus {
+    background: url(../css/images/tree/loading.gif) no-repeat center center !important;
+}
+
+.prm-color-code-resource-no-assignment {
+	color: #0000ff;
+}
+
+.prm-color-code-task-no-resources {
+	color: #0000ff;
+	font-weight: bold;
+}
+
+.prm-color-code-editable-value {
+	color: #000000;
+}
+
+.prm-color-code-read-only-value, .prm-project.prm-color-code-editable-value {
+	color: #969696;
+}
+
+.prm-color-code-inactive-resource {
+    color: #969696 !important;
+    font-style: italic !important;
+}
+
+.prm-color-code-hours-missing {
+	color: rgb(255, 0, 0);	
+}
+
+#prm-pnl-filter-body-body .x4-form-item-label {
+    text-transform: uppercase;
+}
+
+.prm-allocation-summary-table .x4-grid-cell-inner, 
+.prm-assignment-search-results .x4-grid-cell-inner,
+.prm-allocation-search-results .x4-grid-cell-inner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #ffffff;
+}
+
+.prm-allocation-summary-table .x4-column-header-inner, .prm-allocation-summary-table .x4-column-header-over, 
+.prm-assignment-search-results .x4-column-header-inner, .prm-assignment-search-results .x4-column-header-over,
+.prm-allocation-search-results .x4-column-header-inner, .prm-allocation-search-results .x4-column-header-over {
+    background: #e4e4e4;
+}
+
+.prm-allocation-summary-table .x4-grid-header-ct .x4-box-inner, 
+.prm-assignment-search-results .x4-grid-header-ct .x4-box-inner,
+.prm-allocation-search-results .x4-grid-header-ct .x4-box-inner {
+    background-color: #e4e4e4;
+}
+
+.prm-allocation-summary-table .x4-panel-body-default, .prm-allocation-summary-table .x4-grid-header-ct, 
+.prm-assignment-search-results .x4-panel-body-default, .prm-assignment-search-results .x4-grid-header-ct,
+.prm-allocation-search-results .x4-panel-body-default, .prm-allocation-search-results .x4-grid-header-ct {
+    border: 1px solid #e4e4e4;
+}
+
+.prm-allocation-summary-table .x4-column-header, 
+.prm-assignment-search-results .x4-column-header,
+.prm-allocation-search-results .x4-column-header {
+    border: none;
+    overflow: hidden;
+}
+
+.prm-allocation-summary-table .x4-column-header-sort-ASC .x4-column-header-text, .prm-allocation-summary-table .x4-column-header-sort-DESC .x4-column-header-text, 
+.prm-assignment-search-results .x4-column-header-sort-ASC .x4-column-header-text, 
+.prm-allocation-search-results .x4-column-header-sort-ASC .x4-column-header-text,
+.prm-assignment-search-results .x4-column-header-sort-DESC .x4-column-header-text,
+.prm-allocation-search-results .x4-column-header-sort-DESC .x4-column-header-text {
+    padding-right: 15px;
+}
+
+.prm-allocation-summary-table .x4-grid-view, 
+.prm-assignment-search-results .x4-grid-view,
+.prm-allocation-search-results .x4-grid-view {
+    background-color: #ffffff;
+}
+
+#prm-load-more-span {
+    font-size: 12px;
+    color: #255599;
+}
+
+.prm-allocation-summary-overbooked * {
+    color: red;
+}
+
+.prm-project-search .x4-form-text {
+    margin: 0px;
+}
+
+.prm-project-search-trigger {
+    background:url(../css/images/prm/icon_quicksearch2.png) no-repeat 3px 4px transparent !important;
+    border-top: 1px solid #B5B8C8;
+    border-right: 1px solid #B5B8C8;
+}
+
+.x4-grid-row-over .x4-grid-td  {
+    background-color: #FEFEEE !important;
+}
+
+.prm-search-icon {
+    background: url(../css/images/prm/icon_quicksearch2.png) no-repeat center center !important;
+}
+
+.prm-search-btn {
+    border: none;
+    background: transparent;
+    padding-top: 5px;
+}
+
+.prm-recurrence-icon div {
+	background: url(../css/images/prm/recurrenceIcon.png) right center/14px no-repeat content-box;
+}
+
+.x4-form-text, .x4-border-box .x4-grid-editor .x4-form-text {
+    height: 25px;
+}
+
+.x4-form-date-trigger {
+    background-image: url(../css/images/prm/calendar.png) !important;
+}
+
+.x4-border-box .x4-form-trigger, .x4-form-trigger, .x4-border-box .x4-grid-editor .x4-form-trigger {
+    background: url(../css/images/prm/dropdown.png) 1px 2px;
+    height: 25px;
+    width: 24px;
+    border: 1px solid #b5b8c8;
+    border-left: 0;
+}
+
+.x4-form-trigger-over, .x4-form-trigger-wrap-focus .x4-form-trigger {
+    background-position: 1px 2px;
+}
+
+#prm-search-project-textbox {
+	height: 34px;
+}
+
+.prm-search-project-textbox {
+	padding-top: 0px;
+}
