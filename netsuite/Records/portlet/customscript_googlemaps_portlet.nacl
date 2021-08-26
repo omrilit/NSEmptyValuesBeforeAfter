@@ -1,0 +1,27 @@
+netsuite.portlet customscript_googlemaps_portlet {
+  scriptid = "customscript_googlemaps_portlet"
+  defaultfunction = "eventGoogleMapsPortlet"
+  description = "Map Integration Portlet"
+  isinactive = false
+  name = "Event Google Maps Integration Portlet"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  portlettype = "HTML"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_7908_eventGoogleMapsIntegration_js@dsdv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_googlemaps_portlet"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "Event Google Map Integration Portlet"
+      },
+    ]
+  }
+}

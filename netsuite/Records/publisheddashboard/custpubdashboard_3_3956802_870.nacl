@@ -1,0 +1,66 @@
+netsuite.publisheddashboard custpubdashboard_3_3956802_870 {
+  scriptid = "custpubdashboard_3_3956802_870"
+  center = "ACCOUNTCENTER"
+  locknewbar = false
+  lockshortcuts = false
+  name = "Dunning Dashboard Acc"
+  roles = {
+    role = [
+      {
+        role = "ACCOUNTANT"
+      },
+      {
+        role = "AR_CLERK"
+      },
+    ]
+  }
+  dashboards = {
+    dashboard = [
+      {
+        centertab = netsuite.centertab.instance.custcentertab8_13.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_3805_db_total_ar_overdue]"
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_3805_db_paused_customer]"
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_3805_db_paused_invoice]"
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_3805_db_recently_sent]"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

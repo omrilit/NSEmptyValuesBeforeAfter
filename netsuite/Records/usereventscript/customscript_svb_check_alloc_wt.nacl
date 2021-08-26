@@ -1,0 +1,34 @@
+netsuite.usereventscript customscript_svb_check_alloc_wt {
+  scriptid = "customscript_svb_check_alloc_wt"
+  aftersubmitfunction = "afterSubmit_ValidateAllocationWeight"
+  isinactive = false
+  name = "NSTS - SVB | Check Alloc Wt - UE"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_UE_BillDistribtnSchedLine_js@dsduuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_tsg_svb_check_alloc_wt"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.scriptid
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_Common_js@dsduuv.path
+      },
+    ]
+  }
+}

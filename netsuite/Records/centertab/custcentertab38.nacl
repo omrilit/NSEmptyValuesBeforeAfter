@@ -1,0 +1,74 @@
+netsuite.centertab custcentertab38 {
+  scriptid = "custcentertab38"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter4.scriptid
+  label = "Calendar"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_368_t1499227_189"
+        isportletshown = true
+        portlet = "CALENDAR"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_373_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_354_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKADD"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_360_t1499227_189"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_366_t1499227_189"
+        isportletshown = true
+        portlet = "CALENDAR"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_370_t1499227_189"
+        isportletshown = false
+        portlet = "LIST"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_371_t1499227_189"
+        isportletshown = false
+        portlet = "LIST"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_367_t1499227_189"
+        isportletshown = true
+        portlet = "SCHEDULER"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_374_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_358_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

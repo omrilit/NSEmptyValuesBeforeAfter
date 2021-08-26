@@ -1,0 +1,19 @@
+netsuite.Account COGS_5000_Cost_of_Goods_Sold_5100@uusssu {
+  acctType = "_costOfGoodsSold"
+  acctNumber = "5100"
+  acctName = "Cost of Goods Sold"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.COGS_5000
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "COGS_5000_Cost of Goods Sold_5100"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

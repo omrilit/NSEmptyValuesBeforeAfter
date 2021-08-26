@@ -1,0 +1,18 @@
+type netsuite.PartnerTaxRegistration {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string nexusCountry {
+  }
+  netsuite.Nexus nexus {
+    isReference = true
+  }
+  netsuite.Address address {
+    isReference = true
+  }
+  string taxRegistrationNumber {
+  }
+  number id {
+  }
+}

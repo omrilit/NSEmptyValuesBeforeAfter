@@ -1,0 +1,21 @@
+netsuite.Account Vendor_Return_Authorizations_9902@ssu {
+  acctType = "_nonPosting"
+  acctNumber = "9902"
+  acctName = "Vendor Return Authorizations"
+  includeChildren = true
+  generalRate = "_average"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "Vendor Return Authorizations_9902"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

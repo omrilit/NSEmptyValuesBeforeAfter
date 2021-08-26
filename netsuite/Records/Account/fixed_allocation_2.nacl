@@ -1,0 +1,21 @@
+netsuite.Account fixed_allocation_2@su {
+  acctType = "_statistical"
+  unitsType = {
+    name = "EACH"
+  }
+  unit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  acctNumber = "2"
+  acctName = "fixed allocation"
+  includeChildren = false
+  isInactive = false
+  inventory = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  identifier = "fixed allocation_2"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

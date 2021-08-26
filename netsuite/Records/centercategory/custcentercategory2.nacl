@@ -1,0 +1,14 @@
+netsuite.centercategory custcentercategory2 {
+  scriptid = "custcentercategory2"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab10.scriptid
+  label = "Cases"
+  links = {
+    link = [
+      {
+        linkid = "REPO_320"
+        shortlist = false
+      },
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+netsuite.centercategory custcentercategory143 {
+  scriptid = "custcentercategory143"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab60.scriptid
+  label = "Time Tracking"
+  links = {
+    link = [
+      {
+        linkid = "TRAN_TIMEBILL"
+        linklabel = "Time Entry"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_TIMEAPPROVAL"
+        linklabel = "Approve Time"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_TIMEBILL_WEEKLY"
+        linklabel = "Weekly Time Sheet"
+        shortlist = false
+      },
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+netsuite.savedcsvimport custimport_47_t1740134_435 {
+  scriptid = "custimport_47_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  entryform = netsuite.entryForm.instance.custform_73_t1499227_346.scriptid
+  ignorereadonly = true
+  importname = "ddd"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  preventduplicates = false
+  recordtype = "VENDOR"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "VENDOR"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "VENDOR"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "COMPANYNAME"
+              columnreference = {
+                column = "Name"
+                file = "VENDOR"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=custentity_2663_payment_method]"
+              columnreference = {
+                column = "EFT Bill Payment"
+                file = "VENDOR"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ISPERSON"
+              value = "F"
+            },
+            {
+              field = "SUBSIDIARY"
+              value = "1"
+            },
+            {
+              field = "WORKCALENDAR"
+              value = "1"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

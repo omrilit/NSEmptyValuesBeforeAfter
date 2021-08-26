@@ -1,0 +1,1582 @@
+netsuite.entryForm custform_5_t1499227_346 {
+  scriptid = "custform_5_t1499227_346"
+  standard = "STANDARDCUSTOMRECORD_WD_CONFIGURATIONFORM"
+  name = "Custom WD Configuration Form"
+  recordType = netsuite.customrecordtype.instance.customrecord_wd_configuration.scriptid
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "fieldgroup_90_t1499227_449"
+        label = "Main"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "NAME"
+                label = "Name"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = true
+              },
+              {
+                id = "ISINACTIVE"
+                label = "Inactive"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "fieldgroup_93_t1499227_449"
+        label = "Global Configuration"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.1.scriptid
+                label = "Web Site"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.2.scriptid
+                label = "Global Libraries Header"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.4.scriptid
+                label = "Global Libraries Footer"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+            ]
+          },
+        ]
+      },
+    ]
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "CUSTOMFORM"
+              label = "Custom Form"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "RECORDID"
+              label = "ID"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "OWNER"
+              label = "Owner"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "CREATED"
+              label = "Date Created"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "LASTMODIFIED"
+              label = "Last Modified"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.3.scriptid
+              label = "WD Configuration Master Code"
+              visible = false
+              mandatory = false
+              displayType = "DISABLED"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.5.scriptid
+              label = "WD Configuration Master Code Footer"
+              visible = false
+              mandatory = false
+              displayType = "DISABLED"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.0.scriptid
+              label = "Is Multi Site"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.6.scriptid
+              label = "Default Subsidiary"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.7.scriptid
+              label = "Disable Duplicate Customer"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "RECORDNOTES"
+        label = "Notes"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDUSERNOTES"
+              label = "User Notes"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDSYSTEMNOTES"
+              label = "System Notes"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDMEDIA"
+        label = "Files"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDMEDIAITEM"
+              label = "Files"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDCUSTOM"
+        label = "Custom"
+        visible = false
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_wd_configuration.subtabs.subtab.0.scriptid
+        label = "General"
+        visible = true
+        fieldGroups = {
+          fieldGroup = [
+            {
+              scriptid = "fieldgroup_164_t1499227_449"
+              label = "Header"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.13.scriptid
+                      label = "Company Information"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.88.scriptid
+                      label = "Live Chat"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_165_t1499227_449"
+              label = "Home"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.8.scriptid
+                      label = "Home Slider"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.9.scriptid
+                      label = "Home Slider Records"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.10.scriptid
+                      label = "Featured Items"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.11.scriptid
+                      label = "Show Cells"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.12.scriptid
+                      label = "Home Marketing Zone"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_166_t1499227_449"
+              label = "Footer"
+              visible = true
+              showTitle = true
+              singleColumn = false
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_wd_configuration.subtabs.subtab.1.scriptid
+        label = "Global Search"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.14.scriptid
+                    label = "Global Search"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.15.scriptid
+                    label = "Limit Results"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.16.scriptid
+                    label = "Search Category"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_wd_configuration.subtabs.subtab.2.scriptid
+        label = "Featured Items"
+        visible = true
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_wd_configuration.subtabs.subtab.3.scriptid
+        label = "Quick Order"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.17.scriptid
+                    label = "Quick Order"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.18.scriptid
+                    label = "Max Rows Enter"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_wd_configuration.subtabs.subtab.4.scriptid
+        label = "Create a Quote"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.24.scriptid
+                    label = "Create A Quote"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.19.scriptid
+                    label = "Response Message"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.20.scriptid
+                    label = "Sender Email"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.21.scriptid
+                    label = "Email BCC to"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.22.scriptid
+                    label = "Template Email"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.23.scriptid
+                    label = "Subject Email"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_wd_configuration.subtabs.subtab.5.scriptid
+        label = "Colors Preferences"
+        visible = true
+        fieldGroups = {
+          fieldGroup = [
+            {
+              scriptid = "fieldgroup_98_t1499227_449"
+              label = "Header"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.29.scriptid
+                      label = "Top Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                      label = "Top Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.31.scriptid
+                      label = "Middle Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.42.scriptid
+                      label = "User Link / Icons Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.54.scriptid
+                      label = "User Link / Icon Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.43.scriptid
+                      label = "Cart Link / Icon Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.55.scriptid
+                      label = "Cart Link / Icon Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.87.scriptid
+                      label = "Quick Buy Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_99_t1499227_449"
+              label = "Footer"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.40.scriptid
+                      label = "Outer Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.41.scriptid
+                      label = "Inner Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.63.scriptid
+                      label = "Inner Background Image"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.69.scriptid
+                      label = "Inner Links Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.39.scriptid
+                      label = "Inner Links Font Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.73.scriptid
+                      label = "Bottom Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.71.scriptid
+                      label = "Bottom Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.64.scriptid
+                      label = "Bottom Links Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.72.scriptid
+                      label = "Bottom Links Font Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.65.scriptid
+                      label = "Social Box Top Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.66.scriptid
+                      label = "Social Box Bottom Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.79.scriptid
+                      label = "Social Box Heading Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.85.scriptid
+                      label = "Heading Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.67.scriptid
+                      label = "Heading Underlined Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.68.scriptid
+                      label = "Social Icon Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.70.scriptid
+                      label = "Social Icon Background Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_100_t1499227_449"
+              label = "Navigation"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.32.scriptid
+                      label = "Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.33.scriptid
+                      label = "Background Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.56.scriptid
+                      label = "Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.84.scriptid
+                      label = "Font Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_101_t1499227_449"
+              label = "Sidebar"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.81.scriptid
+                      label = "Heading Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_102_t1499227_449"
+              label = "Homepage"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.74.scriptid
+                      label = "Bottom Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.82.scriptid
+                      label = "Slide Title Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.83.scriptid
+                      label = "Slide Wording Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_103_t1499227_449"
+              label = "Product List"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.80.scriptid
+                      label = "Heading Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_104_t1499227_449"
+              label = "Product Page"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.78.scriptid
+                      label = "Heading Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.86.scriptid
+                      label = "Price Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_105_t1499227_449"
+              label = "General Theme"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.25.scriptid
+                      label = "Main Background"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.27.scriptid
+                      label = "Link Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.28.scriptid
+                      label = "Link Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.26.scriptid
+                      label = "Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.34.scriptid
+                      label = "Line Separator Color 1"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.35.scriptid
+                      label = "Line Separator Color 2"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.77.scriptid
+                      label = "Headings Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_106_t1499227_449"
+              label = "Buttons"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.57.scriptid
+                      label = "Primary Button Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.60.scriptid
+                      label = "Primary Button Background Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.58.scriptid
+                      label = "Primary Button Border Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.61.scriptid
+                      label = "Primary Button Border Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.59.scriptid
+                      label = "Primary Button Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.62.scriptid
+                      label = "Primary Button Font Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.36.scriptid
+                      label = "Default Button Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.37.scriptid
+                      label = "Default Button Border Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.38.scriptid
+                      label = "Default Button Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.75.scriptid
+                      label = "Tab Button Background Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.76.scriptid
+                      label = "Tab Button Font Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_107_t1499227_449"
+              label = "Forms"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.49.scriptid
+                      label = "Default Form Field Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.50.scriptid
+                      label = "Default Field Background Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.53.scriptid
+                      label = "Default Field Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.51.scriptid
+                      label = "Default Field Icon Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.52.scriptid
+                      label = "Default Field Icon Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.44.scriptid
+                      label = "Secondary Field Background Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.46.scriptid
+                      label = "Secondary Field Background Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.47.scriptid
+                      label = "Secondary Field Font Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.45.scriptid
+                      label = "Secondary Field Icon Color"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.48.scriptid
+                      label = "Secondary Field Icon Color Active"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_wd_configuration.subtabs.subtab.6.scriptid
+        label = "Social Media"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.89.scriptid
+                    label = "Social Links"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.90.scriptid
+                    label = "Facebook"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.95.scriptid
+                    label = "Twitter"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.94.scriptid
+                    label = "Pinterest"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.91.scriptid
+                    label = "Google+"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.92.scriptid
+                    label = "YouTube"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.93.scriptid
+                    label = "LinkedIn"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = "RECORDTRANSLATION"
+        label = "Translation"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDTRANSLATIONS"
+              label = "Translation"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_wd_configuration.subtabs.subtab.7.scriptid
+        label = "Compare Products"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.96.scriptid
+                    label = "Compare Products"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.97.scriptid
+                    label = "Compare"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_wd_configuration.subtabs.subtab.8.scriptid
+        label = "Wish List"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.98.scriptid
+                    label = "WL - Template Email"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.99.scriptid
+                    label = "WL - Subject Email"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.100.scriptid
+                    label = "Send Notification"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.101.scriptid
+                    label = "WL - Sender Email"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_wd_configuration.customrecordcustomfields.customrecordcustomfield.102.scriptid
+                    label = "Wish List URL"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+    ]
+  }
+  actionbar = {
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = false
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = true
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

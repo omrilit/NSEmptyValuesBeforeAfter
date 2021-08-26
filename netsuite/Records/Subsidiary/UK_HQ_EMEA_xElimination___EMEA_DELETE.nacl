@@ -1,0 +1,59 @@
+netsuite.Subsidiary UK_HQ_EMEA_xElimination___EMEA_DELETE@buusbsu {
+  name = "xElimination - EMEA_DELETE"
+  parent = netsuite.Subsidiary.instance.UK_HQ_EMEA@bu
+  isInactive = true
+  showSubsidiaryName = false
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  country = "_unitedKingdom"
+  mainAddress = {
+    country = "_unitedKingdom"
+    addressee = "xElimination - EMEA_DELETE"
+    addrText = "xElimination - EMEA_DELETE<br>United Kingdom (GB)"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.GBP
+  edition = "UK"
+  federalIdNumber = "GB"
+  interCoAccount = {
+    name = "1804 Intercompany Clearing Account : Intercompany Payable/Receivable GBP"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedKingdom
+        country = "GB"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard 10(3)L Voucher Cheque Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_EMEA_xElimination - EMEA_DELETE"
+}

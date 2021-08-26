@@ -1,0 +1,26 @@
+netsuite.suitelet customscript_resourcefinder {
+  scriptid = "customscript_resourcefinder"
+  defaultfunction = "resourceFinder"
+  isinactive = false
+  name = "Support Scheduler Suitelet (gus)"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_12521_resource_finder_js@dsduv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_resourcefinder"
+        allemployees = true
+        allpartners = true
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "Support Scheduler Suitelet (gus)"
+      },
+    ]
+  }
+}

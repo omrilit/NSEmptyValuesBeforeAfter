@@ -1,0 +1,32 @@
+netsuite.centercategory custcentercategory194 {
+  scriptid = "custcentercategory194"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_timeexpense.scriptid
+  label = "Reports"
+  links = {
+    link = [
+      {
+        linkid = "REPO_223"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_222"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_221"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_211"
+        shortlist = false
+      },
+      {
+        linklabel = "Reports module"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_reports.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

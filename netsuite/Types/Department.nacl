@@ -1,0 +1,29 @@
+type netsuite.Department {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string name {
+  }
+  boolean includeChildren {
+  }
+  netsuite.Department parent {
+    isReference = true
+  }
+  boolean isInactive {
+  }
+  netsuite.ClassTranslationList classTranslationList {
+  }
+  "List<netsuite.Subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+}

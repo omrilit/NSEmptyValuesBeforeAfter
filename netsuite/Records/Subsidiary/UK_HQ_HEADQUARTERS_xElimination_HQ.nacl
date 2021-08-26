@@ -1,0 +1,68 @@
+netsuite.Subsidiary UK_HQ_HEADQUARTERS_xElimination_HQ@buus {
+  name = "xElimination HQ"
+  parent = netsuite.Subsidiary.instance.UK_HQ_HEADQUARTERS@bu
+  isInactive = true
+  showSubsidiaryName = false
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  state = "CA"
+  country = "_unitedStates"
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "xElimination HQ"
+    state = "CA"
+    addrText = "xElimination HQ<br>CA <br>United States"
+    override = false
+  }
+  shippingAddress = {
+    country = "_unitedStates"
+    override = false
+  }
+  returnAddress = {
+    country = "_unitedStates"
+    override = false
+  }
+  isElimination = true
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.USD
+  edition = "US"
+  interCoAccount = {
+    name = "1807 Intercompany Clearing Account : Intercompany Payable/Receivable USD"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedStates_California
+        country = "US"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_HEADQUARTERS_xElimination HQ"
+}

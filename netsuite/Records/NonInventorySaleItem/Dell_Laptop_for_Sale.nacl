@@ -1,0 +1,2257 @@
+netsuite.NonInventorySaleItem Dell_Laptop_for_Sale@s {
+  salesDescription = "Dell Laptop"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Gain__loss__on_Sale_of_Assets_8040@sjkssssu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  shippingCostUnits = "per Ea."
+  handlingCostUnits = "per Ea."
+  costEstimateType = "_itemDefinedCost"
+  weightUnits = "per Ea."
+  costEstimateUnits = "per Ea."
+  unitsType = {
+    name = "EACH"
+  }
+  saleUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferredRevenueAccount = netsuite.Account.instance.Deferred__Income_2100_Deferred_Revenue_2101@ssuusu
+  stockDescription = "Dell Laptop"
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  isFulfillable = true
+  useMarginalRates = false
+  overallQuantityPricingType = "_byLineQuantity"
+  minimumQuantityUnits = "Ea."
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Dell Laptop for Sale"
+  displayName = "Dell Laptop for Sale"
+  isOnline = false
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.Philippine_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Philippine_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Philippine_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Philippine_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_7
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Philippine_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Philippine_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_8
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Philippine_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Mexican_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Mexican_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Mexican_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Mexican_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_7
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Mexican_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Mexican_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_8
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Mexican_Peso@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Peruvian_Nuevo_Sol@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Peruvian_Nuevo_Sol@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Peruvian_Nuevo_Sol@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Peruvian_Nuevo_Sol@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_7
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Peruvian_Nuevo_Sol@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Peruvian_Nuevo_Sol@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_8
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Peruvian_Nuevo_Sol@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_7
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_8
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_7
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_8
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_7
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_8
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1300
+              quantity = 1
+            },
+            {
+              value = 1170
+              quantity = 2
+            },
+            {
+              value = 1040
+              quantity = 5
+            },
+            {
+              value = 975
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1300
+              quantity = 1
+            },
+            {
+              value = 1170
+              quantity = 2
+            },
+            {
+              value = 1040
+              quantity = 5
+            },
+            {
+              value = 975
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1300
+              quantity = 1
+            },
+            {
+              value = 1170
+              quantity = 2
+            },
+            {
+              value = 1040
+              quantity = 5
+            },
+            {
+              value = 975
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_7
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1300
+              quantity = 1
+            },
+            {
+              value = 1170
+              quantity = 2
+            },
+            {
+              value = 1040
+              quantity = 5
+            },
+            {
+              value = 975
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1300
+              quantity = 1
+            },
+            {
+              value = 1170
+              quantity = 2
+            },
+            {
+              value = 1040
+              quantity = 5
+            },
+            {
+              value = 975
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_8
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1300
+              quantity = 1
+            },
+            {
+              value = 1170
+              quantity = 2
+            },
+            {
+              value = 1040
+              quantity = 5
+            },
+            {
+              value = 975
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1300
+              quantity = 1
+            },
+            {
+              value = 1170
+              quantity = 2
+            },
+            {
+              value = 1040
+              quantity = 5
+            },
+            {
+              value = 975
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_7
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_8
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_7
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_8
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 0
+              quantity = 1
+            },
+            {
+              value = 0
+              quantity = 2
+            },
+            {
+              value = 0
+              quantity = 5
+            },
+            {
+              value = 0
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1000
+              quantity = 1
+            },
+            {
+              value = 900
+              quantity = 2
+            },
+            {
+              value = 800
+              quantity = 5
+            },
+            {
+              value = 750
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1000
+              quantity = 1
+            },
+            {
+              value = 900
+              quantity = 2
+            },
+            {
+              value = 800
+              quantity = 5
+            },
+            {
+              value = 750
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1000
+              quantity = 1
+            },
+            {
+              value = 900
+              quantity = 2
+            },
+            {
+              value = 800
+              quantity = 5
+            },
+            {
+              value = 750
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_7
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1000
+              quantity = 1
+            },
+            {
+              value = 900
+              quantity = 2
+            },
+            {
+              value = 800
+              quantity = 5
+            },
+            {
+              value = 750
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1000
+              quantity = 1
+            },
+            {
+              value = 900
+              quantity = 2
+            },
+            {
+              value = 800
+              quantity = 5
+            },
+            {
+              value = 750
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_8
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1000
+              quantity = 1
+            },
+            {
+              value = 900
+              quantity = 2
+            },
+            {
+              value = 800
+              quantity = 5
+            },
+            {
+              value = 750
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 1000
+              quantity = 1
+            },
+            {
+              value = 900
+              quantity = 2
+            },
+            {
+              value = 800
+              quantity = 5
+            },
+            {
+              value = 750
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 650
+              quantity = 1
+            },
+            {
+              value = 585
+              quantity = 2
+            },
+            {
+              value = 520
+              quantity = 5
+            },
+            {
+              value = 488
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 650
+              quantity = 1
+            },
+            {
+              value = 585
+              quantity = 2
+            },
+            {
+              value = 520
+              quantity = 5
+            },
+            {
+              value = 488
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 650
+              quantity = 1
+            },
+            {
+              value = 585
+              quantity = 2
+            },
+            {
+              value = 520
+              quantity = 5
+            },
+            {
+              value = 488
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_7
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 650
+              quantity = 1
+            },
+            {
+              value = 585
+              quantity = 2
+            },
+            {
+              value = 520
+              quantity = 5
+            },
+            {
+              value = 488
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 650
+              quantity = 1
+            },
+            {
+              value = 585
+              quantity = 2
+            },
+            {
+              value = 520
+              quantity = 5
+            },
+            {
+              value = 488
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_8
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 650
+              quantity = 1
+            },
+            {
+              value = 585
+              quantity = 2
+            },
+            {
+              value = 520
+              quantity = 5
+            },
+            {
+              value = 488
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 0
+              quantity = 0
+            },
+            {
+              value = 650
+              quantity = 1
+            },
+            {
+              value = 585
+              quantity = 2
+            },
+            {
+              value = 520
+              quantity = 5
+            },
+            {
+              value = 488
+              quantity = 10
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Dell Laptop for Sale"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

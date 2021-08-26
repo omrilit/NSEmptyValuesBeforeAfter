@@ -1,0 +1,150 @@
+netsuite.customrecordtype customrecord_svb_bill_dist_sched {
+  scriptid = "customrecord_svb_bill_dist_sched"
+  accesstype = "CUSTRECORDENTRYPERM"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = false
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = false
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = true
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = false
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "SVB|Bill Distribution Schedule"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = false
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_svb_parent_intercomany_alloc"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Intercompany Allocation"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_svb_is_alloc_wt_valid"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "LOCKED"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Allocation Weight 100%"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_svb_source_subsidiary"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Source Subsidiary"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-117"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_svb_use_source_accounts"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Use Source Accounts"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+    ]
+  }
+  permissions = {
+    permission = [
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1101.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1036.scriptid
+      },
+    ]
+  }
+  links = {
+    link = [
+      {
+        linkcategory = "BASICLISTSCUSTOM"
+        linktasktype = "LIST"
+      },
+    ]
+  }
+  subtabs = {
+    subtab = [
+      {
+        scriptid = "tab_212_t1499227_470"
+        tabtitle = "Schedule Lines"
+      },
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+netsuite.customrecordtype customrecord_notc {
+  scriptid = "customrecord_notc"
+  accesstype = "NONENEEDED"
+  allowattachments = false
+  allowinlinedeleting = true
+  allowinlinedetaching = true
+  allowinlineediting = true
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = true
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "Nature of Transaction Codes"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = true
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = false
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_notc_desc"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CLOBTEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "NOTC Description"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_notc_code"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "NOTC Code"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_notc_country"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "NOTC Country"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-159"
+        showinlist = true
+        storevalue = true
+      },
+    ]
+  }
+}

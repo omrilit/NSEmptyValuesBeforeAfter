@@ -1,0 +1,666 @@
+netsuite.entryForm custform_87_t1499227_346 {
+  scriptid = "custform_87_t1499227_346"
+  standard = "STANDARDPROJECTTASKFORM"
+  name = "Dilley SRP Project Task Form"
+  recordType = "PROJECTTASK"
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "primaryinformation"
+        label = "Primary Information"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "EVENTID"
+                label = "WBS ID"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "TITLE"
+                label = "Name"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "COMPANY"
+                label = "Project Name"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PARENT"
+                label = "Parent Task"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PRIORITY"
+                label = "Priority"
+                visible = false
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ORDER"
+                label = "Insert Before"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "STATUS"
+                label = "Status"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "NONBILLABLETASK"
+                label = "Non-billable"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "OWNER"
+                label = "Created By"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CONTACT"
+                label = "Contact"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ACCESSLEVEL"
+                label = "Private Task"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CUSTOMFORM"
+                label = "Custom Form"
+                visible = false
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "projecttaskoverview"
+        label = "Project Task Overview"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "ESTIMATEDWORK"
+                label = "Estimated Work"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ESTIMATEDWORKBASELINE"
+                label = "Estimated Work Baseline"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ALLOCATEDWORK"
+                label = "Allocated Work"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ACTUALWORK"
+                label = "Actual Work"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PERCENTWORKCOMPLETE"
+                label = "Percent Work Complete"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "REMAININGWORK"
+                label = "Remaining Work"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "MSPROJUID"
+                label = "MS Project UID"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "MSPROJOUTLINENUM"
+                label = "MS Project Outline Number"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "MSPROJPREDS"
+                label = "MS Project Predecessors"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "MSPROJRESOURCES"
+                label = "MS Project Resource Names"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "MSPROJSCHEDWORK"
+                label = "MS Project Scheduled Work"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "MSPROJSERVICEITEM"
+                label = "MS Project Service Item"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PERCENTTIMECOMPLETE"
+                label = "Percent Complete"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PERCENTCOMPLETEBYRSRCALLOC"
+                label = "Percent Complete by Allocated Work"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "projecttaskdates"
+        label = "Project Task Dates"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "CONSTRAINTTYPE"
+                label = "Constraint Type"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "STARTDATE"
+                label = "Start Date"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "STARTDATEBASELINE"
+                label = "Start Date Baseline"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "FINISHBYDATE"
+                label = "Finish No Later Than"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ENDDATE"
+                label = "End Date"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ENDDATEBASELINE"
+                label = "End Date Baseline"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+    ]
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = netsuite.crmcustomfield.instance.custevent_oa_export_to_openair.scriptid
+              label = "Export to OpenAir"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "EVENTASSIGNEES"
+        label = "Assignees"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "EVENTASSIGNEE"
+              label = "Assignees"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "EVENTRESOURCES"
+        label = "Resources"
+        visible = true
+      },
+      {
+        id = "EVENTPREDECESSORS"
+        label = "Predecessors"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "EVENTPREDECESSOR"
+              label = "Predecessors"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "CRMBUDGET"
+        label = "Budget"
+        visible = true
+        subItems = {
+          subTab = [
+            {
+              id = "EVENTSUBTAB_CBUDGET"
+              label = "Cost Budget"
+              visible = true
+              fieldGroups = {
+                defaultFieldGroup = {
+                  fields = [
+                    {
+                      position = "MIDDLE"
+                      field = [
+                        {
+                          id = "CBUDGETSHOWCALCULATEDLINES"
+                          label = "Show Calculated Lines"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                        {
+                          id = "CBUDGETUSECALCULATEDVALUES"
+                          label = "Use Calculated Values for all Labor Cost Budgets"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                      ]
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              id = "EVENTSUBTAB_BBUDGET"
+              label = "Billing Budget"
+              visible = true
+              fieldGroups = {
+                defaultFieldGroup = {
+                  fields = [
+                    {
+                      position = "MIDDLE"
+                      field = [
+                        {
+                          id = "BBUDGETSHOWCALCULATEDLINES"
+                          label = "Show Calculated Lines"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                        {
+                          id = "BBUDGETUSECALCULATEDVALUES"
+                          label = "Use Calculated Values for all Labor Billing Budgets"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                      ]
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_84_t1499227_705.scriptid
+        label = "Attachments"
+        visible = true
+      },
+      {
+        id = "EVENTCOMMUNICATION"
+        label = "Communication"
+        visible = true
+        subItems = {
+          subTab = [
+            {
+              id = "EVENTMEDIA"
+              label = "Files"
+              visible = true
+            },
+          ]
+          subList = [
+            {
+              id = "EVENTMEDIAITEM"
+              label = "Files"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "EVENTUSERNOTES"
+              label = "User Notes"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "CRMMESSAGE"
+        label = "Notes"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "MESSAGE"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = "CRMSYSTEMINFORMATION"
+        label = "System Information"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "EVENTSYSTEMNOTES"
+              label = "System Notes"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "EVENTACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "EVENTWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "EVENTCUSTOM"
+        label = "Custom"
+        visible = false
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.crmcustomfield.instance.custevent_oa_export_err_msg.scriptid
+                    label = "OpenAir: Export Error (2)"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.crmcustomfield.instance.custevent_oa_project_task_name.scriptid
+                    label = "OpenAir: Project Task Name"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_11_t1499227_705.scriptid
+        label = "Campaign Tasks"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_34_t1499227_705.scriptid
+        label = "Issues"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_82_t1499227_705.scriptid
+        label = "Activities"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_83_t1499227_705.scriptid
+        label = "Message"
+        visible = false
+      },
+      {
+        id = "EVENTTIME"
+        label = "Time Tracking"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "EVENTTIMEITEM"
+              label = "Time Tracking"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_250_t1499227_705.scriptid
+        label = "OpenAir: Timesheets"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_260_t1499227_705.scriptid
+        label = "Track OpenAir Time"
+        visible = true
+      },
+    ]
+  }
+  actionbar = {
+    buttons = {
+      button = [
+        {
+          id = "COPY"
+          label = "Copy"
+          visible = true
+        },
+      ]
+    }
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "SUBMITEDIT"
+          label = "Save & Edit"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

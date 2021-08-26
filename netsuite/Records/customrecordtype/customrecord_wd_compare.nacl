@@ -1,0 +1,124 @@
+netsuite.customrecordtype customrecord_wd_compare {
+  scriptid = "customrecord_wd_compare"
+  accesstype = "NONENEEDED"
+  allowattachments = true
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = true
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = true
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "SuiteOffice - Compare Products"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_category"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "MULTISELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Category"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-185"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_compare_fields"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "MULTISELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Fields Compare"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customrecordtype.instance.customrecord_wd_compare_fields.scriptid
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_order_fields"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "RICHTEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Order Fields"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_hash_fields"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "CLOBTEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Hash Fields"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+    ]
+  }
+}

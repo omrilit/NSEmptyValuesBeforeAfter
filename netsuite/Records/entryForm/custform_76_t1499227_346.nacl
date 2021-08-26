@@ -1,0 +1,2138 @@
+netsuite.entryForm custform_76_t1499227_346 {
+  scriptid = "custform_76_t1499227_346"
+  standard = "STANDARDJOBFORM"
+  name = "Dilley SRP Project Form"
+  recordType = "JOB"
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "primaryinformation"
+        label = "Primary Information"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "COMPANYNAME"
+                label = "Project Name"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ENTITYID"
+                label = "Project ID"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "AUTONAME"
+                label = "Auto"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = true
+              },
+              {
+                id = "ALTNAME"
+                label = "Name"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = true
+              },
+              {
+                id = "ENTITYSTATUS"
+                label = "Project Status"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PARENT"
+                label = "Client"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "SUBSIDIARY"
+                label = "Subsidiary"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CURRENCY"
+                label = "Currency"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PROJECTMANAGER"
+                label = "Job Manager"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "JOBTYPE"
+                label = "Project Type"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.entitycustomfield.instance.custentity_projectmanager.scriptid
+                label = "Project Manager"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PROJECTTEMPLATE"
+                label = "Project Template"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CUSTOMFORM"
+                label = "Custom Form"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.entitycustomfield.instance.custentity_projectclass.scriptid
+                label = "Project Class"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "COMMENTS"
+                label = "Comments"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CATEGORY"
+                label = "Category"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "LANGUAGE"
+                label = "Language"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "DEFAULTORDERPRIORITY"
+                label = "Default Order Priority"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "IMAGE"
+                label = "Image"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "projectoverview"
+        label = "Project Overview"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "STARTDATE"
+                label = "Scheduled Start Date"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PROJECTEDENDDATE"
+                label = "Estimated End Date"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CALCULATEDENDDATE"
+                label = "Calculated End Date"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ESTIMATEDTIMEOVERRIDE"
+                label = "Estimated Work"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ALLOCATEDTIME"
+                label = "Allocated Work"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ACTUALTIME"
+                label = "Actual Work"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "TIMEREMAINING"
+                label = "Remaining Work"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "LASTBASELINEDATE"
+                label = "Last Baseline Date"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ESTIMATEDTIMEOVERRIDEBASELINE"
+                label = "Estimated Work Baseline"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ESTIMATEDTIME"
+                label = "Initial Time Budget"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PERCENTTIMECOMPLETE"
+                label = "Calculated Percent Complete"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PERCENTCOMPLETE"
+                label = "Override Percent Complete"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PERCENTCOMPLETEBYRSRCALLOC"
+                label = "Percent Complete by Allocated Work"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+    ]
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "CURRENCYFORMATSAMPLE"
+              label = "Format Sample"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "OVERRIDECURRENCYFORMAT"
+              label = "Override Currency Format"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "DISPLAYSYMBOL"
+              label = "Currency Symbol"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "SYMBOLPLACEMENT"
+              label = "Symbol Placement"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "NUMBERFORMAT"
+              label = "Number Format"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "NEGATIVENUMBERFORMAT"
+              label = "Negative Number Format"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "STARTDATEBASELINE"
+              label = "Start Date Baseline"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "PROJECTEDENDDATEBASELINE"
+              label = "Estimated End Date Baseline"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "CALCULATEDENDDATEBASELINE"
+              label = "Calculated End Date Baseline"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "ENDDATE"
+              label = "End Date"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "EMAIL"
+              label = "E-Mail"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "EMAILPREFERENCE"
+              label = "Type"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = true
+            },
+            {
+              id = "PHONE"
+              label = "Phone"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "ALTPHONE"
+              label = "Alt. Phone"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "FAX"
+              label = "Fax"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "DEFAULTADDRESS"
+              label = "Address"
+              visible = false
+              mandatory = false
+              displayType = "DISABLED"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "ACCOUNTNUMBER"
+              label = "Account"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.entitycustomfield.instance.custentity_oa_opportunity_id.scriptid
+              label = "OpenAir: Opportunity"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.entitycustomfield.instance.custentity_oa_sfa_id.scriptid
+              label = "OpenAir SFA ID"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.entitycustomfield.instance.custentity_oa_create_project_workspace.scriptid
+              label = "OpenAir: Create Project Workspace"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.entitycustomfield.instance.custentity_oa_project_stage.scriptid
+              label = "OpenAir: Project Stage"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.entitycustomfield.instance.custentity_oa_export_to_openair.scriptid
+              label = "Export to OpenAir (2)"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.entitycustomfield.instance.custentity_oa_finish_date.scriptid
+              label = "Calculated Finish Date"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.entitycustomfield.instance.custentity_oa_approved_hours.scriptid
+              label = "Approved Hours"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.entitycustomfield.instance.custentity_oa_remaining_hours.scriptid
+              label = "Remaining Hours"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.entitycustomfield.instance.custentity_oa_budget_hours.scriptid
+              label = "Budget (Hours)"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.entitycustomfield.instance.custentity_oa_budget_money.scriptid
+              label = "Budget (Money)"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "ENTITYSCHEDULE"
+        label = "Schedule"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "ENTITYJOBTASKS"
+              label = "Project Tasks"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "ENTITYBUDGET"
+        label = "Budget"
+        visible = true
+        subItems = {
+          subTab = [
+            {
+              id = "ENTITYSUBTAB_CBUDGET"
+              label = "Cost Budget"
+              visible = true
+              fieldGroups = {
+                defaultFieldGroup = {
+                  fields = [
+                    {
+                      position = "MIDDLE"
+                      field = [
+                        {
+                          id = "CBUDGETLABORBUDGETFROMALLOC"
+                          label = "Calculate Labor Budgets from Resource Allocations"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                        {
+                          id = "CBUDGETSHOWCALCULATEDLINES"
+                          label = "Show Calculated Lines"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                        {
+                          id = "CBUDGETUSECALCULATEDVALUES"
+                          label = "Use Calculated Values for all Cost Budgets"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                      ]
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              id = "ENTITYSUBTAB_BBUDGET"
+              label = "Billing Budget"
+              visible = true
+              fieldGroups = {
+                defaultFieldGroup = {
+                  fields = [
+                    {
+                      position = "MIDDLE"
+                      field = [
+                        {
+                          id = "BBUDGETSHOWCALCULATEDLINES"
+                          label = "Show Calculated Lines"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                        {
+                          id = "BBUDGETUSECALCULATEDVALUES"
+                          label = "Use Calculated Values for all Billing Budgets"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                      ]
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        id = "ENTITYRESOURCES"
+        label = "Resources"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_realign_generics.scriptid
+                    label = "Realign Generic Allocations"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+        subItems = {
+          subList = [
+            {
+              id = "ENTITYRESOURCEALLOCATION"
+              label = "Resource Allocations"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYJOBRESOURCES"
+              label = "Resources List"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "ENTITYPL"
+        label = "P&L"
+        visible = true
+        fieldGroups = {
+          fieldGroup = [
+            {
+              scriptid = "fieldgroup_199_t1499227_449"
+              label = "Estimated Project Gross Margin"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "ESTIMATEDREVENUEJC"
+                      label = "Estimated Billing"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = true
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "ESTIMATEDCOSTJC"
+                      label = "Estimated Cost"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = true
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "ESTIMATEDGROSSPROFIT"
+                      label = "Estimated Gross Margin"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = true
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "ESTIMATEDGROSSPROFITPERCENT"
+                      label = "Estimated Gross Margin %"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = true
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+          ]
+        }
+        subItems = {
+          subList = [
+            {
+              id = "ENTITYPLSTATEMENT"
+              label = "P&L"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "ENTITYFINANCIAL"
+        label = "Financial"
+        visible = true
+        fieldGroups = {
+          fieldGroup = [
+            {
+              scriptid = "billinginformation"
+              label = "Billing Setup"
+              visible = true
+              showTitle = true
+              singleColumn = true
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "JOBBILLINGTYPE"
+                      label = "Billing Type"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "BILLINGSCHEDULE"
+                      label = "Billing Schedule"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "JOBITEM"
+                      label = "Billing Item"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "JOBPRICE"
+                      label = "Project Price"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "BILLINGRATECARD"
+                      label = "Billing Rate Card"
+                      visible = false
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "CREATECHARGERULE"
+                      label = "Create Charge Rule"
+                      visible = false
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SOURCESERVICEITEMFROMRATECARD"
+                      label = "Source Service Item to Task Assignments from Rate Card"
+                      visible = false
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "estimates"
+              label = "Total Charges"
+              visible = true
+              showTitle = true
+              singleColumn = true
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "CHARGEAMOUNTBILLED"
+                      label = "Billed"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = true
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "CHARGEAMOUNTPENDING"
+                      label = "Pending"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = true
+                    },
+                    {
+                      id = "CHARGEAMOUNTREMAINING"
+                      label = "Remaining"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = true
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "accountinformation"
+              label = "Open Charges"
+              visible = true
+              showTitle = true
+              singleColumn = true
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "CHARGEAMOUNTREADYFORBILLING"
+                      label = "Ready to Bill"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = true
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "CHARGEAMOUNTHOLDFORBILLING"
+                      label = "On Hold"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = true
+                    },
+                    {
+                      id = netsuite.entitycustomfield.instance.custentity31.scriptid
+                      label = "Non-Billable"
+                      visible = true
+                      mandatory = false
+                      displayType = "INLINETEXT"
+                      columnBreak = false
+                      sameRowAsPrevious = true
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_198_t1499227_449"
+              label = "Charge Types"
+              visible = true
+              showTitle = true
+              singleColumn = true
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "CHARGELABORAMOUNT"
+                      label = "Labor"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = true
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "CHARGEEXPENSEAMOUNT"
+                      label = "Expense"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = true
+                    },
+                  ]
+                },
+              ]
+            },
+          ]
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "REVRECFORECASTRULE"
+                    label = "Rev Rec Forecast Rule"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "USEPERCENTCOMPLETEOVERRIDE"
+                    label = "Use Percent Complete Override for Forecasting"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_job_billings.scriptid
+                    label = "Project Billings"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_exp_eff_rate.scriptid
+                    label = "Expected Effective Rate"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_orig_time_est.scriptid
+                    label = "Original Time Estimate"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_actual_hrs_worked.scriptid
+                    label = "Actual Hours Worked"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_est_time_remaining.scriptid
+                    label = "Estimated Time Remaining"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "OPENINGBALANCE"
+                    label = "Opening Balance"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "OPENINGBALANCEDATE"
+                    label = "Opening Balance Date"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "OPENINGBALANCEACCOUNT"
+                    label = "Opening Balance Account"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_oa_pco_value.scriptid
+                    label = "OpenAir: Percent Complete Override"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+        subItems = {
+          subList = [
+            {
+              id = "ENTITYCREDITCARDS"
+              label = "Credit Cards"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYPCTCOMPLETEOVERRIDE"
+              label = "Rev Rec Percent Complete Override"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = netsuite.sublist.instance.custsublist_37_t1499227_340.scriptid
+              label = "Revenue Elements"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "ENTITYRELATEDRECORDS"
+        label = "Related Transactions"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "ENTITYMESSAGES"
+              label = "Messages"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYCONTACT"
+              label = "Contacts"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYMILESTONES"
+              label = "Milestones"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYOPPORTUNITIES"
+              label = "Opportunities"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYFINHIST"
+              label = "Sales"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = netsuite.sublist.instance.custsublist_22_t1499227_834.scriptid
+              label = "Costs"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYCASES"
+              label = "Cases"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYISSUES"
+              label = "Issues"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYSUBS"
+              label = "Sub-Projects"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYSUBSCRIPTIONS"
+              label = "Subscriptions"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYSUBSCRIPTIONMSGMACH"
+              label = "Subscription Message History"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYCAMPAIGNS"
+              label = "Campaigns"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYTIMEITEM"
+              label = "Timesheets"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYACTIVITIES"
+              label = "Calls & Meetings"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYEVENTS"
+              label = "Events"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYTASKS"
+              label = "Tasks"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYCALLS"
+              label = "Calls"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = netsuite.sublist.instance.custsublist_32_t1499227_834.scriptid
+              label = "Journal Entries"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYERPOLICIES"
+              label = "Expense Report Policies"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "ENTITYPREFERENCES"
+        label = "Administration"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "FXRATE"
+                    label = "Exchange Rate"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "PROJECTEXPENSETYPE"
+                    label = "Project Expense Type"
+                    visible = true
+                    mandatory = true
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "APPLYPROJECTEXPENSETYPETOALL"
+                    label = "Apply to All Time Entries"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "FORECASTCHARGERUNONDEMAND"
+                    label = "Forecast Charge Run on Demand"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ALLOWTIME"
+                    label = "Allow Time Entry"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = true
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ALLOWEXPENSES"
+                    label = "Allow Expenses"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ISUTILIZEDTIME"
+                    label = "Classify Time as Utilized"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ISPRODUCTIVETIME"
+                    label = "Classify Time as Productive"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ISEXEMPTTIME"
+                    label = "Classify Time as Exempt"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ALLOCATEPAYROLLEXPENSES"
+                    label = "Allocate Payroll Expenses"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "MATERIALIZETIME"
+                    label = "Create Planned Time Entries"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = true
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ALLOWALLRESOURCESFORTASKS"
+                    label = "Display All Resources for Task Assignment"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "LIMITTIMETOASSIGNEES"
+                    label = "Limit Time and Expense to Assignees"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ALLOWTASKTIMEFORRSRCALLOC"
+                    label = "Allow Allocated Resources to Enter Time to All Tasks"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "USEALLOCATEDTIMEFORFORECAST"
+                    label = "Use Allocated Time for Forecast"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ISINACTIVE"
+                    label = "Project is Inactive"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "DATECREATED"
+                    label = "Date Created"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "INCLUDECRMTASKSINTOTALS"
+                    label = "Include CRM Tasks in Job Totals"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "TIMEAPPROVAL"
+                    label = "Time Approval"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+        subItems = {
+          subList = [
+            {
+              id = "ENTITYMEDIAITEM"
+              label = "Attachments"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYUSERNOTES"
+              label = "User Notes"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYSYSTEMNOTES"
+              label = "System Notes"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ENTITYWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "ENTITYACCOUNTING"
+        label = "Accounting"
+        visible = false
+      },
+      {
+        id = "ENTITYRELATIONSHIPS"
+        label = "Relationships"
+        visible = false
+      },
+      {
+        id = "ENTITYS_SYSINFO"
+        label = "System Information"
+        visible = false
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "PROJECTCOMPLETELYBILLED"
+                    label = "Project Completely Billed"
+                    visible = false
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = "ENTITYCOMMUNICATION"
+        label = "Attachments"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_3_t1499227_705.scriptid
+        label = "Staffing"
+        visible = false
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_psm2.scriptid
+                    label = "PSM Backup"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_trainer.scriptid
+                    label = "Trainer"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_6_t1499227_705.scriptid
+        label = "Usage"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = netsuite.customrecordtype.instance.customrecord7.customrecordcustomfields.customrecordcustomfield.3.scriptid
+              label = "Historical Usage Data"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_8_t1499227_705.scriptid
+        label = "Company Profile"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_9_t1499227_705.scriptid
+        label = "Marketing/PR"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_10_t1499227_705.scriptid
+        label = "Qualification"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_14_t1499227_705.scriptid
+        label = "Production Environment"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = netsuite.customrecordtype.instance.customrecord16.customrecordcustomfields.customrecordcustomfield.0.scriptid
+              label = "Production Environment"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_30_t1499227_705.scriptid
+        label = "Customer Satisfaction Survey"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = netsuite.customrecordtype.instance.customrecord31.customrecordcustomfields.customrecordcustomfield.17.scriptid
+              label = "Customer Sat. Survey"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_31_t1499227_705.scriptid
+        label = "Project Alerts"
+        visible = false
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity13.scriptid
+                    label = "Alert Reason"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity14.scriptid
+                    label = "Alert Action Required"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_33_t1499227_705.scriptid
+        label = "Issues"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_15_4453644_498.scriptid
+        label = "Collections"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_39_t1499227_705.scriptid
+        label = "Travel Requests"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_1_t1499227_705.scriptid
+        label = "Prof. Services"
+        visible = false
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_so_ref.scriptid
+                    label = "Purchased on Contract #"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_active_date.scriptid
+                    label = "Active Date"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_inactive_date.scriptid
+                    label = "Inactive Date"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_time_zone.scriptid
+                    label = "Time Zone"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_internal_proj.scriptid
+                    label = "Internal Project"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_job_notes.scriptid
+                    label = "Project Alerts"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = true
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_2_t1499227_705.scriptid
+        label = "Time Budgets"
+        visible = false
+      },
+      {
+        id = "ENTITYCUSTOM"
+        label = "Custom"
+        visible = false
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_projectprogress.scriptid
+                    label = "Work Progress"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_oa_project_currency.scriptid
+                    label = "OpenAir: Project Currency"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_oa_export_err_msg.scriptid
+                    label = "OpenAir: Export Error (2)"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_oa_project_rate_card.scriptid
+                    label = "OpenAir: Project Rate Card"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+        subItems = {
+          subList = [
+            {
+              id = "[scriptid=customrecord_rss_skillset.custrecord_rss_skillset_resource]"
+              label = "Skill Set"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "[scriptid=customrecord_ncfar_asset.custrecord_assetproject]"
+              label = "FAM - Asset"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_85_t1499227_705.scriptid
+        label = "Partners"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_87_t1499227_705.scriptid
+        label = "Opportunities"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_90_t1499227_705.scriptid
+        label = "Transactions"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_89_t1499227_705.scriptid
+        label = "Items Purchased"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_88_t1499227_705.scriptid
+        label = "Notes & Attachments"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_86_t1499227_705.scriptid
+        label = "Messages"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_17_3776644_208.scriptid
+        label = "Tax Reporting"
+        visible = false
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "[scriptid=custentity_vat_reg_no]"
+                    label = "VAT Registration No"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_96_t1499227_705.scriptid
+        label = "Marketing/PR"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_118_t1499227_705.scriptid
+        label = "Bank Payment Details"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_120_t1499227_705.scriptid
+        label = "Bank Payment Details (Debit)"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_119_t1499227_705.scriptid
+        label = "Bank Payment Details (Credit)"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_148_t1499227_705.scriptid
+        label = "Credit Approval"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_29_3956802_208.scriptid
+        label = "Dunning"
+        visible = true
+        subItems = {
+          subTab = [
+            {
+              id = netsuite.subtab.instance.custtab_34_3956802_208.scriptid
+              label = "Setup"
+              visible = true
+            },
+            {
+              id = netsuite.subtab.instance.custtab_35_3956802_208.scriptid
+              label = "Log"
+              visible = true
+            },
+            {
+              id = netsuite.subtab.instance.custtab_33_3956802_208.scriptid
+              label = "Files"
+              visible = true
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_216_t1499227_705.scriptid
+        label = "Collections"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_246_t1499227_705.scriptid
+        label = "SuiteOffice - Convert to Store"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_5807_662377_921.scriptid
+        label = "OpenAir Project Template"
+        visible = false
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_oa_copy_expense_policy.scriptid
+                    label = "Duplicate expense policy"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_oa_copy_loaded_cost.scriptid
+                    label = "Duplicate loaded costs"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_oa_project_template.scriptid
+                    label = "OpenAir Project Template"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_oa_copy_prbill_auto_settings.scriptid
+                    label = "Duplicate project auto-bill settings"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_oa_copy_prbill_rules.scriptid
+                    label = "Duplicate project billing rules"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_oa_copy_revrec_rules.scriptid
+                    label = "Duplicate revenue recognition rules"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.entitycustomfield.instance.custentity_oa_copy_approvers.scriptid
+                    label = "Duplicate project approvers"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_251_t1499227_705.scriptid
+        label = "Company Profile"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_255_t1499227_705.scriptid
+        label = "View Project Details"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_256_t1499227_705.scriptid
+        label = "View Client Details"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_257_t1499227_705.scriptid
+        label = "View Employee Details"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_258_t1499227_705.scriptid
+        label = "View Contact Details"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_14_4453644_498.scriptid
+        label = "Consolidated Invoice"
+        visible = true
+      },
+      {
+        id = "ENTITYPROJINDICATORS"
+        label = "Project Indicators"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "ENTITYPROJECTINDICATORS"
+              label = "Project Indicators"
+              visible = false
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+    ]
+  }
+  quickViewFields = {
+    field = [
+      {
+        id = "ENTITYID"
+      },
+      {
+        id = "COMPANYNAME"
+      },
+      {
+        id = "ENTITYSTATUS"
+      },
+      {
+        id = netsuite.entitycustomfield.instance.custentity_projectclass.scriptid
+      },
+      {
+        id = netsuite.entitycustomfield.instance.custentity_projectmanager.scriptid
+      },
+      {
+        id = "STARTDATE"
+      },
+      {
+        id = "CALCULATEDENDDATE"
+      },
+      {
+        id = netsuite.entitycustomfield.instance.custentity_projectprogress.scriptid
+      },
+    ]
+  }
+  actionbar = {
+    buttons = {
+      button = [
+        {
+          id = "CHANGECUSTOMER"
+          label = "Change Customer"
+          visible = true
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = true
+        },
+        {
+          id = "SEARCH"
+          label = "Search"
+          visible = true
+        },
+        {
+          id = "SAVEBASELINE"
+          label = "Set Baseline"
+          visible = true
+        },
+      ]
+    }
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "RECALCULATEACCOUNTINGDATA"
+          label = "Recalculate Financial Data"
+          visible = true
+        },
+        {
+          id = "RECALCULATEPROJECTPLAN"
+          label = "Recalculate Job Plan"
+          visible = true
+        },
+        {
+          id = "SUBMITEDIT"
+          label = "Save & Edit"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = true
+        },
+        {
+          id = "UPDATEPROJECTMEASURES"
+          label = "Update Project Measures"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

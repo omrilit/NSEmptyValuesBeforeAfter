@@ -1,0 +1,18 @@
+netsuite.centercategory custcentercategory9 {
+  scriptid = "custcentercategory9"
+  center = netsuite.center.instance.custcenter1_2.scriptid
+  centertab = netsuite.centertab.instance.custcentertab9_2.scriptid
+  label = "File Cabinet"
+  links = {
+    link = [
+      {
+        linkid = "LIST_MEDIAITEMFOLDER"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_EMAILTEMPLATE"
+        shortlist = false
+      },
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+netsuite.centercategory custcentercategory2_49 {
+  scriptid = "custcentercategory2_49"
+  center = "BASIC"
+  centertab = "BASICCENTERSETUP"
+  label = "Dunning"
+  links = {
+    link = [
+      {
+        linklabel = "Dunning Templates"
+        linkobject = "[scriptid=customrecord_3805_dunning_template]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Level Rules"
+        linkobject = "[scriptid=customrecord_3805_dunning_eval_rule]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Procedures"
+        linkobject = "[scriptid=customrecord_3805_dunning_procedure]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Procedure Priority"
+        linkobject = "[scriptid=customsearch_3805_dunning_prio_search]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Bulk Assignment"
+        linkobject = "[scriptid=customscript_3805_su_bulk_assignment.customdeploy_3805_su_bulk_assignment]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Pause Reasons"
+        linkobject = "[scriptid=customrecord_3805_dunning_status]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Configurations"
+        linkobject = "[scriptid=customrecord_3805_dunning_config]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Bulk Update Customer Records"
+        linkobject = "[scriptid=customscript_3805_dunning_bulk_update.customdeploy_3805_dunning_bulk_update]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Email Sending Queue"
+        linkobject = netsuite.suitelet.instance.customscript_3805_su_dunning_queue_ss2.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning PDF Printing Queue"
+        linkobject = netsuite.suitelet.instance.customscript_3805_su_dunning_queue_ss2.scriptdeployments.scriptdeployment.1.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Email Template Invoice Fields"
+        linkobject = "[scriptid=customscript_3805_su_add_email_field.customdeploy_3805_add_email_field]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

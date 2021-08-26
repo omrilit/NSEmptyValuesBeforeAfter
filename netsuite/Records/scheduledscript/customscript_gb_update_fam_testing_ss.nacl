@@ -1,0 +1,26 @@
+netsuite.scheduledscript customscript_gb_update_fam_testing_ss {
+  scriptid = "customscript_gb_update_fam_testing_ss"
+  defaultfunction = "scheduledUpdateFAMDate"
+  isinactive = false
+  name = "#Update Fixed Asset Date SS"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = netsuite.file.instance.SuiteScripts_FixedAssetTesting_UpdateFixedAssetDate_SS_js@dduv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_gb_update_fam_testing_ss"
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "NOTSCHEDULED"
+        title = "#Update Fixed Asset Date SS"
+        recurrence = {
+          single = {
+            startdate = "2014-12-23"
+            starttime = "02:00:00Z"
+          }
+        }
+      },
+    ]
+  }
+}

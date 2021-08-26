@@ -1,0 +1,321 @@
+netsuite.savedcsvimport custimport_40_t1740134_435 {
+  scriptid = "custimport_40_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "item import-lissa"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "INVENTORYITEM"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "INVENTORYITEM"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        line = 4
+        record = "INVENTORYITEM:BACKENDPRICING"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "CURRENCY"
+              columnreference = {
+                column = "PHP"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PRICE"
+              columnreference = {
+                column = "php price"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PRICELEVEL"
+              columnreference = {
+                column = "Price Level"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "QUANTITY"
+              columnreference = {
+                column = "Quantity"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        line = 2
+        record = "INVENTORYITEM:BACKENDPRICING"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "CURRENCY"
+              columnreference = {
+                column = "EURO"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PRICE"
+              columnreference = {
+                column = "euro price"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PRICELEVEL"
+              columnreference = {
+                column = "Price Level"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "QUANTITY"
+              columnreference = {
+                column = "Quantity"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        line = 3
+        record = "INVENTORYITEM:BACKENDPRICING"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "CURRENCY"
+              columnreference = {
+                column = "SGD"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PRICE"
+              columnreference = {
+                column = "sgd price"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PRICELEVEL"
+              columnreference = {
+                column = "Price Level"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "QUANTITY"
+              columnreference = {
+                column = "Quantity"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        record = "INVENTORYITEM:BACKENDPRICING"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "CURRENCY"
+              columnreference = {
+                column = "USD"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PRICE"
+              columnreference = {
+                column = "usd price"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PRICELEVEL"
+              columnreference = {
+                column = "Price Level"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "QUANTITY"
+              columnreference = {
+                column = "Quantity"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        line = 1
+        record = "INVENTORYITEM:BACKENDPRICING"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "CURRENCY"
+              columnreference = {
+                column = "GBP"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PRICE"
+              columnreference = {
+                column = "gbp price"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PRICELEVEL"
+              columnreference = {
+                column = "Price Level"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "QUANTITY"
+              columnreference = {
+                column = "Quantity"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        record = "INVENTORYITEM"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ASSETACCOUNT"
+              columnreference = {
+                column = "Asset Account"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "COGSACCOUNT"
+              columnreference = {
+                column = "Expense/COGS Account"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "COST"
+              columnreference = {
+                column = "Purchase Price"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "DISPLAYNAME"
+              columnreference = {
+                column = "Display Name"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "INCLUDECHILDREN"
+              columnreference = {
+                column = "Include Children"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "INCOMEACCOUNT"
+              columnreference = {
+                column = "Income Account"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ITEMID"
+              columnreference = {
+                column = "Item Name/Number"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PURCHASEDESCRIPTION"
+              columnreference = {
+                column = "Purchase Description"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SUBSIDIARY"
+              columnreference = {
+                column = "Subsidiary"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TAXSCHEDULE"
+              columnreference = {
+                column = "Tax Schedule"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

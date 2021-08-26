@@ -1,0 +1,51 @@
+type netsuite.PurchaseOrderExpense {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number line {
+  }
+  netsuite.RecordRef category {
+  }
+  netsuite.RecordRefList linkedOrderList {
+  }
+  netsuite.Account account {
+    isReference = true
+  }
+  number amount {
+  }
+  number taxAmount {
+  }
+  string memo {
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+  netsuite.Customer customer {
+    isReference = true
+  }
+  boolean isClosed {
+  }
+  boolean isBillable {
+  }
+  netsuite.RecordRef createdFrom {
+  }
+  netsuite.RecordRef taxCode {
+  }
+  number taxRate1 {
+  }
+  number taxRate2 {
+  }
+  number tax1Amt {
+  }
+  number grossAmt {
+  }
+  string taxDetailsReference {
+  }
+}

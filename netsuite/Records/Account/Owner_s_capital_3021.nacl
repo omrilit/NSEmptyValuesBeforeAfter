@@ -1,0 +1,18 @@
+netsuite.Account Owner_s_capital_3021@tsu {
+  acctType = "_equity"
+  acctNumber = "3021"
+  acctName = "Owner's capital"
+  includeChildren = true
+  generalRate = "_historical"
+  cashFlowRate = "_historical"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+  ]
+  revalue = false
+  identifier = "Owner's capital_3021"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

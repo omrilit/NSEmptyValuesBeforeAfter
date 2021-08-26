@@ -1,0 +1,111 @@
+netsuite.savedcsvimport custimport_15_t1740134_435 {
+  scriptid = "custimport_15_t1740134_435"
+  charencoding = "Cp1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  description = "Contact import from ACT!"
+  importname = "ACT! - Contacts"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  preventduplicates = false
+  recordtype = "CUSTOMERANDCONTACT"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = false
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "CUSTOMERANDCONTACT"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "CUSTOMERANDCONTACT"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "COMPANYNAME"
+              columnreference = {
+                column = "Name"
+                file = "CUSTOMERANDCONTACT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CONTACT"
+              columnreference = {
+                column = "Contact"
+                file = "CUSTOMERANDCONTACT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CREDITLIMIT"
+              columnreference = {
+                column = "Credit Limit"
+                file = "CUSTOMERANDCONTACT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CURRENCY"
+              value = "2"
+            },
+            {
+              field = "ENTITYSTATUS"
+              value = "13"
+            },
+            {
+              field = "OPENINGBALANCE"
+              columnreference = {
+                column = "Balance"
+                file = "CUSTOMERANDCONTACT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "OPENINGBALANCEACCOUNT"
+              value = "129"
+            },
+            {
+              field = "OPENINGBALANCEDATE"
+              value = "6/20/2007"
+            },
+            {
+              field = "PHONE"
+              columnreference = {
+                column = "Telephone"
+                file = "CUSTOMERANDCONTACT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SALESREP"
+              value = "-5"
+            },
+            {
+              field = "SUBSIDIARY"
+              value = "4"
+            },
+            {
+              field = "UNSUBSCRIBE"
+              value = "F"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

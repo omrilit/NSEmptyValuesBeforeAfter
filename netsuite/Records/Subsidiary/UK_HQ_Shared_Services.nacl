@@ -1,0 +1,61 @@
+netsuite.Subsidiary UK_HQ_Shared_Services@bus {
+  name = "Shared Services"
+  parent = netsuite.Subsidiary.instance.UK_HQ@b
+  isInactive = false
+  showSubsidiaryName = false
+  logo = netsuite.RecordRef.instance.Subsidiary_logo_2114
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  state = "ON"
+  country = "_canada"
+  mainAddress = {
+    country = "_unitedKingdom"
+    addressee = "Shared Services"
+    addrText = "Shared Services<br>United Kingdom (GB)"
+    override = false
+  }
+  legalName = "Dilley Management Company"
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.CAD
+  edition = "CA"
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._canada_Ontario
+        country = "CA"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Cheque Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_Shared Services"
+  custom_custrecord_subnav_subsidiary_logo = {
+    name = "dilley services logo small.jpg"
+    internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+}

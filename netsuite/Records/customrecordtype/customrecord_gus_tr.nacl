@@ -1,0 +1,616 @@
+netsuite.customrecordtype customrecord_gus_tr {
+  scriptid = "customrecord_gus_tr"
+  accesstype = "USEPERMISSIONLIST"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = true
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = false
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "Travel Request"
+  showcreationdate = true
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = false
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_gus_opp"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = true
+        label = "Opportunity"
+        onparentdelete = "SET_NULL"
+        parentsubtab = netsuite.subtab.instance.custtab_38_t1499227_705.scriptid
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-31"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_travel_employee"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        dynamicdefault = "ME"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = true
+        label = "Employee"
+        onparentdelete = "SET_NULL"
+        parentsubtab = netsuite.subtab.instance.custtab_39_t1499227_705.scriptid
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-4"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_travel_desc"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CLOBTEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Description"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_travel_status"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Status"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_gus_travel_approval_list.scriptid
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_travel_budget"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CURRENCY"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Budget"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_travel_reason"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CLOBTEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Justification"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_travel_agency"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Travel Agency"
+        onparentdelete = "SET_NULL"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-3"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_travel_supervisor"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Supervisor Name"
+        onparentdelete = "SET_NULL"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-4"
+        showinlist = true
+        sourcefrom = "STDENTITYSUPERVISOR"
+        sourcelist = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.1.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_travel_sup_approval"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Supervisor Approval"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_travel_sup_date"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "DATE"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Supervisor Response Date"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_travel_vp"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultselection = "[ACCOUNT_SPECIFIC_VALUE]"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Finance Approver"
+        onparentdelete = "SET_NULL"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-4"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_travel_vp_approval"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Finance Approval"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_vp_date"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "DATE"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Finance Response Date"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_gus_travel_date"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "DATE"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Expected Date Of Travel"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_gus_travel_days"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Duration In Days"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_zms_txt"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "Check All Applicable:"
+        displaytype = "STATICTEXT"
+        encryptatrest = false
+        fieldtype = "INLINEHTML"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Check All Applicable"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_gus_travel_international"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "International Travel"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_zms_client_bill"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Client Visit - Billable"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_zms_client_nb"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Client Visit - Non Billable"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_zms_speech"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Speech Presentation"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_zms_expat"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Ex-Pat Business"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_zms_conf"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Conference Attendance"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_zms_training"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Training Attendance"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_zms_info"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Informational Meeting"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_zms_expat_nb"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Ex-Pat Non-Business"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_zms_other"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Other"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+      },
+    ]
+  }
+  permissions = {
+    permission = [
+      {
+        permittedlevel = "FULL"
+        permittedrole = "ADMINISTRATOR"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1033.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1024.scriptid
+      },
+    ]
+  }
+  subtabs = {
+    subtab = [
+      {
+        scriptid = "tab_40_t1499227_470"
+        tabtitle = "Travel Category"
+      },
+    ]
+  }
+}

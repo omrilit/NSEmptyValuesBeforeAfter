@@ -1,0 +1,17 @@
+netsuite.clientscript customscript_template_html_action_trig {
+  scriptid = "customscript_template_html_action_trig"
+  isinactive = false
+  name = "NSTS | PDF HTML Action Trigger CS"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  saverecordfunction = "pdfValidateBulkPrintingOnSave"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_CS_ActionTrigger_js@dsduuuv.path
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_constants_and_config_js@dsduuuuv.path
+      },
+    ]
+  }
+}

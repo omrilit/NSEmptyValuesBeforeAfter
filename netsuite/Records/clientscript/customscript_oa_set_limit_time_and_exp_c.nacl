@@ -1,0 +1,26 @@
+netsuite.clientscript customscript_oa_set_limit_time_and_exp_c {
+  scriptid = "customscript_oa_set_limit_time_and_exp_c"
+  fieldchangedfunction = "setLimitTimeAndExpensesFalseClient"
+  isinactive = false
+  name = "OpenAir: Set 'Limit Time and Exp' Client"
+  notifyadmins = false
+  notifyowner = false
+  notifyuser = false
+  pageinitfunction = "setLimitTimeAndExpensesFalseInit"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_2851_oa_export_to_openair_flags_js@dsduuuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_set_limit_time_and_exp_cli"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = false
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        recordtype = "JOB"
+        status = "RELEASED"
+      },
+    ]
+  }
+}

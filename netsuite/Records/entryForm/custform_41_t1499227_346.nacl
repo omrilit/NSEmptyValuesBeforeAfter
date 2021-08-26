@@ -1,0 +1,454 @@
+netsuite.entryForm custform_41_t1499227_346 {
+  scriptid = "custform_41_t1499227_346"
+  standard = "STANDARDCUSTOMRECORD_GUS_TRFORM"
+  name = "Travel Request Form"
+  recordType = netsuite.customrecordtype.instance.customrecord_gus_tr.scriptid
+  inactive = false
+  preferred = false
+  storedWithRecord = false
+  mainFields = {
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "CUSTOMFORM"
+              label = "Custom Form"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "NAME"
+              label = "Name"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "RECORDID"
+              label = "ID"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "OWNER"
+              label = "Owner"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "CREATED"
+              label = "Date Created"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "LASTMODIFIED"
+              label = "Last Modified"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "ISINACTIVE"
+              label = "Inactive"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.0.scriptid
+              label = "Opportunity"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.1.scriptid
+              label = "Employee"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.2.scriptid
+              label = "Description"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.3.scriptid
+              label = "Status"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.6.scriptid
+              label = "Travel Agency"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.4.scriptid
+              label = "Budget"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.5.scriptid
+              label = "Justification"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = true
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.7.scriptid
+              label = "Supervisor Name"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.8.scriptid
+              label = "Supervisor Approval"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.9.scriptid
+              label = "Supervisor Response Date"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.10.scriptid
+              label = "Finance Approver"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.11.scriptid
+              label = "Finance Approval"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.12.scriptid
+              label = "Finance Response Date"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDCUSTOM"
+        label = "Custom"
+        visible = true
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_gus_tr.subtabs.subtab.0.scriptid
+        label = "Travel Category"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.13.scriptid
+                    label = "Expected Date Of Travel"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.14.scriptid
+                    label = "Duration In Days"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.15.scriptid
+                    label = "Check All Applicable"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = true
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.16.scriptid
+                    label = "International Travel"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.17.scriptid
+                    label = "Client Visit - Billable"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.18.scriptid
+                    label = "Client Visit - Non Billable"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.19.scriptid
+                    label = "Speech Presentation"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.20.scriptid
+                    label = "Ex-Pat Business"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.21.scriptid
+                    label = "Conference Attendance"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = true
+                    spaceBefore = "1"
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.22.scriptid
+                    label = "Training Attendance"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.23.scriptid
+                    label = "Informational Meeting"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.24.scriptid
+                    label = "Ex-Pat Non-Business"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.25.scriptid
+                    label = "Other"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+    ]
+  }
+  actionbar = {
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = true
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

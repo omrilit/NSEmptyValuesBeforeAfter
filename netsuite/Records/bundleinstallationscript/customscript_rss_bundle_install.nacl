@@ -1,0 +1,28 @@
+netsuite.bundleinstallationscript customscript_rss_bundle_install {
+  scriptid = "customscript_rss_bundle_install"
+  beforeuninstallfunction = "beforeUninstall"
+  isinactive = false
+  name = "RSS Bundle Installation"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_36477_src_rss_bundle_install_js@dsdduuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_rss_bundle_install"
+        isdeployed = true
+        loglevel = "ERROR"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "RSS Bundle Installation Deploy"
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_36477_src_rss_library_bi_js@dsdduuv.path
+      },
+    ]
+  }
+}

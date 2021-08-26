@@ -1,0 +1,63 @@
+netsuite.Subsidiary UK_HQ@b {
+  name = "UK-HQ"
+  isInactive = false
+  showSubsidiaryName = false
+  country = "_unitedKingdom"
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "UK-HQ"
+    addrText = "UK-HQ<br>United States"
+    override = false
+  }
+  shippingAddress = {
+    country = "_unitedKingdom"
+    addrText = "United Kingdom"
+    override = false
+  }
+  returnAddress = {
+    country = "_unitedKingdom"
+    addrText = "United Kingdom"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  email = "mwillemsen05@netsuite.com"
+  currency = netsuite.Currency.instance.GBP
+  edition = "UK"
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedKingdom
+        country = "GB"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard 10(3)L Cheque Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ"
+}

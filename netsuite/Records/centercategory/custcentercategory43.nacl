@@ -1,0 +1,31 @@
+netsuite.centercategory custcentercategory43 {
+  scriptid = "custcentercategory43"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab37.scriptid
+  label = "Tools"
+  links = {
+    link = [
+      {
+        linkid = "LIST_CRMGROUP"
+        shortlist = false
+      },
+      {
+        linklabel = "Contact Groups"
+        linkobject = "[scriptid=customsearch_esc_contact_grp_search]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Customer Groups"
+        linkobject = "[scriptid=customsearch_esc_customer_group_search]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linkobject = netsuite.centerlink.instance.custlink_4_t1740134_844.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+    ]
+  }
+}

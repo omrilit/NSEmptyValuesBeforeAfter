@@ -1,0 +1,44 @@
+netsuite.centertab custcentertab48 {
+  scriptid = "custcentertab48"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = false
+  allvendors = false
+  center = netsuite.center.instance.custcenter4.scriptid
+  label = "Cash Sales"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_561_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_573_t1499227_189"
+        isportletshown = true
+        portlet = "RECENTRECORDS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_566_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_564_t1499227_189"
+        isportletshown = false
+        portlet = "LIST"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_562_t1499227_189"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

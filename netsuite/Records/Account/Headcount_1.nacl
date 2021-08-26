@@ -1,0 +1,22 @@
+netsuite.Account Headcount_1 {
+  acctType = "_statistical"
+  unitsType = {
+    name = "Head Count"
+  }
+  unit = {
+    name = "Employee"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  acctNumber = "1"
+  acctName = "Headcount"
+  includeChildren = true
+  description = "Headcount"
+  isInactive = false
+  inventory = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  identifier = "Headcount_1"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

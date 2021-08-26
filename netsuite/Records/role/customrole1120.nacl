@@ -1,0 +1,27 @@
+netsuite.role customrole1120 {
+  scriptid = "customrole1120"
+  centertype = "WEBSITE"
+  employeerestriction = "OWNONLY"
+  employeeselectionunrestricted = false
+  employeeviewingallowed = false
+  isinactive = false
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issuerole = "-5"
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "Custom Shopper"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "SELECTED"
+  subsidiaryviewingallowed = true
+  permissions = {
+    permission = [
+      {
+        permkey = "ADMI_MOBILE_ACCESS"
+        permlevel = "FULL"
+      },
+    ]
+  }
+}

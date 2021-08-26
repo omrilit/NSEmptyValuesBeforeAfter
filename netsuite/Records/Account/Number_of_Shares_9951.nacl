@@ -1,0 +1,25 @@
+netsuite.Account Number_of_Shares_9951@ssu {
+  acctType = "_statistical"
+  unitsType = {
+    name = "SHARES"
+  }
+  unit = {
+    name = "Share"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  acctNumber = "9951"
+  acctName = "Number of Shares"
+  includeChildren = true
+  description = "Number of Shares"
+  isInactive = false
+  inventory = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  identifier = "Number of Shares_9951"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

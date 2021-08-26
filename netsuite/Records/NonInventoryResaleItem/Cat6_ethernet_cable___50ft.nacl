@@ -1,0 +1,133 @@
+netsuite.NonInventoryResaleItem Cat6_ethernet_cable___50ft@sssbs {
+  purchaseDescription = "Cat6 ethernet cable - 50ft"
+  copyDescription = false
+  cost = 4.99
+  expenseAccount = netsuite.Account.instance.General_and_Administrative_6000_Other_Expense_6800_Miscellaneous_Expense_6890@ssuusuusu
+  salesDescription = "Cat6 ethernet cable - 50ft"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Hardware_4006
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  costEstimateType = "_lastPurchasePrice"
+  deferredRevenueAccount = netsuite.Account.instance.Deferred__Income_2100_Deferred_Revenue_2101@ssuusu
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  isFulfillable = true
+  generateAccruals = false
+  useMarginalRates = false
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Cat6 ethernet cable - 50ft"
+  displayName = "Cat6 ethernet cable - 50ft"
+  vendorName = "C910-6002"
+  isOnline = false
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  currency = "1"
+  itemVendorList = {
+    itemVendor = [
+      {
+        vendor = netsuite.Vendor.instance.NonInventoryResaleItem_vendor_1424
+        purchasePrice = 4.99
+        preferredVendor = true
+        subsidiary = netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs
+      },
+    ]
+  }
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 6
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 4.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 3
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Cat6 ethernet cable - 50ft"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Cat6 ethernet cable - 50ft null null null"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

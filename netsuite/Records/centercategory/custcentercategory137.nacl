@@ -1,0 +1,28 @@
+netsuite.centercategory custcentercategory137 {
+  scriptid = "custcentercategory137"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab58.scriptid
+  label = "General Ledger"
+  links = {
+    link = [
+      {
+        linkid = "TRAN_BUDGET"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_TRAN_JOURNAL"
+        linklabel = "Create Journal Entries"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_CREATEINTERCOADJJE"
+        linklabel = "Create Intercompany Journal Entries"
+        shortlist = false
+      },
+      {
+        linkid = "EDIT_MEMDOC"
+        shortlist = false
+      },
+    ]
+  }
+}

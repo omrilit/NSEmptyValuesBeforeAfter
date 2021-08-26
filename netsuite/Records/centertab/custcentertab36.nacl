@@ -1,0 +1,32 @@
+netsuite.centertab custcentertab36 {
+  scriptid = "custcentertab36"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter4.scriptid
+  label = "More"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_324_t1499227_189"
+        isportletshown = true
+        portlet = "RECENTRECORDS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_319_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_312_t1499227_189"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

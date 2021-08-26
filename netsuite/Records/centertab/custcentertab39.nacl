@@ -1,0 +1,44 @@
+netsuite.centertab custcentertab39 {
+  scriptid = "custcentertab39"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = false
+  allvendors = false
+  center = netsuite.center.instance.custcenter4.scriptid
+  label = "Sales Orders"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_375_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_391_t1499227_189"
+        isportletshown = true
+        portlet = "RECENTRECORDS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_385_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_386_t1499227_189"
+        isportletshown = false
+        portlet = "LIST"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_394_t1499227_189"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

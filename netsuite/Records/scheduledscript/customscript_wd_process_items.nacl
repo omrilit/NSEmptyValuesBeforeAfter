@@ -1,0 +1,41 @@
+netsuite.scheduledscript customscript_wd_process_items {
+  scriptid = "customscript_wd_process_items"
+  defaultfunction = "processItems"
+  isinactive = false
+  name = "SuiteOffice - [Scheduled] Process Items"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_41811_SuiteOffice___Generate_Item_Code_js@dsdsbsssv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_wd_pr"
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "SCHEDULED"
+        title = "SuiteOffice - [Scheduled] Process Items"
+        recurrence = {
+          daily = {
+            everyxdays = 1
+            repeat = "PT2H"
+            startdate = "2014-10-23"
+            starttime = "07:00:00Z"
+          }
+        }
+      },
+      {
+        scriptid = "customdeploy_wd_process_items_man"
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "NOTSCHEDULED"
+        title = "SuiteOffice - [Scheduled] Process Items Manual"
+        recurrence = {
+          single = {
+            startdate = "2014-10-24"
+            starttime = "01:00:00Z"
+          }
+        }
+      },
+    ]
+  }
+}

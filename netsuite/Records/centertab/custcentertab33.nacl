@@ -1,0 +1,62 @@
+netsuite.centertab custcentertab33 {
+  scriptid = "custcentertab33"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter4.scriptid
+  label = "Opportunities"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_248_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_250_t1499227_189"
+        isportletshown = false
+        portlet = "QUICKADD"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_255_t1499227_189"
+        isportletshown = true
+        portlet = "RECENTRECORDS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_247_t1499227_189"
+        isportletshown = false
+        portlet = "SHORTCUTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_261_t1499227_189"
+        isportletshown = false
+        portlet = "REMINDERS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_252_t1499227_189"
+        isportletshown = true
+        portlet = "LIST"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_265_t1499227_189"
+        isportletshown = false
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_256_t1499227_189"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

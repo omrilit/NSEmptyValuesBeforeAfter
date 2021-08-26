@@ -1,0 +1,915 @@
+netsuite.workflow customworkflow_nsts_swva_ci_col_wf {
+  scriptid = "customworkflow_nsts_swva_ci_col_wf"
+  initoncreate = false
+  initonvieworupdate = false
+  initsavedsearchfilter = netsuite.savedsearch.instance.customsearch_nsts_swva_ci_col.scriptid
+  isinactive = false
+  islogenabled = true
+  keephistory = "ALWAYS"
+  name = "NSTS | SWVA - CI Collections WF"
+  recordtypes = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.scriptid
+  releasestatus = "TESTING"
+  runasadmin = true
+  recurrence = {
+    every30minutes = {
+      startdate = "2017-01-15"
+    }
+  }
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowcustomfields = {
+    workflowcustomfield = [
+      {
+        scriptid = "custworkflow_nsts_swva_ci_third_email"
+        applyformatting = true
+        defaultchecked = false
+        defaultvalue = "60"
+        displaytype = "NORMAL"
+        fieldtype = "INTEGER"
+        label = "CI Third Email Send On (after Due Date)"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_nsts_swva_ci_col_rep"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        help = "Collection emails will be send from this user if “Email (from address)/Phone Call = Collections Rep” and the Collections Rep field on the Customer record is blank."
+        label = "CI Collections Rep"
+        selectrecordtype = "-4"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_nsts_swva_ci_amt_limit"
+        applyformatting = true
+        defaultchecked = false
+        defaultvalue = "0"
+        displaytype = "NORMAL"
+        fieldtype = "CURRENCY"
+        help = '''
+Email reminders is sent out if the consolidated invoice amount is greater than the default amount for this field. 
+
+If the default value is left blank $ Amount check will not be done.
+'''
+        label = "CI $ Amount Limit"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_nsts_swva_ci_fourth_email"
+        applyformatting = true
+        defaultchecked = false
+        defaultvalue = "90"
+        displaytype = "NORMAL"
+        fieldtype = "INTEGER"
+        help = '''
+Number of days after the due date to send reminder (e.g. If value entered in this field is '90', email will be sent out if Invoice is 90 days past due).
+
+If the default value is left blank no email will be send for this level.
+'''
+        label = "CI Fourth Email Send On (after Due Date)"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_nsts_swva_ci_second_email"
+        applyformatting = true
+        defaultchecked = false
+        defaultvalue = "30"
+        displaytype = "NORMAL"
+        fieldtype = "INTEGER"
+        help = '''
+Number of days after the due date to send reminder (e.g. If value entered in this field is '30', email will be sent out if Invoice is 30 days past due).
+
+If the default value is left blank no email will be send for this level.
+'''
+        label = "CI Second Email Send On (after Due Date)"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_nsts_swva_ci_cur_record"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        help = "Do not enter default value for this field. This is going to be updated via a workflow action and is used to store the current CI Record."
+        label = "CI Current Record"
+        selectrecordtype = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_nsts_swva_ci_email_phone_call"
+        applyformatting = false
+        defaultchecked = false
+        defaultselection = netsuite.customlist.instance.customlist_nsts_swva_col_phone_call_fo.customvalues.customvalue.0.scriptid
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        help = '''
+If default value is “Sales Rep”, Phone call task will be created for the Sales Rep selected on the CI's Customer record and will be assigned as the Sender of the email reminders.
+If default value is “Collections Rep” and a Collections Rep is defined on the CI's Customer record, Phone Call task will be created for it and will be assigned as the Sender of the email reminders. If Collections Rep is not defined on the CI's Customer, the Collections Rep workflow field will be used.
+'''
+        label = "CI Email (from address) / Phone Call"
+        selectrecordtype = netsuite.customlist.instance.customlist_nsts_swva_col_phone_call_fo.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_nsts_swva_ci_first_email"
+        applyformatting = true
+        defaultchecked = false
+        defaultvalue = "7"
+        displaytype = "NORMAL"
+        fieldtype = "INTEGER"
+        help = '''
+Number of days before the due date to send reminder (e.g. If value entered in this field is '10', email will be sent out 10 days before the due date).
+
+If the default value is left blank no email will be send for this level.
+'''
+        label = "CI First Email Send On (before Due Date)"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_nsts_swva_ci_create_phone_cal"
+        applyformatting = false
+        defaultchecked = true
+        displaytype = "NORMAL"
+        fieldtype = "CHECKBOX"
+        help = "Phone Call Task will only be created if default value in this field is checked."
+        label = "CI Create Phone Call Task"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_nsts_swva_ci_phone_call_days"
+        applyformatting = true
+        defaultchecked = false
+        defaultvalue = "5"
+        displaytype = "NORMAL"
+        fieldtype = "INTEGER"
+        help = "Based on this field phone call record is created after X number of days after the last collection email is sent out (e.g. if the last email is sent out on Jan 1st and if this field is sent to 5, a phone call task is created for Jan 5th)."
+        label = "CI Create Phone Call After (days)"
+        storevalue = true
+      },
+    ]
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate149"
+        donotexitworkflow = false
+        name = "Start"
+        positionx = 153
+        positiony = 43
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction519"
+                field = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.36.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = netsuite.customlist.instance.customlist_nsts_ci_payment_status.customvalues.customvalue.1.scriptid
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Amount Remaining\" <= 0"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Amount Remaining"
+                        value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.35.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition455"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.1.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                formula = "\"Dunning Level\" NOT IN (\"NSTS | CI - Dunning Level1\") AND \"CI Payment Status\" NOT IN (\"NSTS | CI Payment Status1\") AND ( \"Amount\" > \"Workflow:CI $ Amount Limit\" OR isEmpty(\"Workflow:CI $ Amount Limit\") = 'T' )"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Dunning Level"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                    },
+                    {
+                      name = "NSTS | CI - Dunning Level1"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.4.scriptid
+                    },
+                    {
+                      name = "CI Payment Status"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.36.scriptid
+                    },
+                    {
+                      name = "NSTS | CI Payment Status1"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_payment_status.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_payment_status.customvalues.customvalue.1.scriptid
+                    },
+                    {
+                      name = "Amount"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.10.scriptid
+                    },
+                    {
+                      name = "Workflow:CI $ Amount Limit"
+                      value = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowcustomfields.workflowcustomfield.2.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition468"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.5.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate150"
+        donotexitworkflow = false
+        name = "Dunning Level 4 (After Due Date)"
+        positionx = 153
+        positiony = 163
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction507"
+                field = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.3.scriptid
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "ROUND({today}-{custrecord_nsts_ci_tran_duedate})>={custworkflow_nsts_swva_ci_fourth_email} and {custworkflow_nsts_swva_ci_fourth_email} is not null"
+                  type = "FORMULA"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition460"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.6.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                formula = "\"Dunning Level\" IN (\"NSTS | CI - Dunning Level1\") AND isEmpty(\"Last Collection Email Date Stamp\") = 'T'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Dunning Level"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                    },
+                    {
+                      name = "NSTS | CI - Dunning Level1"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.3.scriptid
+                    },
+                    {
+                      name = "Last Collection Email Date Stamp"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.31.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition456"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.2.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                formula = "\"Dunning Level\" NOT IN (\"NSTS | CI - Dunning Level1\",\"NSTS | CI - Dunning Level2\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Dunning Level"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                    },
+                    {
+                      name = "NSTS | CI - Dunning Level1"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.3.scriptid
+                    },
+                    {
+                      name = "NSTS | CI - Dunning Level2"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.2.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition462"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.5.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate151"
+        donotexitworkflow = false
+        name = "Dunning Level 3 (After Due Date)"
+        positionx = 153
+        positiony = 283
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction508"
+                field = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.2.scriptid
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "ROUND({today}-{custrecord_nsts_ci_tran_duedate})>={custworkflow_nsts_swva_ci_third_email} and {custworkflow_nsts_swva_ci_third_email} is not null"
+                  type = "FORMULA"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition463"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.6.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                formula = "\"Dunning Level\" IN (\"NSTS | CI - Dunning Level1\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Dunning Level"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                    },
+                    {
+                      name = "NSTS | CI - Dunning Level1"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.2.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition457"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.3.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                formula = "\"Dunning Level\" NOT IN (\"NSTS | CI - Dunning Level1\",\"NSTS | CI - Dunning Level2\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Dunning Level"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                    },
+                    {
+                      name = "NSTS | CI - Dunning Level1"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.2.scriptid
+                    },
+                    {
+                      name = "NSTS | CI - Dunning Level2"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.1.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition464"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.5.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate152"
+        donotexitworkflow = false
+        name = "Dunning Level 2 (After Due Date)"
+        positionx = 153
+        positiony = 393
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction509"
+                field = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.1.scriptid
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "ROUND({today}-{custrecord_nsts_ci_tran_duedate})>={custworkflow_nsts_swva_ci_second_email} and {custworkflow_nsts_swva_ci_second_email} is not null"
+                  type = "FORMULA"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition465"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.6.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                formula = "\"Dunning Level\" IN (\"NSTS | CI - Dunning Level1\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Dunning Level"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                    },
+                    {
+                      name = "NSTS | CI - Dunning Level1"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.1.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition458"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.4.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                formula = "\"Dunning Level\" NOT IN (\"NSTS | CI - Dunning Level1\",\"NSTS | CI - Dunning Level2\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Dunning Level"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                    },
+                    {
+                      name = "NSTS | CI - Dunning Level1"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.1.scriptid
+                    },
+                    {
+                      name = "NSTS | CI - Dunning Level2"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.0.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition466"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.5.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate153"
+        donotexitworkflow = false
+        name = "Dunning Level 1 (Before Due Date)"
+        positionx = 153
+        positiony = 513
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction510"
+                field = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.0.scriptid
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "ROUND({custrecord_nsts_ci_tran_duedate}-{today})<={custworkflow_nsts_swva_ci_first_email} and {custworkflow_nsts_swva_ci_first_email} is not null"
+                  type = "FORMULA"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition467"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.6.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                formula = "\"Dunning Level\" IN (\"NSTS | CI - Dunning Level1\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Dunning Level"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                    },
+                    {
+                      name = "NSTS | CI - Dunning Level1"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.0.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition459"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.5.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate154"
+        donotexitworkflow = false
+        name = "Exit Workflow"
+        positionx = 153
+        positiony = 633
+      },
+      {
+        scriptid = "workflowstate155"
+        donotexitworkflow = false
+        name = "Send Email"
+        positionx = 403
+        positiony = 393
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            customaction = [
+              {
+                scriptid = "workflowaction1953"
+                isinactive = false
+                schedulemode = "DELAY"
+                scripttype = netsuite.workflowactionscript.instance.customscript_nsts_swva_emailarcontact_ci.scriptid
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+                parametersettings = {
+                  parametersetting = [
+                    {
+                      targetparameter = netsuite.workflowactionscript.instance.customscript_nsts_swva_emailarcontact_ci.scriptcustomfields.scriptcustomfield.0.scriptid
+                    },
+                  ]
+                }
+              },
+            ]
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction514"
+                field = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.32.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueformula = "CASE WHEN ({custworkflow_nsts_swva_ci_email_phone_call.id}='1' AND {custrecord_nsts_ci_customer.salesrep} IS NOT NULL) THEN {custrecord_nsts_ci_customer.salesrep.id} ELSE (CASE WHEN {custrecord_nsts_ci_customer.custentity_nsts_swva_collections_rep} IS NOT NULL THEN {custrecord_nsts_ci_customer.custentity_nsts_swva_collections_rep.id} else {custworkflow_nsts_swva_ci_col_rep.id} END) END"
+                valuetype = "FORMULA"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+              {
+                scriptid = "workflowaction515"
+                field = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.31.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuedate = "TODAY"
+                valuetype = "DATE"
+                initcondition = {
+                  formula = "\"Dunning Level\" IN (\"NSTS | CI - Dunning Level1\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Dunning Level"
+                        value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                      },
+                      {
+                        name = "NSTS | CI - Dunning Level1"
+                        selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                        value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.3.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+            sendemailaction = [
+              {
+                scriptid = "workflowaction_nsts_swva_ci_first_email"
+                attachmentfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.5.scriptid
+                attachmenttype = "FIELD"
+                includerecordlink = false
+                isinactive = false
+                recipientccemail = "{custrecord_nsts_ci_ar_contact_emails}"
+                recipientfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.0.scriptid
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.32.scriptid
+                sendertype = "FIELD"
+                template = "[NOT_YET_SUPPORTED]"
+                usetemplate = true
+                initcondition = {
+                  formula = "\"Dunning Level\" IN (\"NSTS | CI - Dunning Level1\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Dunning Level"
+                        value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                      },
+                      {
+                        name = "NSTS | CI - Dunning Level1"
+                        selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                        value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction_nsts_swva_ci_second_email"
+                attachmentfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.5.scriptid
+                attachmenttype = "FIELD"
+                includerecordlink = false
+                isinactive = false
+                recipientccemail = "{custrecord_nsts_ci_ar_contact_emails}"
+                recipientfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.0.scriptid
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.32.scriptid
+                sendertype = "FIELD"
+                template = "[NOT_YET_SUPPORTED]"
+                usetemplate = true
+                initcondition = {
+                  formula = "\"Dunning Level\" IN (\"NSTS | CI - Dunning Level1\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Dunning Level"
+                        value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                      },
+                      {
+                        name = "NSTS | CI - Dunning Level1"
+                        selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                        value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.1.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction_nsts_swva_ci_third_email"
+                attachmentfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.5.scriptid
+                attachmenttype = "FIELD"
+                includerecordlink = false
+                isinactive = false
+                recipientccemail = "{custrecord_nsts_ci_ar_contact_emails}"
+                recipientfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.0.scriptid
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.32.scriptid
+                sendertype = "FIELD"
+                template = "[NOT_YET_SUPPORTED]"
+                usetemplate = true
+                initcondition = {
+                  formula = "\"Dunning Level\" IN (\"NSTS | CI - Dunning Level1\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Dunning Level"
+                        value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                      },
+                      {
+                        name = "NSTS | CI - Dunning Level1"
+                        selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                        value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.2.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction_nsts_swva_ci_fourth_email"
+                attachmentfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.5.scriptid
+                attachmenttype = "FIELD"
+                includerecordlink = false
+                isinactive = false
+                recipientccemail = "{custrecord_nsts_ci_ar_contact_emails}"
+                recipientfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.0.scriptid
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.32.scriptid
+                sendertype = "FIELD"
+                template = "[NOT_YET_SUPPORTED]"
+                usetemplate = true
+                initcondition = {
+                  formula = "\"Dunning Level\" IN (\"NSTS | CI - Dunning Level1\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Dunning Level"
+                        value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                      },
+                      {
+                        name = "NSTS | CI - Dunning Level1"
+                        selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                        value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.3.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition474"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.7.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                formula = "\"Dunning Level\" IN (\"NSTS | CI - Dunning Level1\") AND isEmpty(\"Last Collection Email Date Stamp\") = 'F' AND isChecked(\"Workflow:CI Create Phone Call Task\") = 'T'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Dunning Level"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                    },
+                    {
+                      name = "NSTS | CI - Dunning Level1"
+                      selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.scriptid
+                      value = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.3.scriptid
+                    },
+                    {
+                      name = "Last Collection Email Date Stamp"
+                      value = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.31.scriptid
+                    },
+                    {
+                      name = "Workflow:CI Create Phone Call Task"
+                      value = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowcustomfields.workflowcustomfield.8.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition475"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.5.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate156"
+        donotexitworkflow = false
+        name = "Create Phone Call Task"
+        positionx = 583
+        positiony = 163
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction511"
+                field = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowcustomfields.workflowcustomfield.5.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "@CURRENT@"
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+              {
+                scriptid = "workflowaction521"
+                field = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = netsuite.customlist.instance.customlist_nsts_ci_dunning_level.customvalues.customvalue.4.scriptid
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+            createrecordaction = [
+              {
+                scriptid = "workflowactionworkflowaction_nsts_swva_c"
+                isinactive = false
+                recordtype = "PHONECALL"
+                schedulemode = "DELAY"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+                fieldsettings = {
+                  fieldsetting = [
+                    {
+                      targetfield = "STDEVENTTITLE"
+                      valueformula = "CONCAT('Follow Up On Overdue Consolidated Invoice #', {name})"
+                    },
+                    {
+                      targetfield = "STDEVENTCOMPANY"
+                      valuefield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.0.scriptid
+                    },
+                    {
+                      targetfield = "STDEVENTASSIGNED"
+                      valuefield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.32.scriptid
+                    },
+                    {
+                      targetfield = "STDEVENTSTARTDATE"
+                      valueformula = "TO_DATE({today}+{custworkflow_nsts_swva_ci_phone_call_days})"
+                    },
+                    {
+                      targetfield = "STDEVENTORGANIZER"
+                      valuefield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.32.scriptid
+                    },
+                    {
+                      targetfield = "STDEVENTPHONE"
+                      valuefield = "STDENTITYPHONE"
+                      valuejoinfield = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.0.scriptid
+                    },
+                    {
+                      targetfield = netsuite.crmcustomfield.instance.custevent_nsts_swva_ci_record.scriptid
+                      valuefield = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowcustomfields.workflowcustomfield.5.scriptid
+                    },
+                  ]
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition471"
+              tostate = netsuite.workflow.instance.customworkflow_nsts_swva_ci_col_wf.workflowstates.workflowstate.5.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

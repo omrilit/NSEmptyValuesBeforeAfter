@@ -1,0 +1,20 @@
+type netsuite.PaycheckPayEarn {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef payItem {
+  }
+  number line {
+  }
+  number count {
+  }
+  string rate {
+  }
+  netsuite.RecordRef serviceItem {
+  }
+  number grossAmount {
+  }
+  boolean manualEntry {
+  }
+}

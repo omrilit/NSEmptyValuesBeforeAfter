@@ -1,0 +1,80 @@
+netsuite.customrecordtype customrecord60 {
+  scriptid = "customrecord60"
+  accesstype = "CUSTRECORDENTRYPERM"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = false
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = false
+  isinactive = false
+  isordered = false
+  recordname = "Player Stats"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = false
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord127"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Player Name"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord128"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "FLOAT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Batting Average"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+    ]
+  }
+}

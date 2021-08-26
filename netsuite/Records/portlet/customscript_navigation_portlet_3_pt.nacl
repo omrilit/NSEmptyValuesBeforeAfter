@@ -1,0 +1,68 @@
+netsuite.portlet customscript_navigation_portlet_3_pt {
+  scriptid = "customscript_navigation_portlet_3_pt"
+  defaultfunction = "navigation_portlet"
+  isinactive = false
+  name = "***Navigation_Portlet_3_PT"
+  notifyadmins = false
+  notifyemails = "fteves@netsuite.com"
+  notifyowner = true
+  notifyuser = true
+  portlettype = "HTML"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_41797_NavigationPortlet_PT_SL_js@dsduuv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_nav_default_category"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        isformula = false
+        ismandatory = false
+        label = "Default Category"
+        onparentdelete = "NO_ACTION"
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_nav_portlet_list.scriptid
+        setting = "PORTLET"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_nav_default_count"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultselection = netsuite.customlist.instance.customlist_nav_portlet_column.customvalues.customvalue.1.scriptid
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        isformula = false
+        ismandatory = false
+        label = "No. of Category Columns to Display"
+        maxvalue = "4"
+        minvalue = "3"
+        onparentdelete = "NO_ACTION"
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_nav_portlet_column.scriptid
+        setting = "PORTLET"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_navigation_portlet_3_pt"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "-Navigation Portlet"
+      },
+    ]
+  }
+}

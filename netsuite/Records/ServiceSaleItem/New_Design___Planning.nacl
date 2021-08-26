@@ -1,0 +1,69 @@
+netsuite.ServiceSaleItem New_Design___Planning@sses {
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  enforceMinQtyInternally = true
+  overallQuantityPricingType = "_byLineQuantity"
+  isFulfillable = false
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  createJob = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "New Design & Planning"
+  isOnline = false
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "New Design & Planning"
+  custom_custitem9 = false
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

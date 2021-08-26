@@ -1,0 +1,380 @@
+netsuite.customrecordtype customrecord_wd_store_locator {
+  scriptid = "customrecord_wd_store_locator"
+  accesstype = "CUSTRECORDENTRYPERM"
+  allowattachments = true
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = true
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = true
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "SuiteOffice - Store Location"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_wd_locator_store_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Store Type"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_storevendorname"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Vendor Name"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_storename"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Store Name"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_storethumb"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "IMAGE"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Thumbnail"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_storeicon"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "IMAGE"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Store Icon"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_storeaddress"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Address1"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_storeaddress2"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Address2"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_storecity"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "City"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_state"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "State"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_zip_code"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Zip Code"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_storephone"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Phone"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_corp_web_site"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Corporate Web Site"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_shop_web_site"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Shopping Web Site"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_storedesc"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Description"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_storelat"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "FLOAT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Latitude"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_storelong"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "FLOAT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Longitude"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_wd_locator_mail"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Mail"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+    ]
+  }
+}

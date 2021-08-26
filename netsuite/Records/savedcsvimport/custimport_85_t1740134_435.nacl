@@ -1,0 +1,116 @@
+netsuite.savedcsvimport custimport_85_t1740134_435 {
+  scriptid = "custimport_85_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  description = "Imports Time records from a CSV file. Only supported with Time Tracking not Timesheets."
+  entryform = netsuite.entryForm.instance.custform_60_t1499227_346.scriptid
+  ignorereadonly = true
+  importname = "Track Time - Import"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "TIMEBILL"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = true
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "TIMEBILL"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "TIMEBILL"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "CASETASKEVENT"
+              columnreference = {
+                column = "Project Task/Case"
+                file = "TIMEBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CUSTOMER"
+              columnreference = {
+                column = "Client:Project"
+                file = "TIMEBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EMPLOYEE"
+              columnreference = {
+                column = "Employee"
+                file = "TIMEBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EXTERNALID"
+              columnreference = {
+                column = "ExternalId"
+                file = "TIMEBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "HOURS"
+              columnreference = {
+                column = "Duration"
+                file = "TIMEBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ISBILLABLE"
+              columnreference = {
+                column = "Billable"
+                file = "TIMEBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ITEM"
+              columnreference = {
+                column = "Service Item"
+                file = "TIMEBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "MEMO"
+              columnreference = {
+                column = "Memo"
+                file = "TIMEBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TRANDATE"
+              columnreference = {
+                column = "Date"
+                file = "TIMEBILL"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

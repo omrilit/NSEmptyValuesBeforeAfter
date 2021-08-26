@@ -1,0 +1,22 @@
+netsuite.Account Other_Loss_8075@su {
+  acctType = "_otherExpense"
+  acctNumber = "8075"
+  acctName = "Other Loss"
+  includeChildren = true
+  generalRate = "_average"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  revalue = false
+  identifier = "Other Loss_8075"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

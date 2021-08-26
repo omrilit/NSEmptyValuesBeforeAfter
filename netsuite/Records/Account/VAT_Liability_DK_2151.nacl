@@ -1,0 +1,23 @@
+netsuite.Account VAT_Liability_DK_2151@ssu {
+  acctType = "_otherCurrentLiability"
+  acctNumber = "2151"
+  acctName = "VAT Liability DK"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  revalue = true
+  identifier = "VAT Liability DK_2151"
+  externalId = "10820"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

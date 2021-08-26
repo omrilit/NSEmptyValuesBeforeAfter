@@ -1,0 +1,32 @@
+netsuite.centertab custcentertab7_11 {
+  scriptid = "custcentertab7_11"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = "ACCOUNTCENTER"
+  label = "Payments"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_1036_t1499227_189"
+        isportletshown = true
+        portlet = "CALENDAR"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_668_t1499227_189"
+        isportletshown = true
+        portlet = "SCRIPTPORTLET"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_1037_t1499227_189"
+        isportletshown = true
+        portlet = "LIST"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+netsuite.workflowactionscript customscript_nsts_swva_emailarcontact_ci {
+  scriptid = "customscript_nsts_swva_emailarcontact_ci"
+  defaultfunction = "sendEmailToARContacts"
+  isinactive = false
+  name = "NSTS | SWVA - Get AR Contacts CI"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_SWVA_WA_EmailARContacts_js@dsduuuv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_nsts_swva_contactrole_ci"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        isformula = false
+        ismandatory = false
+        label = "Contact Role"
+        onparentdelete = "NO_ACTION"
+        searchlevel = "2"
+        selectrecordtype = "-157"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_nsts_swva_emailarcontact_ci"
+        allemployees = false
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.scriptid
+        status = "RELEASED"
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_SWVA_Lib_Constants_js@dsduuuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_SWVA_Lib_ObjectsAndFunctions_js@dsduuuv.path
+      },
+    ]
+  }
+}

@@ -1,0 +1,238 @@
+netsuite.entryForm custform_100_t1499227_346 {
+  scriptid = "custform_100_t1499227_346"
+  standard = "STANDARDCUSTOMRECORD_WD_COMPARE_FIELDSFORM"
+  name = "Custom SuiteOffice - Compare Fields Form"
+  recordType = netsuite.customrecordtype.instance.customrecord_wd_compare_fields.scriptid
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "CUSTOMFORM"
+              label = "Custom Form"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "RECORDID"
+              label = "ID"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "OWNER"
+              label = "Owner"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "CREATED"
+              label = "Date Created"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "LASTMODIFIED"
+              label = "Last Modified"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "NAME"
+              label = "Name"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = true
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_wd_compare_fields.customrecordcustomfields.customrecordcustomfield.0.scriptid
+              label = "internal ID"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "ISINACTIVE"
+              label = "Inactive"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "RECORDNOTES"
+        label = "Notes"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDUSERNOTES"
+              label = "User Notes"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "RECORDSYSTEMNOTES"
+              label = "System Notes"
+              visible = false
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDMEDIA"
+        label = "Files"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDMEDIAITEM"
+              label = "Files"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDTRANSLATION"
+        label = "Translation"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDTRANSLATIONS"
+              label = "Translation"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDCUSTOM"
+        label = "Custom"
+        visible = false
+      },
+    ]
+  }
+  actionbar = {
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = false
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = true
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

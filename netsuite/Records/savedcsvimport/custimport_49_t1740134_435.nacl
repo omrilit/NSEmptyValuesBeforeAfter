@@ -1,0 +1,107 @@
+netsuite.savedcsvimport custimport_49_t1740134_435 {
+  scriptid = "custimport_49_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADDUPDATE"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "xxxx"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "VENDORBILL"
+  runserversuitescript = false
+  transactionform = "STANDARDVENDORBILL"
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "VENDORBILL"
+        primarykey = "External ID"
+      },
+      {
+        file = "VENDORBILL:EXPENSE"
+        foreignkey = "External ID"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "VENDORBILL"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ACCOUNT"
+              value = "25"
+            },
+            {
+              field = "ENTITY"
+              columnreference = {
+                column = "Vendor ID"
+                file = "VENDORBILL"
+                type = "INTERNAL_ID"
+              }
+            },
+            {
+              field = "EXTERNALID"
+              columnreference = {
+                column = "External ID"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "POSTINGPERIOD"
+              value = "243"
+            },
+            {
+              field = "TRANDATE"
+              columnreference = {
+                column = "Date"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TRANID"
+              columnreference = {
+                column = "Number"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        record = "VENDORBILL:EXPENSE"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ACCOUNT"
+              value = "87"
+            },
+            {
+              field = "AMOUNT"
+              columnreference = {
+                column = "Total"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

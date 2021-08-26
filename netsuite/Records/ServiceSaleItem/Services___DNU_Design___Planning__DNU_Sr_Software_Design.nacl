@@ -1,0 +1,121 @@
+netsuite.ServiceSaleItem Services___DNU_Design___Planning__DNU_Sr_Software_Design@sbsusessbuss {
+  salesDescription = "Software Design"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Maintenance_4004
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  enforceMinQtyInternally = true
+  overallQuantityPricingType = "_byLineQuantity"
+  isFulfillable = true
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  createJob = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Sr Software Design"
+  parent = netsuite.ServiceSaleItem.instance.Services___DNU_Design___Planning__DNU@sbsusessb
+  isOnline = true
+  offerSupport = false
+  isInactive = true
+  availableToPartners = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 140
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 155
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 165
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 120
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Services - DNU_Design & Planning -DNU_Sr Software Design"
+  externalId = "item13"
+  custom_custitem9 = false
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

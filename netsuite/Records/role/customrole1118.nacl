@@ -1,0 +1,349 @@
+netsuite.role customrole1118 {
+  scriptid = "customrole1118"
+  centertype = "ACCOUNTCENTER"
+  employeerestriction = "NONE"
+  employeeselectionunrestricted = false
+  isinactive = false
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "z (OLD) 6-A/R Clerk"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "SELECTED"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = [
+      {
+        permkey = "TRAN_PAYMENTAUDIT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_CASHSALE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_CHARGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_GENERATECHARGES"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_CHARGERULE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_CUSTPYMT"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_CUSTDEP"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_DEPAPPL"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_SALESORDFULFILL"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_PRICELIST"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_STATEMENT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_CUSTINVC"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_CUSTINVCAPPRV"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_SALESORDINVOICE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_ITEMSHIP"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_CLEARHOLD"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_POSTPERIODS"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_RECOG_GIFTCERT_INCOME"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "TRAN_REVCOMM"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_REVCOMRV"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_SALESORD"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_TIMEBILL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_TRNFRORD"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_PAYMENTEVENT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_AR"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "GRAP_AR"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_INVENTORY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SNAPSHOTLEAD"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_CUSTOMIZATION"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_SCHEDULE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_ANALYTICS"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "REPO_TIME"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_TRAN"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REGT_ACCTREC"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CALENDAR"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CLASS"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CUSTJOB"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_COMPETITOR"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CONTACT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_DEPARTMENT"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_FILECABINET"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EMAILTEMPLATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_EVENT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EXPORT"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_FINHISTORY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_ITEM"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_LOCATION"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_MEMDOC"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_HISTORY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CALL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTEMPLATE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_JOB"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_RESOURCE"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_REVRECSCHEDULE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_TASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CRMMESSAGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "REGT_UNBILLEDREC"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_UNIT"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_WORKCALENDAR"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "ADMI_ACCOUNTINGLIST"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "ADMI_DELETEDRECORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_MOBILE_ACCESS"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_EMPLOYEELIST"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "ADMI_WEBSERVICES"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "[scriptid=customrecord_3805_dunning_config]"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "[scriptid=customrecord_3805_dunning_eval_result]"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "[scriptid=customrecord_3805_dunning_level]"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "[scriptid=customrecord_3805_dunning_eval_rule]"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "[scriptid=customrecord_3805_der_amount]"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "[scriptid=customrecord_3805_dunning_status]"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "[scriptid=customrecord_3805_dunning_substatus]"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "[scriptid=customrecord_3805_dunning_procedure]"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "[scriptid=customrecord_3805_dunning_proc_priority]"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "[scriptid=customrecord_3805_dunning_recipient]"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "[scriptid=customrecord_3805_dunning_template]"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "[scriptid=customrecord_ecsl_audit_trail_dtl]"
+        permlevel = "VIEW"
+        restriction = "EDIT"
+      },
+      {
+        permkey = "[scriptid=customrecord_ecsl_audit_trail_hdr]"
+        permlevel = "VIEW"
+        restriction = "EDIT"
+      },
+      {
+        permkey = "[scriptid=customrecord_suite_l10n_variable]"
+        permlevel = "VIEW"
+      },
+    ]
+  }
+}

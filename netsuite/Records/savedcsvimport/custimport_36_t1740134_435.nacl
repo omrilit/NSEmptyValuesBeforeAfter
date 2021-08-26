@@ -1,0 +1,106 @@
+netsuite.savedcsvimport custimport_36_t1740134_435 {
+  scriptid = "custimport_36_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "INV"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "INVOICE"
+  runserversuitescript = false
+  transactionform = netsuite.transactionForm.instance.custform_125_t1499227_346.scriptid
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "INVOICE"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "INVOICE:ITEM"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "AMOUNT"
+              columnreference = {
+                column = "Amount"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ITEM"
+              columnreference = {
+                column = "Item"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "QUANTITY"
+              columnreference = {
+                column = "QTY"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TAXCODE"
+              value = "400"
+            },
+          ]
+        }
+      },
+      {
+        record = "INVOICE"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ENTITY"
+              columnreference = {
+                column = "Customer:Project"
+                file = "INVOICE"
+                type = "INTERNAL_ID"
+              }
+            },
+            {
+              field = "LOCATION"
+              value = "9"
+            },
+            {
+              field = "TRANDATE"
+              columnreference = {
+                column = "Date"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TRANID"
+              columnreference = {
+                column = "Invoice"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+netsuite.scheduledscript customscript_ie_sample_runner_ss {
+  scriptid = "customscript_ie_sample_runner_ss"
+  defaultfunction = "sampleRunnerScheduled"
+  isinactive = false
+  name = "= Sample Runner SS"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_34544_SampleRunner_SS_js@dsduv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_ie_dashboard_tile"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        isformula = false
+        ismandatory = false
+        label = "Tile"
+        onparentdelete = "NO_ACTION"
+        searchlevel = "2"
+        selectrecordtype = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.scriptid
+        setting = "COMPANY"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_ie_sample_runner_ss"
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "NOTSCHEDULED"
+        title = "= Sample Runner SS"
+        recurrence = {
+          single = {
+            startdate = "2014-01-27"
+            starttime = "02:00:00Z"
+          }
+        }
+      },
+    ]
+  }
+}

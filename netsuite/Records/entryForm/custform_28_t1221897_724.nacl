@@ -1,0 +1,525 @@
+netsuite.entryForm custform_28_t1221897_724 {
+  scriptid = "custform_28_t1221897_724"
+  standard = "STANDARDCUSTOMRECORD_NSTS_TEX_HTML_TEMPLATEFORM"
+  name = "NSTS - HTML Templates Form"
+  recordType = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.scriptid
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "fieldgroup_9_t1221897_628"
+        label = "Main"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "CUSTOMFORM"
+                label = "Custom Form"
+                visible = false
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = "NAME"
+                label = "Name"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = "RECORDID"
+                label = "ID"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = "OWNER"
+                label = "Owner"
+                visible = false
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = "CREATED"
+                label = "Date Created"
+                visible = false
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = "LASTMODIFIED"
+                label = "Last Modified"
+                visible = false
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = "ISINACTIVE"
+                label = "Inactive"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.3.scriptid
+                label = "Data Feed"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.9.scriptid
+                label = "Button Name"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.14.scriptid
+                label = "Apply to Transaction Form"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "fieldgroup_36_t1221897_628"
+        label = "Record Types"
+        visible = true
+        showTitle = true
+        singleColumn = false
+      },
+      {
+        scriptid = "fieldgroup_85_t1221897_628"
+        label = "File Setup"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.4.scriptid
+                label = "Return Type"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.8.scriptid
+                label = "Filename Prefix"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.13.scriptid
+                label = "Target Directory"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.15.scriptid
+                label = "Record Field"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "fieldgroup_86_t1221897_628"
+        label = "Record Type"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.0.scriptid
+                label = "Transaction Type"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.12.scriptid
+                label = "Default template for Bulk Print"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.1.scriptid
+                label = "Entity Type"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.2.scriptid
+                label = "CRM Type (All Record Types)"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.5.scriptid
+                label = "Email Subject"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.6.scriptid
+                label = "Email Template"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "fieldgroup_10_t1221897_628"
+        label = "Template"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.18.scriptid
+                label = "Header Name"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.23.scriptid
+                label = "Header Height (in mm)"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.17.scriptid
+                label = "Footer Name"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.24.scriptid
+                label = "Footer Height (in mm)"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.21.scriptid
+                label = "Paper Size"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.22.scriptid
+                label = "Orientation"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+            ]
+          },
+        ]
+      },
+    ]
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = false
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDTRANSLATION"
+        label = "Translation"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDTRANSLATIONS"
+              label = "Translation"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDCUSTOM"
+        label = "Custom"
+        visible = false
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.subtabs.subtab.0.scriptid
+        label = "Body"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.28.scriptid
+                    label = "HTML Template Body"
+                    visible = true
+                    mandatory = true
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.subtabs.subtab.1.scriptid
+        label = "Headers"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.29.scriptid
+                    label = "HTML Template Header"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.subtabs.subtab.2.scriptid
+        label = "Static"
+        visible = false
+      },
+      {
+        id = "RECORDNOTES"
+        label = "Notes"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDUSERNOTES"
+              label = "User Notes"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDSYSTEMNOTES"
+              label = "System Notes"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+    ]
+  }
+  actionbar = {
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = true
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = false
+}

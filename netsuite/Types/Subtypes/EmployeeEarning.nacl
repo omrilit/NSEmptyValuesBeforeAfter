@@ -1,0 +1,23 @@
+type netsuite.EmployeeEarning {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.PayrollItem payrollItem {
+    isReference = true
+  }
+  string payRate {
+  }
+  boolean primaryEarning {
+  }
+  number defaultHours {
+  }
+  boolean inactive {
+  }
+  boolean defaultEarning {
+  }
+  string effectiveDate {
+  }
+  string expirationDate {
+  }
+}

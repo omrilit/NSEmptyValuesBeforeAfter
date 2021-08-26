@@ -1,0 +1,122 @@
+netsuite.savedcsvimport custimport_45_t1740134_435 {
+  scriptid = "custimport_45_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "invoices import-lissa"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "INVOICE"
+  runserversuitescript = false
+  transactionform = "STANDARDPROGRESSINVOICE"
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "INVOICE"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "INVOICE:ITEM"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ITEM"
+              columnreference = {
+                column = "Item"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ORDERLINE"
+              columnreference = {
+                column = "Order Line"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TAXCODE"
+              columnreference = {
+                column = "Tax Code"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        record = "INVOICE"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ACCOUNT"
+              columnreference = {
+                column = "Account"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CURRENCY"
+              columnreference = {
+                column = "Currency"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ENTITY"
+              columnreference = {
+                column = "Customer"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EXTERNALID"
+              columnreference = {
+                column = "ExternalID"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "LOCATION"
+              columnreference = {
+                column = "Location"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TRANDATE"
+              columnreference = {
+                column = "Date"
+                file = "INVOICE"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

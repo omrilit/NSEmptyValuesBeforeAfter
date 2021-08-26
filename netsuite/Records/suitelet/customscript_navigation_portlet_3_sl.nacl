@@ -1,0 +1,27 @@
+netsuite.suitelet customscript_navigation_portlet_3_sl {
+  scriptid = "customscript_navigation_portlet_3_sl"
+  defaultfunction = "navigation_suitelet"
+  isinactive = false
+  name = "***Navigation_Portlet_3_SL"
+  notifyadmins = false
+  notifyemails = "fteves@netsuite.com"
+  notifyowner = true
+  notifyuser = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_41797_NavigationPortlet_PT_SL_js@dsduuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_navigation_portlet_3_sl"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "-Navigation_Portlet_3_SL"
+      },
+    ]
+  }
+}

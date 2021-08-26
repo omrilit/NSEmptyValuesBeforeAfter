@@ -1,0 +1,21 @@
+netsuite.centercategory custcentercategory192 {
+  scriptid = "custcentercategory192"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_timeexpense.scriptid
+  label = "Expenses"
+  links = {
+    link = [
+      {
+        linkid = "LIST_TRAN_EXPREPT"
+        linklabel = "Expense Reports"
+        shortlist = false
+      },
+      {
+        linklabel = "Expenses module"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_expenses.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

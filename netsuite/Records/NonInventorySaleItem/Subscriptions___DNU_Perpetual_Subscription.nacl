@@ -1,0 +1,283 @@
+netsuite.NonInventorySaleItem Subscriptions___DNU_Perpetual_Subscription@sbsus {
+  includeChildren = false
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  deferredRevenueAccount = netsuite.Account.instance.Deferred__Income_2100_License_Software_2102@ssuubu
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  isFulfillable = true
+  useMarginalRates = false
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Perpetual Subscription"
+  parent = netsuite.NonInventorySaleItem.instance.Subscriptions___DNU@sbs
+  isOnline = false
+  offerSupport = false
+  isInactive = true
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_Canada@buu,
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___East@buusbs,
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ_Australia@buu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA_Japan@buu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_Denmark@buu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_Germany@buu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_United_Kingdom@buus,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 5000
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Subscriptions - DNU_Perpetual Subscription"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

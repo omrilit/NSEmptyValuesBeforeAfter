@@ -1,0 +1,21 @@
+netsuite.Account Organization_Expense_1910@su {
+  acctType = "_otherAsset"
+  acctNumber = "1910"
+  acctName = "Organization Expense"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "Organization Expense_1910"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

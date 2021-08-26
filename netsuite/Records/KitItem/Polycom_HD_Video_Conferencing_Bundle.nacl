@@ -1,0 +1,263 @@
+netsuite.KitItem Polycom_HD_Video_Conferencing_Bundle@s {
+  itemId = "Polycom HD Video Conferencing Bundle"
+  displayName = "Polycom HD Video Conferencing Bundle"
+  printItems = false
+  isOnline = true
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ_Australia@buu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_United_Kingdom@buus,
+  ]
+  includeChildren = false
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  weight = 0
+  weightUnit = {
+    name = "lb"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  producer = false
+  enforceMinQtyInternally = true
+  isFulfillable = true
+  useMarginalRates = false
+  costEstimateType = "_derivedFromMemberItems"
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  shipIndividually = false
+  storeDisplayName = "Polycom HD Video Conferencing Bundle"
+  storeDisplayThumbnail = netsuite.RecordRef.instance.KitItem_storeDisplayThumbnail_12097
+  storeDisplayImage = netsuite.RecordRef.instance.KitItem_storeDisplayImage_12096
+  storeDescription = "Polycom HD Video Conferencing Bundle"
+  storeDetailedDescription = '''
+<p>Polycom High Definition Video Conferencing Bundle:</p>
+<ul>
+<li>Samsung HDTV 1080p</li>
+<li>Monster HDMI Cables</li>
+<li>Polycom CX7000 Video Conferencing System</li>
+</ul>
+'''
+  urlComponent = "Polycom-HD-Video-Conferencing-Bundle"
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.KitItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 21262
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.KitItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 21262
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.KitItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 21262
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.KitItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 21262.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.KitItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 21262.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.KitItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 21262.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.KitItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 17010
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.KitItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 17010
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.KitItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 17010
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  siteCategoryList = {
+    siteCategory = [
+      {
+        website = netsuite.RecordRef.instance.KitItem_website_4
+        category = netsuite.RecordRef.instance.KitItem_category_2074
+        isDefault = false
+      },
+    ]
+  }
+  memberList = {
+    itemMember = [
+      {
+        memberDescr = "Samsung UN60H6350AF 60\" 1080p LED-LCD TV - 16:9 - HDTV 1080p"
+        quantity = 1
+        memberUnit = netsuite.RecordRef.instance.KitItem_memberUnit_Ea_@uuv
+        taxSchedule = netsuite.RecordRef.instance.KitItem_taxSchedule_1
+        item = netsuite.RecordRef.instance.KitItem_item_883
+        lineNumber = 1
+      },
+      {
+        memberDescr = "Monster MC800HD-2M Advanced High Speed HDTV HDMI Cable (6ft)"
+        quantity = 1
+        memberUnit = netsuite.RecordRef.instance.KitItem_memberUnit_Ea_@uuv
+        taxSchedule = netsuite.RecordRef.instance.KitItem_taxSchedule_1
+        item = netsuite.RecordRef.instance.KitItem_item_884
+        lineNumber = 2
+      },
+      {
+        memberDescr = "Polycom CX7000 HD Video Conferencing System"
+        quantity = 1
+        memberUnit = netsuite.RecordRef.instance.KitItem_memberUnit_Ea_@uuv
+        taxSchedule = netsuite.RecordRef.instance.KitItem_taxSchedule_1
+        item = netsuite.RecordRef.instance.KitItem_item_885
+        lineNumber = 3
+      },
+      {
+        memberDescr = "Polycom HD Eagle Eye Camera"
+        quantity = 1
+        memberUnit = netsuite.RecordRef.instance.KitItem_memberUnit_Ea_@uuv
+        taxSchedule = netsuite.RecordRef.instance.KitItem_taxSchedule_1
+        item = netsuite.RecordRef.instance.KitItem_item_886
+        lineNumber = 4
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  presentationItemList = {
+    presentationItem = [
+      {
+        item = netsuite.RecordRef.instance.KitItem_item_888
+        itemType = "_item"
+        description = "<p>AV Installation Services for Video Conferencing Systems</p><p></p>"
+        onlinePrice = 600
+        basePrice = 600
+      },
+    ]
+  }
+  identifier = "Polycom HD Video Conferencing Bundle"
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Polycom HD Video Conferencing Bundle Polycom HD Video Conferencing Bundle Polycom HD Video Conferencing Bundle null"
+  custom_custitem_wd_img_gallery_carousel_html = "<div class=\"item active easyzoom easyzoom--overlay\" data-slide-number=\"0\"><a href=\"/core/media/media.nl?id=12096&c=TSTDRV1373481&h=140c85d2fc4fda9160cc\"><img src=\"/core/media/media.nl?id=12096&c=TSTDRV1373481&h=140c85d2fc4fda9160cc\" class=\"img-responsive\"></a></div>"
+  custom_custitem_wd_img_gallery_slider_html = "<div class=\"col-xs-2 thumbnail\"><a id=\"carousel-selector-0\" class=\"selected\"><img src=\"/core/media/media.nl?id=12097&c=TSTDRV1373481&h=2f28518847ad381f4e18\"></a></div>"
+  custom_custitem_wd_process_items = true
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+  custom_custitem_wd_relateditem_html = "<div class=\"row item active\"><div class=\"col-xs-6 col-sm-4 col-md-2 cell\"><a  class=\"thumbnail\"  href=\"http://qsdilley.production.na1.netsuitestaging.com/Products/Video-Conferencing/AV-Installation-Services.html\" title=\"AV Installation Services\"><img src=\"/core/media/media.nl?id=12099&c=TSTDRV1373481&h=21779edb126f334fdc37\" alt=\"AV Installation Services\"></a><h3><a href=\"http://qsdilley.production.na1.netsuitestaging.com/Products/Video-Conferencing/AV-Installation-Services.html\">AV Installation Services</a></h3></div></div>"
+}

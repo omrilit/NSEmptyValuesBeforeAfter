@@ -1,0 +1,74 @@
+netsuite.centertab custcentertab9 {
+  scriptid = "custcentertab9"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter1.scriptid
+  label = "Bug DB"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_1_t1499227_189"
+        isportletshown = true
+        portlet = "CALENDAR"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_2_t1499227_189"
+        isportletshown = true
+        portlet = "CALENDAR"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_3_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKADD"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_4_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_5_t1499227_189"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_6_t1499227_189"
+        isportletshown = true
+        portlet = "SETTINGS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_7_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_8_t1499227_189"
+        isportletshown = true
+        portlet = "SNAPSHOTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_9_t1499227_189"
+        isportletshown = true
+        portlet = "LIST"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_10_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHFORM"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+netsuite.kpiscorecard kpiscorecard_8_t1740134_426 {
+  scriptid = "kpiscorecard_8_t1740134_426"
+  name = "Global Financial Ratios"
+  useperiods = "T"
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = true
+  }
+  kpis = {
+    kpi = [
+      {
+        formula = "({BANKBAL}+{RECEIVABLES}+{OTHERCURRENTASSET})/({PAYABLES}+{CREDITCARDBAL}+{OTHERCURRENTLIAB})"
+        hidden = false
+        kpi = "FORMULANUMERIC"
+        label = "Current Ratio"
+        lessismore = false
+      },
+      {
+        formula = "{SALES}/{RECEIVABLES}"
+        hidden = false
+        kpi = "FORMULANUMERIC"
+        label = "Receivables Turnover"
+        lessismore = false
+      },
+      {
+        formula = "{DAYS}/({SALES}/{RECEIVABLES})"
+        hidden = false
+        kpi = "FORMULANUMERIC"
+        label = "Days Sales Outstanding"
+        lessismore = true
+      },
+    ]
+  }
+  ranges = {
+    range = [
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "THIS_PERIOD"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "LAST_PERIOD"
+      },
+      {
+        comparevalueto = "LAST_PERIOD"
+        comparewithprevious = false
+        comparisontype = "VARIANCE_PERCENT"
+        invertcomparison = false
+        label = "Change"
+        range = "THIS_PERIOD"
+      },
+    ]
+  }
+}

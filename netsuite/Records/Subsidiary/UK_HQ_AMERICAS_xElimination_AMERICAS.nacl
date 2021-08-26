@@ -1,0 +1,54 @@
+netsuite.Subsidiary UK_HQ_AMERICAS_xElimination_AMERICAS@buub {
+  name = "xElimination-AMERICAS"
+  parent = netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu
+  isInactive = false
+  showSubsidiaryName = false
+  state = "CA"
+  country = "_unitedStates"
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "xElimination-AMERICAS"
+    addrText = "xElimination-AMERICAS<br>United States"
+    override = false
+  }
+  isElimination = true
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.USD
+  edition = "US"
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedStates_California
+        country = "US"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_AMERICAS_xElimination-AMERICAS"
+}

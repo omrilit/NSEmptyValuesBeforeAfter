@@ -1,0 +1,22 @@
+netsuite.Account GST_HST_on_Purchases_2304@dssu {
+  acctType = "_otherCurrentAsset"
+  acctNumber = "2304"
+  acctName = "GST/HST on Purchases"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  revalue = false
+  identifier = "GST/HST on Purchases_2304"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

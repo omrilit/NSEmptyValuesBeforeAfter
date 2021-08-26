@@ -1,0 +1,289 @@
+netsuite.InventoryItem D_Link_switches_dlinkgo_8_Port_10_100_Desktop_Switch@bsusbsdss {
+  purchaseDescription = "dlinkgo 8-Port 10/100 Desktop Switch"
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  salesDescription = "dlinkgo 8-Port 10/100 Desktop Switch<br>"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  costingMethodDisplay = "Average"
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  cost = 1200
+  totalValue = 149017.22
+  averageCost = 993.45
+  useBins = false
+  autoLeadTime = true
+  lastPurchasePrice = 3303.1
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  autoReorderPoint = true
+  storeDisplayName = "dlinkgo 8-Port 10/100 Desktop Switch"
+  storeDescription = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">dlinkgo
+  8-Port 10/100 Desktop Switch</td>
+</tr></tbody></table>
+'''
+  storeDetailedDescription = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">dlinkgo
+  8-Port 10/100 Desktop Switch</td>
+</tr></tbody></table>
+'''
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "dlinkgo 8-Port 10/100 Desktop Switch"
+  displayName = "dlinkgo 8-Port 10/100 Desktop Switch"
+  parent = netsuite.InventoryItem.instance.D_Link_switches@bs
+  isOnline = true
+  offerSupport = false
+  isInactive = true
+  availableToPartners = true
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 179900
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 899
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 1799
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+        displayName = "Trillebør Dining Bord"
+        salesDescription = "Display en skabende fornemme i designe hos den Trillebør Dining Bord."
+        storeDisplayName = "Trillebør Dining Bord"
+        storeDescription = "Display en skabende fornemme i designe hos den Trillebør Dining Bord."
+        storeDetailedDescription = '''
+Display en skabende fornemme i designe hos den Trillebør Dining Bord. 
+
+Indeværende bord vil skabe jeres dining rum aftegne sig i en nok så anset måde.
+'''
+      },
+      {
+        locale = "_german"
+        language = "German"
+        displayName = "Barrow Esstisch"
+        salesDescription = "Display ein kreativer Sinn für Design mit dem Barrow Eßtisch."
+        storeDisplayName = "Barrow Esstisch"
+        storeDescription = "Display ein kreativer Sinn für Design mit dem Barrow Eßtisch."
+        storeDetailedDescription = '''
+Display ein kreativer Sinn für Design mit dem Barrow Eßtisch.
+ 
+Diese Tabelle wird Ihren Esszimmer stehen in einem sehr unterscheiden.
+'''
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+        displayName = "Barrow Dining Table"
+        salesDescription = "Display a creative sense of design with the Barrow Dining Table."
+        storeDisplayName = "Barrow Dining Table"
+        storeDescription = "Display a creative sense of design with the Barrow Dining Table."
+        storeDetailedDescription = '''
+Display a creative sense of design with the Barrow Dining Table.  
+ 
+This table will make your dining room stand out in a very distinguished way.
+'''
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+        displayName = "バローテーブル"
+        storeDisplayName = "バローテーブル"
+        storeDescription = "天然木の木目を最大限に堪能でき価格以上に高級感のある木製ダイニングテーブルです。"
+        storeDetailedDescription = '''
+天然木の木目を最大限に堪能でき価格以上に高級感のある木製ダイニングテーブルです。
+脚部はアルミニウムに天然木をラミネート加工した特殊技術でデザイン性とともに耐久性や強度にも優れております。
+脚部が縦向き・横向きと4方に渦を巻いているささやかな遊び心を用いたデザインの木製ダイニングテーブルです。
+'''
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "05 UK Warehouse"
+        quantityOnHand = 20
+        onHandValueMli = 44631.6
+        averageCostMli = 2231.58
+        lastPurchasePriceMli = 2231.58
+        quantityOnOrder = 0
+        quantityAvailable = 20
+        locationId = netsuite.Location.instance.05_UK_Warehouse@s
+      },
+      {
+        location = "06 Australia Warehouse"
+        quantityOnHand = 20
+        onHandValueMli = 20350.19
+        averageCostMli = 1017.5095
+        lastPurchasePriceMli = 1017.5095
+        quantityOnOrder = 0
+        quantityAvailable = 20
+        locationId = netsuite.Location.instance.06_Australia_Warehouse@s
+      },
+      {
+        location = "07 Japan/日本 Warehouse"
+        quantityOnHand = 30
+        onHandValueMli = 12197.52
+        averageCostMli = 406.584
+        lastPurchasePriceMli = 9.876
+        quantityOnOrder = 0
+        quantityCommitted = 0
+        quantityAvailable = 30
+        locationId = netsuite.Location.instance.07_Japan____Warehouse@sd_26085_26412s
+      },
+      {
+        location = "08 Denmark Warehouse"
+        quantityOnHand = 20
+        onHandValueMli = 4364.97
+        averageCostMli = 218.2485
+        lastPurchasePriceMli = 218.2485
+        quantityOnOrder = 0
+        quantityAvailable = 20
+        locationId = netsuite.Location.instance.08_Denmark_Warehouse@s
+      },
+      {
+        location = "09 Germany/Deutsch Warehouse"
+        quantityOnHand = 20
+        onHandValueMli = 30592.8
+        averageCostMli = 1529.64
+        lastPurchasePriceMli = 1529.64
+        quantityOnOrder = 0
+        quantityAvailable = 20
+        locationId = netsuite.Location.instance.09_Germany_Deutsch_Warehouse@sds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityOnHand = 20
+        onHandValueMli = 21705.6
+        averageCostMli = 1085.28
+        lastPurchasePriceMli = 1085.28
+        quantityOnOrder = 0
+        quantityAvailable = 20
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+      {
+        location = "Australian Warehouse"
+        locationId = netsuite.Location.instance.Australian_Warehouse@s
+      },
+      {
+        location = "Frankfurt Warehouse"
+        locationId = netsuite.Location.instance.Frankfurt_Warehouse@s
+      },
+      {
+        location = "London Warehouse"
+        locationId = netsuite.Location.instance.London_Warehouse@s
+      },
+      {
+        location = "Manila Warehouse"
+        locationId = netsuite.Location.instance.Manila_Warehouse@s
+      },
+      {
+        location = "Singapore Warehouse"
+        locationId = netsuite.Location.instance.Singapore_Warehouse@s
+      },
+    ]
+  }
+  identifier = "D-Link switches_dlinkgo 8-Port 10/100 Desktop Switch"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

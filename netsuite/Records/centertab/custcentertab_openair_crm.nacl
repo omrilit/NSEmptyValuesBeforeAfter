@@ -1,0 +1,110 @@
+netsuite.centertab custcentertab_openair_crm {
+  scriptid = "custcentertab_openair_crm"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  label = "CRM"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_1100_t1499227_189"
+        isportletshown = true
+        portlet = "REMINDERS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1083_t1499227_189"
+        isportletshown = true
+        portlet = "CALENDAR"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1099_t1499227_189"
+        isportletshown = true
+        portlet = "CALENDAR"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1104_t1499227_189"
+        isportletshown = true
+        portlet = "KPIMETER"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1078_t1499227_189"
+        isportletshown = true
+        portlet = "KPIMETER"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1082_t1499227_189"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1103_t1499227_189"
+        isportletshown = true
+        portlet = "SHORTCUTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1092_t1499227_189"
+        isportletshown = true
+        portlet = "SCRIPTPORTLET"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1098_t1499227_189"
+        isportletshown = true
+        portlet = "SCRIPTPORTLET"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1097_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1102_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1107_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1081_t1499227_189"
+        isportletshown = true
+        portlet = "SNAPSHOTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1106_t1499227_189"
+        isportletshown = true
+        portlet = "KPIREPORT"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1084_t1499227_189"
+        isportletshown = true
+        portlet = "LIST"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1091_t1499227_189"
+        isportletshown = true
+        portlet = "LIST"
+        portletcolumn = "1"
+      },
+    ]
+  }
+}

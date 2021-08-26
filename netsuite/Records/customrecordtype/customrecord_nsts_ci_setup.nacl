@@ -1,0 +1,1158 @@
+netsuite.customrecordtype customrecord_nsts_ci_setup {
+  scriptid = "customrecord_nsts_ci_setup"
+  accesstype = "USEPERMISSIONLIST"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = false
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = false
+  allowquicksearch = false
+  allowuiaccess = true
+  description = "This record contains the definition of how the invoices will be consolidated. The user needs to enable the CI solution in this form and set the consolidation preferences and saved searches."
+  enabledle = false
+  enablekeywords = false
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = true
+  enableoptimisticlocking = true
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = false
+  includename = false
+  isinactive = false
+  isordered = false
+  recordname = "NSTS | CI - Setup"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = true
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = false
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_nsts_ci_enable_ci"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Check this option to enable the CI solution."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Check this option to enable the CI solution."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Enable Consolidated Invoicing"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_enable_for"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = '''
+Option to enable CI to ‘All Customers’ or ‘Selected Customers’.
+
+If ‘Selected Customers’ is selected, use the Exclude from Consolidated Invoicing checkbox on the customer record to exclude a customer.
+'''
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = '''
+Option to enable CI to ‘All Customers’ or ‘Selected Customers’.
+
+If ‘Selected Customers’ is selected, use the Exclude from Consolidated Invoicing checkbox on the customer record to exclude a customer.
+'''
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Enable For"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_enable_for.scriptid
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_create_online"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Checking this will allow the users to have access to CI screen that will allow them to search and submit invoices for consolidation."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Checking this will allow the users to have access to CI screen that will allow them to search and submit invoices for consolidation."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Enable Online Consolidation"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_schedule"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Checking this will allow the users to have access to specify  the parameters to schedule and set the recurrence options for consolidation"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Checking this will allow the users to have access to specify  the parameters to schedule and set the recurrence options for consolidation"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Enable Scheduled Consolidation"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_customer_screen"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Checking this will allow the users to navigate to the online consolidation screen  from the customer record"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Checking this will allow the users to navigate to the online consolidation screen  from the customer record"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Enable Consolidation on Customer Screen"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_include_subcust"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = true
+        description = "Selecting the check box would consolidate the invoices at the top level customer."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Selecting the check box would consolidate the invoices at the top level customer."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Include Sub Customers"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_currency"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = true
+        description = "Add Currency as bases for Consolidation."
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Add Currency as bases for Consolidation."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Currency"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_filters_note"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "Check the filters to be included as basis for consolidation."
+        displaytype = "STATICTEXT"
+        encryptatrest = false
+        fieldtype = "INLINEHTML"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Filters Note"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_nsts_ci_billingaddress"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Mark this filter to include Billing Address as basis for consolidation."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Mark this filter to include Billing Address as basis for consolidation."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Billing Address"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_location"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Mark this check box to include Location as basis for consolidation"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Mark this check box to include Location as basis for consolidation"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Location"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_duedate"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Mark this filter to include Due Date as basis for consolidation."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Mark this filter to include Due Date as basis for consolidation."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Due Date"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_contract"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Mark this filter to include Contract as basis for consolidation."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Mark this filter to include Contract as basis for consolidation."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Contract"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_project"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Mark this filter to include Project as basis for consolidation."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Mark this filter to include Project as basis for consolidation."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Project"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_source"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Mark this filter to include Source as basis for consolidation."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Mark this filter to include Source as basis for consolidation."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Source"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Invoice Type"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_custom_field1"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Invoice Header fields that can be used as additional filter or basis for consolidation"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Invoice Header fields that can be used as additional filter or basis for consolidation"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Additional Field 1"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-124"
+        showinlist = true
+        storevalue = true
+        customfieldfilters = {
+          customfieldfilter = [
+            {
+              fldfilter = "STDRECORDFIELDDATATYPE"
+              fldfiltercomparetype = "EQ"
+              fldfilternotnull = false
+              fldfilternull = false
+              fldfiltersel = "6|4|8|1|10|28|12"
+            },
+            {
+              fldfilter = "STDRECORDFIELDTYPE"
+              fldfiltercomparetype = "EQ"
+              fldfilternotnull = false
+              fldfilternull = false
+              fldfilterval = "BODY"
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "custrecord_nsts_ci_custom_field2"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "List of other fields that can be used as additional filter or basis for consolidation- same as above."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "List of other fields that can be used as additional filter or basis for consolidation- same as above."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Additional Field 2"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-124"
+        showinlist = true
+        storevalue = true
+        customfieldfilters = {
+          customfieldfilter = [
+            {
+              fldfilter = "STDRECORDFIELDDATATYPE"
+              fldfiltercomparetype = "EQ"
+              fldfilternotnull = false
+              fldfilternull = false
+              fldfiltersel = "6|4|8|1|10|28|12"
+            },
+            {
+              fldfilter = "STDRECORDFIELDTYPE"
+              fldfiltercomparetype = "EQ"
+              fldfilternotnull = false
+              fldfilternull = false
+              fldfilterval = "BODY"
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "custrecord_nsts_custom_field2_src"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Retrieve the source type of the 2nd additional filter."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Retrieve the source type of the 2nd additional filter."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Custom Field 2 Field Source"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        sourcefrom = "STDRECORDFIELDLISTRECORD"
+        sourcelist = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.16.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_custom_field3"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "List of other fields that can be used as additional filter or basis for consolidation- same as above."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "List of other fields that can be used as additional filter or basis for consolidation- same as above."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Additional Field 3"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-124"
+        showinlist = true
+        storevalue = true
+        customfieldfilters = {
+          customfieldfilter = [
+            {
+              fldfilter = "STDRECORDFIELDDATATYPE"
+              fldfiltercomparetype = "EQ"
+              fldfilternotnull = false
+              fldfilternull = false
+              fldfiltersel = "6|4|8|1|10|28|12"
+            },
+            {
+              fldfilter = "STDRECORDFIELDTYPE"
+              fldfiltercomparetype = "EQ"
+              fldfilternotnull = false
+              fldfilternull = false
+              fldfilterval = "BODY"
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "custrecord_nsts_custom_field1_id"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Retrieve the script id of the 1st additional filter."
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Retrieve the script id of the 1st additional filter."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Custom Field 1 ID"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        sourcefrom = "STDRECORDFIELDSCRIPTID"
+        sourcelist = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.15.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_custom_field2_id"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Retrieve the script id of the 2nd additional filter."
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Retrieve the script id of the 2nd additional filter."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Custom Field 2 ID"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        sourcefrom = "STDRECORDFIELDSCRIPTID"
+        sourcelist = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.16.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_custom_field3_id"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Retrieve the script id of the 3rd additional filter."
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Retrieve the script id of the 3rd additional filter."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Custom Field 3 ID"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        sourcefrom = "STDRECORDFIELDSCRIPTID"
+        sourcelist = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.18.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_custom_field1_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Retrieve the field type of the 1st additional filter."
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Retrieve the field type of the 1st additional filter."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Custom Field 1 Field Type"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        sourcefrom = "STDRECORDFIELDDATATYPENAME"
+        sourcelist = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.15.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_custom_field2_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Retrieve the field type of the 2nd additional filter."
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Retrieve the field type of the 2nd additional filter."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Custom Field 2 Field Type"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        sourcefrom = "STDRECORDFIELDDATATYPENAME"
+        sourcelist = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.16.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_custom_field3_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Retrieve the field type of the 3rd additional filter."
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Retrieve the field type of the 3rd additional filter."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Custom Field 3 Field Type"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        sourcefrom = "STDRECORDFIELDDATATYPENAME"
+        sourcelist = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.18.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_custom_field1_src"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Retrieve the source type of the 1st additional filter."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Retrieve the source type of the 1st additional filter."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Custom Field 1 Field Source"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        sourcefrom = "STDRECORDFIELDLISTRECORD"
+        sourcelist = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.15.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_custom_field3_src"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Retrieve the source type of the 3rd additional filter."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Retrieve the source type of the 3rd additional filter."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Custom Field 3 Field Source"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        sourcefrom = "STDRECORDFIELDLISTRECORD"
+        sourcelist = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.18.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_search"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Select the saved search that identifies open invoices available for consolidation and not excluded from consolidation. The saved search is based on the CI Preferences set.  There is 1 aggregated row per basis of consolidation."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Select the saved search that identifies open invoices available for consolidation and not excluded from consolidation. The saved search is based on the CI Preferences set.  There is 1 aggregated row per basis of consolidation."
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Invoice Summary Saved Search"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-119"
+        showinlist = true
+        storevalue = true
+        customfieldfilters = {
+          customfieldfilter = [
+            {
+              fldfilter = "STDRECORDSAVEDSEARCHRECORDTYPE"
+              fldfiltercomparetype = "EQ"
+              fldfilternotnull = false
+              fldfilternull = false
+              fldfiltersel = "-30"
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "custrecord_nsts_ci_search_dtl"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Select the saved search that includes the details of the individual invoices like Invoice #, Invoice date and amount."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Select the saved search that includes the details of the individual invoices like Invoice #, Invoice date and amount."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Invoice Details Saved Search"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-119"
+        showinlist = true
+        storevalue = true
+        customfieldfilters = {
+          customfieldfilter = [
+            {
+              fldfilter = "STDRECORDSAVEDSEARCHRECORDTYPE"
+              fldfiltercomparetype = "EQ"
+              fldfilternotnull = false
+              fldfilternull = false
+              fldfiltersel = "-30"
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "custrecord_nsts_ci_layout"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Field to select the default CI Layout."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Field to select the default CI Layout."
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Default CI Layout"
+        onparentdelete = "SET_NULL"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customrecordtype.instance.customrecord_nsts_ci_layout.scriptid
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_per_page"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "10"
+        description = "Number of Customer to be displayed per page."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Number of Customer to be displayed per page."
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Invoice Per Page (Pagination)"
+        maxvalue = "10000"
+        minvalue = "1"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_min_no"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "1"
+        description = "The minimum number of invoices that need to be considered for consolidation."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "The minimum number of invoices that need to be considered for consolidation."
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Minimum Number of Child Invoices"
+        maxvalue = "10000"
+        minvalue = "1"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_max_no"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        description = "The maximum number of child invoices that can be consolidated in a single CI."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "The maximum number of child invoices that can be consolidated in a single CI."
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Maximum Number of Child Invoices"
+        maxvalue = "20000"
+        minvalue = "1"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_as_file_in_folder"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        description = "File Cabinet Folder ID where the generated PDFs will be stored."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "File Cabinet Folder ID where the generated PDFs will be stored."
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Folder in File Cabinet (Internal ID)"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_send_via_field_note"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "Send Consolidated Invoice Via:"
+        displaytype = "STATICTEXT"
+        encryptatrest = false
+        fieldtype = "INLINEHTML"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Send Via (field Note)"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_nsts_ci_email_attachment"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Check this field if preferred to send the CI via Email"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Check this field if preferred to send the CI via Email"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Email"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_email_sender"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Set name of sender on the email when sending the CI."
+        displaytype = "NORMAL"
+        dynamicdefault = "ME"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Set name of sender on the email when sending the CI."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Email Sender"
+        onparentdelete = "SET_NULL"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-4"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_email_template"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Set the template to be used when sending the CI via email."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Set the template to be used when sending the CI via email."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Email Template"
+        onparentdelete = "SET_NULL"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-120"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_fax_attachment"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Check this field if preferred to send the CI via Fax."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Check this field if preferred to send the CI via Fax."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Fax"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_fax_sender"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Set name of sender on the fax when sending the CI."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Set name of sender on the fax when sending the CI."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "FAX Sender"
+        onparentdelete = "SET_NULL"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-4"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_fax_template"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Set the template to be used when sending the CI via fax."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Set the template to be used when sending the CI via fax."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "FAX Template"
+        onparentdelete = "SET_NULL"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-120"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_admin_email"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Comma-delimited email addresses to whom the email notifications will be sent to. Preferably the emails that will be indicated here are email addresses of the administrators of the account"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Comma-delimited email addresses to whom the email notifications will be sent to. Preferably the emails that will be indicated here are email addresses of the administrators of the account"
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Administrator Emails"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_contact_category"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Select contact roles to whom the email will also be sent to"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "MULTISELECT"
+        globalsearch = false
+        help = "Select contact roles to whom the email will also be sent to"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Send Email to Contact Role"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-157"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_update_duedate"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Check if the due date and term on the child Invoices should also be updated"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Check if the due date and term on the child Invoices should also be updated"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Update Due Date"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+    ]
+  }
+  permissions = {
+    permission = [
+      {
+        permittedlevel = "VIEW"
+        permittedrole = "ADMINISTRATOR"
+        restriction = "EDIT"
+      },
+    ]
+  }
+  links = {
+    link = [
+      {
+        linkcategory = "BASICLISTSCUSTOM"
+        linklabel = "Consolidated Invoicing Setup"
+        linktasktype = "LIST"
+      },
+    ]
+  }
+}

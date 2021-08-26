@@ -1,0 +1,18 @@
+netsuite.Account payable_test_interc_2093@ssu {
+  acctType = "_accountsPayable"
+  acctNumber = "2093"
+  acctName = "payable test interc"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = true
+  identifier = "payable test interc_2093"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

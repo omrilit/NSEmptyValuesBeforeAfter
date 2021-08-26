@@ -1,0 +1,260 @@
+netsuite.ServiceSaleItem Fulfillable_Implementation_Services@s {
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  enforceMinQtyInternally = true
+  overallQuantityPricingType = "_byLineQuantity"
+  isFulfillable = false
+  vsoePermitDiscount = "_asAllowed"
+  vsoeDelivered = true
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  createJob = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Fulfillable Implementation Services"
+  displayName = "Fulfillable Implementation Services"
+  isOnline = false
+  offerSupport = false
+  isInactive = true
+  availableToPartners = false
+  department = netsuite.Department.instance.Sales
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 1922.71
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 1922.71
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 546.83
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 546.83
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 42214.39
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 42214.39
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 418.68
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 418.68
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 395.793
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 395.793
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 257.887
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 257.887
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 400
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 400
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 202.606
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 202.606
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Fulfillable Implementation Services"
+  custom_custitem9 = false
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

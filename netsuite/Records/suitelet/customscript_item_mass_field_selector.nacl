@@ -1,0 +1,26 @@
+netsuite.suitelet customscript_item_mass_field_selector {
+  scriptid = "customscript_item_mass_field_selector"
+  defaultfunction = "itemMass_FieldSelector"
+  isinactive = false
+  name = "**Item Mass Field Selector"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_93203_Item_Mass_Updater_SL_js@dsduuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_item_mass_field_selector"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "**Item Mass Field Selector"
+      },
+    ]
+  }
+}

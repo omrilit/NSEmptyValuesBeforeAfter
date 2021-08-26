@@ -1,0 +1,355 @@
+netsuite.InventoryItem Lifesize_Team_220_10x_Dual_Micpod_HD_Video_Conferencing_Sys@s {
+  purchaseDescription = "Lifesize Team 220  HD Video Conferencing System"
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  intercoCogsAccount = netsuite.Account.instance.COGS_5000_Intercompany_Cost_of_Goods_Sold_5900@uussssu
+  salesDescription = "Lifesize Team 220  HD Video Conferencing System"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  intercoIncomeAccount = netsuite.Account.instance.Revenue_4000_Intercompany_Revenue_4900@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  shippingCostUnits = "per Ea."
+  handlingCostUnits = "per Ea."
+  weightUnits = "per Ea."
+  costingMethodDisplay = "Average"
+  unitsType = {
+    name = "EACH"
+  }
+  stockUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  purchaseUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  saleUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  stockDescription = "Lifesize Team 220  HD"
+  producer = false
+  enforceMinQtyInternally = true
+  minimumQuantityUnits = "Ea."
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  costEstimateUnits = "per Ea."
+  vsoeDelivered = false
+  costUnits = "per Ea."
+  totalValue = 1938841.24
+  averageCost = 12925.61
+  useBins = false
+  quantityReorderUnits = "Quantity On Hand, Reorder Point, Quantity On Order, and Quantity Committed are in Ea."
+  autoLeadTime = true
+  lastPurchasePrice = 17760.47
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  safetyStockLevelUnits = "Ea."
+  autoReorderPoint = true
+  storeDisplayName = "Lifesize Team 220  HD Video Conferencing System"
+  storeDisplayThumbnail = netsuite.RecordRef.instance.InventoryItem_storeDisplayThumbnail_12101
+  storeDisplayImage = netsuite.RecordRef.instance.InventoryItem_storeDisplayImage_12100
+  storeDescription = "<span class=\"uir-field inputreadonly\">Lifesize Team 220 &nbsp;HD Video Conferencing System</span>"
+  storeDetailedDescription = '''
+<p>Designed specifically for distributed project teams and colleagues interacting in small conferencing environments, this full integrated system is a plug-and-play device that allows teams to meet face-to-face and collaborate without missing a thing.
+<br>
+<br>
+Lifesize produces HD communications with better quality at any bandwidth accessible for knowledge workers and project teams. Now you can be sure that concepts or ideas are well received by other team members, managers or collaboration partners.</p>
+<ul class="a-vertical a-spacing-none">
+<li>High definition video communications (1280 x 720 resolution, 30 frames per second)</li>
+<li>Support for video bandwidth from 128Kbps up to 2.5 Mbps</li>
+<li>Supports a single monitor display</li>
+<li>Integrated super wide-band speakerphone to hear everyone in the room</li>
+<li>Standards-based support for H.264, H.263 and H.239</li>
+<li>Embedded 4-way multipoint with continuous presence</li>
+<li>Simple user interface</li>
+<li>Dual-stream support for sharing PC content and multimedia content</li>
+<li>Complete management with LifeSize Control™ software including Microsoft Outlook™ scheduling</li>
+<li>IP to ISDN and V.35 connectivity with LifeSize Networker™ enhanced gateway</li>
+
+</ul>
+'''
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  featuredDescription = "<span class=\"uir-field inputreadonly\">Lifesize Team 220 10x Dual Micpod HD Video Conferencing System</span>"
+  urlComponent = "Polycom-Team-220-10x-Dual-Micpod-HD-Video-Conferencing-System"
+  itemId = "Lifesize Team 220 10x Dual Micpod HD Video Conferencing Sys"
+  displayName = "Lifesize Team 220 10x Dual Micpod HD Video Conferencing Sys"
+  isOnline = true
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 14999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 14999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 14999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 14999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 14999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 14999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 11999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 11999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 11999
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  siteCategoryList = {
+    siteCategory = [
+      {
+        website = netsuite.RecordRef.instance.InventoryItem_website_4
+        category = netsuite.RecordRef.instance.InventoryItem_category_2074
+        isDefault = false
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnHand = 50
+        onHandValueMli = 749950
+        averageCostMli = 14999
+        lastPurchasePriceMli = 14999
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "05 UK Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.05_UK_Warehouse@s
+      },
+      {
+        location = "06 Australia Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.06_Australia_Warehouse@s
+      },
+      {
+        location = "07 Japan/日本 Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.07_Japan____Warehouse@sd_26085_26412s
+      },
+      {
+        location = "08 Denmark Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.08_Denmark_Warehouse@s
+      },
+      {
+        location = "09 Germany/Deutsch Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.09_Germany_Deutsch_Warehouse@sds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+      {
+        location = "Australian Warehouse"
+        quantityOnHand = 50
+        onHandValueMli = 714532.34
+        averageCostMli = 14290.6468
+        lastPurchasePriceMli = 14290.6468
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.Australian_Warehouse@s
+      },
+      {
+        location = "Frankfurt Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Frankfurt_Warehouse@s
+      },
+      {
+        location = "London Warehouse"
+        quantityOnHand = 50
+        onHandValueMli = 599950
+        averageCostMli = 11999
+        lastPurchasePriceMli = 11999
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.London_Warehouse@s
+      },
+      {
+        location = "Manila Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Manila_Warehouse@s
+      },
+      {
+        location = "Singapore Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Singapore_Warehouse@s
+      },
+    ]
+  }
+  identifier = "Lifesize Team 220 10x Dual Micpod HD Video Conferencing Sys"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Lifesize Team 220 10x Dual Micpod HD Video Conferencing Sys Lifesize Team 220  HD Video Conferencing System <span class=\"uir-field inputreadonly\">Lifesize Team 220 &nbsp;HD Video Conferencing System</span> null"
+  custom_custitem_wd_img_gallery_carousel_html = "<div class=\"item active easyzoom easyzoom--overlay\" data-slide-number=\"0\"><a href=\"/core/media/media.nl?id=12100&c=TSTDRV1373481&h=f535f2e0d71dd618e441\"><img src=\"/core/media/media.nl?id=12100&c=TSTDRV1373481&h=f535f2e0d71dd618e441\" class=\"img-responsive\"></a></div>"
+  custom_custitem_wd_img_gallery_slider_html = "<div class=\"col-xs-2 thumbnail\"><a id=\"carousel-selector-0\" class=\"selected\"><img src=\"/core/media/media.nl?id=12101&c=TSTDRV1373481&h=20c1c4d8976ef0241a51\"></a></div>"
+  custom_custitem_wd_process_items = true
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

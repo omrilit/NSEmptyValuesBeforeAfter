@@ -1,0 +1,268 @@
+netsuite.ServiceSaleItem Subscription_Two_year_subscription@uss {
+  salesDescription = "Two year license subscription"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Software_License_Subscription_4003@uusdu
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  billingSchedule = {
+    name = "25% Down, Quarterly - 2 Years"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferredRevenueAccount = netsuite.Account.instance.Deferred__Income_2100_License_Software_2102@ssuubu
+  enforceMinQtyInternally = true
+  overallQuantityPricingType = "_byLineQuantity"
+  isFulfillable = false
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  createJob = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Two year subscription"
+  displayName = "Two year subscription"
+  parent = netsuite.ServiceSaleItem.instance.Subscription
+  isOnline = true
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  department = netsuite.Department.instance.Customer_Support@s
+  class = netsuite.Classification.instance.06_Support@b
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 7211.71
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Danish_Krone@s
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 7211.71
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 2053.98
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Singapore_Dollar@s
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 2053.98
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 160503.16
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 160503.16
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 1944
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 1944
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 1527.45
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 1527.45
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 967.362
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 967.362
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 1495
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 1495
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 972
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 972
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Subscription_Two year subscription"
+  custom_custitem9 = false
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Two year subscription null null null"
+  custom_custitem_wd_process_items = true
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

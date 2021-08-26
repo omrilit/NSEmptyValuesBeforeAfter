@@ -1,0 +1,27 @@
+netsuite.Location Australian_Warehouse@s {
+  name = "Australian Warehouse"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_ANZ_Australia@buu,
+  ]
+  isInactive = false
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Australian Warehouse"
+}

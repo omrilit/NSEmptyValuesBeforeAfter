@@ -1,0 +1,26 @@
+netsuite.clientscript customscript_fmt_set_admin_role {
+  scriptid = "customscript_fmt_set_admin_role"
+  isinactive = false
+  name = "Set Administrator Role"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  saverecordfunction = "setAdminAccess_SaveRecord"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_87480_setAdminAccess_CS_js@dsduv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_fmt_set_admin_role"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = "EMPLOYEE"
+        status = "RELEASED"
+      },
+    ]
+  }
+}

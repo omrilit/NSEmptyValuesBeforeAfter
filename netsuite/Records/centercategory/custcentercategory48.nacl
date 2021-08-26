@@ -1,0 +1,38 @@
+netsuite.centercategory custcentercategory48 {
+  scriptid = "custcentercategory48"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab40.scriptid
+  label = "Users/Roles"
+  links = {
+    link = [
+      {
+        linkid = "LIST_EMPLOYEE_RECORD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_DEPARTMENT"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CLASS"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_USER"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_ROLE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_DIFFROLE"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_LOGINAUDIT"
+        shortlist = false
+      },
+    ]
+  }
+}

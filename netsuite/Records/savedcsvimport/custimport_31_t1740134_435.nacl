@@ -1,0 +1,138 @@
+netsuite.savedcsvimport custimport_31_t1740134_435 {
+  scriptid = "custimport_31_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "Intercompany JE"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "INTERCOMPANYJOURNALENTRY"
+  runserversuitescript = false
+  transactionform = "STANDARDJOURNALENTRY"
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "INTERCOMPANYJOURNALENTRY"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "INTERCOMPANYJOURNALENTRY"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "CURRENCY"
+              columnreference = {
+                column = "currency"
+                file = "INTERCOMPANYJOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EXCHANGERATE"
+              columnreference = {
+                column = "exchange rate"
+                file = "INTERCOMPANYJOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EXTERNALID"
+              columnreference = {
+                column = "external id"
+                file = "INTERCOMPANYJOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SUBSIDIARY"
+              columnreference = {
+                column = "subsidiary"
+                file = "INTERCOMPANYJOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TOSUBSIDIARY"
+              columnreference = {
+                column = "to subsidiary"
+                file = "INTERCOMPANYJOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TRANDATE"
+              columnreference = {
+                column = "date"
+                file = "INTERCOMPANYJOURNALENTRY"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        record = "INTERCOMPANYJOURNALENTRY:LINE"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ACCOUNT"
+              columnreference = {
+                column = "account"
+                file = "INTERCOMPANYJOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CREDIT"
+              columnreference = {
+                column = "credit"
+                file = "INTERCOMPANYJOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "DEBIT"
+              columnreference = {
+                column = "debit"
+                file = "INTERCOMPANYJOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ENTITY"
+              columnreference = {
+                column = "name"
+                file = "INTERCOMPANYJOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "LINESUBSIDIARY"
+              columnreference = {
+                column = "line subsidiary"
+                file = "INTERCOMPANYJOURNALENTRY"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

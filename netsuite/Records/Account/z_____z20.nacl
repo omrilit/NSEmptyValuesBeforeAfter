@@ -1,0 +1,21 @@
+netsuite.Account z_____z20@_25903_25173_25163_24418u {
+  acctType = "_accountsPayable"
+  acctNumber = "z20"
+  acctName = "z支払手形"
+  includeChildren = false
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = true
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = true
+  identifier = "z支払手形_z20"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

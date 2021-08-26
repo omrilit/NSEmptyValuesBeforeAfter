@@ -1,0 +1,18 @@
+netsuite.Account Inventory_transfers_1416@su {
+  acctType = "_otherCurrentAsset"
+  acctNumber = "1416"
+  acctName = "Inventory transfers"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = true
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Inventory transfers_1416"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

@@ -1,0 +1,30 @@
+netsuite.PaymentItem payment123 {
+  includeChildren = true
+  account = netsuite.Account.instance.Undeposited_Funds_1090@su
+  itemId = "payment123"
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+netsuite.Department Operations {
+  name = "Operations"
+  includeChildren = true
+  isInactive = false
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  identifier = "Operations"
+}

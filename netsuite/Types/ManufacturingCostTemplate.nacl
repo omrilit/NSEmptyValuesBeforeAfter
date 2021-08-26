@@ -1,0 +1,26 @@
+type netsuite.ManufacturingCostTemplate {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  serviceid name {
+  }
+  string memo {
+  }
+  boolean isInactive {
+  }
+  netsuite.ManufacturingCostDetailList costDetailList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

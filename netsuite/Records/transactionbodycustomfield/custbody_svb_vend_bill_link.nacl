@@ -1,0 +1,56 @@
+netsuite.transactionbodycustomfield custbody_svb_vend_bill_link {
+  scriptid = "custbody_svb_vend_bill_link"
+  accesslevel = "2"
+  applyformatting = false
+  bodybtegata = false
+  bodycustomerpayment = false
+  bodydeposit = false
+  bodydepositapplication = false
+  bodyexpensereport = false
+  bodyinventoryadjustment = false
+  bodyitemfulfillment = false
+  bodyitemfulfillmentorder = false
+  bodyitemreceipt = false
+  bodyitemreceiptorder = false
+  bodyjournal = true
+  bodyopportunity = false
+  bodyothertransaction = false
+  bodypaycheck = false
+  bodypickingticket = false
+  bodyprintflag = false
+  bodyprintpackingslip = false
+  bodyprintstatement = false
+  bodypurchase = false
+  bodysale = false
+  bodystore = false
+  bodytransferorder = false
+  bodyvendorpayment = false
+  checkspelling = false
+  defaultchecked = false
+  displaytype = "STATICTEXT"
+  encryptatrest = false
+  fieldtype = "SELECT"
+  globalsearch = false
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "Allocation - Vendor Bill Link"
+  onparentdelete = "SET_NULL"
+  searchlevel = "2"
+  selectrecordtype = "-30"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  subtab = "TRANSACTIONMAIN"
+  customfieldfilters = {
+    customfieldfilter = [
+      {
+        fldfilter = "STDBODYTRANTYPE"
+        fldfiltercomparetype = "EQ"
+        fldfilternotnull = false
+        fldfilternull = false
+        fldfiltersel = "VENDORBILL"
+      },
+    ]
+  }
+}

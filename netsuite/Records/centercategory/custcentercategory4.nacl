@@ -1,0 +1,15 @@
+netsuite.centercategory custcentercategory4 {
+  scriptid = "custcentercategory4"
+  center = netsuite.center.instance.custcenter2.scriptid
+  centertab = netsuite.centertab.instance.custcentertab14.scriptid
+  label = "Customers"
+  links = {
+    link = [
+      {
+        linkobject = netsuite.customrecordtype.instance.customrecord31.scriptid
+        linktasktype = "LIST"
+        shortlist = false
+      },
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+netsuite.Location "03_Other@s" {
+  name = "03 Other"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_HEADQUARTERS@bu,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "03 Other"
+    addrText = "03 Other<br>United States"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "03 Other"
+}

@@ -1,0 +1,20 @@
+netsuite.Account Operating_Account___US_1_1000@ssbssu {
+  acctType = "_bank"
+  acctNumber = "1000"
+  acctName = "Operating Account - US 1"
+  includeChildren = false
+  currency = netsuite.Currency.instance.USD
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  curDocNum = 51
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+  ]
+  revalue = true
+  identifier = "Operating Account - US 1_1000"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

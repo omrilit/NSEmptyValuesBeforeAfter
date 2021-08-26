@@ -1,0 +1,64 @@
+netsuite.Subsidiary UK_HQ_EMEA_United_Kingdom@buus {
+  name = "United Kingdom"
+  parent = netsuite.Subsidiary.instance.UK_HQ_EMEA@bu
+  isInactive = false
+  showSubsidiaryName = false
+  logo = netsuite.RecordRef.instance.Subsidiary_logo_2114
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  country = "_unitedKingdom"
+  mainAddress = {
+    country = "_unitedKingdom"
+    addressee = "United Kingdom"
+    addrText = "UK<br>United Kingdom (GB)"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.GBP
+  edition = "UK"
+  federalIdNumber = "GB"
+  interCoAccount = {
+    name = "1804 Intercompany Clearing Account : Intercompany Payable/Receivable GBP"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedKingdom
+        country = "GB"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard 10(3)L Voucher Cheque Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_EMEA_United Kingdom"
+  custom_custrecord_subnav_subsidiary_logo = {
+    name = "dilley services logo small.jpg"
+    internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+}

@@ -1,0 +1,39 @@
+type netsuite.ManufacturingRouting {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  netsuite.RecordRef billOfMaterials {
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.RecordRef item {
+  }
+  "List<netsuite.Location>" locationList {
+    isReference = true
+  }
+  string name {
+  }
+  string memo {
+  }
+  boolean isDefault {
+  }
+  boolean isInactive {
+  }
+  boolean autoCalculateLag {
+  }
+  netsuite.ManufacturingRoutingRoutingStepList routingStepList {
+  }
+  netsuite.ManufacturingRoutingRoutingComponentList routingComponentList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

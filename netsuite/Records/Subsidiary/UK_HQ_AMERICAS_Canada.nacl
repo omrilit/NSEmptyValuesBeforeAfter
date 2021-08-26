@@ -1,0 +1,64 @@
+netsuite.Subsidiary UK_HQ_AMERICAS_Canada@buu {
+  name = "Canada"
+  parent = netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu
+  isInactive = false
+  showSubsidiaryName = false
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  state = "ON"
+  country = "_canada"
+  mainAddress = {
+    country = "_canada"
+    addressee = "Canada"
+    state = "ON"
+    addrText = "Canada<br>ON <br>Canada"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.CAD
+  edition = "CA"
+  interCoAccount = {
+    name = "1801 Intercompany Clearing Account : Intercompany Payable/Receivable CAD"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedKingdom
+        country = "GB"
+      },
+      {
+        nexusId = netsuite.Nexus.instance._canada_Ontario
+        country = "CA"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Cheque Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_AMERICAS_Canada"
+}

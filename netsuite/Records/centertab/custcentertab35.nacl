@@ -1,0 +1,68 @@
+netsuite.centertab custcentertab35 {
+  scriptid = "custcentertab35"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter4.scriptid
+  label = "Support"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_296_t1499227_189"
+        isportletshown = true
+        portlet = "ACCOUNTCENTER"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_293_t1499227_189"
+        isportletshown = true
+        portlet = "USERGROUP"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_289_t1499227_189"
+        isportletshown = true
+        portlet = "FOLLOWNETSUITE"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_301_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_309_t1499227_189"
+        isportletshown = true
+        portlet = "SETTINGS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_306_t1499227_189"
+        isportletshown = true
+        portlet = "NEWFEATURES"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_300_t1499227_189"
+        isportletshown = true
+        portlet = "SUITEANSWERS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_297_t1499227_189"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_308_t1499227_189"
+        isportletshown = false
+        portlet = "SHORTCUTS"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+netsuite.centertab custcentertab40 {
+  scriptid = "custcentertab40"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = false
+  allvendors = false
+  center = netsuite.center.instance.custcenter4.scriptid
+  label = "Setup"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_401_t1499227_189"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_397_t1499227_189"
+        isportletshown = false
+        portlet = "SHORTCUTS"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

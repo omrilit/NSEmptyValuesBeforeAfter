@@ -1,0 +1,175 @@
+netsuite.publisheddashboard custpubdashboard_12_t1740134_860 {
+  scriptid = "custpubdashboard_12_t1740134_860"
+  center = "ACCOUNTCENTER"
+  locknewbar = false
+  lockshortcuts = false
+  name = "5. Controller"
+  notes = "Publish Home & Statistical Analysis Tabs"
+  roles = {
+    role = [
+      {
+        role = netsuite.role.instance.customrole1101.scriptid
+      },
+    ]
+  }
+  dashboards = {
+    dashboard = [
+      {
+        centertab = netsuite.centertab.instance.custcentertab27.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          kpireport = [
+            {
+              isminimized = false
+              orientation = "KPIs on Left"
+              reportid = "FINANCIALRATIOS"
+              restrict = "All"
+              showdates = true
+              trend = true
+            },
+            {
+              isminimized = false
+              orientation = "KPIs on Left"
+              reportid = netsuite.kpiscorecard.instance.kpiscorecard_12_t1740134_426.scriptid
+              restrict = "All"
+              showdates = true
+              trend = false
+            },
+            {
+              isminimized = false
+              orientation = "KPIs on Left"
+              reportid = netsuite.kpiscorecard.instance.kpiscorecard_10_t1740134_426.scriptid
+              restrict = "All"
+              showdates = true
+              trend = true
+            },
+          ]
+        }
+      },
+      {
+        centertab = "BASICCENTERHOMEHOME"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          keyperformanceindicators = [
+            {
+              cacheddata = false
+              isminimized = false
+              kpis = {
+                kpi = [
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    highlightif = "ALWAYS"
+                    kpi = "INCOME"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "TODAY"
+                    headline = false
+                    kpi = "BANKBAL"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "SALES"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    highlightif = "ALWAYS"
+                    kpi = "EXPENSES"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "PROFIT"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "CUSTOM"
+                    savedsearch = netsuite.savedsearch.instance.customsearch_chargebillingforecast.scriptid
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "TODAY"
+                    headline = false
+                    highlightif = "ALWAYS"
+                    kpi = "RECEIVABLES"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "TODAY"
+                    headline = false
+                    highlightif = "ALWAYS"
+                    kpi = "PAYABLES"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "OPERATINGEXPENSES"
+                    periodrange = "THIS_PERIOD"
+                  },
+                ]
+              }
+            },
+          ]
+          customportlet = [
+            {
+              isminimized = false
+              source = netsuite.portlet.instance.customscript_navigation_portlet_3_pt.scriptdeployments.scriptdeployment.0.scriptid
+              parameters = {
+                parameter = [
+                  {
+                    id = netsuite.portlet.instance.customscript_navigation_portlet_3_pt.scriptcustomfields.scriptcustomfield.0.scriptid
+                    value = netsuite.customlist.instance.customlist_nav_portlet_list.customvalues.customvalue.14.scriptid
+                  },
+                  {
+                    id = netsuite.portlet.instance.customscript_navigation_portlet_3_pt.scriptcustomfields.scriptcustomfield.1.scriptid
+                    value = netsuite.customlist.instance.customlist_nav_portlet_column.customvalues.customvalue.1.scriptid
+                  },
+                ]
+              }
+            },
+            {
+              isminimized = false
+              source = "[scriptid=customscript_snav_portlet.customdeploy_snav_portlet]"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

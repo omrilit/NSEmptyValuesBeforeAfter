@@ -1,0 +1,147 @@
+netsuite.customrecordtype customrecord_nav_por_shortcuts {
+  scriptid = "customrecord_nav_por_shortcuts"
+  accesstype = "CUSTRECORDENTRYPERM"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = true
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = true
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = false
+  isinactive = false
+  isordered = false
+  recordname = "-Navigation Portlet Shortcuts"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = false
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_nav_por_sho_nav_por_cat"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = true
+        isparent = true
+        label = "Navigation Portlet Categories"
+        onparentdelete = "NO_ACTION"
+        parentsubtab = netsuite.customrecordtype.instance.customrecord_nav_por_categories.subtabs.subtab.0.scriptid
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customrecordtype.instance.customrecord_nav_por_categories.scriptid
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nav_por_sho_shortcut_name"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Shortcut Name"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_nav_shortcut_name.scriptid
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nav_por_sho_dis_ord"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Display Order"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nav_por_sho_link"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "URL"
+        globalsearch = false
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Link"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nav_por_sho_alt_text"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Alt. Text"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_nav_shortcut_alt_txt.scriptid
+        showinlist = true
+        storevalue = true
+      },
+    ]
+  }
+}

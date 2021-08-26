@@ -1,0 +1,116 @@
+netsuite.scheduledscript customscript_svb_bill_main_schedule {
+  scriptid = "customscript_svb_bill_main_schedule"
+  defaultfunction = "scheduled_SharedVendorBill_Main"
+  isinactive = false
+  name = "NSTS - SVB | Bill Main Script - Schedule"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_SS_Main_js@dsduuuv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_svb_opt_type"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        help = "This is the operation (create, edit, delete, approve) that is passed by the user event script when this schedule script is being called."
+        isformula = false
+        ismandatory = false
+        label = "Operation Type"
+        searchlevel = "2"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_svb_internal_id"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        help = "This parameter is the internal id of the vendor bill who trigger the scheduled script"
+        isformula = false
+        ismandatory = false
+        label = "Vendor Bill Internal ID"
+        searchlevel = "2"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_svb_is_changed"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        help = '''
+This field will be flag by either true or false.
+
+If true, it indicates that there are fields in the current vendor bill that has been changed that will trigger allocation
+else if otherwise
+'''
+        isformula = false
+        ismandatory = false
+        label = "Has Field Changes"
+        searchlevel = "2"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_svb_prev_status"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        help = "This parameter indicates the old record status of the vendor bill."
+        isformula = false
+        ismandatory = false
+        label = "Previous Vendor Bill Status"
+        searchlevel = "2"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_svb_alloc_je_on_vb"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        isformula = false
+        ismandatory = false
+        label = "Allocation Journal Entry"
+        searchlevel = "2"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_svb_bill_main_schedule"
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "NOTSCHEDULED"
+        title = "NSTS - SVB | Bill Main Script - Schedule"
+        recurrence = {
+          single = {
+            startdate = "2014-11-21"
+            starttime = "02:00:00Z"
+          }
+        }
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_Common_js@dsduuv.path
+      },
+    ]
+  }
+}

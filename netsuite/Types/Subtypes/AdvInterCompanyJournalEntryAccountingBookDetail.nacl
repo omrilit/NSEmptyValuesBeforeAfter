@@ -1,0 +1,16 @@
+type netsuite.AdvInterCompanyJournalEntryAccountingBookDetail {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef accountingBook {
+  }
+  netsuite.Currency currency {
+    isReference = true
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  number exchangeRate {
+  }
+}

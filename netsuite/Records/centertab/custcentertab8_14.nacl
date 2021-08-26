@@ -1,0 +1,32 @@
+netsuite.centertab custcentertab8_14 {
+  scriptid = "custcentertab8_14"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = "BASIC"
+  label = "Fixed Assets"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_18_4533910_377"
+        isportletshown = true
+        portlet = "SHORTCUTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_17_4533910_377"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_12_4533910_377"
+        isportletshown = true
+        portlet = "LIST"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

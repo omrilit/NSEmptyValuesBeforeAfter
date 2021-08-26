@@ -1,0 +1,28 @@
+netsuite.usereventscript customscript_ie_configloader_ue {
+  scriptid = "customscript_ie_configloader_ue"
+  aftersubmitfunction = "checkOriginAfterSubmit"
+  beforeloadfunction = "setOriginBeforeLoad"
+  isinactive = false
+  name = "= DT Configuration Loader UE"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_34544_DashboardTileLoad_UE_js@dsduv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_ie_dashboard_tile_ue"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = true
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.scriptid
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+      },
+    ]
+  }
+}

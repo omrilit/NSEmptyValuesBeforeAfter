@@ -1,0 +1,36 @@
+netsuite.Account Deferred_Expense_1354@su {
+  acctType = "_deferredExpense"
+  acctNumber = "1354"
+  acctName = "Deferred Expense"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "Deferred Expense_1354"
+  externalId = "1127"
+  custom_custrecord_fam_account_showinfixedasset = [
+    {
+      name = "Depreciation Expense"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Write Off Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Write Down Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+  ]
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

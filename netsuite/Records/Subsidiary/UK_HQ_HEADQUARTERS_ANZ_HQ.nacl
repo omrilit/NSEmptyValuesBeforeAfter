@@ -1,0 +1,59 @@
+netsuite.Subsidiary UK_HQ_HEADQUARTERS_ANZ_HQ@buub {
+  name = "ANZ-HQ"
+  parent = netsuite.Subsidiary.instance.UK_HQ_HEADQUARTERS@bu
+  isInactive = true
+  showSubsidiaryName = false
+  state = "NSW"
+  country = "_australia"
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "ANZ-HQ"
+    addrText = "ANZ-HQ<br>United States"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "JulyJuneFiscalCalendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "JulyJuneFiscalCalendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  email = "jlunsford10@netsuite.com"
+  currency = netsuite.Currency.instance.AUD
+  edition = "AU"
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedKingdom
+        country = "GB"
+      },
+      {
+        nexusId = netsuite.Nexus.instance._australia
+        country = "AU"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Cheque Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_HEADQUARTERS_ANZ-HQ"
+}

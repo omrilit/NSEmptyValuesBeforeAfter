@@ -1,0 +1,32 @@
+netsuite.centertab custcentertab14 {
+  scriptid = "custcentertab14"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter2.scriptid
+  label = "Release Management"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_61_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_62_t1499227_189"
+        isportletshown = true
+        portlet = "SHORTCUTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_60_t1499227_189"
+        isportletshown = true
+        portlet = "SNAPSHOTS"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

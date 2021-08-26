@@ -1,0 +1,279 @@
+netsuite.InventoryItem Apple_Ipad@s {
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Hardware_4006
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_transfers_1416@su
+  matchBillToReceipt = false
+  costingMethodDisplay = "Average"
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeSopGroup = "_normal"
+  vsoeDelivered = false
+  totalValue = 14136.13
+  averageCost = 53.95
+  useBins = false
+  autoLeadTime = true
+  lastPurchasePrice = 751.12
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  autoReorderPoint = true
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Apple Ipad"
+  displayName = "Apple Ipad"
+  isOnline = false
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  currency = "2"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 650
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 650
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 500
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 500
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 325
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 325
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnHand = 90
+        onHandValueMli = 12352.94
+        averageCostMli = 137.25488889
+        lastPurchasePriceMli = 1000
+        reorderPoint = 10
+        quantityOnOrder = 0
+        quantityCommitted = 0
+        quantityAvailable = 90
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        quantityOnHand = 151
+        onHandValueMli = 17764.7
+        averageCostMli = 117.64701987
+        quantityCommitted = 0
+        quantityAvailable = 151
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        quantityOnHand = -130
+        onHandValueMli = -15294.11
+        averageCostMli = 117.647
+        quantityCommitted = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityOnHand = 150
+        onHandValueMli = 2076.12
+        averageCostMli = 13.8408
+        lastPurchasePriceMli = 117.647
+        reorderPoint = 10
+        quantityCommitted = 0
+        quantityAvailable = 150
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "05 UK Warehouse"
+        quantityOnHand = 1
+        onHandValueMli = 325
+        averageCostMli = 325
+        quantityAvailable = 1
+        locationId = netsuite.Location.instance.05_UK_Warehouse@s
+      },
+      {
+        location = "06 Australia Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.06_Australia_Warehouse@s
+      },
+      {
+        location = "07 Japan/日本 Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.07_Japan____Warehouse@sd_26085_26412s
+      },
+      {
+        location = "08 Denmark Warehouse"
+        quantityOnHand = -2
+        onHandValueMli = -1000
+        averageCostMli = 500
+        quantityCommitted = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.08_Denmark_Warehouse@s
+      },
+      {
+        location = "09 Germany/Deutsch Warehouse"
+        quantityOnHand = 2
+        onHandValueMli = 1000
+        averageCostMli = 500
+        quantityCommitted = 0
+        quantityAvailable = 2
+        locationId = netsuite.Location.instance.09_Germany_Deutsch_Warehouse@sds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+      {
+        location = "Australian Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Australian_Warehouse@s
+      },
+      {
+        location = "Frankfurt Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Frankfurt_Warehouse@s
+      },
+      {
+        location = "London Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.London_Warehouse@s
+      },
+      {
+        location = "Manila Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Manila_Warehouse@s
+      },
+      {
+        location = "Singapore Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Singapore_Warehouse@s
+      },
+    ]
+  }
+  identifier = "Apple Ipad"
+  custom_custitem_commodity_code = "98765432"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Apple Ipad"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

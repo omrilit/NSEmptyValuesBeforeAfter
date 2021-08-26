@@ -1,0 +1,77 @@
+type netsuite.PurchaseRequisition {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  string source {
+  }
+  number subTotal {
+  }
+  string currencyName {
+  }
+  number exchangeRate {
+  }
+  string vatRegNum {
+  }
+  netsuite.Nexus nexus {
+    isReference = true
+  }
+  netsuite.RecordRef taxRegNum {
+  }
+  boolean taxRegOverride {
+  }
+  number estimatedTotal {
+  }
+  string status {
+  }
+  netsuite.Currency currency {
+    isReference = true
+  }
+  netsuite.RecordRef entity {
+  }
+  string dueDate {
+  }
+  string tranDate {
+  }
+  string tranId {
+  }
+  string memo {
+  }
+  netsuite.RecordRef approvalStatus {
+  }
+  netsuite.RecordRef nextApprover {
+  }
+  number taxTotal {
+  }
+  number tax2Total {
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+  number total {
+  }
+  netsuite.PurchaseRequisitionItemList itemList {
+  }
+  netsuite.PurchaseRequisitionExpenseList expenseList {
+  }
+  netsuite.AccountingBookDetailList accountingBookDetailList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

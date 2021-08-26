@@ -1,0 +1,137 @@
+netsuite.portlet customscript_ie_dashboard_tiles_pl {
+  scriptid = "customscript_ie_dashboard_tiles_pl"
+  defaultfunction = "dashboardTilesPortlet"
+  isinactive = false
+  name = "= Dashboard Tiles PL"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  portlettype = "HTML"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_34544_DashboardTiles_PL_js@dsduv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_ie_div_id"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "div__title"
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        isformula = false
+        ismandatory = false
+        label = "Tiles Container ID"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_ie_auto_refresh"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = true
+        displaytype = "NORMAL"
+        fieldtype = "CHECKBOX"
+        isformula = false
+        ismandatory = false
+        label = "Auto Refresh"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_ie_portlet_identifier"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "1200"
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        isformula = false
+        ismandatory = false
+        label = "Portlet Identifier"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_ie_refresh_interval"
+        accesslevel = "2"
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "20000"
+        displaytype = "NORMAL"
+        fieldtype = "FLOAT"
+        isformula = false
+        ismandatory = false
+        label = "Refresh Interval (ms)"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_ie_blink_delay"
+        accesslevel = "2"
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "FLOAT"
+        isformula = false
+        ismandatory = false
+        label = "Blink Delay"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_ie_number_font_size"
+        accesslevel = "2"
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "INTEGER"
+        isformula = false
+        ismandatory = false
+        label = "Tile Number Font Size"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_ie_detail_line_font_size"
+        accesslevel = "2"
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "INTEGER"
+        isformula = false
+        ismandatory = false
+        label = "Tile Detail Line Font Size"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_ie_dashboard_tiles"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "RELEASED"
+        title = "= Dashboard Tiles Portlet"
+      },
+    ]
+  }
+}

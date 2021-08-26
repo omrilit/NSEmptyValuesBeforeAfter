@@ -1,0 +1,91 @@
+netsuite.ServiceSaleItem Subscription___DNU_One_Year_Subscription___DNU@sbsusssbs {
+  salesDescription = "Online Business Application <br>(1) User"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Software_License_Subscription_4003@uusdu
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  billingSchedule = {
+    name = "Quarterly -- 1 Year"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferredRevenueAccount = netsuite.Account.instance.Deferred__Income_2100_License_Software_2102@ssuubu
+  enforceMinQtyInternally = true
+  overallQuantityPricingType = "_byLineQuantity"
+  isFulfillable = true
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  createJob = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "One Year Subscription - DNU"
+  parent = netsuite.ServiceSaleItem.instance.Subscription___DNU@sbs
+  isOnline = true
+  offerSupport = false
+  isInactive = true
+  availableToPartners = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 895
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Subscription - DNU_One Year Subscription - DNU"
+  custom_custitem9 = false
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

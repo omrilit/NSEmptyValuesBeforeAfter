@@ -1,0 +1,167 @@
+netsuite.usereventscript customscript_oa_set_export_to_openair {
+  scriptid = "customscript_oa_set_export_to_openair"
+  beforeloadfunction = "setExportToOpenAirOnNew"
+  isinactive = false
+  name = "OpenAir: Set 'Export to OpenAir' Flags"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_2851_oa_export_to_openair_flags_js@dsduuuuv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_oa_export_customer"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        displaywidth = 40
+        fieldtype = "CHECKBOX"
+        help = "Check this box to select new customers you create for export to OpenAir by default. Existing records do not change. You can change the setting on individual records."
+        isformula = false
+        ismandatory = false
+        label = "Export Customers by Default"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_oa_export_job"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        displaywidth = 40
+        fieldtype = "CHECKBOX"
+        help = "Check this box to select new projects you create for export to OpenAir by default. Existing records do not change. You can change the setting on individual records."
+        isformula = false
+        ismandatory = false
+        label = "Export Projects by Default"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_oa_export_employee"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        displaywidth = 40
+        fieldtype = "CHECKBOX"
+        help = "Check this box to select new employees you create for export to OpenAir by default. Existing records do not change. You can change the setting on individual records."
+        isformula = false
+        ismandatory = false
+        label = "Export Employees by Default"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_oa_export_vendor"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        displaywidth = 40
+        fieldtype = "CHECKBOX"
+        help = "Check this box to select new vendors you create for export to OpenAir by default. Existing records do not change. You can change the setting on individual records."
+        isformula = false
+        ismandatory = false
+        label = "Export Vendors by Default"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_oa_export_serviceitem"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "CHECKBOX"
+        help = "Check this box to select new service items you create for export to OpenAir by default. Existing records do not change. You can change the setting on individual records."
+        isformula = false
+        ismandatory = false
+        label = "Export Service Items by Default"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_customer"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = false
+        eventtype = "CREATE"
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "ERROR"
+        recordtype = "CUSTOMER"
+        status = "RELEASED"
+      },
+      {
+        scriptid = "customdeploy_employee"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = false
+        eventtype = "CREATE"
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "ERROR"
+        recordtype = "EMPLOYEE"
+        status = "RELEASED"
+      },
+      {
+        scriptid = "customdeploy_project"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = false
+        eventtype = "CREATE"
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "ERROR"
+        recordtype = "JOB"
+        status = "RELEASED"
+      },
+      {
+        scriptid = "customdeploy_serviceitem"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = false
+        eventtype = "CREATE"
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "ERROR"
+        recordtype = "SERVICEITEM"
+        status = "RELEASED"
+      },
+      {
+        scriptid = "customdeploy_vendor"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = false
+        eventtype = "CREATE"
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "ERROR"
+        recordtype = "VENDOR"
+        status = "RELEASED"
+      },
+    ]
+  }
+}

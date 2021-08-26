@@ -1,0 +1,47 @@
+netsuite.ItemGroup Package__License___Support@fsses {
+  includeStartEndLines = true
+  availableToPartners = true
+  isInactive = true
+  itemId = "Package: License & Support"
+  description = "License -- 1 yr.<br>Maintenance<br>Gold Support"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  includeChildren = true
+  printItems = true
+  memberList = {
+    itemMember = [
+      {
+        memberDescr = "Annual License for (1) User"
+        quantity = 1
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_2
+        item = netsuite.RecordRef.instance.ItemGroup_item_32
+        lineNumber = 1
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Package: License & Support"
+  externalId = "item35"
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

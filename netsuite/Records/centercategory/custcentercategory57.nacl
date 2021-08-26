@@ -1,0 +1,24 @@
+netsuite.centercategory custcentercategory57 {
+  scriptid = "custcentercategory57"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab42.scriptid
+  label = "Tools"
+  links = {
+    link = [
+      {
+        linkid = "LIST_ITEM"
+        shortlist = false
+      },
+      {
+        linkobject = netsuite.centerlink.instance.custlink_5_t1740134_248.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_PRINT_PRICELIST"
+        linklabel = "Generate Price Lists (Manage Price Books)"
+        shortlist = false
+      },
+    ]
+  }
+}

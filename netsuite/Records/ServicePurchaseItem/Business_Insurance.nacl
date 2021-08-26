@@ -1,0 +1,64 @@
+netsuite.ServicePurchaseItem Business_Insurance@s {
+  includeChildren = true
+  expenseAccount = netsuite.Account.instance.General_and_Administrative_6000_Other_Expense_6800_Miscellaneous_Expense_6890@ssuusuusu
+  itemId = "Business Insurance"
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  isFulfillable = false
+  generateAccruals = false
+  currency = "1"
+  itemVendorList = {
+    itemVendor = [
+      {
+        vendor = netsuite.Vendor.instance.ServicePurchaseItem_vendor_102
+        purchasePrice = 1000
+        preferredVendor = false
+        subsidiary = netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs
+      },
+      {
+        vendor = netsuite.Vendor.instance.ServicePurchaseItem_vendor_102
+        purchasePrice = 1000
+        preferredVendor = false
+        subsidiary = netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Business Insurance"
+  custom_custitem9 = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

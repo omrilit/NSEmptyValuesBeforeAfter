@@ -1,0 +1,22 @@
+netsuite.centercategory custcentercategory8 {
+  scriptid = "custcentercategory8"
+  center = "ACCOUNTCENTER"
+  centertab = netsuite.centertab.instance.custcentertab8_13.scriptid
+  label = "Letters"
+  links = {
+    link = [
+      {
+        linklabel = "Email"
+        linkobject = netsuite.suitelet.instance.customscript_3805_su_dunning_queue_ss2.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "PDF"
+        linkobject = netsuite.suitelet.instance.customscript_3805_su_dunning_queue_ss2.scriptdeployments.scriptdeployment.1.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

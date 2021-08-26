@@ -1,0 +1,41 @@
+netsuite.Account Non_Operating_Expense_8000_Interest_Expense_8100@bsuusu {
+  acctType = "_otherExpense"
+  acctNumber = "8100"
+  acctName = "Interest Expense"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.Non_Operating_Expense_8000@bsu
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  revalue = false
+  identifier = "Non-Operating Expense_8000_Interest Expense_8100"
+  custom_custrecord_fam_account_showinfixedasset = [
+    {
+      name = "Depreciation Expense"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Write Off Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Write Down Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Disposal Cost Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+  ]
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

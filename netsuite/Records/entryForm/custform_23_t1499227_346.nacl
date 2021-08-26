@@ -1,0 +1,607 @@
+netsuite.entryForm custform_23_t1499227_346 {
+  scriptid = "custform_23_t1499227_346"
+  standard = "STANDARDCUSTOMRECORD_2663_ENTITY_BANK_DETAILSFORM"
+  name = "ACH - CCD/PPD"
+  recordType = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.scriptid
+  inactive = false
+  preferred = false
+  storedWithRecord = true
+  mainFields = {
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "CUSTOMFORM"
+              label = "Custom Form"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "NAME"
+              label = "Name"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "RECORDID"
+              label = "ID"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "OWNER"
+              label = "Owner"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "CREATED"
+              label = "Date Created"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "LASTMODIFIED"
+              label = "Last Modified"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "ISINACTIVE"
+              label = "Inactive"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.0.scriptid
+              label = "Type"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.1.scriptid
+              label = "Payment File Format"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.2.scriptid
+              label = "Bank Account Number"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.3.scriptid
+              label = "Bank Account Name"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.4.scriptid
+              label = "Routing Number"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.5.scriptid
+              label = "Bank Name"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.6.scriptid
+              label = "Branch Number"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.7.scriptid
+              label = "Branch Name"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.8.scriptid
+              label = "Bank Account Suffix"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.9.scriptid
+              label = "Account Type"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.10.scriptid
+              label = "Parent Vendor"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.11.scriptid
+              label = "Parent Employee"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.12.scriptid
+              label = "Parent Customer"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.13.scriptid
+              label = "Bank Account Payment Description"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.14.scriptid
+              label = "EDI"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.15.scriptid
+              label = "Customer Code"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.16.scriptid
+              label = "EDI Value"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.17.scriptid
+              label = "Child ID"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.18.scriptid
+              label = "Reference"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.19.scriptid
+              label = "Baby Bonus"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.20.scriptid
+              label = "IBAN"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.21.scriptid
+              label = "Country Code"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.22.scriptid
+              label = "IBAN Check Digits"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.23.scriptid
+              label = "Check Digit"
+              visible = true
+              mandatory = false
+              displayType = "DISABLED"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.24.scriptid
+              label = "ABA Institution Identifier"
+              visible = true
+              mandatory = false
+              displayType = "DISABLED"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.25.scriptid
+              label = "Federal Reserve Routing Symbol"
+              visible = true
+              mandatory = false
+              displayType = "DISABLED"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.27.scriptid
+              label = "Address1"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.28.scriptid
+              label = "Address2"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.29.scriptid
+              label = "Address3"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.30.scriptid
+              label = "City"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.31.scriptid
+              label = "State/Province"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.26.scriptid
+              label = "Swift code"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.32.scriptid
+              label = "Zip"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.33.scriptid
+              label = "Country"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.34.scriptid
+              label = "BBAN"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.36.scriptid
+              label = "BIC"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.35.scriptid
+              label = "Parent Customer - Refund"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.37.scriptid
+              label = "Bank Account Type"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.38.scriptid
+              label = "Issuer Number"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.39.scriptid
+              label = "Parent Partner"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.40.scriptid
+              label = "Billing Sequence Type"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.41.scriptid
+              label = "Date of Reference Mandate"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.42.scriptid
+              label = "Reference Amended"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.43.scriptid
+              label = "Final Payment Date"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.44.scriptid
+              label = "Number of Payments Made"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.45.scriptid
+              label = "First Payment Date"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_2663_entity_bank_details.customrecordcustomfields.customrecordcustomfield.46.scriptid
+              label = "Company Id"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "RECORDCUSTOM"
+        label = "Custom"
+        visible = false
+      },
+      {
+        id = "RECORDTRANSLATION"
+        label = "Translation"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDTRANSLATIONS"
+              label = "Translation"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+    ]
+  }
+  actionbar = {
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = true
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

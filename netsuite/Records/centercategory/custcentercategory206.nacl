@@ -1,0 +1,19 @@
+netsuite.centercategory custcentercategory206 {
+  scriptid = "custcentercategory206"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_administration.scriptid
+  label = "Reports"
+  links = {
+    link = [
+      {
+        linkobject = netsuite.centerlink.instance.custlink_22_t1740134_462.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_SAVEDSEARCH"
+        shortlist = false
+      },
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+netsuite.DiscountItem Volume_Discount@s {
+  account = netsuite.Account.instance.Non_Operating_Revenue_7000_Other_Revenue_7080@bsuusu
+  includeChildren = true
+  rate = "50.00%"
+  isPreTax = true
+  itemId = "Volume Discount"
+  isInactive = true
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Volume Discount"
+}

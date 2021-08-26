@@ -1,0 +1,47 @@
+netsuite.workflowactionscript customscript_hold_cust_credit {
+  scriptid = "customscript_hold_cust_credit"
+  defaultfunction = "holdCustomerCredit"
+  isinactive = false
+  name = "Hold Customer Credit"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  returnrecordtype = "-2"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_9031_Hold_Customer_Credit_js@dsduuv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_inv_col_cust"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        displaywidth = 40
+        fieldtype = "SELECT"
+        isformula = false
+        ismandatory = false
+        label = "Customer"
+        onparentdelete = "SET_NULL"
+        searchlevel = "2"
+        selectrecordtype = "-2"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_hold_cust_credit"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = "INVOICE"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+      },
+    ]
+  }
+}

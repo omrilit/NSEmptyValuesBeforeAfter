@@ -1,0 +1,23 @@
+netsuite.clientscript customscript_svb_adj_distr_client {
+  scriptid = "customscript_svb_adj_distr_client"
+  fieldchangedfunction = "fieldChange_SetCalculatedAmount"
+  isinactive = false
+  lineinitfunction = "lineInit_SetLineAmount"
+  name = "NSTS - SVB | Adjust Distr - CS"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  recalcfunction = "recalc_CopyLines"
+  saverecordfunction = "saveRecord_CheckAllocWtPercent"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_CS_AdjustDistribution_js@dsduuuv.path
+  validatedeletefunction = "validateDelete_StoreRemovedLines"
+  validatefieldfunction = "validateField_CheckAdjustLineFields"
+  validatelinefunction = "validateLine_StoreChangedLines"
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_Common_js@dsduuv.path
+      },
+    ]
+  }
+}

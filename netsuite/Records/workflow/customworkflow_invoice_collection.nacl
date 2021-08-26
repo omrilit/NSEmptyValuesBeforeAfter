@@ -1,0 +1,448 @@
+netsuite.workflow customworkflow_invoice_collection {
+  scriptid = "customworkflow_invoice_collection"
+  initoncreate = true
+  initonvieworupdate = true
+  inittriggertype = "AFTERSUBMIT"
+  isinactive = false
+  islogenabled = false
+  keephistory = "ALWAYS"
+  name = "Invoice Collection Workflow"
+  recordtypes = "INVOICE"
+  releasestatus = "RELEASED"
+  runasadmin = true
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowcustomfields = {
+    workflowcustomfield = [
+      {
+        scriptid = "custworkflow_call"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        label = "Phone Call"
+        selectrecordtype = "-22"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_is_processed"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "CHECKBOX"
+        label = "Is Processed"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_inv_record"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        label = "Current Record"
+        selectrecordtype = "-30"
+        storevalue = true
+      },
+    ]
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate34"
+        donotexitworkflow = false
+        name = "Is 30 days overdue"
+        positionx = 203
+        positiony = 53
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction99"
+                field = netsuite.workflow.instance.customworkflow_invoice_collection.workflowcustomfields.workflowcustomfield.2.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "@CURRENT@"
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition100"
+              tostate = netsuite.workflow.instance.customworkflow_invoice_collection.workflowstates.workflowstate.1.scriptid
+              initcondition = {
+                formula = "({today}-{duedate}) > 30"
+                type = "FORMULA"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate39"
+        donotexitworkflow = false
+        name = "Is first notice"
+        positionx = 203
+        positiony = 143
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition96"
+              tostate = netsuite.workflow.instance.customworkflow_invoice_collection.workflowstates.workflowstate.3.scriptid
+              initcondition = {
+                formula = "isChecked(\"Workflow:Is Processed\") = 'F'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:Is Processed"
+                      value = netsuite.workflow.instance.customworkflow_invoice_collection.workflowcustomfields.workflowcustomfield.1.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition97"
+              tostate = netsuite.workflow.instance.customworkflow_invoice_collection.workflowstates.workflowstate.2.scriptid
+              initcondition = {
+                formula = "isChecked(\"Workflow:Is Processed\") = 'T'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:Is Processed"
+                      value = netsuite.workflow.instance.customworkflow_invoice_collection.workflowcustomfields.workflowcustomfield.1.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate33"
+        donotexitworkflow = false
+        name = "Is amount greater than 10K"
+        positionx = 203
+        positiony = 233
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition86"
+              tostate = netsuite.workflow.instance.customworkflow_invoice_collection.workflowstates.workflowstate.3.scriptid
+              initcondition = {
+                formula = "\"Total\" <= 10000.00"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Total"
+                      value = "STDBODYTOTAL"
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition89"
+              tostate = netsuite.workflow.instance.customworkflow_invoice_collection.workflowstates.workflowstate.5.scriptid
+              initcondition = {
+                formula = "\"Total\" > 10000.00"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Total"
+                      value = "STDBODYTOTAL"
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate32"
+        donotexitworkflow = false
+        name = "Send Email"
+        positionx = 203
+        positiony = 323
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            sendemailaction = [
+              {
+                scriptid = "workflowaction85"
+                attachmenttype = "SPECIFIC"
+                body = '''
+<img src="https://system.netsuite.com/core/media/media.nl?id=1925&amp;c=TSTDRV658469&amp;h=7ab7afebf8a106b68c8c" border="0"><br>&nbsp;<br>This is a friendly reminder that our system shows 
+that your account is past due.&nbsp; Please promptly forward your payment to 
+our office within the next 5 days.&nbsp; <br>&nbsp;<br>If you are unable to issue 
+payment within this timeframe, please ensure that you contact our A/R 
+department during business hours at 1-800-NELSON1<br>&nbsp;<br>Thank you if 
+you have already sent payment over the past 5 days<br>&nbsp;<br>Nelson 
+Holdings Finance<br>&nbsp;
+'''
+                includerecordlink = true
+                includetransaction = false
+                isinactive = false
+                recipientfield = "STDBODYCUSTOMER"
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = "STDBODYSALESREP"
+                sendertype = "FIELD"
+                subject = "Your Invoice #{tranid} Is 30 Days Overdue"
+                usetemplate = false
+                initcondition = {
+                  formula = "{entity.email} is not null and INSTR({entity.email},'@netsuite.com',-1)>0"
+                  type = "FORMULA"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition92"
+              tostate = netsuite.workflow.instance.customworkflow_invoice_collection.workflowstates.workflowstate.4.scriptid
+              initcondition = {
+                formula = "isChecked(\"Workflow:Is Processed\") = 'F'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:Is Processed"
+                      value = netsuite.workflow.instance.customworkflow_invoice_collection.workflowcustomfields.workflowcustomfield.1.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate38"
+        donotexitworkflow = false
+        name = "Update \"Is Processed\" flag"
+        positionx = 203
+        positiony = 413
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction93"
+                field = netsuite.workflow.instance.customworkflow_invoice_collection.workflowcustomfields.workflowcustomfield.1.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = true
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition94"
+              tostate = netsuite.workflow.instance.customworkflow_invoice_collection.workflowstates.workflowstate.1.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate37"
+        donotexitworkflow = false
+        name = "Send Reminder Email"
+        positionx = 203
+        positiony = 503
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            sendemailaction = [
+              {
+                scriptid = "workflowaction90"
+                attachmenttype = "SPECIFIC"
+                body = '''
+<img src="https://system.netsuite.com/core/media/media.nl?id=1925&c=TSTDRV658469&h=7ab7afebf8a106b68c8c" border="0"><br>
+&nbsp;<br>
+This is a friendly reminder that our system shows that your account is 
+past due.&nbsp; Please promptly forward your payment to our office within the
+ next 5 days.&nbsp; <br>
+&nbsp;<br>
+If you are unable to issue payment within this timeframe, please ensure 
+that you contact our A/R department during business hours at 
+1-800-NELSON1<br>
+&nbsp;<br>
+Thank you if you have already sent payment over the past 5 days<br>
+&nbsp;<br>
+Nelson Holdings Finance
+'''
+                includerecordlink = true
+                includetransaction = false
+                isinactive = false
+                recipientfield = "STDBODYCUSTOMER"
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = "STDBODYSALESREP"
+                sendertype = "FIELD"
+                subject = "Your Invoice #{tranid} Is More Than 30 Days Overdue"
+                usetemplate = false
+                initcondition = {
+                  formula = "{entity.email} is not null and INSTR({entity.email},'@netsuite.com',-1)>0"
+                  type = "FORMULA"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition91"
+              tostate = netsuite.workflow.instance.customworkflow_invoice_collection.workflowstates.workflowstate.6.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate36"
+        donotexitworkflow = false
+        name = "Create Phone Call"
+        positionx = 203
+        positiony = 593
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            createrecordaction = [
+              {
+                scriptid = "workflowaction88"
+                isinactive = false
+                recordtype = "PHONECALL"
+                resultfield = netsuite.workflow.instance.customworkflow_invoice_collection.workflowcustomfields.workflowcustomfield.0.scriptid
+                schedulemode = "DELAY"
+                initcondition = {
+                  formula = "isEmpty(\"Workflow:Phone Call\") = 'T'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:Phone Call"
+                        value = netsuite.workflow.instance.customworkflow_invoice_collection.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+                fieldsettings = {
+                  fieldsetting = [
+                    {
+                      targetfield = "STDEVENTTITLE"
+                      valueformula = "CONCAT('Follow Up On Overdue Invoice #', {tranid})"
+                    },
+                    {
+                      targetfield = "STDEVENTCOMPANY"
+                      valuefield = "STDBODYCUSTOMER"
+                    },
+                    {
+                      targetfield = "STDEVENTASSIGNED"
+                      valueformula = "{salesrep.id}"
+                    },
+                    {
+                      targetfield = "STDEVENTSTARTDATE"
+                      valuedate = "DFN5"
+                    },
+                    {
+                      targetfield = "STDEVENTORGANIZER"
+                      valueformula = "{salesrep.id}"
+                    },
+                    {
+                      targetfield = "STDEVENTPHONE"
+                      valueformula = "{entity.phone}"
+                    },
+                    {
+                      targetfield = "STDEVENTOPPORTUNITY"
+                      valueformula = "{custworkflow_inv_record.id}"
+                    },
+                  ]
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition87"
+              tostate = netsuite.workflow.instance.customworkflow_invoice_collection.workflowstates.workflowstate.7.scriptid
+              initcondition = {
+                formula = "\"Document Status\" = 'Open'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Document Status"
+                      value = "STDBODYDOCUMENTSTATUS"
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate35"
+        donotexitworkflow = false
+        name = "Place credit on hold"
+        positionx = 203
+        positiony = 683
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            customaction = [
+              {
+                scriptid = "workflowaction98"
+                isinactive = false
+                schedulemode = "DELAY"
+                scripttype = netsuite.workflowactionscript.instance.customscript_hold_cust_credit.scriptid
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+                parametersettings = {
+                  parametersetting = [
+                    {
+                      targetparameter = netsuite.workflowactionscript.instance.customscript_hold_cust_credit.scriptcustomfields.scriptcustomfield.0.scriptid
+                      valuefield = "STDBODYENTITY"
+                    },
+                  ]
+                }
+              },
+            ]
+          },
+        ]
+      },
+    ]
+  }
+}

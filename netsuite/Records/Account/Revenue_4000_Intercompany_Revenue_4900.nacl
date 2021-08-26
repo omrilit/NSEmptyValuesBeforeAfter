@@ -1,0 +1,19 @@
+netsuite.Account Revenue_4000_Intercompany_Revenue_4900@uusu {
+  acctType = "_income"
+  acctNumber = "4900"
+  acctName = "Intercompany Revenue"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.Revenue_4000
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Revenue_4000_Intercompany Revenue_4900"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

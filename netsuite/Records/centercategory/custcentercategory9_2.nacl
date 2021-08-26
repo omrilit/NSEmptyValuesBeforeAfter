@@ -1,0 +1,52 @@
+netsuite.centercategory custcentercategory9_2 {
+  scriptid = "custcentercategory9_2"
+  center = "BASIC"
+  centertab = netsuite.centertab.instance.custcentertab8_14.scriptid
+  label = "Transactions"
+  links = {
+    link = [
+      {
+        linklabel = "Asset Proposal"
+        linkobject = "[scriptid=customscript_fam_assetproposal_su.customdeploy_fam_assetproposal_su]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Asset Creation"
+        linkobject = "[scriptid=customscript_ncfar_creation_sl.customdeploy1]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Asset Depreciation"
+        linkobject = "[scriptid=customscript_fam_assetdepreciation_su.customdeploy_fam_assetdepreciation_su]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Asset Disposal"
+        linkobject = "[scriptid=customscript_ncfar_disposal_sl.customdeploy_ncfar_disposal_sl]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Asset Revaluation"
+        linkobject = "[scriptid=customscript_ncfar_revaluation_sl.customdeploy1]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Asset Split"
+        linkobject = "[scriptid=customscript_ncfar_split_sl.customdeploy_ncfar_split_sl]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Asset Transfer"
+        linkobject = "[scriptid=customscript_fam_assettransfer_su.customdeploy_fam_assettransfer_su]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

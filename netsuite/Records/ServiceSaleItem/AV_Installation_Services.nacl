@@ -1,0 +1,204 @@
+netsuite.ServiceSaleItem AV_Installation_Services@s {
+  salesDescription = "AV Installation Services"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  unitsType = {
+    name = "EACH"
+  }
+  saleUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateUnits = "per Ea."
+  enforceMinQtyInternally = true
+  overallQuantityPricingType = "_byLineQuantity"
+  isFulfillable = false
+  minimumQuantityUnits = "Ea."
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  createJob = false
+  storeDisplayName = "AV Installation Services"
+  storeDisplayThumbnail = netsuite.RecordRef.instance.ServiceSaleItem_storeDisplayThumbnail_12099
+  storeDisplayImage = netsuite.RecordRef.instance.ServiceSaleItem_storeDisplayImage_12098
+  storeDescription = "<p>AV Installation Services for Video Conferencing Systems</p><p></p>"
+  storeDetailedDescription = "<p>AV Installation Services for Video Conferencing Systems</p><p></p>"
+  urlComponent = "AV-Installation-Services"
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "AV Installation Services"
+  displayName = "AV Installation Services"
+  isOnline = true
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 750
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 750
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 750
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 750
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 750
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 750
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 600
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 600
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 600
+            },
+          ]
+        }
+      },
+    ]
+  }
+  siteCategoryList = {
+    siteCategory = [
+      {
+        website = netsuite.RecordRef.instance.ServiceSaleItem_website_4
+        category = netsuite.RecordRef.instance.ServiceSaleItem_category_2074
+        isDefault = false
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "AV Installation Services"
+  custom_custitem9 = false
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "AV Installation Services AV Installation Services <p>AV Installation Services for Video Conferencing Systems</p><p></p> null"
+  custom_custitem_wd_img_gallery_carousel_html = "<div class=\"item active easyzoom easyzoom--overlay\" data-slide-number=\"0\"><a href=\"/core/media/media.nl?id=12098&c=TSTDRV1373481&h=b78a63f9bbcdd61a5e13\"><img src=\"/core/media/media.nl?id=12098&c=TSTDRV1373481&h=b78a63f9bbcdd61a5e13\" class=\"img-responsive\"></a></div>"
+  custom_custitem_wd_img_gallery_slider_html = "<div class=\"col-xs-2 thumbnail\"><a id=\"carousel-selector-0\" class=\"selected\"><img src=\"/core/media/media.nl?id=12099&c=TSTDRV1373481&h=21779edb126f334fdc37\"></a></div>"
+  custom_custitem_wd_process_items = true
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

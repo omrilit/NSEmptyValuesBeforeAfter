@@ -1,0 +1,305 @@
+netsuite.customrecordtype customrecord_nsts_ci_task {
+  scriptid = "customrecord_nsts_ci_task"
+  accesstype = "USEPERMISSIONLIST"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = false
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = false
+  allowquicksearch = true
+  allowuiaccess = true
+  description = "When consolidation is started, a CI Task record will be generated to capture the tasks or scripts triggered for the consolidation process. Initially, it will have a status of CI Started and then In Process and once finished, a status of Completed, together with the CI Record ID generated."
+  enabledle = false
+  enablekeywords = true
+  enablemailmerge = true
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = true
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = false
+  numberingmindigits = "5"
+  numberingprefix = "TASK"
+  recordname = "NSTS | CI - Task"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = false
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_nsts_ci_task_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Displays the Task Type of the record, any of: Online, Scheduled and Customer"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Displays the Task Type of the record, any of: Online, Scheduled and Customer"
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Task Type"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_task_type.scriptid
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_initiated_by"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = '''
+Displays the name of the user who initiated the consolidation.
+
+When CI is generated via scheduled script, this is empty.
+'''
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = '''
+Displays the name of the user who initiated the consolidation.
+
+When CI is generated via scheduled script, this is empty.
+'''
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Initiated by"
+        onparentdelete = "SET_NULL"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-4"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_task_start"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Date and time that the task/process started."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "DATETIMETZ"
+        globalsearch = false
+        help = "Date and time that the task/process started."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Task Started At"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_task_ended"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Date and time that the task/process ended."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "DATETIMETZ"
+        globalsearch = false
+        help = "Date and time that the task/process ended."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Task Ended At"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_task_status"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Displays current status of the task in values of: CI Started, In Process, Completed, Failed and Completed With Errors"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Displays current status of the task in values of: CI Started, In Process, Completed, Failed and Completed With Errors"
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Task Status"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_task_status.scriptid
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_error_details"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Displays particulars of the task error."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CLOBTEXT"
+        globalsearch = false
+        help = "Displays particulars of the task error."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Error Details"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_records"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        description = "Total number of record identified during the consolidation."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Total number of record identified during the consolidation."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Consolidation Records Identified"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_records_created"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        description = "Total number of record created after the consolidation."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Total number of record created after the consolidation."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "No. of CI Records Created"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_customers"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Displays the customer/s used for consolidation"
+        displaytype = "STATICTEXT"
+        encryptatrest = false
+        fieldtype = "MULTISELECT"
+        globalsearch = false
+        help = "Displays the customer/s used for consolidation"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Customers"
+        onparentdelete = "SET_NULL"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_numbers"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Displays the CI numbers created after consolidation"
+        displaytype = "STATICTEXT"
+        encryptatrest = false
+        fieldtype = "MULTISELECT"
+        globalsearch = false
+        help = "Displays the CI numbers created after consolidation"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "CI Numbers"
+        onparentdelete = "SET_NULL"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.scriptid
+        showinlist = false
+        storevalue = true
+      },
+    ]
+  }
+  permissions = {
+    permission = [
+      {
+        permittedlevel = "FULL"
+        permittedrole = "ADMINISTRATOR"
+      },
+    ]
+  }
+  links = {
+    link = [
+      {
+        linkcategory = "BASICLISTSCUSTOM"
+        linktasktype = "LIST"
+      },
+    ]
+  }
+  subtabs = {
+    subtab = [
+      {
+        scriptid = "tab_11_4453644_851"
+        tabtitle = "CI Log"
+      },
+    ]
+  }
+}

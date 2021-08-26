@@ -1,0 +1,37 @@
+netsuite.Location Singapore_Warehouse@s {
+  name = "Singapore Warehouse"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_ASIA_Singapore@buu,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_singapore"
+    addressee = "Singapore Warehouse"
+    addrText = "Singapore Warehouse<br>Singapore"
+    override = false
+  }
+  returnAddress = {
+    country = "_afghanistan"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Singapore Warehouse"
+}

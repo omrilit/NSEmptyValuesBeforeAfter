@@ -1,0 +1,18 @@
+netsuite.Account Intercompany_Payable_Receivable___PAY_2094@sdsbsu {
+  acctType = "_otherCurrentLiability"
+  acctNumber = "2094"
+  acctName = "Intercompany Payable/Receivable - PAY"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = true
+  identifier = "Intercompany Payable/Receivable - PAY_2094"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

@@ -1,0 +1,11 @@
+type netsuite.CustomTransactionLineList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.CustomTransactionLine>" customTransactionLine {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

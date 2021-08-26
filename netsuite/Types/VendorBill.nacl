@@ -1,0 +1,116 @@
+type netsuite.VendorBill {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.Nexus nexus {
+    isReference = true
+  }
+  netsuite.RecordRef subsidiaryTaxRegNum {
+  }
+  boolean taxRegOverride {
+  }
+  boolean taxDetailsOverride {
+  }
+  netsuite.RecordRef customForm {
+  }
+  netsuite.RecordRef billAddressList {
+  }
+  netsuite.Account account {
+    isReference = true
+  }
+  netsuite.RecordRef entity {
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.RecordRef approvalStatus {
+  }
+  netsuite.RecordRef nextApprover {
+  }
+  string vatRegNum {
+  }
+  netsuite.RecordRef postingPeriod {
+  }
+  string tranDate {
+  }
+  string currencyName {
+  }
+  netsuite.Address billingAddress {
+  }
+  number exchangeRate {
+  }
+  netsuite.RecordRef entityTaxRegNum {
+  }
+  string taxPointDate {
+  }
+  netsuite.Term terms {
+    isReference = true
+  }
+  string dueDate {
+  }
+  string discountDate {
+  }
+  string tranId {
+  }
+  number userTotal {
+  }
+  number discountAmount {
+  }
+  number taxTotal {
+  }
+  boolean paymentHold {
+  }
+  string memo {
+  }
+  number tax2Total {
+  }
+  number creditLimit {
+  }
+  number availableVendorCredit {
+  }
+  netsuite.Currency currency {
+    isReference = true
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+  string status {
+  }
+  string landedCostMethod {
+  }
+  boolean landedCostPerLine {
+  }
+  string transactionNumber {
+  }
+  netsuite.VendorBillExpenseList expenseList {
+  }
+  netsuite.AccountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.VendorBillItemList itemList {
+  }
+  netsuite.InstallmentList installmentList {
+  }
+  netsuite.PurchLandedCostList landedCostsList {
+  }
+  "List<netsuite.PurchaseOrder>" purchaseOrderList {
+    isReference = true
+  }
+  netsuite.TaxDetailsList taxDetailsList {
+  }
+  boolean overrideInstallments {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

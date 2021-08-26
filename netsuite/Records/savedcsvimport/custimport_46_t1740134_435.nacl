@@ -1,0 +1,130 @@
+netsuite.savedcsvimport custimport_46_t1740134_435 {
+  scriptid = "custimport_46_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "bills import-lissa"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "VENDORBILL"
+  runserversuitescript = false
+  transactionform = "STANDARDVENDORBILL"
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "VENDORBILL"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "VENDORBILL:ITEM"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ITEM"
+              columnreference = {
+                column = "Item"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "LOCATION"
+              columnreference = {
+                column = "Location"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ORDERLINE"
+              columnreference = {
+                column = "Order Line"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "QUANTITY"
+              columnreference = {
+                column = "Quantity"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "RATE"
+              columnreference = {
+                column = "Rate"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TAXCODE"
+              columnreference = {
+                column = "Tax Code"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        record = "VENDORBILL"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ACCOUNT"
+              columnreference = {
+                column = "Account"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ENTITY"
+              columnreference = {
+                column = "Vendor"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EXTERNALID"
+              columnreference = {
+                column = "ExternalID"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TRANDATE"
+              columnreference = {
+                column = "Date"
+                file = "VENDORBILL"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

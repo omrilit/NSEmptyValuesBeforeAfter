@@ -1,0 +1,247 @@
+netsuite.role customrole1061 {
+  scriptid = "customrole1061"
+  centertype = "SUPPORTCENTER"
+  employeerestriction = "NONE"
+  employeeselectionunrestricted = false
+  isinactive = true
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issupportrole = true
+  iswebserviceonlyrole = false
+  name = "Consultant - US West DNU"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "SELECTED"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = [
+      {
+        permkey = "TRAN_PAYMENTAUDIT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_DEPOSIT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_ESTIMATE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_EXPREPT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_CUSTINVC"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_OPPRTNTY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_SALESORD"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_TIMEBILL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_PAYMENTEVENT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SNAPSHOTLEAD"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SCHEDULE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_SUPPORT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SNAPSHOTCASE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_BILLINGSCHEDULE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CALENDAR"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CASE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CUSTPROFILE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CUSTJOB"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_COMPANY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_COMPETITOR"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CONTACT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CUSTRECORDENTRY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_FILECABINET"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EMAILTEMPLATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_EMPLOYEE_RECORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EMPLOYEE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_EVENT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EXPORT"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_FAXMESSAGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_FAXTEMPLATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_FINHISTORY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_IMPORTED_EMPLOYEE_EXPENSE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_INTERNALPUBLISH"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_ITEM"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_KNOWLEDGEBASE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_MAILMESSAGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_MAILTEMPLATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_MAILMERGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_MASSUPDATES"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_HISTORY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PDFMESSAGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_PDFTEMPLATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CALL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTEMPLATE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_JOB"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_RESOURCE"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_TASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CRMMESSAGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_UNIT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "ADMI_CRMLIST"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = netsuite.customrecordtype.instance.customrecord31.scriptid
+        permlevel = "FULL"
+      },
+      {
+        permkey = netsuite.customrecordtype.instance.customrecord2.scriptid
+        permlevel = "FULL"
+      },
+      {
+        permkey = netsuite.customrecordtype.instance.customrecord16.scriptid
+        permlevel = "EDIT"
+      },
+    ]
+  }
+}

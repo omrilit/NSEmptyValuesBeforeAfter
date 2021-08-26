@@ -1,0 +1,14 @@
+netsuite.centercategory custcentercategory50 {
+  scriptid = "custcentercategory50"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab40.scriptid
+  label = "Integration"
+  links = {
+    link = [
+      {
+        linkid = "ADMI_WEBSERVICEPREFS"
+        shortlist = false
+      },
+    ]
+  }
+}

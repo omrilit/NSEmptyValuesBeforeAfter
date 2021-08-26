@@ -1,0 +1,24 @@
+netsuite.clientscript customscript_nsts_ci_online_suitelet_cs {
+  scriptid = "customscript_nsts_ci_online_suitelet_cs"
+  description = "the script is used only for Online CI Screen. for validated and processing data on hidden fields that is necessary on CI generation like list of filters and preference"
+  fieldchangedfunction = "fieldChanged_SetPageNos"
+  isinactive = false
+  name = "NSTS | CI Online Consolidation CS"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  pageinitfunction = "pageInit_ci_Pageload"
+  saverecordfunction = "saveRecord_ValidateHasSelection"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_nsts_ci_consolidated_invoice_validation_cs_js@dsduuuuuv.path
+  validatefieldfunction = "validateField_ci_OnlineScreen"
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_Lib_Constants_js@dsduuuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_Lib_UtilAndObjects_js@dsduuuv.path
+      },
+    ]
+  }
+}

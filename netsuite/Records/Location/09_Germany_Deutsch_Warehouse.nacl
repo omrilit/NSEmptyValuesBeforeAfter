@@ -1,0 +1,33 @@
+netsuite.Location "09_Germany_Deutsch_Warehouse@sds" {
+  name = "09 Germany/Deutsch Warehouse"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_Germany@buu,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_germany"
+    addressee = "09 Germany/Deutsch Warehouse"
+    addrText = "09 Germany Warehouse<br>Germany"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "09 Germany/Deutsch Warehouse"
+}

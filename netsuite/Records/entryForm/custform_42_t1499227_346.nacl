@@ -1,0 +1,552 @@
+netsuite.entryForm custform_42_t1499227_346 {
+  scriptid = "custform_42_t1499227_346"
+  standard = "STANDARDCUSTOMRECORD25FORM"
+  name = "Custom Feature Form"
+  recordType = netsuite.customrecordtype.instance.customrecord25.scriptid
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "NAME"
+              label = "Name"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "RECORDID"
+              label = "ID"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "OWNER"
+              label = "Owner"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "CREATED"
+              label = "Date Created"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "LASTMODIFIED"
+              label = "Last Modified"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "CUSTOMFORM"
+              label = "Custom Form"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "ISINACTIVE"
+              label = "Record is Inactive"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.0.scriptid
+              label = "Name"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.1.scriptid
+              label = "Product Team"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.2.scriptid
+              label = "Feature Area"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.3.scriptid
+              label = "Type"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.5.scriptid
+              label = "Priority"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.4.scriptid
+              label = "Work Order"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.6.scriptid
+              label = "Release Target"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.7.scriptid
+              label = "Committed for Release"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.8.scriptid
+              label = "Feature Abstract"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = true
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.9.scriptid
+              label = "Product Manager"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.10.scriptid
+              label = "Developer"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.11.scriptid
+              label = "Secondary Developer"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.12.scriptid
+              label = "QA Engineer"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.13.scriptid
+              label = "Secondary QA Engineer"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.14.scriptid
+              label = "Technical Writer"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.15.scriptid
+              label = "Release"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDCUSTOM"
+        label = "Custom"
+        visible = false
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord25.subtabs.subtab.0.scriptid
+        label = "Main"
+        visible = true
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord25.subtabs.subtab.1.scriptid
+        label = "Status"
+        visible = true
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord25.subtabs.subtab.2.scriptid
+        label = "QA"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.16.scriptid
+                    label = "QA Commit Date"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.17.scriptid
+                    label = "QA Actual Date"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.18.scriptid
+                    label = "QA Status"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord25.subtabs.subtab.3.scriptid
+        label = "Dev"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.19.scriptid
+                    label = "Dev Commit Date"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.20.scriptid
+                    label = "Dev Actual Date"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.21.scriptid
+                    label = "Dev Status"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord25.subtabs.subtab.4.scriptid
+        label = "Tech Writing"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.22.scriptid
+                    label = "Commit Date"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.23.scriptid
+                    label = "Actual Date"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.24.scriptid
+                    label = "Status"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord25.subtabs.subtab.6.scriptid
+        label = "Details"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord25.customrecordcustomfields.customrecordcustomfield.25.scriptid
+                    label = "Details"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = "RECORDMEDIA"
+        label = "Files"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDMEDIAITEM"
+              label = "Files"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDNOTES"
+        label = "Notes"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDUSERNOTES"
+              label = "User Notes"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDSYSTEMNOTES"
+              label = "System Notes"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord25.subtabs.subtab.5.scriptid
+        label = "Tasks"
+        visible = true
+      },
+    ]
+  }
+  actionbar = {
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = true
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

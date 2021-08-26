@@ -1,0 +1,138 @@
+netsuite.savedcsvimport custimport_79_t1740134_435 {
+  scriptid = "custimport_79_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "Journal Entry - AR AP Net"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "JOURNALENTRY"
+  runserversuitescript = false
+  transactionform = netsuite.transactionForm.instance.custform_186_t1499227_346.scriptid
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "JOURNALENTRY"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "JOURNALENTRY"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "CURRENCY"
+              columnreference = {
+                column = "Currency"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EXCHANGERATE"
+              columnreference = {
+                column = "Exchange"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "MEMO"
+              columnreference = {
+                column = "Memo"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "POSTINGPERIOD"
+              columnreference = {
+                column = "Posting Period"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SUBSIDIARY"
+              columnreference = {
+                column = "Subsidiary"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TRANDATE"
+              columnreference = {
+                column = "Date"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TRANID"
+              columnreference = {
+                column = "Entry No"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        record = "JOURNALENTRY:LINE"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ACCOUNT"
+              columnreference = {
+                column = "Account"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CREDIT"
+              columnreference = {
+                column = "Credit"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "DEBIT"
+              columnreference = {
+                column = "Debit"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "MEMO"
+              columnreference = {
+                column = "Line Memo"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

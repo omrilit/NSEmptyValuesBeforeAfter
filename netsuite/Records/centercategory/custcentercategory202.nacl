@@ -1,0 +1,18 @@
+netsuite.centercategory custcentercategory202 {
+  scriptid = "custcentercategory202"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_documents.scriptid
+  label = "Mail Merge"
+  links = {
+    link = [
+      {
+        linkid = "EDIT_MAILMERGE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_MAILMERGE"
+        shortlist = false
+      },
+    ]
+  }
+}

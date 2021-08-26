@@ -1,0 +1,26 @@
+netsuite.suitelet customscript_2663_admin_data_submit_s {
+  scriptid = "customscript_2663_admin_data_submit_s"
+  defaultfunction = "main"
+  isinactive = false
+  name = "EP Admin Data Submit"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = "[/SuiteBundles/Bundle 45178/src/2663_admin_data_submit_s.js]"
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_2663_admin_data_submit_s"
+        allemployees = false
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "EP Admin Data Submit"
+      },
+    ]
+  }
+}

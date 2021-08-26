@@ -1,0 +1,20 @@
+netsuite.Account Intercompany_Clearing_Account_1800_Intercompany_Clearing_PHP_1810@ssuussu {
+  acctType = "_otherCurrentAsset"
+  acctNumber = "1810"
+  acctName = "Intercompany Clearing PHP"
+  includeChildren = true
+  currency = netsuite.Currency.instance.Philippine_Peso@s
+  generalRate = "_current"
+  parent = netsuite.Account.instance.Intercompany_Clearing_Account_1800@ssu
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Intercompany Clearing Account_1800_Intercompany Clearing PHP_1810"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

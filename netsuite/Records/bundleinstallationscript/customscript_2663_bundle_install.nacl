@@ -1,0 +1,37 @@
+netsuite.bundleinstallationscript customscript_2663_bundle_install {
+  scriptid = "customscript_2663_bundle_install"
+  afterupdatefunction = "afterUpdate"
+  beforeupdatefunction = "beforeUpdate"
+  isinactive = false
+  name = "Generic Payment Bundle Installation"
+  notifyadmins = true
+  notifyowner = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45178_src_2663_bundle_installation_js@dsdduuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_2663_bundle_install"
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "RELEASED"
+        title = "Generic Payment Bundle Installation"
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45178_src_2663_lib_js@dsdduv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45178_src_2663_file_format_lib_js@dsdduuuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45178_src_2663_constants_js@dsdduv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45178_src_2663_queue_manager_lib_js@dsdduuuv.path
+      },
+    ]
+  }
+}

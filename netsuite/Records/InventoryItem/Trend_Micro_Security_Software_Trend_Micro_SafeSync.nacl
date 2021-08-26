@@ -1,0 +1,277 @@
+netsuite.InventoryItem Trend_Micro_Security_Software_Trend_Micro_SafeSync@sssuss {
+  purchaseDescription = "Trend Micro SafeSync"
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  salesDescription = "Trend Micro SafeSync<br>"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  costingMethodDisplay = "Average"
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  cost = 225
+  totalValue = 83.44
+  averageCost = 8.34
+  useBins = false
+  autoLeadTime = true
+  lastPurchasePrice = 8.34
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  autoReorderPoint = true
+  storeDisplayName = "Trend Micro SafeSync"
+  storeDescription = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">Trend
+  Micro SafeSync</td>
+</tr></tbody></table>
+'''
+  storeDetailedDescription = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">Trend
+  Micro SafeSync</td>
+</tr></tbody></table>
+'''
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Trend Micro SafeSync"
+  displayName = "Trend Micro SafeSync"
+  parent = netsuite.InventoryItem.instance.Trend_Micro_Security_Software@s
+  isOnline = true
+  offerSupport = false
+  isInactive = true
+  availableToPartners = true
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 198450
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 998
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 1984
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+        displayName = "Leonardo Sofa"
+        salesDescription = "Den Leonardo Sofa kombinerer smart alsidighed hos nutids- legeme hen til passe jeres indre smag."
+        storeDisplayName = "Leonardo Sofa"
+        storeDescription = "Den Leonardo Sofa kombinerer smart alsidighed hos nutids- legeme hen til passe jeres indre smag."
+        storeDetailedDescription = "Den Leonardo Sofa kombinerer smart alsidighed hos nutids- legeme hen til passe jeres indre smag."
+      },
+      {
+        locale = "_german"
+        language = "German"
+        displayName = "Leonardo Sofa"
+        salesDescription = "Das Leonardo-Sofa smart kombiniert Vielseitigkeit mit zeitgenössischer Einrichtung für Ihr Interieur-Stil."
+        storeDisplayName = "Leonardo Sofa"
+        storeDescription = "Das Leonardo-Sofa smart kombiniert Vielseitigkeit mit zeitgenössischer Einrichtung für Ihr Interieur-Stil."
+        storeDetailedDescription = "Das Leonardo-Sofa smart kombiniert Vielseitigkeit mit zeitgenössischer Einrichtung für Ihr Interieur-Stil."
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+        displayName = "Leonardo Sofa"
+        salesDescription = "The Leonardo Sofa combines smart versatility with contemporary body to suit your interior style."
+        storeDisplayName = "Leonardo Sofa"
+        storeDescription = "The Leonardo Sofa combines smart versatility with contemporary body to suit your interior style."
+        storeDetailedDescription = "The Leonardo Sofa combines smart versatility with contemporary body to suit your interior style."
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+        displayName = "レオナルド ソファー"
+        storeDisplayName = "レオナルド ソファー"
+        storeDescription = "モダンでとてもスタイリッシュなソファーです。"
+        storeDetailedDescription = '''
+モダンでとてもスタイリッシュなソファーです。
+男性的な力強さや鋭さ生かしつつも、女性的な曲線美をプラスしているのが特徴です。硬くなりすぎず、でも甘くなりすぎない、そして重厚感を感じさせるこのソファは、存在感がありながら可愛さを感じさせる絶妙なバランスになっています。このインテリアソファーの魅力を体感してください。
+'''
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "05 UK Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.05_UK_Warehouse@s
+      },
+      {
+        location = "06 Australia Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.06_Australia_Warehouse@s
+      },
+      {
+        location = "07 Japan/日本 Warehouse"
+        quantityOnHand = 10
+        onHandValueMli = 13490
+        averageCostMli = 1349
+        lastPurchasePriceMli = 1349
+        quantityOnOrder = 0
+        quantityCommitted = 0
+        quantityAvailable = 10
+        locationId = netsuite.Location.instance.07_Japan____Warehouse@sd_26085_26412s
+      },
+      {
+        location = "08 Denmark Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.08_Denmark_Warehouse@s
+      },
+      {
+        location = "09 Germany/Deutsch Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.09_Germany_Deutsch_Warehouse@sds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+      {
+        location = "Australian Warehouse"
+        locationId = netsuite.Location.instance.Australian_Warehouse@s
+      },
+      {
+        location = "Frankfurt Warehouse"
+        locationId = netsuite.Location.instance.Frankfurt_Warehouse@s
+      },
+      {
+        location = "London Warehouse"
+        locationId = netsuite.Location.instance.London_Warehouse@s
+      },
+      {
+        location = "Manila Warehouse"
+        locationId = netsuite.Location.instance.Manila_Warehouse@s
+      },
+      {
+        location = "Singapore Warehouse"
+        locationId = netsuite.Location.instance.Singapore_Warehouse@s
+      },
+    ]
+  }
+  identifier = "Trend Micro Security Software_Trend Micro SafeSync"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = '''
+Trend Micro SafeSync Trend Micro SafeSync <table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">Trend
+  Micro SafeSync</td>
+</tr></tbody></table> null
+'''
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

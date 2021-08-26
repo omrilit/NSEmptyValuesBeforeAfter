@@ -1,0 +1,63 @@
+netsuite.kpiscorecard kpiscorecard_3_t1740134_426 {
+  scriptid = "kpiscorecard_3_t1740134_426"
+  name = "Subscriber Value"
+  useperiods = "F"
+  custom = {
+    kpi1 = netsuite.savedsearch.instance.customsearch107.scriptid
+    kpi2 = netsuite.savedsearch.instance.customsearch98.scriptid
+  }
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = true
+  }
+  kpis = {
+    kpi = [
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM2"
+      },
+      {
+        comparevalueto = "CUSTOM"
+        comparewithprevious = false
+        comparisontype = "RATIO_ABSOLUTE"
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM2"
+        label = "Rev per User"
+      },
+    ]
+  }
+  ranges = {
+    range = [
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "MARCH_THIS_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "APRIL_THIS_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "MAY_THIS_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "JUNE_THIS_YEAR"
+      },
+    ]
+  }
+}

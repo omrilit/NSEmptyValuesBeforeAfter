@@ -1,0 +1,21 @@
+netsuite.Account Credit_Card_Payable_2030@ssu {
+  acctType = "_otherCurrentLiability"
+  acctNumber = "2030"
+  acctName = "Credit Card Payable"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = true
+  identifier = "Credit Card Payable_2030"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

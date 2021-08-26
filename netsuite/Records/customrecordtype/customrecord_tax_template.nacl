@@ -1,0 +1,199 @@
+netsuite.customrecordtype customrecord_tax_template {
+  scriptid = "customrecord_tax_template"
+  accesstype = "NONENEEDED"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = false
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = false
+  enablekeywords = false
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = false
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = false
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "Tax Report Template"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = false
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_tax_template_note"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CLOBTEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Note"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_tax_template_country"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Country"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-159"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_tax_form_schema"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Tax Form Schema"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customrecordtype.instance.customrecord_tax_form.scriptid
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_template_format"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Format"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_template_language"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Language"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_ishandlebars"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Handle Bars"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_tax_template_short"
+        accesslevel = "2"
+        allowquickadd = true
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displayheight = 30
+        displaytype = "NORMAL"
+        displaywidth = 450
+        encryptatrest = false
+        fieldtype = "CLOBTEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Short Content"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_tax_template.subtabs.subtab.0.scriptid
+      },
+    ]
+  }
+  subtabs = {
+    subtab = [
+      {
+        scriptid = "tab_9_3776644_569"
+        tabtitle = "Content"
+      },
+      {
+        scriptid = "tab_8_3776644_569"
+        tabtitle = "Attachment"
+      },
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+netsuite.customlist customlist_oa_je_from_time_cost_level {
+  scriptid = "customlist_oa_je_from_time_cost_level"
+  description = "OpenAir loaded cost levels to use for journal entry creation from time entries"
+  isinactive = false
+  ismatrixoption = false
+  isordered = true
+  name = "OpenAir: Cost Level for JE"
+  customvalues = {
+    customvalue = [
+      {
+        scriptid = "value_1_t1499227_127"
+        isinactive = false
+        value = "Primary"
+      },
+      {
+        scriptid = "value_2_t1499227_127"
+        isinactive = false
+        value = "Secondary"
+      },
+      {
+        scriptid = "value_3_t1499227_127"
+        isinactive = false
+        value = "Tertiary"
+      },
+    ]
+  }
+}

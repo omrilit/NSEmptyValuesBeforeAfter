@@ -1,0 +1,19 @@
+netsuite.Account Deferred__Income_2100_License_Software_2102@ssuubu {
+  acctType = "_deferredRevenue"
+  acctNumber = "2102"
+  acctName = "License-Software"
+  includeChildren = true
+  generalRate = "_current"
+  parent = netsuite.Account.instance.Deferred__Income_2100@ssu
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Deferred  Income_2100_License-Software_2102"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

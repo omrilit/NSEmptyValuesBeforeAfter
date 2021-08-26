@@ -1,0 +1,26 @@
+netsuite.clientscript customscript_tsg_svb_client {
+  scriptid = "customscript_tsg_svb_client"
+  isinactive = true
+  name = "NSTS - SVB | VB Validate - Client"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  pageinitfunction = "pageInit_SharedVendorBill_Client"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_Main_js@dsduuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_tsg_svb_client"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = "VENDORBILL"
+        status = "RELEASED"
+      },
+    ]
+  }
+}

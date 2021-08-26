@@ -1,0 +1,44 @@
+netsuite.Account General_and_Administrative_6000_Other_Expense_6800_Office_Expense_6820@ssuusuusu {
+  acctType = "_expense"
+  acctNumber = "6820"
+  acctName = "Office Expense"
+  includeChildren = true
+  generalRate = "_current"
+  parent = netsuite.Account.instance.General_and_Administrative_6000_Other_Expense_6800@ssuusu
+  cashFlowRate = "_average"
+  billableExpensesAcct = {
+    name = "4895 Revenue : Reimbursed Expenses"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "General and Administrative_6000_Other Expense_6800_Office Expense_6820"
+  custom_custrecord_fam_account_showinfixedasset = [
+    {
+      name = "Depreciation Expense"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Write Off Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Write Down Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Disposal Cost Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+  ]
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

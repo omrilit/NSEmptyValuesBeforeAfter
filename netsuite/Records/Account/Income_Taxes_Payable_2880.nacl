@@ -1,0 +1,21 @@
+netsuite.Account Income_Taxes_Payable_2880@ssu {
+  acctType = "_otherCurrentLiability"
+  acctNumber = "2880"
+  acctName = "Income Taxes Payable"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = true
+  identifier = "Income Taxes Payable_2880"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

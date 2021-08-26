@@ -1,0 +1,109 @@
+netsuite.NonInventorySaleItem Professional_services_tufin@s {
+  salesDescription = "Professional services tufin"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  deferredRevenueAccount = netsuite.Account.instance.Deferred__Income_2100_Deferred_Revenue_2101@ssuusu
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  isFulfillable = true
+  useMarginalRates = false
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeSopGroup = "_normal"
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Fulfillment Rule"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  createRevenuePlansOn = {
+    name = "Revenue Arrangement Creation"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Professional services tufin"
+  displayName = "Professional services tufin"
+  isOnline = false
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 20
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 20
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Professional services tufin"
+  custom_custitem_oa_default_billing_rule = {
+    name = "Do not export"
+    internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Professional services tufin"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

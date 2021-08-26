@@ -1,0 +1,22 @@
+netsuite.customlist customlist_oa_je_from_time_use_date {
+  scriptid = "customlist_oa_je_from_time_use_date"
+  description = "The transaction date to use on journal entries that are created from time entries"
+  isinactive = false
+  ismatrixoption = false
+  isordered = true
+  name = "OpenAir: JE Date to Use"
+  customvalues = {
+    customvalue = [
+      {
+        scriptid = "value_1_t1499227_127"
+        isinactive = false
+        value = "Time Entry Date"
+      },
+      {
+        scriptid = "value_2_t1499227_127"
+        isinactive = false
+        value = "Timesheet Start Date"
+      },
+    ]
+  }
+}

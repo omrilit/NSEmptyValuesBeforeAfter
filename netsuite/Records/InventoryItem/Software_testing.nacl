@@ -1,0 +1,85 @@
+netsuite.InventoryItem Software_testing@s {
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  includeChildren = false
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  matrixType = "_parent"
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  costingMethodDisplay = "Average"
+  matrixItemNameTemplate = "{itemid}"
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  useBins = false
+  autoLeadTime = true
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  autoReorderPoint = true
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Software testing"
+  displayName = "Software testing"
+  isOnline = false
+  offerSupport = false
+  isInactive = true
+  availableToPartners = false
+  currency = "1"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Software testing"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

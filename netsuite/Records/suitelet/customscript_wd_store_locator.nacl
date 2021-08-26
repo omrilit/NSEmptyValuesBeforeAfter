@@ -1,0 +1,26 @@
+netsuite.suitelet customscript_wd_store_locator {
+  scriptid = "customscript_wd_store_locator"
+  defaultfunction = "getStores"
+  isinactive = false
+  name = "SuiteOffice - [Suitelet] Get Stores"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_41812_SuiteOffice___Get_Stores_js@dsdsbssv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_wd_store_locator"
+        allemployees = false
+        allpartners = true
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "ERROR"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "[WD][Suitlet] Get Stores"
+      },
+    ]
+  }
+}

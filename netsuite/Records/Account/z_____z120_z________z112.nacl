@@ -1,0 +1,22 @@
+netsuite.Account z_____z120_z________z112@_21463_21462_25163_24418uu_23376_20250_31038_21463_21462_25163_24418u {
+  acctType = "_accountsReceivable"
+  acctNumber = "z112"
+  acctName = "z子会社受取手形"
+  includeChildren = false
+  generalRate = "_current"
+  parent = netsuite.Account.instance.z_____z120@_21463_21462_25163_24418u
+  cashFlowRate = "_average"
+  isInactive = true
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = true
+  identifier = "z受取手形_z120_z子会社受取手形_z112"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

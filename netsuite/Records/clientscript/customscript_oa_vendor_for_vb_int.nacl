@@ -1,0 +1,28 @@
+netsuite.clientscript customscript_oa_vendor_for_vb_int {
+  scriptid = "customscript_oa_vendor_for_vb_int"
+  description = "Client script to check various fields for the OpenAir expense report, NetSuite vendor bill integration"
+  fieldchangedfunction = "setVendorFieldsClient"
+  isinactive = false
+  name = "OpenAir: Vendor Client Script"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  pageinitfunction = "setVendorFieldsInit"
+  saverecordfunction = "validateVendorClient"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_2851_oa_export_to_openair_flags_js@dsduuuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_oa_vendor_for_vb_int"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        recordtype = "VENDOR"
+        status = "RELEASED"
+      },
+    ]
+  }
+}

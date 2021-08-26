@@ -1,0 +1,21 @@
+netsuite.Account Euro_Operating_Bank_1010@ssu {
+  acctType = "_bank"
+  acctNumber = "1010"
+  acctName = "Euro Operating Bank"
+  includeChildren = false
+  currency = netsuite.Currency.instance.EUR
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  curDocNum = 2
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_Germany@buu,
+  ]
+  revalue = true
+  identifier = "Euro Operating Bank_1010"
+  externalId = "INCM1278"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

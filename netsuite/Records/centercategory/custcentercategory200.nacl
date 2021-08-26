@@ -1,0 +1,36 @@
+netsuite.centercategory custcentercategory200 {
+  scriptid = "custcentercategory200"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_documents.scriptid
+  label = "Files"
+  links = {
+    link = [
+      {
+        linkid = "LIST_MEDIAITEMFOLDER"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_IMAGE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CUSTOMCODEFILES"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_RECVDFILES"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_SENTFILES"
+        shortlist = false
+      },
+      {
+        linklabel = "Workspaces module"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_workspaces.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

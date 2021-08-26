@@ -1,0 +1,99 @@
+netsuite.savedcsvimport custimport_16_t1740134_435 {
+  scriptid = "custimport_16_t1740134_435"
+  charencoding = "Cp1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  description = "Accounts (prospects) import from salesforce.com"
+  importname = "salesforce.com - Accounts"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  preventduplicates = false
+  recordtype = "PROSPECTANDCONTACT"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = false
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "PROSPECTANDCONTACT"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "PROSPECTANDCONTACT"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "COMPANYNAME"
+              columnreference = {
+                column = "Name"
+                file = "PROSPECTANDCONTACT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CONTACT"
+              columnreference = {
+                column = "Contact"
+                file = "PROSPECTANDCONTACT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CREDITLIMIT"
+              columnreference = {
+                column = "Credit Limit"
+                file = "PROSPECTANDCONTACT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CURRENCY"
+              value = "2"
+            },
+            {
+              field = "ENTITYSTATUS"
+              value = "11"
+            },
+            {
+              field = "OPENINGBALANCE"
+              columnreference = {
+                column = "Balance"
+                file = "PROSPECTANDCONTACT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PHONE"
+              columnreference = {
+                column = "Telephone"
+                file = "PROSPECTANDCONTACT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SUBSIDIARY"
+              value = "4"
+            },
+            {
+              field = "UNSUBSCRIBE"
+              value = "F"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

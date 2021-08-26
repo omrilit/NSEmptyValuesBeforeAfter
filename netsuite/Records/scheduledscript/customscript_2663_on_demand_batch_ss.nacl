@@ -1,0 +1,101 @@
+netsuite.scheduledscript customscript_2663_on_demand_batch_ss {
+  scriptid = "customscript_2663_on_demand_batch_ss"
+  defaultfunction = "main"
+  isinactive = false
+  name = "On Demand Batch Processing"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = "[/SuiteBundles/Bundle 45178/src/2663_payment_batch_on_demand_ss.js]"
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_2663_batch_pfa_id"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        isformula = false
+        ismandatory = false
+        label = "PFA Id"
+        onparentdelete = "NO_ACTION"
+        searchlevel = "2"
+        selectrecordtype = "[scriptid=customrecord_2663_file_admin]"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_2663_process"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        isformula = false
+        ismandatory = false
+        label = "Process"
+        onparentdelete = "NO_ACTION"
+        searchlevel = "2"
+        selectrecordtype = "[scriptid=customlist_2663_ep_process]"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_2663_batch_state"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "CLOBTEXT"
+        isformula = false
+        ismandatory = false
+        label = "State"
+        searchlevel = "2"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_2663_on_demand_batch_ss"
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "NOTSCHEDULED"
+        title = "On Demand Payment Batch Processing"
+        recurrence = {
+          single = {
+            startdate = "2014-07-07"
+            starttime = "01:00:00Z"
+          }
+        }
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45178_src_2663_date_util_js@dsdduuv.path
+      },
+      {
+        scriptfile = "[/SuiteBundles/Bundle 45178/src/2663_edition_control_lib.js]"
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45178_src_2663_payment_batch_processing_lib_js@dsdduuuuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45178_src_2663_constants_js@dsdduv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45178_src_2663_common_lib_js@dsdduuv.path
+      },
+      {
+        scriptfile = "[/SuiteBundles/Bundle 45178/src/2663_payment_batch_lib.js]"
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45178_src_2663_lib_js@dsdduv.path
+      },
+    ]
+  }
+}

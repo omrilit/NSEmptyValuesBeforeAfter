@@ -1,0 +1,477 @@
+netsuite.InventoryItem Juniper_SSG_550_VPN_Firewall@s {
+  purchaseDescription = "Juniper SSG 550 VPN Firewall"
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  intercoCogsAccount = netsuite.Account.instance.COGS_5000_Intercompany_Cost_of_Goods_Sold_5900@uussssu
+  salesDescription = "Juniper SSG 550 VPN Firewall"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Hardware_4006
+  intercoIncomeAccount = netsuite.Account.instance.Revenue_4000_Intercompany_Revenue_4900@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  shippingCostUnits = "per Ea."
+  handlingCostUnits = "per Ea."
+  weightUnits = "per Ea."
+  costingMethodDisplay = "Average"
+  unitsType = {
+    name = "EACH"
+  }
+  stockUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  purchaseUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  saleUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  minimumQuantityUnits = "Ea."
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  costEstimateUnits = "per Ea."
+  vsoeDelivered = false
+  costUnits = "per Ea."
+  totalValue = 182222.04
+  averageCost = 1214.81
+  useBins = false
+  quantityReorderUnits = "Quantity On Hand, Reorder Point, Quantity On Order, and Quantity Committed are in Ea."
+  autoLeadTime = true
+  lastPurchasePrice = 0
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  safetyStockLevelUnits = "Ea."
+  autoReorderPoint = true
+  storeDisplayName = "Juniper SSG 550 VPN Firewall"
+  storeDisplayThumbnail = netsuite.RecordRef.instance.InventoryItem_storeDisplayThumbnail_9579
+  storeDisplayImage = netsuite.RecordRef.instance.InventoryItem_storeDisplayImage_9578
+  storeDescription = "The Juniper Networks Secure Services Gateway 550 (SSG 550) is a purpose-built security appliance that delivers the perfect blend of&nbsp; performance, security, routing and LAN/WAN connectivity for large, regional branch offices and medium-sized, standalone businesses."
+  storeDetailedDescription = '''
+<div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id="">
+	
+		
+			
+			
+				
+					
+					
+						
+
+
+
+
+
+
+
+
+	<span class="a14 b colorDG">Main Features</span>
+	<p>
+	</p>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Firewall Protection: Antivirus, Anti-spyware, Anti-phishing, 
+Intrusion Prevention, Web Content Filtering, Anti-spam, Keylogger 
+Protection, URL Filtering, Network Attack Detection, Denial of Service 
+(DoS), Distributed Denial of Service (DDoS), TCP Reassembly for 
+Fragmented Packet Protection, Brute Force Attack Mitigation, SYNflood 
+Protection, Malformed Packet Attack, Stateful Protocol Signature, Adware
+ Protection, Instant Messenger Blocking
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Encryption Standard: DES, 3DES (168-bit), AES (256-bit)
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Total Number of Ports: 6
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					USB: Yes
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Ethernet Technology: Fast Ethernet
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Network Standard: 10/100/1000Base-T
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Number of Total Expansion Slots: 6
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Expansion Slot Type: PIM
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Manageable: Yes
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Power Source: Power Supply
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Compatible Rack Unit: 2U
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Form Factor: Rack-mountable
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Height: 3.5"
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Width: 17.5"
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Depth: 21.5"
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Weight (Approximate): 25 lb
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Limited Warranty: 1 Year
+				</span>
+			</li>
+		
+	<br>
+
+						<br>
+						
+
+
+
+
+
+
+
+
+	<div class="padB5"><hr></div>
+	<span class="a14 b colorDG">Marketing Information</span>
+	<span class="padT5 a12 colorDG">
+		<p>The Juniper Networks Secure Services Gateway 550 (SSG 550) is a 
+purpose-built security appliance that delivers the perfect blend of 
+performance, security, routing and LAN/WAN connectivity for large, 
+regional branch offices and medium-sized, standalone businesses.</p>
+	</span>
+
+
+
+						
+						
+
+
+
+
+
+
+
+
+	<div class="padT5"><hr></div>
+	<p>
+	<span class="a14 b colorDG">Package Contents</span>
+		
+			</p><li style="font-size:10px;list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					SSG 550 VPN Firewall</span></li>
+				
+			
+		
+			<li style="font-size:10px;list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					1 GB Memory</span></li>
+				
+			
+		
+			<li style="font-size:10px;list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					AC Power Supply</span></li></div></div><span class="padT5 a12 colorDG">
+	</span></div></div></div></div>
+'''
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  urlComponent = "Juniper-SSG550-VPN-Firewall"
+  itemId = "Juniper SSG 550 VPN Firewall"
+  displayName = "Juniper SSG 550 VPN Firewall"
+  vendorName = "Juniper"
+  isOnline = true
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  department = netsuite.Department.instance.Prof__Services@vs
+  class = netsuite.Classification.instance.01_Consulting@b
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 4851.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 4851.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 4851.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  siteCategoryList = {
+    siteCategory = [
+      {
+        website = netsuite.RecordRef.instance.InventoryItem_website_4
+        category = netsuite.RecordRef.instance.InventoryItem_category_2070
+        isDefault = false
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnHand = 50
+        onHandValueMli = 242599.5
+        averageCostMli = 4851.99
+        lastPurchasePriceMli = 4851.99
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "05 UK Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.05_UK_Warehouse@s
+      },
+      {
+        location = "06 Australia Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.06_Australia_Warehouse@s
+      },
+      {
+        location = "07 Japan/日本 Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.07_Japan____Warehouse@sd_26085_26412s
+      },
+      {
+        location = "08 Denmark Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.08_Denmark_Warehouse@s
+      },
+      {
+        location = "09 Germany/Deutsch Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.09_Germany_Deutsch_Warehouse@sds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+      {
+        location = "Australian Warehouse"
+        quantityOnHand = 50
+        onHandValueMli = 0
+        averageCostMli = 0
+        lastPurchasePriceMli = 0
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.Australian_Warehouse@s
+      },
+      {
+        location = "Frankfurt Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Frankfurt_Warehouse@s
+      },
+      {
+        location = "London Warehouse"
+        quantityOnHand = 50
+        onHandValueMli = 0
+        averageCostMli = 0
+        lastPurchasePriceMli = 0
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.London_Warehouse@s
+      },
+      {
+        location = "Manila Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Manila_Warehouse@s
+      },
+      {
+        location = "Singapore Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Singapore_Warehouse@s
+      },
+    ]
+  }
+  identifier = "Juniper SSG 550 VPN Firewall"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges = [
+    {
+      name = "New"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+  ]
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Juniper SSG 550 VPN Firewall Juniper SSG 550 VPN Firewall The Juniper Networks Secure Services Gateway 550 (SSG 550) is a purpose-built security appliance that delivers the perfect blend of&nbsp; performance, security, routing and LAN/WAN connectivity for large, regional branch offices and medium-sized, standalone businesses. null"
+  custom_custitem_wd_img_gallery_carousel_html = "<div class=\"item active easyzoom easyzoom--overlay\" data-slide-number=\"0\"><a href=\"/core/media/media.nl?id=9578&c=TSTDRV1373481&h=97d701d634b7ad1f3a1a\"><img src=\"/core/media/media.nl?id=9578&c=TSTDRV1373481&h=97d701d634b7ad1f3a1a\" class=\"img-responsive\"></a></div>"
+  custom_custitem_wd_img_gallery_slider_html = "<div class=\"col-xs-2 thumbnail\"><a id=\"carousel-selector-0\" class=\"selected\"><img src=\"/core/media/media.nl?id=9579&c=TSTDRV1373481&h=74741ab4a2b95821ebe3\"></a></div>"
+  custom_custitem_wd_process_items = true
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

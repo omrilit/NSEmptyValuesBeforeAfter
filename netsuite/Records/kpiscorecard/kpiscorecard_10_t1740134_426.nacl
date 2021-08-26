@@ -1,0 +1,91 @@
+netsuite.kpiscorecard kpiscorecard_10_t1740134_426 {
+  scriptid = "kpiscorecard_10_t1740134_426"
+  name = "Sales Scorecard"
+  useperiods = "F"
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = true
+  }
+  kpis = {
+    kpi = [
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "NEWLEADS"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "NEWCUSTOMERS"
+      },
+      {
+        comparevalueto = "NEWCUSTOMERS"
+        comparewithprevious = false
+        comparisontype = "RATIO_PERCENT"
+        hidden = false
+        invertcomparison = true
+        kpi = "NEWLEADS"
+        label = "Lead Conversion"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "SALES"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "QUOTA"
+      },
+      {
+        comparevalueto = "QUOTA"
+        comparewithprevious = false
+        comparisontype = "RATIO_PERCENT"
+        hidden = false
+        invertcomparison = false
+        kpi = "SALES"
+        label = "% of Quota Achieved"
+      },
+      {
+        comparevalueto = "SALES"
+        comparewithprevious = false
+        comparisontype = "VARIANCE_ABSOLUTE"
+        hidden = false
+        invertcomparison = false
+        kpi = "QUOTA"
+        label = "Sales Needed to Hit Quota"
+      },
+    ]
+  }
+  ranges = {
+    range = [
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "THIS_MONTH"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "LAST_MONTH"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        label = "This Year"
+        range = "THIS_FISCAL_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        label = "Last Year"
+        range = "LAST_FISCAL_YEAR"
+      },
+    ]
+  }
+}

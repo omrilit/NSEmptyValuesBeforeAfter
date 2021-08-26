@@ -1,0 +1,158 @@
+netsuite.workflow customworkflow_sesc_interco_journ {
+  scriptid = "customworkflow_sesc_interco_journ"
+  initoncreate = true
+  initonvieworupdate = false
+  inittriggertype = "AFTERSUBMIT"
+  isinactive = false
+  islogenabled = false
+  keephistory = "ALWAYS"
+  name = "Intercompany Journal Review"
+  recordtypes = "INTERCOMPANYJOURNALENTRY"
+  releasestatus = "RELEASED"
+  runasadmin = true
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowcustomfields = {
+    workflowcustomfield = [
+      {
+        scriptid = "custworkflow_sesc_approver"
+        applyformatting = false
+        defaultchecked = false
+        defaultselection = netsuite.role.instance.customrole1036.scriptid
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        label = "Approver Role"
+        selectrecordtype = "-118"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_sesc_cfo"
+        applyformatting = false
+        defaultchecked = false
+        defaultselection = "[ACCOUNT_SPECIFIC_VALUE]"
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        label = "Name of CFO"
+        selectrecordtype = "-4"
+        storevalue = true
+      },
+    ]
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate21"
+        donotexitworkflow = false
+        name = "Email Controller"
+        positionx = 203
+        positiony = 53
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            sendemailaction = [
+              {
+                scriptid = "workflowaction57"
+                attachmenttype = "SPECIFIC"
+                body = "<SPAN style=\"FONT-FAMILY: Tahoma; FONT-SIZE: 10pt\">Intercompany Journal has been created, please review and verify the transactions are correct.</SPAN>"
+                includerecordlink = true
+                includetransaction = false
+                isinactive = false
+                recipientfield = netsuite.workflow.instance.customworkflow_sesc_interco_journ.workflowcustomfields.workflowcustomfield.1.scriptid
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = "STDUSERUSER"
+                sendertype = "FIELD"
+                subject = "Intercompany Journal for Review"
+                usetemplate = false
+                initcondition = {
+                  formula = "{custworkflow_sesc_cfo.id} is not null and INSTR({custworkflow_sesc_cfo.email}, '@netsuite.com', -1) > 0"
+                  type = "FORMULA"
+                }
+              },
+            ]
+          },
+          {
+            triggertype = "BEFORELOAD"
+            addbuttonaction = [
+              {
+                scriptid = "workflowaction56"
+                checkconditionbeforeexecution = false
+                isinactive = false
+                label = "Approve"
+                saverecordfirst = false
+                initcondition = {
+                  formula = "{custworkflow_sesc_approver.id}={nlrole}"
+                  type = "FORMULA"
+                }
+              },
+              {
+                scriptid = "workflowaction58"
+                checkconditionbeforeexecution = false
+                isinactive = false
+                label = "Decline"
+                saverecordfirst = false
+                initcondition = {
+                  formula = "{custworkflow_sesc_approver.id}={nlrole}"
+                  type = "FORMULA"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition58"
+              buttonaction = netsuite.workflow.instance.customworkflow_sesc_interco_journ.workflowstates.workflowstate.0.workflowactions.1.addbuttonaction.0.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_sesc_interco_journ.workflowstates.workflowstate.1.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+            {
+              scriptid = "workflowtransition60"
+              buttonaction = netsuite.workflow.instance.customworkflow_sesc_interco_journ.workflowstates.workflowstate.0.workflowactions.1.addbuttonaction.1.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_sesc_interco_journ.workflowstates.workflowstate.2.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate22"
+        donotexitworkflow = false
+        name = "Approved - CFO"
+        positionx = 203
+        positiony = 143
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction59"
+                field = netsuite.transactionbodycustomfield.instance.custbody_sesc_approved.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = true
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "workflowstate23"
+        donotexitworkflow = false
+        name = "Exit"
+        positionx = 203
+        positiony = 233
+      },
+    ]
+  }
+}

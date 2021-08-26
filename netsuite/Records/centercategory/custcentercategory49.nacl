@@ -1,0 +1,30 @@
+netsuite.centercategory custcentercategory49 {
+  scriptid = "custcentercategory49"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab40.scriptid
+  label = "Import/Export"
+  links = {
+    link = [
+      {
+        linkid = "ADMI_IMPORTCSV"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_SAVEDIMPORTS"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_BACKUP"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_WEBSERVICES_STATUS"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_WEBSERVICES_USAGE_LOG"
+        shortlist = false
+      },
+    ]
+  }
+}

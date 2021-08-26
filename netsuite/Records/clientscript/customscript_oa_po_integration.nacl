@@ -1,0 +1,94 @@
+netsuite.clientscript customscript_oa_po_integration {
+  scriptid = "customscript_oa_po_integration"
+  fieldchangedfunction = "validateExportField"
+  isinactive = false
+  name = "OpenAir: PO/Vendor Bill Validate"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  saverecordfunction = "validateSavePOToOpenAir"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_2851_oa_purchase_integration_js@dsduuv.path
+  validatelinefunction = "validatePOLine"
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_oa_po_integration"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "CHECKBOX"
+        isformula = false
+        ismandatory = false
+        label = "Enable OpenAir Purchase Integration"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_oa_user_create_po"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "CHECKBOX"
+        isformula = false
+        ismandatory = false
+        label = "Validate OpenAir PO/Vendor Bill"
+        searchlevel = "2"
+        setting = "USER"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_oa_vb_oa_po_export"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "CHECKBOX"
+        isformula = false
+        ismandatory = false
+        label = "Vendor Bill to OpenAir PO Integration"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_oa_po_integration"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        recordtype = "PURCHASEORDER"
+        status = "RELEASED"
+      },
+      {
+        scriptid = "customdeploy_oa_vb_integration"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        recordtype = "VENDORBILL"
+        status = "RELEASED"
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_2851_features_and_preferences_js@dsduuv.path
+      },
+    ]
+  }
+}

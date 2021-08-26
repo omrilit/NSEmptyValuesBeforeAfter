@@ -1,0 +1,30 @@
+type netsuite.CustomTransactionLine {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.Account account {
+    isReference = true
+  }
+  number line {
+  }
+  number debit {
+  }
+  number credit {
+  }
+  number amount {
+  }
+  string memo {
+  }
+  netsuite.RecordRef entity {
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+}

@@ -1,0 +1,22 @@
+netsuite.centercategory custcentercategory3_23 {
+  scriptid = "custcentercategory3_23"
+  center = "ACCOUNTCENTER"
+  centertab = netsuite.centertab.instance.custcentertab7_16.scriptid
+  label = "Background Processing"
+  links = {
+    link = [
+      {
+        linklabel = "FAM Process List"
+        linkobject = "[scriptid=customrecord_fam_process]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Status"
+        linkobject = "[scriptid=customscript_fam_processstatus_su.customdeploy_fam_processstatus_su]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

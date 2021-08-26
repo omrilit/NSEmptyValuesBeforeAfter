@@ -1,0 +1,86 @@
+netsuite.NonInventorySaleItem _ARM_PB_Test_Item___Software_@_00123ssss_08211s_00125 {
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  deferredRevenueAccount = netsuite.Account.instance.Deferred__Income_2100_Deferred_Revenue_2101@ssuusu
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  isFulfillable = true
+  useMarginalRates = false
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeSopGroup = "_software"
+  vsoeDelivered = true
+  itemRevenueCategory = {
+    name = "{ARM License – Perpetual}"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "{ARM Software-Fulfillment Quantity}"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "{ARM Software-Fulfillment Quantity}"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revenueAllocationGroup = {
+    name = "{tufin}"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  createRevenuePlansOn = {
+    name = "Fulfillment"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "{ARM PB Test Item – Software}"
+  isOnline = false
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "{ARM PB Test Item – Software}"
+  custom_custitem_oa_default_billing_rule = {
+    name = "Do not export"
+    internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "{ARM PB Test Item – Software}"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

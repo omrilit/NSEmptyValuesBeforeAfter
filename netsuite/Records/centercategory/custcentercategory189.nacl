@@ -1,0 +1,34 @@
+netsuite.centercategory custcentercategory189 {
+  scriptid = "custcentercategory189"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_psa.scriptid
+  label = "Project Accounting"
+  links = {
+    link = [
+      {
+        linkid = "LIST_BILLINGCLASS"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_BILLINGSCHEDULE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_REVRECSCHEDS"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_REVRECSCHEDULE"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_SALESORDCOMMITREVENUE"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_CREATEREVRECJE"
+        shortlist = false
+      },
+    ]
+  }
+}

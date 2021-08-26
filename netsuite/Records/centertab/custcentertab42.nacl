@@ -1,0 +1,44 @@
+netsuite.centertab custcentertab42 {
+  scriptid = "custcentertab42"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter4.scriptid
+  label = "Items"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_443_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_438_t1499227_189"
+        isportletshown = true
+        portlet = "RECENTRECORDS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_447_t1499227_189"
+        isportletshown = true
+        portlet = "LIST"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_450_t1499227_189"
+        isportletshown = false
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_449_t1499227_189"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+netsuite.centertab custcentertab_oa_openair {
+  scriptid = "custcentertab_oa_openair"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  label = "OpenAir"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_1145_t1499227_189"
+        isportletshown = true
+        portlet = "SCRIPTPORTLET"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_1131_t1499227_189"
+        isportletshown = false
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_1137_t1499227_189"
+        isportletshown = false
+        portlet = "LIST"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

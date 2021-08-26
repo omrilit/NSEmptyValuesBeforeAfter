@@ -1,0 +1,450 @@
+type netsuite.Customer {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  string entityId {
+  }
+  string altName {
+  }
+  boolean isPerson {
+  }
+  string phoneticName {
+  }
+  string salutation {
+  }
+  string firstName {
+  }
+  string middleName {
+  }
+  string lastName {
+  }
+  string companyName {
+  }
+  netsuite.RecordRef entityStatus {
+  }
+  netsuite.Customer parent {
+    isReference = true
+  }
+  string phone {
+  }
+  string fax {
+  }
+  string email {
+  }
+  string url {
+  }
+  string defaultAddress {
+  }
+  boolean isInactive {
+  }
+  netsuite.RecordRef category {
+  }
+  string title {
+  }
+  string printOnCheckAs {
+  }
+  string altPhone {
+  }
+  string homePhone {
+  }
+  string mobilePhone {
+  }
+  string altEmail {
+  }
+  string language {
+  }
+  string comments {
+  }
+  string numberFormat {
+  }
+  string negativeNumberFormat {
+  }
+  netsuite.file image {
+    isReference = true
+  }
+  string emailPreference {
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.Subsidiary representingSubsidiary {
+    isReference = true
+  }
+  netsuite.RecordRef salesRep {
+  }
+  netsuite.RecordRef territory {
+  }
+  string contribPct {
+  }
+  netsuite.Partner partner {
+    isReference = true
+  }
+  netsuite.RecordRef salesGroup {
+  }
+  string vatRegNumber {
+  }
+  string accountNumber {
+  }
+  boolean taxExempt {
+  }
+  netsuite.Term terms {
+    isReference = true
+  }
+  number creditLimit {
+  }
+  string creditHoldOverride {
+  }
+  string monthlyClosing {
+  }
+  boolean overrideCurrencyFormat {
+  }
+  string displaySymbol {
+  }
+  string symbolPlacement {
+  }
+  number balance {
+  }
+  number overdueBalance {
+  }
+  number unbilledOrders {
+  }
+  number consolUnbilledOrders {
+  }
+  number consolOverdueBalance {
+  }
+  number consolDepositBalance {
+  }
+  number consolBalance {
+  }
+  number consolAging {
+  }
+  number consolAging1 {
+  }
+  number consolAging2 {
+  }
+  number consolAging3 {
+  }
+  number consolAging4 {
+  }
+  number consolDaysOverdue {
+  }
+  netsuite.PriceLevel priceLevel {
+    isReference = true
+  }
+  netsuite.Currency currency {
+    isReference = true
+  }
+  netsuite.RecordRef prefCCProcessor {
+  }
+  number depositBalance {
+  }
+  boolean shipComplete {
+  }
+  boolean taxable {
+  }
+  netsuite.RecordRef taxItem {
+  }
+  string resaleNumber {
+  }
+  number aging {
+  }
+  number aging1 {
+  }
+  number aging2 {
+  }
+  number aging3 {
+  }
+  number aging4 {
+  }
+  string startDate {
+  }
+  string alcoholRecipientType {
+  }
+  string endDate {
+  }
+  number reminderDays {
+  }
+  netsuite.RecordRef shippingItem {
+  }
+  string thirdPartyAcct {
+  }
+  string thirdPartyZipcode {
+  }
+  string thirdPartyCountry {
+  }
+  boolean giveAccess {
+  }
+  number estimatedBudget {
+  }
+  netsuite.RecordRef accessRole {
+  }
+  boolean sendEmail {
+  }
+  netsuite.RecordRef assignedWebSite {
+  }
+  string password {
+  }
+  string password2 {
+  }
+  boolean requirePwdChange {
+  }
+  netsuite.CampaignCategory campaignCategory {
+    isReference = true
+  }
+  netsuite.RecordRef sourceWebSite {
+  }
+  netsuite.LeadSource leadSource {
+    isReference = true
+  }
+  netsuite.RecordRef receivablesAccount {
+  }
+  netsuite.Account drAccount {
+    isReference = true
+  }
+  netsuite.Account fxAccount {
+    isReference = true
+  }
+  number defaultOrderPriority {
+  }
+  string webLead {
+  }
+  string referrer {
+  }
+  string keywords {
+  }
+  string clickStream {
+  }
+  string lastPageVisited {
+  }
+  number visits {
+  }
+  string firstVisit {
+  }
+  string lastVisit {
+  }
+  boolean billPay {
+  }
+  number openingBalance {
+  }
+  string openingBalanceDate {
+  }
+  netsuite.Account openingBalanceAccount {
+    isReference = true
+  }
+  string stage {
+  }
+  boolean emailTransactions {
+  }
+  boolean printTransactions {
+  }
+  boolean faxTransactions {
+  }
+  netsuite.RecordRef defaultTaxReg {
+  }
+  boolean syncPartnerTeams {
+  }
+  boolean isBudgetApproved {
+  }
+  string globalSubscriptionStatus {
+  }
+  netsuite.RecordRef salesReadiness {
+  }
+  netsuite.CustomerSalesTeamList salesTeamList {
+  }
+  netsuite.RecordRef buyingReason {
+  }
+  netsuite.CustomerDownloadList downloadList {
+  }
+  netsuite.RecordRef buyingTimeFrame {
+  }
+  netsuite.CustomerAddressbookList addressbookList {
+  }
+  netsuite.SubscriptionsList subscriptionsList {
+  }
+  netsuite.ContactAccessRolesList contactRolesList {
+  }
+  netsuite.CustomerCurrencyList currencyList {
+  }
+  netsuite.CustomerCreditCardsList creditCardsList {
+  }
+  netsuite.CustomerPartnersList partnersList {
+  }
+  netsuite.CustomerGroupPricingList groupPricingList {
+  }
+  netsuite.CustomerItemPricingList itemPricingList {
+  }
+  netsuite.CustomerTaxRegistrationList taxRegistrationList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  string custom_custentity1 {
+    field_instance = netsuite.entitycustomfield.instance.custentity1.scriptid
+  }
+  string custom_custentity10 {
+    field_instance = netsuite.entitycustomfield.instance.custentity10.scriptid
+  }
+  unknown custom_custentity11 {
+    field_instance = netsuite.entitycustomfield.instance.custentity11.scriptid
+    select_type_id = netsuite.customlist.instance.customlist12.scriptid
+  }
+  unknown custom_custentity12 {
+    field_instance = netsuite.entitycustomfield.instance.custentity12.scriptid
+    select_type_id = netsuite.customlist.instance.customlist13.scriptid
+  }
+  unknown custom_custentity13_2 {
+    field_instance = netsuite.entitycustomfield.instance.custentity13_2.scriptid
+    select_type_id = netsuite.customlist.instance.customlist19_2.scriptid
+  }
+  unknown custom_custentity14_2 {
+    field_instance = netsuite.entitycustomfield.instance.custentity14_2.scriptid
+    select_type_id = netsuite.customlist.instance.customlist22_2.scriptid
+  }
+  string custom_custentity15 {
+    field_instance = netsuite.entitycustomfield.instance.custentity15.scriptid
+  }
+  unknown custom_custentity15_2 {
+    field_instance = netsuite.entitycustomfield.instance.custentity15_2.scriptid
+    select_type_id = netsuite.customlist.instance.customlist20_2.scriptid
+  }
+  unknown custom_custentity16 {
+    field_instance = netsuite.entitycustomfield.instance.custentity16.scriptid
+    select_type_id = netsuite.customlist.instance.customlist44.scriptid
+  }
+  unknown custom_custentity17 {
+    field_instance = netsuite.entitycustomfield.instance.custentity17.scriptid
+    select_type_id = netsuite.customlist.instance.customlist30.scriptid
+  }
+  boolean custom_custentity18 {
+    field_instance = netsuite.entitycustomfield.instance.custentity18.scriptid
+  }
+  boolean custom_custentity18_2 {
+    field_instance = netsuite.entitycustomfield.instance.custentity18_2.scriptid
+  }
+  boolean custom_custentity19 {
+    field_instance = netsuite.entitycustomfield.instance.custentity19.scriptid
+  }
+  string custom_custentity20 {
+    field_instance = netsuite.entitycustomfield.instance.custentity20.scriptid
+  }
+  string custom_custentity21 {
+    field_instance = netsuite.entitycustomfield.instance.custentity21.scriptid
+  }
+  string custom_custentity22 {
+    field_instance = netsuite.entitycustomfield.instance.custentity22.scriptid
+  }
+  unknown custom_custentity3 {
+    field_instance = netsuite.entitycustomfield.instance.custentity3.scriptid
+    select_type_id = netsuite.customlist.instance.customlist8.scriptid
+  }
+  boolean custom_custentity30 {
+    field_instance = netsuite.entitycustomfield.instance.custentity30.scriptid
+  }
+  unknown custom_custentity4 {
+    field_instance = netsuite.entitycustomfield.instance.custentity4.scriptid
+    select_type_id = netsuite.customlist.instance.customlist9.scriptid
+  }
+  boolean custom_custentity5 {
+    field_instance = netsuite.entitycustomfield.instance.custentity5.scriptid
+  }
+  unknown custom_custentity6 {
+    field_instance = netsuite.entitycustomfield.instance.custentity6.scriptid
+    select_type_id = netsuite.customlist.instance.customlist10.scriptid
+  }
+  string custom_custentity7 {
+    field_instance = netsuite.entitycustomfield.instance.custentity7.scriptid
+  }
+  boolean custom_custentity8 {
+    field_instance = netsuite.entitycustomfield.instance.custentity8.scriptid
+  }
+  boolean custom_custentity9 {
+    field_instance = netsuite.entitycustomfield.instance.custentity9.scriptid
+  }
+  boolean custom_custentity_fmt_customer_credit_on_hold {
+    field_instance = netsuite.entitycustomfield.instance.custentity_fmt_customer_credit_on_hold.scriptid
+  }
+  unknown custom_custentity_lead_category {
+    field_instance = netsuite.entitycustomfield.instance.custentity_lead_category.scriptid
+    select_type_id = netsuite.customlist.instance.customlist_lead_nurture_cat.scriptid
+  }
+  unknown custom_custentity_medium {
+    field_instance = netsuite.entitycustomfield.instance.custentity_medium.scriptid
+    select_type_id = netsuite.customrecordtype.instance.customrecord11.scriptid
+  }
+  unknown custom_custentity_nsts_ci_default_layout {
+    field_instance = netsuite.entitycustomfield.instance.custentity_nsts_ci_default_layout.scriptid
+    select_type_id = netsuite.customrecordtype.instance.customrecord_nsts_ci_layout.scriptid
+  }
+  boolean custom_custentity_nsts_ci_email_attachment {
+    field_instance = netsuite.entitycustomfield.instance.custentity_nsts_ci_email_attachment.scriptid
+  }
+  netsuite.Employee custom_custentity_nsts_ci_email_sender {
+    field_instance = netsuite.entitycustomfield.instance.custentity_nsts_ci_email_sender.scriptid
+  }
+  unknown custom_custentity_nsts_ci_email_template {
+    field_instance = netsuite.entitycustomfield.instance.custentity_nsts_ci_email_template.scriptid
+    select_type_id = "-120"
+  }
+  boolean custom_custentity_nsts_ci_exclude_ci {
+    field_instance = netsuite.entitycustomfield.instance.custentity_nsts_ci_exclude_ci.scriptid
+  }
+  boolean custom_custentity_nsts_ci_fax_attachment {
+    field_instance = netsuite.entitycustomfield.instance.custentity_nsts_ci_fax_attachment.scriptid
+  }
+  netsuite.Employee custom_custentity_nsts_ci_fax_sender {
+    field_instance = netsuite.entitycustomfield.instance.custentity_nsts_ci_fax_sender.scriptid
+  }
+  unknown custom_custentity_nsts_ci_fax_template {
+    field_instance = netsuite.entitycustomfield.instance.custentity_nsts_ci_fax_template.scriptid
+    select_type_id = "-120"
+  }
+  boolean custom_custentity_nsts_ci_in_process {
+    field_instance = netsuite.entitycustomfield.instance.custentity_nsts_ci_in_process.scriptid
+  }
+  boolean custom_custentity_nsts_swva_blockcolemail {
+    field_instance = netsuite.entitycustomfield.instance.custentity_nsts_swva_blockcolemail.scriptid
+  }
+  netsuite.Employee custom_custentity_nsts_swva_collections_rep {
+    field_instance = netsuite.entitycustomfield.instance.custentity_nsts_swva_collections_rep.scriptid
+  }
+  string custom_custentity_oa_export_err_msg {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_export_err_msg.scriptid
+  }
+  boolean custom_custentity_oa_export_to_openair {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_export_to_openair.scriptid
+  }
+  string custom_custentity_oa_sfa_id {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_sfa_id.scriptid
+  }
+  boolean custom_custentity_wd_view_as_store {
+    field_instance = netsuite.entitycustomfield.instance.custentity_wd_view_as_store.scriptid
+  }
+  unknown custom_custentity_wd_view_store {
+    field_instance = netsuite.entitycustomfield.instance.custentity_wd_view_store.scriptid
+    select_type_id = netsuite.customrecordtype.instance.customrecord_wd_store_locator.scriptid
+  }
+  boolean custom_custentity_zms_wac {
+    field_instance = netsuite.entitycustomfield.instance.custentity_zms_wac.scriptid
+  }
+  unknown custom_custentitycustentity_keyword {
+    field_instance = netsuite.entitycustomfield.instance.custentitycustentity_keyword.scriptid
+    select_type_id = netsuite.customlist.instance.customlist14.scriptid
+  }
+  unknown custom_custentitycustentity_keyword_2 {
+    field_instance = netsuite.entitycustomfield.instance.custentitycustentity_keyword_2.scriptid
+    select_type_id = netsuite.customlist.instance.customlist14_2.scriptid
+  }
+  unknown custom_custentitycustentity_search_engine {
+    field_instance = netsuite.entitycustomfield.instance.custentitycustentity_search_engine.scriptid
+    select_type_id = netsuite.customlist.instance.customlist15.scriptid
+  }
+}

@@ -1,0 +1,75 @@
+netsuite.savedcsvimport custimport_12_t1740134_435 {
+  scriptid = "custimport_12_t1740134_435"
+  charencoding = "Cp1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADDUPDATE"
+  decimaldelimiter = "PERIOD"
+  description = "Chart of Accounts import from SAP"
+  ignorereadonly = false
+  importname = "SAP - COA"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "ACCOUNT"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = false
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "ACCOUNT"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "ACCOUNT"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ACCTNUMBER"
+              columnreference = {
+                column = "Number"
+                file = "ACCOUNT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ACCTTYPE"
+              columnreference = {
+                column = "Type"
+                file = "ACCOUNT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CURRENCY"
+              columnreference = {
+                column = "Currency"
+                file = "ACCOUNT"
+                type = "NAME"
+              }
+            },
+            {
+              field = "DESCRIPTION"
+              columnreference = {
+                column = "Description"
+                file = "ACCOUNT"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

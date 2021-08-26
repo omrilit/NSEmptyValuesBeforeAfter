@@ -1,0 +1,11 @@
+type netsuite.CustomFieldDepartmentAccessList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.CustomFieldDepartmentAccess>" deptAccess {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

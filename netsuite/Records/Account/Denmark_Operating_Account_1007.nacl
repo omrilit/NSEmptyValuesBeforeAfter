@@ -1,0 +1,21 @@
+netsuite.Account Denmark_Operating_Account_1007@ssu {
+  acctType = "_bank"
+  acctNumber = "1007"
+  acctName = "Denmark Operating Account"
+  includeChildren = false
+  currency = netsuite.Currency.instance.Danish_Krone@s
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  curDocNum = 2
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_Denmark@buu,
+  ]
+  revalue = true
+  identifier = "Denmark Operating Account_1007"
+  externalId = "11900"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

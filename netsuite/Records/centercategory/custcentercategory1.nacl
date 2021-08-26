@@ -1,0 +1,28 @@
+netsuite.centercategory custcentercategory1 {
+  scriptid = "custcentercategory1"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab9.scriptid
+  label = "Bugs"
+  links = {
+    link = [
+      {
+        linklabel = "My Defects"
+        linkobject = netsuite.savedsearch.instance.customsearch47.scriptid
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "High Severity Defects"
+        linkobject = netsuite.savedsearch.instance.customsearch49.scriptid
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Defect (Bugs)"
+        linkobject = netsuite.customrecordtype.instance.customrecord2.scriptid
+        linktasktype = "LIST"
+        shortlist = false
+      },
+    ]
+  }
+}

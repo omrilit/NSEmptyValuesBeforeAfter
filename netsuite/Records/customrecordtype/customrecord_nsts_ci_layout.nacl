@@ -1,0 +1,369 @@
+netsuite.customrecordtype customrecord_nsts_ci_layout {
+  scriptid = "customrecord_nsts_ci_layout"
+  accesstype = "USEPERMISSIONLIST"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = false
+  allowquicksearch = false
+  allowuiaccess = true
+  description = "This record allows a user to define the preferred PDF layout to be generated for every invoice consolidation. The CI solution supports 4 PDF layout that can be configured as per business needs."
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = true
+  recordname = "NSTS | CI - Layout"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_nsts_ci_pdf_template_file"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Template file to be used as layout/format."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "DOCUMENT"
+        globalsearch = false
+        help = "Template file to be used as layout/format."
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "PDF Template File"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_gen_pdf_search_1"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "1st set of data to be used on the layout."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "1st set of data to be used on the layout."
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Saved Search 1 (for PDF)"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-119"
+        showinlist = true
+        storevalue = true
+        customfieldfilters = {
+          customfieldfilter = [
+            {
+              fldfilter = "STDRECORDSAVEDSEARCHRECORDTYPE"
+              fldfiltercomparetype = "EQ"
+              fldfilternotnull = false
+              fldfilternull = false
+              fldfiltersel = "-30"
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "custrecord_nsts_ci_gen_pdf_search_2"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "2nd set of data to be used on the layout (optional)"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "2nd set of data to be used on the layout (optional)"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Saved Search 2 (for PDF)"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-119"
+        showinlist = true
+        storevalue = true
+        customfieldfilters = {
+          customfieldfilter = [
+            {
+              fldfilter = "STDRECORDSAVEDSEARCHRECORDTYPE"
+              fldfiltercomparetype = "EQ"
+              fldfilternotnull = false
+              fldfilternull = false
+              fldfiltersel = "-30"
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "custrecord_nsts_ci_is_landscape"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Check this option to set the page in landscape format."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Check this option to set the page in landscape format."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Is Landscape"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_title_font_size"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "11"
+        description = "Field to set font size of layout’s title."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Field to set font size of layout’s title."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Title Font Size"
+        maxvalue = "100"
+        minvalue = "1"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_sub_title_font_size"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "10"
+        description = "Field to set font size of layout’s sub-title."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Field to set font size of layout’s sub-title."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Sub Title Font Size"
+        maxvalue = "100"
+        minvalue = "1"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_th_font_size"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "9"
+        description = "Field to set font size of layout’s header."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Field to set font size of layout’s header."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Table Head Font Size"
+        maxvalue = "100"
+        minvalue = "1"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_tr_font_size"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "8"
+        description = "Field to set font size of layout’s table row body."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Field to set font size of layout’s table row body."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Table Row Body Font Size"
+        maxvalue = "100"
+        minvalue = "1"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_body_font_size"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "9"
+        description = "Field to set font size of layout’s body section."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Field to set font size of layout’s body section."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Body Font Size"
+        maxvalue = "100"
+        minvalue = "1"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecordnsts_ci_header_height"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "35.0%"
+        description = "Field to set header height of the layout."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "PERCENT"
+        globalsearch = false
+        help = "Field to set header height of the layout."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Header Height"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_billship_font_size"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "8"
+        description = "Field to set font size of Billing and Shipping."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Field to set font size of Billing and Shipping."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Billing and Shipping Font Size"
+        maxvalue = "100"
+        minvalue = "1"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_ci_billship_tbl_height"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "100"
+        description = "Field to set height of Billing and Shipping."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Field to set height of Billing and Shipping."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Billing and Shipping table Height"
+        maxvalue = "2000"
+        minvalue = "1"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+    ]
+  }
+  permissions = {
+    permission = [
+      {
+        permittedlevel = "FULL"
+        permittedrole = "ADMINISTRATOR"
+      },
+    ]
+  }
+  links = {
+    link = [
+      {
+        linkcategory = "BASICLISTSCUSTOM"
+        linktasktype = "LIST"
+      },
+    ]
+  }
+}

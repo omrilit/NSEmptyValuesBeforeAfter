@@ -1,0 +1,23 @@
+netsuite.centercategory custcentercategory46 {
+  scriptid = "custcentercategory46"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab39.scriptid
+  label = "Tools"
+  links = {
+    link = [
+      {
+        linkid = "LIST_TRAN_SALESORD"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_SALESORDAPPRV"
+        shortlist = false
+      },
+      {
+        linkobject = netsuite.centerlink.instance.custlink_8_t1740134_548.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+    ]
+  }
+}

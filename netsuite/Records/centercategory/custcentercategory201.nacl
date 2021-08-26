@@ -1,0 +1,26 @@
+netsuite.centercategory custcentercategory201 {
+  scriptid = "custcentercategory201"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_documents.scriptid
+  label = "Templates"
+  links = {
+    link = [
+      {
+        linkid = "LIST_EMAILTEMPLATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_PDFTEMPLATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CRMTEMPLATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_TEMPLATEFILES"
+        shortlist = false
+      },
+    ]
+  }
+}

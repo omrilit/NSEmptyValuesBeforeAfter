@@ -1,0 +1,22 @@
+netsuite.Account zPrinting___Reproduction_z51@sesu {
+  acctType = "_costOfGoodsSold"
+  acctNumber = "z51"
+  acctName = "zPrinting & Reproduction"
+  includeChildren = true
+  generalRate = "_average"
+  cashFlowRate = "_average"
+  isInactive = true
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "zPrinting & Reproduction_z51"
+  externalId = "60000"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

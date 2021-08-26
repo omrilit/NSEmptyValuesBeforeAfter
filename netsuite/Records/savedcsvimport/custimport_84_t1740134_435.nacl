@@ -1,0 +1,87 @@
+netsuite.savedcsvimport custimport_84_t1740134_435 {
+  scriptid = "custimport_84_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  entryform = netsuite.entryForm.instance.custform_51_t1499227_346.scriptid
+  ignorereadonly = true
+  importname = "OA - Employee Import"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "EMPLOYEE"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "EMPLOYEE"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "EMPLOYEE"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "BILLINGCLASS"
+              value = "2"
+            },
+            {
+              field = "CLASS"
+              value = "2"
+            },
+            {
+              field = "DEPARTMENT"
+              value = "4"
+            },
+            {
+              field = "FIRSTNAME"
+              columnreference = {
+                column = "First Name"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ISJOBRESOURCE"
+              value = "T"
+            },
+            {
+              field = "LASTNAME"
+              columnreference = {
+                column = "Last Name"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SUBSIDIARY"
+              value = "1"
+            },
+            {
+              field = "SUPERVISOR"
+              value = "1248"
+            },
+            {
+              field = "WORKCALENDAR"
+              value = "1"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

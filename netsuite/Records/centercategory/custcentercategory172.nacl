@@ -1,0 +1,19 @@
+netsuite.centercategory custcentercategory172 {
+  scriptid = "custcentercategory172"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab59.scriptid
+  label = "Reports"
+  links = {
+    link = [
+      {
+        linkobject = netsuite.centerlink.instance.custlink_20_t1740134_475.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_SAVEDSEARCH"
+        shortlist = false
+      },
+    ]
+  }
+}

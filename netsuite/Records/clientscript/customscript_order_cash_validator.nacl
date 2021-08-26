@@ -1,0 +1,12 @@
+netsuite.clientscript customscript_order_cash_validator {
+  scriptid = "customscript_order_cash_validator"
+  fieldchangedfunction = "automation_validateField"
+  isinactive = false
+  name = "**Order to Cash Validator"
+  notifyadmins = false
+  notifyemails = "mdeasis@netsuite.com"
+  notifyowner = true
+  notifyuser = false
+  saverecordfunction = "automation_saveRecord"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_74218_Order2Cash_Automation_js@dsduv.path
+}

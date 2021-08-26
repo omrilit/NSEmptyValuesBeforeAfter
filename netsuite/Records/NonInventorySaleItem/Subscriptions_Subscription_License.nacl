@@ -1,0 +1,183 @@
+netsuite.NonInventorySaleItem Subscriptions_Subscription_License@us {
+  salesDescription = "Subscription License"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Software_License_Subscription_4003@uusdu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  billingSchedule = {
+    name = "100% Upfront"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferredRevenueAccount = netsuite.Account.instance.Deferred__Income_2100_License_Software_2102@ssuubu
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  isFulfillable = false
+  useMarginalRates = false
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeSopGroup = "_normal"
+  vsoePermitDiscount = "_asAllowed"
+  vsoeDelivered = true
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Straight line, prorate"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Straight line, prorate"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Subscription License"
+  displayName = "Subscription License"
+  parent = netsuite.NonInventorySaleItem.instance.Subscriptions
+  isOnline = false
+  offerSupport = true
+  isInactive = false
+  availableToPartners = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ_Australia@buu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_United_Kingdom@buus,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 70000
+              quantity = 0
+            },
+            {
+              value = 65000
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 70000
+              quantity = 0
+            },
+            {
+              value = 65000
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 36000
+              quantity = 0
+            },
+            {
+              value = 35000
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 36000
+              quantity = 0
+            },
+            {
+              value = 35000
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 30000
+              quantity = 0
+            },
+            {
+              value = 28000
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 30000
+              quantity = 0
+            },
+            {
+              value = 28000
+              quantity = 10
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Subscriptions_Subscription License"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Subscription License"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

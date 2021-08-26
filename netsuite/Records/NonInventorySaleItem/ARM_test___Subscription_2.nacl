@@ -1,0 +1,78 @@
+netsuite.NonInventorySaleItem ARM_test___Subscription_2@ss_08211ss {
+  includeChildren = false
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  deferredRevenueAccount = netsuite.Account.instance.Deferred__Income_2100_Deferred_Revenue_2101@ssuusu
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  isFulfillable = true
+  useMarginalRates = false
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeSopGroup = "_normal"
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "ARM test - Even Periods 2"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "ARM test - Even Periods 2"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  createRevenuePlansOn = {
+    name = "Revenue Arrangement Creation"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "ARM test – Subscription 2"
+  isOnline = false
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "ARM test – Subscription 2"
+  custom_custitem_oa_default_billing_rule = {
+    name = "Do not export"
+    internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "ARM test – Subscription 2"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

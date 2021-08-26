@@ -1,0 +1,67 @@
+netsuite.savedcsvimport custimport_21_t1740134_435 {
+  scriptid = "custimport_21_t1740134_435"
+  charencoding = "Cp1252"
+  columndelimiter = "COMMA"
+  datahandling = "UPDATE"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = false
+  importname = "453"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  preventduplicates = false
+  recordtype = "LEAD"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "LEAD"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "LEAD"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "EXTERNALID"
+              columnreference = {
+                column = "External ID"
+                file = "LEAD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ID"
+              columnreference = {
+                column = "Internal ID"
+                file = "LEAD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "LEADSOURCE"
+              columnreference = {
+                column = "Lead Source"
+                file = "LEAD"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

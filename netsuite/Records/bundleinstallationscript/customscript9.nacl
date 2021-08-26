@@ -1,0 +1,56 @@
+netsuite.bundleinstallationscript customscript9 {
+  scriptid = "customscript9"
+  afterinstallfunction = "postInstallCombiner"
+  afterupdatefunction = "postInstallCombiner"
+  isinactive = false
+  name = "NS RC Post Install"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - Checkout 2.04.0/Reference Checkout/suitelets/NS_RC_SS_Post_Install.js]"
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_ns_rc_root_folder"
+        accesslevel = "2"
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        displaywidth = 40
+        fieldtype = "TEXT"
+        isformula = false
+        ismandatory = false
+        label = "NS RC Root Folder"
+        searchlevel = "2"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_ns_rc_scast_folders"
+        accesslevel = "2"
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        displaywidth = 40
+        fieldtype = "CLOBTEXT"
+        isformula = false
+        ismandatory = false
+        label = "NS RC SC Advanced Site Templates Folders"
+        searchlevel = "2"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy1"
+        isdeployed = true
+        loglevel = "ERROR"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "NS RC Post Install"
+      },
+    ]
+  }
+}

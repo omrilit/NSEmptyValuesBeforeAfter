@@ -1,0 +1,65 @@
+type netsuite.PhoneCall {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string message {
+  }
+  netsuite.RecordRef company {
+  }
+  netsuite.Contact contact {
+    isReference = true
+  }
+  netsuite.SupportCase supportCase {
+    isReference = true
+  }
+  netsuite.RecordRef transaction {
+  }
+  netsuite.RecordRef milestone {
+  }
+  netsuite.RecordRef customForm {
+  }
+  string title {
+  }
+  netsuite.RecordRef owner {
+  }
+  netsuite.RecordRef assigned {
+  }
+  boolean sendEmail {
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  boolean timedEvent {
+  }
+  string completedDate {
+  }
+  string phone {
+  }
+  string status {
+  }
+  string priority {
+  }
+  boolean accessLevel {
+  }
+  string reminderType {
+  }
+  string reminderMinutes {
+  }
+  netsuite.PhoneCallContactList contactList {
+  }
+  netsuite.PhoneCallTimeItemList timeItemList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  unknown custom_custevent_nsts_swva_ci_record {
+    field_instance = netsuite.crmcustomfield.instance.custevent_nsts_swva_ci_record.scriptid
+    select_type_id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.scriptid
+  }
+}

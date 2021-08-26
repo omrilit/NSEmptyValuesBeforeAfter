@@ -1,0 +1,348 @@
+netsuite.role customrole1027 {
+  scriptid = "customrole1027"
+  centertype = "SALESCENTER"
+  employeerestriction = "UNASSIGNED"
+  employeeselectionunrestricted = false
+  employeeviewingallowed = false
+  isinactive = false
+  ispartnerrole = false
+  issalesrole = true
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "General Manager - APAC"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "SELECTED"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = [
+      {
+        permkey = "TRAN_CASHSALE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_FORECAST"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_MGRFORECAST"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_COMMISSN"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_APPROVECOMMISSN"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_QUOTA"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_ESTIMATE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_SALESORDFULFILL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_CUSTINVC"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_OPPRTNTY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_SALESORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_SALESORDAPPRV"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_AR"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_COMMISSION"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SNAPSHOTLEAD"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_QUOTA"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_CUSTOMIZATION"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_SCHEDULE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_SALES"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SALES_PARTNER"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SALES_PROMO"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SFA"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SALESORDER"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_BOOKINGS"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_NONPOSTING"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_ANALYTICS"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "REGT_ACCTREC"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CRMGROUP"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CALENDAR"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CAMPAIGNHISTORY"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CASE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CUSTJOB"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_COMPANY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_COMPETITOR"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CONTACT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CUSTRECORDENTRY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_FILECABINET"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EMAILTEMPLATE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_COMMISSIONRULES"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EVENT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EXPORT"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_FAXMESSAGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_FAXTEMPLATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_INTERNALPUBLISH"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_ISSUE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_ITEM"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_MAILMESSAGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_MAILTEMPLATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_MAILMERGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CAMPAIGN"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_MASSUPDATES"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "REGT_NONPOSTING"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_HISTORY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PDFMESSAGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_PDFTEMPLATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CALL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTEMPLATE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_JOB"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROMOTIONCODE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_RESOURCE"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_TASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CRMMESSAGE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_UNIT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "ADMI_CRMLIST"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "ADMI_ENTITYSTATUS"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_COMMISSIONSETUP"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CUSTBODYFIELD"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "ADMI_CUSTCOLUMNFIELD"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "ADMI_CUSTENTITYFIELD"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "ADMI_CUSTENTRYFORM"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CUSTFIELD"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "ADMI_CUSTLIST"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "ADMI_CUSTFIELDTAB"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "ADMI_CUSTTRANFIELD"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "ADMI_CUSTFORM"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CUSTOMERFORM"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_SALESTERRITORY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CUSTOMERRULE"
+        permlevel = "FULL"
+      },
+    ]
+  }
+}

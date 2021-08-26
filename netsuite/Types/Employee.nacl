@@ -1,0 +1,257 @@
+type netsuite.Employee {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  netsuite.RecordRef template {
+  }
+  serviceid entityId {
+  }
+  string salutation {
+  }
+  string firstName {
+  }
+  string middleName {
+  }
+  string lastName {
+  }
+  string altName {
+  }
+  string phone {
+  }
+  string fax {
+  }
+  string email {
+  }
+  string defaultAddress {
+  }
+  boolean isInactive {
+  }
+  string phoneticName {
+  }
+  string initials {
+  }
+  string officePhone {
+  }
+  string homePhone {
+  }
+  string mobilePhone {
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.RecordRef billingClass {
+  }
+  string accountNumber {
+  }
+  string compensationCurrency {
+  }
+  string baseWageType {
+  }
+  number baseWage {
+  }
+  string comments {
+  }
+  string globalSubscriptionStatus {
+  }
+  netsuite.file image {
+    isReference = true
+  }
+  string payFrequency {
+  }
+  string lastPaidDate {
+  }
+  netsuite.Currency currency {
+    isReference = true
+  }
+  string useTimeData {
+  }
+  boolean usePerquest {
+  }
+  netsuite.RecordRef workplace {
+  }
+  string adpId {
+  }
+  boolean directDeposit {
+  }
+  number expenseLimit {
+  }
+  number purchaseOrderLimit {
+  }
+  number purchaseOrderApprovalLimit {
+  }
+  string socialSecurityNumber {
+  }
+  netsuite.Employee supervisor {
+    isReference = true
+  }
+  netsuite.RecordRef approver {
+  }
+  number approvalLimit {
+  }
+  netsuite.RecordRef timeApprover {
+  }
+  netsuite.RecordRef employeeType {
+  }
+  boolean isSalesRep {
+  }
+  netsuite.SalesRole salesRole {
+    isReference = true
+  }
+  boolean isSupportRep {
+  }
+  boolean isJobResource {
+  }
+  number laborCost {
+  }
+  string birthDate {
+  }
+  string hireDate {
+  }
+  string releaseDate {
+  }
+  string terminationDetails {
+  }
+  netsuite.RecordRef terminationReason {
+  }
+  string terminationRegretted {
+  }
+  string terminationCategory {
+  }
+  netsuite.RecordRef timeOffPlan {
+  }
+  string lastReviewDate {
+  }
+  string nextReviewDate {
+  }
+  string title {
+  }
+  netsuite.RecordRef employeeStatus {
+  }
+  string jobDescription {
+  }
+  string workAssignment {
+  }
+  netsuite.Job job {
+    isReference = true
+  }
+  netsuite.RecordRef maritalStatus {
+  }
+  netsuite.RecordRef ethnicity {
+  }
+  string gender {
+  }
+  netsuite.RecordRef purchaseOrderApprover {
+  }
+  netsuite.RecordRef workCalendar {
+  }
+  boolean giveAccess {
+  }
+  netsuite.Currency defaultExpenseReportCurrency {
+    isReference = true
+  }
+  boolean concurrentWebServicesUser {
+  }
+  boolean sendEmail {
+  }
+  boolean hasOfflineAccess {
+  }
+  string password {
+  }
+  string password2 {
+  }
+  boolean requirePwdChange {
+  }
+  boolean inheritIPRules {
+  }
+  string IPAddressRule {
+  }
+  string startDateTimeOffCalc {
+  }
+  string commissionPaymentPreference {
+  }
+  boolean billPay {
+  }
+  netsuite.RecordRef defaultAcctCorpCardExp {
+  }
+  boolean eligibleForCommission {
+  }
+  netsuite.EmployeeSubscriptionsList subscriptionsList {
+  }
+  netsuite.EmployeeRatesList ratesList {
+  }
+  netsuite.EmployeeAddressbookList addressbookList {
+  }
+  netsuite.EmployeeRolesList rolesList {
+  }
+  netsuite.EmployeeHrEducationList hrEducationList {
+  }
+  netsuite.EmployeeAccruedTimeList accruedTimeList {
+  }
+  netsuite.EmployeeDirectDepositList directDepositList {
+  }
+  netsuite.EmployeeCurrencyList currencyList {
+  }
+  netsuite.EmployeeCompanyContributionList companyContributionList {
+  }
+  netsuite.EmployeeEarningList earningList {
+  }
+  netsuite.EmployeeEmergencyContactList emergencyContactList {
+  }
+  netsuite.EmployeeHcmPositionList hcmPositionList {
+  }
+  netsuite.EmployeeDeductionList deductionList {
+  }
+  boolean isJobManager {
+  }
+  number targetUtilization {
+  }
+  number bonusTarget {
+  }
+  string bonusTargetComment {
+  }
+  string bonusTargetType {
+  }
+  string bonusTargetPayFrequency {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  boolean custom_custentity2 {
+    field_instance = netsuite.entitycustomfield.instance.custentity2.scriptid
+  }
+  string custom_custentity_oa_export_err_msg {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_export_err_msg.scriptid
+  }
+  boolean custom_custentity_oa_export_to_openair {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_export_to_openair.scriptid
+  }
+  boolean custom_custentity_oa_ns_purchaser {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_ns_purchaser.scriptid
+  }
+  boolean custom_custentity_pro_serv_rep {
+    field_instance = netsuite.entitycustomfield.instance.custentity_pro_serv_rep.scriptid
+  }
+  netsuite.Employee custom_custentity_ra_approver {
+    field_instance = netsuite.entitycustomfield.instance.custentity_ra_approver.scriptid
+  }
+  "List<unknown>" custom_custentity_skills {
+    field_instance = netsuite.entitycustomfield.instance.custentity_skills.scriptid
+    select_type_id = netsuite.customlist.instance.customlist_skills.scriptid
+  }
+}

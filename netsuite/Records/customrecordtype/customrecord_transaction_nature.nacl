@@ -1,0 +1,84 @@
+netsuite.customrecordtype customrecord_transaction_nature {
+  scriptid = "customrecord_transaction_nature"
+  accesstype = "NONENEEDED"
+  allowattachments = false
+  allowinlinedeleting = true
+  allowinlinedetaching = true
+  allowinlineediting = true
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = true
+  allowquicksearch = true
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "Nature of Transaction"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = false
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_nattran_country"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Country"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-159"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nattran_code"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "MULTISELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = true
+        isparent = true
+        label = "Code"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customrecordtype.instance.customrecord_notc.scriptid
+        showinlist = true
+        storevalue = true
+      },
+    ]
+  }
+}

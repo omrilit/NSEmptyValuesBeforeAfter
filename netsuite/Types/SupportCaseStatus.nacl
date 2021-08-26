@@ -1,0 +1,27 @@
+type netsuite.SupportCaseStatus {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string name {
+  }
+  netsuite.RecordRef insertBefore {
+  }
+  string stage {
+  }
+  boolean caseOnHold {
+  }
+  boolean autoCloseCase {
+  }
+  string description {
+  }
+  boolean isInactive {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

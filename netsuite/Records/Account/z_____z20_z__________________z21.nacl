@@ -1,0 +1,23 @@
+netsuite.Account z_____z20_z__________________z21@_25903_25173_25163_24418uu_25903_25173_25163_24418sj_38306_20418_20250_31038_12398_12418_12398_12434_38500_12367ku {
+  acctType = "_accountsPayable"
+  acctNumber = "z21"
+  acctName = "z支払手形 (関係会社のものを除く)"
+  includeChildren = true
+  generalRate = "_current"
+  parent = netsuite.Account.instance.z_____z20@_25903_25173_25163_24418u
+  cashFlowRate = "_average"
+  description = "関係会社のものを除く。"
+  isInactive = true
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = true
+  identifier = "z支払手形_z20_z支払手形 (関係会社のものを除く)_z21"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

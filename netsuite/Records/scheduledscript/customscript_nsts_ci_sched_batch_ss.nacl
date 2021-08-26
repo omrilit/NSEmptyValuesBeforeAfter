@@ -1,0 +1,164 @@
+netsuite.scheduledscript customscript_nsts_ci_sched_batch_ss {
+  scriptid = "customscript_nsts_ci_sched_batch_ss"
+  defaultfunction = "schedule_ProcessCIScheduled"
+  description = "this script is used for processing scheduled CI"
+  isinactive = false
+  name = "NSTS | CI Sched Batch Consolidation SS"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_SS_ConsolidatedInvoicingScheduled_js@dsduuuv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_nsts_customer_ci_param"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = '''
+(Optional field) this is an Internalid of the customer.
+
+If the customer is selected in this field. The only CI to process is all invoices with the customer equal to this field.
+'''
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        help = '''
+(Optional field) this is an Internalid of the customer.
+
+If the customer is selected in this field. The only CI to process is all invoices with the customer equal to this field.
+'''
+        isformula = false
+        ismandatory = false
+        label = "Customer"
+        onparentdelete = "SET_NULL"
+        searchlevel = "2"
+        selectrecordtype = "-2"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_nsts_subsidiary_ci_param"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = '''
+(Optional field) this is an Internalid of the subsidiary.
+
+If the subsidiary is selected in this field. The only CI to process is all invoices with the subsidiary equal to this field.
+'''
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        help = '''
+(Optional field) this is an Internalid of the subsidiary.
+
+If the subsidiary is selected in this field. The only CI to process is all invoices with the subsidiary equal to this field.
+'''
+        isformula = false
+        ismandatory = false
+        label = "Subsidiary"
+        onparentdelete = "NO_ACTION"
+        searchlevel = "2"
+        selectrecordtype = "-117"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_nsts_inv_cutoff_dt_ci_param"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "(Optional field) if this field is set all invoices that are not yet process in CI and with the transaction date on or before the selected date"
+        displaytype = "NORMAL"
+        fieldtype = "DATE"
+        help = "(Optional field) if this field is set all invoices that are not yet process in CI and with the transaction date on or before the selected date"
+        isformula = false
+        ismandatory = false
+        label = "Invoice Cut Off Date"
+        searchlevel = "2"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_nsts_ci_date_opt_ci_param"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "(Optional field) this field will identify the CI Date on the CI Record"
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        help = "(Optional field) this field will identify the CI Date on the CI Record"
+        isformula = false
+        ismandatory = false
+        label = "CI Date Options"
+        onparentdelete = "NO_ACTION"
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_nsts_ci_date_opts.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_nsts_spec_date_ci_param"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "(Optional field)  if CI Date Options is equal to specified Date then the CI Date on the CI Record will be equal on this field"
+        displaytype = "NORMAL"
+        fieldtype = "DATE"
+        help = "(Optional field)  if CI Date Options is equal to specified Date then the CI Date on the CI Record will be equal on this field"
+        isformula = false
+        ismandatory = false
+        label = "CI Specific Date"
+        searchlevel = "2"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_nsts_ci_offset_days"
+        accesslevel = "2"
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        description = "(Optional field)  if the value is negative the Cutoff date will become Cutoff date subtract the value set on this field otherwise it will add days"
+        displaytype = "NORMAL"
+        fieldtype = "INTEGER"
+        help = "(Optional field)  if the value is negative the Cutoff date will become Cutoff date subtract the value set on this field otherwise it will add"
+        isformula = false
+        ismandatory = false
+        label = "Offset (in Days)"
+        maxvalue = "365"
+        minvalue = "-365"
+        searchlevel = "2"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_nsts_ci_sched_batch_ss"
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "NOTSCHEDULED"
+        title = "NSTS | CI Sched Batch Consolidation SS"
+        recurrence = {
+          single = {
+            startdate = "2015-01-29"
+            starttime = "02:00:00Z"
+          }
+        }
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_Lib_Constants_js@dsduuuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_Lib_UtilAndObjects_js@dsduuuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_Lib_ConsolidationProcessing_js@dsduuuv.path
+      },
+    ]
+  }
+}

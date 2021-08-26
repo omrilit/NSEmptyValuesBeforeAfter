@@ -1,0 +1,141 @@
+type netsuite.PurchaseOrder {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.Nexus nexus {
+    isReference = true
+  }
+  netsuite.RecordRef subsidiaryTaxRegNum {
+  }
+  boolean taxRegOverride {
+  }
+  boolean taxDetailsOverride {
+  }
+  netsuite.RecordRef customForm {
+  }
+  netsuite.RecordRef entity {
+  }
+  netsuite.RecordRef purchaseContract {
+  }
+  string vatRegNum {
+  }
+  netsuite.Employee employee {
+    isReference = true
+  }
+  boolean supervisorApproval {
+  }
+  string tranDate {
+  }
+  string tranId {
+  }
+  netsuite.RecordRef entityTaxRegNum {
+  }
+  string taxPointDate {
+  }
+  netsuite.RecordRef createdFrom {
+  }
+  netsuite.Term terms {
+    isReference = true
+  }
+  string dueDate {
+  }
+  string otherRefNum {
+  }
+  number availableVendorCredit {
+  }
+  string memo {
+  }
+  netsuite.RecordRef approvalStatus {
+  }
+  number exchangeRate {
+  }
+  netsuite.RecordRef nextApprover {
+  }
+  string source {
+  }
+  string currencyName {
+  }
+  boolean toBePrinted {
+  }
+  boolean toBeEmailed {
+  }
+  string email {
+  }
+  boolean toBeFaxed {
+  }
+  string fax {
+  }
+  string message {
+  }
+  netsuite.Address billingAddress {
+  }
+  netsuite.RecordRef billAddressList {
+  }
+  netsuite.Currency currency {
+    isReference = true
+  }
+  netsuite.RecordRef shipTo {
+  }
+  number subTotal {
+  }
+  number taxTotal {
+  }
+  number tax2Total {
+  }
+  netsuite.Address shippingAddress {
+  }
+  boolean shipIsResidential {
+  }
+  netsuite.RecordRef shipAddressList {
+  }
+  string fob {
+  }
+  string shipDate {
+  }
+  netsuite.RecordRef shipMethod {
+  }
+  netsuite.RecordRef incoterm {
+  }
+  string trackingNumbers {
+  }
+  string linkedTrackingNumbers {
+  }
+  number total {
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.RecordRef intercoTransaction {
+  }
+  string intercoStatus {
+  }
+  string status {
+  }
+  string orderStatus {
+  }
+  netsuite.PurchaseOrderItemList itemList {
+  }
+  netsuite.AccountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.PurchaseOrderExpenseList expenseList {
+  }
+  netsuite.TaxDetailsList taxDetailsList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

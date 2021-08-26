@@ -1,0 +1,50 @@
+netsuite.kpiscorecard kpiscorecard_2_t1740134_426 {
+  scriptid = "kpiscorecard_2_t1740134_426"
+  description = "Marketing Conversion"
+  name = "Marketing Conversion"
+  useperiods = "F"
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = true
+  }
+  kpis = {
+    kpi = [
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "NEWLEADS"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "NEWOPPORTUNITIES"
+      },
+      {
+        comparevalueto = "NEWLEADS"
+        comparewithprevious = false
+        comparisontype = "RATIO_PERCENT"
+        hidden = false
+        invertcomparison = false
+        kpi = "NEWOPPORTUNITIES"
+        label = "% Conversion"
+      },
+    ]
+  }
+  ranges = {
+    range = [
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "LAST_FISCAL_QUARTER"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "THIS_FISCAL_QUARTER"
+      },
+    ]
+  }
+}

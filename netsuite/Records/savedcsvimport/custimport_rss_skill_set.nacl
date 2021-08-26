@@ -1,0 +1,67 @@
+netsuite.savedcsvimport custimport_rss_skill_set {
+  scriptid = "custimport_rss_skill_set"
+  charencoding = "UTF_8"
+  columndelimiter = "COMMA"
+  customrecord = "[scriptid=customrecord_rss_skillset]"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "RSS Skill Set"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "CUSTOMRECORD"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "CUSTOMRECORD"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "CUSTOMRECORD"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "[scriptid=customrecord_rss_skillset.custrecord_rss_skillset_level]"
+              columnreference = {
+                column = "Skill Level"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_rss_skillset.custrecord_rss_skillset_resource]"
+              columnreference = {
+                column = "Resource"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_rss_skillset.custrecord_rss_skillset_skill]"
+              columnreference = {
+                column = "Skill"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+netsuite.workflow customworkflow19 {
+  scriptid = "customworkflow19"
+  initoncreate = true
+  initonvieworupdate = true
+  isinactive = false
+  islogenabled = true
+  keephistory = "ALWAYS"
+  name = "suggested department wf"
+  recordtypes = "VENDORBILL|VENDORCREDIT"
+  releasestatus = "RELEASED"
+  runasadmin = false
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate157"
+        donotexitworkflow = false
+        name = "State 1"
+        positionx = 243
+        positiony = 133
+      },
+    ]
+  }
+}

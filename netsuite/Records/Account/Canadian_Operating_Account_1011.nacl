@@ -1,0 +1,19 @@
+netsuite.Account Canadian_Operating_Account_1011@ssu {
+  acctType = "_bank"
+  acctNumber = "1011"
+  acctName = "Canadian Operating Account"
+  includeChildren = false
+  currency = netsuite.Currency.instance.CAD
+  generalRate = "_current"
+  cashFlowRate = "_current"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_Canada@buu,
+  ]
+  revalue = true
+  identifier = "Canadian Operating Account_1011"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

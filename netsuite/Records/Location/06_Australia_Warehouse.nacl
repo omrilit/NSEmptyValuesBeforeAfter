@@ -1,0 +1,33 @@
+netsuite.Location "06_Australia_Warehouse@s" {
+  name = "06 Australia Warehouse"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_ANZ_Australia@buu,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_australia"
+    addressee = "06 Australia Warehouse"
+    addrText = "06 Australia Warehouse<br>Australia"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "06 Australia Warehouse"
+}

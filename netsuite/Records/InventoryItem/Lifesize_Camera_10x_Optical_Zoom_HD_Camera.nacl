@@ -1,0 +1,324 @@
+netsuite.InventoryItem Lifesize_Camera_10x_Optical_Zoom_HD_Camera@s {
+  purchaseDescription = "Lifesize Camera 10x Optical Zoom HD Camera"
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  intercoCogsAccount = netsuite.Account.instance.COGS_5000_Intercompany_Cost_of_Goods_Sold_5900@uussssu
+  salesDescription = "Lifesize Camera 10x Optical Zoom HD Camera"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  intercoIncomeAccount = netsuite.Account.instance.Revenue_4000_Intercompany_Revenue_4900@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  shippingCostUnits = "per Ea."
+  handlingCostUnits = "per Ea."
+  weightUnits = "per Ea."
+  costingMethodDisplay = "Average"
+  unitsType = {
+    name = "EACH"
+  }
+  stockUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  purchaseUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  saleUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  minimumQuantityUnits = "Ea."
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  costEstimateUnits = "per Ea."
+  vsoeDelivered = false
+  costUnits = "per Ea."
+  totalValue = 112630.88
+  averageCost = 2252.62
+  useBins = false
+  quantityReorderUnits = "Quantity On Hand, Reorder Point, Quantity On Order, and Quantity Committed are in Ea."
+  autoLeadTime = true
+  lastPurchasePrice = 2252.62
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  safetyStockLevelUnits = "Ea."
+  autoReorderPoint = true
+  storeDisplayName = "Lifesize Camera 10x Optical Zoom HD Camera"
+  storeDisplayThumbnail = netsuite.RecordRef.instance.InventoryItem_storeDisplayThumbnail_12095
+  storeDisplayImage = netsuite.RecordRef.instance.InventoryItem_storeDisplayImage_12094
+  storeDescription = "<span class=\"uir-field inputreadonly\">Lifesize Camera 10x Optical Zoom HD Camera&nbsp;</span>"
+  storeDetailedDescription = '''
+<p>Lifesize Camera 10x Optical Zoom HD Camera</p>
+<ul class="a-vertical a-spacing-none">			
+<li>Compatible with Lifesize Video Conference systems </li>
+
+</ul>
+'''
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  urlComponent = "Lifesize-Camera-10x-Optical-Zoom-HD-Camera"
+  itemId = "Lifesize Camera 10x Optical Zoom HD Camera"
+  displayName = "Lifesize Camera 10x Optical Zoom HD Camera"
+  isOnline = true
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 2999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 2999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 2999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 2999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 2999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 2999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 2399
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 2399
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 2399
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnHand = 50
+        onHandValueMli = 149950
+        averageCostMli = 2999
+        lastPurchasePriceMli = 2999
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "05 UK Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.05_UK_Warehouse@s
+      },
+      {
+        location = "06 Australia Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.06_Australia_Warehouse@s
+      },
+      {
+        location = "07 Japan/日本 Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.07_Japan____Warehouse@sd_26085_26412s
+      },
+      {
+        location = "08 Denmark Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.08_Denmark_Warehouse@s
+      },
+      {
+        location = "09 Germany/Deutsch Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.09_Germany_Deutsch_Warehouse@sds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+      {
+        location = "Australian Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Australian_Warehouse@s
+      },
+      {
+        location = "Frankfurt Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Frankfurt_Warehouse@s
+      },
+      {
+        location = "London Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.London_Warehouse@s
+      },
+      {
+        location = "Manila Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Manila_Warehouse@s
+      },
+      {
+        location = "Singapore Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Singapore_Warehouse@s
+      },
+    ]
+  }
+  identifier = "Lifesize Camera 10x Optical Zoom HD Camera"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Lifesize Camera 10x Optical Zoom HD Camera Lifesize Camera 10x Optical Zoom HD Camera <span class=\"uir-field inputreadonly\">Lifesize Camera 10x Optical Zoom HD Camera&nbsp;</span> null"
+  custom_custitem_wd_img_gallery_carousel_html = "<div class=\"item active easyzoom easyzoom--overlay\" data-slide-number=\"0\"><a href=\"/core/media/media.nl?id=12094&c=TSTDRV1373481&h=29ae23fbfd056451fca9\"><img src=\"/core/media/media.nl?id=12094&c=TSTDRV1373481&h=29ae23fbfd056451fca9\" class=\"img-responsive\"></a></div>"
+  custom_custitem_wd_img_gallery_slider_html = "<div class=\"col-xs-2 thumbnail\"><a id=\"carousel-selector-0\" class=\"selected\"><img src=\"/core/media/media.nl?id=12095&c=TSTDRV1373481&h=cbdfa31f845c9dc1f0e3\"></a></div>"
+  custom_custitem_wd_process_items = true
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

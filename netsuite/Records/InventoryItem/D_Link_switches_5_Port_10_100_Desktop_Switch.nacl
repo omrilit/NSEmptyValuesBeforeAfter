@@ -1,0 +1,291 @@
+netsuite.InventoryItem D_Link_switches_5_Port_10_100_Desktop_Switch@bsubsdss {
+  purchaseDescription = "5-Port 10/100 Desktop Switch"
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  salesDescription = "5-Port 10/100 Desktop Switch<br>"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  costingMethodDisplay = "Average"
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  cost = 580
+  totalValue = 72021.4
+  averageCost = 483.37
+  useBins = false
+  autoLeadTime = true
+  lastPurchasePrice = 1596.5
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  autoReorderPoint = true
+  storeDisplayName = "5-Port 10/100 Desktop Switch"
+  storeDescription = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">5-Port
+  10/100 Desktop Switch</td>
+</tr></tbody></table>
+'''
+  storeDetailedDescription = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">5-Port
+  10/100 Desktop Switch</td>
+</tr></tbody></table>
+'''
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "5-Port 10/100 Desktop Switch"
+  displayName = "5-Port 10/100 Desktop Switch"
+  parent = netsuite.InventoryItem.instance.D_Link_switches@bs
+  isOnline = true
+  offerSupport = false
+  isInactive = true
+  availableToPartners = true
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 189000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 945
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 1890
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+        displayName = "Nyere Affaldet Dining Bord"
+        salesDescription = "Den Nyere Affaldet Dining Bord har en glat , ren smag at giver sig tidløs indanke."
+        storeDisplayName = "Nyere Affaldet Dining Bord"
+        storeDescription = "Den Nyere Affaldet Dining Bord har en glat , ren smag at giver sig tidløs indanke."
+        storeDetailedDescription = '''
+Den Nyere Affaldet Dining Bord har en glat , ren smag at giver sig tidløs indanke. 
+
+Indeværende placere vil arbejde sammen smukt hos så at sige hvilken som helst household.
+'''
+      },
+      {
+        locale = "_german"
+        language = "German"
+        displayName = "Modern Wood Esstisch"
+        salesDescription = "Eßtisch hat einen geraden, sauberen Stil, gibt es zeitlosen Appell."
+        storeDisplayName = "Modern Wood Esstisch"
+        storeDescription = "Eßtisch hat einen geraden, sauberen Stil, gibt es zeitlosen Appell."
+        storeDetailedDescription = '''
+The Modern Wood Eßtisch hat einen geraden, sauberen Stil, gibt es zeitlosen Appell.
+
+Dieser Satz wird koordinieren wunderschön mit praktisch jedem Haushalt.
+'''
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+        displayName = "Modern Wood Dining Set"
+        salesDescription = "The Modern Wood Dining Table has a straight, clean style that gives it timeless appeal."
+        storeDisplayName = "Modern Wood Dining Set"
+        storeDescription = "The Modern Wood Dining Table has a straight, clean style that gives it timeless appeal."
+        storeDetailedDescription = '''
+The Modern Wood Dining Table has a straight, clean style that gives it timeless appeal.
+
+This set will coordinate beautifully with practically any household.
+'''
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+        displayName = "モダン ダイニング"
+        storeDisplayName = "モダン ダイニング"
+        storeDescription = "天然木使用の大変しっかりしたテーブルセットです。"
+        storeDetailedDescription = "天然木使用の大変しっかりしたテーブルセットです。猫脚・レリーフにこだわったエレガントなデザインは皆様に大好評です。お部屋の雰囲気を一番変えるのは、ダイニングテーブルセットです。インテリア性の高いリビングダイニングとして是非お勧めいたします。"
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "05 UK Warehouse"
+        quantityOnHand = 20
+        onHandValueMli = 21571.94
+        averageCostMli = 1078.597
+        lastPurchasePriceMli = 1078.597
+        quantityOnOrder = 0
+        quantityAvailable = 20
+        locationId = netsuite.Location.instance.05_UK_Warehouse@s
+      },
+      {
+        location = "06 Australia Warehouse"
+        quantityOnHand = 20
+        onHandValueMli = 9835.93
+        averageCostMli = 491.7965
+        lastPurchasePriceMli = 491.7965
+        quantityOnOrder = 0
+        quantityAvailable = 20
+        locationId = netsuite.Location.instance.06_Australia_Warehouse@s
+      },
+      {
+        location = "07 Japan/日本 Warehouse"
+        quantityOnHand = 29
+        onHandValueMli = 5315.47
+        averageCostMli = 183.29206897
+        lastPurchasePriceMli = 4.7735
+        quantityOnOrder = 0
+        quantityCommitted = 0
+        quantityAvailable = 29
+        locationId = netsuite.Location.instance.07_Japan____Warehouse@sd_26085_26412s
+      },
+      {
+        location = "08 Denmark Warehouse"
+        quantityOnHand = 20
+        onHandValueMli = 2109.74
+        averageCostMli = 105.487
+        lastPurchasePriceMli = 105.487
+        quantityOnOrder = 0
+        quantityAvailable = 20
+        locationId = netsuite.Location.instance.08_Denmark_Warehouse@s
+      },
+      {
+        location = "09 Germany/Deutsch Warehouse"
+        quantityOnHand = 20
+        onHandValueMli = 14786.52
+        averageCostMli = 739.326
+        lastPurchasePriceMli = 739.326
+        quantityOnOrder = 0
+        quantityAvailable = 20
+        locationId = netsuite.Location.instance.09_Germany_Deutsch_Warehouse@sds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityOnHand = 20
+        onHandValueMli = 10491.04
+        averageCostMli = 524.552
+        lastPurchasePriceMli = 524.552
+        quantityOnOrder = 0
+        quantityAvailable = 20
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+      {
+        location = "Australian Warehouse"
+        locationId = netsuite.Location.instance.Australian_Warehouse@s
+      },
+      {
+        location = "Frankfurt Warehouse"
+        locationId = netsuite.Location.instance.Frankfurt_Warehouse@s
+      },
+      {
+        location = "London Warehouse"
+        locationId = netsuite.Location.instance.London_Warehouse@s
+      },
+      {
+        location = "Manila Warehouse"
+        locationId = netsuite.Location.instance.Manila_Warehouse@s
+      },
+      {
+        location = "Singapore Warehouse"
+        locationId = netsuite.Location.instance.Singapore_Warehouse@s
+      },
+    ]
+  }
+  identifier = "D-Link switches_5-Port 10/100 Desktop Switch"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = '''
+5-Port 10/100 Desktop Switch 5-Port 10/100 Desktop Switch <table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">5-Port
+  10/100 Desktop Switch</td>
+</tr></tbody></table> null
+'''
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

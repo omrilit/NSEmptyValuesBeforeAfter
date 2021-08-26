@@ -1,0 +1,365 @@
+netsuite.NonInventoryResaleItem Dell_Networking_Switch@s {
+  purchaseDescription = "Dell Networking Switch"
+  copyDescription = false
+  cost = 3500
+  expenseAccount = netsuite.Account.instance.General_and_Administrative_6000_Other_Expense_6800_Miscellaneous_Expense_6890@ssuusuusu
+  salesDescription = "Dell Networking Switch"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Hardware_4006
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  isDropShipItem = true
+  isSpecialOrderItem = false
+  costEstimateType = "_lastPurchasePrice"
+  deferredRevenueAccount = netsuite.Account.instance.Deferred__Income_2100_Deferred_Revenue_2101@ssuusu
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  isFulfillable = true
+  generateAccruals = false
+  useMarginalRates = false
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Dell Networking Switch"
+  displayName = "Dell Networking Switch"
+  vendorName = "D24-17055"
+  isOnline = false
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  currency = "2"
+  itemVendorList = {
+    itemVendor = [
+      {
+        vendor = netsuite.Vendor.instance.NonInventoryResaleItem_vendor_1423
+        purchasePrice = 3500
+        preferredVendor = true
+        subsidiary = netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs
+      },
+      {
+        vendor = netsuite.Vendor.instance.NonInventoryResaleItem_vendor_2383
+        purchasePrice = 4550
+        preferredVendor = true
+        subsidiary = netsuite.Subsidiary.instance.UK_HQ_ANZ_Australia@buu
+      },
+      {
+        vendor = netsuite.Vendor.instance.NonInventoryResaleItem_vendor_3175
+        purchasePrice = 2275
+        preferredVendor = true
+        subsidiary = netsuite.Subsidiary.instance.UK_HQ_EMEA_United_Kingdom@buus
+      },
+    ]
+  }
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 4550
+              quantity = 0
+            },
+            {
+              value = 5915
+              quantity = 1
+            },
+            {
+              value = 5688
+              quantity = 2
+            },
+            {
+              value = 5460
+              quantity = 5
+            },
+            {
+              value = 5233
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 4550
+              quantity = 0
+            },
+            {
+              value = 5915
+              quantity = 1
+            },
+            {
+              value = 5688
+              quantity = 2
+            },
+            {
+              value = 5460
+              quantity = 5
+            },
+            {
+              value = 5233
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 4550
+              quantity = 0
+            },
+            {
+              value = 5915
+              quantity = 1
+            },
+            {
+              value = 5688
+              quantity = 2
+            },
+            {
+              value = 5460
+              quantity = 5
+            },
+            {
+              value = 5233
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 3500
+              quantity = 0
+            },
+            {
+              value = 4550
+              quantity = 1
+            },
+            {
+              value = 4375
+              quantity = 2
+            },
+            {
+              value = 4200
+              quantity = 5
+            },
+            {
+              value = 4025
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 3500
+              quantity = 0
+            },
+            {
+              value = 4550
+              quantity = 1
+            },
+            {
+              value = 4375
+              quantity = 2
+            },
+            {
+              value = 4200
+              quantity = 5
+            },
+            {
+              value = 4025
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 3500
+              quantity = 0
+            },
+            {
+              value = 4550
+              quantity = 1
+            },
+            {
+              value = 4375
+              quantity = 2
+            },
+            {
+              value = 4200
+              quantity = 5
+            },
+            {
+              value = 4025
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 2275
+              quantity = 0
+            },
+            {
+              value = 2958
+              quantity = 1
+            },
+            {
+              value = 2844
+              quantity = 2
+            },
+            {
+              value = 2730
+              quantity = 5
+            },
+            {
+              value = 2616
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 2275
+              quantity = 0
+            },
+            {
+              value = 2958
+              quantity = 1
+            },
+            {
+              value = 2844
+              quantity = 2
+            },
+            {
+              value = 2730
+              quantity = 5
+            },
+            {
+              value = 2616
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 2275
+              quantity = 0
+            },
+            {
+              value = 2958
+              quantity = 1
+            },
+            {
+              value = 2844
+              quantity = 2
+            },
+            {
+              value = 2730
+              quantity = 5
+            },
+            {
+              value = 2616
+              quantity = 10
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Dell Networking Switch"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = true
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Dell Networking Switch"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

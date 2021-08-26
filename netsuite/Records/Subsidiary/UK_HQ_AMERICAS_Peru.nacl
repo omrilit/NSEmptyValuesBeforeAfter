@@ -1,0 +1,70 @@
+netsuite.Subsidiary UK_HQ_AMERICAS_Peru@buu {
+  name = "Peru"
+  parent = netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu
+  isInactive = false
+  showSubsidiaryName = false
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  country = "_peru"
+  mainAddress = {
+    country = "_peru"
+    addressee = "Peru"
+    addrText = "Peru<br>Peru"
+    override = false
+  }
+  shippingAddress = {
+    country = "_peru"
+    override = false
+  }
+  returnAddress = {
+    country = "_peru"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.Peruvian_Nuevo_Sol@s
+  edition = "XX"
+  interCoAccount = {
+    name = "1812 Intercompany Clearing Account : Intercompany Clearing PEN"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedKingdom
+        country = "GB"
+      },
+      {
+        nexusId = netsuite.Nexus.instance._peru
+        country = "PE"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_AMERICAS_Peru"
+}

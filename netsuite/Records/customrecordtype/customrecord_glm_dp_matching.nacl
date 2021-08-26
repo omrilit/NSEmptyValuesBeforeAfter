@@ -1,0 +1,88 @@
+netsuite.customrecordtype customrecord_glm_dp_matching {
+  scriptid = "customrecord_glm_dp_matching"
+  accesstype = "USEPERMISSIONLIST"
+  allowattachments = true
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = true
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = true
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "GLM - Dashboard matching permission"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  permissions = {
+    permission = [
+      {
+        permittedlevel = "CREATE"
+        permittedrole = "AP_CLERK"
+      },
+      {
+        permittedlevel = "CREATE"
+        permittedrole = "AR_CLERK"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "ACCOUNTANT"
+      },
+      {
+        permittedlevel = "CREATE"
+        permittedrole = "ACCOUNTANT__REVIEWER"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "ADMINISTRATOR"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "BOOKKEEPER"
+      },
+      {
+        permittedlevel = "CREATE"
+        permittedrole = "BUYER"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "CEO"
+      },
+      {
+        permittedlevel = "CREATE"
+        permittedrole = "CEO_HANDS_OFF"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "CUSTOMROLE41"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "FULL_ACCESS"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "[scriptid=customrole_glm_permissions_role]"
+      },
+    ]
+  }
+}

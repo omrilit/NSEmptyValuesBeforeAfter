@@ -1,0 +1,158 @@
+netsuite.savedsearch customsearch_project_summary {
+  scriptid = "customsearch_project_summary"
+  dependencies = {
+    dependency = [
+      netsuite.entitycustomfield.instance.custentity_projectmanager.scriptid,
+    ]
+  }
+  definition = "38569141bfced9eb3685d50ba60c2128628e6e7897f45ebf4719fd671ca377d3@GZC@2021.1.0.148@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"
+  search_filter = [
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "Job_STATUS"
+      FIELD_ATTRIBUTE = "NONEOF"
+      FIELD_TYPE = "SELECT"
+      RECORDS = [
+        {
+          KEY_ID = 0
+          FIELD_VALUE = "26"
+        },
+      ]
+    },
+  ]
+  available_filters = [
+    {
+      SEQ_NUMBER = 1
+      FIELD_NAME = "CUSTENTITY_PROJECTMANAGER"
+      FLAG_FOOTER = false
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+    {
+      SEQ_NUMBER = 2
+      FIELD_NAME = "Entity_ENTITYID"
+      FLAG_FOOTER = false
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+    {
+      SEQ_NUMBER = 3
+      FIELD_NAME = "Entity_SUBSIDIARY"
+      FLAG_FOOTER = false
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+  ]
+  return_fields = [
+    {
+      FIELD_ALIAS = "Job_DASHBOARD"
+      FIELD_INDEX = 1
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Entity_FORMULATEXT"
+      FIELD_INDEX = 2
+      FIELD_LABEL = "Project"
+      FIELD_FORMULA = "{entityid} || &apos; &apos; || {jobname}"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Job_CUSTOMER"
+      FIELD_INDEX = 3
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTENTITY_PROJECTMANAGER"
+      FIELD_INDEX = 4
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Job_ESTIMATEDTIMEOVERRIDE"
+      FIELD_INDEX = 5
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Job_ACTUALTIME"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Entity_FORMULATEXT"
+      FIELD_INDEX = 7
+      FIELD_LABEL = "% Complete"
+      FIELD_FORMULA = "&apos;&lt;style&gt;.progress{overflow:hidden;height:18px;background-color:#ccc;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);}.progress-bar{float:left;width:0;height:100%;font-size:11px;line-height:18px;color:#fff;text-align:center;background-color:#428bca;box-shadow:inset 0 -1px 0 rgba(0,0,0,0.15);-webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,0.15);-moz-box-shadow:inset 0 -1px 0 rgba(0,0,0,0.15);-webkit-transition:width .6s ease;transition:width .6s ease;-moz-transition:width .6s ease;}&lt;/style&gt;&lt;div class=&quot;progress&quot;&gt;&apos; || &apos;&lt;div class=&quot;progress-bar&quot; style=&quot;width:&apos; || CASE WHEN ROUND({percenttimecomplete}*100, 1) &gt;= 100.0 THEN 100 ELSE ROUND({percenttimecomplete}*100, 1) END || &apos;%;&quot;&gt;  &apos; || ROUND({percenttimecomplete}*100, 1) || &apos;%&lt;/div&gt;&lt;/div&gt;&apos;"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Job_STARTDATE"
+      FIELD_INDEX = 8
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Job_CALCULATEDENDDATE"
+      FIELD_INDEX = 9
+      FIELD_LABEL = "Finish Date"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Job_STATUS"
+      FIELD_INDEX = 10
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  sort_columns = [
+    {
+      KEY_FIELD = "Entity_ENTITYID"
+      FILELD_ORDER = 1
+      FLAG_DESCENDING = true
+    },
+  ]
+  "audience:" = {
+    FLAG_AUDIENCE_ALL_CUSTOMERS = false
+    FLAG_AUDIENCE_ALL_EMPLOYEES = false
+    FLAG_AUDIENCE_ALL_PARTNERS = false
+    FLAG_AUDIENCE_ALL_ROLES = true
+    FLAG_AUDIENCE_ALL_VENDORS = false
+  }
+  KEY_SCRIPT_ID = "customsearch_project_summary"
+  FIELD_DEFAULT_NAME = ".Project Summary View"
+  FIELD_SEARCH_TYPE = "Job"
+  FLAG_PUBLIC = true
+  FLAG_LIST = true
+  FLAG_PORTLET = true
+  FLAG_MACHINE = true
+  FLAG_REMINDER = false
+  FLAG_SHOW_LINK = false
+  FLAG_PREFERRED_LIST = false
+  FLAG_PREFERRED_PORTLET = false
+  FLAG_PREFERRED_MACHINE = false
+  FLAG_PREFERRED_FORM = false
+  FLAG_PREFERRED_RESULTS = false
+  FLAG_VIEW_AS_REPORT = false
+  FLAG_VIEW_AS_GRAPH = false
+  FLAG_VIEW_AS_GRID = false
+  FLAG_UNRESTRICTED = false
+  FLAG_DISABLE_DRILL_DOWN = false
+  FLAG_HIDE_FILTER_DROPDOWNS = false
+  KEY_DEFAULT_TEXT_FIELD_FILTER = "STARTSWITH"
+  FLAG_AVAILABLE_AS_FEED = false
+  FLAG_GLOBAL_EDIT = true
+  FLAG_CSV = false
+  FLAG_EXCEL = false
+  FLAG_PDF = false
+  FLAG_TRIGGERED_ALERT = false
+  FLAG_SCHEDULED_ALERT = false
+  FLAG_SCHEDULED_ALERT_SUMMARIES = false
+  FLAG_SEND_EMPTY_RESULTS = false
+  FLAG_ALERT_ALLOW_SUBSCRIBE = false
+  FLAG_ALERT_INCLUDE_VIEW_LINK = true
+  FLAG_HAS_TOTALS = false
+  FLAG_INCLUDE_PERIOD_END_TRANSACTIONS = false
+  FLAG_BUILT_IN = false
+  FLAG_SEND_ON_UPDATE = false
+  FLAG_SHOW_AUDIT_TRAIL = false
+  KEY_AUDIENCE = 0
+}

@@ -1,0 +1,75 @@
+netsuite.centertab custcentertab7_15 {
+  scriptid = "custcentertab7_15"
+  allcustomers = false
+  allemployees = true
+  allpartners = false
+  allroles = false
+  allvendors = false
+  audslctrole = "[scriptid=customrole_3805_dunning_director]|[scriptid=customrole_3805_dunning_manager]"
+  center = netsuite.center.instance.custcenter1_2.scriptid
+  label = "Dunning"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_55_3956802_785"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_65_3956802_785"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_62_3956802_785"
+        isportletshown = false
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_74_3956802_785"
+        isportletshown = false
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_66_3956802_785"
+        isportletshown = false
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_59_3956802_785"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_63_3956802_785"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_73_3956802_785"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_57_3956802_785"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+      },
+      {
+        scriptid = "portlet_75_3956802_785"
+        isportletshown = false
+        portlet = "SCRIPTPORTLET"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

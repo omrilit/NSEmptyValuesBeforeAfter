@@ -1,0 +1,22 @@
+netsuite.centercategory custcentercategory5 {
+  scriptid = "custcentercategory5"
+  center = "ACCOUNTCENTER"
+  centertab = netsuite.centertab.instance.custcentertab7_16.scriptid
+  label = "Lists"
+  links = {
+    link = [
+      {
+        linklabel = "Assets"
+        linkobject = "[scriptid=customrecord_ncfar_asset]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Build Compound Asset"
+        linkobject = "[scriptid=customscript_fam_compound_asset_su.customdeploy_fam_compound_asset_su]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

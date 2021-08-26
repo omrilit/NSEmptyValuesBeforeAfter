@@ -1,0 +1,21 @@
+netsuite.Account zSalaries___Wages___Designers_z52@sessbsu {
+  acctType = "_costOfGoodsSold"
+  acctNumber = "z52"
+  acctName = "zSalaries & Wages - Designers"
+  includeChildren = true
+  generalRate = "_average"
+  cashFlowRate = "_average"
+  isInactive = true
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "zSalaries & Wages - Designers_z52"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

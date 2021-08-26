@@ -1,0 +1,210 @@
+type netsuite.Vendor {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  string entityId {
+  }
+  string altName {
+  }
+  boolean isPerson {
+  }
+  string phoneticName {
+  }
+  string salutation {
+  }
+  string firstName {
+  }
+  string middleName {
+  }
+  string lastName {
+  }
+  string companyName {
+  }
+  string phone {
+  }
+  string fax {
+  }
+  string email {
+  }
+  string url {
+  }
+  string defaultAddress {
+  }
+  boolean isInactive {
+  }
+  netsuite.RecordRef category {
+  }
+  string title {
+  }
+  string printOnCheckAs {
+  }
+  string altPhone {
+  }
+  string homePhone {
+  }
+  string mobilePhone {
+  }
+  string altEmail {
+  }
+  string comments {
+  }
+  string globalSubscriptionStatus {
+  }
+  netsuite.file image {
+    isReference = true
+  }
+  string emailPreference {
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.Subsidiary representingSubsidiary {
+    isReference = true
+  }
+  string accountNumber {
+  }
+  string legalName {
+  }
+  string vatRegNumber {
+  }
+  netsuite.Account expenseAccount {
+    isReference = true
+  }
+  netsuite.Account payablesAccount {
+    isReference = true
+  }
+  netsuite.Term terms {
+    isReference = true
+  }
+  netsuite.RecordRef incoterm {
+  }
+  number creditLimit {
+  }
+  number balancePrimary {
+  }
+  number openingBalance {
+  }
+  string openingBalanceDate {
+  }
+  netsuite.Account openingBalanceAccount {
+    isReference = true
+  }
+  number balance {
+  }
+  number unbilledOrdersPrimary {
+  }
+  string bcn {
+  }
+  number unbilledOrders {
+  }
+  netsuite.Currency currency {
+    isReference = true
+  }
+  boolean is1099Eligible {
+  }
+  boolean isJobResourceVend {
+  }
+  number laborCost {
+  }
+  number purchaseOrderQuantity {
+  }
+  number purchaseOrderAmount {
+  }
+  number purchaseOrderQuantityDiff {
+  }
+  number receiptQuantity {
+  }
+  number receiptAmount {
+  }
+  number receiptQuantityDiff {
+  }
+  netsuite.RecordRef workCalendar {
+  }
+  string taxIdNum {
+  }
+  netsuite.RecordRef taxItem {
+  }
+  boolean giveAccess {
+  }
+  boolean sendEmail {
+  }
+  boolean billPay {
+  }
+  boolean isAccountant {
+  }
+  string password {
+  }
+  string password2 {
+  }
+  boolean requirePwdChange {
+  }
+  boolean eligibleForCommission {
+  }
+  boolean emailTransactions {
+  }
+  boolean printTransactions {
+  }
+  boolean faxTransactions {
+  }
+  netsuite.RecordRef defaultTaxReg {
+  }
+  netsuite.VendorPricingScheduleList pricingScheduleList {
+  }
+  netsuite.SubscriptionsList subscriptionsList {
+  }
+  netsuite.VendorAddressbookList addressbookList {
+  }
+  netsuite.VendorCurrencyList currencyList {
+  }
+  netsuite.VendorRolesList rolesList {
+  }
+  netsuite.VendorTaxRegistrationList taxRegistrationList {
+  }
+  number predictedDays {
+  }
+  number predConfidence {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  boolean custom_custentity_oa_expense_to_vendorbill {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_expense_to_vendorbill.scriptid
+  }
+  string custom_custentity_oa_export_err_msg {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_export_err_msg.scriptid
+  }
+  boolean custom_custentity_oa_export_to_openair {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_export_to_openair.scriptid
+  }
+  boolean custom_custentity_oa_map_to_parent_vendor {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_map_to_parent_vendor.scriptid
+  }
+  unknown custom_custentity_oa_user_or_vendor {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_user_or_vendor.scriptid
+    select_type_id = netsuite.customrecordtype.instance.customrecord_oa_user_or_vendor.scriptid
+  }
+  netsuite.Vendor custom_custentity_oa_vendor_parent {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_vendor_parent.scriptid
+  }
+  unknown custom_custentity_oa_vendor_tax_nexus {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_vendor_tax_nexus.scriptid
+    select_type_id = netsuite.customrecordtype.instance.customrecord_oa_vendor_nexus_type.scriptid
+  }
+  string custom_custentity_oa_vendor_user_currency {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_vendor_user_currency.scriptid
+  }
+  netsuite.Employee custom_custentity_ra_approver {
+    field_instance = netsuite.entitycustomfield.instance.custentity_ra_approver.scriptid
+  }
+  unknown custom_custentitysuggested_department {
+    field_instance = netsuite.entitycustomfield.instance.custentitysuggested_department.scriptid
+    select_type_id = netsuite.customlist.instance.customlistsuggested_department_list.scriptid
+  }
+}

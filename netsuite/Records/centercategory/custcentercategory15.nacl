@@ -1,0 +1,34 @@
+netsuite.centercategory custcentercategory15 {
+  scriptid = "custcentercategory15"
+  center = "BASIC"
+  centertab = netsuite.centertab.instance.custcentertab8_14.scriptid
+  label = "Journal Types"
+  links = {
+    link = [
+      {
+        linklabel = "Depreciation Entries"
+        linkobject = "[scriptid=customtransaction_fam_depr_jrn]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Revaluation Entries"
+        linkobject = "[scriptid=customtransaction_fam_revaluation_jrn]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Disposal Entries"
+        linkobject = "[scriptid=customtransaction_fam_disp_jrn]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Transfer Entries"
+        linkobject = "[scriptid=customtransaction_fam_transfer_jrn]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+    ]
+  }
+}

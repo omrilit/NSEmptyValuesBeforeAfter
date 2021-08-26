@@ -1,0 +1,56 @@
+netsuite.customrecordtype customrecord_oa_project_rate_card {
+  scriptid = "customrecord_oa_project_rate_card"
+  accesstype = "CUSTRECORDENTRYPERM"
+  allowattachments = true
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = true
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "OpenAir: Project Rate Card"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  permissions = {
+    permission = [
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1120_2.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1015_2.scriptid
+      },
+    ]
+  }
+  subtabs = {
+    subtab = [
+      {
+        scriptid = "tab_12_660883_163"
+        tabtitle = "OpenAir: Project Rate Card"
+      },
+    ]
+  }
+}

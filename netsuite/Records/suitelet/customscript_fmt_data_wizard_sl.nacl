@@ -1,0 +1,33 @@
+netsuite.suitelet customscript_fmt_data_wizard_sl {
+  scriptid = "customscript_fmt_data_wizard_sl"
+  defaultfunction = "dataWizard_suitelet"
+  isinactive = false
+  name = "***DataWizard SL"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_93203_dataWizard_SL_js@dsduv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_fmt_data_wizard_sl"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "Data Wizard"
+        links = {
+          link = [
+            {
+              linkcategory = "BASICSETUPCUSTOM"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

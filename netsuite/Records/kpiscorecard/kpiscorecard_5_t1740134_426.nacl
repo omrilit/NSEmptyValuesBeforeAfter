@@ -1,0 +1,79 @@
+netsuite.kpiscorecard kpiscorecard_5_t1740134_426 {
+  scriptid = "kpiscorecard_5_t1740134_426"
+  name = "Opportunity Metrics"
+  useperiods = "F"
+  custom = {
+    kpi1 = netsuite.savedsearch.instance.customsearch120.scriptid
+    kpi2 = netsuite.savedsearch.instance.customsearch121.scriptid
+    kpi3 = netsuite.savedsearch.instance.customsearch122.scriptid
+    kpi4 = netsuite.savedsearch.instance.customsearch123.scriptid
+  }
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = true
+  }
+  kpis = {
+    kpi = [
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM"
+        label = "Upside Opps to Close"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM2"
+        label = "Upside Opps Proj. Total"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM3"
+        label = "Committed Opps Incl. Closed Won"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM4"
+        label = "Committed Opps Proj. Total"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "FORECASTOVERRIDE"
+        label = "Commit Override"
+      },
+    ]
+  }
+  ranges = {
+    range = [
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "THIS_MONTH"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "NEXT_MONTH"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "THIS_FISCAL_QUARTER_TO_DATE"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "NEXT_FISCAL_QUARTER"
+      },
+    ]
+  }
+}

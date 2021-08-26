@@ -1,0 +1,21 @@
+netsuite.Account VAT_on_Sales_PE_2173@sssu {
+  acctType = "_otherCurrentLiability"
+  acctNumber = "2173"
+  acctName = "VAT on Sales PE"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "VAT on Sales PE_2173"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

@@ -1,0 +1,25 @@
+netsuite.suitelet customscript_timesheet_status {
+  scriptid = "customscript_timesheet_status"
+  defaultfunction = "timesheetStatusReportFormSuitelet"
+  isinactive = false
+  name = "..Timesheet Status Report"
+  notifyadmins = false
+  notifyowner = false
+  notifyuser = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_37870_timesheet_status_report_suitelet_js@dsduuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_timesheet_status_d"
+        allemployees = false
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "ERROR"
+        status = "RELEASED"
+        title = "Timesheet Status Report"
+      },
+    ]
+  }
+}

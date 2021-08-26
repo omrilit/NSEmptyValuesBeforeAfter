@@ -1,0 +1,53 @@
+netsuite.Subsidiary UK_HQ_ANZ_New_Zealand@buus {
+  name = "New Zealand"
+  parent = netsuite.Subsidiary.instance.UK_HQ_ANZ@bu
+  isInactive = false
+  showSubsidiaryName = false
+  country = "_newZealand"
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "New Zealand"
+    addrText = "New Zealand<br>United States"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "JulyJuneFiscalCalendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "JulyJuneFiscalCalendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.New_Zealand_Dollar@s
+  edition = "XX"
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._newZealand
+        country = "NZ"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_ANZ_New Zealand"
+}

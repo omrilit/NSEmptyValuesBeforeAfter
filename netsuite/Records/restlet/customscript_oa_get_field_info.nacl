@@ -1,0 +1,24 @@
+netsuite.restlet customscript_oa_get_field_info {
+  scriptid = "customscript_oa_get_field_info"
+  isinactive = false
+  name = "oa_get_field_info"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  postfunction = "get_field_info"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_2851_oa_get_field_info_js@dsduuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_oa_get_field_info"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "RELEASED"
+        title = "oa_get_field_info"
+      },
+    ]
+  }
+}

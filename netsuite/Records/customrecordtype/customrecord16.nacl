@@ -1,0 +1,287 @@
+netsuite.customrecordtype customrecord16 {
+  scriptid = "customrecord16"
+  accesstype = "USEPERMISSIONLIST"
+  allowattachments = true
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = true
+  allowmobileaccess = true
+  allownumberingoverride = false
+  allowquickadd = false
+  allowquicksearch = true
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = false
+  isinactive = false
+  isordered = false
+  recordname = "Production Environment"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecordcustentity_acctname"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = true
+        label = "Account Name"
+        onparentdelete = "SET_NULL"
+        parentsubtab = netsuite.subtab.instance.custtab_14_t1499227_705.scriptid
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecordcustentity_version"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Version"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist17.scriptid
+        showinlist = true
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord16.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecordcustentity_mod_purch"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "MULTISELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Modules Purchased"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist20.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord16.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecordcustentity_modinst"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "MULTISELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Modules Installed"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist20.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord16.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecordcustentity_db"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Database"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist19.scriptid
+        showinlist = true
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord16.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecordcustentity_opsys"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Operating System"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist18.scriptid
+        showinlist = true
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord16.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecordcustentity_svrmem"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Server Memory"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord16.subtabs.subtab.1.scriptid
+      },
+    ]
+  }
+  permissions = {
+    permission = [
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1103.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1111.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1101.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1036.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1106.scriptid
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = "CEO"
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = "CEO_HANDS_OFF"
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = netsuite.role.instance.customrole1010.scriptid
+      },
+      {
+        permittedlevel = "EDIT"
+        permittedrole = "SUPPORT_MANAGER"
+      },
+      {
+        permittedlevel = "EDIT"
+        permittedrole = netsuite.role.instance.customrole1067.scriptid
+      },
+      {
+        permittedlevel = "EDIT"
+        permittedrole = "SUPPORT_PERSON"
+      },
+      {
+        permittedlevel = "EDIT"
+        permittedrole = netsuite.role.instance.customrole1009.scriptid
+      },
+      {
+        permittedlevel = "EDIT"
+        permittedrole = netsuite.role.instance.customrole1006.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1069.scriptid
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = netsuite.role.instance.customrole1000.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1013.scriptid
+      },
+    ]
+  }
+  links = {
+    link = [
+      {
+        linkcategory = "BASICLISTSCUSTOM"
+        linktasktype = "LIST"
+      },
+    ]
+  }
+  subtabs = {
+    subtab = [
+      {
+        scriptid = "tab_12_t1499227_470"
+        tabtitle = "Software"
+      },
+      {
+        scriptid = "tab_13_t1499227_470"
+        tabtitle = "Hardware"
+      },
+    ]
+  }
+}

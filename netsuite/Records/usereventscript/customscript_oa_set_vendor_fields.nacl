@@ -1,0 +1,62 @@
+netsuite.usereventscript customscript_oa_set_vendor_fields {
+  scriptid = "customscript_oa_set_vendor_fields"
+  beforesubmitfunction = "setOpenAirVendorFieldsVBIntegration"
+  isinactive = false
+  name = "OpenAir: Set Vendor Fields"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_2851_oa_export_to_openair_flags_js@dsduuuuv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_oa_expense_vb_int"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Check this box to enable the OpenAir expense report, NetSuite vendor bill integration."
+        displaytype = "NORMAL"
+        fieldtype = "CHECKBOX"
+        help = "Check this box to enable the OpenAir expense report, NetSuite vendor bill integration."
+        isformula = false
+        ismandatory = false
+        label = "Expense Report - Vendor Bill Integration"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_oa_expense_vb_tax"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "CHECKBOX"
+        isformula = false
+        ismandatory = false
+        label = "Exp Rep To Vendor Bill Taxes"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_oa_set_vendor_fields"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "ERROR"
+        recordtype = "VENDOR"
+        status = "RELEASED"
+      },
+    ]
+  }
+}

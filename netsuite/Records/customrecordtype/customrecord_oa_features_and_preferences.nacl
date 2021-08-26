@@ -1,0 +1,255 @@
+netsuite.customrecordtype customrecord_oa_features_and_preferences {
+  scriptid = "customrecord_oa_features_and_preferences"
+  accesstype = "CUSTRECORDENTRYPERM"
+  allowattachments = true
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = false
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "Features and Preferences"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_oa_advanced_projects"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Displays the status of the Advanced Projects feature."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Advanced Projects"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_oa_consolidate_projects"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Displays the status of the Consolidate Projects on Sales Transactions accounting preference."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Consolidate Projects on Sales Trans"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_oa_multiple_prices"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Displays the status of the Multiple Prices feature."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Multiple Prices"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_oa_multiple_currencies"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Displays the status of the Multiple Currencies feature."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Multiple Currencies"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_oa_revenue_recognition"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Displays the status of the Revenue Recognition feature."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Revenue Recognition"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_oa_combine_expense_items"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "This NetSuite preference combines expense report lines by category when applying them to an invoice.  It is currently incompatible with the NetSuite-OpenAir integration."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Combine Detail Items on Expense Reports"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_oa_session_timezone"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "The timezone of the connected user (the web services user in the case of the integration)."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Session Timezone"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_oa_advanced_receiving"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Advanced Receiving"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_oa_combine_bill_items_invoice"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Combine Billable Items on Invoices"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_oa_mc_customer"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Multi-Currency Customer"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+    ]
+  }
+  permissions = {
+    permission = [
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1015_2.scriptid
+      },
+    ]
+  }
+}

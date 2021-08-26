@@ -1,0 +1,621 @@
+netsuite.InventoryItem Lenovo_ThinkStation_D30_4223CC3_Tower_Workstation@s {
+  purchaseDescription = "Lenovo ThinkStation D30 4223CC3 Tower Workstation"
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  intercoCogsAccount = netsuite.Account.instance.COGS_5000_Intercompany_Cost_of_Goods_Sold_5900@uussssu
+  salesDescription = "Lenovo ThinkStation D30 4223CC3 Tower Workstation"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Hardware_4006
+  intercoIncomeAccount = netsuite.Account.instance.Revenue_4000_Intercompany_Revenue_4900@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  shippingCostUnits = "per Ea."
+  handlingCostUnits = "per Ea."
+  weightUnits = "per Ea."
+  costingMethodDisplay = "Average"
+  unitsType = {
+    name = "EACH"
+  }
+  stockUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  purchaseUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  saleUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  minimumQuantityUnits = "Ea."
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  costEstimateUnits = "per Ea."
+  vsoeDelivered = false
+  costUnits = "per Ea."
+  totalValue = 52578.23
+  averageCost = 350.52
+  useBins = false
+  quantityReorderUnits = "Quantity On Hand, Reorder Point, Quantity On Order, and Quantity Committed are in Ea."
+  autoLeadTime = true
+  lastPurchasePrice = 0
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  safetyStockLevelUnits = "Ea."
+  autoReorderPoint = true
+  storeDisplayName = "Lenovo ThinkStation D30 4223CC3 Tower Workstation"
+  storeDisplayThumbnail = netsuite.RecordRef.instance.InventoryItem_storeDisplayThumbnail_9565
+  storeDisplayImage = netsuite.RecordRef.instance.InventoryItem_storeDisplayImage_9564
+  storeDescription = '''
+<span class="padT5 a12 colorDG">
+		<p><b>D30. EXTREME SPEED. POWERFUL GRAPHICS. COOL AND QUIET</b></p><p>Get
+ better productivity with a Windows® 7 Professional OS, available on all
+ Lenovo ThinkStation models. Designed to tackle the biggest challenges, 
+the D30 delivers the ultimate in performance and expandability. You can 
+process more tasks faster with the latest generation of up to eight core
+ Intel® Xeon® processors and supporting discrete Quadro and Tesla 
+graphics technology from NVIDIA. From 3D product design and animation, 
+to simulation and visualization, to heavy-duty number-crunching and 
+software development, the D30 is designed for those who need to be more 
+productive.</p></span>
+'''
+  storeDetailedDescription = '''
+<div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id="">
+	
+		
+			
+			
+				
+					
+					
+						
+
+
+
+
+
+
+
+
+	<span class="a14 b colorDG">Main Features</span>
+	<p>
+	</p>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Number of Processors Supported: 2
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Number of Processors Installed: 2
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Processor Manufacturer: Intel
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Processor Type: Xeon
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Processor Model: E5-2670
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Processor Core: Octa-core (8 Core)
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Processor Speed: 2.60 GHz
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Standard Memory: 64 GB
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Memory Technology: DDR3 SDRAM
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Number of Total Memory Slots: 16
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Total Solid State Drive Capacity: 256 GB
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Solid State Drive Interface: Serial ATA/600
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Controller Type: Serial ATA/600
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					RAID Supported: Yes
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					RAID Levels: 0, 1, 5, 10
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Graphics Controller Manufacturer: NVIDIA
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Graphics Controller Model: Quadro 600
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Graphics Memory Capacity: 1 GB
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Ethernet Technology: Gigabit Ethernet
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					DVI: Yes
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Total Number of USB Ports: 12
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Number of USB 2.0 Ports: 10
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Number of USB 3.0 Ports: 2
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					DisplayPort: Yes
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Operating System: No
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Maximum Power Supply Wattage: 1.12 kW
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Green Compliant: Yes
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Green Compliance Certificate/Authority: RoHS, EPEAT Gold, GREENGUARD
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Color: Raven Black
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Form Factor: Tower
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Height: 19.1"
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Width: 8.3"
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Depth: 23.7"
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Weight (Approximate): 60.63 lb
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Limited Warranty: 3 Year
+				</span>
+			</li>
+		
+	<BR>
+
+						<br>
+						
+
+
+
+
+
+
+
+
+	<div class="padB5"><hr></div>
+	<span class="a14 b colorDG">Marketing Information</span>
+	<span class="padT5 a12 colorDG">
+		<p><b>D30. EXTREME SPEED. POWERFUL GRAPHICS. COOL AND QUIET</b></p><p>Get
+ better productivity with a Windows® 7 Professional OS, available on all
+ Lenovo ThinkStation models. Designed to tackle the biggest challenges, 
+the D30 delivers the ultimate in performance and expandability. You can 
+process more tasks faster with the latest generation of up to eight core
+ Intel® Xeon® processors and supporting discrete Quadro and Tesla 
+graphics technology from NVIDIA. From 3D product design and animation, 
+to simulation and visualization, to heavy-duty number-crunching and 
+software development, the D30 is designed for those who need to be more 
+productive.</p>
+	</span>
+
+
+
+						
+						
+
+
+
+
+
+
+
+
+	<div class="padT5"><hr></div>
+	<p>
+	<span class="a14 b colorDG">Package Contents</span>
+		
+			</p><li style="font-size:10px;list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					ThinkStation D30 (4223-CC3)</span></li>
+				
+			
+		
+			<li style="font-size:10px;list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Keyboard</span></li>
+				
+			
+		
+			<li style="font-size:10px;list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Mouse</span></li></div></div></div></div></div></div></div></div></div></div></div></div></div></div><span class="padT5 a12 colorDG">
+	</span></div></div></div></div>
+'''
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  urlComponent = "Lenovo-Thinkstation-D30"
+  itemId = "Lenovo ThinkStation D30 4223CC3 Tower Workstation"
+  displayName = "Lenovo ThinkStation D30 4223CC3 Tower Workstation"
+  vendorName = "Lenovo"
+  isOnline = true
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  department = netsuite.Department.instance.Prof__Services@vs
+  class = netsuite.Classification.instance.01_Consulting@b
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 1399.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 1399.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 1399.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  siteCategoryList = {
+    siteCategory = [
+      {
+        website = netsuite.RecordRef.instance.InventoryItem_website_4
+        category = netsuite.RecordRef.instance.InventoryItem_category_2071
+        isDefault = false
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnHand = 50
+        onHandValueMli = 69999.5
+        averageCostMli = 1399.99
+        lastPurchasePriceMli = 1399.99
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "05 UK Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.05_UK_Warehouse@s
+      },
+      {
+        location = "06 Australia Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.06_Australia_Warehouse@s
+      },
+      {
+        location = "07 Japan/日本 Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.07_Japan____Warehouse@sd_26085_26412s
+      },
+      {
+        location = "08 Denmark Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.08_Denmark_Warehouse@s
+      },
+      {
+        location = "09 Germany/Deutsch Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.09_Germany_Deutsch_Warehouse@sds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+      {
+        location = "Australian Warehouse"
+        quantityOnHand = 50
+        onHandValueMli = 0
+        averageCostMli = 0
+        lastPurchasePriceMli = 0
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.Australian_Warehouse@s
+      },
+      {
+        location = "Frankfurt Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Frankfurt_Warehouse@s
+      },
+      {
+        location = "London Warehouse"
+        quantityOnHand = 50
+        onHandValueMli = 0
+        averageCostMli = 0
+        lastPurchasePriceMli = 0
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.London_Warehouse@s
+      },
+      {
+        location = "Manila Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Manila_Warehouse@s
+      },
+      {
+        location = "Singapore Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Singapore_Warehouse@s
+      },
+    ]
+  }
+  identifier = "Lenovo ThinkStation D30 4223CC3 Tower Workstation"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = '''
+Lenovo ThinkStation D30 4223CC3 Tower Workstation Lenovo ThinkStation D30 4223CC3 Tower Workstation <span class="padT5 a12 colorDG">
+		<p><b>D30. EXTREME SPEED. POWERFUL GRAPHICS. COOL AND QUIET</b></p><p>Get
+ better productivity with a Windows® 7 Professional OS, available on all
+ Lenovo ThinkStation models. Designed to tackle the biggest challenges, 
+the D30 delivers the ultimate in performance and expandability. You can 
+process more tasks faster with the latest generation of up to eight core
+ Intel® Xeon® processors and supporting discrete Quadro and Tesla 
+graphics technology from NVIDIA. From 3D product design and animation, 
+to simulation and visualization, to heavy-duty number-crunching and 
+software development, the D30 is designed for those who need to be more 
+productive.</p></span> null
+'''
+  custom_custitem_wd_img_gallery_carousel_html = "<div class=\"item active easyzoom easyzoom--overlay\" data-slide-number=\"0\"><a href=\"/core/media/media.nl?id=9564&c=TSTDRV1373481&h=24a0653df2e4c3505c8e\"><img src=\"/core/media/media.nl?id=9564&c=TSTDRV1373481&h=24a0653df2e4c3505c8e\" class=\"img-responsive\"></a></div>"
+  custom_custitem_wd_img_gallery_slider_html = "<div class=\"col-xs-2 thumbnail\"><a id=\"carousel-selector-0\" class=\"selected\"><img src=\"/core/media/media.nl?id=9565&c=TSTDRV1373481&h=f07fde0bdd2499066086\"></a></div>"
+  custom_custitem_wd_process_items = true
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

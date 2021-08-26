@@ -1,0 +1,14 @@
+netsuite.centercategory custcentercategory5_7 {
+  scriptid = "custcentercategory5_7"
+  center = netsuite.center.instance.custcenter1_2.scriptid
+  centertab = netsuite.centertab.instance.custcentertab7_15.scriptid
+  label = "Invoice"
+  links = {
+    link = [
+      {
+        linkid = "LIST_TRAN_CUSTINVC"
+        shortlist = false
+      },
+    ]
+  }
+}

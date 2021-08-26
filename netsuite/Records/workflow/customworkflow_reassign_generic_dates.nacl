@@ -1,0 +1,70 @@
+netsuite.workflow customworkflow_reassign_generic_dates {
+  scriptid = "customworkflow_reassign_generic_dates"
+  initoncreate = true
+  initonvieworupdate = true
+  isinactive = false
+  islogenabled = false
+  keephistory = "ALWAYS"
+  name = ".Reassign Generic Allocation Dates"
+  recordtypes = "JOB"
+  releasestatus = "RELEASED"
+  runasadmin = true
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate90"
+        donotexitworkflow = false
+        name = "Enter Form"
+        positionx = 200
+        positiony = 50
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition242"
+              tostate = netsuite.workflow.instance.customworkflow_reassign_generic_dates.workflowstates.workflowstate.1.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate91"
+        donotexitworkflow = false
+        name = "Checkbox Checked"
+        positionx = 200
+        positiony = 140
+        workflowactions = [
+          {
+            triggertype = "AFTERFIELDEDIT"
+            showmessageaction = [
+              {
+                scriptid = "workflowaction243"
+                clienttriggerfields = netsuite.entitycustomfield.instance.custentity_realign_generics.scriptid
+                isinactive = false
+                messagetext = "This will programmatically reset the start and end dates of all resource allocations to the start and end dates of this project after saving the project."
+                initcondition = {
+                  formula = "isChecked(\"Realign Generic Allocations\") = 'T'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Realign Generic Allocations"
+                        value = netsuite.entitycustomfield.instance.custentity_realign_generics.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+      },
+    ]
+  }
+}

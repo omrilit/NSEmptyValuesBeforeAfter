@@ -1,0 +1,20 @@
+netsuite.Account Intercompany_Clearing_Account_1800_Intercompany_Payable_Receivable_AUD_1808@ssuusdsu {
+  acctType = "_otherCurrentAsset"
+  acctNumber = "1808"
+  acctName = "Intercompany Payable/Receivable AUD"
+  includeChildren = true
+  currency = netsuite.Currency.instance.AUD
+  generalRate = "_current"
+  parent = netsuite.Account.instance.Intercompany_Clearing_Account_1800@ssu
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Intercompany Clearing Account_1800_Intercompany Payable/Receivable AUD_1808"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

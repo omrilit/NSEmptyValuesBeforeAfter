@@ -1,0 +1,163 @@
+netsuite.savedcsvimport custimport_42_t1740134_435 {
+  scriptid = "custimport_42_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  entryform = "[scriptid=custform_38_t1499227_346]"
+  ignorereadonly = true
+  importname = "customer import-lissa"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  preventduplicates = false
+  recordtype = "CUSTOMER"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "CUSTOMER"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "CUSTOMER"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "COMPANYNAME"
+              columnreference = {
+                column = "Company Name"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CURRENCY"
+              columnreference = {
+                column = "Currency"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EMAIL"
+              columnreference = {
+                column = "Email"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ENTITYSTATUS"
+              value = "13"
+            },
+            {
+              field = "ISPERSON"
+              value = "F"
+            },
+            {
+              field = "PHONE"
+              columnreference = {
+                column = "Phone"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SUBSIDIARY"
+              columnreference = {
+                column = "Subsidiary"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "VATREGNUMBER"
+              columnreference = {
+                column = "Tax Reg. Number"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        record = "CUSTOMER:ADDRESSBOOK"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ADDR1"
+              columnreference = {
+                column = "Address 1"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ADDR2"
+              columnreference = {
+                column = "Address 2"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CITY"
+              columnreference = {
+                column = "City"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "COUNTRY"
+              columnreference = {
+                column = "Country"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "DEFAULTBILLING"
+              value = "T"
+            },
+            {
+              field = "DEFAULTSHIPPING"
+              value = "T"
+            },
+            {
+              field = "STATE"
+              columnreference = {
+                column = "State/Province"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ZIP"
+              columnreference = {
+                column = "Zip"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

@@ -1,0 +1,526 @@
+netsuite.entryForm custform_60_t1499227_346 {
+  scriptid = "custform_60_t1499227_346"
+  standard = "STANDARDTIMETRACKINGFORM"
+  name = "Dilley SRP Time Tracking Form"
+  recordType = "TIMEBILL"
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "primaryinformation"
+        label = "Primary Information"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "CUSTOMFORM"
+                label = "Custom Form"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "EMPLOYEE"
+                label = "Employee"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "TRANDATE"
+                label = "Date"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CUSTOMER"
+                label = "Client:Project"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CASETASKEVENT"
+                label = "Project Task/Case"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "HOURS"
+                label = "Duration"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "DEPARTMENT"
+                label = "Department"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CLASS"
+                label = "Class"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "SUBSIDIARY"
+                label = "Subsidiary"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "TYPE"
+                label = "Type"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "MEMO"
+                label = "Comment"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ITEM"
+                label = "Service Item"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PRICE"
+                label = "Price Level"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "RATE"
+                label = "Rate"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "OVERRIDERATE"
+                label = "Lock this Rate"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ISBILLABLE"
+                label = "Billable"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "SUPERVISORAPPROVAL"
+                label = "Supervisor Approval"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ISUTILIZED"
+                label = "Utilized"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ISPRODUCTIVE"
+                label = "Productive"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ISEXEMPT"
+                label = "Exempt"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PAIDEXTERNALLY"
+                label = "Paid Externally"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = true
+              },
+              {
+                id = "APPROVALSTATUS"
+                label = "Approval Status"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "REJECTIONNOTE"
+                label = "Rejection Note"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "NEXTAPPROVER"
+                label = "Next Approver"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "POSTED"
+                label = "Posted"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "TIMEMODIFIED"
+                label = "Time Modified"
+                visible = false
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+    ]
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "BILLINGCLASS"
+              label = "Billing Class"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "REMAININGTIMETOCHARGE"
+              label = "Remaining Time to Charge"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "LOCATION"
+              label = "Location"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_1_curr.scriptid
+              label = "OpenAir: Secondary Loaded Cost Currency"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_timesheet_date.scriptid
+              label = "OpenAir: Timesheet Start Date"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_department.scriptid
+              label = "OpenAir: Loaded Cost Department"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_0_curr.scriptid
+              label = "OpenAir: Primary Loaded Cost Currency"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_credit_account.scriptid
+              label = "OpenAir: Loaded Cost Credit Account"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_time_entry_id.scriptid
+              label = "OpenAir Time Entry ID"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_je_from_time_created.scriptid
+              label = "OpenAir: Journal Entry Creation Date"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_debit_account.scriptid
+              label = "OpenAir: Loaded Cost Debit Account"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_2_curr.scriptid
+              label = "OpenAir: Tertiary Loaded Cost Currency"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_0.scriptid
+              label = "OpenAir: Primary Loaded Cost"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_1.scriptid
+              label = "OpenAir: Secondary Loaded Cost"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_je_from_time_error.scriptid
+              label = "OpenAir: Journal Entry Error"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_je_from_time_error_msg.scriptid
+              label = "OpenAir: Journal Entry Error Message"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_location.scriptid
+              label = "OpenAir: Loaded Cost Location"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_subsidiary.scriptid
+              label = "OpenAir: Loaded Cost Subsidiary"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_2.scriptid
+              label = "OpenAir: Tertiary Loaded Cost"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_class.scriptid
+              label = "OpenAir: Loaded Cost Class"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  actionbar = {
+    buttons = {
+      button = [
+        {
+          id = "APPROVE"
+          label = "Approve"
+          visible = true
+        },
+        {
+          id = "COPYTIMESHEET"
+          label = "Copy Previous Week"
+          visible = true
+        },
+        {
+          id = "IMPORTPLANNEDTIME"
+          label = "Import Planned Time"
+          visible = true
+        },
+        {
+          id = "MARKASPOSTED"
+          label = "Mark as Posted"
+          visible = true
+        },
+        {
+          id = "NEXT"
+          label = "Next Week"
+          visible = true
+        },
+        {
+          id = "PREV"
+          label = "Prev Week"
+          visible = true
+        },
+        {
+          id = "REJECT"
+          label = "Reject"
+          visible = true
+        },
+        {
+          id = "REJECTWITHNOTE"
+          label = "Reject With Note"
+          visible = true
+        },
+        {
+          id = "RETRACT"
+          label = "Retract"
+          visible = true
+        },
+      ]
+    }
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

@@ -1,0 +1,41 @@
+netsuite.Account Non_Operating_Expense_8000_Cumulative_FX_Adjustment_8300@bsuussu {
+  acctType = "_otherExpense"
+  acctNumber = "8300"
+  acctName = "Cumulative FX Adjustment"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.Non_Operating_Expense_8000@bsu
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "Non-Operating Expense_8000_Cumulative FX Adjustment_8300"
+  externalId = "1130"
+  custom_custrecord_fam_account_showinfixedasset = [
+    {
+      name = "Depreciation Expense"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Write Off Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Write Down Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Disposal Cost Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+  ]
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

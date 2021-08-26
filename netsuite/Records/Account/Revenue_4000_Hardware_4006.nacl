@@ -1,0 +1,29 @@
+netsuite.Account Revenue_4000_Hardware_4006 {
+  acctType = "_income"
+  acctNumber = "4006"
+  acctName = "Hardware"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.Revenue_4000
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  revalue = false
+  identifier = "Revenue_4000_Hardware_4006"
+  custom_custrecord_fam_account_showinfixedasset = [
+    {
+      name = "Disposal Cost Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+  ]
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

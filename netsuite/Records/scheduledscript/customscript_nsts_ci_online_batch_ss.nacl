@@ -1,0 +1,218 @@
+netsuite.scheduledscript customscript_nsts_ci_online_batch_ss {
+  scriptid = "customscript_nsts_ci_online_batch_ss"
+  defaultfunction = "schedule_ProcessCIOnline"
+  description = '''
+this script is used when on the online CI is Submitted. this scheduled script will run to process the generation of CI PDF.
+
+The use of multiple deployment is to allow multiple Que of submitting online CI
+'''
+  isinactive = false
+  name = "NSTS | CI Online Batch Consolidation SS"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_SS_ConsolidatedInvoicingOnline_js@dsduuuv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_nsts_ci_keys_to_generate"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = '''
+this is necessary in Online Consolidated Invoice when passing data from Suitelet to Online CI Scheduled Script.
+
+JASON SCHEMA: ARRAY OF 
+[{
+			arrSelectedInvoices : &lt;[array of associated Invoice for this CI]&gt;,
+			customer : &lt;internalid of the associated Customer&gt;,
+			data : {object of additional filters and fields},
+			ciId : recId &lt;internalid if the CI Record&gt;,
+			stCIDateFlag : &lt;interger 1=currency Date,2=specific date,3=last invoice date,4=cutoff date&gt; ,
+			stCIDate : stCIDate &lt;string if stCIDateFlag is 2 then this field will have value&gt;,
+			stAsOfDate : &lt;string date with "mm/dd/yy" format&gt;,
+		}]
+'''
+        displaytype = "NORMAL"
+        fieldtype = "CLOBTEXT"
+        help = '''
+this is necessary in Online Consolidated Invoice when passing data from Suitelet to Online CI Scheduled Script.
+
+JASON SCHEMA
+{
+			arrSelectedInvoices : &lt;[array of associated Invoice for this CI]&gt;,
+			customer : &lt;internalid of the associated Customer&gt;,
+			data : {object of additional filters and fields},
+			ciId : recId &lt;internalid if the CI Record&gt;,
+			stCIDateFlag : &lt;interger 1=currency Date,2=specific date,3=last invoice date,4=cutoff date&gt; ,
+			stCIDate : stCIDate &lt;string if stCIDateFlag is 2 then this field will have value&gt;,
+			stAsOfDate : &lt;string date with "mm/dd/yy" format&gt;,
+		};
+'''
+        isformula = false
+        ismandatory = false
+        label = "Keys to generate (JSON format:online CI)"
+        searchlevel = "2"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_nsts_ci_filters_to_generate"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = '''
+this is necessary in Online Consolidated Invoice when passing data from Suitelet to Online CI Scheduled Script.
+
+the definition of this is defend on the CI Setup CI preference and additional filter
+
+assume that (Billing Address, Location, Due Date, Contract, Project, Source) on the CI Setup is all checked then the JSON SCHEMA for this is :
+filter : {
+ 		subsidiary 		: subsidiary ,		
+ 		customer		: customer ,
+ 		location 		: location ,
+ 		billaddress		: billaddress ,
+ 		duedate 		: dueDate ,
+ 		contract 		: contract ,
+ 		project 		: project,
+ 		asofdate 		: asofdate ,
+ 		currency 		: currency ,
+ 		source 			: source ,
+
+ 		customFilters 	: customFilters ,
+ 		defaultlayout 	: defaultlayout ,
+ 		customerscreen	: customerscreen,
+ 	};
+'''
+        displaytype = "NORMAL"
+        fieldtype = "CLOBTEXT"
+        help = '''
+this is necessary in Online Consolidated Invoice when passing data from Suitelet to Online CI Scheduled Script.
+
+the definition of this is defend on the CI Setup CI preference and additional filter
+
+assume that (Billing Address, Location, Due Date, Contract, Project, Source) on the CI Setup is all checked then the JSON SCHEMA for this is :
+filter : {
+ 		subsidiary 		: subsidiary ,		
+ 		customer		: customer ,
+ 		location 		: location ,
+ 		billaddress		: billaddress ,
+ 		duedate 		: dueDate ,
+ 		contract 		: contract ,
+ 		project 		: project,
+ 		asofdate 		: asofdate ,
+ 		currency 		: currency ,
+ 		source 			: source ,
+
+ 		customFilters 	: customFilters ,
+ 		defaultlayout 	: defaultlayout ,
+ 		customerscreen	: customerscreen,
+ 	};
+'''
+        isformula = false
+        ismandatory = false
+        label = "Ci Filters (JSON Format:online CI)"
+        searchlevel = "2"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_nsts_ci_task_id"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "This is a CI Task Id then the CI is Process Using the Online CI Task is Created and this is needs to fetch in this scheduled script in order to group the CI logs per CI Task"
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        help = "This is a CI Task Id then the CI is Process Using the Online CI Task is Created and this is needs to fetch in this scheduled script in order to group the CI logs per CI Task"
+        isformula = false
+        ismandatory = false
+        label = "CI Task ID"
+        searchlevel = "2"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_nsts_ci_online_batch_ss_1"
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "NOTSCHEDULED"
+        title = "NSTS | CI Online Batch Consolidation SS 1"
+        recurrence = {
+          single = {
+            startdate = "2014-12-09"
+            starttime = "02:00:00Z"
+          }
+        }
+      },
+      {
+        scriptid = "customdeploy_nsts_ci_online_batch_ss_2"
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "NOTSCHEDULED"
+        title = "NSTS | CI Online Batch Consolidation SS 2"
+        recurrence = {
+          single = {
+            startdate = "2014-12-09"
+            starttime = "02:00:00Z"
+          }
+        }
+      },
+      {
+        scriptid = "customdeploy_nsts_ci_online_batch_ss_3"
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "NOTSCHEDULED"
+        title = "NSTS | CI Online Batch Consolidation SS 3"
+        recurrence = {
+          single = {
+            startdate = "2014-12-09"
+            starttime = "02:00:00Z"
+          }
+        }
+      },
+      {
+        scriptid = "customdeploy_nsts_ci_online_batch_ss_4"
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "NOTSCHEDULED"
+        title = "NSTS | CI Online Batch Consolidation SS 4"
+        recurrence = {
+          single = {
+            startdate = "2014-12-09"
+            starttime = "02:00:00Z"
+          }
+        }
+      },
+      {
+        scriptid = "customdeploy_nsts_ci_online_batch_ss_5"
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "NOTSCHEDULED"
+        title = "NSTS | CI Online Batch Consolidation SS 5"
+        recurrence = {
+          single = {
+            startdate = "2014-12-09"
+            starttime = "02:00:00Z"
+          }
+        }
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_Lib_Constants_js@dsduuuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_Lib_UtilAndObjects_js@dsduuuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_Lib_ConsolidationProcessing_js@dsduuuv.path
+      },
+    ]
+  }
+}

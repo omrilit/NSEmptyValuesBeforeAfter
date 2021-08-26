@@ -1,0 +1,21 @@
+netsuite.Account zPartner__2_Capital_z3008@snsu {
+  acctType = "_equity"
+  acctNumber = "z3008"
+  acctName = "zPartner #2 Capital"
+  includeChildren = true
+  generalRate = "_historical"
+  cashFlowRate = "_historical"
+  isInactive = true
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "zPartner #2 Capital_z3008"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

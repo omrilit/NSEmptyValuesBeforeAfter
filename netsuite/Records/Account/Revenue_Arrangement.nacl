@@ -1,0 +1,17 @@
+netsuite.Account Revenue_Arrangement@s {
+  acctType = "_nonPosting"
+  acctName = "Revenue Arrangement"
+  includeChildren = true
+  generalRate = "_average"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Revenue Arrangement"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

@@ -1,0 +1,343 @@
+netsuite.publisheddashboard custpubdashboard_10_t1740134_860 {
+  scriptid = "custpubdashboard_10_t1740134_860"
+  center = "EXECUTIVE"
+  locknewbar = false
+  lockshortcuts = false
+  name = "ProfSvcsDashboard"
+  dashboards = {
+    dashboard = [
+      {
+        centertab = "BASICCENTERSUPPORT"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = "BASICCENTERACTIVITIES"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          calendar = [
+            {
+              isminimized = false
+              numberofrecordsinagenda = 7
+              recordstodisplayinagenda = "TODAY_ONLY"
+              showblockingcalls = true
+              showblockingtasks = true
+              showcampaignevents = false
+              showcanceledevents = false
+              showevents = true
+              shownonblockingcalls = true
+              shownonblockingtasks = true
+              showresourceallocations = false
+              showweekendsinmonthlyview = true
+            },
+          ]
+          list = [
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "TASK"
+            },
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "CALL"
+            },
+          ]
+          scheduler = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = "EXECUTIVECENTERHR"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          keyperformanceindicators = [
+            {
+              cacheddata = false
+              isminimized = false
+            },
+          ]
+          list = [
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "EMPLOYEE"
+            },
+          ]
+        }
+      },
+      {
+        centertab = "EXECUTIVECENTEREXPENSES"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          keyperformanceindicators = [
+            {
+              cacheddata = false
+              isminimized = false
+            },
+          ]
+          list = [
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "VENDOR"
+            },
+          ]
+        }
+      },
+      {
+        centertab = "BASICCENTERPROJECTDASHBOARD"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+      },
+      {
+        centertab = "EXECUTIVECENTERFINANCIAL"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          keyperformanceindicators = [
+            {
+              cacheddata = false
+              isminimized = false
+            },
+          ]
+          enhsnapshots = [
+            {
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              charttype = "AREA"
+              hierarchylevel = "3"
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = "EXECUTIVECENTERSALESMARKETING"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          enhsnapshots = [
+            {
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              charttype = "AREA"
+              hierarchylevel = "3"
+              isminimized = false
+            },
+            {
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              charttype = "AREA"
+              hierarchylevel = "3"
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = "EXECUTIVECENTERREPORTS"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = "BASICCENTERHOMEHOME"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          keyperformanceindicators = [
+            {
+              cacheddata = false
+              isminimized = false
+              kpis = {
+                kpi = [
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "SALES"
+                    periodrange = "THIS_PERIOD"
+                    threshold = 1000
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "FORECAST"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "PIPELINE"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    highlightif = "GREATER_THAN"
+                    kpi = "INCOME"
+                    periodrange = "THIS_PERIOD"
+                    threshold = 10000000
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    highlightif = "ALWAYS"
+                    kpi = "EXPENSES"
+                    periodrange = "THIS_PERIOD"
+                    threshold = 5000000
+                  },
+                  {
+                    compare = false
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "TODAY"
+                    headline = false
+                    kpi = "RECEIVABLES"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = false
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "PROFIT"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    highlightif = "ALWAYS"
+                    kpi = "CUSTOM"
+                    periodrange = "THIS_PERIOD"
+                    savedsearch = netsuite.savedsearch.instance.customsearch_billablehours_2.scriptid
+                  },
+                  {
+                    compare = false
+                    comparedaterange = "THIS_MONTH"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    highlightif = "ALWAYS"
+                    kpi = "CUSTOM2"
+                    periodrange = "THIS_PERIOD"
+                    savedsearch = netsuite.savedsearch.instance.customsearch_chargebillingforecast.scriptid
+                    threshold = 20
+                  },
+                ]
+              }
+            },
+          ]
+          customportlet = [
+            {
+              isminimized = false
+            },
+            {
+              isminimized = true
+              source = netsuite.portlet.instance.customscript_ie_dashboard_tiles_pl.scriptdeployments.scriptdeployment.0.scriptid
+            },
+          ]
+          list = [
+            {
+              allowinlineediting = false
+              isminimized = false
+              size = 10
+              type = "JOB"
+            },
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 5
+              type = "PROJECTTASK"
+            },
+          ]
+          settings = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab16.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          kpireport = [
+            {
+              isminimized = false
+              orientation = "KPIs on Left"
+              restrict = "All"
+              showdates = false
+              trend = false
+            },
+            {
+              isminimized = false
+              orientation = "KPIs on Left"
+              restrict = "All"
+              showdates = false
+              trend = false
+            },
+            {
+              isminimized = false
+              orientation = "KPIs on Left"
+              restrict = "All"
+              showdates = false
+              trend = false
+            },
+            {
+              isminimized = false
+              orientation = "KPIs on Left"
+              restrict = "All"
+              showdates = false
+              trend = false
+            },
+          ]
+          customportlet = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

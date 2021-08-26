@@ -1,0 +1,79 @@
+netsuite.savedcsvimport custimport_11_t1740134_435 {
+  scriptid = "custimport_11_t1740134_435"
+  charencoding = "Cp1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  description = "Product catalog import from Sage Line 50"
+  ignorereadonly = false
+  importname = "Sage Line 50 - Products"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "INVENTORYITEM"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = false
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "INVENTORYITEM"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "INVENTORYITEM"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ITEMID"
+              columnreference = {
+                column = "Product Code"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PRICINGGROUP"
+              columnreference = {
+                column = "Sales Price"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "STOCKUNIT"
+              columnreference = {
+                column = "Quantity In Stock"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "STOREDETAILEDDESCRIPTION"
+              columnreference = {
+                column = "Description"
+                file = "INVENTORYITEM"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TAXSCHEDULE"
+              value = "1"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

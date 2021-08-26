@@ -1,0 +1,235 @@
+netsuite.entryForm custform_15_t1499227_346 {
+  scriptid = "custform_15_t1499227_346"
+  standard = "STANDARDCUSTOMRECORD_NAV_POR_CATEGORIESFORM"
+  name = "-Navigation Portlet Categories Form"
+  recordType = netsuite.customrecordtype.instance.customrecord_nav_por_categories.scriptid
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "CUSTOMFORM"
+              label = "Custom Form"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "NAME"
+              label = "Name"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "RECORDID"
+              label = "ID"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "OWNER"
+              label = "Owner"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "CREATED"
+              label = "Date Created"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "LASTMODIFIED"
+              label = "Last Modified"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nav_por_categories.customrecordcustomfields.customrecordcustomfield.0.scriptid
+              label = "Navigation Portlet"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nav_por_categories.customrecordcustomfields.customrecordcustomfield.1.scriptid
+              label = "Category Name"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nav_por_categories.customrecordcustomfields.customrecordcustomfield.3.scriptid
+              label = "Display Order"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nav_por_categories.customrecordcustomfields.customrecordcustomfield.2.scriptid
+              label = "Image"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "ISINACTIVE"
+              label = "Inactive"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDTRANSLATION"
+        label = "Translation"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDTRANSLATIONS"
+              label = "Translation"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDCUSTOM"
+        label = "Custom"
+        visible = false
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_nav_por_categories.subtabs.subtab.0.scriptid
+        label = "Shortcuts"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nav_por_shortcuts.customrecordcustomfields.customrecordcustomfield.0.scriptid
+              label = "-Navigation Portlet Shortcuts"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+    ]
+  }
+  actionbar = {
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = true
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

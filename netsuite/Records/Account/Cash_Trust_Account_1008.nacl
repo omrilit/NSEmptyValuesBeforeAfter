@@ -1,0 +1,20 @@
+netsuite.Account Cash_Trust_Account_1008@bsu {
+  acctType = "_bank"
+  acctNumber = "1008"
+  acctName = "Cash-Trust Account"
+  includeChildren = false
+  currency = netsuite.Currency.instance.USD
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  curDocNum = 5
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+  ]
+  revalue = true
+  identifier = "Cash-Trust Account_1008"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

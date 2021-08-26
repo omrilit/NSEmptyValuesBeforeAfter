@@ -1,0 +1,289 @@
+netsuite.InventoryItem Trend_Micro_Security_Software_Trend_Micro_Hosted_Email_Security@sssussss {
+  purchaseDescription = "Trend Micro Hosted Email Security"
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  costingMethodDisplay = "Average"
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  cost = 165
+  totalValue = 6172.07
+  averageCost = 2.46
+  useBins = false
+  autoLeadTime = true
+  lastPurchasePrice = 0
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  autoReorderPoint = true
+  storeDisplayName = "Trend Micro Hosted Email Security"
+  storeDescription = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">Trend
+  Micro Hosted Email Security</td>
+</tr></tbody></table>
+'''
+  storeDetailedDescription = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">Trend
+  Micro Hosted Email Security</td>
+</tr></tbody></table>
+'''
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Trend Micro Hosted Email Security"
+  displayName = "Trend Micro Hosted Email Security"
+  parent = netsuite.InventoryItem.instance.Trend_Micro_Security_Software@s
+  isOnline = true
+  offerSupport = false
+  isInactive = true
+  availableToPartners = true
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 157500
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 789
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 1575
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+        displayName = "Jorja Sofa"
+        salesDescription = "De Joria Sofa slimme veelzijdigheid combineert met hedendaagse lichaam te passen aan uw interieur stijl."
+        storeDisplayName = "Jorja Sofa"
+        storeDescription = '''
+De Joria Sofa slimme veelzijdigheid combineert met hedendaagse lichaam te passen aan uw interieur stijl. 
+
+Deze sofa zal ervoor zorgen dat uw woonkamer staan.
+'''
+        storeDetailedDescription = '''
+De Joria Sofa slimme veelzijdigheid combineert met hedendaagse lichaam te passen aan uw interieur stijl. 
+
+Deze sofa zal ervoor zorgen dat uw woonkamer staan.
+'''
+      },
+      {
+        locale = "_german"
+        language = "German"
+        displayName = "De Jorja Sofa"
+        salesDescription = "Die Joria Sofa smart Vielseitigkeit kombiniert mit zeitgenössischer Einrichtung für Ihr Interieur-Stil."
+        storeDisplayName = "Jorja Sofa"
+        storeDescription = "Die Joria Sofa smart Vielseitigkeit kombiniert mit zeitgenössischer Einrichtung für Ihr Interieur-Stil."
+        storeDetailedDescription = '''
+Die Joria Sofa smart Vielseitigkeit kombiniert mit zeitgenössischer Einrichtung für Ihr Interieur-Stil.
+
+Das Sofa wird Ihr Wohnzimmer stehen.
+'''
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+        displayName = "Jorja Sofa"
+        salesDescription = "The Joria Sofa combines smart versatility with contemporary body to suit your interior style.This sofa will make your living room stand out."
+        storeDisplayName = "Jorja Sofa"
+        storeDescription = "The Joria Sofa combines smart versatility with contemporary body to suit your interior style."
+        storeDetailedDescription = '''
+The Joria Sofa combines smart versatility with contemporary body to suit your interior style.
+
+This sofa will make your living room stand out.
+'''
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+        displayName = "ジョリア ソファー"
+        salesDescription = "しっかりした造りのリビングソファーです。座り心地やもたれ心地にもこだわり"
+        storeDisplayName = "ジョリア ソファー"
+        storeDescription = "しっかりした造りのリビングソファーです。"
+        storeDetailedDescription = '''
+しっかりした造りのリビングソファーです。座り心地やもたれ心地にもこだわり、応接間にも合うスタイルです。
+肘掛けクッションは取り外し可能で、お好みの位置で使用可能です。
+'''
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "05 UK Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.05_UK_Warehouse@s
+      },
+      {
+        location = "06 Australia Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.06_Australia_Warehouse@s
+      },
+      {
+        location = "07 Japan/日本 Warehouse"
+        quantityOnHand = 1010
+        onHandValueMli = 997880
+        averageCostMli = 988
+        lastPurchasePriceMli = 988
+        quantityOnOrder = 0
+        quantityCommitted = 0
+        quantityAvailable = 1010
+        locationId = netsuite.Location.instance.07_Japan____Warehouse@sd_26085_26412s
+      },
+      {
+        location = "08 Denmark Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.08_Denmark_Warehouse@s
+      },
+      {
+        location = "09 Germany/Deutsch Warehouse"
+        quantityOnHand = 1500
+        onHandValueMli = 0
+        averageCostMli = 0
+        lastPurchasePriceMli = 0
+        quantityOnOrder = 0
+        quantityCommitted = 840
+        quantityAvailable = 660
+        locationId = netsuite.Location.instance.09_Germany_Deutsch_Warehouse@sds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+      {
+        location = "Australian Warehouse"
+        locationId = netsuite.Location.instance.Australian_Warehouse@s
+      },
+      {
+        location = "Frankfurt Warehouse"
+        locationId = netsuite.Location.instance.Frankfurt_Warehouse@s
+      },
+      {
+        location = "London Warehouse"
+        locationId = netsuite.Location.instance.London_Warehouse@s
+      },
+      {
+        location = "Manila Warehouse"
+        locationId = netsuite.Location.instance.Manila_Warehouse@s
+      },
+      {
+        location = "Singapore Warehouse"
+        locationId = netsuite.Location.instance.Singapore_Warehouse@s
+      },
+    ]
+  }
+  identifier = "Trend Micro Security Software_Trend Micro Hosted Email Security"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

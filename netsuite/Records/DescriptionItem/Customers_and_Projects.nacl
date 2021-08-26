@@ -1,0 +1,33 @@
+netsuite.DescriptionItem Customers_and_Projects@s {
+  description = "Sullivan Consulting does software engineering for their customers.  Work is performed and billed on a project by porject basis.&lt;br&gt;<br>Take a look at their &lt;a href='/app/common/entity/custjoblist.nl?Customer_STAGE=CUSTOMER'&gt;current list&lt;/a&gt; of projects and customers.&lt;br&gt;<br><br>List views are easily customizable.  This list shows all existing customers with all projects listed under each customer.&lt;br&gt;"
+  includeChildren = true
+  itemId = "Customers and Projects"
+  isInactive = true
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+}

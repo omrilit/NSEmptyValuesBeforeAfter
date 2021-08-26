@@ -1,0 +1,12 @@
+netsuite.clientscript customscript_item_mass_updater_cl {
+  scriptid = "customscript_item_mass_updater_cl"
+  fieldchangedfunction = "itemMass_fieldChanged"
+  isinactive = false
+  name = "**Item Mass Updater CL"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  pageinitfunction = "itemMass_CSVProcessor"
+  saverecordfunction = "itemMass_saveRecord"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_93203_Item_Mass_Updater_CL_js@dsduuuv.path
+}

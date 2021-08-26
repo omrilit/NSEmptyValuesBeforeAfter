@@ -1,0 +1,19 @@
+netsuite.Account Intercompany_Loan_Payable_Receivable_2095@ssdu {
+  acctType = "_otherCurrentLiability"
+  acctNumber = "2095"
+  acctName = "Intercompany Loan Payable/Receivable"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = true
+  identifier = "Intercompany Loan Payable/Receivable_2095"
+  externalId = "1129"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

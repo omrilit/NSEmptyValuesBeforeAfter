@@ -1,0 +1,55 @@
+netsuite.usereventscript customscript_oa_export_supportcase {
+  scriptid = "customscript_oa_export_supportcase"
+  beforesubmitfunction = "beforeSubmitSetSupportCaseFields"
+  description = "Set custom fields on support cases when exporting to OpenAir"
+  isinactive = false
+  name = "OpenAir: Set Support Case Fields"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_2851_oa_export_to_openair_flags_js@dsduuuuv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_oa_export_support_case"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Enable this to export support cases to OpenAir"
+        displaytype = "NORMAL"
+        fieldtype = "CHECKBOX"
+        isformula = false
+        ismandatory = false
+        label = "Export Support Cases to OpenAir"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_oa_export_supportcase"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = true
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "ERROR"
+        recordtype = "SUPPORTCASE"
+        runasrole = netsuite.role.instance.customrole1015_2.scriptid
+        status = "RELEASED"
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_2851_features_and_preferences_js@dsduuv.path
+      },
+    ]
+  }
+}

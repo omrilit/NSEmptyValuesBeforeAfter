@@ -1,0 +1,625 @@
+netsuite.workflow customworkflow_po_approval {
+  scriptid = "customworkflow_po_approval"
+  initoncreate = true
+  initonvieworupdate = false
+  inittriggertype = "BEFORESUBMIT"
+  isinactive = false
+  islogenabled = false
+  keephistory = "ALWAYS"
+  name = "PO Approval (Non-Inventory)"
+  recordtypes = "PURCHASEORDER"
+  releasestatus = "RELEASED"
+  runasadmin = true
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowcustomfields = {
+    workflowcustomfield = [
+      {
+        scriptid = "custworkflow_state"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        label = "State"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_approver1"
+        applyformatting = false
+        defaultchecked = false
+        defaultselection = netsuite.role.instance.customrole1060.scriptid
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        label = "Approver 1 (Project Manager)"
+        selectrecordtype = "-118"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_approver2"
+        applyformatting = false
+        defaultchecked = false
+        defaultselection = netsuite.role.instance.customrole1013.scriptid
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        label = "Approver 2 (Controller)"
+        selectrecordtype = "-118"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_is_inventory"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        label = "Is Inventory Item"
+        storevalue = true
+      },
+    ]
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate44"
+        donotexitworkflow = false
+        name = "Non Inventory"
+        positionx = 200
+        positiony = 50
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction125"
+                field = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuetext = "Level1"
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition126"
+              tostate = netsuite.workflow.instance.customworkflow_po_approval.workflowstates.workflowstate.1.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate40"
+        donotexitworkflow = false
+        name = "Get Approval"
+        positionx = 203
+        positiony = 133
+        workflowactions = [
+          {
+            triggertype = "BEFORELOAD"
+            addbuttonaction = [
+              {
+                scriptid = "workflowaction116"
+                checkconditionbeforeexecution = false
+                isinactive = false
+                label = "Approve"
+                saverecordfirst = false
+                initcondition = {
+                  formula = '''
+( ({custworkflow_approver1.id}={nlrole} and {custworkflow_state}='Level1') or 
+({custworkflow_approver2.id}={nlrole} and {custworkflow_state}='Level2') )
+'''
+                  type = "FORMULA"
+                }
+              },
+              {
+                scriptid = "workflowaction118"
+                checkconditionbeforeexecution = false
+                isinactive = false
+                label = "Reject"
+                saverecordfirst = false
+                initcondition = {
+                  formula = '''
+( ({custworkflow_approver1.id}={nlrole} and {custworkflow_state}='Level1') or 
+({custworkflow_approver2.id}={nlrole} and {custworkflow_state}='Level2') )
+'''
+                  type = "FORMULA"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition103"
+              buttonaction = netsuite.workflow.instance.customworkflow_po_approval.workflowstates.workflowstate.1.workflowactions.0.addbuttonaction.0.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_po_approval.workflowstates.workflowstate.2.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+            {
+              scriptid = "workflowtransition116"
+              buttonaction = netsuite.workflow.instance.customworkflow_po_approval.workflowstates.workflowstate.1.workflowactions.0.addbuttonaction.1.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_po_approval.workflowstates.workflowstate.4.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate41"
+        donotexitworkflow = false
+        name = "Next Approval"
+        positionx = 200
+        positiony = 230
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction104"
+                field = netsuite.transactionbodycustomfield.instance.custbody_powf_pm.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "@CURRENTUSER@"
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level1'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction107"
+                field = netsuite.transactionbodycustomfield.instance.custbody_powf_pm_ok.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = true
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level1'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction109"
+                field = netsuite.transactionbodycustomfield.instance.custbody_powf_pm_dt.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuedate = "TODAY"
+                valuetype = "DATE"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level1'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction110"
+                field = netsuite.transactionbodycustomfield.instance.custbody_powf_ctrl.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "@CURRENTUSER@"
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level2'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction111"
+                field = netsuite.transactionbodycustomfield.instance.custbody_powf_ctrl_ok.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = true
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level2'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction112"
+                field = netsuite.transactionbodycustomfield.instance.custbody_powf_ctrl_dt.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuedate = "TODAY"
+                valuetype = "DATE"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level2'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction105"
+                field = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuetext = "Approved"
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level2'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction106"
+                field = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuetext = "Level2"
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level1'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition108"
+              tostate = netsuite.workflow.instance.customworkflow_po_approval.workflowstates.workflowstate.1.scriptid
+              initcondition = {
+                formula = "\"Workflow:State\" = 'Level2'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:State"
+                      value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition113"
+              tostate = netsuite.workflow.instance.customworkflow_po_approval.workflowstates.workflowstate.3.scriptid
+              initcondition = {
+                formula = "\"Workflow:State\" = 'Approved'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:State"
+                      value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate42"
+        donotexitworkflow = false
+        name = "Approved"
+        positionx = 200
+        positiony = 320
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction114"
+                field = "STDBODYAPPROVALSTATUS"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "2"
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+            sendemailaction = [
+              {
+                scriptid = "workflowaction115"
+                attachmenttype = "SPECIFIC"
+                body = "Your PO has been approved."
+                includerecordlink = true
+                includetransaction = false
+                isinactive = false
+                recipientfield = "STDBODYEMPLOYEE"
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = "STDUSERUSER"
+                sendertype = "FIELD"
+                subject = "PO #{tranid} Approved"
+                usetemplate = false
+                initcondition = {
+                  formula = "isEmpty(\"Employee\") = 'F'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Employee"
+                        value = "STDBODYEMPLOYEE"
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "workflowstate43"
+        donotexitworkflow = false
+        name = "Rejected"
+        positionx = 200
+        positiony = 410
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction123"
+                field = "STDBODYAPPROVALSTATUS"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "3"
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+              {
+                scriptid = "workflowaction120"
+                field = netsuite.transactionbodycustomfield.instance.custbody_powf_pm.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "@CURRENTUSER@"
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level1'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction121"
+                field = netsuite.transactionbodycustomfield.instance.custbody_powf_pm_ok.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level1'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction122"
+                field = netsuite.transactionbodycustomfield.instance.custbody_powf_pm_dt.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuedate = "TODAY"
+                valuetype = "DATE"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level1'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction117"
+                field = netsuite.transactionbodycustomfield.instance.custbody_powf_ctrl.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "@CURRENTUSER@"
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level2'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction126"
+                field = netsuite.transactionbodycustomfield.instance.custbody_powf_ctrl_ok.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level2'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction119"
+                field = netsuite.transactionbodycustomfield.instance.custbody_powf_ctrl_dt.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuedate = "TODAY"
+                valuetype = "DATE"
+                initcondition = {
+                  formula = "\"Workflow:State\" = 'Level2'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:State"
+                        value = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction127"
+                field = netsuite.workflow.instance.customworkflow_po_approval.workflowcustomfields.workflowcustomfield.0.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuetext = "Rejected"
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+            sendemailaction = [
+              {
+                scriptid = "workflowaction124"
+                attachmenttype = "SPECIFIC"
+                body = "Your PO has been rejected."
+                includerecordlink = true
+                includetransaction = false
+                isinactive = false
+                recipientfield = "STDBODYEMPLOYEE"
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = "STDUSERUSER"
+                sendertype = "FIELD"
+                subject = "PO #{tranid} Rejected"
+                usetemplate = false
+                initcondition = {
+                  formula = "isEmpty(\"Employee\") = 'F'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Employee"
+                        value = "STDBODYEMPLOYEE"
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+      },
+    ]
+  }
+}

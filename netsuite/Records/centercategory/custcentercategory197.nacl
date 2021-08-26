@@ -1,0 +1,28 @@
+netsuite.centercategory custcentercategory197 {
+  scriptid = "custcentercategory197"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_financials.scriptid
+  label = "General Ledger"
+  links = {
+    link = [
+      {
+        linkid = "TRAN_BUDGET"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_TRAN_JOURNAL"
+        linklabel = "Create Journal Entries"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_CREATEINTERCOADJJE"
+        linklabel = "Create Intercompany Journal Entries"
+        shortlist = false
+      },
+      {
+        linkid = "EDIT_MEMDOC"
+        shortlist = false
+      },
+    ]
+  }
+}

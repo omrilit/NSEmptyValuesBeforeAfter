@@ -1,0 +1,20 @@
+netsuite.bundleinstallationscript customscript_glm_bi_script {
+  scriptid = "customscript_glm_bi_script"
+  isinactive = false
+  name = "GLM - BI - Script"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_254263_com_netsuite_glmatching_src_entrypoints_glm_bi_script_js@dsdvvddduuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_glm_bi_script"
+        isdeployed = true
+        loglevel = "ERROR"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "GLM - BI - Script"
+      },
+    ]
+  }
+}

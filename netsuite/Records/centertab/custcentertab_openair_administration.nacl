@@ -1,0 +1,20 @@
+netsuite.centertab custcentertab_openair_administration {
+  scriptid = "custcentertab_openair_administration"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  label = "Admin"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_1223_t1499227_189"
+        isportletshown = true
+        portlet = "SCRIPTPORTLET"
+        portletcolumn = "1"
+      },
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+netsuite.Subsidiary UK_HQ_ASIA@bu {
+  name = "ASIA"
+  parent = netsuite.Subsidiary.instance.UK_HQ@b
+  isInactive = false
+  showSubsidiaryName = false
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  country = "_singapore"
+  mainAddress = {
+    country = "_singapore"
+    addressee = "ASIA"
+    addrText = "ASIA<br>Singapore"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.Singapore_Dollar@s
+  edition = "XX"
+  interCoAccount = {
+    name = "1806 Intercompany Clearing Account : Intercompany Payable/Receivable SGD"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._singapore
+        country = "SG"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_ASIA"
+}

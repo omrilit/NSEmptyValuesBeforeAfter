@@ -1,0 +1,540 @@
+netsuite.InventoryItem HP_ProLiant_BL620c_G7_Blade_Server___Xeon_E6540@ssssssbss {
+  purchaseDescription = "HP ProLiant BL620c G7 Blade Server - 1 x Intel Xeon E6540 Hexa-core (6 Core) 2 GHz"
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  intercoCogsAccount = netsuite.Account.instance.COGS_5000_Intercompany_Cost_of_Goods_Sold_5900@uussssu
+  salesDescription = "HP ProLiant BL620c G7 Blade Server - 1 x Intel Xeon E6540 Hexa-core (6 Core) 2 GHz"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Hardware_4006
+  intercoIncomeAccount = netsuite.Account.instance.Revenue_4000_Intercompany_Revenue_4900@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  shippingCostUnits = "per Ea."
+  handlingCostUnits = "per Ea."
+  weightUnits = "per Ea."
+  costingMethodDisplay = "Average"
+  unitsType = {
+    name = "EACH"
+  }
+  stockUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  purchaseUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  saleUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  minimumQuantityUnits = "Ea."
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  costEstimateUnits = "per Ea."
+  vsoeDelivered = false
+  costUnits = "per Ea."
+  totalValue = 174297.7
+  averageCost = 1161.98
+  useBins = false
+  quantityReorderUnits = "Quantity On Hand, Reorder Point, Quantity On Order, and Quantity Committed are in Ea."
+  autoLeadTime = true
+  lastPurchasePrice = 0
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  safetyStockLevelUnits = "Ea."
+  autoReorderPoint = true
+  storeDisplayName = "HP ProLiant BL620c G7 Blade Server - Xeon E6540"
+  storeDisplayThumbnail = netsuite.RecordRef.instance.InventoryItem_storeDisplayThumbnail_9561
+  storeDisplayImage = netsuite.RecordRef.instance.InventoryItem_storeDisplayImage_9560
+  storeDescription = '''
+<span class="padT5 a12 colorDG">
+		<p><span class="padT5 a12 colorDG">The HP ProLiant BL620c G7 offers 
+unmatched scalability, performance, and economics in a two-processor 
+Intel Xeon 6500/7500 series blade. Fully utilizing the architecture of 
+the Intel Xeon 7500 chipset, up to two top performing 130W processors 
+are supported along with 32 DIMM slots providing 512 GB of memory for 
+ultimate virtualization efficiency. The server also offers 6500 series 
+processors that provide a more economical offering than their 7500 
+series counterparts, yet provide the same performance. The four 10Gb 
+FlexFabric ports combined with the three expansion slots yield an 
+outstanding 96 Gb of I/O bandwidth.</span></p></span>
+'''
+  storeDetailedDescription = '''
+<div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id=""><div style="clear: both; height: auto; border: 0px solid red;" id="prodNavContent">
+
+
+
+
+
+
+
+<div id="">
+	
+		
+			
+			
+				
+					
+					
+						
+
+
+
+
+
+
+
+
+	<span class="a14 b colorDG">Main Features</span>
+	<p>
+	</p>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Number of Processors Supported: 2
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Number of Processors Installed: 1
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Processor Manufacturer: Intel
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Processor Type: Xeon
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Processor Model: E6540
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Processor Core: Hexa-core (6 Core)
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Processor Speed: 2 GHz
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Standard Memory: 8 GB
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Maximum Memory: 512 GB
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Memory Technology: DDR3 SDRAM
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Optical Drive Type: No
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Controller Type: Serial Attached SCSI (SAS)
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					RAID Supported: Yes
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					RAID Levels: 0, 1
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Graphics Controller Manufacturer: ATI
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Graphics Controller Model: RN-50
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Ethernet Technology: 10 Gigabit Ethernet, Fast Ethernet
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Green Compliant: Yes
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Green Compliance Certificate/Authority: WEEE
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Form Factor: Blade
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Height: 14.5"
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Width: 2.2"
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Depth: 20.1"
+				</span>
+			</li>
+		
+			<li style="list-style:disc;list-style-position:inside;padding-left: 14px;text-indent: -16px;" class="colorR">
+				<span class="a12 colorDG">
+					Limited Warranty: 3 Year
+				</span>
+			</li>
+		
+	<BR>
+
+						<br>
+						
+
+
+
+
+
+
+
+
+	<div class="padB5"><hr></div>
+	<span class="a14 b colorDG">Marketing Information</span>
+	<span class="padT5 a12 colorDG">
+		<p>The HP ProLiant BL620c G7 offers unmatched scalability, 
+performance, and economics in a two-processor Intel Xeon 6500/7500 
+series blade. Fully utilizing the architecture of the Intel Xeon 7500 
+chipset, up to two top performing 130W processors are supported along 
+with 32 DIMM slots providing 512 GB of memory for ultimate 
+virtualization efficiency. The server also offers 6500 series processors
+ that provide a more economical offering than their 7500 series 
+counterparts, yet provide the same performance. The four 10Gb FlexFabric
+ ports combined with the three expansion slots yield an outstanding 96 
+Gb of I/O bandwidth.</p>
+	</span></div></div><span class="padT5 a12 colorDG">
+	</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><span class="padT5 a12 colorDG">
+	</span></div></div></div></div>
+'''
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  urlComponent = "IBM-IntelliStation-ZPro-6223BVU-Tower-Workstation_2"
+  itemId = "HP ProLiant BL620c G7 Blade Server - Xeon E6540"
+  displayName = "HP ProLiant BL620c G7 Blade Server - Xeon E6540"
+  vendorName = "HP"
+  isOnline = true
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  department = netsuite.Department.instance.Prof__Services@vs
+  class = netsuite.Classification.instance.01_Consulting@b
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 4640.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 4640.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 4640.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  siteCategoryList = {
+    siteCategory = [
+      {
+        website = netsuite.RecordRef.instance.InventoryItem_website_4
+        category = netsuite.RecordRef.instance.InventoryItem_category_2072
+        isDefault = false
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnHand = 50
+        onHandValueMli = 232049.5
+        averageCostMli = 4640.99
+        lastPurchasePriceMli = 4640.99
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "05 UK Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.05_UK_Warehouse@s
+      },
+      {
+        location = "06 Australia Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.06_Australia_Warehouse@s
+      },
+      {
+        location = "07 Japan/日本 Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.07_Japan____Warehouse@sd_26085_26412s
+      },
+      {
+        location = "08 Denmark Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.08_Denmark_Warehouse@s
+      },
+      {
+        location = "09 Germany/Deutsch Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.09_Germany_Deutsch_Warehouse@sds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+      {
+        location = "Australian Warehouse"
+        quantityOnHand = 50
+        onHandValueMli = 0
+        averageCostMli = 0
+        lastPurchasePriceMli = 0
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.Australian_Warehouse@s
+      },
+      {
+        location = "Frankfurt Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Frankfurt_Warehouse@s
+      },
+      {
+        location = "London Warehouse"
+        quantityOnHand = 50
+        onHandValueMli = 0
+        averageCostMli = 0
+        lastPurchasePriceMli = 0
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.London_Warehouse@s
+      },
+      {
+        location = "Manila Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Manila_Warehouse@s
+      },
+      {
+        location = "Singapore Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Singapore_Warehouse@s
+      },
+    ]
+  }
+  identifier = "HP ProLiant BL620c G7 Blade Server - Xeon E6540"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = '''
+HP ProLiant BL620c G7 Blade Server - Xeon E6540 HP ProLiant BL620c G7 Blade Server - Xeon E6540 <span class="padT5 a12 colorDG">
+		<p><span class="padT5 a12 colorDG">The HP ProLiant BL620c G7 offers 
+unmatched scalability, performance, and economics in a two-processor 
+Intel Xeon 6500/7500 series blade. Fully utilizing the architecture of 
+the Intel Xeon 7500 chipset, up to two top performing 130W processors 
+are supported along with 32 DIMM slots providing 512 GB of memory for 
+ultimate virtualization efficiency. The server also offers 6500 series 
+processors that provide a more economical offering than their 7500 
+series counterparts, yet provide the same performance. The four 10Gb 
+FlexFabric ports combined with the three expansion slots yield an 
+outstanding 96 Gb of I/O bandwidth.</span></p></span> null
+'''
+  custom_custitem_wd_img_gallery_carousel_html = "<div class=\"item active easyzoom easyzoom--overlay\" data-slide-number=\"0\"><a href=\"/core/media/media.nl?id=9560&c=TSTDRV1373481&h=aa75b4c285d4b9669c08\"><img src=\"/core/media/media.nl?id=9560&c=TSTDRV1373481&h=aa75b4c285d4b9669c08\" class=\"img-responsive\"></a></div>"
+  custom_custitem_wd_img_gallery_slider_html = "<div class=\"col-xs-2 thumbnail\"><a id=\"carousel-selector-0\" class=\"selected\"><img src=\"/core/media/media.nl?id=9561&c=TSTDRV1373481&h=f9c13f0b8b0efbd894ab\"></a></div>"
+  custom_custitem_wd_process_items = true
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

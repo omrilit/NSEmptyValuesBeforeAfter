@@ -1,0 +1,60 @@
+netsuite.savedcsvimport custimport_rss_category {
+  scriptid = "custimport_rss_category"
+  charencoding = "UTF_8"
+  columndelimiter = "COMMA"
+  customrecord = "[scriptid=customrecord_rss_category]"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  entryform = "[scriptid=custform_3_3658933_483]"
+  ignorereadonly = true
+  importname = "RSS Category"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "CUSTOMRECORD"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "CUSTOMRECORD"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "CUSTOMRECORD"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ISINACTIVE"
+              columnreference = {
+                column = "Inactive"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "NAME"
+              columnreference = {
+                column = "Name"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+netsuite.sspapplication webapp_cust_my_account {
+  scriptid = "webapp_cust_my_account"
+  appfolder = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference My Account/Custom My Account/]"
+  isinactive = false
+  loglevel = "DEBUG"
+  name = "Custom My Account"
+  rootpath = "/My-Account"
+  runtimeversion = "1"
+  status = "TESTING"
+  libraries = {
+    library = [
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference My Account/Reference My Account/ssp_libraries/underscore.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference My Account/Reference My Account/ssp_libraries/backbone.validation.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference My Account/Reference My Account/ssp_libraries/commons.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference My Account/Reference My Account/ssp_libraries/backend.configuration.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference My Account/Reference My Account/ssp_libraries/Models.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley SuiteOffice/Suite Office/ssp_libraries/SuiteOffice.configuration.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley SuiteOffice/Suite Office/ssp_libraries/SuiteOffice.Model.js]"
+      },
+    ]
+  }
+}

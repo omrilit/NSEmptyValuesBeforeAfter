@@ -1,0 +1,75 @@
+netsuite.savedcsvimport custimport_1_t1740134_435 {
+  scriptid = "custimport_1_t1740134_435"
+  charencoding = "Cp1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = false
+  importname = "Global Import"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  preventduplicates = false
+  recordtype = "LEAD"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = false
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "LEAD"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "LEAD"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "CURRENCY"
+              columnreference = {
+                column = "Currency"
+                file = "LEAD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ENTITYSTATUS"
+              columnreference = {
+                column = "Status"
+                file = "LEAD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SUBSIDIARY"
+              columnreference = {
+                column = "Subsidiary"
+                file = "LEAD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "UNSUBSCRIBE"
+              columnreference = {
+                column = "Unsubscribe"
+                file = "LEAD"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+netsuite.Account Unbilled_Receivable_1160@su {
+  acctType = "_unbilledReceivable"
+  acctNumber = "1160"
+  acctName = "Unbilled Receivable"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = true
+  identifier = "Unbilled Receivable_1160"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

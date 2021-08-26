@@ -1,0 +1,21 @@
+netsuite.Account Current_Portion_Long_Term_Debt_2090@ssbsu {
+  acctType = "_otherCurrentLiability"
+  acctNumber = "2090"
+  acctName = "Current Portion Long-Term Debt"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = true
+  identifier = "Current Portion Long-Term Debt_2090"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

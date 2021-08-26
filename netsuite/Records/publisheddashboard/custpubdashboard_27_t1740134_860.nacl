@@ -1,0 +1,421 @@
+netsuite.publisheddashboard custpubdashboard_27_t1740134_860 {
+  scriptid = "custpubdashboard_27_t1740134_860"
+  center = "ACCOUNTCENTER"
+  locknewbar = false
+  lockshortcuts = false
+  name = "New Controller"
+  dashboards = {
+    dashboard = [
+      {
+        centertab = "BASICCENTERSUPPORT"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = "BASICCENTERACTIVITIES"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          calendar = [
+            {
+              isminimized = false
+              numberofrecordsinagenda = 7
+              recordstodisplayinagenda = "TODAY_ONLY"
+              showblockingcalls = true
+              showblockingtasks = true
+              showcampaignevents = false
+              showcanceledevents = false
+              showevents = true
+              shownonblockingcalls = true
+              shownonblockingtasks = true
+              showresourceallocations = false
+              showweekendsinmonthlyview = true
+            },
+          ]
+          list = [
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "TASK"
+            },
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "CALL"
+            },
+          ]
+          scheduler = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab27.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          kpireport = [
+            {
+              isminimized = false
+              orientation = "KPIs on Left"
+              reportid = "FINANCIALRATIOS"
+              restrict = "All"
+              showdates = true
+              trend = true
+            },
+            {
+              isminimized = false
+              orientation = "KPIs on Left"
+              reportid = netsuite.kpiscorecard.instance.kpiscorecard_12_t1740134_426.scriptid
+              restrict = "All"
+              showdates = true
+              trend = false
+            },
+            {
+              isminimized = false
+              orientation = "KPIs on Left"
+              reportid = netsuite.kpiscorecard.instance.kpiscorecard_10_t1740134_426.scriptid
+              restrict = "All"
+              showdates = true
+              trend = true
+            },
+          ]
+        }
+      },
+      {
+        centertab = "BASICCENTERPROJECTDASHBOARD"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+      },
+      {
+        centertab = "ACCOUNTCENTERCENTERREPORTS"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = "ACCOUNTCENTERCENTERCUSTOMERS"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+            },
+          ]
+          list = [
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "CUSTOMER"
+            },
+          ]
+        }
+      },
+      {
+        centertab = "BASICCENTERHOMEHOME"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          keyperformanceindicators = [
+            {
+              cacheddata = false
+              isminimized = false
+              kpis = {
+                kpi = [
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    highlightif = "ALWAYS"
+                    kpi = "INCOME"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "TODAY"
+                    headline = false
+                    kpi = "BANKBAL"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "SALES"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    highlightif = "ALWAYS"
+                    kpi = "EXPENSES"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "PROFIT"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "CUSTOM"
+                    savedsearch = netsuite.savedsearch.instance.customsearch_chargebillingforecast.scriptid
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "TODAY"
+                    headline = false
+                    highlightif = "ALWAYS"
+                    kpi = "RECEIVABLES"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "TODAY"
+                    headline = false
+                    highlightif = "ALWAYS"
+                    kpi = "PAYABLES"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "OPERATINGEXPENSES"
+                    periodrange = "THIS_PERIOD"
+                  },
+                ]
+              }
+            },
+          ]
+          customportlet = [
+            {
+              isminimized = false
+              source = netsuite.portlet.instance.customscript_navigation_portlet_3_pt.scriptdeployments.scriptdeployment.0.scriptid
+              parameters = {
+                parameter = [
+                  {
+                    id = netsuite.portlet.instance.customscript_navigation_portlet_3_pt.scriptcustomfields.scriptcustomfield.0.scriptid
+                    value = netsuite.customlist.instance.customlist_nav_portlet_list.customvalues.customvalue.14.scriptid
+                  },
+                  {
+                    id = netsuite.portlet.instance.customscript_navigation_portlet_3_pt.scriptcustomfields.scriptcustomfield.1.scriptid
+                    value = netsuite.customlist.instance.customlist_nav_portlet_column.customvalues.customvalue.1.scriptid
+                  },
+                ]
+              }
+            },
+            {
+              isminimized = false
+              source = "[scriptid=customscript_snav_portlet.customdeploy_snav_portlet]"
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab7_16.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+          list = [
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+            },
+          ]
+        }
+      },
+      {
+        centertab = "ACCOUNTCENTERCENTERFINANCIAL"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          keyperformanceindicators = [
+            {
+              cacheddata = false
+              isminimized = false
+            },
+          ]
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+            },
+          ]
+        }
+      },
+      {
+        centertab = "ACCOUNTCENTERCENTERPAYROLLANDHR"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          list = [
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "EMPLOYEE"
+            },
+          ]
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+            },
+          ]
+        }
+      },
+      {
+        centertab = "ACCOUNTCENTERCENTERVENDORS"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          list = [
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "VENDOR"
+            },
+          ]
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab7_11.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customportlet = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab8_13.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+            },
+          ]
+          customportlet = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+netsuite.clientscript customscript_googlemaps_client {
+  scriptid = "customscript_googlemaps_client"
+  description = "Google Map Integration Client"
+  fieldchangedfunction = "eventGoogleMapsFieldChanged"
+  isinactive = false
+  name = "Event Google Maps Integration Client"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  pageinitfunction = "eventGoogleMapsPageInit"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_7908_eventGoogleMapsIntegration_js@dsdv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_googlemaps_client"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        recordtype = "CALENDAREVENT"
+        status = "RELEASED"
+      },
+    ]
+  }
+}

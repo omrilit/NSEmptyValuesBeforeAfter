@@ -1,0 +1,19 @@
+netsuite.Account Revenue_4000_Sales_Returns_4500@uusu {
+  acctType = "_income"
+  acctNumber = "4500"
+  acctName = "Sales Returns"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.Revenue_4000
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Revenue_4000_Sales Returns_4500"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

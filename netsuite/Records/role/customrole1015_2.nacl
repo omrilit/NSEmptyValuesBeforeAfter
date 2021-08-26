@@ -1,0 +1,183 @@
+netsuite.role customrole1015_2 {
+  scriptid = "customrole1015_2"
+  centertype = "ACCOUNTCENTER"
+  employeerestriction = "NONE"
+  employeeselectionunrestricted = false
+  isinactive = false
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "NSOA Connector"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "OWN"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = [
+      {
+        permkey = "TRAN_VENDBILL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_CASHSALE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_CUSTPYMT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_CUSTDEP"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_EXPREPT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_CUSTINVC"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_CUSTINVCAPPRV"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_JOURNALAPPRV"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_JOURNAL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_VENDPYMT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_PURCHORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_PURCHORDRECEIVE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_SALESORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_TIMEBILL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CASE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CUSTJOB"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CURRENCY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_EMPLOYEE_RECORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EMPLOYEE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CATEGORY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_IMPORTED_EMPLOYEE_EXPENSE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_ITEM"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_JOB"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_REVRECSCHEDULE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_SUBSIDIARY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_VENDOR"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_ACCTSETUP"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_ALLOW_JS_HTML_UPLOAD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_NUMBERING"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_ENABLEFEATURES"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_EMPLOYEELIST"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_SETUPCOMPANY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CUSTOMSCRIPT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_VICARIOUS_EMAILS"
+        permlevel = "FULL"
+      },
+      {
+        permkey = netsuite.customrecordtype.instance.customrecord_oa_features_and_preferences.scriptid
+        permlevel = "FULL"
+      },
+      {
+        permkey = netsuite.customrecordtype.instance.customrecord_oa_cost_center.scriptid
+        permlevel = "FULL"
+      },
+      {
+        permkey = netsuite.customrecordtype.instance.customrecord_oa_forex_daily.scriptid
+        permlevel = "FULL"
+      },
+      {
+        permkey = netsuite.customrecordtype.instance.customrecord_oa_project_rate_card.scriptid
+        permlevel = "FULL"
+      },
+    ]
+  }
+}

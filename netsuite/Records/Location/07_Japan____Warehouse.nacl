@@ -1,0 +1,33 @@
+netsuite.Location "07_Japan____Warehouse@sd_26085_26412s" {
+  name = "07 Japan/日本 Warehouse"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_ASIA_Japan@buu,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_japan"
+    addressee = "07 Japan/日本 Warehouse"
+    addrText = "Japan<br>07 Japan Warehouse"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "07 Japan/日本 Warehouse"
+}

@@ -1,0 +1,135 @@
+netsuite.customrecordtype customrecord7 {
+  scriptid = "customrecord7"
+  accesstype = "CUSTRECORDENTRYPERM"
+  allowattachments = true
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = true
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = false
+  allowquicksearch = true
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = true
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = false
+  isinactive = false
+  isordered = false
+  recordname = "Historical Usage Data"
+  showcreationdate = true
+  showcreationdateonlist = false
+  showid = true
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord10"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Month"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord7.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord117"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Monthly Budget"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord7.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord11"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Monthly Actuals"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord7.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord12"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = true
+        label = "Customer"
+        onparentdelete = "SET_NULL"
+        parentsubtab = netsuite.subtab.instance.custtab_6_t1499227_705.scriptid
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-2"
+        showinlist = true
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord7.subtabs.subtab.0.scriptid
+      },
+    ]
+  }
+  subtabs = {
+    subtab = [
+      {
+        scriptid = "tab_7_t1499227_470"
+        tabtitle = "Usage Data"
+      },
+    ]
+  }
+}

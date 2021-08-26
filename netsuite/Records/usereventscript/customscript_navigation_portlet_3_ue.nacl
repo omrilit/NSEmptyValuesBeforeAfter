@@ -1,0 +1,19 @@
+netsuite.usereventscript customscript_navigation_portlet_3_ue {
+  scriptid = "customscript_navigation_portlet_3_ue"
+  isinactive = false
+  name = "***Navigation_Portlet_3_UE"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_41797_NavigationPortlet_UE_js@dsduv.path
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_41797_nav_portlet_jquery_js@dsduuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_41797_nav_portlet_jquery_slimscroll_js@dsduuvv.path
+      },
+    ]
+  }
+}

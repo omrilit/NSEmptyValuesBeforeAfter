@@ -1,0 +1,52 @@
+type netsuite.CustomTransaction {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  netsuite.RecordRef tranType {
+  }
+  string tranId {
+  }
+  number total {
+  }
+  netsuite.Currency currency {
+    isReference = true
+  }
+  netsuite.RecordRef voidJournal {
+  }
+  number exchangeRate {
+  }
+  string tranDate {
+  }
+  netsuite.RecordRef postingPeriod {
+  }
+  string memo {
+  }
+  netsuite.RecordRef tranStatus {
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+  netsuite.CustomTransactionLineList lineList {
+  }
+  netsuite.AccountingBookDetailList accountingBookDetailList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

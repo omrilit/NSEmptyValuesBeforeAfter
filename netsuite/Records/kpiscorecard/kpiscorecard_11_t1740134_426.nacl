@@ -1,0 +1,104 @@
+netsuite.kpiscorecard kpiscorecard_11_t1740134_426 {
+  scriptid = "kpiscorecard_11_t1740134_426"
+  name = "Employees"
+  useperiods = "F"
+  custom = {
+    kpi1 = netsuite.savedsearch.instance.customsearch208.scriptid
+    kpi2 = netsuite.savedsearch.instance.customsearch205_2.scriptid
+    kpi3 = netsuite.savedsearch.instance.customsearch200.scriptid
+    kpi4 = netsuite.savedsearch.instance.customsearch209.scriptid
+  }
+  audience = {
+    allemployees = true
+    allpartners = false
+    allroles = true
+  }
+  kpis = {
+    kpi = [
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM"
+        label = "New Hires"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM2"
+        label = "Termed Employees"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM3"
+        label = "Total Employees"
+      },
+      {
+        formula = "{2}/{3}*4"
+        hidden = false
+        kpi = "FORMULAPERCENT"
+        label = "Annualized Employee Turnover"
+        lessismore = false
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "REVENUE"
+        label = "Revenue"
+      },
+      {
+        formula = "{5}/{3}"
+        hidden = false
+        kpi = "FORMULACURRENCY"
+        label = "Rev per Employee"
+        lessismore = false
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM4"
+        label = "Sq footage"
+      },
+      {
+        formula = "{7}/{3}"
+        hidden = false
+        kpi = "FORMULANUMERIC"
+        label = "Sq ft/Employee"
+        lessismore = false
+      },
+    ]
+  }
+  ranges = {
+    range = [
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        label = "Q1"
+        range = "FIRST_FISCAL_QUARTER_THIS_FISCAL_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        label = "Q2"
+        range = "SECOND_FISCAL_QUARTER_THIS_FISCAL_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        label = "Q3"
+        range = "THIRD_FISCAL_QUARTER_THIS_FISCAL_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        label = "Q4"
+        range = "FOURTH_FISCAL_QUARTER_THIS_FISCAL_YEAR"
+      },
+    ]
+  }
+}

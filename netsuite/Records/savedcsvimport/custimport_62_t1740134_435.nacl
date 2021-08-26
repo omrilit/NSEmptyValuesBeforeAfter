@@ -1,0 +1,199 @@
+netsuite.savedcsvimport custimport_62_t1740134_435 {
+  scriptid = "custimport_62_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  entryform = netsuite.entryForm.instance.custform_51_t1499227_346.scriptid
+  ignorereadonly = true
+  importname = "Employees"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "EMPLOYEE"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "EMPLOYEE"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "EMPLOYEE"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "APPROVALLIMIT"
+              columnreference = {
+                column = "Expense Approval Limit"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "APPROVER"
+              columnreference = {
+                column = "Expense Approver"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "BIRTHDATE"
+              columnreference = {
+                column = "Birth Date"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CLASS"
+              columnreference = {
+                column = "Class"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = netsuite.entitycustomfield.instance.custentity_ra_approver.scriptid
+              columnreference = {
+                column = "Resource Allocation Approver"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "DEPARTMENT"
+              columnreference = {
+                column = "Department"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EMAIL"
+              columnreference = {
+                column = "Email"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EMPLOYEETYPE"
+              columnreference = {
+                column = "Type"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ETHNICITY"
+              columnreference = {
+                column = "Ethnicity"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "GENDER"
+              columnreference = {
+                column = "Gender"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "HIREDATE"
+              columnreference = {
+                column = "Hire Date"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ISSALESREP"
+              columnreference = {
+                column = "Sales Rep"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ISSUPPORTREP"
+              columnreference = {
+                column = "Support Rep"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "MARITALSTATUS"
+              columnreference = {
+                column = "Marital Status"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PHONE"
+              columnreference = {
+                column = "Phone"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "RELEASEDATE"
+              columnreference = {
+                column = "Release Date"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SUBSIDIARY"
+              columnreference = {
+                column = "Subsidiary"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SUPERVISOR"
+              columnreference = {
+                column = "Supervisor"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TITLE"
+              columnreference = {
+                column = "Job Title"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "WORKCALENDAR"
+              value = "1"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

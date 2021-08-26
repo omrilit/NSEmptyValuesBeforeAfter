@@ -1,0 +1,64 @@
+netsuite.centercategory custcentercategory10 {
+  scriptid = "custcentercategory10"
+  center = "BASIC"
+  centertab = netsuite.centertab.instance.custcentertab8_14.scriptid
+  label = "Searches"
+  links = {
+    link = [
+      {
+        linklabel = "Depreciation Monthly Report"
+        linkobject = "[scriptid=customsearch101_2_2]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Additions"
+        linkobject = "[scriptid=customsearch_ncfar_additions]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Disposals"
+        linkobject = "[scriptid=customsearch_ncfar_disposals]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Asset List"
+        linkobject = "[scriptid=customsearch_ncfar_asset_register_ss]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Asset Register"
+        linkobject = "[scriptid=customsearch_ncfar_assetreg]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Proposal History"
+        linkobject = "[scriptid=customsearch_ncfar_assetcreatedfrom]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Inspections Due"
+        linkobject = "[scriptid=customsearch_nbs_far_inspectiondue]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Insurance Renewals Due"
+        linkobject = "[scriptid=customsearch_nbs_far_insurancedue]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Leases Expiring"
+        linkobject = "[scriptid=customsearch_nbs_far_leaseexpiry]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+    ]
+  }
+}

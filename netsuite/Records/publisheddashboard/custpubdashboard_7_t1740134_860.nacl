@@ -1,0 +1,561 @@
+netsuite.publisheddashboard custpubdashboard_7_t1740134_860 {
+  scriptid = "custpubdashboard_7_t1740134_860"
+  center = netsuite.center.instance.custcenter4.scriptid
+  locknewbar = false
+  lockshortcuts = false
+  name = "Enhanced Sales Rep Dashboard"
+  roles = {
+    role = [
+      {
+        role = "[scriptid=customrole_esc_sales_rep]"
+      },
+    ]
+  }
+  dashboards = {
+    dashboard = [
+      {
+        centertab = netsuite.centertab.instance.custcentertab42.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          list = [
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "ITEM"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = "BASICCENTERSUPPORT"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = "BASICCENTERACTIVITIES"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          calendar = [
+            {
+              isminimized = false
+              numberofrecordsinagenda = 7
+              recordstodisplayinagenda = "TODAY_ONLY"
+              showblockingcalls = true
+              showblockingtasks = true
+              showcampaignevents = false
+              showcanceledevents = false
+              showevents = true
+              shownonblockingcalls = true
+              shownonblockingtasks = true
+              showresourceallocations = false
+              showweekendsinmonthlyview = true
+            },
+          ]
+          list = [
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "TASK"
+            },
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "CALL"
+            },
+          ]
+          scheduler = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab44.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          list = [
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "REPORTSCHEDULE"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab48.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_cash_sales]"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab36.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab37.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_groups]"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab40.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab41.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          enhsnapshots = [
+            {
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              charttype = "AREA"
+              hierarchylevel = "3"
+              isminimized = false
+            },
+          ]
+          list = [
+            {
+              allowinlineediting = true
+              isminimized = false
+              size = 10
+              type = "FORECAST"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab34.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = netsuite.savedsearch.instance.customsearch_esc_my_cases.scriptid
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab46.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_leads]"
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_prospects]"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab45.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_sales_campaign]"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab49.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_contacts]"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab38.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          calendar = [
+            {
+              isminimized = false
+              numberofrecordsinagenda = 7
+              recordstodisplayinagenda = "TODAY_ONLY"
+              showblockingcalls = true
+              showblockingtasks = true
+              showcampaignevents = false
+              showcanceledevents = false
+              showevents = true
+              shownonblockingcalls = true
+              shownonblockingtasks = true
+              showresourceallocations = false
+              showweekendsinmonthlyview = true
+            },
+          ]
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_tasks]"
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_phone_calls]"
+            },
+          ]
+          scheduler = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab50.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_documents]"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = "BASICCENTERHOMEHOME"
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_leads]"
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_prospects]"
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 5
+              savedsearch = "[scriptid=customsearch_esc_my_opportunities]"
+            },
+          ]
+          keyperformanceindicators = [
+            {
+              cacheddata = false
+              isminimized = false
+              kpis = {
+                kpi = [
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    compareperiodrange = "LAST_PERIOD"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "SALES"
+                    periodrange = "THIS_PERIOD"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "QUOTA"
+                  },
+                  {
+                    compare = true
+                    comparedaterange = "LAST_MONTH_TO_DATE"
+                    daterange = "THIS_MONTH"
+                    headline = false
+                    kpi = "FORECAST"
+                  },
+                ]
+              }
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab33.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_opportunities]"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab32.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab43.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_customers]"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab47.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_quotes]"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+      {
+        centertab = netsuite.centertab.instance.custcentertab39.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_esc_my_sales_orders]"
+            },
+          ]
+          tasklinks = [
+            {
+              isminimized = false
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

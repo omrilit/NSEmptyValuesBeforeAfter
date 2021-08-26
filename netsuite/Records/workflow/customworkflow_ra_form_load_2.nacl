@@ -1,0 +1,264 @@
+netsuite.workflow customworkflow_ra_form_load_2 {
+  scriptid = "customworkflow_ra_form_load_2"
+  description = "Check to see if Resource Allocation approval flag is enabled."
+  initoncreate = true
+  initonvieworupdate = true
+  inittriggertype = "BEFORELOAD"
+  isinactive = false
+  islogenabled = true
+  keephistory = "ALWAYS"
+  name = "Awaiting Approval (Load)"
+  recordtypes = "RESOURCEALLOCATION"
+  releasestatus = "RELEASED"
+  runasadmin = true
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowcustomfields = {
+    workflowcustomfield = [
+      {
+        scriptid = "custworkflow_ra_preference_formload_2"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        label = "RA Preference (2)"
+        storevalue = true
+      },
+    ]
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate79"
+        donotexitworkflow = false
+        name = "State 1: Check RA Preference"
+        positionx = 203
+        positiony = 53
+        workflowactions = [
+          {
+            triggertype = "BEFORELOAD"
+            customaction = [
+              {
+                scriptid = "workflowaction226"
+                isinactive = false
+                resultfield = netsuite.workflow.instance.customworkflow_ra_form_load_2.workflowcustomfields.workflowcustomfield.0.scriptid
+                schedulemode = "DELAY"
+                scripttype = "[scriptid=customscript_ra_wa_checkrapreference]"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition225"
+              tostate = netsuite.workflow.instance.customworkflow_ra_form_load_2.workflowstates.workflowstate.1.scriptid
+              initcondition = {
+                formula = "\"Workflow:RA Preference (2)\" = 'T'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:RA Preference (2)"
+                      value = netsuite.workflow.instance.customworkflow_ra_form_load_2.workflowcustomfields.workflowcustomfield.0.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition224"
+              tostate = netsuite.workflow.instance.customworkflow_ra_form_load_2.workflowstates.workflowstate.2.scriptid
+              initcondition = {
+                formula = "\"Workflow:RA Preference (2)\" = 'F'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:RA Preference (2)"
+                      value = netsuite.workflow.instance.customworkflow_ra_form_load_2.workflowcustomfields.workflowcustomfield.0.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate78"
+        donotexitworkflow = true
+        name = "State 2: Load"
+        positionx = 203
+        positiony = 143
+        workflowactions = [
+          {
+            triggertype = "BEFORELOAD"
+            setdisplaytypeaction = [
+              {
+                scriptid = "workflowaction218"
+                displaytype = "INLINE"
+                field = "STDEVENTAPPROVALSTATUS"
+                isinactive = false
+                issublistfield = false
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+            setdisplaylabelaction = [
+              {
+                scriptid = "workflowaction220"
+                displaylabel = "Approver"
+                field = "STDEVENTNEXTAPPROVER"
+                isinactive = true
+                issublistfield = false
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+            setfieldmandatoryaction = [
+              {
+                scriptid = "workflowaction223"
+                field = "STDEVENTNEXTAPPROVER"
+                isinactive = false
+                ismandatory = true
+                issublistfield = false
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+          {
+            triggertype = "BEFOREUSEREDIT"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction221"
+                field = "STDEVENTAPPROVALSTATUS"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "4"
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Approval Status\" IN (\"{#Resource Allocation#} Approval Status1\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Approval Status"
+                        value = "STDEVENTAPPROVALSTATUS"
+                      },
+                      {
+                        name = "{#Resource Allocation#} Approval Status1"
+                        selectrecordtype = "-301"
+                        value = "6"
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction216"
+                field = "STDEVENTAPPROVALSTATUS"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "4"
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "isEmpty(\"Approval Status\") = 'T'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Approval Status"
+                        value = "STDEVENTAPPROVALSTATUS"
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction217"
+                field = "STDEVENTAPPROVALSTATUS"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "4"
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "\"Approval Status\" IN (\"{#Resource Allocation#} Approval Status1\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Approval Status"
+                        value = "STDEVENTAPPROVALSTATUS"
+                      },
+                      {
+                        name = "{#Resource Allocation#} Approval Status1"
+                        selectrecordtype = "-301"
+                        value = "5"
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+          {
+            triggertype = "AFTERFIELDEDIT"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction219"
+                clienttriggerfields = "STDEVENTRESOURCE"
+                field = "STDEVENTNEXTAPPROVER"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuefield = "STDENTITYSUPERVISOR"
+                valuejoinfield = "STDEVENTRESOURCE"
+                valuetype = "FIELD"
+                initcondition = {
+                  formula = "nlapiLookupField('entity',nvl(nullIfEmpty(nlapiGetFieldValue('allocationresource')),-1),'type',false)=='Employee' && !isValEmpty(nlapiLookupField('employee',nvl(nullIfEmpty(nlapiGetFieldValue('allocationresource')),-1),'supervisor',false))"
+                  type = "FORMULA"
+                }
+              },
+              {
+                scriptid = "workflowaction222"
+                clienttriggerfields = "STDEVENTRESOURCE"
+                field = "STDEVENTNEXTAPPROVER"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueformula = "''"
+                valuetype = "FORMULA"
+                initcondition = {
+                  formula = '''
+nlapiLookupField('entity',nvl(nullIfEmpty(nlapiGetFieldValue('allocationresource')),-1),'type',false)=='Vendor' ||
+isValEmpty(nlapiLookupField('employee',nvl(nullIfEmpty(nlapiGetFieldValue('allocationresource')),-1),'supervisor',false))
+'''
+                  type = "FORMULA"
+                }
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "workflowstate77"
+        donotexitworkflow = false
+        name = "State 3: Exit Form Load"
+        positionx = 203
+        positiony = 233
+      },
+    ]
+  }
+}

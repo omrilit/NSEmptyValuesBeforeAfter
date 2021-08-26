@@ -1,0 +1,22 @@
+netsuite.Account statistical3_6 {
+  acctType = "_statistical"
+  unitsType = {
+    name = "AREA"
+  }
+  unit = {
+    name = "SqFt"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  acctNumber = "6"
+  acctName = "statistical3"
+  includeChildren = true
+  description = "Area"
+  isInactive = false
+  inventory = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  identifier = "statistical3_6"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

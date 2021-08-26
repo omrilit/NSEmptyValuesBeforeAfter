@@ -1,0 +1,220 @@
+netsuite.role customrole1124 {
+  scriptid = "customrole1124"
+  centertype = "EMPLOYEE"
+  employeerestriction = "OWNONLY"
+  employeeselectionunrestricted = false
+  employeeviewingallowed = false
+  isinactive = false
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "04-Consultant"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "SELECTED"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = [
+      {
+        permkey = "TRAN_VENDBILL"
+        permlevel = "NONE"
+      },
+      {
+        permkey = "TRAN_EDITPROFILE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_EXPREPT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_EDITBANKINGINFO"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_PURCHORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_PURCHREQ"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_PURCHREQAPPRV"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_TIMEBILL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_VENDBILLAPPRV"
+        permlevel = "NONE"
+      },
+      {
+        permkey = "REPO_COMMISSION"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_REMINDEREMPLOYEE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_PROJECT_ACCOUNTING"
+        permlevel = "NONE"
+      },
+      {
+        permkey = "REPO_NONPOSTING"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_ANALYTICS"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "REPO_TIME"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CALENDAR"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CASE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CONTACT"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_FILECABINET"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EMPLOYEE_RECORD"
+        permlevel = "NONE"
+      },
+      {
+        permkey = "LIST_EMPLOYEESSN"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_EVENT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EXPORT"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_FINHISTORY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_IMPORTED_EMPLOYEE_EXPENSE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REGT_NONPOSTING"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_HISTORY"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CALL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_RESOURCE"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_RSRCALLOCATIONAPPRV"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_RSRCALLOCATION"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_TASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CRMMESSAGE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_WORKCALENDAR"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "ADMI_DELETEDRECORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_EXPENSEREPORTPOLICY"
+        permlevel = "NONE"
+      },
+      {
+        permkey = "ADMI_LOGIN_OAUTH"
+        permlevel = "NONE"
+      },
+      {
+        permkey = "ADMI_MOBILE_ACCESS"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_OPENIDSSO"
+        permlevel = "NONE"
+      },
+      {
+        permkey = "ADMI_RESTWEBSERVICES"
+        permlevel = "NONE"
+      },
+      {
+        permkey = "ADMI_WEBSERVICES"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_MANAGE_OWN_OAUTH_TOKENS"
+        permlevel = "NONE"
+      },
+    ]
+  }
+  recordrestrictions = {
+    recordrestriction = [
+      {
+        restriction = "DEFAULTTOOWN"
+        segment = "CLASS"
+      },
+      {
+        restriction = "DEFAULTTOOWN"
+        segment = "DEPARTMENT"
+      },
+      {
+        restriction = "DEFAULTTOOWN"
+        segment = "LOCATION"
+      },
+    ]
+  }
+}

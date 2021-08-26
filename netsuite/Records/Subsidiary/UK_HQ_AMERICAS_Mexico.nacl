@@ -1,0 +1,75 @@
+netsuite.Subsidiary UK_HQ_AMERICAS_Mexico@buu {
+  name = "Mexico"
+  parent = netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu
+  isInactive = false
+  showSubsidiaryName = false
+  logo = netsuite.RecordRef.instance.Subsidiary_logo_2114
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  country = "_mexico"
+  mainAddress = {
+    country = "_mexico"
+    addressee = "Mexico"
+    addrText = "Mexico<br>Mexico"
+    override = false
+  }
+  shippingAddress = {
+    country = "_mexico"
+    override = false
+  }
+  returnAddress = {
+    country = "_mexico"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.Mexican_Peso@s
+  edition = "XX"
+  interCoAccount = {
+    name = "1811 Intercompany Clearing Account : Intercompany Clearing MXN"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedKingdom
+        country = "GB"
+      },
+      {
+        nexusId = netsuite.Nexus.instance._mexico
+        country = "MX"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_AMERICAS_Mexico"
+  custom_custrecord_subnav_subsidiary_logo = {
+    name = "dilley services logo small.jpg"
+    internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+}

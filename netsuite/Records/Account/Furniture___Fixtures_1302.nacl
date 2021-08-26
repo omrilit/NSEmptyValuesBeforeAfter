@@ -1,0 +1,39 @@
+netsuite.Account Furniture___Fixtures_1302@sesu {
+  acctType = "_fixedAsset"
+  acctNumber = "1302"
+  acctName = "Furniture & Fixtures"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "Furniture & Fixtures_1302"
+  custom_custrecord_fam_account_showinfixedasset = [
+    {
+      name = "Asset Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Depreciation Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Write Off Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Write Down Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+  ]
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

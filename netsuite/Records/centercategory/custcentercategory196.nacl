@@ -1,0 +1,36 @@
+netsuite.centercategory custcentercategory196 {
+  scriptid = "custcentercategory196"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_financials.scriptid
+  label = "Accounts Payable"
+  links = {
+    link = [
+      {
+        linkid = "EDIT_TRAN_VENDBILL"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_VENDBILLAPPRV"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_VENDPYMTS"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_286"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_284"
+        shortlist = false
+      },
+      {
+        linklabel = "Purchases module"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_purchases.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

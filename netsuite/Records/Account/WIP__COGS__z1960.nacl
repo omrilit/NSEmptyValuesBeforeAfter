@@ -1,0 +1,21 @@
+netsuite.Account WIP__COGS__z1960@sjku {
+  acctType = "_otherAsset"
+  acctNumber = "z1960"
+  acctName = "WIP (COGS)"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = true
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "WIP (COGS)_z1960"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

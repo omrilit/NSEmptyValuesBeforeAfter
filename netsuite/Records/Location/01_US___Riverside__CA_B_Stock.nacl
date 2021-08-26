@@ -1,0 +1,35 @@
+netsuite.Location "01_US___Riverside__CA_B_Stock@ssbszdsus" {
+  name = "B Stock"
+  parent = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "B Stock"
+    addrText = "B Stock<br>United States"
+    override = false
+  }
+  timeZone = "_americaLosAngeles"
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "01 US - Riverside, CA_B Stock"
+}

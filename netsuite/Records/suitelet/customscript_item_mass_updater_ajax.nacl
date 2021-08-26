@@ -1,0 +1,26 @@
+netsuite.suitelet customscript_item_mass_updater_ajax {
+  scriptid = "customscript_item_mass_updater_ajax"
+  defaultfunction = "itemMass_ajax"
+  isinactive = false
+  name = "**Item Mass Updater AJAX"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_93203_Item_Mass_Updater_SL_js@dsduuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_item_mass_updater_ajax"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "**Item Mass Updater AJAX"
+      },
+    ]
+  }
+}

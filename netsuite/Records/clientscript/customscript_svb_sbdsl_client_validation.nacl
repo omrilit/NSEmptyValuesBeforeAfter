@@ -1,0 +1,82 @@
+netsuite.clientscript customscript_svb_sbdsl_client_validation {
+  scriptid = "customscript_svb_sbdsl_client_validation"
+  fieldchangedfunction = "fieldChange_BDSL_Defaulting"
+  isinactive = false
+  name = "NSTS - SVB |  BDSL Validate - CS"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  pageinitfunction = "pageInit_BDSL_Defaulting"
+  saverecordfunction = "saveRecord_BDSL_Validations"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_CS_BillDistribtnSchedLine_js@dsduuuv.path
+  validatefieldfunction = "validateField_BDSL_Validations"
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_svb_intco_mandatory_flds"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        displaywidth = 120
+        fieldtype = "TEXT"
+        help = '''
+Enter the fields as comma as shown below:
+
+subsidiary,department,class,location
+'''
+        isformula = false
+        ismandatory = false
+        label = "Intercompany Mandatory Fields"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_svb_notintco_mandatory_flds"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        displaywidth = 120
+        fieldtype = "TEXT"
+        help = '''
+Enter the fields as comma as shown below:
+
+department,class,location
+'''
+        isformula = false
+        ismandatory = false
+        label = "Non Intercompany Mandatory Fields"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_svb_sbdsl_client_validation"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.scriptid
+        status = "RELEASED"
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_Common_js@dsduuv.path
+      },
+    ]
+  }
+}

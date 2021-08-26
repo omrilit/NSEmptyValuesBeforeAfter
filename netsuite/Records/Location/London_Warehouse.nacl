@@ -1,0 +1,37 @@
+netsuite.Location London_Warehouse@s {
+  name = "London Warehouse"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_United_Kingdom@buus,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_unitedKingdom"
+    addressee = "London Warehouse"
+    addrText = "London Warehouse<br>United Kingdom (GB)"
+    override = false
+  }
+  returnAddress = {
+    country = "_afghanistan"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "London Warehouse"
+}

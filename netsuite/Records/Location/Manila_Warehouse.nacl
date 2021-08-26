@@ -1,0 +1,37 @@
+netsuite.Location Manila_Warehouse@s {
+  name = "Manila Warehouse"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_ASIA_Philippines@buu,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_philippines"
+    addressee = "Manila Warehouse"
+    addrText = "Manila Warehouse<br>Philippines"
+    override = false
+  }
+  returnAddress = {
+    country = "_afghanistan"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Manila Warehouse"
+}

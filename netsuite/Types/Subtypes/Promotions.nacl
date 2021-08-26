@@ -1,0 +1,11 @@
+type netsuite.Promotions {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef promoCode {
+  }
+  netsuite.CouponCode couponCode {
+    isReference = true
+  }
+}

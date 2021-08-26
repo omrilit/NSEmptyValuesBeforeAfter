@@ -1,0 +1,46 @@
+netsuite.workflow customworkflow18 {
+  scriptid = "customworkflow18"
+  initoncreate = true
+  initonvieworupdate = true
+  isinactive = false
+  islogenabled = true
+  keephistory = "ALWAYS"
+  name = "Set Project Name on Opp"
+  recordtypes = "OPPORTUNITY"
+  releasestatus = "RELEASED"
+  runasadmin = false
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate110"
+        donotexitworkflow = false
+        name = "Set Project Name on Opp"
+        positionx = 243
+        positiony = 133
+        workflowactions = [
+          {
+            triggertype = "AFTERFIELDEDIT"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction582"
+                clienttriggerfields = "STDBODYTITLE"
+                field = netsuite.transactionbodycustomfield.instance.custbody_oa_project_name.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuefield = "STDBODYTITLE"
+                valuetype = "FIELD"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+      },
+    ]
+  }
+}

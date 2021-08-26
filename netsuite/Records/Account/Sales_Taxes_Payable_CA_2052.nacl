@@ -1,0 +1,22 @@
+netsuite.Account Sales_Taxes_Payable_CA_2052@sssu {
+  acctType = "_otherCurrentLiability"
+  acctNumber = "2052"
+  acctName = "Sales Taxes Payable CA"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = true
+  identifier = "Sales Taxes Payable CA_2052"
+  externalId = "100"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

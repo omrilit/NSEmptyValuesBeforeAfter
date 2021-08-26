@@ -1,0 +1,30 @@
+netsuite.centercategory custcentercategory134 {
+  scriptid = "custcentercategory134"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab58.scriptid
+  label = "Accounts Payable"
+  links = {
+    link = [
+      {
+        linkid = "EDIT_TRAN_VENDBILL"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_VENDBILLAPPRV"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_VENDPYMTS"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_286"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_284"
+        shortlist = false
+      },
+    ]
+  }
+}

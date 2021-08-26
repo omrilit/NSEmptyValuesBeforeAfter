@@ -1,0 +1,1184 @@
+netsuite.customrecordtype customrecord31 {
+  scriptid = "customrecord31"
+  accesstype = "USEPERMISSIONLIST"
+  allowattachments = true
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = true
+  allownumberingoverride = false
+  allowquickadd = false
+  allowquicksearch = true
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = false
+  isinactive = false
+  isordered = false
+  recordname = "Customer Sat. Survey"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = true
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord61"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Survey Period"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord64"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Responder's Name"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord65"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Responder's Address"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord67"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "STATICTEXT"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "GENERAL INFORMATION"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord68"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "1. Responder's Role"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord70"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "2. Company Size"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist36.scriptid
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord71"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "3. Industry"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord72"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "4. % Employees Using"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist37.scriptid
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord73"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "5. Length of Use"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist34.scriptid
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord74"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "STATICTEXT"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "6. Departments Using McGeever Products:"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord75"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Accounting"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord76"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Order Fullfillment"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord77"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Sales"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord78"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Marketing"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord79"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Service/Support"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord80"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Executive Team"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord81"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Other Department(s)"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord83"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = true
+        label = "Company Name"
+        onparentdelete = "SET_NULL"
+        parentsubtab = netsuite.subtab.instance.custtab_30_t1499227_705.scriptid
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord84"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "7. Satisfaction Level"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist39.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord112"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "8. Overall Value"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist43.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord86"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "9. Renewal Likelihood"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist38.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord87"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "10. Recommend Likelihood"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist38.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord88"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "11. Ease of Use"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist41.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord106"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "Rate the following aspects of McGeever products:"
+        displaytype = "STATICTEXT"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "12"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord90"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Cost/Price Structure"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist33.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord91"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Documentation/Help"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist33.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord92"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Setup/Ease of Learning"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist33.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord93"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Feature Capabilities"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist33.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord94"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Overall Quality"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist33.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord95"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Performance"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist33.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord96"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Usability"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist33.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord97"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Version Upgrade Quality"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist33.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord107"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "Rank the following areas as you would like to see resources allocated:"
+        displaytype = "STATICTEXT"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "13"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord108"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "New Feature Additions"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist42.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord109"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Expand Current Features"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist42.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord110"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Enhance Usability"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist42.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord111"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Resolve Issues/Problems"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist42.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord98"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "Top 5 features customer would like added:"
+        displaytype = "STATICTEXT"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "15"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord101"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Feature Request 1"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord102"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Feature Request 2"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord103"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Feature Request 3"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord104"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Feature Request 4"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord105"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Feature Request 5"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord100"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CLOBTEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Comments"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord31.subtabs.subtab.2.scriptid
+      },
+    ]
+  }
+  permissions = {
+    permission = [
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1103.scriptid
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = netsuite.role.instance.customrole1005.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1111.scriptid
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = netsuite.role.instance.customrole1113.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1101.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1036.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1106.scriptid
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = netsuite.role.instance.customrole1107.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "ADMINISTRATOR"
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = "CEO"
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = netsuite.role.instance.customrole1019.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1010.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "FULL_ACCESS"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "MARKETING_ADMINISTRATOR"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "MARKETING_ASSISTANT"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "MARKETING_MANAGER"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1068.scriptid
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = "PM_MANAGER"
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = "PRODUCT_MANAGER"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1052.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1053.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1065.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1001.scriptid
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = netsuite.role.instance.customrole1012.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1058.scriptid
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = "SALES_ADMINISTRATOR"
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = netsuite.role.instance.customrole1004.scriptid
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = netsuite.role.instance.customrole1003.scriptid
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = "SALES_MANAGER"
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = "SALES_PERSON"
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = netsuite.role.instance.customrole1018.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "SUPPORT_MANAGER"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = "SUPPORT_PERSON"
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1009.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1007.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1054.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1059.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1069.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1070.scriptid
+      },
+      {
+        permittedlevel = "VIEW"
+        permittedrole = netsuite.role.instance.customrole1000.scriptid
+      },
+      {
+        permittedlevel = "FULL"
+        permittedrole = netsuite.role.instance.customrole1013.scriptid
+      },
+    ]
+  }
+  links = {
+    link = [
+      {
+        linkcategory = "BASICLISTSCUSTOM"
+        linktasktype = "LIST"
+      },
+    ]
+  }
+  subtabs = {
+    subtab = [
+      {
+        scriptid = "tab_27_t1499227_470"
+        tabtitle = "General Product Questions"
+      },
+      {
+        scriptid = "tab_28_t1499227_470"
+        tabtitle = "Detailed Product Questions"
+      },
+      {
+        scriptid = "tab_29_t1499227_470"
+        tabtitle = "Feature Requests/Exec Feedback"
+      },
+    ]
+  }
+}

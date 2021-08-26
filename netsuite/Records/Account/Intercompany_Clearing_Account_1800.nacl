@@ -1,0 +1,18 @@
+netsuite.Account Intercompany_Clearing_Account_1800@ssu {
+  acctType = "_otherCurrentAsset"
+  acctNumber = "1800"
+  acctName = "Intercompany Clearing Account"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Intercompany Clearing Account_1800"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

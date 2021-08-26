@@ -1,0 +1,699 @@
+netsuite.workflow customworkflow_gus_travel_workflow {
+  scriptid = "customworkflow_gus_travel_workflow"
+  initoncreate = true
+  initonvieworupdate = false
+  isinactive = false
+  islogenabled = false
+  keephistory = "ALWAYS"
+  name = "Travel Request Approval Workflow"
+  recordtypes = netsuite.customrecordtype.instance.customrecord_gus_tr.scriptid
+  releasestatus = "RELEASED"
+  runasadmin = true
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowcustomfields = {
+    workflowcustomfield = [
+      {
+        scriptid = "custworkflow_gus_travel_vp_name"
+        applyformatting = false
+        defaultchecked = false
+        defaultselection = "[ACCOUNT_SPECIFIC_VALUE]"
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        label = "Name of Controller"
+        selectrecordtype = "-4"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_gus_travel_sender"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        label = "Email Sender"
+        selectrecordtype = "-4"
+        storevalue = true
+      },
+    ]
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate7"
+        donotexitworkflow = false
+        name = "Entry"
+        positionx = 203
+        positiony = 53
+        workflowactions = [
+          {
+            triggertype = "BEFORESUBMIT"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction23"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.3.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = netsuite.customlist.instance.customlist_gus_travel_approval_list.customvalues.customvalue.0.scriptid
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "isEmpty(\"Employee:Supervisor\") = 'F'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Employee:Supervisor"
+                        value = "[scriptid=customrecord_gus_tr.custrecord_gus_travel_employee]:STDENTITYSUPERVISOR"
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+          {
+            triggertype = "AFTERSUBMIT"
+            sendemailaction = [
+              {
+                scriptid = "workflowaction24"
+                attachmenttype = "SPECIFIC"
+                body = "New travel request \"{name}\" for approval<font class=\"tinytext\" style=\"color: rgb(102, 102, 102);\"></font>"
+                includerecordlink = true
+                isinactive = false
+                recipientfield = "STDENTITYSUPERVISOR"
+                recipientjoinfield = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.1.scriptid
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.1.scriptid
+                sendertype = "FIELD"
+                subject = "New Travel Request \"{name}\" For Approval"
+                usetemplate = false
+                initcondition = {
+                  formula = "{custrecord_gus_travel_employee.supervisor.id} is not null and {custrecord_gus_travel_employee.supervisor.email} is not null and INSTR({custrecord_gus_travel_employee.supervisor.email},'@netsuite.com',-1)>0"
+                  type = "FORMULA"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition25"
+              tostate = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.1.scriptid
+              triggertype = "AFTERSUBMIT"
+              initcondition = {
+                formula = "isEmpty(\"Employee:Supervisor\") = 'F'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Employee:Supervisor"
+                      value = "[scriptid=customrecord_gus_tr.custrecord_gus_travel_employee]:STDENTITYSUPERVISOR"
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate8"
+        donotexitworkflow = false
+        name = "Pending Approval - Supervisor"
+        positionx = 203
+        positiony = 143
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction30"
+                field = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowcustomfields.workflowcustomfield.1.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuefield = "STDENTITYSUPERVISOR"
+                valuejoinfield = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.1.scriptid
+                valuetype = "FIELD"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+          {
+            triggertype = "BEFORELOAD"
+            addbuttonaction = [
+              {
+                scriptid = "workflowaction3"
+                checkconditionbeforeexecution = false
+                isinactive = false
+                label = "Approve"
+                saverecordfirst = false
+                initcondition = {
+                  formula = "\"Employee:Supervisor\" IN (\"Current User\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Employee:Supervisor"
+                        value = "[scriptid=customrecord_gus_tr.custrecord_gus_travel_employee]:STDENTITYSUPERVISOR"
+                      },
+                      {
+                        name = "Current User"
+                        selectrecordtype = "-4"
+                        value = "@CURRENTUSER@"
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction5"
+                checkconditionbeforeexecution = false
+                isinactive = false
+                label = "Decline"
+                saverecordfirst = false
+                initcondition = {
+                  formula = "\"Employee:Supervisor\" IN (\"Current User\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Employee:Supervisor"
+                        value = "[scriptid=customrecord_gus_tr.custrecord_gus_travel_employee]:STDENTITYSUPERVISOR"
+                      },
+                      {
+                        name = "Current User"
+                        selectrecordtype = "-4"
+                        value = "@CURRENTUSER@"
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition27"
+              buttonaction = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.1.workflowactions.1.addbuttonaction.0.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.2.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+            {
+              scriptid = "workflowtransition26"
+              buttonaction = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.1.workflowactions.1.addbuttonaction.1.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.3.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate6"
+        donotexitworkflow = false
+        name = "Approved - Supervisor"
+        positionx = 203
+        positiony = 233
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction22"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.8.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = true
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+              {
+                scriptid = "workflowaction21"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.9.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuedate = "TODAY"
+                valuetype = "DATE"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+              {
+                scriptid = "workflowaction20"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.7.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuefield = "STDENTITYSUPERVISOR"
+                valuejoinfield = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.1.scriptid
+                valuetype = "FIELD"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition19"
+              tostate = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.4.scriptid
+              initcondition = {
+                formula = "isChecked(\"International Travel\") = 'T'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "International Travel"
+                      value = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.16.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition18"
+              tostate = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.7.scriptid
+              initcondition = {
+                formula = "isChecked(\"International Travel\") = 'F'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "International Travel"
+                      value = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.16.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate5"
+        donotexitworkflow = false
+        name = "Denied - Supervisor"
+        positionx = 203
+        positiony = 323
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction19"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.7.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuefield = "STDENTITYSUPERVISOR"
+                valuejoinfield = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.1.scriptid
+                valuetype = "FIELD"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+              {
+                scriptid = "workflowaction17"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.9.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuedate = "TODAY"
+                valuetype = "DATE"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition32"
+              tostate = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.8.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate4"
+        donotexitworkflow = false
+        name = "Pending Approval - Finance"
+        positionx = 203
+        positiony = 413
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            sendemailaction = [
+              {
+                scriptid = "workflowaction14"
+                attachmenttype = "SPECIFIC"
+                body = "New travel request \"{name}\" for approval"
+                includerecordlink = true
+                isinactive = false
+                recipientfield = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowcustomfields.workflowcustomfield.0.scriptid
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.1.scriptid
+                sendertype = "FIELD"
+                subject = "New Travel Request \"{name}\" For Approval"
+                usetemplate = false
+                initcondition = {
+                  formula = "{custworkflow_gus_travel_vp_name.email} is not null and INSTR({custworkflow_gus_travel_vp_name.email},'@netsuite.com',-1)>0"
+                  type = "FORMULA"
+                }
+              },
+            ]
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction15"
+                field = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowcustomfields.workflowcustomfield.1.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuefield = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowcustomfields.workflowcustomfield.0.scriptid
+                valuetype = "FIELD"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+          {
+            triggertype = "BEFORELOAD"
+            addbuttonaction = [
+              {
+                scriptid = "workflowaction16"
+                checkconditionbeforeexecution = false
+                isinactive = false
+                label = "Approve"
+                saverecordfirst = false
+                initcondition = {
+                  formula = "\"Workflow:Name of Controller\" IN (\"Current User\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:Name of Controller"
+                        value = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                      {
+                        name = "Current User"
+                        selectrecordtype = "-4"
+                        value = "@CURRENTUSER@"
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction18"
+                checkconditionbeforeexecution = false
+                isinactive = false
+                label = "Decline"
+                saverecordfirst = false
+                initcondition = {
+                  formula = "\"Workflow:Name of Controller\" IN (\"Current User\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Workflow:Name of Controller"
+                        value = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowcustomfields.workflowcustomfield.0.scriptid
+                      },
+                      {
+                        name = "Current User"
+                        selectrecordtype = "-4"
+                        value = "@CURRENTUSER@"
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition11"
+              buttonaction = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.4.workflowactions.1.addbuttonaction.0.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.5.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+            {
+              scriptid = "workflowtransition10"
+              buttonaction = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.4.workflowactions.1.addbuttonaction.1.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.6.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate3"
+        donotexitworkflow = false
+        name = "Approved - Finance"
+        positionx = 203
+        positiony = 503
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction9"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.11.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = true
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+              {
+                scriptid = "workflowaction10"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.12.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuedate = "TODAY"
+                valuetype = "DATE"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+              {
+                scriptid = "workflowaction8"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.10.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuefield = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowcustomfields.workflowcustomfield.0.scriptid
+                valuetype = "FIELD"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition6"
+              tostate = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.7.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate2"
+        donotexitworkflow = false
+        name = "Denied - Finance"
+        positionx = 203
+        positiony = 593
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction7"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.10.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuejoinfield = "STDUSERUSER"
+                valueselect = "@CURRENTUSER@"
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+              {
+                scriptid = "workflowaction6"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.12.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuedate = "TODAY"
+                valuetype = "DATE"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition31"
+              tostate = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowstates.workflowstate.8.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate1"
+        donotexitworkflow = false
+        name = "Send Approval Email"
+        positionx = 203
+        positiony = 683
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            sendemailaction = [
+              {
+                scriptid = "workflowaction2"
+                attachmenttype = "SPECIFIC"
+                body = "Your travel request \"{name}\" has been approved"
+                includerecordlink = true
+                isinactive = false
+                recipientfield = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.1.scriptid
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowcustomfields.workflowcustomfield.1.scriptid
+                sendertype = "FIELD"
+                subject = "Your Travel Request \"{name}\" Has Been Approved"
+                usetemplate = false
+                initcondition = {
+                  formula = "{custrecord_gus_travel_employee.email} is not null and INSTR({custrecord_gus_travel_employee.email},'@netsuite.com',-1)>0"
+                  type = "FORMULA"
+                }
+              },
+              {
+                scriptid = "workflowaction1"
+                attachmenttype = "SPECIFIC"
+                body = "New travel request \"{name}\""
+                includerecordlink = true
+                isinactive = false
+                recipientfield = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.6.scriptid
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowcustomfields.workflowcustomfield.1.scriptid
+                sendertype = "FIELD"
+                subject = "New Travel Request \"{name}\""
+                usetemplate = false
+                initcondition = {
+                  formula = "{custrecord_gus_travel_agency.id} is not null and {custrecord_gus_travel_agency.email} is not null and INSTR({custrecord_gus_travel_agency.email},-1)>0"
+                  type = "FORMULA"
+                }
+              },
+            ]
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction4"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.3.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = netsuite.customlist.instance.customlist_gus_travel_approval_list.customvalues.customvalue.1.scriptid
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "workflowstate9"
+        donotexitworkflow = false
+        name = "Send Decline Email"
+        positionx = 203
+        positiony = 773
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction34"
+                field = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.3.scriptid
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = netsuite.customlist.instance.customlist_gus_travel_approval_list.customvalues.customvalue.2.scriptid
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+            sendemailaction = [
+              {
+                scriptid = "workflowaction33"
+                attachmenttype = "SPECIFIC"
+                body = "Your travel request \"{name}\" has been declined"
+                includerecordlink = true
+                isinactive = false
+                recipientfield = netsuite.customrecordtype.instance.customrecord_gus_tr.customrecordcustomfields.customrecordcustomfield.1.scriptid
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = netsuite.workflow.instance.customworkflow_gus_travel_workflow.workflowcustomfields.workflowcustomfield.1.scriptid
+                sendertype = "FIELD"
+                subject = "Your Travel Request \"{name}\" Has Been Declined"
+                usetemplate = false
+                initcondition = {
+                  formula = "{custrecord_gus_travel_employee.email} is not null and INSTR({custrecord_gus_travel_employee.email},'@netsuite.com',-1)>0"
+                  type = "FORMULA"
+                }
+              },
+            ]
+          },
+        ]
+      },
+    ]
+  }
+}

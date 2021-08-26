@@ -1,0 +1,67 @@
+netsuite.savedcsvimport custimport_78_t1740134_435 {
+  scriptid = "custimport_78_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "UPDATE"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "Opportunity Update"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "OPPORTUNITY"
+  runserversuitescript = false
+  transactionform = netsuite.transactionForm.instance.custform_216_t1499227_346.scriptid
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "OPPORTUNITY"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "OPPORTUNITY"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = netsuite.transactionbodycustomfield.instance.custbody3.scriptid
+              columnreference = {
+                column = "custbody3"
+                file = "OPPORTUNITY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EXPECTEDCLOSEDATE"
+              columnreference = {
+                column = "expectedclosedate"
+                file = "OPPORTUNITY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TRANID"
+              columnreference = {
+                column = "tranid"
+                file = "OPPORTUNITY"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+netsuite.suitelet customscript_order_cash_management {
+  scriptid = "customscript_order_cash_management"
+  defaultfunction = "automation_suitelet"
+  isinactive = false
+  name = "**Order to Cash Management"
+  notifyadmins = false
+  notifyemails = "mdeasis@netsuite.com"
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_74218_Order2Cash_Automation_js@dsduv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_order_cash_management"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "**Order to Cash Management"
+        links = {
+          link = [
+            {
+              linkcategory = "BASICSETUPCUSTOM"
+              linklabel = "Order to Cash Management"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

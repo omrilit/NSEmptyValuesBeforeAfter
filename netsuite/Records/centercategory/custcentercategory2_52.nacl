@@ -1,0 +1,22 @@
+netsuite.centercategory custcentercategory2_52 {
+  scriptid = "custcentercategory2_52"
+  center = "ACCOUNTCENTER"
+  centertab = netsuite.centertab.instance.custcentertab7_16.scriptid
+  label = "Reports"
+  links = {
+    link = [
+      {
+        linklabel = "Generate Report"
+        linkobject = "[scriptid=customscript_fam_reports_su.customdeploy_fam_reports_su]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "My Reports"
+        linkobject = "[scriptid=customscript_fam_reportshistory_su.customdeploy_fam_reportshistory_su]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

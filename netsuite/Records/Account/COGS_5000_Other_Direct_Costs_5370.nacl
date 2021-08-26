@@ -1,0 +1,22 @@
+netsuite.Account COGS_5000_Other_Direct_Costs_5370@uussu {
+  acctType = "_costOfGoodsSold"
+  acctNumber = "5370"
+  acctName = "Other Direct Costs"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.COGS_5000
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "COGS_5000_Other Direct Costs_5370"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

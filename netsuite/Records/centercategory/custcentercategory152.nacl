@@ -1,0 +1,42 @@
+netsuite.centercategory custcentercategory152 {
+  scriptid = "custcentercategory152"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab63.scriptid
+  label = "Sales"
+  links = {
+    link = [
+      {
+        linkid = "LIST_CONTACT"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_LEAD"
+        linklabel = "Leads"
+        shortlist = true
+      },
+      {
+        linkid = "LIST_PROSPECT"
+        linklabel = "Prospects"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_TRAN_OPPRTNTY"
+        linklabel = "Opportunities"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_TRAN_ESTIMATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_TRAN_SALESORD"
+        linklabel = "Sales Orders"
+        shortlist = true
+      },
+      {
+        linkid = "LIST_PARTNER"
+        shortlist = false
+      },
+    ]
+  }
+}

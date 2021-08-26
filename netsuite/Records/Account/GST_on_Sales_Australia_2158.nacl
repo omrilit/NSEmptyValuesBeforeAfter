@@ -1,0 +1,19 @@
+netsuite.Account GST_on_Sales_Australia_2158@sssu {
+  acctType = "_otherCurrentLiability"
+  acctNumber = "2158"
+  acctName = "GST on Sales Australia"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = true
+  identifier = "GST on Sales Australia_2158"
+  externalId = "11005"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

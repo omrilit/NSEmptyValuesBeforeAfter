@@ -1,0 +1,53 @@
+netsuite.Subsidiary UK_HQ_ASIA_Hong_Kong@buus {
+  name = "Hong Kong"
+  parent = netsuite.Subsidiary.instance.UK_HQ_ASIA@bu
+  isInactive = false
+  showSubsidiaryName = false
+  country = "_hongKong"
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "Hong Kong"
+    addrText = "Hong Kong<br>United States"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.Hong_Kong_Dollars@s
+  edition = "XX"
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._hongKong
+        country = "HK"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_ASIA_Hong Kong"
+}

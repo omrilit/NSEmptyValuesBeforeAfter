@@ -1,0 +1,19 @@
+netsuite.Account General_and_Administrative_6000_Intercompany_Expense_6900@ssuusu {
+  acctType = "_expense"
+  acctNumber = "6900"
+  acctName = "Intercompany Expense"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.General_and_Administrative_6000@ssu
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "General and Administrative_6000_Intercompany Expense_6900"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

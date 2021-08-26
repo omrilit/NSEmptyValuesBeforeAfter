@@ -1,0 +1,36 @@
+netsuite.Account Unrealized_Gain_Loss_8375@sdu {
+  acctType = "_otherExpense"
+  acctNumber = "8375"
+  acctName = "Unrealized Gain/Loss"
+  includeChildren = true
+  generalRate = "_average"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Unrealized Gain/Loss_8375"
+  custom_custrecord_fam_account_showinfixedasset = [
+    {
+      name = "Depreciation Expense"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Write Off Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Write Down Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+    {
+      name = "Disposal Cost Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+  ]
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

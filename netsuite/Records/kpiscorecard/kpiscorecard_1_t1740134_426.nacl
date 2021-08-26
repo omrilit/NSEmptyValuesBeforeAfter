@@ -1,0 +1,67 @@
+netsuite.kpiscorecard kpiscorecard_1_t1740134_426 {
+  scriptid = "kpiscorecard_1_t1740134_426"
+  description = "Board Metrics"
+  name = "Board Metrics"
+  useperiods = "F"
+  custom = {
+    kpi1 = netsuite.savedsearch.instance.customsearch97.scriptid
+    kpi2 = netsuite.savedsearch.instance.customsearch98.scriptid
+  }
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = true
+  }
+  kpis = {
+    kpi = [
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM"
+        label = "Board Revenue Target"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM2"
+        label = "Actual Revenue"
+      },
+      {
+        comparevalueto = "CUSTOM"
+        comparewithprevious = false
+        comparisontype = "VARIANCE_PERCENT"
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM2"
+        label = "% Board Plan"
+      },
+    ]
+  }
+  ranges = {
+    range = [
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "JANUARY_THIS_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "FEBRUARY_THIS_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "MARCH_THIS_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        label = "This Year to Date"
+        range = "LAST_FISCAL_QUARTER"
+      },
+    ]
+  }
+}

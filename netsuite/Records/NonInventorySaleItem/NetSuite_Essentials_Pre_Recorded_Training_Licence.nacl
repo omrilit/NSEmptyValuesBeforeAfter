@@ -1,0 +1,497 @@
+netsuite.NonInventorySaleItem NetSuite_Essentials_Pre_Recorded_Training_Licence@ssbss {
+  salesDescription = "Licence to access to NetSuite Essentials Recordings."
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Software_License_Subscription_4003@uusdu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  shippingCostUnits = "per Ea."
+  handlingCostUnits = "per Ea."
+  costEstimateType = "_itemDefinedCost"
+  weightUnits = "per Ea."
+  costEstimateUnits = "per Ea."
+  unitsType = {
+    name = "EACH"
+  }
+  saleUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  isFulfillable = true
+  useMarginalRates = false
+  overallQuantityPricingType = "_byLineQuantity"
+  minimumQuantityUnits = "Ea."
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "NetSuite Essentials Pre-Recorded Training Licence"
+  displayName = "NetSuite Essentials Pre-Recorded Training Licence"
+  isOnline = false
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  department = netsuite.Department.instance.Customer_Support@s
+  class = netsuite.Classification.instance.06_Support@b
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 780
+              quantity = 0
+            },
+            {
+              value = 676
+              quantity = 50
+            },
+            {
+              value = 624
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 624
+              quantity = 0
+            },
+            {
+              value = 585
+              quantity = 50
+            },
+            {
+              value = 520
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 780
+              quantity = 0
+            },
+            {
+              value = 715
+              quantity = 50
+            },
+            {
+              value = 650
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 780
+              quantity = 0
+            },
+            {
+              value = 676
+              quantity = 50
+            },
+            {
+              value = 624
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 750
+              quantity = 0
+            },
+            {
+              value = 650
+              quantity = 50
+            },
+            {
+              value = 600
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 600
+              quantity = 0
+            },
+            {
+              value = 562.5
+              quantity = 50
+            },
+            {
+              value = 500
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 750
+              quantity = 0
+            },
+            {
+              value = 650
+              quantity = 50
+            },
+            {
+              value = 600
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 750
+              quantity = 0
+            },
+            {
+              value = 650
+              quantity = 50
+            },
+            {
+              value = 600
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 410
+              quantity = 0
+            },
+            {
+              value = 380
+              quantity = 50
+            },
+            {
+              value = 350
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 350
+              quantity = 0
+            },
+            {
+              value = 330
+              quantity = 50
+            },
+            {
+              value = 280
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 410
+              quantity = 0
+            },
+            {
+              value = 380
+              quantity = 50
+            },
+            {
+              value = 350
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 410
+              quantity = 0
+            },
+            {
+              value = 380
+              quantity = 50
+            },
+            {
+              value = 350
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 600
+              quantity = 0
+            },
+            {
+              value = 520
+              quantity = 50
+            },
+            {
+              value = 480
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 480
+              quantity = 0
+            },
+            {
+              value = 450
+              quantity = 50
+            },
+            {
+              value = 400
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 600
+              quantity = 0
+            },
+            {
+              value = 550
+              quantity = 50
+            },
+            {
+              value = 500
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 600
+              quantity = 0
+            },
+            {
+              value = 520
+              quantity = 50
+            },
+            {
+              value = 480
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 390
+              quantity = 0
+            },
+            {
+              value = 338
+              quantity = 50
+            },
+            {
+              value = 312
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 312
+              quantity = 0
+            },
+            {
+              value = 293
+              quantity = 50
+            },
+            {
+              value = 260
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 390
+              quantity = 0
+            },
+            {
+              value = 358
+              quantity = 50
+            },
+            {
+              value = 325
+              quantity = 100
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 390
+              quantity = 0
+            },
+            {
+              value = 338
+              quantity = 50
+            },
+            {
+              value = 312
+              quantity = 100
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "NetSuite Essentials Pre-Recorded Training Licence"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "NetSuite Essentials Pre-Recorded Training Licence"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

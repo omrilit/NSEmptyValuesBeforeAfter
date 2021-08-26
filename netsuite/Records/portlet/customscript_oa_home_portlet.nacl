@@ -1,0 +1,25 @@
+netsuite.portlet customscript_oa_home_portlet {
+  scriptid = "customscript_oa_home_portlet"
+  defaultfunction = "buildPortletOAHome"
+  isinactive = false
+  name = "OpenAir: Home module portlet"
+  notifyadmins = false
+  notifyowner = false
+  notifyuser = true
+  portlettype = "HTML"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_13512_oa_home_portlet_js@dsduuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_oa_home_portlet_deploy"
+        allemployees = false
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "RELEASED"
+        title = "OpenAir: Home module"
+      },
+    ]
+  }
+}

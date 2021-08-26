@@ -1,0 +1,26 @@
+netsuite.suitelet customscript_rec_automation_ajax_server {
+  scriptid = "customscript_rec_automation_ajax_server"
+  defaultfunction = "ajax_suitelet"
+  isinactive = false
+  name = "**Record Automation AJAX Server"
+  notifyadmins = false
+  notifyemails = "mdeasis@netsuite.com"
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_74218_Record_Automation_AJAX_js@dsduuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_rec_automation_ajax_server"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        status = "RELEASED"
+        title = "**Record Automation AJAX Server"
+      },
+    ]
+  }
+}

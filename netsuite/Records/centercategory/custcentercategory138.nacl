@@ -1,0 +1,35 @@
+netsuite.centercategory custcentercategory138 {
+  scriptid = "custcentercategory138"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab59.scriptid
+  label = "SuiteCloud"
+  links = {
+    link = [
+      {
+        linkobject = netsuite.centerlink.instance.custlink_13_t1740134_764.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CUSTENTITYFIELD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CUSTRECORD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_SCRIPT"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_SCRIPTEDRECORD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_WORKFLOW"
+        shortlist = false
+      },
+    ]
+  }
+}

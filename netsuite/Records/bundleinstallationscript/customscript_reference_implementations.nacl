@@ -1,0 +1,56 @@
+netsuite.bundleinstallationscript customscript_reference_implementations {
+  scriptid = "customscript_reference_implementations"
+  afterinstallfunction = "postInstallCombiner"
+  afterupdatefunction = "postInstallCombiner"
+  isinactive = false
+  name = "NS CC Post Install"
+  notifyadmins = false
+  notifyowner = false
+  scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - My Account Premium 1.05/Reference My Account Premium/suitelets/NSPostInstall.js]"
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_ssp_application_container"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        displaywidth = 40
+        fieldtype = "TEXT"
+        isformula = false
+        ismandatory = false
+        label = "NS CC Root Folder"
+        searchlevel = "2"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_ignite_folders"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        displaywidth = 40
+        fieldtype = "CLOBTEXT"
+        isformula = false
+        ismandatory = false
+        label = "NS CC SC Advanced Site Templates Folders"
+        searchlevel = "2"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_ri_my_account"
+        isdeployed = true
+        loglevel = "ERROR"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "NS CC Post Install"
+      },
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+netsuite.centercategory custcentercategory97 {
+  scriptid = "custcentercategory97"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab48.scriptid
+  label = "Tools"
+  links = {
+    link = [
+      {
+        linkid = "LIST_TRAN_CASHSALE"
+        shortlist = false
+      },
+      {
+        linkobject = netsuite.centerlink.instance.custlink_8_t1740134_548.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+    ]
+  }
+}

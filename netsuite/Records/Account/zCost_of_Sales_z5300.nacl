@@ -1,0 +1,22 @@
+netsuite.Account zCost_of_Sales_z5300@ssu {
+  acctType = "_costOfGoodsSold"
+  acctNumber = "z5300"
+  acctName = "zCost of Sales"
+  includeChildren = true
+  generalRate = "_average"
+  cashFlowRate = "_average"
+  isInactive = true
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  revalue = false
+  identifier = "zCost of Sales_z5300"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

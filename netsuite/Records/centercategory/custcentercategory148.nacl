@@ -1,0 +1,30 @@
+netsuite.centercategory custcentercategory148 {
+  scriptid = "custcentercategory148"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab62.scriptid
+  label = "Files"
+  links = {
+    link = [
+      {
+        linkid = "LIST_MEDIAITEMFOLDER"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CUSTOMCODEFILES"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_RECVDFILES"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_SENTFILES"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_IMAGE"
+        shortlist = false
+      },
+    ]
+  }
+}

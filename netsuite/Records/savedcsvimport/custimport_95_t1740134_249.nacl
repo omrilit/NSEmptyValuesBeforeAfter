@@ -1,0 +1,211 @@
+netsuite.savedcsvimport custimport_95_t1740134_249 {
+  scriptid = "custimport_95_t1740134_249"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  customrecord = "[scriptid=customrecord_ncfar_asset]"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "FAM TEST PERIOD"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "CUSTOMRECORD"
+  runserversuitescript = true
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "CUSTOMRECORD"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "CUSTOMRECORD"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ALTNAME"
+              columnreference = {
+                column = "name"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetalternateno]"
+              columnreference = {
+                column = "alternate asset number"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetbookvalue]"
+              columnreference = {
+                column = "current net book value"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetcost]"
+              columnreference = {
+                column = "original cost"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetcurrentage]"
+              columnreference = {
+                column = "period"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetcurrentcost]"
+              columnreference = {
+                column = "current cost"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdepractive]"
+              columnreference = {
+                column = "depreciation active"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdeprenddate]"
+              columnreference = {
+                column = "depreciation end date"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdeprrules]"
+              columnreference = {
+                column = "depreciation rules"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdeprstartdate]"
+              columnreference = {
+                column = "depreciation start date"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdeprtodate]"
+              columnreference = {
+                column = "cumulate depreciation"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdescr]"
+              columnreference = {
+                column = "asset description"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdisposalacc]"
+              columnreference = {
+                column = "disposal account"
+                file = "CUSTOMRECORD"
+                type = "INTERNAL_ID"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetlastdepramt]"
+              columnreference = {
+                column = "amount"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetlastdeprdate]"
+              columnreference = {
+                column = "last depreciation date"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetlifetime]"
+              columnreference = {
+                column = "asset liftime"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetpurchasedate]"
+              columnreference = {
+                column = "purchase date"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetresidualvalue]"
+              columnreference = {
+                column = "residual value"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetrevisionrules]"
+              columnreference = {
+                column = "revision rules"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetsubsidiary]"
+              columnreference = {
+                column = "subsidiary"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assettype]"
+              columnreference = {
+                column = "asset type"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

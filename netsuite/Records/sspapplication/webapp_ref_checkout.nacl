@@ -1,0 +1,55 @@
+netsuite.sspapplication webapp_ref_checkout {
+  scriptid = "webapp_ref_checkout"
+  appfolder = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference Checkout/Reference Checkout/]"
+  isinactive = false
+  loglevel = "DEBUG"
+  name = "Reference Checkout"
+  rootpath = "/Checkout"
+  runtimeversion = "1"
+  status = "TESTING"
+  libraries = {
+    library = [
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference Checkout/Reference Checkout/ssp_libraries/underscore.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference Checkout/Reference Checkout/ssp_libraries/backbone.validation.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference Checkout/Reference Checkout/ssp_libraries/commons.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference Checkout/Reference Checkout/ssp_libraries/backend.configuration.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference Checkout/Reference Checkout/ssp_libraries/Models.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley SuiteOffice/Suite Office/ssp_libraries/SuiteOffice.configuration.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley SuiteOffice/Suite Office/ssp_libraries/SuiteOffice.Model.js]"
+      },
+    ]
+  }
+  entrypoints = {
+    entrypoint = [
+      {
+        entryitem = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference Checkout/Reference Checkout/index.ssp]"
+        entrytype = "LOGIN"
+      },
+      {
+        entryitem = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference Checkout/Reference Checkout/index.ssp]"
+        entrytype = "REGISTER"
+      },
+      {
+        entryitem = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference Checkout/Reference Checkout/index.ssp]"
+        entrytype = "CHECKOUT"
+      },
+      {
+        entryitem = "[/Web Site Hosting Files/Dilley Hosting Files/SSP Applications/Dilley Reference Checkout/Reference Checkout/cart.ssp]"
+        entrytype = "CART"
+      },
+    ]
+  }
+}

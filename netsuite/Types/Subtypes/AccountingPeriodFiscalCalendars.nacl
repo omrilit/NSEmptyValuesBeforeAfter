@@ -1,0 +1,13 @@
+type netsuite.AccountingPeriodFiscalCalendars {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef fiscalCalendar {
+  }
+  netsuite.AccountingPeriodFiscalCalendars parent {
+    isReference = true
+  }
+  serviceid identifier {
+  }
+}

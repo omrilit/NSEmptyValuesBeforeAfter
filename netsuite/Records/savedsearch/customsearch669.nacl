@@ -1,0 +1,156 @@
+netsuite.savedsearch customsearch669 {
+  scriptid = "customsearch669"
+  dependencies = {
+    dependency = [
+      "[scriptid=customrecord_ncfar_asset.custrecord_assetaccmethod]",
+      "[scriptid=customrecord_ncfar_asset.custrecord_assetbookvalue]",
+      "[scriptid=customrecord_ncfar_asset.custrecord_assetcost]",
+      "[scriptid=customrecord_ncfar_asset.custrecord_assetdeprenddate]",
+      "[scriptid=customrecord_ncfar_asset.custrecord_assetdeprstartdate]",
+      "[scriptid=customrecord_ncfar_asset.custrecord_assetdescr]",
+      "[scriptid=customrecord_ncfar_asset.custrecord_assetlastdeprdate]",
+      "[scriptid=customrecord_ncfar_asset.custrecord_assettype]",
+      "[scriptid=customrecord_ncfar_asset.custrecord_ncfar_quantity]",
+      "[scriptid=customrecord_ncfar_asset]",
+      "[scriptid=customrecord_ncfar_assettype]",
+      "[scriptid=customrecord_ncfar_deprmethod]",
+    ]
+  }
+  definition = "cdecdd749a537853ab374d2c3c60c6b1975a714db1b694f620c0c4d203c54f91@GZC@2021.1.0.148@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"
+  search_filter = [
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "Custom_ISINACTIVE"
+      FIELD_ATTRIBUTE = "F"
+      FIELD_TYPE = "CHECKBOX"
+    },
+  ]
+  return_fields = [
+    {
+      FIELD_ALIAS = "Custom_NAME"
+      FIELD_INDEX = 1
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Custom_ALTNAME"
+      FIELD_INDEX = 2
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTRECORD_ASSETDEPRSTARTDATE"
+      FIELD_INDEX = 3
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTRECORD_ASSETLASTDEPRDATE"
+      FIELD_INDEX = 4
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTRECORD_ASSETDEPRENDDATE"
+      FIELD_INDEX = 5
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  detail_fields = [
+    {
+      FIELD_ALIAS = "Custom_NAME"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Custom_ALTNAME"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTRECORD_ASSETDESCR"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTRECORD_ASSETTYPE"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTRECORD_ASSETCOST"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTRECORD_ASSETACCMETHOD"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTRECORD_ASSETBOOKVALUE"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTRECORD_NCFAR_QUANTITY"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  sort_columns = [
+    {
+      KEY_FIELD = "Custom_NAME"
+      FILELD_ORDER = 1
+      FLAG_DESCENDING = false
+    },
+  ]
+  "audience:" = {
+    FLAG_AUDIENCE_ALL_CUSTOMERS = false
+    FLAG_AUDIENCE_ALL_EMPLOYEES = false
+    FLAG_AUDIENCE_ALL_PARTNERS = false
+    FLAG_AUDIENCE_ALL_ROLES = true
+    FLAG_AUDIENCE_ALL_VENDORS = false
+  }
+  KEY_SCRIPT_ID = "customsearch669"
+  FIELD_DEFAULT_NAME = "Custom FAM - Asset Search 2"
+  FIELD_SEARCH_TYPE = "Custom"
+  FLAG_PUBLIC = true
+  FLAG_LIST = false
+  FLAG_PORTLET = false
+  FLAG_MACHINE = false
+  FLAG_REMINDER = false
+  FLAG_SHOW_LINK = false
+  FLAG_PREFERRED_LIST = false
+  FLAG_PREFERRED_PORTLET = false
+  FLAG_PREFERRED_MACHINE = false
+  FLAG_PREFERRED_FORM = false
+  FLAG_PREFERRED_RESULTS = false
+  KEY_RECORD_TYPE = 439
+  FLAG_VIEW_AS_REPORT = false
+  FLAG_VIEW_AS_GRAPH = false
+  FLAG_VIEW_AS_GRID = false
+  FLAG_UNRESTRICTED = false
+  FLAG_DISABLE_DRILL_DOWN = false
+  FLAG_HIDE_FILTER_DROPDOWNS = false
+  KEY_DEFAULT_TEXT_FIELD_FILTER = "STARTSWITH"
+  FLAG_AVAILABLE_AS_FEED = false
+  FLAG_GLOBAL_EDIT = false
+  FLAG_CSV = false
+  FLAG_EXCEL = false
+  FLAG_PDF = false
+  FLAG_TRIGGERED_ALERT = false
+  FLAG_SCHEDULED_ALERT = false
+  FLAG_SCHEDULED_ALERT_SUMMARIES = false
+  FLAG_SEND_EMPTY_RESULTS = false
+  FLAG_ALERT_ALLOW_SUBSCRIBE = false
+  FLAG_ALERT_INCLUDE_VIEW_LINK = true
+  FLAG_HAS_TOTALS = false
+  FLAG_INCLUDE_PERIOD_END_TRANSACTIONS = false
+  FLAG_BUILT_IN = false
+  FLAG_SEND_ON_UPDATE = false
+  FLAG_SHOW_AUDIT_TRAIL = false
+  KEY_AUDIENCE = 0
+}

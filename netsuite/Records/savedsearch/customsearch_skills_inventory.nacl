@@ -1,0 +1,147 @@
+netsuite.savedsearch customsearch_skills_inventory {
+  scriptid = "customsearch_skills_inventory"
+  dependencies = {
+    dependency = [
+      "[scriptid=customrecord_rss_skill.custrecord_rss_skill_category]",
+      "[scriptid=customrecord_rss_skill]",
+      "[scriptid=customrecord_rss_skill_level]",
+      "[scriptid=customrecord_rss_skillset.custrecord_rss_skillset_level]",
+      "[scriptid=customrecord_rss_skillset.custrecord_rss_skillset_resource]",
+      "[scriptid=customrecord_rss_skillset.custrecord_rss_skillset_skill]",
+      "[scriptid=customrecord_rss_skillset]",
+    ]
+  }
+  definition = "87398e241a619c76764f7b34241445d1edbbf12793c73e3d232751bc5f7b7c5a@GZC@2021.1.0.148@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"
+  search_filter = [
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "CUSTRECORD_RSS_SKILLSET_SKILL"
+      FIELD_ATTRIBUTE = "NONEOF"
+      FIELD_TYPE = "SELECT"
+      RECORDS = [
+        {
+          KEY_ID = 0
+          FIELD_VALUE = "@NONE@"
+        },
+      ]
+    },
+  ]
+  available_filters = [
+    {
+      SEQ_NUMBER = 1
+      FIELD_NAME = "AMM_CUSTRECORD_RSS_SKILL_CATEGORY"
+      FIELD_CUSTOM_LABEL = "Category"
+      FLAG_FOOTER = true
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+    {
+      SEQ_NUMBER = 2
+      FIELD_NAME = "CUSTRECORD_RSS_SKILLSET_SKILL"
+      FLAG_FOOTER = true
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+    {
+      SEQ_NUMBER = 3
+      FIELD_NAME = "CUSTRECORD_RSS_SKILLSET_LEVEL"
+      FLAG_FOOTER = true
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+  ]
+  return_fields = [
+    {
+      FIELD_ALIAS = "Custom_FORMULATEXT"
+      FIELD_INDEX = 1
+      FIELD_LABEL = "Action"
+      FIELD_FORMULA = "&apos;&lt;a href=&quot;https://system.na1.netsuite.com/app/accounting/project/allocation.nl?whence=&amp;allocationresource=&apos; || {custrecord_rss_skillset_resource.internalid} || &apos;&quot; target=&quot;_blank&quot; title=&quot;Create new resource allocation&quot;&gt;Allocate&lt;/a&gt;&apos;"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTRECORD_RSS_SKILLSET_SKILL"
+      FIELD_INDEX = 2
+      FIELD_SUMMARY_TYPE = "GROUP"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTRECORD_RSS_SKILLSET_RESOURCE"
+      FIELD_INDEX = 3
+      FIELD_LABEL = "Resource"
+      FIELD_SUMMARY_LABEL = "Count of Resources With Skill"
+      FIELD_SUMMARY_TYPE = "COUNT"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTRECORD_RSS_SKILLSET_LEVEL"
+      FIELD_INDEX = 4
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  sort_columns = [
+    {
+      KEY_FIELD = "AMM_CUSTRECORD_RSS_SKILL_CATEGORY"
+      FILELD_ORDER = 1
+      FLAG_DESCENDING = false
+    },
+    {
+      KEY_FIELD = "CUSTRECORD_RSS_SKILLSET_SKILL"
+      FILELD_ORDER = 2
+      FLAG_DESCENDING = false
+    },
+    {
+      KEY_FIELD = "CUSTRECORD_RSS_SKILLSET_RESOURCE"
+      FILELD_ORDER = 3
+      FLAG_DESCENDING = false
+    },
+  ]
+  "audience:" = {
+    FLAG_AUDIENCE_ALL_CUSTOMERS = false
+    FLAG_AUDIENCE_ALL_EMPLOYEES = false
+    FLAG_AUDIENCE_ALL_PARTNERS = false
+    FLAG_AUDIENCE_ALL_ROLES = true
+    FLAG_AUDIENCE_ALL_VENDORS = false
+  }
+  KEY_SCRIPT_ID = "customsearch_skills_inventory"
+  FIELD_DEFAULT_NAME = "Skills Inventory"
+  FIELD_SEARCH_TYPE = "Custom"
+  FLAG_PUBLIC = true
+  FLAG_LIST = true
+  FLAG_PORTLET = true
+  FLAG_MACHINE = false
+  FLAG_REMINDER = false
+  FLAG_SHOW_LINK = false
+  FLAG_PREFERRED_LIST = false
+  FLAG_PREFERRED_PORTLET = false
+  FLAG_PREFERRED_MACHINE = false
+  FLAG_PREFERRED_FORM = false
+  FLAG_PREFERRED_RESULTS = false
+  KEY_RECORD_TYPE = 341
+  FLAG_VIEW_AS_REPORT = false
+  FLAG_VIEW_AS_GRAPH = false
+  FLAG_VIEW_AS_GRID = false
+  FLAG_UNRESTRICTED = false
+  FLAG_DISABLE_DRILL_DOWN = false
+  FLAG_HIDE_FILTER_DROPDOWNS = false
+  KEY_DEFAULT_TEXT_FIELD_FILTER = "STARTSWITH"
+  FLAG_AVAILABLE_AS_FEED = false
+  FLAG_GLOBAL_EDIT = false
+  FLAG_CSV = false
+  FLAG_EXCEL = false
+  FLAG_PDF = false
+  FLAG_TRIGGERED_ALERT = false
+  FLAG_SCHEDULED_ALERT = false
+  FLAG_SCHEDULED_ALERT_SUMMARIES = false
+  FLAG_SEND_EMPTY_RESULTS = false
+  FLAG_ALERT_ALLOW_SUBSCRIBE = false
+  FLAG_ALERT_INCLUDE_VIEW_LINK = false
+  FLAG_HAS_TOTALS = false
+  FLAG_INCLUDE_PERIOD_END_TRANSACTIONS = false
+  FLAG_BUILT_IN = false
+  FLAG_SEND_ON_UPDATE = false
+  FLAG_SHOW_AUDIT_TRAIL = false
+  KEY_AUDIENCE = 0
+}

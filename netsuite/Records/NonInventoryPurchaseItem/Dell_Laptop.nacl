@@ -1,0 +1,71 @@
+netsuite.NonInventoryPurchaseItem Dell_Laptop@s {
+  purchaseDescription = "Dell Laptop"
+  cost = 1000
+  costUnits = "per Ea."
+  expenseAccount = netsuite.Account.instance.IT_Equipment_1301@su
+  unitsType = {
+    name = "EACH"
+  }
+  purchaseUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  itemId = "Dell Laptop"
+  displayName = "Dell Laptop"
+  includeChildren = true
+  vendorName = "Dell Laptop"
+  isInactive = false
+  availableToPartners = false
+  department = netsuite.Department.instance.Prof__Services@vs
+  class = netsuite.Classification.instance.01_Consulting@b
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  isFulfillable = true
+  generateAccruals = true
+  currency = "1"
+  itemVendorList = {
+    itemVendor = [
+      {
+        vendor = netsuite.Vendor.instance.NonInventoryPurchaseItem_vendor_26
+        purchasePrice = 1000
+        preferredVendor = false
+        subsidiary = netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Dell Laptop"
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Dell Laptop null null null"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

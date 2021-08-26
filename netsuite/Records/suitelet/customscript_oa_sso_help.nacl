@@ -1,0 +1,25 @@
+netsuite.suitelet customscript_oa_sso_help {
+  scriptid = "customscript_oa_sso_help"
+  defaultfunction = "buildSuiteletOAHelp"
+  isinactive = false
+  name = "OpenAir: Help module"
+  notifyadmins = false
+  notifyowner = false
+  notifyuser = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_94158_oa_single_sign_on_js@dsduuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_oa_sso_help_deploy"
+        allemployees = false
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "ERROR"
+        status = "RELEASED"
+        title = "OpenAir: Help module deployment"
+      },
+    ]
+  }
+}

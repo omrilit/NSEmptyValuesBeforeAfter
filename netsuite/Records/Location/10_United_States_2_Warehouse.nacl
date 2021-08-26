@@ -1,0 +1,33 @@
+netsuite.Location "10_United_States_2_Warehouse@s" {
+  name = "10 United States 2 Warehouse"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___East@buusbs,
+  ]
+  isInactive = true
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "10 United States 2 Warehouse"
+    addrText = "United States"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "10 United States 2 Warehouse"
+}

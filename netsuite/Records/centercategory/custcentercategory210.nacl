@@ -1,0 +1,22 @@
+netsuite.centercategory custcentercategory210 {
+  scriptid = "custcentercategory210"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_oa_openair.scriptid
+  label = "Help & Support"
+  links = {
+    link = [
+      {
+        linklabel = "Help module"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_help.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Support module"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_support.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

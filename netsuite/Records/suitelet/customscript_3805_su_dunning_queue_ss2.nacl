@@ -1,0 +1,59 @@
+netsuite.suitelet customscript_3805_su_dunning_queue_ss2 {
+  scriptid = "customscript_3805_su_dunning_queue_ss2"
+  isinactive = false
+  name = "Dunning Queue SU (SS2)"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_62340_src_dunning_component_su_su_dunning_queue_ss2_js@dsddddduuuv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_3805_su_dunning_queue_type"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        isformula = false
+        ismandatory = false
+        label = "Type"
+        onparentdelete = "NO_ACTION"
+        searchlevel = "2"
+        selectrecordtype = "[scriptid=customrecord_suite_l10n_variable]"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_3805_dunning_queue_email"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        audslctrole = "AR_CLERK|ACCOUNTANT|ADMINISTRATOR|[scriptid=customrole_3805_dunning_director]|[scriptid=customrole_3805_dunning_manager]"
+        isdeployed = true
+        isonline = false
+        loglevel = "ERROR"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "Dunning Queue (SS2) - Email"
+      },
+      {
+        scriptid = "customdeploy_3805_dunning_queue_pdf"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        audslctrole = "AR_CLERK|ACCOUNTANT|ADMINISTRATOR|[scriptid=customrole_3805_dunning_director]|[scriptid=customrole_3805_dunning_manager]"
+        isdeployed = true
+        isonline = false
+        loglevel = "ERROR"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "Dunning Queue (SS2) - PDF"
+      },
+    ]
+  }
+}

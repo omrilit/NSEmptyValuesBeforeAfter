@@ -1,0 +1,12 @@
+netsuite.clientscript customscript_po_rec_validator {
+  scriptid = "customscript_po_rec_validator"
+  fieldchangedfunction = "automation_fieldChanged"
+  isinactive = false
+  name = "**Procure to Pay Validator"
+  notifyadmins = false
+  notifyemails = "mdeasis@netsuite.com"
+  notifyowner = true
+  notifyuser = false
+  saverecordfunction = "automation_saveRecord"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_74218_Procure2Pay_Automation_js@dsduv.path
+}

@@ -1,0 +1,21 @@
+type netsuite.SupportCaseType {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string name {
+  }
+  netsuite.RecordRef insertBefore {
+  }
+  string description {
+  }
+  boolean isInactive {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

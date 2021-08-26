@@ -1,0 +1,23 @@
+netsuite.Account COGS_5000_Purchase_Discounts_5250@uusu {
+  acctType = "_costOfGoodsSold"
+  acctNumber = "5250"
+  acctName = "Purchase Discounts"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.COGS_5000
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  revalue = false
+  identifier = "COGS_5000_Purchase Discounts_5250"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

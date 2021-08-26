@@ -1,0 +1,64 @@
+netsuite.centercategory custcentercategory6_17 {
+  scriptid = "custcentercategory6_17"
+  center = "ACCOUNTCENTER"
+  centertab = netsuite.centertab.instance.custcentertab8_13.scriptid
+  label = "Setup"
+  links = {
+    link = [
+      {
+        linklabel = "Dunning Templates"
+        linkobject = "[scriptid=customrecord_3805_dunning_template]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Level Rules"
+        linkobject = "[scriptid=customrecord_3805_dunning_eval_rule]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Procedures"
+        linkobject = "[scriptid=customrecord_3805_dunning_procedure]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Procedure Priority"
+        linkobject = "[scriptid=customsearch_3805_dunning_prio_search]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Bulk Assignment"
+        linkobject = "[scriptid=customscript_3805_su_bulk_assignment.customdeploy_3805_su_bulk_assignment]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Pause Reasons"
+        linkobject = "[scriptid=customrecord_3805_dunning_status]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Dunning Configurations"
+        linkobject = "[scriptid=customrecord_3805_dunning_config]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Bulk Update Customer Records"
+        linkobject = "[scriptid=customscript_3805_dunning_bulk_update.customdeploy_3805_dunning_bulk_update]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Email Template Invoice Fields"
+        linkobject = "[scriptid=customscript_3805_su_add_email_field.customdeploy_3805_add_email_field]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

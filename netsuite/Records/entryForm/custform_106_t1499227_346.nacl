@@ -1,0 +1,332 @@
+netsuite.entryForm custform_106_t1499227_346 {
+  scriptid = "custform_106_t1499227_346"
+  standard = "STANDARDCUSTOMRECORD_COLLECTION_NOTESFORM"
+  name = "Jive Collection Notes Form"
+  recordType = netsuite.customrecordtype.instance.customrecord_collection_notes.scriptid
+  inactive = false
+  preferred = true
+  storedWithRecord = true
+  mainFields = {
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "CUSTOMFORM"
+              label = "Custom Form"
+              visible = true
+              mandatory = true
+              displayType = "DISABLED"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "NAME"
+              label = "Name"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = true
+            },
+            {
+              id = "RECORDID"
+              label = "ID"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "OWNER"
+              label = "Owner"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "CREATED"
+              label = "Date Created"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "LASTMODIFIED"
+              label = "Last Modified"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "ISINACTIVE"
+              label = "Inactive"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.0.scriptid
+              label = "Collection Notes Invoice Link"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.1.scriptid
+              label = "Customer"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.2.scriptid
+              label = "Activity Date"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.3.scriptid
+              label = "Activity"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.4.scriptid
+              label = "Name of Contact"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.5.scriptid
+              label = "Title/Department of Contact"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.6.scriptid
+              label = "Contact Info"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.7.scriptid
+              label = "Payment Type"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.8.scriptid
+              label = "Promised Payment Date"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.9.scriptid
+              label = "Payment Reference"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.10.scriptid
+              label = "3rd Party Payment System"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.11.scriptid
+              label = "Note"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.12.scriptid
+              label = "Internal Resource"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_collection_notes.customrecordcustomfields.customrecordcustomfield.13.scriptid
+              label = "Performed By"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDCUSTOM"
+        label = "Custom"
+        visible = true
+      },
+      {
+        id = "RECORDTRANSLATION"
+        label = "Translation"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDTRANSLATIONS"
+              label = "Translation"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+    ]
+  }
+  actionbar = {
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = false
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = false
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = true
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = false
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

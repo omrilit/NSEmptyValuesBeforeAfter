@@ -1,0 +1,57 @@
+netsuite.centercategory custcentercategory147 {
+  scriptid = "custcentercategory147"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab61.scriptid
+  label = "Project Accounting"
+  links = {
+    link = [
+      {
+        linkid = "EDIT_CHARGE"
+        shortlist = false
+      },
+      {
+        linkobject = netsuite.centerlink.instance.custlink_14_t1740134_735.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_BILLINGCLASS"
+        shortlist = false
+      },
+      {
+        linklabel = "Rate Cards"
+        linkobject = netsuite.savedsearch.instance.customsearch721.scriptid
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_BILLINGSCHEDULE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_REVRECSCHEDS"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_REVRECSCHEDULE"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_SALESORDCOMMITREVENUE"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_CREATEREVRECJE"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_TIMEPOST"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_TIMEVOID"
+        shortlist = false
+      },
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+type netsuite.GeneralToken {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef entity {
+  }
+  string mask {
+  }
+  netsuite.GeneralTokenSupportedOperationsListList supportedOperationsList {
+  }
+  netsuite.PaymentMethod paymentMethod {
+    isReference = true
+  }
+  string memo {
+  }
+  string state {
+  }
+  boolean isInactive {
+  }
+  boolean preserveOnFile {
+  }
+  boolean isDefault {
+  }
+  string token {
+  }
+  string tokenExpirationDate {
+  }
+  string tokenFamily {
+  }
+  string tokenNamespace {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

@@ -1,0 +1,47 @@
+netsuite.suitelet customscript_gdpdu {
+  scriptid = "customscript_gdpdu"
+  defaultfunction = "main"
+  isinactive = false
+  name = "Audit Files"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_8443_gdpdu_js@dsdv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_gdpdu_dp"
+        allemployees = true
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        isonline = false
+        loglevel = "ERROR"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "GDPdU Audit Reports"
+        links = {
+          link = [
+            {
+              linkcategory = "BASICTRANSACTIONSCUSTOM"
+              linklabel = "GDPdU Audit Dateien"
+            },
+          ]
+        }
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_8443_dataacess_js@dsdv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_8443_jspersistence_js@dsdv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_8443_resources_js@dsdv.path
+      },
+    ]
+  }
+}

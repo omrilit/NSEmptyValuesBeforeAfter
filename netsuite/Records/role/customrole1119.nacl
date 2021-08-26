@@ -1,0 +1,150 @@
+netsuite.role customrole1119 {
+  scriptid = "customrole1119"
+  centertype = "PROJECTCENTER"
+  employeerestriction = "OWNONLY"
+  employeeselectionunrestricted = true
+  employeeviewingallowed = false
+  isinactive = false
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "Fred"
+  restrictbydevice = false
+  restricttimeandexpenses = true
+  subsidiaryoption = "OWN"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = [
+      {
+        permkey = "TRAN_EXPREPT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_FIND"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_PURCHORD"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_PURCHREQ"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_TIMEBILL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_UNBILLED"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SCHEDULE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_ANALYTICS"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "REPO_TIME"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CALENDAR"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CASE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CLASS"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CUSTJOB"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_DEPARTMENT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_FILECABINET"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_EVENT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_IMPORTED_EMPLOYEE_EXPENSE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_LOCATION"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REGT_NONPOSTING"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_FIND"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CALL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTASK"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_JOB"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_RSRCALLOCATION"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REGT_STAT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_TASK"
+        permlevel = "FULL"
+      },
+    ]
+  }
+  recordrestrictions = {
+    recordrestriction = [
+      {
+        itemsrestricted = false
+        restriction = "OWNONLY"
+        segment = "LOCATION"
+        viewingallowed = false
+      },
+      {
+        itemsrestricted = false
+        restriction = "OWNONLY"
+        segment = "DEPARTMENT"
+        viewingallowed = false
+      },
+      {
+        itemsrestricted = false
+        restriction = "OWNONLY"
+        segment = "CLASS"
+        viewingallowed = false
+      },
+    ]
+  }
+}

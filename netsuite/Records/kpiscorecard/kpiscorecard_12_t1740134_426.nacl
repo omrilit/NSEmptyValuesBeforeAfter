@@ -1,0 +1,95 @@
+netsuite.kpiscorecard kpiscorecard_12_t1740134_426 {
+  scriptid = "kpiscorecard_12_t1740134_426"
+  name = "Customer Statistics"
+  useperiods = "F"
+  custom = {
+    kpi1 = netsuite.savedsearch.instance.customsearch214.scriptid
+    kpi2 = netsuite.savedsearch.instance.customsearch215.scriptid
+    kpi3 = netsuite.savedsearch.instance.customsearch213.scriptid
+  }
+  audience = {
+    allemployees = true
+    allpartners = false
+    allroles = true
+  }
+  kpis = {
+    kpi = [
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM"
+        label = "New Customers"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM2"
+        label = "Lost Customers"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM3"
+        label = "Net Customers"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "REVENUE"
+        label = "Total Revenue"
+      },
+      {
+        formula = "{4}/{3}"
+        hidden = false
+        kpi = "FORMULACURRENCY"
+        label = "Revenue Per Customer"
+        lessismore = false
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM4"
+      },
+      {
+        comparewithprevious = false
+        hidden = false
+        invertcomparison = false
+        kpi = "CUSTOM5"
+        label = "Target Revenue Per Customer"
+      },
+    ]
+  }
+  ranges = {
+    range = [
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        label = "Q1"
+        range = "FIRST_FISCAL_QUARTER_THIS_FISCAL_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        label = "Q2"
+        range = "SECOND_FISCAL_QUARTER_THIS_FISCAL_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        label = "Q3"
+        range = "THIRD_FISCAL_QUARTER_THIS_FISCAL_YEAR"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        label = "Q4"
+        range = "FOURTH_FISCAL_QUARTER_THIS_FISCAL_YEAR"
+      },
+    ]
+  }
+}

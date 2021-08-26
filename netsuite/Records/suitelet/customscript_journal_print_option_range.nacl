@@ -1,0 +1,34 @@
+netsuite.suitelet customscript_journal_print_option_range {
+  scriptid = "customscript_journal_print_option_range"
+  defaultfunction = "main"
+  isinactive = false
+  name = "Journal Print Option Form With Range"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_8443_journalprintform_js@dsdv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_journal_print_option_range"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "ERROR"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "Journal Print Option Form With Range"
+        links = {
+          link = [
+            {
+              linkcategory = "BASICREPORTSCUSTOM"
+              linklabel = "Journal Print Option"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

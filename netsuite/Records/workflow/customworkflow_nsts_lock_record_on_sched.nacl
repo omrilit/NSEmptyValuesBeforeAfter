@@ -1,0 +1,126 @@
+netsuite.workflow customworkflow_nsts_lock_record_on_sched {
+  scriptid = "customworkflow_nsts_lock_record_on_sched"
+  initeventtypes = "VIEW"
+  initoncreate = true
+  initonvieworupdate = true
+  inittriggertype = "BEFORELOAD"
+  isinactive = false
+  islogenabled = false
+  keephistory = "ALWAYS"
+  name = "NSTS - SVB | Lock Record On Scheduled"
+  recordtypes = "VENDORBILL"
+  releasestatus = "RELEASED"
+  runasadmin = true
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate109"
+        donotexitworkflow = false
+        name = "State 1 - Lock VB on SVB Scheduled"
+        positionx = 243
+        positiony = 133
+        workflowactions = [
+          {
+            triggertype = "BEFORELOAD"
+            lockrecordaction = [
+              {
+                scriptid = "workflowaction577"
+                eventtypes = "VIEW"
+                isinactive = false
+                initcondition = {
+                  formula = "isChecked(\"SVB Schedule In Process\") = 'T'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "SVB Schedule In Process"
+                        value = netsuite.transactionbodycustomfield.instance.custbody_svb_sched_in_process.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+            removebuttonaction = [
+              {
+                scriptid = "workflowaction578"
+                buttonid = "RETURN"
+                eventtypes = "VIEW"
+                isinactive = false
+                initcondition = {
+                  formula = "isChecked(\"SVB Schedule In Process\") = 'T'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "SVB Schedule In Process"
+                        value = netsuite.transactionbodycustomfield.instance.custbody_svb_sched_in_process.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction579"
+                buttonid = "PAYMENT"
+                eventtypes = "VIEW"
+                isinactive = false
+                initcondition = {
+                  formula = "isChecked(\"SVB Schedule In Process\") = 'T'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "SVB Schedule In Process"
+                        value = netsuite.transactionbodycustomfield.instance.custbody_svb_sched_in_process.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction580"
+                buttonid = "CREDIT"
+                eventtypes = "VIEW"
+                isinactive = false
+                initcondition = {
+                  formula = "isChecked(\"SVB Schedule In Process\") = 'T'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "SVB Schedule In Process"
+                        value = netsuite.transactionbodycustomfield.instance.custbody_svb_sched_in_process.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction581"
+                buttonid = "CANCELBILL"
+                eventtypes = "VIEW"
+                isinactive = false
+                initcondition = {
+                  formula = "isChecked(\"SVB Schedule In Process\") = 'T'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "SVB Schedule In Process"
+                        value = netsuite.transactionbodycustomfield.instance.custbody_svb_sched_in_process.scriptid
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+      },
+    ]
+  }
+}

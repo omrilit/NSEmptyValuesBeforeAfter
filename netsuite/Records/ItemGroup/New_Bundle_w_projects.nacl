@@ -1,0 +1,59 @@
+netsuite.ItemGroup New_Bundle_w_projects@ssd {
+  includeStartEndLines = true
+  availableToPartners = false
+  isInactive = false
+  itemId = "New Bundle w/projects"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___East@buusbs,
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ_Australia@buu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_United_Kingdom@buus,
+  ]
+  includeChildren = false
+  department = netsuite.Department.instance.Prof__Services@vs
+  class = netsuite.Classification.instance.01_Consulting@b
+  printItems = true
+  memberList = {
+    itemMember = [
+      {
+        quantity = 1
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_2
+        item = netsuite.RecordRef.instance.ItemGroup_item_572
+        lineNumber = 1
+      },
+      {
+        quantity = 1
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_2
+        item = netsuite.RecordRef.instance.ItemGroup_item_571
+        lineNumber = 2
+      },
+      {
+        quantity = 1
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_2
+        item = netsuite.RecordRef.instance.ItemGroup_item_570
+        lineNumber = 3
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "New Bundle w/projects"
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

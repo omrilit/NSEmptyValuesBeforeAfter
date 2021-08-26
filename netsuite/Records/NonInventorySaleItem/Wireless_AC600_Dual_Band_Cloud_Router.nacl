@@ -1,0 +1,118 @@
+netsuite.NonInventorySaleItem Wireless_AC600_Dual_Band_Cloud_Router@s {
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  isFulfillable = true
+  useMarginalRates = false
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  storeDisplayName = "Wireless AC600 Dual Band Cloud Router"
+  storeDescription = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">Wireless
+  AC600 Dual Band Cloud Router</td>
+</tr></tbody></table>
+'''
+  storeDetailedDescription = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">Wireless
+  AC600 Dual Band Cloud Router</td>
+</tr></tbody></table>
+'''
+  metaTagHtml = "<META HTTP-EQUIV=Refresh CONTENT=\"0; URL=http://shopping.netsuite.com/site/support-subscriptions.htm\">"
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  productFeedList = {
+    productFeed = [
+      "_yahooShopping",
+    ]
+  }
+  itemId = "Wireless AC600 Dual Band Cloud Router"
+  isOnline = true
+  offerSupport = false
+  isInactive = true
+  availableToPartners = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 15
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 6.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+        displayName = "Das Chicken Feet"
+        salesDescription = "Unsere Huhn-Füße werden zur Verkollkommnung gedämpft und gedient mit einer traditionellen Pflaumesoße"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Wireless AC600 Dual Band Cloud Router"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

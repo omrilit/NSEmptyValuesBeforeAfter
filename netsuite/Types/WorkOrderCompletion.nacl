@@ -1,0 +1,68 @@
+type netsuite.WorkOrderCompletion {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  string tranId {
+  }
+  netsuite.RecordRef item {
+  }
+  number quantity {
+  }
+  number scrapQuantity {
+  }
+  netsuite.RecordRef units {
+  }
+  boolean isBackflush {
+  }
+  number orderQuantity {
+  }
+  number total {
+  }
+  netsuite.RecordRef createdFrom {
+  }
+  netsuite.InventoryDetail inventoryDetail {
+  }
+  string tranDate {
+  }
+  netsuite.RecordRef postingPeriod {
+  }
+  string memo {
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+  netsuite.RecordRef revision {
+  }
+  netsuite.RecordRef startOperation {
+  }
+  netsuite.RecordRef endOperation {
+  }
+  number completedQuantity {
+  }
+  netsuite.ManufacturingRouting manufacturingRouting {
+    isReference = true
+  }
+  netsuite.WorkOrderCompletionComponentList componentList {
+  }
+  netsuite.WorkOrderCompletionOperationList operationList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

@@ -1,0 +1,36 @@
+netsuite.suitelet customscript_wd_applications {
+  scriptid = "customscript_wd_applications"
+  defaultfunction = "action"
+  isinactive = false
+  name = "SuiteOffice - [Suitelet] Applications"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_41811_SuiteOffice___Application_basic_js@dsdsbsvv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_wd_applications"
+        allemployees = true
+        allpartners = true
+        allroles = true
+        isdeployed = true
+        isonline = true
+        loglevel = "ERROR"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "SuiteOffice - Applications"
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_41813_SuiteOffice___Application_premium_js@dsdsbsvv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_41812_SuiteOffice___Application_standard_js@dsdsbsvv.path
+      },
+    ]
+  }
+}

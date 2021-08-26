@@ -1,0 +1,26 @@
+netsuite.centercategory custcentercategory136 {
+  scriptid = "custcentercategory136"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab58.scriptid
+  label = "Accounts Receiveable"
+  links = {
+    link = [
+      {
+        linkid = "LIST_TRAN_CUSTINVC"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_INVOICECUSTOMERS"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_274"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_262"
+        shortlist = false
+      },
+    ]
+  }
+}

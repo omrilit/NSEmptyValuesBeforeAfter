@@ -1,0 +1,19 @@
+netsuite.Account Intercompany_Clearing_Account_1800_Intercompany_Payable_Receivable___REC_1897@ssuusdsbsu {
+  acctType = "_otherCurrentAsset"
+  acctNumber = "1897"
+  acctName = "Intercompany Payable/Receivable - REC"
+  includeChildren = true
+  generalRate = "_current"
+  parent = netsuite.Account.instance.Intercompany_Clearing_Account_1800@ssu
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = true
+  identifier = "Intercompany Clearing Account_1800_Intercompany Payable/Receivable - REC_1897"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

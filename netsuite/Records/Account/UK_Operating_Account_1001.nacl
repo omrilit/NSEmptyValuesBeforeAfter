@@ -1,0 +1,21 @@
+netsuite.Account UK_Operating_Account_1001@ssu {
+  acctType = "_bank"
+  acctNumber = "1001"
+  acctName = "UK Operating Account"
+  includeChildren = false
+  currency = netsuite.Currency.instance.GBP
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  curDocNum = 9
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_United_Kingdom@buus,
+  ]
+  revalue = true
+  identifier = "UK Operating Account_1001"
+  externalId = "11950"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

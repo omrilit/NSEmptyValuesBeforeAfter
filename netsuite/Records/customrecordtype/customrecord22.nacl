@@ -1,0 +1,420 @@
+netsuite.customrecordtype customrecord22 {
+  scriptid = "customrecord22"
+  accesstype = "CUSTRECORDENTRYPERM"
+  allowattachments = true
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = true
+  allownumberingoverride = false
+  allowquickadd = false
+  allowquicksearch = true
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "Release"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord16"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Release Name"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord17"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Development Product"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord18"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Budget Risk"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist24.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord19"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Timeline Risk"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist24.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord20"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Release Status"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist24.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord21"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Resource Risk"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist24.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord22"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Quality Risk"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist24.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord23"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Release Phase"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist23.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord24"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CURRENCY"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Release Budget"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord25"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CURRENCY"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Actual Cost"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord26"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CURRENCY"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Expected Revenue"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord27"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Expected ROI"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord28"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "DATE"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Exp. Phase Completion"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord29"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "DATE"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Original Target"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord30"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "DATE"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Revised Target"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord31"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "DATE"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Actual Target"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord22.subtabs.subtab.2.scriptid
+      },
+    ]
+  }
+  links = {
+    link = [
+      {
+        linkcategory = "BASICLISTSCUSTOM"
+        linktasktype = "LIST"
+      },
+    ]
+  }
+  subtabs = {
+    subtab = [
+      {
+        scriptid = "tab_15_t1499227_470"
+        tabtitle = "Main"
+      },
+      {
+        scriptid = "tab_16_t1499227_470"
+        tabtitle = "Financial"
+      },
+      {
+        scriptid = "tab_17_t1499227_470"
+        tabtitle = "Timeline"
+      },
+      {
+        scriptid = "tab_18_t1499227_470"
+        tabtitle = "Features"
+      },
+      {
+        scriptid = "tab_19_t1499227_470"
+        tabtitle = "Issues"
+      },
+    ]
+  }
+}

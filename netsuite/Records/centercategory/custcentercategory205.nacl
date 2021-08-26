@@ -1,0 +1,59 @@
+netsuite.centercategory custcentercategory205 {
+  scriptid = "custcentercategory205"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_administration.scriptid
+  label = "SuiteCloud"
+  links = {
+    link = [
+      {
+        linkobject = netsuite.centerlink.instance.custlink_13_t1740134_764.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CUSTENTITYFIELD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CUSTITEMFIELD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CUSTEVENTFIELD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CUSTBODYFIELD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CUSTCOLUMNFIELD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CUSTLIST"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CUSTRECORD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_WORKFLOW"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_SCRIPT"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_SCRIPTEDRECORD"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_SUITESIGNON"
+        shortlist = false
+      },
+    ]
+  }
+}

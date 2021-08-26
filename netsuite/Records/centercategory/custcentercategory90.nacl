@@ -1,0 +1,29 @@
+netsuite.centercategory custcentercategory90 {
+  scriptid = "custcentercategory90"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab45.scriptid
+  label = "Reports"
+  links = {
+    link = [
+      {
+        linkid = "REPO_NEG122"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_133"
+        shortlist = false
+      },
+      {
+        linkobject = netsuite.centerlink.instance.custlink_9_t1740134_626.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+      {
+        linklabel = "View All Reports"
+        linkobject = netsuite.centertab.instance.custcentertab44.scriptid
+        linktasktype = "CARD"
+        shortlist = false
+      },
+    ]
+  }
+}

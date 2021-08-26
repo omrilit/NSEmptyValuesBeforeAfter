@@ -1,0 +1,176 @@
+netsuite.entryForm custform_105_t1499227_346 {
+  scriptid = "custform_105_t1499227_346"
+  standard = "STANDARDTIMESHEETFORM"
+  name = "Dilley SRP Timesheet Form"
+  recordType = "TIMESHEET"
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "primaryinformation"
+        label = "Primary Information"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "CUSTOMFORM"
+                label = "Custom Form"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "STARTDATE"
+                label = "Start Date"
+                visible = true
+                mandatory = true
+                displayType = "INLINETEXT"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ENDDATE"
+                label = "End Date"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "SUBSIDIARY"
+                label = "Subsidiary"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "APPROVALSTATUS"
+                label = "Approval Status"
+                visible = false
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "TRANDATE"
+                label = "Week Of"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PLANNEDHOURS"
+                label = "Planned Hours"
+                visible = false
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ALLOCATEDHOURS"
+                label = "Allocated Hours"
+                visible = false
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "classification"
+        label = "Classification"
+        visible = true
+        showTitle = true
+        singleColumn = false
+      },
+    ]
+  }
+  actionbar = {
+    buttons = {
+      button = [
+        {
+          id = "APPROVEALLPENDING"
+          label = "Approve All Pending"
+          visible = true
+        },
+        {
+          id = "COPYTIMESHEET"
+          label = "Copy Previous Week"
+          visible = true
+        },
+        {
+          id = "IMPORTPLANNEDTIME"
+          label = "Import Planned Time"
+          visible = true
+        },
+        {
+          id = "NEXT"
+          label = "Next Week"
+          visible = true
+        },
+        {
+          id = "PREV"
+          label = "Prev Week"
+          visible = true
+        },
+        {
+          id = "REJECTALLPENDING"
+          label = "Reject All Pending"
+          visible = true
+        },
+        {
+          id = "REJECTALLPENDINGWITHNOTE"
+          label = "Reject All Pending With Note"
+          visible = true
+        },
+        {
+          id = "RETRACT"
+          label = "Retract"
+          visible = true
+        },
+        {
+          id = "SAVE"
+          label = "Save"
+          visible = true
+        },
+        {
+          id = "SAVESUBMIT"
+          label = "Submit"
+          visible = true
+        },
+      ]
+    }
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+      ]
+    }
+  }
+}

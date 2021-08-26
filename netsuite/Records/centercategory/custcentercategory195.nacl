@@ -1,0 +1,32 @@
+netsuite.centercategory custcentercategory195 {
+  scriptid = "custcentercategory195"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_financials.scriptid
+  label = "Accounts Receiveable"
+  links = {
+    link = [
+      {
+        linkid = "LIST_TRAN_CUSTINVC"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_INVOICECUSTOMERS"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_274"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_262"
+        shortlist = false
+      },
+      {
+        linklabel = "Invoices module"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_invoices.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

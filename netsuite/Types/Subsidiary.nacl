@@ -1,0 +1,95 @@
+type netsuite.Subsidiary {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string name {
+  }
+  netsuite.Subsidiary parent {
+    isReference = true
+  }
+  boolean isInactive {
+  }
+  boolean showSubsidiaryName {
+  }
+  string url {
+  }
+  netsuite.file logo {
+    isReference = true
+  }
+  string tranPrefix {
+  }
+  netsuite.file pageLogo {
+    isReference = true
+  }
+  string state {
+  }
+  string country {
+  }
+  netsuite.Address mainAddress {
+  }
+  netsuite.Address shippingAddress {
+  }
+  netsuite.Address returnAddress {
+  }
+  string legalName {
+  }
+  boolean isElimination {
+  }
+  netsuite.RecordRef fiscalCalendar {
+  }
+  netsuite.RecordRef taxFiscalCalendar {
+  }
+  boolean allowPayroll {
+  }
+  string email {
+  }
+  netsuite.Currency currency {
+    isReference = true
+  }
+  number purchaseOrderQuantity {
+  }
+  number purchaseOrderAmount {
+  }
+  number purchaseOrderQuantityDiff {
+  }
+  number receiptQuantity {
+  }
+  number receiptAmount {
+  }
+  number receiptQuantityDiff {
+  }
+  string fax {
+  }
+  string edition {
+  }
+  string federalIdNumber {
+  }
+  string addrLanguage {
+  }
+  string state1TaxNumber {
+  }
+  netsuite.SubsidiaryTaxRegistrationList taxRegistrationList {
+  }
+  string ssnOrTin {
+  }
+  netsuite.RecordRef interCoAccount {
+  }
+  netsuite.SubsidiaryNexusList nexusList {
+  }
+  netsuite.SubsidiaryAccountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.RecordRef checkLayout {
+  }
+  netsuite.ClassTranslationList classTranslationList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+}

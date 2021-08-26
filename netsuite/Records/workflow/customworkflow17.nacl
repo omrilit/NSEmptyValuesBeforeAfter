@@ -1,0 +1,122 @@
+netsuite.workflow customworkflow17 {
+  scriptid = "customworkflow17"
+  description = "Set the Next Approver Field as Supervisor"
+  initoncreate = true
+  initonvieworupdate = true
+  isinactive = false
+  islogenabled = true
+  keephistory = "ALWAYS"
+  name = "Awaiting Approval Supervisor"
+  recordtypes = "RESOURCEALLOCATION"
+  releasestatus = "RELEASED"
+  runasadmin = true
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate72"
+        donotexitworkflow = false
+        name = "Enter State"
+        positionx = 203
+        positiony = 53
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition210"
+              tostate = netsuite.workflow.instance.customworkflow17.workflowstates.workflowstate.1.scriptid
+              triggertype = "BEFORELOAD"
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate73"
+        donotexitworkflow = false
+        name = "Set Approver"
+        positionx = 203
+        positiony = 143
+        workflowactions = [
+          {
+            triggertype = "BEFORELOAD"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction215"
+                field = "STDEVENTNEXTAPPROVER"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuefield = netsuite.entitycustomfield.instance.custentity_ra_approver.scriptid
+                valuejoinfield = "STDEVENTRESOURCE"
+                valuetype = "FIELD"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+          {
+            triggertype = "BEFOREUSEREDIT"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction211"
+                field = "STDEVENTNEXTAPPROVER"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuefield = netsuite.entitycustomfield.instance.custentity_ra_approver.scriptid
+                valuejoinfield = "STDEVENTRESOURCE"
+                valuetype = "FIELD"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+          {
+            triggertype = "AFTERFIELDEDIT"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction213"
+                clienttriggerfields = "STDEVENTRESOURCE"
+                field = "STDEVENTNEXTAPPROVER"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valuefield = netsuite.entitycustomfield.instance.custentity_ra_approver.scriptid
+                valuejoinfield = "STDEVENTRESOURCE"
+                valuetype = "FIELD"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition214"
+              tostate = netsuite.workflow.instance.customworkflow17.workflowstates.workflowstate.2.scriptid
+              triggertype = "AFTERSUBMIT"
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate76"
+        donotexitworkflow = false
+        name = "Exit State"
+        positionx = 203
+        positiony = 233
+      },
+    ]
+  }
+}

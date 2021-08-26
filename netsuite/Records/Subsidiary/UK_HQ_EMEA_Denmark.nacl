@@ -1,0 +1,66 @@
+netsuite.Subsidiary UK_HQ_EMEA_Denmark@buu {
+  name = "Denmark"
+  parent = netsuite.Subsidiary.instance.UK_HQ_EMEA@bu
+  isInactive = false
+  showSubsidiaryName = false
+  country = "_denmark"
+  mainAddress = {
+    country = "_denmark"
+    addressee = "Denmark"
+    addrText = "Denmark<br>Denmark"
+    override = false
+  }
+  shippingAddress = {
+    country = "_afghanistan"
+    override = false
+  }
+  returnAddress = {
+    country = "_afghanistan"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.Danish_Krone@s
+  edition = "XX"
+  federalIdNumber = "DK"
+  interCoAccount = {
+    name = "1803 Intercompany Clearing Account : Intercompany Payable/Receivable DKK"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._denmark
+        country = "DK"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_EMEA_Denmark"
+}

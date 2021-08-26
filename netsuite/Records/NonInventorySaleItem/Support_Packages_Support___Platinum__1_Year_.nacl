@@ -1,0 +1,106 @@
+netsuite.NonInventorySaleItem Support_Packages_Support___Platinum__1_Year_@susbssjsk {
+  salesDescription = "Platinum Support (1 Year)"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  isFulfillable = true
+  useMarginalRates = false
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  storeDisplayName = "Platinum Support (1 Year)"
+  storeDescription = "Platinum Support (1 Year)"
+  storeDetailedDescription = '''
+This package offers you unparalleled service and responsiveness. Customers who choose this package can always be assured of the fastest response times, as well as leading-edge tools and services. This package includes extended hours of support and access to a dedicated, toll-free phone line. 
+<BR><BR>
+Support term is one year for just $29.99 and you can use your support for any number of McGeever software packages you own installed on the same computer. <BR><BR>
+<UL> 
+<LI>Dedicated Priority Extended Technical Support Line 6:00am (c) to 10:00pm (c), seven days a week. 
+</LI> 
+<LI>Online Live support and comprehensive Priority E-Mail Support.</LI> 
+<LI>Access to Technical Support Knowledge Base.</LI>
+<LI>Product Specialists for every product.</LI></UL>
+'''
+  metaTagHtml = "<META HTTP-EQUIV=Refresh CONTENT=\"0; URL=http://shopping.netsuite.com/site/support-technical.htm\">"
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  productFeedList = {
+    productFeed = [
+      "_yahooShopping",
+    ]
+  }
+  itemId = "Support - Platinum (1 Year)"
+  parent = netsuite.NonInventorySaleItem.instance.Support_Packages@s
+  isOnline = true
+  offerSupport = false
+  isInactive = true
+  availableToPartners = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventorySaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 29.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Support Packages_Support - Platinum (1 Year)"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

@@ -1,0 +1,22 @@
+netsuite.Account LCT_Collected_2096@su {
+  acctType = "_otherCurrentLiability"
+  acctNumber = "2096"
+  acctName = "LCT Collected"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = true
+  identifier = "LCT Collected_2096"
+  externalId = "980"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

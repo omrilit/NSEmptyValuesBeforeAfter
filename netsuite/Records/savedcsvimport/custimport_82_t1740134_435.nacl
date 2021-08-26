@@ -1,0 +1,79 @@
+netsuite.savedcsvimport custimport_82_t1740134_435 {
+  scriptid = "custimport_82_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  entryform = netsuite.entryForm.instance.custform_51_t1499227_346.scriptid
+  ignorereadonly = true
+  importname = "Employee for other subs"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "EMPLOYEE"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "EMPLOYEE"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "EMPLOYEE"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "DEPARTMENT"
+              columnreference = {
+                column = "Deparment"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "FIRSTNAME"
+              columnreference = {
+                column = "First Name"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "LASTNAME"
+              columnreference = {
+                column = "Last Name"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SUBSIDIARY"
+              columnreference = {
+                column = "Subsidiary"
+                file = "EMPLOYEE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "WORKCALENDAR"
+              value = "1"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

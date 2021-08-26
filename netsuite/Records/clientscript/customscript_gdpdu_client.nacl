@@ -1,0 +1,18 @@
+netsuite.clientscript customscript_gdpdu_client {
+  scriptid = "customscript_gdpdu_client"
+  fieldchangedfunction = "client_changed_function"
+  isinactive = false
+  name = "Audit Files (Client)"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  saverecordfunction = "client_save_record"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_8443_gdpdu_js@dsdv.path
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_8443_dataacess_js@dsdv.path
+      },
+    ]
+  }
+}

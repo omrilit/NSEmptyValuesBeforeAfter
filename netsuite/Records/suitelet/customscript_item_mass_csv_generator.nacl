@@ -1,0 +1,26 @@
+netsuite.suitelet customscript_item_mass_csv_generator {
+  scriptid = "customscript_item_mass_csv_generator"
+  defaultfunction = "itemMass_CSVGenerator"
+  isinactive = false
+  name = "**Item Mass CSV Generator"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_93203_Item_Mass_Updater_SL_js@dsduuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_item_mass_csv_generator"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "**Item Mass CSV Generator"
+      },
+    ]
+  }
+}

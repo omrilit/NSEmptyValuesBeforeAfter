@@ -1,0 +1,48 @@
+netsuite.entitycustomfield custentity_trainer {
+  scriptid = "custentity_trainer"
+  accesslevel = "2"
+  appliestocontact = false
+  appliestocustomer = false
+  appliestoemployee = false
+  appliestogenericrsrc = false
+  appliestogroup = false
+  appliestoothername = false
+  appliestopartner = false
+  appliestopricelist = false
+  appliestoproject = true
+  appliestoprojecttemplate = false
+  appliestostatement = false
+  appliestovendor = false
+  appliestowebsite = false
+  applyformatting = false
+  availableexternally = false
+  availabletosso = false
+  checkspelling = false
+  defaultchecked = false
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "SELECT"
+  globalsearch = false
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "Trainer"
+  onparentdelete = "SET_NULL"
+  searchlevel = "2"
+  selectrecordtype = "-4"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  subtab = netsuite.subtab.instance.custtab_3_t1499227_705.scriptid
+  customfieldfilters = {
+    customfieldfilter = [
+      {
+        fldfilter = netsuite.entitycustomfield.instance.custentity_pro_serv_rep.scriptid
+        fldfilterchecked = true
+        fldfiltercomparetype = "EQ"
+        fldfilternotnull = false
+        fldfilternull = false
+      },
+    ]
+  }
+}

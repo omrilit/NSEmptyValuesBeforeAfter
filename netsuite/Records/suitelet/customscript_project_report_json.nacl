@@ -1,0 +1,26 @@
+netsuite.suitelet customscript_project_report_json {
+  scriptid = "customscript_project_report_json"
+  defaultfunction = "projectReportReturn_suitelet"
+  isinactive = false
+  name = "Project Report JSON"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteScripts_ProjectReport_JSON_js@duv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_project_report_json_deploy"
+        allemployees = true
+        allpartners = true
+        allroles = true
+        isdeployed = true
+        isonline = true
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "Project Report JSON Deploy"
+      },
+    ]
+  }
+}

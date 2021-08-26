@@ -1,0 +1,35 @@
+netsuite.kpiscorecard kpiscorecard_7_t1740134_426 {
+  scriptid = "kpiscorecard_7_t1740134_426"
+  name = "Sales Ratios"
+  useperiods = "F"
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = true
+  }
+  kpis = {
+    kpi = [
+      {
+        formula = "ROUND({PIPELINE}/({FORECASTOVERRIDE}-{SALES}),2)"
+        hidden = false
+        kpi = "FORMULANUMERIC"
+        label = "Coverage Ratio"
+        lessismore = false
+      },
+    ]
+  }
+  ranges = {
+    range = [
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "THIS_MONTH"
+      },
+      {
+        comparewithprevious = false
+        invertcomparison = false
+        range = "NEXT_MONTH"
+      },
+    ]
+  }
+}

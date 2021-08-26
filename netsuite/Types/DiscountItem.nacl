@@ -1,0 +1,76 @@
+type netsuite.DiscountItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string description {
+  }
+  boolean nonPosting {
+  }
+  netsuite.Account account {
+    isReference = true
+  }
+  boolean includeChildren {
+  }
+  string rate {
+  }
+  boolean isPreTax {
+  }
+  netsuite.RecordRef customForm {
+  }
+  string itemId {
+  }
+  netsuite.RecordRef issueProduct {
+  }
+  string upcCode {
+  }
+  string displayName {
+  }
+  string vendorName {
+  }
+  netsuite.DiscountItem parent {
+    isReference = true
+  }
+  boolean isInactive {
+  }
+  boolean availableToPartners {
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+  "List<netsuite.Subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  netsuite.RecordRef taxSchedule {
+  }
+  netsuite.Account deferredRevenueAccount {
+    isReference = true
+  }
+  netsuite.Account expenseAccount {
+    isReference = true
+  }
+  netsuite.Account incomeAccount {
+    isReference = true
+  }
+  netsuite.RecordRef revRecSchedule {
+  }
+  netsuite.RecordRef salesTaxCode {
+  }
+  netsuite.TranslationList translationsList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+}

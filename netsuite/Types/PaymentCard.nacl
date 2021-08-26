@@ -1,0 +1,52 @@
+type netsuite.PaymentCard {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string lastFourDigits {
+  }
+  string issuerIdNumber {
+  }
+  netsuite.RecordRef entity {
+  }
+  string mask {
+  }
+  netsuite.PaymentMethod paymentMethod {
+    isReference = true
+  }
+  string memo {
+  }
+  string state {
+  }
+  boolean isInactive {
+  }
+  boolean preserveOnFile {
+  }
+  boolean isDefault {
+  }
+  string cardNumber {
+  }
+  string expirationDate {
+  }
+  string cardBrand {
+  }
+  string cardType {
+  }
+  string nameOnCard {
+  }
+  string street {
+  }
+  string zipCode {
+  }
+  string validFromDate {
+  }
+  string issueNumber {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

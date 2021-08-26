@@ -1,0 +1,20 @@
+netsuite.centercategory custcentercategory41 {
+  scriptid = "custcentercategory41"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab36.scriptid
+  label = "Marketing"
+  links = {
+    link = [
+      {
+        linkobject = netsuite.centertab.instance.custcentertab37.scriptid
+        linktasktype = "CARD"
+        shortlist = false
+      },
+      {
+        linkobject = netsuite.centertab.instance.custcentertab45.scriptid
+        linktasktype = "CARD"
+        shortlist = false
+      },
+    ]
+  }
+}

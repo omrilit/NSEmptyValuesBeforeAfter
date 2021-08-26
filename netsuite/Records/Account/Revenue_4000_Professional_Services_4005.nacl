@@ -1,0 +1,26 @@
+netsuite.Account Revenue_4000_Professional_Services_4005@uusu {
+  acctType = "_income"
+  acctNumber = "4005"
+  acctName = "Professional Services"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.Revenue_4000
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Revenue_4000_Professional Services_4005"
+  externalId = "INCM101"
+  custom_custrecord_fam_account_showinfixedasset = [
+    {
+      name = "Disposal Cost Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+  ]
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

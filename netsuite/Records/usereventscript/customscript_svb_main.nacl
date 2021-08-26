@@ -1,0 +1,80 @@
+netsuite.usereventscript customscript_svb_main {
+  scriptid = "customscript_svb_main"
+  aftersubmitfunction = "afterSubmit_SharedVendorBill_Main"
+  beforeloadfunction = "beforeLoad_AdjustDistributionRecord"
+  beforesubmitfunction = "beforeSubmit_SetLineNos"
+  isinactive = false
+  name = "NSTS - SVB | Bill Main Script - UE"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_UE_Main_js@dsduuuv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_svb_headerfld_changed"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        help = '''
+Comma separated value of fields that will serve as the criteria to trigger the recreation of Bill Distribution Details record and also the reversal of the allocated journal.
+
+Sample Entry:  amount,currency,department
+'''
+        isformula = false
+        ismandatory = false
+        label = "Header Change Fields"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_svb_linefld_changed"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        help = '''
+Comma separated value of item line and expense line fields that will serve as the criteria to trigger the recreation of Bill Distribution Details record and also the reversal of the allocated journal.
+
+Sample Entry:  account,quantity,rate
+'''
+        isformula = false
+        ismandatory = false
+        label = "Line Change Fields"
+        searchlevel = "2"
+        setting = "COMPANY"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_nsts_svb_main"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = "VENDORBILL"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_Common_js@dsduuv.path
+      },
+    ]
+  }
+}

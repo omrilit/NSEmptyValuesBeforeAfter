@@ -1,0 +1,142 @@
+netsuite.savedsearch customsearch10 {
+  scriptid = "customsearch10"
+  dependencies = {
+    dependency = [
+      netsuite.entitycustomfield.instance.custentity_job_notes.scriptid,
+      netsuite.entitycustomfield.instance.custentity_projectmanager.scriptid,
+      netsuite.entitycustomfield.instance.custentity_psm2.scriptid,
+    ]
+  }
+  definition = "5c611ac6578dec03ee8a080e56b25d08459af69af6c97441352cdc67d2c32f0c@GZC@2021.1.0.148@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"
+  return_fields = [
+    {
+      FIELD_ALIAS = "Customer_STATUS"
+      FIELD_INDEX = 1
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Entity_ENTITYID"
+      FIELD_INDEX = 2
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Customer_CONTACT"
+      FIELD_INDEX = 3
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Entity_EMAIL"
+      FIELD_INDEX = 4
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Entity_PHONE"
+      FIELD_INDEX = 5
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTENTITY_PROJECTMANAGER"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTENTITY_PSM2"
+      FIELD_INDEX = 7
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTENTITY_JOB_NOTES"
+      FIELD_INDEX = 8
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  detail_fields = [
+    {
+      FIELD_ALIAS = "Entity_ENTITYID"
+      FIELD_INDEX = 9
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Entity_EMAIL"
+      FIELD_INDEX = 9
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Entity_PHONE"
+      FIELD_INDEX = 9
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Entity_ALTPHONE"
+      FIELD_INDEX = 9
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Entity_FAX"
+      FIELD_INDEX = 9
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Customer_CONTACT"
+      FIELD_INDEX = 9
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  sort_columns = [
+    {
+      KEY_FIELD = "Customer_STATUS"
+      FILELD_ORDER = 1
+      FLAG_DESCENDING = false
+    },
+    {
+      KEY_FIELD = "Entity_ENTITYID"
+      FILELD_ORDER = 2
+      FLAG_DESCENDING = false
+    },
+  ]
+  "audience:" = {
+    FLAG_AUDIENCE_ALL_CUSTOMERS = false
+    FLAG_AUDIENCE_ALL_EMPLOYEES = false
+    FLAG_AUDIENCE_ALL_PARTNERS = false
+    FLAG_AUDIENCE_ALL_ROLES = true
+    FLAG_AUDIENCE_ALL_VENDORS = false
+  }
+  KEY_SCRIPT_ID = "customsearch10"
+  FIELD_DEFAULT_NAME = "Yellow &amp; Red Projects - DNU"
+  FIELD_SEARCH_TYPE = "Customer"
+  FLAG_PUBLIC = true
+  FLAG_LIST = false
+  FLAG_PORTLET = true
+  FLAG_MACHINE = false
+  FLAG_REMINDER = false
+  FLAG_SHOW_LINK = false
+  FLAG_PREFERRED_LIST = false
+  FLAG_PREFERRED_PORTLET = false
+  FLAG_PREFERRED_MACHINE = false
+  FLAG_PREFERRED_FORM = false
+  FLAG_PREFERRED_RESULTS = false
+  FLAG_VIEW_AS_REPORT = false
+  FLAG_VIEW_AS_GRAPH = false
+  FLAG_VIEW_AS_GRID = false
+  FLAG_UNRESTRICTED = false
+  FLAG_DISABLE_DRILL_DOWN = false
+  FLAG_HIDE_FILTER_DROPDOWNS = false
+  KEY_DEFAULT_TEXT_FIELD_FILTER = "STARTSWITH"
+  FLAG_AVAILABLE_AS_FEED = false
+  FLAG_GLOBAL_EDIT = false
+  FLAG_CSV = false
+  FLAG_EXCEL = false
+  FLAG_PDF = false
+  FLAG_TRIGGERED_ALERT = false
+  FLAG_SCHEDULED_ALERT = false
+  FLAG_SCHEDULED_ALERT_SUMMARIES = false
+  FLAG_SEND_EMPTY_RESULTS = true
+  FLAG_ALERT_ALLOW_SUBSCRIBE = false
+  FLAG_ALERT_INCLUDE_VIEW_LINK = true
+  FLAG_HAS_TOTALS = false
+  FLAG_INCLUDE_PERIOD_END_TRANSACTIONS = false
+  FLAG_BUILT_IN = false
+  FLAG_SEND_ON_UPDATE = false
+  FLAG_SHOW_AUDIT_TRAIL = false
+  KEY_AUDIENCE = 0
+}

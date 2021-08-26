@@ -1,0 +1,25 @@
+netsuite.centercategory custcentercategory32 {
+  scriptid = "custcentercategory32"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab34.scriptid
+  label = "Tools"
+  links = {
+    link = [
+      {
+        linkid = "LIST_SUPPORTCASE"
+        shortlist = false
+      },
+      {
+        linklabel = "Mass Email Cases"
+        linkobject = netsuite.centerlink.instance.custlink_10_t1740134_511.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+      {
+        linkobject = netsuite.centerlink.instance.custlink_3_t1740134_585.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+    ]
+  }
+}

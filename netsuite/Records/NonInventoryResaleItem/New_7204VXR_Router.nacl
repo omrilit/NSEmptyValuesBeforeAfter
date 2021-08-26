@@ -1,0 +1,158 @@
+netsuite.NonInventoryResaleItem New_7204VXR_Router@s {
+  copyDescription = false
+  expenseAccount = netsuite.Account.instance.General_and_Administrative_6000_Other_Expense_6800_Miscellaneous_Expense_6890@ssuusuusu
+  includeChildren = false
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Hardware_4006
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  costEstimateType = "_lastPurchasePrice"
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  isFulfillable = true
+  generateAccruals = false
+  useMarginalRates = false
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "New 7204VXR Router"
+  isOnline = false
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  department = netsuite.Department.instance.Prof__Services@vs
+  class = netsuite.Classification.instance.01_Consulting@b
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___East@buusbs,
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ_Australia@buu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_United_Kingdom@buus,
+  ]
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 5850
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 5850
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 4500
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 4500
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 2925
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.NonInventoryResaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 2925
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "New 7204VXR Router"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "New 7204VXR Router"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

@@ -1,0 +1,20 @@
+netsuite.Account Payroll_1004 {
+  acctType = "_bank"
+  acctNumber = "1004"
+  acctName = "Payroll"
+  includeChildren = false
+  currency = netsuite.Currency.instance.USD
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  curDocNum = 68
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+  ]
+  revalue = true
+  identifier = "Payroll_1004"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

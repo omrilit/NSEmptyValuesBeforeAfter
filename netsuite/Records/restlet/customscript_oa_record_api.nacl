@@ -1,0 +1,24 @@
+netsuite.restlet customscript_oa_record_api {
+  scriptid = "customscript_oa_record_api"
+  isinactive = false
+  name = "oa_record_api"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  postfunction = "runAction"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_2851_oa_record_api_js@dsduuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_oa_record_api"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "RELEASED"
+        title = "oa_record_api"
+      },
+    ]
+  }
+}

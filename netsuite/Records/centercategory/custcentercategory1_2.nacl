@@ -1,0 +1,70 @@
+netsuite.centercategory custcentercategory1_2 {
+  scriptid = "custcentercategory1_2"
+  center = "BASIC"
+  centertab = netsuite.centertab.instance.custcentertab16_2.scriptid
+  label = "Modules"
+  links = {
+    link = [
+      {
+        linklabel = "Projects"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_projects.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Resources"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_resources.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Timesheets"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_timesheets.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Expenses"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_expenses.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Purchases"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_purchases.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Invoices"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_invoices.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Reports"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_reports.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Workspaces"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_workspaces.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Home"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_home.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Administration"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_admin.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

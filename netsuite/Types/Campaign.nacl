@@ -1,0 +1,86 @@
+type netsuite.Campaign {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  string campaignId {
+  }
+  string title {
+  }
+  netsuite.RecordRef category {
+  }
+  netsuite.RecordRef owner {
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  string url {
+  }
+  number baseCost {
+  }
+  number cost {
+  }
+  number expectedRevenue {
+  }
+  string message {
+  }
+  boolean isInactive {
+  }
+  boolean local {
+  }
+  number totalRevenue {
+  }
+  number roi {
+  }
+  number profit {
+  }
+  number costPerCustomer {
+  }
+  number convCostPerCustomer {
+  }
+  number conversions {
+  }
+  number leadsGenerated {
+  }
+  number uniqueVisitors {
+  }
+  netsuite.RecordRef vertical {
+  }
+  netsuite.RecordRef audience {
+  }
+  netsuite.RecordRef offer {
+  }
+  netsuite.PromotionCode promotionCode {
+    isReference = true
+  }
+  netsuite.RecordRefList itemList {
+  }
+  netsuite.RecordRef family {
+  }
+  netsuite.RecordRef searchEngine {
+  }
+  string keyword {
+  }
+  netsuite.CampaignEmailList campaignEmailList {
+  }
+  netsuite.CampaignDirectMailList campaignDirectMailList {
+  }
+  netsuite.CampaignEventList campaignEventList {
+  }
+  netsuite.CampaignEventResponseList eventResponseList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  unknown custom_custevent_medium {
+    field_instance = netsuite.crmcustomfield.instance.custevent_medium.scriptid
+    select_type_id = netsuite.customrecordtype.instance.customrecord11.scriptid
+  }
+}

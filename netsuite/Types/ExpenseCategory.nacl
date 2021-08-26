@@ -1,0 +1,35 @@
+type netsuite.ExpenseCategory {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  string name {
+  }
+  string description {
+  }
+  netsuite.Account expenseAcct {
+    isReference = true
+  }
+  boolean isInactive {
+  }
+  boolean rateRequired {
+  }
+  "List<netsuite.Subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  number defaultRate {
+  }
+  netsuite.ExpenseCategoryRatesList ratesList {
+  }
+  netsuite.TranslationList translationsList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

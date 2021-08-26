@@ -1,0 +1,80 @@
+netsuite.centertab custcentertab10 {
+  scriptid = "custcentertab10"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter1.scriptid
+  label = "Cases"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_20_t1499227_189"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_21_t1499227_189"
+        isportletshown = true
+        portlet = "CALENDAR"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_22_t1499227_189"
+        isportletshown = true
+        portlet = "CALENDAR"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_23_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_24_t1499227_189"
+        isportletshown = true
+        portlet = "CALENDAR"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_27_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKADD"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_28_t1499227_189"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_29_t1499227_189"
+        isportletshown = true
+        portlet = "RECENTRECORDS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_30_t1499227_189"
+        isportletshown = true
+        portlet = "REMINDERS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_31_t1499227_189"
+        isportletshown = true
+        portlet = "SHORTCUTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_25_t1499227_189"
+        isportletshown = true
+        portlet = "SNAPSHOTS"
+        portletcolumn = "2"
+      },
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+netsuite.Subsidiary UK_HQ_HEADQUARTERS@bu {
+  name = "HEADQUARTERS"
+  parent = netsuite.Subsidiary.instance.UK_HQ@b
+  isInactive = true
+  showSubsidiaryName = false
+  logo = netsuite.RecordRef.instance.Subsidiary_logo_2114
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  state = "CA"
+  country = "_unitedStates"
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "Dilley Services OneWorld - OAN - V2012.1.122"
+    addr1 = "50 Washington St"
+    city = "San Francisco"
+    state = "CA"
+    zip = "94109"
+    addrText = "50 Washington St<br>San Francisco CA 94109<br>United States"
+    override = false
+  }
+  shippingAddress = {
+    country = "_unitedStates"
+    addrText = "US"
+    override = false
+  }
+  returnAddress = {
+    country = "_unitedStates"
+    addrText = "US"
+    override = false
+  }
+  legalName = "Dilley Svcs OW SRP - EMEA - v17.1 - Standard"
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  email = "jlunsford10@netsuite.com"
+  currency = netsuite.Currency.instance.USD
+  edition = "US"
+  interCoAccount = {
+    name = "1807 Intercompany Clearing Account : Intercompany Payable/Receivable USD"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedStates_Alabama
+        country = "US"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_HEADQUARTERS"
+  custom_custrecord_subnav_subsidiary_logo = {
+    name = "dilley services logo small.jpg"
+    internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+}

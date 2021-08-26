@@ -1,0 +1,25 @@
+netsuite.clientscript customscript_resourcefinder_event {
+  scriptid = "customscript_resourcefinder_event"
+  isinactive = false
+  name = "Support Scheduler Event (gus)"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  pageinitfunction = "pageInit"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_12521_resource_finder_js@dsduv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_resourcefinder_event"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = false
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        recordtype = "CALENDAREVENT"
+        status = "RELEASED"
+      },
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+netsuite.Subsidiary UK_HQ_EMEA_xElimination_EMEA@buus {
+  name = "xElimination EMEA"
+  parent = netsuite.Subsidiary.instance.UK_HQ_EMEA@bu
+  isInactive = false
+  showSubsidiaryName = false
+  country = "_unitedKingdom"
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "xElimination EMEA"
+    addrText = "xElimination EMEA<br>United States"
+    override = false
+  }
+  isElimination = true
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.GBP
+  edition = "UK"
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedKingdom
+        country = "GB"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard 10(3)L Cheque Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_EMEA_xElimination EMEA"
+}

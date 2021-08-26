@@ -1,0 +1,51 @@
+netsuite.ItemGroup Cost_Plus_Group@s {
+  includeStartEndLines = true
+  availableToPartners = false
+  isInactive = true
+  itemId = "Cost Plus Group"
+  displayName = "Project Fees"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  includeChildren = true
+  printItems = false
+  memberList = {
+    itemMember = [
+      {
+        quantity = 1
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_2
+        item = netsuite.RecordRef.instance.ItemGroup_item_22
+        lineNumber = 1
+      },
+      {
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_2
+        item = netsuite.RecordRef.instance.ItemGroup_item_23
+        lineNumber = 2
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Cost Plus Group"
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

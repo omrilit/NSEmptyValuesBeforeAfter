@@ -1,0 +1,25 @@
+netsuite.Account Deferred__Income_2100_Deferred_Revenue_2101@ssuusu {
+  acctType = "_deferredRevenue"
+  acctNumber = "2101"
+  acctName = "Deferred Revenue"
+  includeChildren = true
+  generalRate = "_current"
+  parent = netsuite.Account.instance.Deferred__Income_2100@ssu
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = true
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_HEADQUARTERS_xElimination_HQ@buus,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  revalue = false
+  identifier = "Deferred  Income_2100_Deferred Revenue_2101"
+  externalId = "account132"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

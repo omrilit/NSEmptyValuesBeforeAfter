@@ -1,0 +1,123 @@
+netsuite.savedcsvimport custimport_67_t1740134_435 {
+  scriptid = "custimport_67_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADDUPDATE"
+  decimaldelimiter = "PERIOD"
+  entryform = "[scriptid=custform_38_t1499227_346]"
+  ignorereadonly = true
+  importname = "Client"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  preventduplicates = false
+  recordtype = "CUSTOMER"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "CUSTOMER"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "CUSTOMER"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "COMPANYNAME"
+              columnreference = {
+                column = "Company Name"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "PHONE"
+              columnreference = {
+                column = "Phone"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SUBSIDIARY"
+              columnreference = {
+                column = "Subsidiary"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "URL"
+              columnreference = {
+                column = "Web Address"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        record = "CUSTOMER:ADDRESSBOOK:ADDRESSBOOKADDRESS"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ADDR1"
+              columnreference = {
+                column = "Address 1"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CITY"
+              columnreference = {
+                column = "City"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "COUNTRY"
+              columnreference = {
+                column = "Country"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "STATE"
+              columnreference = {
+                column = "State Province"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ZIP"
+              columnreference = {
+                column = "Zip Code"
+                file = "CUSTOMER"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

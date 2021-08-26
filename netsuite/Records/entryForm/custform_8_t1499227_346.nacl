@@ -1,0 +1,2259 @@
+netsuite.entryForm custform_8_t1499227_346 {
+  scriptid = "custform_8_t1499227_346"
+  standard = "STANDARDINVENTORYPARTFORM"
+  name = "SuiteOffice - Inventory Part Form"
+  recordType = "INVENTORYITEM"
+  inactive = false
+  preferred = false
+  storedWithRecord = false
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "primaryinformation"
+        label = "Primary Information"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "CUSTOMFORM"
+                label = "Custom Form"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "INTERNALID"
+                label = "Internal ID"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ITEMID"
+                label = "Item Name/Number"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "UPCCODE"
+                label = "UPC Code"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "DISPLAYNAME"
+                label = "Display Name/Code"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "VENDORNAME"
+                label = "Vendor Name/Code"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "UNITSTYPE"
+                label = "Units Type"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "BASEUNIT"
+                label = "Base Unit"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PARENT"
+                label = "Subitem of"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CONSUMPTIONUNIT"
+                label = "Consumption Unit"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "classification"
+        label = "Classification"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "SUBSIDIARY"
+                label = "Subsidiary"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CLASS"
+                label = "Class"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "LOCATION"
+                label = "Location"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+    ]
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "ISSUEPRODUCT"
+              label = "Product Name"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "DEPARTMENT"
+              label = "Department"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.itemcustomfield.instance.custitem_oa_export_to_openair_product.scriptid
+              label = "Export to OpenAir Product"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.itemcustomfield.instance.custitem_oa_default_billing_rule.scriptid
+              label = "Default OpenAir Billing Rule"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.itemcustomfield.instance.custitem_oa_export_to_openair.scriptid
+              label = "Export to OpenAir (2)"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "ITEMINVENTORY"
+        label = "Purchasing/Inventory"
+        visible = true
+        fieldGroups = {
+          fieldGroup = [
+            {
+              scriptid = "itemcostdetail"
+              label = "Item/Cost Detail"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "COSTINGMETHOD"
+                      label = "Costing Method"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "TOTALQUANTITYONHAND"
+                      label = "Total Quantity On Hand"
+                      visible = false
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "TOTALVALUE"
+                      label = "Total Value"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "AVERAGECOST"
+                      label = "Average Cost"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "COST"
+                      label = "Purchase Price"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "LASTPURCHASEPRICE"
+                      label = "Last Purchase Price"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "PURCHASEDESCRIPTION"
+                      label = "Purchase Description"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "COPYDESCRIPTION"
+                      label = "Copy from Sales Order"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = true
+                    },
+                    {
+                      id = "STOCKDESCRIPTION"
+                      label = "Stock Description"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "MATCHBILLTORECEIPT"
+                      label = "Match Bill To Receipt"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "DEFAULTRETURNCOST"
+                      label = "Default Return Cost"
+                      visible = false
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "inventorymanagement"
+              label = "Inventory Management"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "PREFERREDSTOCKLEVEL"
+                      label = "Preferred Stock Level"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "AUTOPREFERREDSTOCKLEVEL"
+                      label = "Auto-Calculate"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = true
+                    },
+                    {
+                      id = "PREFERREDSTOCKLEVELDAYS"
+                      label = "Days"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = true
+                    },
+                    {
+                      id = "REORDERMULTIPLE"
+                      label = "Reorder Multiple"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "COSTACCOUNTINGSTATUS"
+                      label = "Cost Accounting Status"
+                      visible = false
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "REORDERPOINT"
+                      label = "Reorder Point"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "AUTOREORDERPOINT"
+                      label = "Auto-Calculate"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = true
+                    },
+                    {
+                      id = "LEADTIME"
+                      label = "Purchase Lead Time"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "AUTOLEADTIME"
+                      label = "Auto-Calculate"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = true
+                    },
+                    {
+                      id = "SAFETYSTOCKLEVEL"
+                      label = "Safety Stock Level"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SAFETYSTOCKLEVELDAYS"
+                      label = "Days"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = true
+                    },
+                    {
+                      id = "SEASONALDEMAND"
+                      label = "Seasonal Demand"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "DEMANDMODIFIER"
+                      label = "Expected Demand Change"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "TRANSFERPRICE"
+                      label = "Transfer Price"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SERIALNUMBERS"
+                      label = "Serial/Lot Numbers"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "QUANTITYONHAND"
+                      label = "Quantity On Hand"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "QUANTITYONORDER"
+                      label = "Quantity On Order"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "QUANTITYCOMMITTED"
+                      label = "Quantity Committed"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "QUANTITYAVAILABLE"
+                      label = "Quantity Available"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "QUANTITYBACKORDERED"
+                      label = "Quantity Back Ordered"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "manufacturing"
+              label = "Manufacturing"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "MANUFACTURER"
+                      label = "Manufacturer"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "MPN"
+                      label = "MPN"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "COUNTRYOFMANUFACTURE"
+                      label = "Manufacturer Country"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "PRODUCER"
+                      label = "Producer"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "MANUFACTURERADDR1"
+                      label = "Manufacturer Address"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "MANUFACTURERCITY"
+                      label = "Manufacturer City"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "MANUFACTURERSTATE"
+                      label = "Manufacturer State"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "MANUFACTURERZIP"
+                      label = "Manufacturer Zip"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "MANUFACTURERTAXID"
+                      label = "Manufacturer Tax Id"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "MANUFACTURERTARIFF"
+                      label = "Manufacturer Tariff"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "inventoryshipping"
+              label = "Shipping"
+              visible = true
+              showTitle = true
+              singleColumn = false
+            },
+            {
+              scriptid = "fieldgroup_112_t1499227_449"
+              label = "Vendor Bill Matching"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "PURCHASEORDERQUANTITY"
+                      label = "Vendor Bill - Purchase Order Quantity Tolerance"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "PURCHASEORDERAMOUNT"
+                      label = "Vendor Bill - Purchase Order Amount Tolerance"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "PURCHASEORDERQUANTITYDIFF"
+                      label = "Vendor Bill - Purchase Order Quantity Difference"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "RECEIPTQUANTITY"
+                      label = "Vendor Bill - Item Receipt Quantity Tolerance"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "RECEIPTAMOUNT"
+                      label = "Vendor Bill - Item Receipt Amount Tolerance"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "RECEIPTQUANTITYDIFF"
+                      label = "Vendor Bill - Item Receipt Quantity Difference"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+          ]
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "USEBINS"
+                    label = "Use Bins"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ISDROPSHIPITEM"
+                    label = "Drop Ship Item"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ISSPECIALORDERITEM"
+                    label = "Special Order Item"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "MULTMANUFACTUREADDR"
+                    label = "Multiple Manufacture Addresses"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "DEFAULTITEMSHIPMETHOD"
+                    label = "Default Shipping Method"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ITEMCARRIER"
+                    label = "Carrier"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ITEMSHIPMETHOD"
+                    label = "Shipping Methods"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+        subItems = {
+          subList = [
+            {
+              id = "ITEMNUMBERS"
+              label = "Inventory Numbers"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ITEMBINNUMBER"
+              label = "Bin Numbers"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+          subTab = [
+            {
+              id = "ITEMLOCATIONS"
+              label = "Locations"
+              visible = true
+              fieldGroups = {
+                defaultFieldGroup = {
+                  fields = [
+                    {
+                      position = "MIDDLE"
+                      field = [
+                        {
+                          id = "PREFERREDLOCATION"
+                          label = "Preferred Location"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                      ]
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              id = "ITEMVENDORS"
+              label = "Vendors"
+              visible = true
+            },
+          ]
+        }
+      },
+      {
+        id = "ITEMPRICING"
+        label = "Sales / Pricing"
+        visible = true
+        fieldGroups = {
+          fieldGroup = [
+            {
+              scriptid = "sales"
+              label = "Sales"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "RATE"
+                      label = "Sales Price (Rate)"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SALESDESCRIPTION"
+                      label = "Sales Description"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "BILLINGSCHEDULE"
+                      label = "Billing Schedule"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "MINIMUMQUANTITY"
+                      label = "Minimum Quantity"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "MAXIMUMQUANTITY"
+                      label = "Maximum Quantity"
+                      visible = false
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "ENFORCEMINQTYINTERNALLY"
+                      label = "Enforce Minimum Internally"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = true
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "pricingshipping"
+              label = "Shipping"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "WEIGHT"
+                      label = "Item Weight"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SHIPPACKAGE"
+                      label = "Package"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SHIPINDIVIDUALLY"
+                      label = "Ships Individually"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SHIPPINGCOST"
+                      label = "Shipping Cost"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "HANDLINGCOST"
+                      label = "Handling Cost"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "PREFERENCECRITERION"
+                      label = "Preference Criterion"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SCHEDULEBNUMBER"
+                      label = "Schedule B Number"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SCHEDULEBQUANTITY"
+                      label = "Schedule B Quantity"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SCHEDULEBCODE"
+                      label = "Schedule B Code"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "pricing"
+              label = "Pricing"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "QUANTITYPRICINGSCHEDULE"
+                      label = "Quantity Pricing Schedule"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "USEMARGINALRATES"
+                      label = "Use Marginal Rates"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "OVERALLQUANTITYPRICINGTYPE"
+                      label = "Calculate Quantity Discounts"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "PRICINGGROUP"
+                      label = "Pricing Group"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+          ]
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "COSTESTIMATETYPE"
+                    label = "Cost Estimate Type"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "COSTESTIMATE"
+                    label = "Item Defined Cost"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "FRAUDRISK"
+                    label = "Fraud Risk"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+        subItems = {
+          subList = [
+            {
+              id = "ITEMPRICE"
+              label = "Price Levels"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "ITEMACCOUNTING"
+        label = "Accounting"
+        visible = true
+        fieldGroups = {
+          fieldGroup = [
+            {
+              scriptid = "accounts"
+              label = "Accounts"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "CURRENCY"
+                      label = "Currency"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "COGSACCOUNT"
+                      label = "COGS Account"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "INTERCOCOGSACCOUNT"
+                      label = "Intercompany COGS Account"
+                      visible = false
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "ASSETACCOUNT"
+                      label = "Asset Account"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "INCOMEACCOUNT"
+                      label = "Income Account"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "INTERCOINCOMEACCOUNT"
+                      label = "Intercompany Income Account"
+                      visible = false
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "DEFERREDREVENUEACCOUNT"
+                      label = "Deferred Revenue Account"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "INTERCODEFREVACCOUNT"
+                      label = "Intercompany Deferred Revenue Account"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "GAINLOSSACCOUNT"
+                      label = "Gain/Loss Account"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "BILLPRICEVARIANCEACCT"
+                      label = "Price Variance Account"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "BILLQTYVARIANCEACCT"
+                      label = "Quantity Variance Account"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "BILLEXCHRATEVARIANCEACCT"
+                      label = "Exchange Rate Variance Account"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "CUSTRETURNVARIANCEACCOUNT"
+                      label = "Customer Return Variance Account"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "VENDRETURNVARIANCEACCOUNT"
+                      label = "Vendor Return Variance Account"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "revenuerecognitionandamortization"
+              label = "Revenue Recognition and Amortization"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "REVRECSCHEDULE"
+                      label = "Revenue Recognition Template"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "DEFERREVREC"
+                      label = "Hold Revenue Recognition"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "taxtariff"
+              label = "Tax /Tariff"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "TAXSCHEDULE"
+                      label = "Tax Schedule"
+                      visible = true
+                      mandatory = true
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+          ]
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "MOSSAPPLIES"
+                    label = "MOSS Applies"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = true
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "DROPSHIPEXPENSEACCOUNT"
+                    label = "Dropship Expense Account"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "VSOEPERMITDISCOUNT"
+                    label = "Permit Discount"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "VSOEDELIVERED"
+                    label = "Default as Delivered"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ITEMREVENUECATEGORY"
+                    label = "Item Revenue Category"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "REVENUERECOGNITIONRULE"
+                    label = "Revenue Recognition Rule"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "REVRECFORECASTRULE"
+                    label = "Rev Rec Forecast Rule"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "REVENUEALLOCATIONGROUP"
+                    label = "Revenue Allocation Group"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "CREATEREVENUEPLANSON"
+                    label = "Create Revenue Plans On"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "DIRECTREVENUEPOSTING"
+                    label = "Direct Revenue Posting"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "CONTINGENTREVENUEHANDLING"
+                    label = "Eligible For Contingent Revenue Handling"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "REVRECLASSFXACCOUNT"
+                    label = "Foreign Currency Adjustment Account"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+        subItems = {
+          subTab = [
+            {
+              id = "ITEMMATRIX"
+              label = "Matrix Items"
+              visible = true
+              fieldGroups = {
+                defaultFieldGroup = {
+                  fields = [
+                    {
+                      position = "MIDDLE"
+                      field = [
+                        {
+                          id = "MATRIXITEMNAMETEMPLATE"
+                          label = "Matrix Item Name Template"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                      ]
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        id = "ITEMHAZMATDGOODS"
+        label = "Hazmat/Dangerous Goods"
+        visible = true
+      },
+      {
+        id = "ITEMSTORE"
+        label = "Web Store"
+        visible = true
+        fieldGroups = {
+          fieldGroup = [
+            {
+              scriptid = "webstoredisplay"
+              label = "Web Store Display"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "ISONLINE"
+                      label = "Display in Web Store"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "PAGETITLE"
+                      label = "Page Title"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "STOREDISPLAYNAME"
+                      label = "Web Store Display Name"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "STOREDESCRIPTION"
+                      label = "Web Store Description"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "STOREDETAILEDDESCRIPTION"
+                      label = "Detailed Description"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "FEATUREDDESCRIPTION"
+                      label = "Featured Description"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "STOREITEMTEMPLATE"
+                      label = "Item Drilldown Template"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "STOREDISPLAYIMAGE"
+                      label = "Item Display Image"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "STOREDISPLAYTHUMBNAIL"
+                      label = "Item Display Thumbnail"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "specialsdisplay"
+              label = "Specials Display"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "ONSPECIAL"
+                      label = "On Special"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SPECIALSDESCRIPTION"
+                      label = "Specials Description"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "stockandpricingbehavior"
+              label = "Stock and Pricing Behavior"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "ISDONATIONITEM"
+                      label = "Variable Amount"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SHOWDEFAULTDONATIONAMOUNT"
+                      label = "Show Default Amount"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "MAXDONATIONAMOUNT"
+                      label = "Maximum Variable Amount"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "DONTSHOWPRICE"
+                      label = "Don't Show Price"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "NOPRICEMESSAGE"
+                      label = "No Price Message"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "searchengineandfeeds"
+              label = "Search Engine and Feeds"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "URLCOMPONENT"
+                      label = "URL Component"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "LOCATIONURLALIAS"
+                      label = "URL Component"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SEARCHKEYWORDS"
+                      label = "Search Keywords"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "EXCLUDEFROMSITEMAP"
+                      label = "Exclude From Sitemap"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SITEMAPPRIORITY"
+                      label = "Sitemap Priority"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "PRODUCTFEED"
+                      label = "Product Feed"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SHOPPINGDOTCOMCATEGORY"
+                      label = "Shopping.com Category"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "SHOPZILLACATEGORYID"
+                      label = "Shopzilla Category ID"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                    {
+                      id = "NEXTAGCATEGORY"
+                      label = "NexTag Category"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                    },
+                  ]
+                },
+              ]
+            },
+          ]
+        }
+        subItems = {
+          subList = [
+            {
+              id = "ITEMSITECATEGORY"
+              label = "Web Site Categories"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ITEMCORRELATEDITEMS"
+              label = "Correlated Items"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+          subTab = [
+            {
+              id = "ITEMRELITEMS"
+              label = "Related Items"
+              visible = true
+              fieldGroups = {
+                defaultFieldGroup = {
+                  fields = [
+                    {
+                      position = "MIDDLE"
+                      field = [
+                        {
+                          id = "RELATEDITEMSDESCRIPTION"
+                          label = "Related Items Description"
+                          visible = true
+                          mandatory = false
+                          displayType = "NORMAL"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                      ]
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        id = "ITEMRELRECORDS"
+        label = "Related Records"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "ITEMTRANSACTIONS"
+              label = "Transactions"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "ITEMCOMMUNICATION"
+        label = "Communication"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "ITEMUSERNOTES"
+              label = "User Notes"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ITEMEVENTS"
+              label = "Events"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ITEMTASKS"
+              label = "Tasks"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ITEMCALLS"
+              label = "Phone Calls"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ITEMMEDIAITEM"
+              label = "Files"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "ITEMPREFERENCES"
+        label = "Preferences"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "AVAILABLETOPARTNERS"
+                    label = "Available to Adv. Partners"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "OFFERSUPPORT"
+                    label = "Offer Support"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = "ITEMSYSTEMINFORMATION"
+        label = "System Information"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "ISINACTIVE"
+                    label = "Inactive"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "DATECONVERTEDTOINV"
+                    label = "Date Converted To Inventory"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ORIGINALITEMTYPE"
+                    label = "Original Item Type"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "ORIGINALITEMSUBTYPE"
+                    label = "Original Item SubType"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+        subItems = {
+          subList = [
+            {
+              id = "ITEMSYSTEMNOTES"
+              label = "System Notes"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ITEMACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ITEMWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+          subTab = [
+            {
+              id = "ITEMTRANSLATION"
+              label = "Translation"
+              visible = true
+            },
+          ]
+        }
+      },
+      {
+        id = "ITEMCUSTOM"
+        label = "Custom"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.itemcustomfield.instance.custitem_oa_export_err_msg.scriptid
+                    label = "OpenAir: Export Error (2)"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_244_t1499227_705.scriptid
+        label = "SuiteOffice - Image Gallery"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.itemcustomfield.instance.custitem_wd_image_gallery_2.scriptid
+                    label = "SuiteOffice - Image Gallery - image 2"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.itemcustomfield.instance.custitem_wd_image_gallery_3.scriptid
+                    label = "SuiteOffice - Image Gallery - image 3"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.itemcustomfield.instance.custitem_wd_image_gallery_4.scriptid
+                    label = "SuiteOffice - Image Gallery - image 4"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_245_t1499227_705.scriptid
+        label = "SuiteOffice - Related Items"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_243_t1499227_705.scriptid
+        label = "SuiteOffice - Badges"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.itemcustomfield.instance.custitem_wd_badges.scriptid
+                    label = "SuiteOffice - Badges"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = "ITEMINVENTORYDETAIL"
+        label = "Inventory Detail"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "ITEMINVENTORYDETAILSRCH"
+              label = "Inventory Detail"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ITEMBINNUMBERSEARCH"
+              label = "Bin Numbers"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ITEMINVENTORYNUMBERSRCH"
+              label = "Inventory Numbers"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_15_3776644_208.scriptid
+        label = "EU Intrastat Reporting"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "[scriptid=custitem_commodity_code]"
+                    label = "Commodity Code"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.itemcustomfield.instance.custitem_code_of_supply.scriptid
+                    label = "Code of Supply"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custitem_type_of_goods]"
+                    label = "Type of Goods"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custitem_itr_supplementary_unit]"
+                    label = "Supplementary Unit"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_4_3838944_241.scriptid
+        label = "Tax Reporting"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "[scriptid=custitem_un_number]"
+                    label = "UN Number"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_259_t1499227_705.scriptid
+        label = "View Item Details"
+        visible = true
+      },
+    ]
+  }
+  quickViewFields = {
+    field = [
+      {
+        id = "ITEMID"
+      },
+      {
+        id = "DISPLAYNAME"
+      },
+      {
+        id = "SALESDESCRIPTION"
+      },
+      {
+        id = "PARENT"
+      },
+      {
+        id = "UNITSTYPE"
+      },
+      {
+        id = "RATE"
+      },
+      {
+        id = "QUANTITYAVAILABLE"
+      },
+    ]
+  }
+  actionbar = {
+    buttons = {
+      button = [
+        {
+          id = "PRINTLABEL"
+          label = "Print Label"
+          visible = true
+        },
+        {
+          id = "SEARCH"
+          label = "Search"
+          visible = true
+        },
+      ]
+    }
+    menu = {
+      menuitem = [
+        {
+          id = "ADDMATRIX"
+          label = "Add Items"
+          visible = true
+        },
+        {
+          id = "CREATEMATRIX"
+          label = "Create Matrix"
+          visible = true
+        },
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "REMOVEMATRIXOPTIONS"
+          label = "Remove Matrix Options"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = true
+        },
+        {
+          id = "UPDATEMATRIX"
+          label = "Update Matrix"
+          visible = true
+        },
+        {
+          id = "VIEWALLTRANSACTIONS"
+          label = "View All Transactions"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

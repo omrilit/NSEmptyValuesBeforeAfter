@@ -1,0 +1,47 @@
+netsuite.centercategory custcentercategory135 {
+  scriptid = "custcentercategory135"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab58.scriptid
+  label = "Setup"
+  links = {
+    link = [
+      {
+        linkid = "LIST_ITEM"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_BILLINGCLASS"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_BILLINGSCHEDULE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_REVRECSCHEDS"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_REVRECSCHEDULE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_PROJECTEXPENSETYPE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_AMORTIZATIONSCHEDULE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_AMORTIZATION"
+        shortlist = false
+      },
+      {
+        linkid = "EDIT_ALLOCATION"
+        linklabel = "Allocation Schedules"
+        shortlist = false
+      },
+    ]
+  }
+}

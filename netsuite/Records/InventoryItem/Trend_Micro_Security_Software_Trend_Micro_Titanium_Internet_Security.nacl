@@ -1,0 +1,326 @@
+netsuite.InventoryItem Trend_Micro_Security_Software_Trend_Micro_Titanium_Internet_Security@sssussss {
+  purchaseDescription = "Trend Micro Titanium Internet Security"
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  salesDescription = "Trend Micro Titanium Internet Security<br>"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  weight = 20
+  weightUnit = "_lb"
+  costingMethodDisplay = "Average"
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  cost = 299
+  totalValue = 2326.88
+  averageCost = 122.47
+  useBins = false
+  autoLeadTime = true
+  lastPurchasePrice = 10.51
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  autoReorderPoint = true
+  storeDisplayName = "Trend Micro Titanium Internet Security"
+  storeDescription = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">Trend
+  Micro Titanium Internet Security</td>
+</tr></tbody></table>
+'''
+  storeDetailedDescription = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">Trend
+  Micro Titanium Internet Security</td>
+</tr></tbody></table>
+'''
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Trend Micro Titanium Internet Security"
+  displayName = "Trend Micro Titanium Internet Security"
+  parent = netsuite.InventoryItem.instance.Trend_Micro_Security_Software@s
+  isOnline = true
+  offerSupport = false
+  isInactive = true
+  availableToPartners = true
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.Yen
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 230000
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.EUR
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 1150
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 999
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 999
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+        displayName = "Metropolitan Sofa"
+        salesDescription = "Den Metropolitan Konvertibel Sofa kombinerer smart alsidighed hos nutids- legeme hen til passe jeres indre smag."
+        storeDisplayName = "Metropolitan Sofa"
+        storeDescription = "Den Metropolitan Konvertibel Sofa kombinerer smart alsidighed hos nutids- legeme hen til passe jeres indre smag."
+        storeDetailedDescription = "Den Metropolitan Konvertibel Sofa kombinerer smart alsidighed hos nutids- legeme hen til passe jeres indre smag."
+      },
+      {
+        locale = "_german"
+        language = "German"
+        displayName = "Metropolitan Sofa"
+        salesDescription = "Die Metropolitan Convertible Sofa smart Vielseitigkeit kombiniert mit zeitgenössischer Einrichtung für Ihr Interieur-Stil."
+        storeDisplayName = "Metropolitan Sofa"
+        storeDescription = "Die Metropolitan Convertible Sofa smart Vielseitigkeit kombiniert mit zeitgenössischer Einrichtung für Ihr Interieur-Stil."
+        storeDetailedDescription = "Die Metropolitan Convertible Sofa smart Vielseitigkeit kombiniert mit zeitgenössischer Einrichtung für Ihr Interieur-Stil."
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+        displayName = "Metropolitan Sofa"
+        salesDescription = "The Metropolitan Convertible Sofa combines smart versatility with contemporary body to suit your interior style."
+        storeDisplayName = "Metropolitan Sofa"
+        storeDescription = "The Metropolitan Convertible Sofa combines smart versatility with contemporary body to suit your interior style."
+        storeDetailedDescription = "The Metropolitan Convertible Sofa combines smart versatility with contemporary body to suit your interior style."
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+        displayName = "メトロポリタン コンバーチブル ソファー"
+        storeDisplayName = "メトロポリタン コンバーチブル ソファー"
+        storeDescription = "すっきりとしたシャープなデザインの2.5人掛ソファです。"
+        storeDetailedDescription = "すっきりとしたシャープなデザインの2.5人掛ソファです。金属製の脚がモード感を演出します。"
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "05 UK Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.05_UK_Warehouse@s
+      },
+      {
+        location = "06 Australia Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.06_Australia_Warehouse@s
+      },
+      {
+        location = "07 Japan/日本 Warehouse"
+        quantityOnHand = 10
+        onHandValueMli = 16990
+        averageCostMli = 1699
+        lastPurchasePriceMli = 1699
+        quantityOnOrder = 0
+        quantityCommitted = 0
+        quantityAvailable = 10
+        locationId = netsuite.Location.instance.07_Japan____Warehouse@sd_26085_26412s
+      },
+      {
+        location = "08 Denmark Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.08_Denmark_Warehouse@s
+      },
+      {
+        location = "09 Germany/Deutsch Warehouse"
+        quantityOnHand = 9
+        onHandValueMli = 2001
+        averageCostMli = 222.33333333
+        lastPurchasePriceMli = 222.333
+        quantityOnOrder = 0
+        quantityCommitted = 0
+        quantityAvailable = 9
+        locationId = netsuite.Location.instance.09_Germany_Deutsch_Warehouse@sds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityOnHand = 0
+        onHandValueMli = 0
+        averageCostMli = 0
+        quantityOnOrder = 0
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+      {
+        location = "Australian Warehouse"
+        locationId = netsuite.Location.instance.Australian_Warehouse@s
+      },
+      {
+        location = "Frankfurt Warehouse"
+        locationId = netsuite.Location.instance.Frankfurt_Warehouse@s
+      },
+      {
+        location = "London Warehouse"
+        locationId = netsuite.Location.instance.London_Warehouse@s
+      },
+      {
+        location = "Manila Warehouse"
+        locationId = netsuite.Location.instance.Manila_Warehouse@s
+      },
+      {
+        location = "Singapore Warehouse"
+        locationId = netsuite.Location.instance.Singapore_Warehouse@s
+      },
+    ]
+  }
+  presentationItemList = {
+    presentationItem = [
+      {
+        item = netsuite.RecordRef.instance.InventoryItem_item_250
+        itemType = "_item"
+        description = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="81">
+  <td class="xl65" style="height:60.75pt;width:301pt" height="81" width="401">Linksys
+  Smart Wi-Fi Router EA6700<span style="mso-spacerun:yes">&nbsp;</span></td>
+</tr></tbody></table>
+'''
+      },
+      {
+        item = netsuite.RecordRef.instance.InventoryItem_item_265
+        itemType = "_item"
+        description = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">Trend
+  Micro Titanium Internet Security</td>
+</tr></tbody></table>
+'''
+      },
+      {
+        item = netsuite.RecordRef.instance.InventoryItem_item_257
+        itemType = "_item"
+        description = '''
+<table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">dlinkgo
+  5-Port Fast Ethernet Desktop Switch</td>
+</tr></tbody></table>
+'''
+      },
+    ]
+  }
+  identifier = "Trend Micro Security Software_Trend Micro Titanium Internet Security"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = '''
+Trend Micro Titanium Internet Security Trend Micro Titanium Internet Security <table border="0" cellpadding="0" cellspacing="0" width="401"><colgroup><col width="401"></colgroup><tbody><tr height="21">
+  <td class="xl65" style="height:15.75pt;width:301pt" height="21" width="401">Trend
+  Micro Titanium Internet Security</td>
+</tr></tbody></table> null
+'''
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+  custom_custitem_wd_relateditem_html = "<div class=\"row item active\"><div class=\"col-xs-6 col-sm-4 col-md-2 cell\"><a  class=\"thumbnail\"  href=\"http://shopping.na1.netsuite.com/s.nl/c.TSTDRV1373481/n.2/it.A/id.250/.f\" title=\"Linksys Smart Wi-Fi Router EA6700\"><img src=\"\" alt=\"Linksys Smart Wi-Fi Router EA6700\"></a><h3><a href=\"http://shopping.na1.netsuite.com/s.nl/c.TSTDRV1373481/n.2/it.A/id.250/.f\">Linksys Smart Wi-Fi Router EA6700</a></h3></div><div class=\"col-xs-6 col-sm-4 col-md-2 cell\"><a  class=\"thumbnail\"  href=\"http://shopping.na1.netsuite.com/s.nl/c.TSTDRV1373481/it.A/id.250/.f\" title=\"Linksys Smart Wi-Fi Router EA6700\"><img src=\"\" alt=\"Linksys Smart Wi-Fi Router EA6700\"></a><h3><a href=\"http://shopping.na1.netsuite.com/s.nl/c.TSTDRV1373481/it.A/id.250/.f\">Linksys Smart Wi-Fi Router EA6700</a></h3></div><div class=\"col-xs-6 col-sm-4 col-md-2 cell\"><a  class=\"thumbnail\"  href=\"http://qsdilley.production.na1.netsuitestaging.com/s.nl/it.A/id.250/.f\" title=\"Linksys Smart Wi-Fi Router EA6700\"><img src=\"\" alt=\"Linksys Smart Wi-Fi Router EA6700\"></a><h3><a href=\"http://qsdilley.production.na1.netsuitestaging.com/s.nl/it.A/id.250/.f\">Linksys Smart Wi-Fi Router EA6700</a></h3></div><div class=\"col-xs-6 col-sm-4 col-md-2 cell\"><a  class=\"thumbnail\"  href=\"http://shopping.na1.netsuite.com/s.nl/c.TSTDRV1373481/n.2/it.A/id.265/.f\" title=\"Trend Micro Titanium Internet Security\"><img src=\"\" alt=\"Trend Micro Titanium Internet Security\"></a><h3><a href=\"http://shopping.na1.netsuite.com/s.nl/c.TSTDRV1373481/n.2/it.A/id.265/.f\">Trend Micro Titanium Internet Security</a></h3></div><div class=\"col-xs-6 col-sm-4 col-md-2 cell\"><a  class=\"thumbnail\"  href=\"http://shopping.na1.netsuite.com/s.nl/c.TSTDRV1373481/it.A/id.265/.f\" title=\"Trend Micro Titanium Internet Security\"><img src=\"\" alt=\"Trend Micro Titanium Internet Security\"></a><h3><a href=\"http://shopping.na1.netsuite.com/s.nl/c.TSTDRV1373481/it.A/id.265/.f\">Trend Micro Titanium Internet Security</a></h3></div><div class=\"col-xs-6 col-sm-4 col-md-2 cell\"><a  class=\"thumbnail\"  href=\"http://qsdilley.production.na1.netsuitestaging.com/s.nl/it.A/id.265/.f\" title=\"Trend Micro Titanium Internet Security\"><img src=\"\" alt=\"Trend Micro Titanium Internet Security\"></a><h3><a href=\"http://qsdilley.production.na1.netsuitestaging.com/s.nl/it.A/id.265/.f\">Trend Micro Titanium Internet Security</a></h3></div></div>"
+}

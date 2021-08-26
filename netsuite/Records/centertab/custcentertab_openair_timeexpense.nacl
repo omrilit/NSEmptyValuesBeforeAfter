@@ -1,0 +1,62 @@
+netsuite.centertab custcentertab_openair_timeexpense {
+  scriptid = "custcentertab_openair_timeexpense"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  label = "Time & Expense"
+  portlets = {
+    portlet = [
+      {
+        scriptid = "portlet_1238_t1499227_189"
+        isportletshown = true
+        portlet = "REMINDERS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1226_t1499227_189"
+        isportletshown = true
+        portlet = "KPIMETER"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1237_t1499227_189"
+        isportletshown = true
+        portlet = "SNAPSHOTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1232_t1499227_189"
+        isportletshown = true
+        portlet = "SCRIPTPORTLET"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1229_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1243_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1225_t1499227_189"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "1"
+      },
+      {
+        scriptid = "portlet_1236_t1499227_189"
+        isportletshown = true
+        portlet = "LIST"
+        portletcolumn = "1"
+      },
+    ]
+  }
+}

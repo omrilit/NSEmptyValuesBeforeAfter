@@ -1,0 +1,46 @@
+netsuite.centercategory custcentercategory5_6 {
+  scriptid = "custcentercategory5_6"
+  center = "BASIC"
+  centertab = netsuite.centertab.instance.custcentertab8_9.scriptid
+  label = "Payment Processing"
+  links = {
+    link = [
+      {
+        linklabel = "Payment File Administration"
+        linkobject = netsuite.savedsearch.instance.customsearch_2663_payment_file_admin.scriptid
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Bill Payment Processing"
+        linkobject = "[scriptid=customscript_2663_payment_selection_s.customdeploy_2663_payment_selection_s]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Bill Payment Batches"
+        linkobject = "[scriptid=customsearch_2663_payment_batches]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Invoice Payment Processing"
+        linkobject = "[scriptid=customscript_2663_payment_ar_selection_s.customdeploy_2663_payment_ar_selection_s]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Customer Refund Payments"
+        linkobject = "[scriptid=customscript_2663_cust_ref_selection_s.customdeploy_2663_cust_ref_selection_s]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Payment Batch List"
+        linkobject = "[scriptid=customscript_2663_batch_selection_main_s.customdeploy_2663_batch_selection_main_s]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

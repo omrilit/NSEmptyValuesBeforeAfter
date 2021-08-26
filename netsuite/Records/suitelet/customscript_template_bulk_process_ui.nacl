@@ -1,0 +1,46 @@
+netsuite.suitelet customscript_template_bulk_process_ui {
+  scriptid = "customscript_template_bulk_process_ui"
+  defaultfunction = "Template_BulkProcess_UI"
+  isinactive = false
+  name = "NSTS | PDF Template HTML Bulk Process UI"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_SL_Template_Suitelet_BulkProcess_UI_js@dsduuuuuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_template_bulk_process_ui"
+        allemployees = false
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        status = "RELEASED"
+        title = "Template HTML Bulk Process UI"
+        links = {
+          link = [
+            {
+              linkcategory = "BASICTRANSACTIONSMANAGEMENT"
+              linklabel = "Bulk Printing/Emailing"
+            },
+          ]
+        }
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_FeatureLib_js@dsduuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_FunctionLib_js@dsduuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_constants_and_config_js@dsduuuuv.path
+      },
+    ]
+  }
+}

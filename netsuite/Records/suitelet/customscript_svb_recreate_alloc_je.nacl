@@ -1,0 +1,33 @@
+netsuite.suitelet customscript_svb_recreate_alloc_je {
+  scriptid = "customscript_svb_recreate_alloc_je"
+  defaultfunction = "suitelet_ReCreateAllocJE"
+  isinactive = false
+  name = "NSTS - SVB | Recreate Alloc JE"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_SL_AdjustDistribution_js@dsduuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_svb_recreate_alloc_je"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = true
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "NSTS - SVB | Recreate Alloc JE"
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_Common_js@dsduuv.path
+      },
+    ]
+  }
+}

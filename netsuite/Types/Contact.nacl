@@ -1,0 +1,86 @@
+type netsuite.Contact {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  string entityId {
+  }
+  netsuite.RecordRef contactSource {
+  }
+  netsuite.RecordRef company {
+  }
+  string salutation {
+  }
+  string firstName {
+  }
+  string middleName {
+  }
+  string lastName {
+  }
+  string title {
+  }
+  string phone {
+  }
+  string fax {
+  }
+  string email {
+  }
+  string defaultAddress {
+  }
+  boolean isPrivate {
+  }
+  boolean isInactive {
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  string phoneticName {
+  }
+  netsuite.CategoryList categoryList {
+  }
+  string altEmail {
+  }
+  string officePhone {
+  }
+  string homePhone {
+  }
+  string mobilePhone {
+  }
+  netsuite.Employee supervisor {
+    isReference = true
+  }
+  string supervisorPhone {
+  }
+  netsuite.RecordRef assistant {
+  }
+  string assistantPhone {
+  }
+  string comments {
+  }
+  string globalSubscriptionStatus {
+  }
+  netsuite.file image {
+    isReference = true
+  }
+  boolean billPay {
+  }
+  netsuite.ContactAddressbookList addressbookList {
+  }
+  netsuite.SubscriptionsList subscriptionsList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  string custom_custentity_oa_export_err_msg {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_export_err_msg.scriptid
+  }
+  boolean custom_custentity_oa_export_to_openair {
+    field_instance = netsuite.entitycustomfield.instance.custentity_oa_export_to_openair.scriptid
+  }
+}

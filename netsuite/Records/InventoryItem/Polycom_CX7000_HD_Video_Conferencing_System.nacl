@@ -1,0 +1,359 @@
+netsuite.InventoryItem Polycom_CX7000_HD_Video_Conferencing_System@s {
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  intercoCogsAccount = netsuite.Account.instance.COGS_5000_Intercompany_Cost_of_Goods_Sold_5900@uussssu
+  salesDescription = "Polycom CX7000 HD Video Conferencing System"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  intercoIncomeAccount = netsuite.Account.instance.Revenue_4000_Intercompany_Revenue_4900@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  shippingCostUnits = "per Ea."
+  handlingCostUnits = "per Ea."
+  weightUnits = "per Ea."
+  costingMethodDisplay = "Average"
+  unitsType = {
+    name = "EACH"
+  }
+  stockUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  purchaseUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  saleUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  minimumQuantityUnits = "Ea."
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  costEstimateUnits = "per Ea."
+  vsoeDelivered = false
+  cost = 13210
+  costUnits = "per Ea."
+  totalValue = 1488324.86
+  averageCost = 9922.17
+  useBins = false
+  quantityReorderUnits = "Quantity On Hand, Reorder Point, Quantity On Order, and Quantity Committed are in Ea."
+  autoLeadTime = true
+  lastPurchasePrice = 9922.33
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  safetyStockLevelUnits = "Ea."
+  autoReorderPoint = true
+  storeDisplayName = "Polycom CX7000 HD Video Conferencing System"
+  storeDisplayThumbnail = netsuite.RecordRef.instance.InventoryItem_storeDisplayThumbnail_12091
+  storeDisplayImage = netsuite.RecordRef.instance.InventoryItem_storeDisplayImage_12090
+  storeDescription = "Polycom CX7000 HD Video Conferencing System&nbsp;"
+  storeDetailedDescription = '''
+<p>The Polycom 7200-82584-001 is a Unified Collaboration System. This system redefines the way users communicate by providing a unique multi-way communication experience with high definition (HD) telepresence technology. This results in a rich unified communication experience that enables Lync users to collaborate naturally and effortlessly without boundaries.
+<br><br>
+The Polycom CX7000 natively integrates with Microsoft® Exchange® providing an at-a-glance room calendar enabling users to quickly locate and join their Lync Online meetings with a single click. It enables to use plug and play with integrated Microsoft IT Infrastructures whether it be on premise Lync or hosted Lync in the cloud. Thus allows user to deploy the device easily as well as manage it very efficiently.
+</p>
+
+<ul class="a-vertical a-spacing-none">
+<li>Unified Collaboration System</li>
+<li>720p HD EagleEye III Camera</li>
+<li>Lower Total Cost of Ownership</li>
+<li>Audio Supported on HDMI Output</li>
+<li>Supports Up to 2 Daisy-Chained Mics</li>
+<li>Easy Deployment</li>
+<li>Remote Administrator Access</li>
+<li>Click-To-Join Online Meetings</li>
+<li>Plug-And-Play Device</li>
+<li>Integrated Camera control</li>
+<li>Partition Write Protection</li>
+Secure Password <li>Authentication</li>
+<li>Push VGA Content</li>
+<li>File System Lock Down</li>	
+					</ul>
+'''
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  urlComponent = "Polycom-CX7000-HD-Video-Conferencing-System"
+  itemId = "Polycom CX7000 HD Video Conferencing System"
+  displayName = "Polycom CX7000 HD Video Conferencing System"
+  isOnline = true
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 15662
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 15662
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 15662
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 15661.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 15661.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 15661.99
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 12530
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 12530
+              quantity = 0
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 12530
+              quantity = 0
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  siteCategoryList = {
+    siteCategory = [
+      {
+        website = netsuite.RecordRef.instance.InventoryItem_website_4
+        category = netsuite.RecordRef.instance.InventoryItem_category_2074
+        isDefault = false
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnHand = 50
+        onHandValueMli = 660500
+        averageCostMli = 13210
+        lastPurchasePriceMli = 13210
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "05 UK Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.05_UK_Warehouse@s
+      },
+      {
+        location = "06 Australia Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.06_Australia_Warehouse@s
+      },
+      {
+        location = "07 Japan/日本 Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.07_Japan____Warehouse@sd_26085_26412s
+      },
+      {
+        location = "08 Denmark Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.08_Denmark_Warehouse@s
+      },
+      {
+        location = "09 Germany/Deutsch Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.09_Germany_Deutsch_Warehouse@sds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+      {
+        location = "Australian Warehouse"
+        quantityOnHand = 50
+        onHandValueMli = 727142.59
+        averageCostMli = 14542.8518
+        lastPurchasePriceMli = 14542.8518
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.Australian_Warehouse@s
+      },
+      {
+        location = "Frankfurt Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Frankfurt_Warehouse@s
+      },
+      {
+        location = "London Warehouse"
+        quantityOnHand = 50
+        onHandValueMli = 335160.09
+        averageCostMli = 6703.2018
+        lastPurchasePriceMli = 6703.2018
+        quantityAvailable = 50
+        locationId = netsuite.Location.instance.London_Warehouse@s
+      },
+      {
+        location = "Manila Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Manila_Warehouse@s
+      },
+      {
+        location = "Singapore Warehouse"
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.Singapore_Warehouse@s
+      },
+    ]
+  }
+  identifier = "Polycom CX7000 HD Video Conferencing System"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Polycom CX7000 HD Video Conferencing System Polycom CX7000 HD Video Conferencing System Polycom CX7000 HD Video Conferencing System&nbsp; null"
+  custom_custitem_wd_image_gallery_2 = netsuite.RecordRef.instance.InventoryItem_custom_custitem_wd_image_gallery_2_12092
+  custom_custitem_wd_image_gallery_3 = netsuite.RecordRef.instance.InventoryItem_custom_custitem_wd_image_gallery_3_12093
+  custom_custitem_wd_img_gallery_carousel_html = "<div class=\"item active easyzoom easyzoom--overlay\" data-slide-number=\"0\"><a href=\"/core/media/media.nl?id=12090&c=TSTDRV1373481&h=48e770217723faa523fc\"><img src=\"/core/media/media.nl?id=12090&c=TSTDRV1373481&h=48e770217723faa523fc\" class=\"img-responsive\"></a></div><div class=\"item  easyzoom easyzoom--overlay\" data-slide-number=\"1\"><a href=\"/core/media/media.nl?id=12092&c=TSTDRV1373481&h=f11eb95b65e9a0fc73ee\"><img src=\"/core/media/media.nl?id=12092&c=TSTDRV1373481&h=f11eb95b65e9a0fc73ee\" class=\"img-responsive\"></a></div><div class=\"item  easyzoom easyzoom--overlay\" data-slide-number=\"2\"><a href=\"/core/media/media.nl?id=12093&c=TSTDRV1373481&h=78b12b6f2098599ce1d8\"><img src=\"/core/media/media.nl?id=12093&c=TSTDRV1373481&h=78b12b6f2098599ce1d8\" class=\"img-responsive\"></a></div>"
+  custom_custitem_wd_img_gallery_slider_html = "<div class=\"col-xs-2 thumbnail\"><a id=\"carousel-selector-0\" class=\"selected\"><img src=\"/core/media/media.nl?id=12091&c=TSTDRV1373481&h=54e8ba2f4712bf1f5798\"></a></div><div class=\"col-xs-2 thumbnail\"><a id=\"carousel-selector-1\" class=\"\"><img src=\"/core/media/media.nl?id=12092&c=TSTDRV1373481&h=f11eb95b65e9a0fc73ee\"></a></div><div class=\"col-xs-2 thumbnail\"><a id=\"carousel-selector-2\" class=\"\"><img src=\"/core/media/media.nl?id=12093&c=TSTDRV1373481&h=78b12b6f2098599ce1d8\"></a></div>"
+  custom_custitem_wd_process_items = true
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

@@ -1,0 +1,24 @@
+type netsuite.PaycheckJournalEarning {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number id {
+  }
+  netsuite.PayrollItem payrollItem {
+    isReference = true
+  }
+  number hours {
+  }
+  number amount {
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+}

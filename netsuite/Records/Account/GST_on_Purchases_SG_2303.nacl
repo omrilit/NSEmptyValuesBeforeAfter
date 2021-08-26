@@ -1,0 +1,21 @@
+netsuite.Account GST_on_Purchases_SG_2303@sssu {
+  acctType = "_otherCurrentAsset"
+  acctNumber = "2303"
+  acctName = "GST on Purchases SG"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "GST on Purchases SG_2303"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

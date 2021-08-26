@@ -1,0 +1,22 @@
+netsuite.Account zVAT__________z56@_65288_20184_21152_20385_20516_31246_65289_36000_20661u {
+  acctType = "_otherCurrentLiability"
+  acctNumber = "z56"
+  acctName = "zVAT（付加価値税）負債"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = true
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = true
+  identifier = "zVAT（付加価値税）負債_z56"
+  externalId = "11220"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

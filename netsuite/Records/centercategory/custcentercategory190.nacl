@@ -1,0 +1,42 @@
+netsuite.centercategory custcentercategory190 {
+  scriptid = "custcentercategory190"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_psa.scriptid
+  label = "Reports"
+  links = {
+    link = [
+      {
+        linkid = "REPO_NEG284"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_NEG258"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_67"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_NEG182"
+        shortlist = false
+      },
+      {
+        linklabel = "Reports module"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_reports.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_534"
+        linklabel = "Project Profitability"
+        shortlist = false
+      },
+      {
+        linkid = "REPO_536"
+        linklabel = "Project Profitability by Month"
+        shortlist = false
+      },
+    ]
+  }
+}

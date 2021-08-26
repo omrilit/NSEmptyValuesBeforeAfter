@@ -1,0 +1,21 @@
+netsuite.Account zOwner_s_Capital_z3002@tsu {
+  acctType = "_equity"
+  acctNumber = "z3002"
+  acctName = "zOwner's Capital"
+  includeChildren = true
+  generalRate = "_historical"
+  cashFlowRate = "_historical"
+  isInactive = true
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "zOwner's Capital_z3002"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

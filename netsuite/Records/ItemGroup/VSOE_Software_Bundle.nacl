@@ -1,0 +1,55 @@
+netsuite.ItemGroup VSOE_Software_Bundle@s {
+  includeStartEndLines = true
+  availableToPartners = false
+  isInactive = true
+  itemId = "VSOE Software Bundle"
+  description = "Software License -- Bundle with 1st year Maintenance included (VSOE pricing)"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  includeChildren = true
+  printItems = false
+  memberList = {
+    itemMember = [
+      {
+        memberDescr = "Enterprise Software License"
+        quantity = 1
+        vsoePermitDiscount = "_asAllowed"
+        vsoeDelivered = true
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_2
+        item = netsuite.RecordRef.instance.ItemGroup_item_75
+        lineNumber = 1
+      },
+      {
+        memberDescr = "1st Year Maintenance (included in Software Bundle)"
+        quantity = 1
+        vsoePermitDiscount = "_asAllowed"
+        vsoeDelivered = false
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_2
+        item = netsuite.RecordRef.instance.ItemGroup_item_74
+        lineNumber = 2
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "VSOE Software Bundle"
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

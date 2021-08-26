@@ -1,0 +1,59 @@
+netsuite.savedcsvimport custimport_93_t1740134_127 {
+  scriptid = "custimport_93_t1740134_127"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  customrecord = "[scriptid=customrecord_ncfar_asset]"
+  datahandling = "UPDATE"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "FAM update"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "CUSTOMRECORD"
+  runserversuitescript = true
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "CUSTOMRECORD"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "CUSTOMRECORD"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdeprrules]"
+              columnreference = {
+                column = "depreciation rules"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ID"
+              columnreference = {
+                column = "Internal ID"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

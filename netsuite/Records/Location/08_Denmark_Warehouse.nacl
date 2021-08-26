@@ -1,0 +1,33 @@
+netsuite.Location "08_Denmark_Warehouse@s" {
+  name = "08 Denmark Warehouse"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_Denmark@buu,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_denmark"
+    addressee = "08 Denmark Warehouse"
+    addrText = "08 Denmark Warehouse<br>Denmark"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "08 Denmark Warehouse"
+}

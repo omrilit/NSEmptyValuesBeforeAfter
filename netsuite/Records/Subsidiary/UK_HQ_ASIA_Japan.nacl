@@ -1,0 +1,62 @@
+netsuite.Subsidiary UK_HQ_ASIA_Japan@buu {
+  name = "Japan"
+  parent = netsuite.Subsidiary.instance.UK_HQ_ASIA@bu
+  isInactive = false
+  showSubsidiaryName = false
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  country = "_japan"
+  mainAddress = {
+    country = "_japan"
+    addressee = "Japan"
+    addrText = "Japan<br>Japan"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "AprilMarchFiscalCalendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "AprilMarchFiscalCalendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.Yen
+  edition = "JP"
+  interCoAccount = {
+    name = "1802 Intercompany Clearing Account : Intercompany Payable/Receivable Y"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedKingdom
+        country = "GB"
+      },
+      {
+        nexusId = netsuite.Nexus.instance._japan
+        country = "JP"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_ASIA_Japan"
+}

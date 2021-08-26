@@ -1,0 +1,577 @@
+netsuite.entryForm custform_98_t1499227_346 {
+  scriptid = "custform_98_t1499227_346"
+  standard = "STANDARDCUSTOMRECORD_IE_DASHBOARD_TILESFORM"
+  name = "Custom Dashboard Tile Form"
+  recordType = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.scriptid
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "CUSTOMFORM"
+              label = "Custom Form"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "NAME"
+              label = "Name"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = true
+            },
+            {
+              id = "RECORDID"
+              label = "ID"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "OWNER"
+              label = "Owner"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "CREATED"
+              label = "Date Created"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "LASTMODIFIED"
+              label = "Last Modified"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "ISINACTIVE"
+              label = "Inactive"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.0.scriptid
+              label = "Tile Type"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.1.scriptid
+              label = "Roles"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "RECORDNOTES"
+        label = "Notes"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDUSERNOTES"
+              label = "User Notes"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDSYSTEMNOTES"
+              label = "System Notes"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDTRANSLATION"
+        label = "Translation"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDTRANSLATIONS"
+              label = "Translation"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDCUSTOM"
+        label = "Custom"
+        visible = false
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+        label = "Data"
+        visible = true
+        fieldGroups = {
+          fieldGroup = [
+            {
+              scriptid = "fieldgroup_174_t1499227_449"
+              label = "Data Source"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.2.scriptid
+                      label = "Saved Search"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.19.scriptid
+                      label = "Value from Field"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.4.scriptid
+                      label = "Prefix"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.5.scriptid
+                      label = "Suffix"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.6.scriptid
+                      label = "Drilldown Link"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.7.scriptid
+                      label = "Display +/- Sign"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_175_t1499227_449"
+              label = "Comparison"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.21.scriptid
+                      label = "Compare"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.23.scriptid
+                      label = "Compare Field"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.22.scriptid
+                      label = "Search Compare"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.24.scriptid
+                      label = "Compare Type"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_178_t1499227_449"
+              label = "Script"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.25.scriptid
+                      label = "Auto Run Script"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.26.scriptid
+                      label = "Script ID"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.27.scriptid
+                      label = "Deployment ID"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.1.scriptid
+        label = "Appearance"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.9.scriptid
+                    label = "Tile Color"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.11.scriptid
+                    label = "Font Color"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.8.scriptid
+                    label = "Icon"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.12.scriptid
+                    label = "Font Color Actual"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                  {
+                    id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.10.scriptid
+                    label = "Tile Color Actual"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    quickAdd = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.2.scriptid
+        label = "Alerts"
+        visible = true
+        fieldGroups = {
+          fieldGroup = [
+            {
+              scriptid = "fieldgroup_176_t1499227_449"
+              label = "Visual Alert"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.13.scriptid
+                      label = "Blink When"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.14.scriptid
+                      label = "Threshold"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              scriptid = "fieldgroup_177_t1499227_449"
+              label = "Email Alert"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.15.scriptid
+                      label = "Enable Alerts"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.16.scriptid
+                      label = "Alerts Label"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.17.scriptid
+                      label = "Email(s)"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                    {
+                      id = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.18.scriptid
+                      label = "Message"
+                      visible = true
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      quickAdd = false
+                    },
+                  ]
+                },
+              ]
+            },
+          ]
+        }
+      },
+    ]
+  }
+  actionbar = {
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = true
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

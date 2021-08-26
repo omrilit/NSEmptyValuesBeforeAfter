@@ -1,0 +1,252 @@
+netsuite.entryForm custform_19_t1499227_346 {
+  scriptid = "custform_19_t1499227_346"
+  standard = "STANDARDRESOURCEALLOCATIONFORM"
+  name = "Dilley SRP Resource Allocation Form"
+  recordType = "RESOURCEALLOCATION"
+  inactive = false
+  preferred = false
+  storedWithRecord = false
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "primaryinformation"
+        label = "Primary Information"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "ALLOCATIONRESOURCE"
+                label = "Resource"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PROJECT"
+                label = "Client:Project"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "NEXTAPPROVER"
+                label = "Next Approver"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "APPROVALSTATUS"
+                label = "Approval Status"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "REQUESTEDBY"
+                label = "Requested By"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "STARTDATE"
+                label = "Start Date"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ENDDATE"
+                label = "End Date"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = true
+              },
+              {
+                id = "ALLOCATIONAMOUNT"
+                label = "Allocate"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ALLOCATIONTYPE"
+                label = "Allocation Type"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PROJECTTASK"
+                label = "Project Task"
+                visible = false
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "NOTES"
+                label = "Notes"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CUSTOMFORM"
+                label = "Custom Form"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+    ]
+  }
+  tabs = {
+    tab = [
+      {
+        id = "EVENTCOMMUNICATION"
+        label = "Communication"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "EVENTUSERNOTES"
+              label = "User Notes"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_83_t1499227_705.scriptid
+        label = "Message"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_84_t1499227_705.scriptid
+        label = "Attachments"
+        visible = true
+      },
+      {
+        id = "CRMSYSTEMINFORMATION"
+        label = "System Information"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "EVENTSYSTEMNOTES"
+              label = "System Notes"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "EVENTACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "EVENTWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "EVENTCUSTOM"
+        label = "Custom"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_11_t1499227_705.scriptid
+        label = "Campaign Tasks"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_34_t1499227_705.scriptid
+        label = "Issues"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_82_t1499227_705.scriptid
+        label = "Activities"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_250_t1499227_705.scriptid
+        label = "OpenAir: Timesheets"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_260_t1499227_705.scriptid
+        label = "Track OpenAir Time"
+        visible = true
+      },
+    ]
+  }
+  actionbar = {
+    buttons = {
+      button = [
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+      ]
+    }
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

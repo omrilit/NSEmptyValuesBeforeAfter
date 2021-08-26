@@ -1,0 +1,21 @@
+netsuite.Account Contract_Payable__1_z2500@ssnu {
+  acctType = "_longTermLiability"
+  acctNumber = "z2500"
+  acctName = "Contract Payable #1"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = true
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = true
+  identifier = "Contract Payable #1_z2500"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

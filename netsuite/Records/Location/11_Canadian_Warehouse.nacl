@@ -1,0 +1,33 @@
+netsuite.Location "11_Canadian_Warehouse@s" {
+  name = "11 Canadian Warehouse"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_Canada@buu,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_canada"
+    addressee = "11 Canadian Warehouse"
+    addrText = "Canadian Warehouse<br>Canada"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "11 Canadian Warehouse"
+}

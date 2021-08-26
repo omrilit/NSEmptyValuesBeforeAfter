@@ -1,0 +1,28 @@
+netsuite.scheduledscript customscript_wd_generate_hash_stores {
+  scriptid = "customscript_wd_generate_hash_stores"
+  defaultfunction = "generateHasStores"
+  isinactive = false
+  name = "SuiteOffice - [Scheduled] G. Hash Stores"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_41812_SuiteOffice___Get_Stores_js@dsdsbssv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_wd_generate_hash_stores"
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "SCHEDULED"
+        title = "SuiteOffice - [Schedule] Gen.Hash Stores"
+        recurrence = {
+          daily = {
+            everyxdays = 1
+            repeat = "PT1H"
+            startdate = "2014-11-15"
+            starttime = "02:00:00Z"
+          }
+        }
+      },
+    ]
+  }
+}

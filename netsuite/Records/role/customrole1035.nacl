@@ -1,0 +1,176 @@
+netsuite.role customrole1035 {
+  scriptid = "customrole1035"
+  centertype = "SHIPPINGCENTER"
+  employeerestriction = "UNASSIGNED"
+  employeeselectionunrestricted = false
+  employeeviewingallowed = false
+  isinactive = false
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "Warehouse Manager - Germany"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "SELECTED"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = [
+      {
+        permkey = "TRAN_INVADJST"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_VENDCRED"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_SALESORDFULFILL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_ITEMSHIP"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_ITEMRCPT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_PURCHORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_PURCHORDRECEIVE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_RTNAUTHRECEIVE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_SALESORD"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_INVENTORY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_PURCHASEORDER"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_CUSTOMIZATION"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_SCHEDULE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_SALESORDER"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_BOOKINGS"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_NONPOSTING"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_ANALYTICS"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CALENDAR"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CONTACT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_FILECABINET"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EMAILTEMPLATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_EVENT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EXPORT"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_ITEM"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REGT_NONPOSTING"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_HISTORY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CALL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_RESOURCE"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_SHIPITEM"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_TASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CRMMESSAGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_UNIT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_VENDOR"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "ADMI_DELETEDRECORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_SAVEDASHBOARD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_WEBSERVICES"
+        permlevel = "FULL"
+      },
+    ]
+  }
+}

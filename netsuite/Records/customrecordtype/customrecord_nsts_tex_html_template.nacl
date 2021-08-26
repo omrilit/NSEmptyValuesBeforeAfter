@@ -1,0 +1,805 @@
+netsuite.customrecordtype customrecord_nsts_tex_html_template {
+  scriptid = "customrecord_nsts_tex_html_template"
+  accesstype = "NONENEEDED"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = true
+  allowquicksearch = false
+  allowuiaccess = true
+  description = "The template record to be used for generating transaction layout output"
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "PDF Gen - Template Generator"
+  showcreationdate = true
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = true
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = true
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_nsts_tex_record_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Select what record type the HTML Template will be used for."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Select what record type the HTML Template will be used for."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Transaction Type"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-100"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_entity_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Entity Type"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-214"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_crm_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "CRM Record Type ie. Sales Order"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "CRM Record Type ie. Sales Order"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "CRM Type (All Record Types)"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-123"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_data_feed"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "(for trimpath only)Select from the Saved Search list as source of data for the result. The saved search type must match the record type to provide optimal results."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "(for trimpath only) Select from the Saved Search list as source of data for the result. The saved search type must match the record type to provide optimal results."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Data Feed"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-119"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_return_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Select from 3 different return types: Inline – the output will be displayed in the browser. Attachment – user will be requested to download the file generated. File ID – mainly used if printout is requested via server side script and the file generated is saved in the file cabinet. For Bulk Printing, return type will be PDF."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Select from 3 different return types: Inline – the output will be displayed in the browser. Attachment – user will be requested to download the file generated. File ID – mainly used if printout is requested via server side script and the file generated is saved in the file cabinet. For Bulk Printing, return type will be PDF."
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Return Type"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_nsts_tex_return_type.scriptid
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_email_subject"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Enter the email subject for bulk printing."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Enter the email subject for bulk printing."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Email Subject"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_email_template"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Enter the email body to be set on bulk printing."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CLOBTEXT"
+        globalsearch = false
+        help = "Enter the email body to be set on bulk printing."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Email Body"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_save_file"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Save File?"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_default_file_name"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Enter the filename Prefix for the file to be saved in file cabinet. On bulk print, default filename will be 'recordtype_datetimestamp'"
+        displaytype = "LOCKED"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Enter the filename Prefix for the file to be saved in file cabinet. On bulk print, default filename will be 'recordtype_datetimestamp'"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Filename Prefix"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_button_name"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "Print PDF"
+        description = "Enter the name of the Print button."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Enter the name of the Print button."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Button Name"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_allow_emailing"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Allow emailing for this record"
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Allow emailing for this record"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Allow Emailing"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_allow_printing"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Allow printing for this record"
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "Allow printing for this record"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Allow Printing"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_default_checkbox"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "The template will be used in bulk printing/emailing. This denotes what HTML Template custom record will be used on a transaction type."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        help = "The template will be used in bulk printing/emailing. This denotes what HTML Template custom record will be used on a transaction type."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Default Template for Bulk Print"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_target_directory"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Enter the INTERNAL ID of the folder in file cabinet. On bulk print, if this is not specified or incorrect, target directory will be 'NSTSTransaction Export - BULK PRINT FILES'"
+        displaytype = "LOCKED"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Enter the INTERNAL ID of the folder in file cabinet. On bulk print, if this is not specified or incorrect, target directory will be 'NSTSTransaction Export - BULK PRINT FILES'"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Target Directory"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_trxn_form"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Select a form where the template will be applied. When no form is selected, template will apply on transaction regardless of what form is used."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Select a form where the template will be applied. When no form is selected, template will apply on transaction regardless of what form is used."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Apply to Transaction Form"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-171"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_record_field_select"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Enter the field where a copy of the record id linking to the file will be stored."
+        displaytype = "LOCKED"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Enter the field where a copy of the record id linking to the file will be stored."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Record Field"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-124"
+        showinlist = false
+        storevalue = true
+        customfieldfilters = {
+          customfieldfilter = [
+            {
+              fldfilter = "STDRECORDFIELDDATATYPE"
+              fldfiltercomparetype = "EQ"
+              fldfilternotnull = false
+              fldfilternull = false
+              fldfiltersel = "18|10|24|15|8|35"
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "custrecord_nsts_tex_record_field"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Record Field (Script Id)"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        sourcefrom = "STDRECORDFIELDSCRIPTID"
+        sourcelist = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.customrecordcustomfields.customrecordcustomfield.15.scriptid
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_footer_id"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Enter the footer name for the template. This should be specified to be able to use it in the template source code."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Enter the footer name for the template. This should be specified to be able to use it in the template source code."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Footer Name"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_header_id"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Enter the header name for the template. This should be specified to be able to use it in the template source code."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        help = "Enter the header name for the template. This should be specified to be able to use it in the template source code."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Header Name"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_copies"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "No of Copies"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_subsidiary"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Subsidiary"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-117"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_papersize"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Select the paper size (A4, A5, Legal, Letter) for the generated file."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Select the paper size (A4, A5, Legal, Letter) for the generated file."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Paper Size"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_nsts_tex_papersize.scriptid
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_orientation"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Select the paper orientation (Portrait, Landscape) for the generated file."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        help = "Select the paper orientation (Portrait, Landscape) for the generated file."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Orientation"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_nsts_tex_paper_orientation.scriptid
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_header_height"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        description = "Enter the header height for the template. This should be a positive value."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Enter the header height for the template. This should be a positive value."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Header Height (in mm)"
+        minvalue = "0"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_footer_height"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        description = "Enter the footer height for the template. This should be a positive value."
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "INTEGER"
+        globalsearch = false
+        help = "Enter the footer height for the template. This should be a positive value."
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Footer Height (in mm)"
+        minvalue = "0"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_filterfield"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Filter field"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_pdf_variable_def_info"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = '''
+&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Variable Definition (VD)&lt;/h1&gt;
+
+&lt;hr /&gt;&lt;b&gt;Freemarker Variable&lt;/b&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;record&lt;/li&gt;
+	&lt;li&gt;record.item&lt;/li&gt;
+	&lt;li&gt;record.expense&lt;/li&gt;
+	&lt;li&gt;record.apply&lt;/li&gt;
+	&lt;li&gt;record["recmachcustrecord[name]"]
+	&lt;p&gt;Enable the &lt;b&gt;ALLOW CHILD RECORD EDITING&lt;/b&gt; of the child record to use the &lt;b&gt;recmachcustrecord&lt;/b&gt;.&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li&gt;companyInformation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;i  style="margin-left: 40px"&gt;&lt;b&gt;Note:&lt;/b&gt; See the NetSuite Records Browser for other supported field variables (Internal ID).&lt;/i&gt;
+
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;%customdatavariable%&gt;
+&lt;hr /&gt;&lt;b&gt;Variable Declaration & prefix on Data Feed (save Search Custom Label)&lt;/b&gt;
+
+&lt;table border="1"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;[varname]&lt;/td&gt;
+			&lt;td&gt;Declare specific variable name. If varname is not declared, the name would be the field label name where whitespace and special characters are removed. Example: Date/Time -&gt; DateTime.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;text_[varname]&lt;/td&gt;
+			&lt;td&gt;Declare specific variable name. text_ prefix converts the field value to text. If varname is not declared, the name would be the field label name where whitespace and special characters are removed.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;line.[varname]&lt;/td&gt;
+			&lt;td&gt;Add the field as an element of array line and declare specific variable name for the element. If varname is not declared, the name would be &lt;strong&gt;"line."&lt;/strong&gt; concatenated with the internal id of the field.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;text_line.[varname]&lt;/td&gt;
+			&lt;td&gt;Add the field as an element of array line and declare specific variable name for the element. text_ prefix converts the field value to text. If varname is not declared, the name would be &lt;strong&gt;"line."&lt;/strong&gt; concatenated with the internal id of the field.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;line|array_varname.[varname]&lt;/td&gt;
+			&lt;td&gt;Declare specific array name replacing line array name. Add the field as an element of array_varname and declare specific variable name for the element. If varname is not declared, the name would be &lt;strong&gt;"[array_varname]." &lt;/strong&gt;concatenated with the internal id of the field.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;text_line|array_varname.[varname]&lt;/td&gt;
+			&lt;td&gt;Declare specific array name replacing line array name. Add the field as an element of array_varname and declare specific variable name for the element. text_ prefix converts the field value to text. If varname is not declared, the name would be &lt;strong&gt;"[array_varname]."&lt;/strong&gt; concatenated with the internal id of the field.&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/body&gt; &lt;/html&gt;
+'''
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "TEXTAREA"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Variable Definition info"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_nsts_tex_static"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Static"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_nsts_tex_body"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Body for the template"
+        displayheight = 20
+        displaytype = "NORMAL"
+        displaywidth = 100
+        encryptatrest = false
+        fieldtype = "CLOBTEXT"
+        globalsearch = false
+        help = "Body for the template"
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "HTML Template Body"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_nsts_tex_header"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        description = "Header of the template"
+        displayheight = 20
+        displaytype = "NORMAL"
+        displaywidth = 100
+        encryptatrest = false
+        fieldtype = "CLOBTEXT"
+        globalsearch = false
+        help = "Header of the template"
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "HTML Template Header"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_nsts_tex_html_template.subtabs.subtab.1.scriptid
+      },
+    ]
+  }
+  links = {
+    link = [
+      {
+        linkcategory = "BASICLISTSCUSTOM"
+        linklabel = "PDF Generator Templates"
+        linktasktype = "LIST"
+      },
+    ]
+  }
+  subtabs = {
+    subtab = [
+      {
+        scriptid = "tab_50_t1221897_841"
+        tabtitle = "Body"
+      },
+      {
+        scriptid = "tab_51_t1221897_841"
+        tabtitle = "Headers"
+      },
+      {
+        scriptid = "tab_52_t1221897_841"
+        tabtitle = "Static"
+      },
+    ]
+  }
+}

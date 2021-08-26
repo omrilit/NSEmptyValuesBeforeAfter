@@ -1,0 +1,27 @@
+netsuite.usereventscript customscript_setchargesaftersubmit {
+  scriptid = "customscript_setchargesaftersubmit"
+  aftersubmitfunction = "populateChargesAfterSubmit"
+  description = "when an invoice transaction is submitted a custom field will be populated with the charges related to that invoice. This is set in order to pull charge details on the custom Invoice PDF template."
+  isinactive = false
+  name = "Dilley Set Invoice Charges After Submit"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteScripts_setchargesaftersubmit@d.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_setchargesaftersubmit"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = "INVOICE"
+        status = "RELEASED"
+      },
+    ]
+  }
+}

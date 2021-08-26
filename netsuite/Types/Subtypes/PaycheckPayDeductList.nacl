@@ -1,0 +1,11 @@
+type netsuite.PaycheckPayDeductList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.PaycheckPayDeduct>" paycheckPayDeduct {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

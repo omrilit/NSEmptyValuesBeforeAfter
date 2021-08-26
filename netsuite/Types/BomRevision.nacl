@@ -1,0 +1,29 @@
+type netsuite.BomRevision {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  string name {
+  }
+  netsuite.RecordRef billOfMaterials {
+  }
+  string memo {
+  }
+  boolean isInactive {
+  }
+  string effectiveStartDate {
+  }
+  string effectiveEndDate {
+  }
+  netsuite.BomRevisionComponentList componentList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

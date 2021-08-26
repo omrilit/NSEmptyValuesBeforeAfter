@@ -1,0 +1,130 @@
+netsuite.savedcsvimport custimport_66_t1740134_435 {
+  scriptid = "custimport_66_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADDUPDATE"
+  decimaldelimiter = "PERIOD"
+  entryform = netsuite.entryForm.instance.custform_105_t1499227_346.scriptid
+  ignorereadonly = true
+  importname = "Weekly Timesheet.AUS"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "TIMESHEET"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "TIMESHEET"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "TIMESHEET"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "EMPLOYEE"
+              columnreference = {
+                column = "Employee"
+                file = "TIMESHEET"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EXTERNALID"
+              columnreference = {
+                column = "ExternalId"
+                file = "TIMESHEET"
+                type = "NAME"
+              }
+            },
+            {
+              field = "STARTDATE"
+              columnreference = {
+                column = "Start Date"
+                file = "TIMESHEET"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        record = "TIMESHEET:TIMEGRID:TIMEENTRY"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "CASETASKEVENT"
+              columnreference = {
+                column = "Task/Case"
+                file = "TIMESHEET"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CUSTOMER"
+              columnreference = {
+                column = "Client:Project"
+                file = "TIMESHEET"
+                type = "NAME"
+              }
+            },
+            {
+              field = "DAY_OF_WEEK"
+              columnreference = {
+                column = "Day of Week"
+                file = "TIMESHEET"
+                type = "NAME"
+              }
+            },
+            {
+              field = "HOURS"
+              columnreference = {
+                column = "Duration"
+                file = "TIMESHEET"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ISBILLABLE"
+              columnreference = {
+                column = "Billable"
+                file = "TIMESHEET"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ITEM"
+              columnreference = {
+                column = "Service Item"
+                file = "TIMESHEET"
+                type = "NAME"
+              }
+            },
+            {
+              field = "MEMO"
+              columnreference = {
+                column = "Memo"
+                file = "TIMESHEET"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

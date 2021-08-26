@@ -1,0 +1,668 @@
+netsuite.customrecordtype customrecord_ie_dashboard_tiles {
+  scriptid = "customrecord_ie_dashboard_tiles"
+  accesstype = "NONENEEDED"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = true
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenametranslation = false
+  enablenumbering = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isinactive = false
+  isordered = false
+  recordname = "Dashboard Tile"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  customrecordcustomfields = {
+    customrecordcustomfield = [
+      {
+        scriptid = "custrecord_ie_tile_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultselection = netsuite.customlist.instance.customlist_ie_tile_types.customvalues.customvalue.0.scriptid
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = true
+        isparent = false
+        label = "Tile Type"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_ie_tile_types.scriptid
+        showinlist = true
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_ie_dt_roles"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "MULTISELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Roles"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-118"
+        showinlist = false
+        storevalue = true
+      },
+      {
+        scriptid = "custrecord_ie_saved_search"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Saved Search"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-119"
+        showinlist = true
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_search_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Type"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        sourcefrom = "STDRECORDSAVEDSEARCHSCRIPTEDRECORDTYPE"
+        sourcelist = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.customrecordcustomfields.customrecordcustomfield.2.scriptid
+        storevalue = false
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_prefix"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Prefix"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_suffix"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Suffix"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_drilldown_link"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Drilldown Link"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_sign_flag"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Display +/- Sign"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_icon"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "IMAGE"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Icon"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_tile_bg"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Tile Color Hex"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_tile_color_actual"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "CONCAT(CONCAT('&lt;span style=\"width:30px;border:solid 1px black;background-color:#', {custrecord_ie_tile_bg}),';\"&gt;          &lt;/span&gt;')"
+        displaytype = "STATICTEXT"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = true
+        ismandatory = false
+        isparent = false
+        label = "Tile Color"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = true
+        storevalue = false
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_font_color"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Font Color Hex"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_font_color_actual"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "CONCAT(CONCAT('&lt;span style=\"width:30px;border:solid 1px black;background-color:#', {custrecord_ie_font_color}),';\"&gt;          &lt;/span&gt;')"
+        displaytype = "STATICTEXT"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = true
+        ismandatory = false
+        isparent = false
+        label = "Font Color"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.1.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_blink_when"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Blink When"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_ie_dt_blink_when_list.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_treshold"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = true
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "FLOAT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Threshold"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_show_alert_btn"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Enable Email Alerts"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_alert_button_label"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultvalue = "Escalate"
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Alerts Label"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_emails_list"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXTAREA"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Email(s)"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_message"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXTAREA"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Message"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.2.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_field_based_value"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Value from Field"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_origin"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "HIDDEN"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Origin"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = false
+      },
+      {
+        scriptid = "custrecord_ie_compare"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Compare"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_compare_search"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Search Compare"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = "-119"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_compare_field"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Compare Field"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_compare_type"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultselection = netsuite.customlist.instance.customlist_ie_compare_types.customvalues.customvalue.0.scriptid
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "SELECT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Compare Type"
+        onparentdelete = "NO_ACTION"
+        rolerestrict = false
+        searchlevel = "2"
+        selectrecordtype = netsuite.customlist.instance.customlist_ie_compare_types.scriptid
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_auto_run_script"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "CHECKBOX"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Auto Run Script"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_script_id"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Script ID"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+      {
+        scriptid = "custrecord_ie_deploy_id"
+        accesslevel = "2"
+        allowquickadd = false
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        encryptatrest = false
+        fieldtype = "TEXT"
+        globalsearch = false
+        isformula = false
+        ismandatory = false
+        isparent = false
+        label = "Deployment ID"
+        rolerestrict = false
+        searchlevel = "2"
+        showinlist = false
+        storevalue = true
+        subtab = netsuite.customrecordtype.instance.customrecord_ie_dashboard_tiles.subtabs.subtab.0.scriptid
+      },
+    ]
+  }
+  links = {
+    link = [
+      {
+        linkcategory = "BASICLISTSCUSTOM"
+        linktasktype = "LIST"
+      },
+    ]
+  }
+  subtabs = {
+    subtab = [
+      {
+        scriptid = "tab_164_t1499227_470"
+        tabtitle = "Data"
+      },
+      {
+        scriptid = "tab_163_t1499227_470"
+        tabtitle = "Appearance"
+      },
+      {
+        scriptid = "tab_162_t1499227_470"
+        tabtitle = "Alerts"
+      },
+    ]
+  }
+}

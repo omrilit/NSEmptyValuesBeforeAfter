@@ -1,0 +1,578 @@
+netsuite.entryForm custform_19_4453644_608 {
+  scriptid = "custform_19_4453644_608"
+  standard = "STANDARDCUSTOMRECORD_NSTS_CI_SETUPFORM"
+  name = "CI Set Up Form"
+  recordType = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.scriptid
+  inactive = false
+  preferred = false
+  storedWithRecord = true
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "fieldgroup_219_4453644_767"
+        label = "Configuration"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.0.scriptid
+                label = "Enable Consolidated Invoicing"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.1.scriptid
+                label = "Enable For"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ISINACTIVE"
+                label = "Inactive"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.2.scriptid
+                label = "Enable Online Consolidation"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.3.scriptid
+                label = "Enable Scheduled Consolidation"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.4.scriptid
+                label = "Enable Consolidation on Customer Record"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "RECORDID"
+                label = "ID"
+                visible = true
+                mandatory = true
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.30.scriptid
+                label = "Rows Per Page (Pagination)"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "fieldgroup_220_4453644_767"
+        label = "Set Up Auto-Generated Numbers"
+        visible = true
+        showTitle = true
+        singleColumn = false
+      },
+      {
+        scriptid = "fieldgroup_221_4453644_767"
+        label = "CI Preferences"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.5.scriptid
+                label = "Include Sub Customers"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.7.scriptid
+                label = "Filters Note"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                spaceBefore = "1"
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.8.scriptid
+                label = "Billing Address"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.9.scriptid
+                label = "Location"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.10.scriptid
+                label = "Due Date"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.11.scriptid
+                label = "Contract"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.12.scriptid
+                label = "Project"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.13.scriptid
+                label = "Source"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.15.scriptid
+                label = "Additional Field 1"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.25.scriptid
+                label = "Custom Field 1 Field Source"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.16.scriptid
+                label = "Additional Field 2"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.17.scriptid
+                label = "Custom Field 2 Field Source"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.18.scriptid
+                label = "Additional Field 3"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.26.scriptid
+                label = "Custom Field 3 Field Source"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.43.scriptid
+                label = "Update Due Date"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "fieldgroup_224_4453644_767"
+        label = "CI Creation"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.27.scriptid
+                label = "Invoice Summary Saved Search"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.28.scriptid
+                label = "Invoice Details Saved Search"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.31.scriptid
+                label = "Minimum Number of Child Invoices"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.32.scriptid
+                label = "Maximum Number of Child Invoices"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "fieldgroup_225_4453644_767"
+        label = "CI Printing Preferences"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.29.scriptid
+                label = "Default CI Layout"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.33.scriptid
+                label = "Folder in File Cabinet (Internal ID)"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.34.scriptid
+                label = "Send Via (field Note)"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.35.scriptid
+                label = "Email"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.36.scriptid
+                label = "Email Sender"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.37.scriptid
+                label = "Email Template"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.42.scriptid
+                label = "Send Email to Contact Role"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.38.scriptid
+                label = "Fax"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.39.scriptid
+                label = "FAX Sender"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.40.scriptid
+                label = "FAX Template"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+    ]
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "LASTMODIFIED"
+              label = "Last Modified"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "CUSTOMFORM"
+              label = "Custom Form"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "NAME"
+              label = "Name"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "OWNER"
+              label = "Owner"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "CREATED"
+              label = "Date Created"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_setup.customrecordcustomfields.customrecordcustomfield.41.scriptid
+              label = "Administrator Emails"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "RECORDTRANSLATION"
+        label = "Translation"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDTRANSLATIONS"
+              label = "Translation"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDCUSTOM"
+        label = "Custom"
+        visible = false
+      },
+    ]
+  }
+  actionbar = {
+    buttons = {
+      button = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = false
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = false
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = false
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = false
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = false
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = false
+        },
+      ]
+    }
+    menu = {
+      menuitem = [
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

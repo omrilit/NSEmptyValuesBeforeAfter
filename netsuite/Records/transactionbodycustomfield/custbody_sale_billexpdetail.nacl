@@ -1,0 +1,44 @@
+netsuite.transactionbodycustomfield custbody_sale_billexpdetail {
+  scriptid = "custbody_sale_billexpdetail"
+  accesslevel = "2"
+  applyformatting = false
+  bodybtegata = true
+  bodycustomerpayment = false
+  bodydeposit = false
+  bodydepositapplication = false
+  bodyexpensereport = false
+  bodyinventoryadjustment = false
+  bodyitemfulfillment = false
+  bodyitemfulfillmentorder = false
+  bodyitemreceipt = false
+  bodyitemreceiptorder = false
+  bodyjournal = false
+  bodyopportunity = false
+  bodyothertransaction = false
+  bodypaycheck = false
+  bodypickingticket = false
+  bodyprintflag = false
+  bodyprintpackingslip = false
+  bodyprintstatement = false
+  bodypurchase = false
+  bodysale = true
+  bodystore = false
+  bodytransferorder = false
+  bodyvendorpayment = false
+  checkspelling = false
+  defaultchecked = false
+  defaultvalue = "'<span class=\"smallgraytextnolink\" style=\"white-space:wrap;\"><a class=\"smallgraytextnolink\" onmouseout=\"this.className=''smallgraytextnolink'';\" onmouseover=\"this.className=''smallgraytext''; return true;\" href=\"/app/common/search/searchresults.nl?searchid=469&Transaction_APPLYINGTRANSACTION=' || {id} || '\" target=\"_blank\">Click to view billable expense details</a></span>'"
+  displaytype = "STATICTEXT"
+  encryptatrest = false
+  fieldtype = "INLINEHTML"
+  globalsearch = false
+  isformula = true
+  ismandatory = false
+  isparent = false
+  label = "Billable Expense Detail"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = false
+  subtab = "TRANSACTIONBILLING"
+}

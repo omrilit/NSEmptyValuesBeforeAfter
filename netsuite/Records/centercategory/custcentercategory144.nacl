@@ -1,0 +1,37 @@
+netsuite.centercategory custcentercategory144 {
+  scriptid = "custcentercategory144"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab61.scriptid
+  label = "Projects"
+  links = {
+    link = [
+      {
+        linkid = "LIST_CUSTJOB"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_JOB"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_PROJECTTEMPLATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_PROJECTTASK"
+        shortlist = false
+      },
+      {
+        linklabel = "Milestones"
+        linkobject = netsuite.savedsearch.instance.customsearch190.scriptid
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linkobject = netsuite.centerlink.instance.custlink_15_t1740134_667.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+    ]
+  }
+}

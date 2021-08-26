@@ -1,0 +1,298 @@
+netsuite.InventoryItem Linksys_Smart_Wi_Fi_Router_EA6200@ssbss {
+  purchaseDescription = "Linksys Smart Wi-Fi Router EA6200"
+  copyDescription = false
+  cogsAccount = netsuite.Account.instance.COGS_5000_Cost_of_Goods_Sold_5100@uusssu
+  salesDescription = "Linksys Smart Wi-Fi Router EA6200 <br>"
+  includeChildren = false
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Hardware_4006
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  assetAccount = netsuite.Account.instance.Inventory_Asset_1412@su
+  matchBillToReceipt = false
+  costingMethodDisplay = "Average"
+  isDropShipItem = false
+  isSpecialOrderItem = false
+  producer = false
+  enforceMinQtyInternally = true
+  shipIndividually = false
+  useMarginalRates = false
+  costEstimateType = "_averageCost"
+  overallQuantityPricingType = "_byLineQuantity"
+  vsoeDelivered = false
+  cost = 285
+  totalValue = 1801.02
+  averageCost = 8.7
+  useBins = false
+  autoLeadTime = true
+  lastPurchasePrice = 9.39
+  autoPreferredStockLevel = true
+  seasonalDemand = false
+  autoReorderPoint = true
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemId = "Linksys Smart Wi-Fi Router EA6200"
+  displayName = "Linksys Smart Wi-Fi Router EA6200"
+  isOnline = false
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  currency = "1"
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 27.99
+              quantity = 0
+            },
+            {
+              value = 26.99
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 26.5
+              quantity = 0
+            },
+            {
+              value = 25.5
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 24
+              quantity = 0
+            },
+            {
+              value = 23
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 24
+              quantity = 0
+            },
+            {
+              value = 23
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.CAD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 24
+              quantity = 0
+            },
+            {
+              value = 23
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 488
+              quantity = 0
+            },
+            {
+              value = 450
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 465
+              quantity = 0
+            },
+            {
+              value = 435
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_4
+        priceList = {
+          price = [
+            {
+              value = 450
+              quantity = 0
+            },
+            {
+              value = 425
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 488
+              quantity = 0
+            },
+            {
+              value = 450
+              quantity = 10
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.InventoryItem_priceLevel_5
+        priceList = {
+          price = [
+            {
+              value = 480
+              quantity = 0
+            },
+            {
+              value = 470
+              quantity = 10
+            },
+          ]
+        }
+      },
+    ]
+  }
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_Canada@buu,
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___East@buusbs,
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+  ]
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  locationsList = {
+    locations = [
+      {
+        location = "01 US - Riverside, CA"
+        quantityOnOrder = 50
+        quantityAvailable = 0
+        locationId = netsuite.Location.instance.01_US___Riverside__CA@ssbszds
+      },
+      {
+        location = "01 US - Riverside, CA : B Stock"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_B_Stock@ssbszdsus
+      },
+      {
+        location = "01 US - Riverside, CA : QC"
+        locationId = netsuite.Location.instance.01_US___Riverside__CA_QC@ssbszdsu
+      },
+      {
+        location = "02 US - Rocky Mount, NC"
+        quantityOnHand = 15
+        onHandValueMli = 0
+        averageCostMli = 0
+        lastPurchasePriceMli = 0
+        quantityOnOrder = 75
+        quantityCommitted = 0
+        quantityAvailable = 15
+        locationId = netsuite.Location.instance.02_US___Rocky_Mount__NC@ssbsszds
+      },
+      {
+        location = "11 Canadian Warehouse"
+        quantityOnHand = 148
+        onHandValueMli = 1842.6
+        averageCostMli = 12.45
+        lastPurchasePriceMli = 12.45
+        reorderPoint = 50
+        preferredStockLevel = 75
+        quantityOnOrder = 596
+        quantityCommitted = 85
+        quantityAvailable = 63
+        locationId = netsuite.Location.instance.11_Canadian_Warehouse@s
+      },
+    ]
+  }
+  identifier = "Linksys Smart Wi-Fi Router EA6200"
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Linksys Smart Wi-Fi Router EA6200"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

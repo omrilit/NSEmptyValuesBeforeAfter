@@ -1,0 +1,61 @@
+netsuite.ItemGroup Bundle_w_Projects@sd {
+  includeStartEndLines = true
+  availableToPartners = false
+  isInactive = true
+  itemId = "Bundle w/Projects"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  includeChildren = true
+  printItems = false
+  memberList = {
+    itemMember = [
+      {
+        memberDescr = "Annual License for (1) User"
+        quantity = 1
+        vsoeDelivered = false
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_2
+        item = netsuite.RecordRef.instance.ItemGroup_item_32
+        lineNumber = 1
+      },
+      {
+        memberDescr = "Software Installation"
+        quantity = 1
+        vsoeDelivered = false
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_2
+        item = netsuite.RecordRef.instance.ItemGroup_item_25
+        lineNumber = 2
+      },
+      {
+        quantity = 1
+        vsoeDelivered = false
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_2
+        item = netsuite.RecordRef.instance.ItemGroup_item_77
+        lineNumber = 3
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Bundle w/Projects"
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

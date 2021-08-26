@@ -1,0 +1,21 @@
+netsuite.Account Opening_Balance_3200@su {
+  acctType = "_equity"
+  acctNumber = "3200"
+  acctName = "Opening Balance"
+  includeChildren = true
+  generalRate = "_historical"
+  cashFlowRate = "_historical"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "Opening Balance_3200"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

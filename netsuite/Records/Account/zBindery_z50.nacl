@@ -1,0 +1,21 @@
+netsuite.Account zBindery_z50 {
+  acctType = "_costOfGoodsSold"
+  acctNumber = "z50"
+  acctName = "zBindery"
+  includeChildren = true
+  generalRate = "_average"
+  cashFlowRate = "_average"
+  isInactive = true
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "zBindery_z50"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

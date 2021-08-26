@@ -1,0 +1,40 @@
+netsuite.sspapplication webapp_ns_myaccount_premium_1_05_0 {
+  scriptid = "webapp_ns_myaccount_premium_1_05_0"
+  appfolder = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - My Account Premium 1.05/Reference My Account Premium/]"
+  isinactive = false
+  loglevel = "DEBUG"
+  name = "Reference My Account Premium 1.05.0"
+  rootpath = "/myaccountpremium-1-05-0"
+  runtimeversion = "1"
+  status = "RELEASED"
+  libraries = {
+    library = [
+      {
+        scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - My Account Premium 1.05/Reference My Account Premium/ssp_libraries/underscore.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - My Account Premium 1.05/Reference My Account Premium/ssp_libraries/backbone.validation.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - My Account Premium 1.05/Reference My Account Premium/ssp_libraries/bignumber.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - My Account Premium 1.05/Reference My Account Premium/ssp_libraries/commons.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - My Account Premium 1.05/Reference My Account Premium/ssp_libraries/backend.configuration.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - My Account Premium 1.05/Reference My Account Premium/ssp_libraries/Models.js]"
+      },
+    ]
+  }
+  entrypoints = {
+    entrypoint = [
+      {
+        entryitem = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - My Account Premium 1.05/Reference My Account Premium/index.ssp]"
+        entrytype = "CUSTCENTER"
+      },
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+netsuite.centercategory custcentercategory52 {
+  scriptid = "custcentercategory52"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab40.scriptid
+  label = "Company"
+  links = {
+    link = [
+      {
+        linkid = "ADMI_COMPANY"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_GENERAL"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_PRINTING"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_NAMING"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_NUMBERING"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_DUPLICATESETUP"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_SHIPPING"
+        shortlist = false
+      },
+    ]
+  }
+}

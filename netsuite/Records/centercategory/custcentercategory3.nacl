@@ -1,0 +1,27 @@
+netsuite.centercategory custcentercategory3 {
+  scriptid = "custcentercategory3"
+  center = netsuite.center.instance.custcenter2.scriptid
+  centertab = netsuite.centertab.instance.custcentertab14.scriptid
+  label = "Releases"
+  links = {
+    link = [
+      {
+        linklabel = "Releases"
+        linkobject = netsuite.customrecordtype.instance.customrecord22.scriptid
+        linktasktype = "LIST"
+        shortlist = true
+      },
+      {
+        linkobject = netsuite.customrecordtype.instance.customrecord25.scriptid
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Issues"
+        linkobject = netsuite.centerlink.instance.custlink_2_t1740134_154.scriptid
+        linktasktype = "LINK"
+        shortlist = true
+      },
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+netsuite.suitelet customscript_ie_window_closer_sl {
+  scriptid = "customscript_ie_window_closer_sl"
+  defaultfunction = "windowClosetHtmlSuitelet"
+  isinactive = false
+  name = "= DT Window Closer SL"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_34544_WindowCloser_SL_js@dsduv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_ie_window_closer_sl"
+        allemployees = true
+        allpartners = true
+        allroles = true
+        isdeployed = true
+        isonline = true
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "= DT Window Closer SL"
+      },
+    ]
+  }
+}

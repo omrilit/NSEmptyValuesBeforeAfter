@@ -1,0 +1,3038 @@
+netsuite.transactionForm custform_150_t1499227_346 {
+  scriptid = "custform_150_t1499227_346"
+  standard = "STANDARDVENDORBILL"
+  name = "Custom Vendor Bill Standard"
+  recordType = "VENDORBILL"
+  inactive = true
+  preferred = false
+  storedWithRecord = true
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "primaryinformation"
+        label = "Primary Information"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "CUSTOMFORM"
+                label = "Custom Form"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "TRANID"
+                label = "Invoice #"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ENTITY"
+                label = "Vendor"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "TRANDATE"
+                label = "Date"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "POSTINGPERIOD"
+                label = "Posting Period"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ACCOUNT"
+                label = "Account"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "TOTAL"
+                label = "Amount"
+                visible = true
+                mandatory = false
+                displayType = "DISABLED"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CURRENCY"
+                label = "Currency"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "EXCHANGERATE"
+                label = "Exchange Rate"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "SUBSIDIARY"
+                label = "Subsidiary"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "VATREGNUM"
+                label = "Tax ID"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "TAXTOTAL"
+                label = "Tax"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "TAX2TOTAL"
+                label = "PST"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "TERMS"
+                label = "Terms"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "INCOTERM"
+                label = "Incoterm"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "DISCOUNTAMOUNT"
+                label = "Disc. Amt."
+                visible = false
+                mandatory = false
+                displayType = "DISABLED"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "DISCOUNTDATE"
+                label = "Disc. Date"
+                visible = false
+                mandatory = false
+                displayType = "DISABLED"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "PAYMENTHOLD"
+                label = "Payment Hold"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "DUEDATE"
+                label = "Due Date"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "MEMO"
+                label = "Memo"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "APPROVALSTATUS"
+                label = "Approval Status"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "NEXTAPPROVER"
+                label = "Next Approver"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CREDITLIMIT"
+                label = "Credit Limit"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "classification"
+        label = "Classification"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "DEPARTMENT"
+                label = "Department"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CLASS"
+                label = "Class"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "LOCATION"
+                label = "Location"
+                visible = false
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "intercompanymanagement361"
+        label = "Intercompany Management"
+        visible = true
+        showTitle = true
+        singleColumn = false
+      },
+      {
+        scriptid = "intercompanymanagement362"
+        label = "Intercompany Management"
+        visible = true
+        showTitle = true
+        singleColumn = false
+      },
+      {
+        scriptid = "intercompanymanagement363"
+        label = "Intercompany Management"
+        visible = true
+        showTitle = true
+        singleColumn = false
+      },
+      {
+        scriptid = "intercompanymanagement364"
+        label = "Intercompany Management"
+        visible = true
+        showTitle = true
+        singleColumn = false
+      },
+      {
+        scriptid = "intercompanymanagement365"
+        label = "Intercompany Management"
+        visible = true
+        showTitle = true
+        singleColumn = false
+      },
+      {
+        scriptid = "intercompanymanagement366"
+        label = "Intercompany Management"
+        visible = true
+        showTitle = true
+        singleColumn = false
+      },
+    ]
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "TRANSACTIONNUMBER"
+              label = "Transaction Number"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "AVAILABLEVENDORCREDIT"
+              label = "Available Vendor Credit"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "INTERCOTRANSACTION"
+              label = "Paired Intercompany Transaction"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "INTERCOSTATUS"
+              label = "Intercompany Status"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody1.scriptid
+              label = "Actual Usage"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody2.scriptid
+              label = "Sales Engineer"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody3.scriptid
+              label = "Contract Start Date"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody4.scriptid
+              label = "Roll Back"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody5.scriptid
+              label = "PS Project Baseline Set"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              checkBoxDefault = "UNCHECKED"
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody6.scriptid
+              label = "Project Created"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              checkBoxDefault = "UNCHECKED"
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_sesc_approved.scriptid
+              label = "Approved"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              checkBoxDefault = "UNCHECKED"
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody7.scriptid
+              label = "Notes"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_reminder.scriptid
+              label = "Reminder"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_credit_terms.scriptid
+              label = "Terms"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "[scriptid=custbody_esc_last_modified_date]"
+              label = "Last Modified Date"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "[scriptid=custbody_esc_created_date]"
+              label = "Created Date"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "[scriptid=custbody_esc_campaign_category]"
+              label = "Campaign Category"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "[scriptid=custbody_4599_sg_import_permit_num]"
+              label = "Import Permit No."
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "[scriptid=custbody_2663_reference_num]"
+              label = "ACH/EFT Reference No."
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "[scriptid=custbody_document_date]"
+              label = "Document Date"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_svb_schedule_is_intercompany.scriptid
+              label = "Schedule Is Intercompany"
+              visible = false
+              mandatory = false
+              displayType = "DISABLED"
+              columnBreak = false
+              sameRowAsPrevious = false
+              checkBoxDefault = "USE_FIELD_DEFAULT"
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_svb_vb_to_bell_dist_sched.scriptid
+              label = "VB header to Bill Distribution Schedule"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_svb_vend_bill_link.scriptid
+              label = "Allocation - Vendor Bill Link"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_collections_promised_pmt_date.scriptid
+              label = "Collections Promised Payment Date"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_collections_performed_by.scriptid
+              label = "Collections Performed By"
+              visible = false
+              mandatory = false
+              displayType = "DISABLED"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_collections_note.scriptid
+              label = "Collections Notes"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_collections_note_id.scriptid
+              label = "Collections Note Id"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_collections_activity_date.scriptid
+              label = "Collections Activity Date"
+              visible = false
+              mandatory = false
+              displayType = "DISABLED"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_collections_activity.scriptid
+              label = "Collections Activity"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "[scriptid=custbody_my_import_declaration_num]"
+              label = "Import Declaration No."
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "[scriptid=custbody_fam_jrn_reversal_no]"
+              label = "Reversal Number"
+              visible = false
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "[scriptid=custbody_fam_jrn_reversal_date]"
+              label = "Reversal Date (2)"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_oa_rev_rec_id.scriptid
+              label = "OpenAir Revenue Recognition ID"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_oa_invoice_number.scriptid
+              label = "OpenAir Invoice Number"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_oa_expense_report_user.scriptid
+              label = "OpenAir Expense Report Creator"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_oa_exp_approver_supervisor.scriptid
+              label = "OpenAir Expense Approver - Supervisor"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_oa_gst_override.scriptid
+              label = "OpenAir: GST/HST Amount"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_oa_expense_report_number.scriptid
+              label = "OpenAir Expense Report Number"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_oa_exp_approver_project.scriptid
+              label = "OpenAir Expense Approver - Project"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_oa_pst_override.scriptid
+              label = "OpenAir: PST Amount"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_oa_invoice_tax_amt.scriptid
+              label = "OpenAir Invoice Tax Amount"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_so_revrecstartdate.scriptid
+              label = "Rev Rec Start Date"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.transactionbodycustomfield.instance.custbody_so_revrecenddate.scriptid
+              label = "Rev Rec End Date"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "TRANSACTIONITEMS"
+        label = "Expenses and Items"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "EXPENSE"
+              label = "Expense"
+              visible = true
+              neverEmpty = false
+              columns = {
+                column = [
+                  {
+                    id = "CATEGORY"
+                    label = "Category"
+                    visible = false
+                  },
+                  {
+                    id = "ACCOUNT"
+                    label = "Account"
+                    visible = true
+                  },
+                  {
+                    id = "AMOUNT"
+                    label = "Amount"
+                    visible = true
+                  },
+                  {
+                    id = "GROSSAMT"
+                    label = "Gross Amt"
+                    visible = true
+                  },
+                  {
+                    id = "TAX1AMT"
+                    label = "Tax Amt"
+                    visible = true
+                  },
+                  {
+                    id = "TAXCODE"
+                    label = "Tax Code"
+                    visible = true
+                  },
+                  {
+                    id = "TAXRATE1"
+                    label = "Tax Rate"
+                    visible = true
+                  },
+                  {
+                    id = "TAXRATE2"
+                    label = "PST"
+                    visible = true
+                  },
+                  {
+                    id = "MEMO"
+                    label = "Memo"
+                    visible = true
+                  },
+                  {
+                    id = "DEPARTMENT"
+                    label = "Department"
+                    visible = true
+                  },
+                  {
+                    id = "CLASS"
+                    label = "Class"
+                    visible = true
+                  },
+                  {
+                    id = "LOCATION"
+                    label = "Location"
+                    visible = true
+                  },
+                  {
+                    id = "CUSTOMER"
+                    label = "Customer"
+                    visible = true
+                  },
+                  {
+                    id = "PROJECTTASK"
+                    label = "Project task"
+                    visible = true
+                  },
+                  {
+                    id = "ISBILLABLE"
+                    label = "Billable"
+                    visible = true
+                  },
+                  {
+                    id = "AMORTIZATIONSCHED"
+                    label = "Amort. Schedule"
+                    visible = false
+                  },
+                  {
+                    id = "AMORTIZSTARTDATE"
+                    label = "Amort. Start"
+                    visible = false
+                  },
+                  {
+                    id = "AMORTIZATIONENDDATE"
+                    label = "Amort. End"
+                    visible = false
+                  },
+                  {
+                    id = "AMORTIZATIONRESIDUAL"
+                    label = "Residual"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol1.scriptid
+                    label = "Terms"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol9.scriptid
+                    label = "Display Name"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_nondeductible_account]"
+                    label = "Expense Account"
+                    visible = true
+                  },
+                  {
+                    id = "[scriptid=custcol_far_trn_relatedasset]"
+                    label = "Related Asset"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_statistical_value]"
+                    label = "Statistical Value"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_svb_vend_bill_lineno.scriptid
+                    label = "Line # (2)"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_svb_dist_alloc_det_hidden.scriptid
+                    label = "Recent Distribution Details [Hidden]"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_svb_bill_distr_exclude.scriptid
+                    label = "Bill Distribution Exclude"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_svb_item_exp_account.scriptid
+                    label = "Item's Expense Account"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_5892_eutriangulation]"
+                    label = "EU Triangulation"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_expense_code_of_supply]"
+                    label = "Code of Supply (2)"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_1_curr.scriptid
+                    label = "OpenAir: Secondary Loaded Cost Currency"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_timesheet_date.scriptid
+                    label = "OpenAir: Timesheet Start Date"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_project_task_id.scriptid
+                    label = "OpenAir: Project Task ID"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_department.scriptid
+                    label = "OpenAir: Loaded Cost Department"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_wbs_task_name.scriptid
+                    label = "OpenAir: Task Name"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_credit_charge_type.scriptid
+                    label = "OpenAir: Charge Type"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_wbs_phase_name.scriptid
+                    label = "OpenAir: Phase Name"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_0_curr.scriptid
+                    label = "OpenAir: Primary Loaded Cost Currency"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_pst_override.scriptid
+                    label = "OpenAir: PST"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_credit_account.scriptid
+                    label = "OpenAir: Loaded Cost Credit Account"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_expense_report_line_id.scriptid
+                    label = "OpenAir Expense Report Line ID"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_time_entry_id.scriptid
+                    label = "OpenAir Time Entry ID"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_wbs_assignees.scriptid
+                    label = "OpenAir: Assigned Users"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_je_from_time_created.scriptid
+                    label = "OpenAir: Journal Entry Creation Date"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_debit_account.scriptid
+                    label = "OpenAir: Loaded Cost Debit Account"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_rev_rec_rule.scriptid
+                    label = "OpenAir: Rev Rec Rule"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_2_curr.scriptid
+                    label = "OpenAir: Tertiary Loaded Cost Currency"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_line_from_oa.scriptid
+                    label = "OpenAir: Line from OpenAir"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_0.scriptid
+                    label = "OpenAir: Primary Loaded Cost"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_1.scriptid
+                    label = "OpenAir: Secondary Loaded Cost"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_je_from_time_error.scriptid
+                    label = "OpenAir: Journal Entry Error"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_je_from_time_error_msg.scriptid
+                    label = "OpenAir: Journal Entry Error Message"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_task_assignment_id.scriptid
+                    label = "OpenAir: Task Assignment ID"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_gst_override.scriptid
+                    label = "OpenAir: GST/HST"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_location.scriptid
+                    label = "OpenAir: Loaded Cost Location"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_project_task_id_number.scriptid
+                    label = "OpenAir: Project Task ID Number"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_wbs_planned_hours.scriptid
+                    label = "OpenAir: Task Assignment Planned Hours"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_subsidiary.scriptid
+                    label = "OpenAir: Loaded Cost Subsidiary"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_2.scriptid
+                    label = "OpenAir: Tertiary Loaded Cost"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_export_to_openair.scriptid
+                    label = "Export to OpenAir (2)"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_billing_rule_type.scriptid
+                    label = "OpenAir Billing Rule"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_sii_exempt_line_details]"
+                    label = "Details of subject and exempt line"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_invoice_line_id.scriptid
+                    label = "OpenAir Invoice Line ID"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_quantity_not_hours.scriptid
+                    label = "OpenAir Quantity From % Invoiced"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_establishment_code]"
+                    label = "Establishment Code"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_class.scriptid
+                    label = "OpenAir: Loaded Cost Class"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_counterparty_vat]"
+                    label = "Counterparty VAT Number"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_statistical_procedure_sale]"
+                    label = "Statistical Procedure for Sales"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_statistical_procedure_purc]"
+                    label = "Statistical Procedure for Purchases"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_emirate]"
+                    label = "Emirate"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_sii_annual_prorate]"
+                    label = "Annual Prorate"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_sii_service_date]"
+                    label = "Service Date"
+                    visible = false
+                  },
+                ]
+              }
+            },
+            {
+              id = "ITEM"
+              label = "Items"
+              visible = true
+              neverEmpty = false
+              columns = {
+                column = [
+                  {
+                    id = "ITEM"
+                    label = "Item"
+                    visible = true
+                  },
+                  {
+                    id = "VENDORNAME"
+                    label = "Vendor Name"
+                    visible = true
+                  },
+                  {
+                    id = "QUANTITY"
+                    label = "Quantity"
+                    visible = true
+                  },
+                  {
+                    id = "UNITS"
+                    label = "Units"
+                    visible = true
+                  },
+                  {
+                    id = "DESCRIPTION"
+                    label = "Description"
+                    visible = true
+                  },
+                  {
+                    id = "RATE"
+                    label = "Rate"
+                    visible = true
+                  },
+                  {
+                    id = "INVENTORYDETAIL"
+                    label = "Inventory Detail"
+                    visible = false
+                  },
+                  {
+                    id = "TAXCODE"
+                    label = "Tax Code"
+                    visible = true
+                  },
+                  {
+                    id = "AMOUNT"
+                    label = "Amount"
+                    visible = true
+                  },
+                  {
+                    id = "TAXRATE1"
+                    label = "Tax Rate"
+                    visible = true
+                  },
+                  {
+                    id = "TAXRATE2"
+                    label = "PST"
+                    visible = true
+                  },
+                  {
+                    id = "GROSSAMT"
+                    label = "Gross Amt"
+                    visible = true
+                  },
+                  {
+                    id = "TAX1AMT"
+                    label = "Tax Amt"
+                    visible = true
+                  },
+                  {
+                    id = "DEPARTMENT"
+                    label = "Department"
+                    visible = true
+                  },
+                  {
+                    id = "CLASS"
+                    label = "Class"
+                    visible = true
+                  },
+                  {
+                    id = "LOCATION"
+                    label = "Location"
+                    visible = true
+                  },
+                  {
+                    id = "CUSTOMER"
+                    label = "Customer"
+                    visible = true
+                  },
+                  {
+                    id = "PROJECTTASK"
+                    label = "Project task"
+                    visible = true
+                  },
+                  {
+                    id = "ISBILLABLE"
+                    label = "Billable"
+                    visible = true
+                  },
+                  {
+                    id = "AMORTIZATIONSCHED"
+                    label = "Amort. Schedule"
+                    visible = false
+                  },
+                  {
+                    id = "AMORTIZSTARTDATE"
+                    label = "Amort. Start"
+                    visible = false
+                  },
+                  {
+                    id = "AMORTIZATIONENDDATE"
+                    label = "Amort. End"
+                    visible = false
+                  },
+                  {
+                    id = "AMORTIZATIONRESIDUAL"
+                    label = "Residual"
+                    visible = false
+                  },
+                  {
+                    id = "BILLRECEIPTS"
+                    label = "Receipts"
+                    visible = false
+                  },
+                  {
+                    id = "BILLVARIANCESTATUS"
+                    label = "Bill Variance Status"
+                    visible = false
+                  },
+                  {
+                    id = "OPTIONS"
+                    label = "Options"
+                    visible = true
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol1.scriptid
+                    label = "Terms"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol9.scriptid
+                    label = "Display Name"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_nondeductible_account]"
+                    label = "Expense Account"
+                    visible = true
+                  },
+                  {
+                    id = "[scriptid=custcol_far_trn_relatedasset]"
+                    label = "Related Asset"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_statistical_value]"
+                    label = "Statistical Value"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_svb_vend_bill_lineno.scriptid
+                    label = "Line # (2)"
+                    visible = true
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_svb_dist_alloc_det_hidden.scriptid
+                    label = "Recent Distribution Details [Hidden]"
+                    visible = true
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_svb_bill_distr_exclude.scriptid
+                    label = "Bill Distribution Exclude"
+                    visible = true
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_svb_item_exp_account.scriptid
+                    label = "Item's Expense Account"
+                    visible = true
+                  },
+                  {
+                    id = "[scriptid=custcol_5892_eutriangulation]"
+                    label = "EU Triangulation"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_expense_code_of_supply]"
+                    label = "Code of Supply (2)"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_1_curr.scriptid
+                    label = "OpenAir: Secondary Loaded Cost Currency"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_timesheet_date.scriptid
+                    label = "OpenAir: Timesheet Start Date"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_project_task_id.scriptid
+                    label = "OpenAir: Project Task ID"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_department.scriptid
+                    label = "OpenAir: Loaded Cost Department"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_wbs_task_name.scriptid
+                    label = "OpenAir: Task Name"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_credit_charge_type.scriptid
+                    label = "OpenAir: Charge Type"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_wbs_phase_name.scriptid
+                    label = "OpenAir: Phase Name"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_0_curr.scriptid
+                    label = "OpenAir: Primary Loaded Cost Currency"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_pst_override.scriptid
+                    label = "OpenAir: PST"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_credit_account.scriptid
+                    label = "OpenAir: Loaded Cost Credit Account"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_expense_report_line_id.scriptid
+                    label = "OpenAir Expense Report Line ID"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_time_entry_id.scriptid
+                    label = "OpenAir Time Entry ID"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_wbs_assignees.scriptid
+                    label = "OpenAir: Assigned Users"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_je_from_time_created.scriptid
+                    label = "OpenAir: Journal Entry Creation Date"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_debit_account.scriptid
+                    label = "OpenAir: Loaded Cost Debit Account"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_rev_rec_rule.scriptid
+                    label = "OpenAir: Rev Rec Rule"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_2_curr.scriptid
+                    label = "OpenAir: Tertiary Loaded Cost Currency"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_line_from_oa.scriptid
+                    label = "OpenAir: Line from OpenAir"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_0.scriptid
+                    label = "OpenAir: Primary Loaded Cost"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_1.scriptid
+                    label = "OpenAir: Secondary Loaded Cost"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_je_from_time_error.scriptid
+                    label = "OpenAir: Journal Entry Error"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_je_from_time_error_msg.scriptid
+                    label = "OpenAir: Journal Entry Error Message"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_task_assignment_id.scriptid
+                    label = "OpenAir: Task Assignment ID"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_gst_override.scriptid
+                    label = "OpenAir: GST/HST"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_location.scriptid
+                    label = "OpenAir: Loaded Cost Location"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_project_task_id_number.scriptid
+                    label = "OpenAir: Project Task ID Number"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_wbs_planned_hours.scriptid
+                    label = "OpenAir: Task Assignment Planned Hours"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_subsidiary.scriptid
+                    label = "OpenAir: Loaded Cost Subsidiary"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_2.scriptid
+                    label = "OpenAir: Tertiary Loaded Cost"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_export_to_openair.scriptid
+                    label = "Export to OpenAir (2)"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_billing_rule_type.scriptid
+                    label = "OpenAir Billing Rule"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_invoice_line_id.scriptid
+                    label = "OpenAir Invoice Line ID"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_sii_exempt_line_details]"
+                    label = "Details of subject and exempt line"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_establishment_code]"
+                    label = "Establishment Code"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_quantity_not_hours.scriptid
+                    label = "OpenAir Quantity From % Invoiced"
+                    visible = false
+                  },
+                  {
+                    id = netsuite.transactioncolumncustomfield.instance.custcol_oa_lc_class.scriptid
+                    label = "OpenAir: Loaded Cost Class"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_counterparty_vat]"
+                    label = "Counterparty VAT Number"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_statistical_procedure_sale]"
+                    label = "Statistical Procedure for Sales"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_statistical_procedure_purc]"
+                    label = "Statistical Procedure for Purchases"
+                    visible = true
+                  },
+                  {
+                    id = "[scriptid=custcol_emirate]"
+                    label = "Emirate"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_sii_annual_prorate]"
+                    label = "Annual Prorate"
+                    visible = false
+                  },
+                  {
+                    id = "[scriptid=custcol_sii_service_date]"
+                    label = "Service Date"
+                    visible = false
+                  },
+                ]
+              }
+            },
+          ]
+        }
+      },
+      {
+        id = "TRANSACTIONBILLING"
+        label = "Billing"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "BILLADDRESS"
+                    label = "Vendor"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "BILLADDRESSLIST"
+                    label = "Vendor Select"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_sale_billexpdetail.scriptid
+                    label = "Billable Expense Detail"
+                    visible = false
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_charge_details.scriptid
+                    label = "Charge Details"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = "TRANSACTIONRELATIONSHIPS"
+        label = "Relationships"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "CRMCONTACTS"
+              label = "Contacts"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "CUSTOM"
+        label = "Custom"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_oa_export_err_msg.scriptid
+                    label = "OpenAir: Export Error (2)"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_oa_purchase_project_id.scriptid
+                    label = "NetSuite Project ID"
+                    visible = false
+                    mandatory = false
+                    displayType = "DISABLED"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_oa_export_to_openair.scriptid
+                    label = "Export to OpenAir (2)"
+                    visible = false
+                    mandatory = false
+                    displayType = "DISABLED"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_oa_invoice_link.scriptid
+                    label = "OpenAir: Invoice Link"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_nsts_pdf_gen_warehouse_info.scriptid
+                    label = "Warehouse Info (for PDF GEN DEMO)"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = "TRANSACTIONCOMMUNICATION"
+        label = "Communication"
+        visible = true
+        fieldGroups = {
+          fieldGroup = [
+            {
+              scriptid = "printing"
+              label = "Printing"
+              visible = true
+              showTitle = true
+              singleColumn = false
+              fields = [
+                {
+                  position = "MIDDLE"
+                  field = [
+                    {
+                      id = "TOBEPRINTED"
+                      label = "To Be Printed"
+                      visible = false
+                      mandatory = false
+                      displayType = "NORMAL"
+                      columnBreak = false
+                      sameRowAsPrevious = false
+                      checkBoxDefault = "USE_FIELD_DEFAULT"
+                    },
+                  ]
+                },
+              ]
+            },
+          ]
+        }
+        subItems = {
+          subList = [
+            {
+              id = "MESSAGES"
+              label = "Messages"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ACTIVITIES"
+              label = "Activities"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "EVENTS"
+              label = "Events"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "TASKS"
+              label = "Tasks"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "CALLS"
+              label = "Phone Calls"
+              visible = false
+              neverEmpty = false
+            },
+            {
+              id = "MEDIAITEM"
+              label = "Files"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "USERNOTES"
+              label = "User Notes"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "TRANSACTIONRELATEDRECORDS"
+        label = "Related Records"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "LINKS"
+              label = "Payments"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "PURCHASEORDERS"
+              label = "Purchase Orders"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "REIMBURSEMENTS"
+              label = "Reimbursements"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "TRANSFORMATIONS"
+              label = "Transformations"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "TRANSACTIONSYSTEMINFORMATION"
+        label = "System Information"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "SYSTEMNOTES"
+              label = "System Notes"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "ACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "WORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_151_t1499227_705.scriptid
+        label = "Sales Information"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_38_t1499227_705.scriptid
+        label = "Travel Requests"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_16_3776644_208.scriptid
+        label = "Tax Reporting"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "[scriptid=custbody_delivery_terms]"
+                    label = "Delivery Terms"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_nexus_notc]"
+                    label = "Nexus NOTC"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_4110_customregnum]"
+                    label = "Customs Registration Number"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_notc.scriptid
+                    label = "Nature of Transaction Code"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_transaction_region]"
+                    label = "Region of Origin"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_nondeductible_processed]"
+                    label = "Non-Deductible Tax Adjusted"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "UNCHECKED"
+                  },
+                  {
+                    id = "[scriptid=custbody_nondeductible_ref_genjrnl]"
+                    label = "Non-Deductible Adjustment Journal"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_nondeductible_ref_tran]"
+                    label = "Transactions with Non-Deductible Tax"
+                    visible = false
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_adjustment_journal]"
+                    label = "Adjustment Journal"
+                    visible = false
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "UNCHECKED"
+                  },
+                  {
+                    id = "[scriptid=custbody_mode_of_transport]"
+                    label = "Mode of Transport"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_regime_code_of_supply]"
+                    label = "Regime Code of Supply"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_cash_register.scriptid
+                    label = "Cash Register (2)"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                  },
+                  {
+                    id = "[scriptid=custbody_date_of_taxable_supply]"
+                    label = "Date of Taxable Supply"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_itr_doc_number]"
+                    label = "Document Number"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_refno_originvoice]"
+                    label = "Reference No. of Original Invoice"
+                    visible = true
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_counterparty_vat]"
+                    label = "Counterparty VAT Number (2)"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_2_3838944_108.scriptid
+        label = "Tax Reporting"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "[scriptid=custbody_sii_spcl_scheme_code_sales]"
+                    label = "Special Scheme Code or Effect on Invoices Issued"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_spcl_scheme_code_purchase]"
+                    label = "Special Scheme Code or Effect on Invoices Received"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_property_location]"
+                    label = "Property Location"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_land_register]"
+                    label = "Land register/Cadaster reference"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_is_third_party]"
+                    label = "Issued By Third Party"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_exempt_details]"
+                    label = "Details of subject and exempt transactions"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_intra_txn_type]"
+                    label = "Intra-Community Transaction Type"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_orig_invoice]"
+                    label = "Original Invoice"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_registration_status]"
+                    label = "Registration Status (2)"
+                    visible = false
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_registration_code]"
+                    label = "Registration Code"
+                    visible = false
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_accounting_date]"
+                    label = "Accounting Date"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_correction_type]"
+                    label = "Correction Type"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_external_reference]"
+                    label = "External Reference"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_article_72_73]"
+                    label = "Simplified Invoice Article 7.2 7.3"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_ref_no]"
+                    label = "Reference No."
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_not_reported_in_time]"
+                    label = "Billing Record Cannot Be Submitted On Time"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_orig_bill]"
+                    label = "Original Bill"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_article_61d]"
+                    label = "Invoice With No Counterpart Article 6.1.d"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_received_inv_type]"
+                    label = "Received Invoice Type"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_operation_date]"
+                    label = "Operation Date"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_invoice_date]"
+                    label = "Invoice Date"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_registration_msg]"
+                    label = "Registration Message"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = "[scriptid=custbody_sii_issued_inv_type]"
+                    label = "Issued Invoice Type"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_28_3956802_208.scriptid
+        label = "Dunning"
+        visible = true
+        subItems = {
+          subTab = [
+            {
+              id = netsuite.subtab.instance.custtab_32_3956802_208.scriptid
+              label = "Setup"
+              visible = true
+              fieldGroups = {
+                defaultFieldGroup = {
+                  fields = [
+                    {
+                      position = "MIDDLE"
+                      field = [
+                        {
+                          id = "[scriptid=custbody_3805_dunning_paused]"
+                          label = "Pause Dunning"
+                          visible = false
+                          mandatory = false
+                          displayType = "DISABLED"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                          checkBoxDefault = "USE_FIELD_DEFAULT"
+                        },
+                        {
+                          id = "[scriptid=custbody_3805_dunning_status]"
+                          label = "Dunning Pause Reason"
+                          visible = false
+                          mandatory = false
+                          displayType = "DISABLED"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                        {
+                          id = "[scriptid=custbody_3805_dunning_letters_toemail]"
+                          label = "Allow Letters to be Emailed"
+                          visible = false
+                          mandatory = false
+                          displayType = "DISABLED"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                          checkBoxDefault = "USE_FIELD_DEFAULT"
+                        },
+                        {
+                          id = "[scriptid=custbody_3805_dunning_substatus]"
+                          label = "Dunning Pause Reason Detail"
+                          visible = false
+                          mandatory = false
+                          displayType = "DISABLED"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                        {
+                          id = "[scriptid=custbody_3805_dunning_procedure]"
+                          label = "Dunning Procedure (2)"
+                          visible = false
+                          mandatory = false
+                          displayType = "DISABLED"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                        {
+                          id = "[scriptid=custbody_3805_last_dunning_letter_sent]"
+                          label = "Last Email Sent"
+                          visible = false
+                          mandatory = false
+                          displayType = "DISABLED"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                        {
+                          id = "[scriptid=custbody_3805_dunning_letters_toprint]"
+                          label = "Allow Letters to be Printed"
+                          visible = false
+                          mandatory = false
+                          displayType = "DISABLED"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                          checkBoxDefault = "USE_FIELD_DEFAULT"
+                        },
+                        {
+                          id = "[scriptid=custbody_3805_dunning_level]"
+                          label = "Dunning Level (2)"
+                          visible = false
+                          mandatory = false
+                          displayType = "DISABLED"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                        {
+                          id = "[scriptid=custbody_3805_dunning_manager]"
+                          label = "Dunning Manager (2)"
+                          visible = false
+                          mandatory = false
+                          displayType = "DISABLED"
+                          columnBreak = false
+                          sameRowAsPrevious = false
+                        },
+                      ]
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              id = netsuite.subtab.instance.custtab_31_3956802_208.scriptid
+              label = "Log"
+              visible = true
+            },
+            {
+              id = netsuite.subtab.instance.custtab_30_3956802_208.scriptid
+              label = "Files"
+              visible = true
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_117_t1499227_705.scriptid
+        label = "EFT"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_46_t1499227_705.scriptid
+        label = "Approvals"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_powf_pm_dt.scriptid
+                    label = "Project Manager Approval Date"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_powf_pm_ok.scriptid
+                    label = "Project Manager Approval"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "UNCHECKED"
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_powf_pm.scriptid
+                    label = "Project Manager"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_powf_ctrl_dt.scriptid
+                    label = "Controller Approval Date"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_powf_ctrl_ok.scriptid
+                    label = "Controller Approval"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "UNCHECKED"
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_powf_ctrl.scriptid
+                    label = "Controller"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_18697_662377_921.scriptid
+        label = "OpenAir: Cost Data"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_oa_je_from_time_id.scriptid
+                    label = "OpenAir: Created From Time Entry"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_8_3838944_670.scriptid
+        label = "France Tax Reporting"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = "[scriptid=custbody_establishment_code]"
+                    label = "Establishment Code (2)"
+                    visible = false
+                    mandatory = false
+                    displayType = "DISABLED"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_213_t1499227_705.scriptid
+        label = "Bill Distribution Details"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_svb_error_logs.scriptid
+                    label = "Shared Vendor Bill Error Logs"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_svb_sched_in_process.scriptid
+                    label = "SVB Schedule In Process"
+                    visible = true
+                    mandatory = false
+                    displayType = "DISABLED"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_svb_allocation_journal.scriptid
+                    label = "Allocation Journal"
+                    visible = true
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_214_t1499227_705.scriptid
+        label = "Bill Distribution IC JEs"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_215_t1499227_705.scriptid
+        label = "Collections"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_13_4453644_498.scriptid
+        label = "Consolidated Invoice"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_nsts_ci_exclude.scriptid
+                    label = "Exclude from Consolidation"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_nsts_ci_number.scriptid
+                    label = "CI Number"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_157_t1499227_705.scriptid
+        label = "Scoping"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_opp_prjtemplate.scriptid
+                    label = "Project Template"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_opp_prjstart.scriptid
+                    label = "Desired Start Date"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_opp_prjrequirements.scriptid
+                    label = "Key Requirements"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_opp_prjredflags.scriptid
+                    label = "Potential Red Flags"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_opp_prjopentemplate.scriptid
+                    label = "Open template"
+                    visible = false
+                    mandatory = false
+                    displayType = "INLINETEXT"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_oa_project_name.scriptid
+                    label = "Project Name"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_oa_project_template.scriptid
+                    label = "OA Project Template"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_create_oa_project_from_opp.scriptid
+                    label = "Prj from Opp"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                    checkBoxDefault = "USE_FIELD_DEFAULT"
+                  },
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_oapm_list.scriptid
+                    label = "OA Project Manager"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_149_t1499227_705.scriptid
+        label = "Classification"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_152_t1499227_705.scriptid
+        label = "VSOE"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_150_t1499227_705.scriptid
+        label = "Intercompany Mgt"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_252_t1499227_705.scriptid
+        label = "Pro-forma Invoice"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_253_t1499227_705.scriptid
+        label = "Expense Details"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_254_t1499227_705.scriptid
+        label = "Revenue Transaction Details"
+        visible = true
+      },
+      {
+        id = "GLIMPACTTAB"
+        label = "GL Impact"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_glm_matching_hidden.scriptid
+        label = "GL Matching Hidden"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_glm_csv_reference.scriptid
+                    label = "CSV Reference"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_glm_matching.scriptid
+        label = "GL Matching"
+        visible = true
+        fieldGroups = {
+          defaultFieldGroup = {
+            fields = [
+              {
+                position = "MIDDLE"
+                field = [
+                  {
+                    id = netsuite.transactionbodycustomfield.instance.custbody_glm_reference.scriptid
+                    label = "Matching Reference for All Lines"
+                    visible = false
+                    mandatory = false
+                    displayType = "NORMAL"
+                    columnBreak = false
+                    sameRowAsPrevious = false
+                  },
+                ]
+              },
+            ]
+          }
+        }
+      },
+    ]
+  }
+  actionbar = {
+    buttons = {
+      button = [
+        {
+          id = "RETURN"
+          label = "Authorize Return"
+          visible = true
+        },
+        {
+          id = "AUTOFILL"
+          label = "Auto Fill"
+          visible = true
+        },
+        {
+          id = "CANCELBILL"
+          label = "Cancel Bill"
+          visible = true
+        },
+        {
+          id = "CREDIT"
+          label = "Credit"
+          visible = true
+        },
+        {
+          id = "PAYMENT"
+          label = "Make Payment"
+          visible = true
+        },
+        {
+          id = "RECALC"
+          label = "Recalc"
+          visible = true
+        },
+        {
+          id = "VIEWEXPENSEPLANS"
+          label = "View Expense Plans"
+          visible = true
+        },
+      ]
+    }
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "GLIMPACT"
+          label = "GL Impact"
+          visible = true
+        },
+        {
+          id = "GOTOREGISTER"
+          label = "Go To Register"
+          visible = true
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = true
+        },
+        {
+          id = "MEMORIZE"
+          label = "Memorize"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = false
+        },
+        {
+          id = "PRINTGLIMPACT"
+          label = "Print GL Impact"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "ACTIVITYHISTORY"
+          label = "Show Activity"
+          visible = true
+        },
+      ]
+    }
+  }
+  allowAddMultiple = true
+  emailMessageTemplate = "USE_DEFAULT"
+  printingType = {
+    advanced = {
+      printTemplate = "STDTMPLSVENDBILL"
+      emailTemplate = "STDTMPLSVENDBILL"
+    }
+  }
+  linkedForms = {
+    linkedForm = [
+      {
+        type = "BILL_BILL_CREDIT_TRANSACTION"
+        form = "USE_DEFAULT"
+      },
+      {
+        type = "BILL_VENDOR_RETURN_AUTHORIZATION_TRANSACTION"
+        form = "USE_DEFAULT"
+      },
+    ]
+  }
+  roles = {
+    role = [
+      {
+        id = netsuite.role.instance.customrole1103.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1104.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1111.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1114.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1101.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1036.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1120_2.scriptid
+        preferred = false
+      },
+      {
+        id = "CUSTOMROLEAP_CLERK"
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1106.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1108.scriptid
+        preferred = false
+      },
+      {
+        id = "ACCOUNTANT"
+        preferred = false
+      },
+      {
+        id = "ACCOUNTANT__REVIEWER"
+        preferred = false
+      },
+      {
+        id = "[scriptid=customrole1004_5]"
+        preferred = false
+      },
+      {
+        id = "ADMINISTRATOR"
+        preferred = false
+      },
+      {
+        id = "BOOKKEEPER"
+        preferred = false
+      },
+      {
+        id = "BUYER"
+        preferred = false
+      },
+      {
+        id = "CEO"
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1019.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1087.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1028.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1000_2.scriptid
+        preferred = false
+      },
+      {
+        id = "CEO_HANDS_OFF"
+        preferred = false
+      },
+      {
+        id = "CUSTOMROLE41"
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1010.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1066.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1048.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1040.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1039.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1033.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1037.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1034.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1083_2.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1047.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1038.scriptid
+        preferred = false
+      },
+      {
+        id = "[scriptid=customrole1002_3]"
+        preferred = false
+      },
+      {
+        id = "[scriptid=customrole1000_4]"
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1046.scriptid
+        preferred = false
+      },
+      {
+        id = "[scriptid=customrole1001_3]"
+        preferred = false
+      },
+      {
+        id = "[scriptid=customrole1002_21]"
+        preferred = false
+      },
+      {
+        id = "[scriptid=customrole_ncfar]"
+        preferred = false
+      },
+      {
+        id = "FULL_ACCESS"
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1084.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1050.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1015_2.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1129.scriptid
+        preferred = false
+      },
+      {
+        id = "[scriptid=customrole_ns_taf_accountant]"
+        preferred = false
+      },
+      {
+        id = "[scriptid=customrole_ns_taf_cfo]"
+        preferred = false
+      },
+      {
+        id = "[scriptid=customrole1000_5]"
+        preferred = false
+      },
+      {
+        id = "[scriptid=customrole1001_4]"
+        preferred = false
+      },
+      {
+        id = "[scriptid=customrole1004_6]"
+        preferred = false
+      },
+      {
+        id = "[scriptid=customrole1002_22]"
+        preferred = false
+      },
+      {
+        id = "WAREHOUSE_MANAGER"
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1072.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1069.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1000.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1060.scriptid
+        preferred = false
+      },
+      {
+        id = netsuite.role.instance.customrole1013.scriptid
+        preferred = false
+      },
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+netsuite.publisheddashboard custpubdashboard_2_3956802_870 {
+  scriptid = "custpubdashboard_2_3956802_870"
+  center = netsuite.center.instance.custcenter1_2.scriptid
+  locknewbar = false
+  lockshortcuts = false
+  name = "Dunning Dashboard"
+  roles = {
+    role = [
+      {
+        role = "[scriptid=customrole_3805_dunning_manager]"
+      },
+      {
+        role = "[scriptid=customrole_3805_dunning_director]"
+      },
+    ]
+  }
+  dashboards = {
+    dashboard = [
+      {
+        centertab = netsuite.centertab.instance.custcentertab7_15.scriptid
+        layout = "TWO_COLUMN"
+        mode = "UNLOCKED"
+        centercolumn = {
+          customsearch = [
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_3805_db_total_ar_overdue]"
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_3805_db_paused_customer]"
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_3805_db_paused_invoice]"
+            },
+            {
+              allowinlineediting = true
+              backgroundtype = "GLOBAL_BACKGROUND"
+              charttheme = "GLOBAL_THEME"
+              drilldown = "NEW_PAGE"
+              isminimized = false
+              resultssize = 10
+              savedsearch = "[scriptid=customsearch_3805_db_recently_sent]"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

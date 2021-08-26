@@ -1,0 +1,18 @@
+netsuite.Account Cumulative_Translation_Adjustment_Elimination_3101@ssbu {
+  acctType = "_equity"
+  acctNumber = "3101"
+  acctName = "Cumulative Translation Adjustment-Elimination"
+  includeChildren = true
+  generalRate = "_historical"
+  cashFlowRate = "_historical"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Cumulative Translation Adjustment-Elimination_3101"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

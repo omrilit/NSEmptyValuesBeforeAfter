@@ -1,0 +1,125 @@
+netsuite.workflow customworkflow_setjobcosting {
+  scriptid = "customworkflow_setjobcosting"
+  description = "Set Project exp type to Regular, and apply to all time entries."
+  initoncreate = true
+  initonvieworupdate = true
+  isinactive = false
+  islogenabled = true
+  keephistory = "ALWAYS"
+  name = "Set Job Costing Defaults"
+  recordtypes = "JOB"
+  releasestatus = "RELEASED"
+  runasadmin = true
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate87"
+        donotexitworkflow = false
+        name = "Enter Form"
+        positionx = 200
+        positiony = 50
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition237"
+              tostate = netsuite.workflow.instance.customworkflow_setjobcosting.workflowstates.workflowstate.1.scriptid
+              triggertype = "ONENTRY"
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate88"
+        donotexitworkflow = false
+        name = "Set Value"
+        positionx = 200
+        positiony = 140
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction238"
+                field = "STDENTITYPROJECTEXPENSETYPE"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "[ACCOUNT_SPECIFIC_VALUE]"
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "isEmpty(\"Project Expense Type\") = 'T'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Project Expense Type"
+                        value = "STDENTITYPROJECTEXPENSETYPE"
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction239"
+                field = "STDENTITYAPPLYPROJECTEXPENSETYPETOALL"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = true
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+              {
+                scriptid = "workflowaction246"
+                field = "STDENTITYSTATUS"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "[ACCOUNT_SPECIFIC_VALUE]"
+                valuetype = "STATIC"
+                initcondition = {
+                  formula = "isEmpty(\"Status\") = 'T'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Status"
+                        value = "STDENTITYSTATUS"
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition240"
+              tostate = netsuite.workflow.instance.customworkflow_setjobcosting.workflowstates.workflowstate.2.scriptid
+              triggertype = "BEFORESUBMIT"
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate89"
+        donotexitworkflow = false
+        name = "Leave Form"
+        positionx = 200
+        positiony = 230
+      },
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+netsuite.Subsidiary UK_HQ_EMEA_Germany@buu {
+  name = "Germany"
+  parent = netsuite.Subsidiary.instance.UK_HQ_EMEA@bu
+  isInactive = false
+  showSubsidiaryName = false
+  logo = netsuite.RecordRef.instance.Subsidiary_logo_2114
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  country = "_germany"
+  mainAddress = {
+    country = "_germany"
+    addressee = "Kung Fu Food DE"
+    addr1 = "Güglingstr. 67/1"
+    city = "73529 Schwäbisch Gmünd"
+    addrText = "Kung Fu Food DE<br>Güglingstr. 67/1<br>73529 Schwäbisch Gmünd  <br>Deutschland"
+    override = true
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.EUR
+  edition = "XX"
+  federalIdNumber = "DE"
+  interCoAccount = {
+    name = "1805 Intercompany Clearing Account : Intercompany Payable/Receivable EUR"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._germany
+        country = "DE"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+        name = "Deutschland"
+      },
+      {
+        language = "English (UK)"
+        name = "Germany"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_EMEA_Germany"
+  custom_custrecord_subnav_subsidiary_logo = {
+    name = "dilley services logo small.jpg"
+    internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+}

@@ -1,0 +1,54 @@
+netsuite.ItemGroup D_Link_SharePort_Go@bss {
+  includeStartEndLines = true
+  availableToPartners = false
+  isInactive = true
+  itemId = "D-Link SharePort Go"
+  description = "D-Link SharePort Go"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  includeChildren = true
+  printItems = false
+  memberList = {
+    itemMember = [
+      {
+        quantity = 1
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_2
+        item = netsuite.RecordRef.instance.ItemGroup_item_41
+        lineNumber = 1
+      },
+      {
+        quantity = 1
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_1
+        item = netsuite.RecordRef.instance.ItemGroup_item_309
+        lineNumber = 2
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+        displayName = "German - Combo #4"
+        salesDescription = "Chow Mein, Kung Pao Chicken and Spring Roll. Perfect for 1!"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "D-Link SharePort Go"
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

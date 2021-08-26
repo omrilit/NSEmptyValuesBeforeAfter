@@ -1,0 +1,363 @@
+netsuite.entryForm custform_11_t1499227_346 {
+  scriptid = "custform_11_t1499227_346"
+  standard = "STANDARDGENERICRESOURCEFORM"
+  name = "Dilley SRP Generic Resource Form"
+  recordType = "GENERICRESOURCE"
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "primaryinformation"
+        label = "Primary Information"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "CUSTOMFORM"
+                label = "Custom Form"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ENTITYID"
+                label = "Name"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "BILLINGCLASS"
+                label = "Billing Class"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "LABORCOST"
+                label = "Labor Cost"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.entitycustomfield.instance.custentity_ra_approver.scriptid
+                label = "Resource Allocation Approver"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "WORKCALENDAR"
+                label = "Work Calendar"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "SUBSIDIARY"
+                label = "Subsidiary"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ISINACTIVE"
+                label = "Inactive"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+    ]
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "LABORPRICE"
+              label = "Hourly Bill Rate"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "ENTITYCUSTOM"
+        label = "Custom"
+        visible = false
+        fieldGroups = {
+          fieldGroup = [
+            {
+              scriptid = "custom"
+              label = "Custom"
+              visible = true
+              showTitle = true
+              singleColumn = false
+            },
+          ]
+        }
+        subItems = {
+          subList = [
+            {
+              id = "[scriptid=customrecord_rss_skillset.custrecord_rss_skillset_resource]"
+              label = "Skill Set"
+              visible = false
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "ENTITYS_SYSINFO"
+        label = "System Information"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_1_t1499227_705.scriptid
+        label = "Prof. Services"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_118_t1499227_705.scriptid
+        label = "Bank Payment Details"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_17_3776644_208.scriptid
+        label = "Tax Reporting"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_85_t1499227_705.scriptid
+        label = "Partners"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_2_t1499227_705.scriptid
+        label = "Time Budgets"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_120_t1499227_705.scriptid
+        label = "Bank Payment Details (Debit)"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_87_t1499227_705.scriptid
+        label = "Opportunities"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_119_t1499227_705.scriptid
+        label = "Bank Payment Details (Credit)"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_90_t1499227_705.scriptid
+        label = "Transactions"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_3_t1499227_705.scriptid
+        label = "Staffing"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_89_t1499227_705.scriptid
+        label = "Items Purchased"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_6_t1499227_705.scriptid
+        label = "Usage"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_88_t1499227_705.scriptid
+        label = "Notes & Attachments"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_86_t1499227_705.scriptid
+        label = "Messages"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_96_t1499227_705.scriptid
+        label = "Marketing/PR"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_9_t1499227_705.scriptid
+        label = "Marketing/PR"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_10_t1499227_705.scriptid
+        label = "Qualification"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_8_t1499227_705.scriptid
+        label = "Company Profile"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_14_t1499227_705.scriptid
+        label = "Production Environment"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_33_t1499227_705.scriptid
+        label = "Issues"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_15_4453644_498.scriptid
+        label = "Collections"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_30_t1499227_705.scriptid
+        label = "Customer Satisfaction Survey"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_31_t1499227_705.scriptid
+        label = "Job Alerts"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_39_t1499227_705.scriptid
+        label = "Travel Requests"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_148_t1499227_705.scriptid
+        label = "Credit Approval"
+        visible = false
+      },
+      {
+        id = netsuite.subtab.instance.custtab_29_3956802_208.scriptid
+        label = "Dunning"
+        visible = true
+        subItems = {
+          subTab = [
+            {
+              id = netsuite.subtab.instance.custtab_34_3956802_208.scriptid
+              label = "Setup"
+              visible = true
+            },
+            {
+              id = netsuite.subtab.instance.custtab_35_3956802_208.scriptid
+              label = "Log"
+              visible = true
+            },
+            {
+              id = netsuite.subtab.instance.custtab_33_3956802_208.scriptid
+              label = "Files"
+              visible = true
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.subtab.instance.custtab_246_t1499227_705.scriptid
+        label = "SuiteOffice - Convert to Store"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_14_4453644_498.scriptid
+        label = "Consolidated Invoice"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_5807_662377_921.scriptid
+        label = "OpenAir Project Template"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_216_t1499227_705.scriptid
+        label = "Collections"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_251_t1499227_705.scriptid
+        label = "Company Profile"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_255_t1499227_705.scriptid
+        label = "View Project Details"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_256_t1499227_705.scriptid
+        label = "View Client Details"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_257_t1499227_705.scriptid
+        label = "View Employee Details"
+        visible = true
+      },
+      {
+        id = netsuite.subtab.instance.custtab_258_t1499227_705.scriptid
+        label = "View Contact Details"
+        visible = true
+      },
+    ]
+  }
+  quickViewFields = {
+    field = [
+      {
+        id = "ENTITYID"
+      },
+      {
+        id = "BILLINGCLASS"
+      },
+      {
+        id = netsuite.entitycustomfield.instance.custentity_ra_approver.scriptid
+      },
+      {
+        id = "LABORCOST"
+      },
+    ]
+  }
+  editingInList = true
+}

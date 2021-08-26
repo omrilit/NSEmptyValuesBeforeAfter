@@ -1,0 +1,75 @@
+netsuite.savedcsvimport custimport_77_t1740134_435 {
+  scriptid = "custimport_77_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "UPDATE"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "Estimate Update"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "ESTIMATE"
+  runserversuitescript = false
+  transactionform = netsuite.transactionForm.instance.custform_165_t1499227_346.scriptid
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "ESTIMATE"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "ESTIMATE"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "DUEDATE"
+              columnreference = {
+                column = "duedate"
+                file = "ESTIMATE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "EXPECTEDCLOSEDATE"
+              columnreference = {
+                column = "expectedclosedate"
+                file = "ESTIMATE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TRANDATE"
+              columnreference = {
+                column = "trandate"
+                file = "ESTIMATE"
+                type = "NAME"
+              }
+            },
+            {
+              field = "TRANID"
+              columnreference = {
+                column = "tranid"
+                file = "ESTIMATE"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

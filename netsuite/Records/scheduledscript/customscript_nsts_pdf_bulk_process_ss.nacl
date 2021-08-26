@@ -1,0 +1,161 @@
+netsuite.scheduledscript customscript_nsts_pdf_bulk_process_ss {
+  scriptid = "customscript_nsts_pdf_bulk_process_ss"
+  defaultfunction = "bulkProcScheduled"
+  isinactive = false
+  name = "NSTS | PDF Bulk Process"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_SS_bulk_process_js@dsduuuuv.path
+  scriptcustomfields = {
+    scriptcustomfield = [
+      {
+        scriptid = "custscript_nsts_tex_trans_ids"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        isformula = false
+        ismandatory = false
+        label = "Transaction Ids"
+        searchlevel = "2"
+        storevalue = true
+      },
+      {
+        scriptid = "custscript_nsts_tex_rec_type"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        isformula = false
+        ismandatory = false
+        label = "Record Type"
+        searchlevel = "2"
+        storevalue = true
+      },
+    ]
+  }
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_nsts_tex_bulk_process_sc_1"
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "NOTSCHEDULED"
+        title = "NSTS | TEX Bulk Process"
+        recurrence = {
+          single = {
+            startdate = "2015-07-29"
+            starttime = "01:00:00Z"
+          }
+        }
+      },
+      {
+        scriptid = "customdeploy_nsts_tex_bulk_process_sc_2"
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "NOTSCHEDULED"
+        title = "NSTS | TEX Bulk Process 2"
+        recurrence = {
+          single = {
+            startdate = "2015-07-29"
+            starttime = "01:00:00Z"
+          }
+        }
+      },
+      {
+        scriptid = "customdeploy_nsts_tex_bulk_process_sc_3"
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "NOTSCHEDULED"
+        title = "NSTS | TEX Bulk Process 3"
+        recurrence = {
+          single = {
+            startdate = "2015-07-29"
+            starttime = "01:00:00Z"
+          }
+        }
+      },
+      {
+        scriptid = "customdeploy_nsts_tex_bulk_process_sc_4"
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "NOTSCHEDULED"
+        title = "NSTS | TEX Bulk Process 4"
+        recurrence = {
+          single = {
+            startdate = "2015-07-29"
+            starttime = "01:00:00Z"
+          }
+        }
+      },
+      {
+        scriptid = "customdeploy_nsts_tex_bulk_process_sc_5"
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "NOTSCHEDULED"
+        title = "NSTS | TEX Bulk Process 5"
+        recurrence = {
+          single = {
+            startdate = "2015-07-29"
+            starttime = "01:00:00Z"
+          }
+        }
+      },
+      {
+        scriptid = "customdeploy_nsts_tex_bulk_process_sc_6"
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "NOTSCHEDULED"
+        title = "NSTS | TEX Bulk Process 6"
+        recurrence = {
+          single = {
+            startdate = "2015-07-29"
+            starttime = "01:00:00Z"
+          }
+        }
+      },
+      {
+        scriptid = "customdeploy_nsts_tex_bulk_process_sc_7"
+        isdeployed = true
+        loglevel = "ERROR"
+        status = "NOTSCHEDULED"
+        title = "NSTS | TEX Bulk Process 7"
+        recurrence = {
+          single = {
+            startdate = "2015-07-29"
+            starttime = "01:00:00Z"
+          }
+        }
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_lodash_js@dsdv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_XMLToPDF_js@dsduuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_FunctionLib_js@dsduuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_FeatureLib_js@dsduuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_utilities_lib_js@dsduuuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_constants_and_config_js@dsduuuuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_146013_NSTS_PDF_NumberFormat_lib_js@dsduuuv.path
+      },
+    ]
+  }
+}

@@ -1,0 +1,450 @@
+netsuite.role customrole1100 {
+  scriptid = "customrole1100"
+  centertype = "PROJECTCENTER"
+  employeerestriction = "NONE"
+  employeeselectionunrestricted = true
+  isinactive = true
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issuerole = "-5"
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = ".US-04-Consultant-OLD"
+  restrictbydevice = false
+  restricttimeandexpenses = true
+  subsidiaryoption = "OWN"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = [
+      {
+        permkey = "TRAN_CHARGE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_EDITPROFILE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_EXPREPT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_CUSTINVC"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_OPPRTNTY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_EDITBANKINGINFO"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_PURCHORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_PURCHREQ"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_SALESORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_TIMEBILL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_ACCOUNTDETAIL"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_AP"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "GRAP_AP"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_AR"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "GRAP_AR"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_UNBILLED"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_AMORTIZATION"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_BALANCESHEET"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_BUDGET"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_CASHFLOW"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_COMMISSION"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_REMINDEREMPLOYEE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "GRAP_EXP"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_1099"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_GSTSUMMARY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_GL"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_GRANT_ACCESS"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "GRAP_INC"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_INTEGRATION"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_INVENTORY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_ISSUE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SNAPSHOTLEAD"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_MARKETING"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "GRAP_NETWORTH"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_PSTSUMMARY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_PANDL"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_PURCHASEORDER"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_PURCHASES"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_QUOTA"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_RECONCILE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_CUSTOMIZATION"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SCHEDULE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_RSRCALLOCATION"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_RETURNAUTH"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_REVREC"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SALES"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SALES_PARTNER"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SALES_PROMO"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SFA"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SALESORDER"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_BOOKINGS"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_NONPOSTING"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_ANALYTICS"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "REPO_SUPPORT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SNAPSHOTCASE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_TAX"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_TIME"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_TRAN"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_TRIALBALANCE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_WEBSITE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_WEBSTORE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CALENDAR"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CASE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CLASS"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CUSTJOB"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CUSTRECORDENTRY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_DEPARTMENT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_FILECABINET"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_EMPLOYEE_RECORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EMPLOYEE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_EVENT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_GENERICRESOURCE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_IMPORTED_EMPLOYEE_EXPENSE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_ITEM"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_LOCATION"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REGT_NONPOSTING"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_FIND"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CALL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTEMPLATE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_JOB"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_PUBLISHSEARCH"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_RESOURCE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_RSRCALLOCATION"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_REVRECSCHEDULE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_SUBSIDIARY"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_TASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_VENDOR"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_WORKCALENDAR"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "ADMI_ACCOUNTINGLIST"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "ADMI_COPYPROJECTTASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_DELETEDRECORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_MOBILE_ACCESS"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_OUTLOOKINTEGRATION"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_SAVEDASHBOARD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_WEBSERVICES"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "[scriptid=customrecord_rss_skill]"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "[scriptid=customrecord_rss_category]"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "[scriptid=customrecord_rss_skill_level]"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "[scriptid=customrecord_rss_skillset]"
+        permlevel = "FULL"
+      },
+    ]
+  }
+  recordrestrictions = {
+    recordrestriction = [
+      {
+        itemsrestricted = false
+        restriction = "OWNONLY"
+        segment = "LOCATION"
+        viewingallowed = false
+      },
+      {
+        itemsrestricted = false
+        restriction = "OWNONLY"
+        segment = "DEPARTMENT"
+        viewingallowed = false
+      },
+      {
+        itemsrestricted = false
+        restriction = "OWNONLY"
+        segment = "CLASS"
+        viewingallowed = false
+      },
+    ]
+  }
+}

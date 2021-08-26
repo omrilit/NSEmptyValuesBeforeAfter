@@ -1,0 +1,35 @@
+netsuite.suitelet customscript_trans_creation_automation {
+  scriptid = "customscript_trans_creation_automation"
+  defaultfunction = "automation_suitelet"
+  isinactive = false
+  name = "**Procure to Pay Management"
+  notifyadmins = false
+  notifyemails = "mdeasis@netsuite.com"
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_74218_Procure2Pay_Automation_js@dsduv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_trans_creation_automation"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "**Procure to Payment Management"
+        links = {
+          link = [
+            {
+              linkcategory = "BASICSETUPCUSTOM"
+              linklabel = "Procure to Pay Management"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

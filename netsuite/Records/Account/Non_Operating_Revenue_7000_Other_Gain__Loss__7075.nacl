@@ -1,0 +1,23 @@
+netsuite.Account Non_Operating_Revenue_7000_Other_Gain__Loss__7075@bsuussjku {
+  acctType = "_otherIncome"
+  acctNumber = "7075"
+  acctName = "Other Gain (Loss)"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.Non_Operating_Revenue_7000@bsu
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  revalue = false
+  identifier = "Non-Operating Revenue_7000_Other Gain (Loss)_7075"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

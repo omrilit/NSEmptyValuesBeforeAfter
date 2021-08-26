@@ -1,0 +1,52 @@
+netsuite.sspapplication webapp_ns_checkout_2_04_0 {
+  scriptid = "webapp_ns_checkout_2_04_0"
+  appfolder = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - Checkout 2.04.0/Reference Checkout/]"
+  isinactive = false
+  loglevel = "DEBUG"
+  name = "Reference Checkout 2.04.0"
+  rootpath = "/checkout-2-04-0"
+  runtimeversion = "1"
+  status = "RELEASED"
+  libraries = {
+    library = [
+      {
+        scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - Checkout 2.04.0/Reference Checkout/ssp_libraries/underscore.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - Checkout 2.04.0/Reference Checkout/ssp_libraries/backbone.validation.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - Checkout 2.04.0/Reference Checkout/ssp_libraries/commons.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - Checkout 2.04.0/Reference Checkout/ssp_libraries/backend.configuration.js]"
+      },
+      {
+        scriptfile = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - Checkout 2.04.0/Reference Checkout/ssp_libraries/Models.js]"
+      },
+    ]
+  }
+  entrypoints = {
+    entrypoint = [
+      {
+        entryitem = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - Checkout 2.04.0/Reference Checkout/cart.ssp]"
+        entrytype = "CART"
+      },
+      {
+        entryitem = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - Checkout 2.04.0/Reference Checkout/index.ssp]"
+        entryparameter = "is=login"
+        entrytype = "LOGIN"
+      },
+      {
+        entryitem = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - Checkout 2.04.0/Reference Checkout/index.ssp]"
+        entryparameter = "is=checkout"
+        entrytype = "CHECKOUT"
+      },
+      {
+        entryitem = "[/Web Site Hosting Files/Live Hosting Files/SSP Applications/NetSuite Inc. - Checkout 2.04.0/Reference Checkout/index.ssp]"
+        entryparameter = "is=register"
+        entrytype = "REGISTER"
+      },
+    ]
+  }
+}

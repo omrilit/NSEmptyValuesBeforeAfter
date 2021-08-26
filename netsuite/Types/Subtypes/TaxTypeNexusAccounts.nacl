@@ -1,0 +1,14 @@
+type netsuite.TaxTypeNexusAccounts {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.Nexus nexus {
+    isReference = true
+  }
+  netsuite.Account payablesAccount {
+    isReference = true
+  }
+  netsuite.RecordRef receivablesAccount {
+  }
+}

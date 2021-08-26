@@ -1,0 +1,102 @@
+netsuite.savedcsvimport custimport_72_t1740134_435 {
+  scriptid = "custimport_72_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "Multiple Journal Entry import 2"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "JOURNALENTRY"
+  runserversuitescript = false
+  transactionform = "STANDARDJOURNALENTRY"
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "JOURNALENTRY"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "JOURNALENTRY"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "EXTERNALID"
+              columnreference = {
+                column = "External ID"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "POSTINGPERIOD"
+              columnreference = {
+                column = "posting period"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "SUBSIDIARY"
+              value = "1"
+            },
+            {
+              field = "TRANDATE"
+              columnreference = {
+                column = "JE Date"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+      {
+        record = "JOURNALENTRY:LINE"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ACCOUNT"
+              columnreference = {
+                column = "Account"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CREDIT"
+              columnreference = {
+                column = "Credit"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+            {
+              field = "DEBIT"
+              columnreference = {
+                column = "Debit"
+                file = "JOURNALENTRY"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

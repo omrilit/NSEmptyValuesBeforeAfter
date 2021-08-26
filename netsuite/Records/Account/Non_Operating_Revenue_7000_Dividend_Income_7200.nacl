@@ -1,0 +1,28 @@
+netsuite.Account Non_Operating_Revenue_7000_Dividend_Income_7200@bsuusu {
+  acctType = "_otherIncome"
+  acctNumber = "7200"
+  acctName = "Dividend Income"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.Non_Operating_Revenue_7000@bsu
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "Non-Operating Revenue_7000_Dividend Income_7200"
+  custom_custrecord_fam_account_showinfixedasset = [
+    {
+      name = "Disposal Cost Account"
+      internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+    },
+  ]
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

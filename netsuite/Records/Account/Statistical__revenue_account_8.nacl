@@ -1,0 +1,22 @@
+netsuite.Account Statistical__revenue_account_8@bssu {
+  acctType = "_statistical"
+  unitsType = {
+    name = "Revenue"
+  }
+  unit = {
+    name = "Amount"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  acctNumber = "8"
+  acctName = "Statistical- revenue account"
+  includeChildren = true
+  description = "Revenue"
+  isInactive = false
+  inventory = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  identifier = "Statistical- revenue account_8"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

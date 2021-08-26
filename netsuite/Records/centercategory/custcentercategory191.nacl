@@ -1,0 +1,26 @@
+netsuite.centercategory custcentercategory191 {
+  scriptid = "custcentercategory191"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_timeexpense.scriptid
+  label = "Timesheets"
+  links = {
+    link = [
+      {
+        linkid = "EDIT_TIMESHEET"
+        linklabel = "View Time"
+        shortlist = false
+      },
+      {
+        linkid = "TRAN_TIMEBILL"
+        linklabel = "View Time"
+        shortlist = false
+      },
+      {
+        linklabel = "Timesheets module"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_timesheets.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

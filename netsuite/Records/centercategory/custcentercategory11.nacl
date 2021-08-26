@@ -1,0 +1,46 @@
+netsuite.centercategory custcentercategory11 {
+  scriptid = "custcentercategory11"
+  center = "BASIC"
+  centertab = netsuite.centertab.instance.custcentertab8_14.scriptid
+  label = "Setup"
+  links = {
+    link = [
+      {
+        linklabel = "System Setup"
+        linkobject = "[scriptid=customscript_ncfar_systemsetup_sl.customdeploy1]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Asset Transfer Accounts"
+        linkobject = "[scriptid=customrecord_ncfar_transferaccounts]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Asset Types"
+        linkobject = "[scriptid=customrecord_ncfar_assettype]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Depreciation Methods"
+        linkobject = "[scriptid=customrecord_ncfar_deprmethod]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Alternate Methods"
+        linkobject = "[scriptid=customrecord_ncfar_altmethods]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Transaction Field Map"
+        linkobject = "[scriptid=customrecord_fam_tpaf_mapping]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+    ]
+  }
+}

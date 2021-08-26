@@ -1,0 +1,239 @@
+netsuite.role customrole1014 {
+  scriptid = "customrole1014"
+  centertype = "BASIC"
+  employeerestriction = "NONE"
+  employeeselectionunrestricted = false
+  isinactive = true
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "Developer (Engineer)"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "OWN"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = [
+      {
+        permkey = "REPO_SALES"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_ANALYTICS"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "REPO_SUPPORT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SNAPSHOTCASE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_TIME"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CRMGROUP"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CALENDAR"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CAMPAIGNHISTORY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CASE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CUSTJOB"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_COMPANY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CONTACT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CUSTRECORDENTRY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_FILECABINET"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EMAILTEMPLATE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EVENT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_INTERNALPUBLISH"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_ITEMTEMPLATE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_KNOWLEDGEBASE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_MAILMERGE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CAMPAIGN"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_HISTORY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PDFMESSAGE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PDFTEMPLATE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CALL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTEMPLATE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_JOB"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PUBLISHSEARCH"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_RECORDCUSTFIELD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_TASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CRMMESSAGE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CUSTENTITYFIELD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CUSTENTRYFORM"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CUSTFIELD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CUSTLAYOUT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CUSTRECORD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_TYPE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_ESCALATIONTERRITORY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_ESCALATIONRULE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CASEFORM"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CUSTOTHERFIELD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_SAVEDASHBOARD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_KNOWLEDGEBASE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CASEISSUE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CASEORIGIN"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CASEPRIORITY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CASESTATUS"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CASETERRITORY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CASERULE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_CASETYPE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_SUPPORTSETUP"
+        permlevel = "FULL"
+      },
+      {
+        permkey = netsuite.customrecordtype.instance.customrecord2.scriptid
+        permlevel = "FULL"
+      },
+    ]
+  }
+}

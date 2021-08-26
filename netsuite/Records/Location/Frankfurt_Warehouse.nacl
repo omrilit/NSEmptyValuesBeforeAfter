@@ -1,0 +1,37 @@
+netsuite.Location Frankfurt_Warehouse@s {
+  name = "Frankfurt Warehouse"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_Germany@buu,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_germany"
+    addressee = "Frankfurt Warehouse"
+    addrText = "Frankfurt Warehouse<br>Germany"
+    override = false
+  }
+  returnAddress = {
+    country = "_afghanistan"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Frankfurt Warehouse"
+}

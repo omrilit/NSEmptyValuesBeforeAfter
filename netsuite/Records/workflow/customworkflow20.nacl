@@ -1,0 +1,72 @@
+netsuite.workflow customworkflow20 {
+  scriptid = "customworkflow20"
+  initoncreate = true
+  initonvieworupdate = true
+  inittriggertype = "AFTERSUBMIT"
+  isinactive = false
+  islogenabled = true
+  keephistory = "ALWAYS"
+  name = "suggested department vendor"
+  recordtypes = "VENDOR"
+  releasestatus = "RELEASED"
+  runasadmin = true
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate158"
+        donotexitworkflow = false
+        name = "State 1"
+        positionx = 243
+        positiony = 133
+        workflowactions = [
+          {
+            triggertype = "AFTERSUBMIT"
+            createrecordaction = [
+              {
+                scriptid = "workflowaction1954"
+                isinactive = false
+                recordtype = "VENDOR"
+                resultfield = netsuite.entitycustomfield.instance.custentity_oa_vendor_parent.scriptid
+                schedulemode = "DELAY"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+                fieldsettings = {
+                  fieldsetting = [
+                    {
+                      targetfield = netsuite.entitycustomfield.instance.custentitysuggested_department.scriptid
+                    },
+                    {
+                      targetfield = "STDENTITYENTITYID"
+                    },
+                  ]
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition476"
+              tostate = netsuite.workflow.instance.customworkflow20.workflowstates.workflowstate.1.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate159"
+        donotexitworkflow = false
+        name = "State 2"
+        positionx = 243
+        positiony = 213
+      },
+    ]
+  }
+}

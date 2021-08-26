@@ -1,0 +1,423 @@
+netsuite.workflow customworkflow_ra_approval_2 {
+  scriptid = "customworkflow_ra_approval_2"
+  description = "Custom Resource Allocation Approval Workflow"
+  initoncreate = true
+  initonvieworupdate = true
+  inittriggertype = "AFTERSUBMIT"
+  isinactive = false
+  islogenabled = true
+  keephistory = "ALWAYS"
+  name = "Awaiting Approval"
+  recordtypes = "RESOURCEALLOCATION"
+  releasestatus = "RELEASED"
+  runasadmin = true
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowcustomfields = {
+    workflowcustomfield = [
+      {
+        scriptid = "custworkflow_ra_preference_approval_2"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        label = "RA Preference"
+        storevalue = true
+      },
+    ]
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate71"
+        donotexitworkflow = false
+        name = "State 1: Check RA Preference"
+        positionx = 203
+        positiony = 53
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            customaction = [
+              {
+                scriptid = "workflowaction209"
+                isinactive = false
+                resultfield = netsuite.workflow.instance.customworkflow_ra_approval_2.workflowcustomfields.workflowcustomfield.0.scriptid
+                schedulemode = "DELAY"
+                scripttype = "[scriptid=customscript_ra_wa_checkrapreference]"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition208"
+              tostate = netsuite.workflow.instance.customworkflow_ra_approval_2.workflowstates.workflowstate.1.scriptid
+              initcondition = {
+                formula = "\"Workflow:RA Preference\" = 'T'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:RA Preference"
+                      value = netsuite.workflow.instance.customworkflow_ra_approval_2.workflowcustomfields.workflowcustomfield.0.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition207"
+              tostate = netsuite.workflow.instance.customworkflow_ra_approval_2.workflowstates.workflowstate.4.scriptid
+              initcondition = {
+                formula = "\"Workflow:RA Preference\" = 'F'"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:RA Preference"
+                      value = netsuite.workflow.instance.customworkflow_ra_approval_2.workflowcustomfields.workflowcustomfield.0.scriptid
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate68"
+        donotexitworkflow = false
+        name = "Select to"
+        positionx = 203
+        positiony = 143
+        workflowactions = [
+          {
+            triggertype = "BEFORELOAD"
+            removebuttonaction = [
+              {
+                scriptid = "workflowaction196"
+                buttonid = "SUBMITNEW"
+                isinactive = false
+                initcondition = {
+                  formula = "\"User\" IN (\"Next Approver\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "User"
+                        value = "STDUSERUSER"
+                      },
+                      {
+                        name = "Next Approver"
+                        value = "STDEVENTNEXTAPPROVER"
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+            addbuttonaction = [
+              {
+                scriptid = "workflowaction_ra_approve_2"
+                checkconditionbeforeexecution = true
+                isinactive = false
+                label = "Approve"
+                saverecordfirst = true
+                initcondition = {
+                  formula = "\"User\" IN (\"Next Approver\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "User"
+                        value = "STDUSERUSER"
+                      },
+                      {
+                        name = "Next Approver"
+                        value = "STDEVENTNEXTAPPROVER"
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                scriptid = "workflowaction_ra_reject_2"
+                checkconditionbeforeexecution = true
+                isinactive = false
+                label = "Reject"
+                saverecordfirst = true
+                initcondition = {
+                  formula = "\"User\" IN (\"Next Approver\")"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "User"
+                        value = "STDUSERUSER"
+                      },
+                      {
+                        name = "Next Approver"
+                        value = "STDEVENTNEXTAPPROVER"
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+          {
+            triggertype = "AFTERSUBMIT"
+            sendemailaction = [
+              {
+                scriptid = "workflowaction195"
+                attachmenttype = "SPECIFIC"
+                body = "Please review the Resource Allocation submitted for your approval.<br>"
+                includerecordlink = true
+                isinactive = false
+                recipientfield = "STDEVENTNEXTAPPROVER"
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = "STDEVENTREQUESTEDBY"
+                sendertype = "FIELD"
+                subject = "Resource Allocation for Approval (Resource: {allocationresource.entityid})"
+                usetemplate = false
+                initcondition = {
+                  formula = "isEmpty(\"Requested By:E-mail\") = 'F' AND isEmpty(\"Next Approver:E-mail\") = 'F'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Requested By:E-mail"
+                        value = "STDEVENTREQUESTEDBY:STDENTITYEMAIL"
+                      },
+                      {
+                        name = "Next Approver:E-mail"
+                        value = "STDEVENTNEXTAPPROVER:STDENTITYEMAIL"
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition199"
+              buttonaction = netsuite.workflow.instance.customworkflow_ra_approval_2.workflowstates.workflowstate.1.workflowactions.0.addbuttonaction.0.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_ra_approval_2.workflowstates.workflowstate.2.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+            {
+              scriptid = "workflowtransition203"
+              buttonaction = netsuite.workflow.instance.customworkflow_ra_approval_2.workflowstates.workflowstate.1.workflowactions.0.addbuttonaction.1.scriptid
+              tostate = netsuite.workflow.instance.customworkflow_ra_approval_2.workflowstates.workflowstate.3.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate69"
+        donotexitworkflow = false
+        name = "State 3: Approved"
+        positionx = 203
+        positiony = 233
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction201"
+                field = "STDEVENTAPPROVALSTATUS"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "5"
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+              {
+                scriptid = "workflowaction232"
+                field = "STDEVENTALLOCATIONTYPE"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "[ACCOUNT_SPECIFIC_VALUE]"
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+          {
+            triggertype = "AFTERSUBMIT"
+            sendemailaction = [
+              {
+                scriptid = "workflowaction202"
+                attachmenttype = "SPECIFIC"
+                body = "Your requested Resource Allocation has been approved."
+                includerecordlink = true
+                isinactive = false
+                recipientfield = "STDEVENTREQUESTEDBY"
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = "STDEVENTNEXTAPPROVER"
+                sendertype = "FIELD"
+                subject = "Resource Allocation Approved (Resource: {allocationresource.entityid})"
+                usetemplate = false
+                initcondition = {
+                  formula = "isEmpty(\"Next Approver:E-mail\") = 'F' AND isEmpty(\"Requested By:E-mail\") = 'F'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Next Approver:E-mail"
+                        value = "STDEVENTNEXTAPPROVER:STDENTITYEMAIL"
+                      },
+                      {
+                        name = "Requested By:E-mail"
+                        value = "STDEVENTREQUESTEDBY:STDENTITYEMAIL"
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition200"
+              tostate = netsuite.workflow.instance.customworkflow_ra_approval_2.workflowstates.workflowstate.1.scriptid
+              initcondition = {
+                formula = "\"Approval Status\" IN (\"{#Resource Allocation#} Approval Status1\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Approval Status"
+                      value = "STDEVENTAPPROVALSTATUS"
+                    },
+                    {
+                      name = "{#Resource Allocation#} Approval Status1"
+                      selectrecordtype = "-301"
+                      value = "4"
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate70"
+        donotexitworkflow = false
+        name = "State 4: Rejected"
+        positionx = 203
+        positiony = 323
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            setfieldvalueaction = [
+              {
+                scriptid = "workflowaction206"
+                field = "STDEVENTAPPROVALSTATUS"
+                isinactive = false
+                schedulemode = "DELAY"
+                valuechecked = false
+                valueselect = "6"
+                valuetype = "STATIC"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+          {
+            triggertype = "AFTERSUBMIT"
+            sendemailaction = [
+              {
+                scriptid = "workflowaction205"
+                attachmenttype = "SPECIFIC"
+                body = "Your requested Resource Allocation has been rejected."
+                includerecordlink = true
+                isinactive = false
+                recipientfield = "STDEVENTREQUESTEDBY"
+                recipienttype = "FIELD"
+                schedulemode = "DELAY"
+                senderfield = "STDEVENTNEXTAPPROVER"
+                sendertype = "FIELD"
+                subject = "Resource Allocation Rejected (Resource: {allocationresource.entityid})"
+                usetemplate = false
+                initcondition = {
+                  formula = "isEmpty(\"Next Approver:E-mail\") = 'F' AND isEmpty(\"Requested By:E-mail\") = 'F'"
+                  type = "VISUAL_BUILDER"
+                  parameters = {
+                    parameter = [
+                      {
+                        name = "Next Approver:E-mail"
+                        value = "STDEVENTNEXTAPPROVER:STDENTITYEMAIL"
+                      },
+                      {
+                        name = "Requested By:E-mail"
+                        value = "STDEVENTREQUESTEDBY:STDENTITYEMAIL"
+                      },
+                    ]
+                  }
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition204"
+              tostate = netsuite.workflow.instance.customworkflow_ra_approval_2.workflowstates.workflowstate.1.scriptid
+              initcondition = {
+                formula = "\"Approval Status\" IN (\"{#Resource Allocation#} Approval Status1\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Approval Status"
+                      value = "STDEVENTAPPROVALSTATUS"
+                    },
+                    {
+                      name = "{#Resource Allocation#} Approval Status1"
+                      selectrecordtype = "-301"
+                      value = "4"
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate67"
+        donotexitworkflow = false
+        name = "State 5: Exit Approval"
+        positionx = 203
+        positiony = 413
+      },
+    ]
+  }
+}

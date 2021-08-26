@@ -1,0 +1,132 @@
+netsuite.role customrole1053 {
+  scriptid = "customrole1053"
+  centertype = "BASIC"
+  employeerestriction = "NONE"
+  employeeselectionunrestricted = false
+  isinactive = false
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issuerole = "3"
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "Product Manager - US-West"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "SELECTED"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = [
+      {
+        permkey = "TRAN_PAYMENTAUDIT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_CUSTINVC"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_SALESORD"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_PAYMENTEVENT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_ISSUE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SCHEDULE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_ANALYTICS"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "REPO_SUPPORT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SNAPSHOTCASE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CALENDAR"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CASE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CUSTJOB"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_COMPANY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CONTACT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CUSTRECORDENTRY"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EVENT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_ISSUE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTEMPLATE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_JOB"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PUBLISHSEARCH"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_RECORDCUSTFIELD"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_TASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_ISSUESETUP"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "ADMI_ISSUESHOWSTOPPER"
+        permlevel = "FULL"
+      },
+      {
+        permkey = netsuite.customrecordtype.instance.customrecord31.scriptid
+        permlevel = "FULL"
+      },
+    ]
+  }
+}

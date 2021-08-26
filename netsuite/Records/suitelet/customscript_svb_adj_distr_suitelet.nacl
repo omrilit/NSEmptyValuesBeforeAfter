@@ -1,0 +1,32 @@
+netsuite.suitelet customscript_svb_adj_distr_suitelet {
+  scriptid = "customscript_svb_adj_distr_suitelet"
+  defaultfunction = "suitelet_AdjustDistribution"
+  isinactive = false
+  name = "NSTS - SVB | Adjust Distr - SL"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_SL_AdjustDistribution_js@dsduuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_svb_adj_distr_suitelet"
+        allemployees = true
+        allpartners = false
+        allroles = true
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        status = "RELEASED"
+        title = "NSTS - SVB Adjust Distribution -Suitelet"
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_45598_NSTS_SVB_Common_js@dsduuv.path
+      },
+    ]
+  }
+}

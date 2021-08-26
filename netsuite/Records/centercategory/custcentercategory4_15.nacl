@@ -1,0 +1,34 @@
+netsuite.centercategory custcentercategory4_15 {
+  scriptid = "custcentercategory4_15"
+  center = "ACCOUNTCENTER"
+  centertab = netsuite.centertab.instance.custcentertab7_11.scriptid
+  label = "Setup"
+  links = {
+    link = [
+      {
+        linklabel = "Bank Details"
+        linkobject = "[scriptid=customrecord_2663_bank_details]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Payment Aggregation"
+        linkobject = "[scriptid=customrecord_2663_payment_aggregation]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Payment Queue"
+        linkobject = "[scriptid=customsearch_ep_payment_queue]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Payment Schedule"
+        linkobject = "[scriptid=customrecord_2663_payment_schedule]"
+        linktasktype = "LIST"
+        shortlist = false
+      },
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+netsuite.centercategory custcentercategory187_2 {
+  scriptid = "custcentercategory187_2"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_psa.scriptid
+  label = "Projects"
+  links = {
+    link = [
+      {
+        linkid = "LIST_CUSTJOB"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_JOB"
+        linklabel = "Project request"
+        shortlist = false
+      },
+      {
+        linklabel = "Project templates"
+        linkobject = netsuite.savedsearch.instance.customsearch_oa_project_template.scriptid
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+      },
+      {
+        linklabel = "Project stages"
+        linkobject = netsuite.customrecordtype.instance.customrecord_oa_project_stages.scriptid
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Project rate card"
+        linkobject = netsuite.customrecordtype.instance.customrecord_oa_project_rate_card.scriptid
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Projects module"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_projects.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

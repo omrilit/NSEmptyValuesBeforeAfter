@@ -1,0 +1,39 @@
+type netsuite.StatisticalJournalEntry {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  string tranId {
+  }
+  netsuite.RecordRef parentExpenseAlloc {
+  }
+  boolean approved {
+  }
+  string tranDate {
+  }
+  netsuite.RecordRef postingPeriod {
+  }
+  string reversalDate {
+  }
+  string memo {
+  }
+  boolean reversalDefer {
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.UnitsType unitsType {
+    isReference = true
+  }
+  netsuite.StatisticalJournalEntryLineList lineList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

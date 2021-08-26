@@ -1,0 +1,83 @@
+netsuite.savedcsvimport custimport_26_t1740134_435 {
+  scriptid = "custimport_26_t1740134_435"
+  charencoding = "Cp1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = false
+  importname = "7894"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  preventduplicates = false
+  recordtype = "LEAD"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "LEAD"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "LEAD"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "COMPANYNAME"
+              columnreference = {
+                column = "Name"
+                file = "LEAD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CURRENCY"
+              value = "5"
+            },
+            {
+              field = "ENTITYID"
+              columnreference = {
+                column = "Name"
+                file = "LEAD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "ENTITYSTATUS"
+              value = "6"
+            },
+            {
+              field = "ISPERSON"
+              value = "F"
+            },
+            {
+              field = "SUBSIDIARY"
+              columnreference = {
+                column = "Subsidiary"
+                file = "LEAD"
+                type = "INTERNAL_ID"
+              }
+            },
+            {
+              field = "UNSUBSCRIBE"
+              value = "T"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

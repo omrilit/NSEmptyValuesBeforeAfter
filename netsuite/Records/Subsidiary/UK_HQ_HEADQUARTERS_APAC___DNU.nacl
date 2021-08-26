@@ -1,0 +1,66 @@
+netsuite.Subsidiary UK_HQ_HEADQUARTERS_APAC___DNU@buusbs {
+  name = "APAC - DNU"
+  parent = netsuite.Subsidiary.instance.UK_HQ_HEADQUARTERS@bu
+  isInactive = true
+  showSubsidiaryName = false
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  country = "_japan"
+  mainAddress = {
+    country = "_japan"
+    addressee = "APAC - DNU"
+    addrText = "Japan<br>APAC"
+    override = false
+  }
+  shippingAddress = {
+    country = "_afghanistan"
+    override = false
+  }
+  returnAddress = {
+    country = "_afghanistan"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "Standard Fiscal Calendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.Yen
+  edition = "JP"
+  interCoAccount = {
+    name = "1802 Intercompany Clearing Account : Intercompany Payable/Receivable Y"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._japan
+        country = "JP"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_HEADQUARTERS_APAC - DNU"
+}

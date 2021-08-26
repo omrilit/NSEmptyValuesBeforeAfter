@@ -1,0 +1,28 @@
+netsuite.centercategory custcentercategory2_11 {
+  scriptid = "custcentercategory2_11"
+  center = "SYSADMINCENTER"
+  centertab = netsuite.centertab.instance.custcentertab70.scriptid
+  label = "Configuration"
+  links = {
+    link = [
+      {
+        linklabel = "Web Site Configuration"
+        linkobject = netsuite.customrecordtype.instance.customrecord_wd_configuration.scriptid
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Slider"
+        linkobject = netsuite.customrecordtype.instance.customrecord_wd_slider_zone.scriptid
+        linktasktype = "LIST"
+        shortlist = false
+      },
+      {
+        linklabel = "Badges"
+        linkobject = netsuite.customrecordtype.instance.customrecord_wd_badges.scriptid
+        linktasktype = "LIST"
+        shortlist = false
+      },
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+netsuite.suitelet customscript_nsts_ci_online_sl {
+  scriptid = "customscript_nsts_ci_online_sl"
+  defaultfunction = "suitelet_OnlineConsolidation"
+  description = "this script will generated the Online CI,Customer Screen CI,detail screen,on demand generation of CI PDF(used for dev only), and resending fax and email on CI record Screen."
+  isinactive = false
+  name = "NSTS | CI Online Consolidation SL"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_SL_ConsolidatedInvoicing_js@dsduuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_nsts_ci_online_sl"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        audslctrole = "ADMINISTRATOR"
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "NSTS | CI Online Consolidation SL"
+        links = {
+          link = [
+            {
+              linkcategory = "BASICLISTSCUSTOM"
+              linklabel = "Consolidate Customer Invoices"
+            },
+          ]
+        }
+      },
+    ]
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_Lib_Constants_js@dsduuuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_Lib_UtilAndObjects_js@dsduuuv.path
+      },
+      {
+        scriptfile = netsuite.file.instance.SuiteBundles_Bundle_122422_NSTS_CI_Lib_ConsolidationProcessing_js@dsduuuv.path
+      },
+    ]
+  }
+}

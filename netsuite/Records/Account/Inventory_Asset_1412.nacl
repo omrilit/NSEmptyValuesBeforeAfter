@@ -1,0 +1,18 @@
+netsuite.Account Inventory_Asset_1412@su {
+  acctType = "_otherCurrentAsset"
+  acctNumber = "1412"
+  acctName = "Inventory Asset"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = true
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Inventory Asset_1412"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

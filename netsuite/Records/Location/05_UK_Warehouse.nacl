@@ -1,0 +1,33 @@
+netsuite.Location "05_UK_Warehouse@s" {
+  name = "05 UK Warehouse"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_EMEA_United_Kingdom@buus,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_unitedKingdom"
+    addressee = "05 UK Warehouse"
+    addrText = "UK Warehouse<br>United Kingdom (GB)"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "05 UK Warehouse"
+}

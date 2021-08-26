@@ -1,0 +1,15 @@
+type netsuite.Partners {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.Partner partner {
+    isReference = true
+  }
+  netsuite.RecordRef partnerRole {
+  }
+  boolean isPrimary {
+  }
+  number contribution {
+  }
+}

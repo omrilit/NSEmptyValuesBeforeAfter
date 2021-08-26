@@ -1,0 +1,30 @@
+netsuite.centercategory custcentercategory151 {
+  scriptid = "custcentercategory151"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab63.scriptid
+  label = "Marketing"
+  links = {
+    link = [
+      {
+        linkid = "LIST_CRMGROUP"
+        shortlist = true
+      },
+      {
+        linkid = "LIST_CRMTEMPLATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CAMPAIGN"
+        shortlist = true
+      },
+      {
+        linkid = "LIST_CUSTOMERFORM"
+        shortlist = true
+      },
+      {
+        linkid = "LIST_UPSELLWIZARD"
+        shortlist = false
+      },
+    ]
+  }
+}

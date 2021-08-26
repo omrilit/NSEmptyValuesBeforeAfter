@@ -1,0 +1,61 @@
+netsuite.NonInventoryPurchaseItem Linksys_Dual_Band_AC1200_Wireless_USB_Adapter@sbssss {
+  purchaseDescription = "Linksys Dual-Band AC1200 Wireless USB Adapter"
+  expenseAccount = netsuite.Account.instance.IT_Equipment_1301@su
+  itemId = "Linksys Dual-Band AC1200 Wireless USB Adapter"
+  includeChildren = true
+  isInactive = true
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  amortizationTemplate = {
+    name = "Asset Depreciation"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  isFulfillable = true
+  generateAccruals = false
+  currency = "1"
+  itemVendorList = {
+    itemVendor = [
+      {
+        vendor = netsuite.Vendor.instance.NonInventoryPurchaseItem_vendor_26
+        purchasePrice = 1988
+        preferredVendor = true
+        subsidiary = netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Linksys Dual-Band AC1200 Wireless USB Adapter"
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

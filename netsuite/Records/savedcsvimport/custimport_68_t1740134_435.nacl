@@ -1,0 +1,99 @@
+netsuite.savedcsvimport custimport_68_t1740134_435 {
+  scriptid = "custimport_68_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  customrecord = "[scriptid=customrecord_ncfar_asset]"
+  datahandling = "UPDATE"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "FAM Update Date"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "CUSTOMRECORD"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "CUSTOMRECORD"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "CUSTOMRECORD"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ALTNAME"
+              columnreference = {
+                column = "Name"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdeprenddate]"
+              columnreference = {
+                column = "Depreciation End Date"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdeprstartdate]"
+              columnreference = {
+                column = "Depreciation Start Date"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdescr]"
+              columnreference = {
+                column = "Asset Description"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetpurchasedate]"
+              columnreference = {
+                column = "Purchase Date"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assettype]"
+              columnreference = {
+                column = "Asset Type"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "NAME"
+              columnreference = {
+                column = "ID"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

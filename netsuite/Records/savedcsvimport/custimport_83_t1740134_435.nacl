@@ -1,0 +1,99 @@
+netsuite.savedcsvimport custimport_83_t1740134_435 {
+  scriptid = "custimport_83_t1740134_435"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  entryform = netsuite.entryForm.instance.custform_117_t1499227_346.scriptid
+  ignorereadonly = true
+  importname = "OA Project Import"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "JOB"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "JOB"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "JOB"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "COMPANYNAME"
+              columnreference = {
+                column = "Company Name"
+                file = "JOB"
+                type = "NAME"
+              }
+            },
+            {
+              field = "CURRENCY"
+              columnreference = {
+                column = "Currency"
+                file = "JOB"
+                type = "NAME"
+              }
+            },
+            {
+              field = netsuite.entitycustomfield.instance.custentity_oa_export_to_openair.scriptid
+              columnreference = {
+                column = "Export to OpenAir"
+                file = "JOB"
+                type = "NAME"
+              }
+            },
+            {
+              field = netsuite.entitycustomfield.instance.custentity_oa_project_stage.scriptid
+              columnreference = {
+                column = "OpenAir Project Stage"
+                file = "JOB"
+                type = "NAME"
+              }
+            },
+            {
+              field = netsuite.entitycustomfield.instance.custentity_projectmanager.scriptid
+              value = "1248"
+            },
+            {
+              field = "PARENT"
+              columnreference = {
+                column = "Parent"
+                file = "JOB"
+                type = "INTERNAL_ID"
+              }
+            },
+            {
+              field = "PROJECTEXPENSETYPE"
+              value = "-2"
+            },
+            {
+              field = "STARTDATE"
+              columnreference = {
+                column = "Scheduled project start date"
+                file = "JOB"
+                type = "NAME"
+              }
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

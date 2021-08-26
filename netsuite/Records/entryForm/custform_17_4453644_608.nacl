@@ -1,0 +1,304 @@
+netsuite.entryForm custform_17_4453644_608 {
+  scriptid = "custform_17_4453644_608"
+  standard = "STANDARDCUSTOMRECORD_NSTS_CI_TASKFORM"
+  name = "NSTS | CI - Task Form"
+  recordType = netsuite.customrecordtype.instance.customrecord_nsts_ci_task.scriptid
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "CUSTOMFORM"
+              label = "Custom Form"
+              visible = false
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "NAME"
+              label = "ID"
+              visible = true
+              mandatory = true
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "RECORDID"
+              label = "ID"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "OWNER"
+              label = "Owner"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "CREATED"
+              label = "Date Created"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "LASTMODIFIED"
+              label = "Last Modified"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "ISINACTIVE"
+              label = "Inactive"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_task.customrecordcustomfields.customrecordcustomfield.0.scriptid
+              label = "Task Type"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_task.customrecordcustomfields.customrecordcustomfield.1.scriptid
+              label = "Initiated by"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_task.customrecordcustomfields.customrecordcustomfield.2.scriptid
+              label = "Task Started At"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_task.customrecordcustomfields.customrecordcustomfield.3.scriptid
+              label = "Task Ended At"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_task.customrecordcustomfields.customrecordcustomfield.4.scriptid
+              label = "Task Status"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_task.customrecordcustomfields.customrecordcustomfield.5.scriptid
+              label = "Error Details"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_task.customrecordcustomfields.customrecordcustomfield.6.scriptid
+              label = "Consolidation Records Identified"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_task.customrecordcustomfields.customrecordcustomfield.7.scriptid
+              label = "No. of CI Records Created"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_task.customrecordcustomfields.customrecordcustomfield.8.scriptid
+              label = "Customers"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_task.customrecordcustomfields.customrecordcustomfield.9.scriptid
+              label = "CI Numbers"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = netsuite.customrecordtype.instance.customrecord_nsts_ci_task.subtabs.subtab.0.scriptid
+        label = "CI Log"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_log.customrecordcustomfields.customrecordcustomfield.0.scriptid
+              label = "NSTS | CI - Log"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDMERGE"
+        label = "Mail Merge"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDMESSAGES"
+              label = "Messages"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDCUSTOM"
+        label = "Custom"
+        visible = false
+      },
+      {
+        id = "RECORDTRANSLATION"
+        label = "Translation"
+        visible = false
+        subItems = {
+          subList = [
+            {
+              id = "RECORDTRANSLATIONS"
+              label = "Translation"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+    ]
+  }
+  actionbar = {
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = false
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = false
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = false
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = false
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = false
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = false
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

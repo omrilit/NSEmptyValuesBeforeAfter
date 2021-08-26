@@ -1,0 +1,34 @@
+netsuite.centercategory custcentercategory100 {
+  scriptid = "custcentercategory100"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab50.scriptid
+  label = "Templates"
+  links = {
+    link = [
+      {
+        linkid = "LIST_EMAILTEMPLATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_FAXTEMPLATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_MAILTEMPLATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_PDFTEMPLATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CRMTEMPLATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_TEMPLATEFILES"
+        shortlist = true
+      },
+    ]
+  }
+}

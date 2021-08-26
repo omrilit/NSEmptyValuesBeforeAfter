@@ -1,0 +1,26 @@
+netsuite.clientscript customscript_item_mass_field_validator {
+  scriptid = "customscript_item_mass_field_validator"
+  isinactive = false
+  name = "**Item Mass Field Validator"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  saverecordfunction = "itemMassField_saveRecord"
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_93203_Item_Mass_Updater_CL_js@dsduuuv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_item_mass_field_validator"
+        allemployees = true
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBAPPLICATION|WEBSERVICES|WEBSTORE|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = netsuite.customrecordtype.instance.customrecord_csv_importer.scriptid
+        status = "RELEASED"
+      },
+    ]
+  }
+}

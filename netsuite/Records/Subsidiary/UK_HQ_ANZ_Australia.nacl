@@ -1,0 +1,75 @@
+netsuite.Subsidiary UK_HQ_ANZ_Australia@buu {
+  name = "Australia"
+  parent = netsuite.Subsidiary.instance.UK_HQ_ANZ@bu
+  isInactive = false
+  showSubsidiaryName = false
+  logo = netsuite.RecordRef.instance.Subsidiary_logo_2114
+  pageLogo = netsuite.RecordRef.instance.Subsidiary_pageLogo_2114
+  country = "_australia"
+  mainAddress = {
+    country = "_australia"
+    addressee = "Australia"
+    addrText = "Australia<br>Australia"
+    override = false
+  }
+  shippingAddress = {
+    country = "_afghanistan"
+    override = false
+  }
+  returnAddress = {
+    country = "_afghanistan"
+    override = false
+  }
+  isElimination = false
+  fiscalCalendar = {
+    name = "JulyJuneFiscalCalendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  taxFiscalCalendar = {
+    name = "JulyJuneFiscalCalendar"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  currency = netsuite.Currency.instance.AUD
+  edition = "AU"
+  interCoAccount = {
+    name = "1808 Intercompany Clearing Account : Intercompany Payable/Receivable AUD"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.Nexus.instance._unitedKingdom
+        country = "GB"
+      },
+      {
+        nexusId = netsuite.Nexus.instance._australia
+        country = "AU"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Cheque Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "German"
+      },
+      {
+        language = "Danish"
+      },
+      {
+        language = "Japanese"
+      },
+      {
+        language = "English (International)"
+      },
+    ]
+  }
+  identifier = "UK-HQ_ANZ_Australia"
+  custom_custrecord_subnav_subsidiary_logo = {
+    name = "dilley services logo small.jpg"
+    internalId = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+}

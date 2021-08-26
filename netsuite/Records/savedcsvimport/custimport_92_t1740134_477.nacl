@@ -1,0 +1,87 @@
+netsuite.savedcsvimport custimport_92_t1740134_477 {
+  scriptid = "custimport_92_t1740134_477"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  customrecord = "[scriptid=customrecord_ncfar_asset]"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  ignorereadonly = true
+  importname = "testing avital and nir"
+  logsystemnotescustfields = false
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "CUSTOMRECORD"
+  runserversuitescript = true
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = [
+      {
+        file = "CUSTOMRECORD"
+      },
+    ]
+  }
+  recordmappings = {
+    recordmapping = [
+      {
+        record = "CUSTOMRECORD"
+        fieldmappings = {
+          fieldmapping = [
+            {
+              field = "ALTNAME"
+              value = "item 18"
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetcost]"
+              columnreference = {
+                column = "original cost"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdepractive]"
+              value = "1"
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdeprrules]"
+              value = "1"
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdeprstartdate]"
+              columnreference = {
+                column = "depreciation start date"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetdescr]"
+              columnreference = {
+                column = "asset description"
+                file = "CUSTOMRECORD"
+                type = "NAME"
+              }
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assetresidualvalue]"
+              value = "0"
+            },
+            {
+              field = "[scriptid=customrecord_ncfar_asset.custrecord_assettype]"
+              value = "2"
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

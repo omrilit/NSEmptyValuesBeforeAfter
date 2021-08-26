@@ -1,0 +1,24 @@
+netsuite.Account Revenue_4000_Website_Shipping_Revenue_4008@uussu {
+  acctType = "_income"
+  acctNumber = "4008"
+  acctName = "Website Shipping Revenue"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.Revenue_4000
+  cashFlowRate = "_average"
+  description = "Website Shipping Revenue"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  revalue = false
+  identifier = "Revenue_4000_Website Shipping Revenue_4008"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

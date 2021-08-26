@@ -1,0 +1,346 @@
+netsuite.entryForm custform_109_t1499227_346 {
+  scriptid = "custform_109_t1499227_346"
+  standard = "STANDARDCUSTOMRECORD_SVB_LINE_IS_SOURCE_SUBFORM"
+  name = "Custom SVB |Bill Distribtn Sched Line Form"
+  recordType = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.scriptid
+  inactive = false
+  preferred = true
+  storedWithRecord = false
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "fieldgroup_228_t1499227_449"
+        label = "Primary"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "CUSTOMFORM"
+                label = "Custom Form"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = "RECORDID"
+                label = "ID"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = "NAME"
+                label = "Name"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = true
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.customrecordcustomfields.customrecordcustomfield.0.scriptid
+                label = "Bill Distribution Schedule - Parent"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.customrecordcustomfields.customrecordcustomfield.8.scriptid
+                label = "Allocation Weight"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = "OWNER"
+                label = "Owner"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = true
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = "CREATED"
+                label = "Date Created"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = "LASTMODIFIED"
+                label = "Last Modified"
+                visible = true
+                mandatory = true
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = "ISINACTIVE"
+                label = "Inactive"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "fieldgroup_226_t1499227_449"
+        label = "Source"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.customrecordcustomfields.customrecordcustomfield.6.scriptid
+                label = "Intercompany AR Account"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.customrecordcustomfields.customrecordcustomfield.9.scriptid
+                label = "Intercompany Customer"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "fieldgroup_227_t1499227_449"
+        label = "Destination"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.customrecordcustomfields.customrecordcustomfield.2.scriptid
+                label = "Destination Subsidiary"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.customrecordcustomfields.customrecordcustomfield.7.scriptid
+                label = "Destination Account"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.customrecordcustomfields.customrecordcustomfield.3.scriptid
+                label = "Destination Department"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.customrecordcustomfields.customrecordcustomfield.4.scriptid
+                label = "Destination Class"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.customrecordcustomfields.customrecordcustomfield.5.scriptid
+                label = "Destination Location"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.customrecordcustomfields.customrecordcustomfield.11.scriptid
+                label = "Intercompany AP Account"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_svb_line_is_source_sub.customrecordcustomfields.customrecordcustomfield.10.scriptid
+                label = "Intercompany Vendor"
+                visible = true
+                mandatory = false
+                displayType = "NORMAL"
+                columnBreak = false
+                sameRowAsPrevious = false
+                quickAdd = false
+              },
+            ]
+          },
+        ]
+      },
+    ]
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              quickAdd = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "RECORDTRANSLATION"
+        label = "Translation"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDTRANSLATIONS"
+              label = "Translation"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDCUSTOM"
+        label = "Custom"
+        visible = true
+      },
+    ]
+  }
+  actionbar = {
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = true
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = true
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = true
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = true
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = true
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = true
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = true
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = true
+        },
+      ]
+    }
+  }
+  editingInList = true
+}

@@ -1,0 +1,24 @@
+netsuite.centercategory custcentercategory188 {
+  scriptid = "custcentercategory188"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_psa.scriptid
+  label = "Resources"
+  links = {
+    link = [
+      {
+        linkid = "LIST_EMPLOYEE_RECORD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_VENDOR"
+        shortlist = false
+      },
+      {
+        linklabel = "Resources module"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_resources.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

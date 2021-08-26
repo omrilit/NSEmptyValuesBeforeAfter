@@ -1,0 +1,22 @@
+netsuite.Account COGS_5000_Freight___Delivery_5200@uusesu {
+  acctType = "_costOfGoodsSold"
+  acctNumber = "5200"
+  acctName = "Freight & Delivery"
+  includeChildren = true
+  generalRate = "_average"
+  parent = netsuite.Account.instance.COGS_5000
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+  ]
+  revalue = false
+  identifier = "COGS_5000_Freight & Delivery_5200"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

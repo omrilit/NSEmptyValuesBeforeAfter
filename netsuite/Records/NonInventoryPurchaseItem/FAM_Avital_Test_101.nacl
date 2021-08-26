@@ -1,0 +1,66 @@
+netsuite.NonInventoryPurchaseItem FAM_Avital_Test_101@s {
+  cost = 500
+  costUnits = "per Ea."
+  expenseAccount = netsuite.Account.instance.IT_Equipment_1301@su
+  unitsType = {
+    name = "EACH"
+  }
+  purchaseUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  itemId = "FAM Avital Test 101"
+  displayName = "FAM Avital Test 101"
+  includeChildren = false
+  isInactive = false
+  availableToPartners = false
+  department = netsuite.Department.instance.Customer_Support@s
+  class = netsuite.Classification.instance.02_Data_Migration@bs
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+  ]
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  isFulfillable = true
+  generateAccruals = true
+  currency = "2"
+  itemVendorList = {
+    itemVendor = [
+      {
+        vendor = netsuite.Vendor.instance.NonInventoryPurchaseItem_vendor_1423
+        purchasePrice = 500
+        preferredVendor = false
+        subsidiary = netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "FAM Avital Test 101"
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "FAM Avital Test 101 null null null"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

@@ -1,0 +1,21 @@
+netsuite.Account Dynamic_allocation_test_3@ssu {
+  acctType = "_statistical"
+  unitsType = {
+    name = "EACH"
+  }
+  unit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  acctNumber = "3"
+  acctName = "Dynamic allocation test"
+  includeChildren = true
+  isInactive = false
+  inventory = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+  ]
+  identifier = "Dynamic allocation test_3"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

@@ -1,0 +1,38 @@
+netsuite.centercategory custcentercategory184 {
+  scriptid = "custcentercategory184"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_crm.scriptid
+  label = "Sales"
+  links = {
+    link = [
+      {
+        linkid = "LIST_CONTACT"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_LEAD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_PROSPECT"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_TRAN_OPPRTNTY"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_TRAN_ESTIMATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_TRAN_SALESORD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_PARTNER"
+        shortlist = false
+      },
+    ]
+  }
+}

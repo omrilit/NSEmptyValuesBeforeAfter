@@ -1,0 +1,12 @@
+netsuite.emailtemplate custemailtmpl_32_t1740134_927 {
+  scriptid = "custemailtmpl_32_t1740134_927"
+  addcompanyaddress = true
+  addunsubscribelink = true
+  isinactive = false
+  isprivate = false
+  name = "nirs testing dunning"
+  recordtype = "CUSTOM"
+  subject = "Your Invoice (#\${customrecord.name}) is due on \${customrecord.custrecord_nsts_ci_tran_duedate}"
+  usesmedia = false
+  content = file("netsuite/emailtemplate/custemailtmpl_32_t1740134_927.html")
+}

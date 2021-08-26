@@ -1,0 +1,236 @@
+netsuite.role customrole1004 {
+  scriptid = "customrole1004"
+  centertype = "SALESCENTER"
+  employeerestriction = "OWNONLY"
+  employeeselectionunrestricted = false
+  employeeviewingallowed = false
+  isinactive = false
+  ispartnerrole = false
+  issalesrole = true
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "Sales Development Rep"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "OWN"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = [
+      {
+        permkey = "TRAN_CASHSALE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_FORECAST"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_COMMISSN"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "TRAN_ESTIMATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "TRAN_OPPRTNTY"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "TRAN_SALESORD"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "REPO_COMMISSION"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SNAPSHOTLEAD"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_QUOTA"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_CUSTOMIZATION"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "REPO_SALES"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SALES_PARTNER"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SALES_PROMO"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SFA"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_SALESORDER"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_BOOKINGS"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_NONPOSTING"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "REPO_ANALYTICS"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CALENDAR"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CAMPAIGNHISTORY"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CASE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_CUSTJOB"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_COMPANY"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_COMPETITOR"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CONTACT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_FILECABINET"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EMAILTEMPLATE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EVENT"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_EXPORT"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_FAXMESSAGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_FAXTEMPLATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_ITEM"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_MAILMESSAGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_MAILTEMPLATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_MAILMERGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_CAMPAIGN"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_MASSUPDATES"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "REGT_NONPOSTING"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_HISTORY"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_PDFMESSAGE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_PDFTEMPLATE"
+        permlevel = "EDIT"
+      },
+      {
+        permkey = "LIST_FIND"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CALL"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_PROJECTTEMPLATE"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "LIST_JOB"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_RESOURCE"
+        permlevel = "CREATE"
+      },
+      {
+        permkey = "LIST_TASK"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_CRMMESSAGE"
+        permlevel = "FULL"
+      },
+      {
+        permkey = "LIST_UNIT"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = "ADMI_CRMLIST"
+        permlevel = "VIEW"
+      },
+      {
+        permkey = netsuite.customrecordtype.instance.customrecord31.scriptid
+        permlevel = "VIEW"
+      },
+    ]
+  }
+}

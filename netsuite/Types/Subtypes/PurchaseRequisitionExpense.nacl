@@ -1,0 +1,42 @@
+type netsuite.PurchaseRequisitionExpense {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number line {
+  }
+  netsuite.RecordRef category {
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+  boolean isClosed {
+  }
+  netsuite.Account account {
+    isReference = true
+  }
+  netsuite.Vendor poVendor {
+    isReference = true
+  }
+  number estimatedAmount {
+  }
+  number amount {
+  }
+  string memo {
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Customer customer {
+    isReference = true
+  }
+  netsuite.RecordRefList linkedOrderList {
+  }
+  string linkedOrderStatus {
+  }
+  boolean isBillable {
+  }
+}

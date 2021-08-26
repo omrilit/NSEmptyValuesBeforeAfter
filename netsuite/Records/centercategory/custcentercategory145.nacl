@@ -1,0 +1,33 @@
+netsuite.centercategory custcentercategory145 {
+  scriptid = "custcentercategory145"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab61.scriptid
+  label = "Resources"
+  links = {
+    link = [
+      {
+        linkobject = netsuite.centerlink.instance.custlink_16_t1740134_436.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_EMPLOYEE_RECORD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_VENDOR"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_GENERICRESOURCE"
+        shortlist = false
+      },
+      {
+        linklabel = "Project Resource Management"
+        linkobject = "[scriptid=customscript_prm_sl_main.customdeploy_prm_sl_main]"
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+netsuite.entitycustomfield custentity_realign_generics {
+  scriptid = "custentity_realign_generics"
+  accesslevel = "2"
+  appliestocontact = false
+  appliestocustomer = false
+  appliestoemployee = false
+  appliestogenericrsrc = false
+  appliestogroup = false
+  appliestoothername = false
+  appliestopartner = false
+  appliestopricelist = false
+  appliestoproject = true
+  appliestoprojecttemplate = false
+  appliestostatement = false
+  appliestovendor = false
+  appliestowebsite = false
+  applyformatting = false
+  availableexternally = false
+  availabletosso = false
+  checkspelling = false
+  defaultchecked = false
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "CHECKBOX"
+  globalsearch = false
+  help = '''
+Check this box to programmatically reset the start and end dates of resource allocations to the start and end dates of the project.
+
+Do not check this box if you already have resource allocations for non-generic resource types.
+'''
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "Realign Generic Allocations"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+}

@@ -1,0 +1,35 @@
+netsuite.Location "02_US___Rocky_Mount__NC@ssbsszds" {
+  name = "02 US - Rocky Mount, NC"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "02 US - Rocky Mount, NC"
+    addrText = "02 US - Rocky Mount, NC<br>United States"
+    override = false
+  }
+  locationType = "_warehouse"
+  timeZone = "_americaNewYork"
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "02 US - Rocky Mount, NC"
+}

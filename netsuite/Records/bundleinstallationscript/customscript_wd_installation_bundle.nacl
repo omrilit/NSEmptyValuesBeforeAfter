@@ -1,0 +1,21 @@
+netsuite.bundleinstallationscript customscript_wd_installation_bundle {
+  scriptid = "customscript_wd_installation_bundle"
+  afterinstallfunction = "installBundle"
+  isinactive = false
+  name = "SuiteOffice - [InstBundle] Install"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = netsuite.file.instance.SuiteBundles_Bundle_41812_SuiteOffice___Install_Bundle_js@dsdsbssv.path
+  scriptdeployments = {
+    scriptdeployment = [
+      {
+        scriptid = "customdeploy_wd_installation"
+        isdeployed = true
+        loglevel = "ERROR"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "SuiteOffice - [InstBundle] Install"
+      },
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+netsuite.centercategory custcentercategory193 {
+  scriptid = "custcentercategory193"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_timeexpense.scriptid
+  label = "Purchases"
+  links = {
+    link = [
+      {
+        linkid = "LIST_TRAN_PURCHREQ"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_TRAN_PURCHORD"
+        shortlist = false
+      },
+      {
+        linkobject = netsuite.savedsearch.instance.customsearch_poapprove_2.scriptid
+        linktasktype = "SRCH_FORM"
+        shortlist = false
+      },
+      {
+        linklabel = "Purchases module"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_purchases.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

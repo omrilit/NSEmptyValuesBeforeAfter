@@ -1,0 +1,21 @@
+netsuite.Account Japan_Credit_Card_Account_1005@sssu {
+  acctType = "_bank"
+  acctNumber = "1005"
+  acctName = "Japan Credit Card Account"
+  includeChildren = false
+  currency = netsuite.Currency.instance.Yen
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  curDocNum = 3
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_ASIA_Japan@buu,
+  ]
+  revalue = true
+  identifier = "Japan Credit Card Account_1005"
+  externalId = "11400"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

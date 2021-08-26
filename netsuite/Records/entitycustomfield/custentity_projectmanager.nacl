@@ -1,0 +1,49 @@
+netsuite.entitycustomfield custentity_projectmanager {
+  scriptid = "custentity_projectmanager"
+  accesslevel = "2"
+  appliestocontact = false
+  appliestocustomer = false
+  appliestoemployee = false
+  appliestogenericrsrc = false
+  appliestogroup = false
+  appliestoothername = false
+  appliestopartner = false
+  appliestopricelist = false
+  appliestoproject = true
+  appliestoprojecttemplate = false
+  appliestostatement = false
+  appliestovendor = false
+  appliestowebsite = false
+  applyformatting = false
+  availableexternally = false
+  availabletosso = false
+  checkspelling = false
+  defaultchecked = false
+  displaytype = "NORMAL"
+  dynamicdefault = "ME"
+  encryptatrest = false
+  fieldtype = "SELECT"
+  globalsearch = false
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "Project Manager"
+  onparentdelete = "SET_NULL"
+  searchlevel = "2"
+  selectrecordtype = "-4"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  subtab = "ENTITYMAIN"
+  customfieldfilters = {
+    customfieldfilter = [
+      {
+        fldfilter = "STDENTITYISJOBRESOURCE"
+        fldfilterchecked = true
+        fldfiltercomparetype = "EQ"
+        fldfilternotnull = false
+        fldfilternull = false
+      },
+    ]
+  }
+}

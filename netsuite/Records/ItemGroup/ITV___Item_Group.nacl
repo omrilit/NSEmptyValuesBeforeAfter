@@ -1,0 +1,50 @@
+netsuite.ItemGroup ITV___Item_Group@sbss {
+  includeStartEndLines = true
+  availableToPartners = false
+  isInactive = false
+  itemId = "ITV - Item Group"
+  upcCode = "ITVG"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+  ]
+  includeChildren = true
+  printItems = false
+  memberList = {
+    itemMember = [
+      {
+        quantity = 1
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_1
+        item = netsuite.RecordRef.instance.ItemGroup_item_912
+        lineNumber = 1
+      },
+      {
+        quantity = 1
+        memberUnit = netsuite.RecordRef.instance.ItemGroup_memberUnit_Ea_@uuv
+        taxSchedule = netsuite.RecordRef.instance.ItemGroup_taxSchedule_1
+        item = netsuite.RecordRef.instance.ItemGroup_item_914
+        lineNumber = 2
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "ITV - Item Group"
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

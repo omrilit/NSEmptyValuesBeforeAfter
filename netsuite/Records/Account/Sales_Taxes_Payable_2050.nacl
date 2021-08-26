@@ -1,0 +1,18 @@
+netsuite.Account Sales_Taxes_Payable_2050@ssu {
+  acctType = "_otherCurrentLiability"
+  acctNumber = "2050"
+  acctName = "Sales Taxes Payable"
+  includeChildren = true
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = true
+  identifier = "Sales Taxes Payable_2050"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

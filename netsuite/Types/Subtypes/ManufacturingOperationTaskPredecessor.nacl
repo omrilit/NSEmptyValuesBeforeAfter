@@ -1,0 +1,21 @@
+type netsuite.ManufacturingOperationTaskPredecessor {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.Task task {
+    isReference = true
+  }
+  string type {
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  string lagType {
+  }
+  number lagAmount {
+  }
+  string lagUnits {
+  }
+}

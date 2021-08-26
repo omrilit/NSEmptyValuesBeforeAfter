@@ -1,0 +1,22 @@
+netsuite.Account Australian_Operating_Bank_1003@ssu {
+  acctType = "_bank"
+  acctNumber = "1003"
+  acctName = "Australian Operating Bank"
+  includeChildren = false
+  currency = netsuite.Currency.instance.AUD
+  generalRate = "_current"
+  cashFlowRate = "_average"
+  curDocNum = 9
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_ANZ_Australia@buu,
+  ]
+  revalue = true
+  identifier = "Australian Operating Bank_1003"
+  externalId = "11300"
+  custom_custrecord_acct_bank_account_number = "98-22285"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

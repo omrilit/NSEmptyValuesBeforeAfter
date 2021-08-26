@@ -1,0 +1,26 @@
+netsuite.centercategory custcentercategory139 {
+  scriptid = "custcentercategory139"
+  center = netsuite.center.instance.custcenter5.scriptid
+  centertab = netsuite.centertab.instance.custcentertab59.scriptid
+  label = "CSV Import"
+  links = {
+    link = [
+      {
+        linkid = "ADMI_IMPORTCSV"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_IMPORTCSV_LOG"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_SAVEDIMPORTS"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_CSVIMPORTPREF"
+        shortlist = false
+      },
+    ]
+  }
+}

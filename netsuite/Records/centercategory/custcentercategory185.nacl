@@ -1,0 +1,34 @@
+netsuite.centercategory custcentercategory185 {
+  scriptid = "custcentercategory185"
+  center = netsuite.center.instance.custcenter_openair_srp.scriptid
+  centertab = netsuite.centertab.instance.custcentertab_openair_crm.scriptid
+  label = "Marketing"
+  links = {
+    link = [
+      {
+        linkid = "LIST_CRMGROUP"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CRMTEMPLATE"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CAMPAIGN"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_CUSTOMERFORM"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_UPSELLWIZARD"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_UPSELLSETUP"
+        shortlist = false
+      },
+    ]
+  }
+}

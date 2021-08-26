@@ -1,0 +1,524 @@
+netsuite.entryForm custform_20_4453644_608 {
+  scriptid = "custform_20_4453644_608"
+  standard = "STANDARDCUSTOMRECORD_NSTS_CI_CONSOLIDATE_INVOICEFORM"
+  name = "NSTS | CI Form"
+  recordType = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.scriptid
+  inactive = false
+  preferred = true
+  storedWithRecord = true
+  mainFields = {
+    fieldGroup = [
+      {
+        scriptid = "fieldgroup_251_4453644_767"
+        label = "General"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = "NAME"
+                label = "CI Number"
+                visible = true
+                mandatory = true
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "RECORDID"
+                label = "ID"
+                visible = true
+                mandatory = true
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.0.scriptid
+                label = "Customer"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.3.scriptid
+                label = "CI Date"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.4.scriptid
+                label = "Is Processed"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CUSTOMFORM"
+                label = "Custom Form"
+                visible = false
+                mandatory = true
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "OWNER"
+                label = "Owner"
+                visible = true
+                mandatory = true
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "CREATED"
+                label = "Date Created"
+                visible = true
+                mandatory = true
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "LASTMODIFIED"
+                label = "Last Modified"
+                visible = true
+                mandatory = true
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = "ISINACTIVE"
+                label = "Inactive"
+                visible = false
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = true
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.2.scriptid
+                label = "Invoices"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.16.scriptid
+                label = "Number Of Invoices"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "fieldgroup_248_4453644_767"
+        label = "CI Summary Totals"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.9.scriptid
+                label = "Subtotal"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.10.scriptid
+                label = "Item Total"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.11.scriptid
+                label = "Discount"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.12.scriptid
+                label = "Tax"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.13.scriptid
+                label = "Shipping and Handling cost"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.14.scriptid
+                label = "Amount Paid"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.15.scriptid
+                label = "Total Due"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "fieldgroup_250_4453644_767"
+        label = "PDF"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.5.scriptid
+                label = "PDF File"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+      {
+        scriptid = "fieldgroup_249_4453644_767"
+        label = "CI Preference"
+        visible = true
+        showTitle = true
+        singleColumn = false
+        fields = [
+          {
+            position = "MIDDLE"
+            field = [
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.17.scriptid
+                label = "Subsidiary"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.18.scriptid
+                label = "Currency"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.19.scriptid
+                label = "Billing Address"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.20.scriptid
+                label = "LOcation"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.21.scriptid
+                label = "Due Date"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.22.scriptid
+                label = "Contract"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.23.scriptid
+                label = "Project"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+              {
+                id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.24.scriptid
+                label = "Source"
+                visible = true
+                mandatory = false
+                displayType = "INLINETEXT"
+                columnBreak = false
+                sameRowAsPrevious = false
+              },
+            ]
+          },
+        ]
+      },
+    ]
+    defaultFieldGroup = {
+      fields = [
+        {
+          position = "MIDDLE"
+          field = [
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.6.scriptid
+              label = "CI Preferences"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = "PARENT"
+              label = "Parent"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.26.scriptid
+              label = "Status"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.27.scriptid
+              label = "Term"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.28.scriptid
+              label = "CI Due Date"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.34.scriptid
+              label = "Block Collection Email"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.35.scriptid
+              label = "Amount Remaining"
+              visible = true
+              mandatory = false
+              displayType = "INLINETEXT"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.customrecordcustomfields.customrecordcustomfield.36.scriptid
+              label = "CI Payment Status"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+            },
+          ]
+        },
+      ]
+    }
+  }
+  tabs = {
+    tab = [
+      {
+        id = "RECORDCUSTOM"
+        label = "Invoice Details"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.recordsublists.recordsublist.0.scriptid
+              label = "Invoices"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDMERGE"
+        label = "Mail Merge"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDMESSAGES"
+              label = "Messages"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDWORKFLOW"
+        label = "Workflow"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDACTIVEWORKFLOWS"
+              label = "Active Workflows"
+              visible = true
+              neverEmpty = false
+            },
+            {
+              id = "RECORDWORKFLOWHISTORY"
+              label = "Workflow History"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = "RECORDTRANSLATION"
+        label = "Translation"
+        visible = true
+        subItems = {
+          subList = [
+            {
+              id = "RECORDTRANSLATIONS"
+              label = "Translation"
+              visible = true
+              neverEmpty = false
+            },
+          ]
+        }
+      },
+      {
+        id = netsuite.customrecordtype.instance.customrecord_nsts_ci_consolidate_invoice.subtabs.subtab.0.scriptid
+        label = "Invoice Details"
+        visible = true
+      },
+    ]
+  }
+  actionbar = {
+    menu = {
+      menuitem = [
+        {
+          id = "DELETE"
+          label = "Delete"
+          visible = false
+        },
+        {
+          id = "MAKECOPY"
+          label = "Make Copy"
+          visible = false
+        },
+        {
+          id = "NEW"
+          label = "New"
+          visible = false
+        },
+        {
+          id = "PRINT"
+          label = "Print"
+          visible = false
+        },
+        {
+          id = "SUBMITCOPY"
+          label = "Save & Copy"
+          visible = false
+        },
+        {
+          id = "SUBMITNEW"
+          label = "Save & New"
+          visible = false
+        },
+        {
+          id = "SUBMITNEXT"
+          label = "Save & Next"
+          visible = false
+        },
+        {
+          id = "SUBMITAS"
+          label = "Save As"
+          visible = false
+        },
+      ]
+    }
+  }
+  editingInList = false
+}

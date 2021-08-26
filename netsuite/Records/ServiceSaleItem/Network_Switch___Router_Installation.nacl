@@ -1,0 +1,265 @@
+netsuite.ServiceSaleItem Network_Switch___Router_Installation@ssbss {
+  salesDescription = "Router Installation / Upgrade"
+  includeChildren = true
+  incomeAccount = netsuite.Account.instance.Revenue_4000_Services_Revenue_4001@uusu
+  taxSchedule = {
+    name = "S1-Taxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateType = "_itemDefinedCost"
+  unitsType = {
+    name = "EACH"
+  }
+  saleUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  costEstimateUnits = "per Ea."
+  enforceMinQtyInternally = true
+  overallQuantityPricingType = "_byLineQuantity"
+  isFulfillable = false
+  minimumQuantityUnits = "Ea."
+  vsoeDelivered = false
+  deferRevRec = false
+  revenueRecognitionRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  revRecForecastRule = {
+    name = "Default Standard"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  directRevenuePosting = false
+  createJob = true
+  storeDisplayName = "Network Switch - Router Installation"
+  storeDisplayThumbnail = netsuite.RecordRef.instance.ServiceSaleItem_storeDisplayThumbnail_12082
+  storeDisplayImage = netsuite.RecordRef.instance.ServiceSaleItem_storeDisplayImage_12083
+  storeDescription = "Network Switch - Router Installation"
+  storeDetailedDescription = "<img src=\"/core/media/media.nl?id=12083&h=93e27fe12f02f53ee4e4\" class=\"img-responsive\">"
+  urlComponent = "Network-Switch-Router-Installation"
+  excludeFromSitemap = false
+  sitemapPriority = "_auto"
+  isDonationItem = false
+  showDefaultDonationAmount = false
+  dontShowPrice = false
+  onSpecial = false
+  itemTaskTemplatesList = {
+    taskTemplates = [
+      {
+        taskName = "Network Switch - Router Installation"
+        taskStartOffset = 0
+        taskDuration = {
+          timeSpan = 0
+          unit = "hour"
+        }
+      },
+      {
+        taskName = "Site Survey"
+        taskStartOffset = 0
+        taskDuration = {
+          timeSpan = 6
+          unit = "hour"
+        }
+      },
+      {
+        taskName = "Solution Design"
+        taskStartOffset = 1
+        taskDuration = {
+          timeSpan = 6
+          unit = "hour"
+        }
+      },
+      {
+        taskName = "Installation & Testing"
+        taskStartOffset = 2
+        taskDuration = {
+          timeSpan = 8
+          unit = "hour"
+        }
+      },
+      {
+        taskName = "Platform Migration"
+        taskStartOffset = 3
+        taskDuration = {
+          timeSpan = 8
+          unit = "hour"
+        }
+      },
+      {
+        taskName = "User Adoption Training"
+        taskStartOffset = 4
+        taskDuration = {
+          timeSpan = 4
+          unit = "hour"
+        }
+      },
+      {
+        taskName = "Network Monitoring and Remote Consultancy"
+        taskStartOffset = 4
+        taskDuration = {
+          timeSpan = 16
+          unit = "hour"
+        }
+      },
+    ]
+  }
+  itemId = "Network Switch - Router Installation"
+  displayName = "Network Switch - Router Installation"
+  isOnline = true
+  offerSupport = false
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ANZ@bu,
+    netsuite.Subsidiary.instance.UK_HQ_ASIA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_EMEA@bu,
+    netsuite.Subsidiary.instance.UK_HQ_Shared_Services@bus,
+  ]
+  pricingMatrix = {
+    pricing = [
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 10370
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 10160
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.AUD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 10370
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 7980
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 7820
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.USD
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 7980
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_1
+        priceList = {
+          price = [
+            {
+              value = 5190
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_2
+        priceList = {
+          price = [
+            {
+              value = 5090
+            },
+          ]
+        }
+      },
+      {
+        currency = netsuite.Currency.instance.GBP
+        priceLevel = netsuite.PriceLevel.instance.ServiceSaleItem_priceLevel_3
+        discount = 0
+        priceList = {
+          price = [
+            {
+              value = 5190
+            },
+          ]
+        }
+      },
+    ]
+  }
+  siteCategoryList = {
+    siteCategory = [
+      {
+        website = netsuite.RecordRef.instance.ServiceSaleItem_website_4
+        category = netsuite.RecordRef.instance.ServiceSaleItem_category_2074
+        isDefault = false
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "Network Switch - Router Installation"
+  custom_custitem9 = false
+  custom_custitem_oa_export_to_openair = false
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "Network Switch - Router Installation Network Switch - Router Installation Network Switch - Router Installation null"
+  custom_custitem_wd_img_gallery_carousel_html = "<div class=\"item active easyzoom easyzoom--overlay\" data-slide-number=\"0\"><a href=\"/core/media/media.nl?id=12083&c=TSTDRV1373481&h=93e27fe12f02f53ee4e4\"><img src=\"/core/media/media.nl?id=12083&c=TSTDRV1373481&h=93e27fe12f02f53ee4e4\" class=\"img-responsive\"></a></div>"
+  custom_custitem_wd_img_gallery_slider_html = "<div class=\"col-xs-2 thumbnail\"><a id=\"carousel-selector-0\" class=\"selected\"><img src=\"/core/media/media.nl?id=12082&c=TSTDRV1373481&h=1bd7238acfeeb43c558c\"></a></div>"
+  custom_custitem_wd_process_items = true
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

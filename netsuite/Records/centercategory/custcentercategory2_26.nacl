@@ -1,0 +1,22 @@
+netsuite.centercategory custcentercategory2_26 {
+  scriptid = "custcentercategory2_26"
+  center = "BASIC"
+  centertab = netsuite.centertab.instance.custcentertab16_2.scriptid
+  label = "Help & Support"
+  links = {
+    link = [
+      {
+        linklabel = "Help"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_help.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+      {
+        linklabel = "Support"
+        linkobject = netsuite.suitelet.instance.customscript_oa_sso_support.scriptdeployments.scriptdeployment.0.scriptid
+        linktasktype = "SCRIPT"
+        shortlist = false
+      },
+    ]
+  }
+}

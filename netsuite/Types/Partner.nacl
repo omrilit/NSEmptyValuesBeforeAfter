@@ -1,0 +1,130 @@
+type netsuite.Partner {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.RecordRef customForm {
+  }
+  string entityId {
+  }
+  string altName {
+  }
+  string partnerCode {
+  }
+  boolean isPerson {
+  }
+  string phoneticName {
+  }
+  string salutation {
+  }
+  string firstName {
+  }
+  string middleName {
+  }
+  string lastName {
+  }
+  string companyName {
+  }
+  netsuite.Partner parent {
+    isReference = true
+  }
+  string phone {
+  }
+  string fax {
+  }
+  string email {
+  }
+  string url {
+  }
+  string defaultAddress {
+  }
+  boolean isInactive {
+  }
+  netsuite.PartnerTaxRegistrationList taxRegistrationList {
+  }
+  string globalSubscriptionStatus {
+  }
+  string referringUrl {
+  }
+  "List<netsuite.role>" roleList {
+    isReference = true
+  }
+  netsuite.CategoryList categoryList {
+  }
+  string title {
+  }
+  string printOnCheckAs {
+  }
+  string taxIdNum {
+  }
+  string vatRegNumber {
+  }
+  string comments {
+  }
+  string bcn {
+  }
+  netsuite.file image {
+    isReference = true
+  }
+  string taxFractionUnit {
+  }
+  string emailPreference {
+  }
+  netsuite.RecordRef defaultTaxReg {
+  }
+  string taxRounding {
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Subsidiary subsidiary {
+    isReference = true
+  }
+  string homePhone {
+  }
+  string mobilePhone {
+  }
+  string altEmail {
+  }
+  boolean giveAccess {
+  }
+  netsuite.RecordRef accessRole {
+  }
+  boolean sendEmail {
+  }
+  string password {
+  }
+  string password2 {
+  }
+  boolean requirePwdChange {
+  }
+  boolean subPartnerLogin {
+  }
+  string loginAs {
+  }
+  boolean eligibleForCommission {
+  }
+  netsuite.ContactAccessRolesList contactRolesList {
+  }
+  netsuite.PartnerPromoCodeList promoCodeList {
+  }
+  netsuite.PartnerAddressbookList addressbookList {
+  }
+  netsuite.SubscriptionsList subscriptionsList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+}

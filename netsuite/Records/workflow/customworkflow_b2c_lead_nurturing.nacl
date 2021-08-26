@@ -1,0 +1,353 @@
+netsuite.workflow customworkflow_b2c_lead_nurturing {
+  scriptid = "customworkflow_b2c_lead_nurturing"
+  initoncreate = true
+  initonvieworupdate = false
+  inittriggertype = "AFTERSUBMIT"
+  isinactive = false
+  islogenabled = false
+  keephistory = "ALWAYS"
+  name = "B2C Lead Nurturing Workflow"
+  recordtypes = "LEAD"
+  releasestatus = "RELEASED"
+  runasadmin = false
+  initcondition = {
+    formula = "\"Category\" IN (\"Category1\")"
+    type = "VISUAL_BUILDER"
+    parameters = {
+      parameter = [
+        {
+          name = "Category"
+          value = netsuite.entitycustomfield.instance.custentity_lead_category.scriptid
+        },
+        {
+          name = "Category1"
+          selectrecordtype = netsuite.customlist.instance.customlist_lead_nurture_cat.scriptid
+          value = netsuite.customlist.instance.customlist_lead_nurture_cat.customvalues.customvalue.1.scriptid
+        },
+      ]
+    }
+  }
+  workflowcustomfields = {
+    workflowcustomfield = [
+      {
+        scriptid = "custworkflow_b2c_res1"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        label = "1st Wave Response"
+        selectrecordtype = "-130"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_b2c_res2"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        label = "2nd Wave Response"
+        selectrecordtype = "-130"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_b2c_task"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        label = "Task"
+        selectrecordtype = "-21"
+        storevalue = true
+      },
+      {
+        scriptid = "custworkflow_b2c_res3"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        label = "3rd Wave Response"
+        selectrecordtype = "-130"
+        storevalue = true
+      },
+    ]
+  }
+  workflowstates = {
+    workflowstate = [
+      {
+        scriptid = "workflowstate24"
+        donotexitworkflow = false
+        name = "Spring Sales"
+        positionx = 200
+        positiony = 50
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            sendcampaignemailaction = [
+              {
+                scriptid = "workflowaction61"
+                campaignevent = "[ACCOUNT_SPECIFIC_VALUE]"
+                isinactive = false
+                recipientiscurrentrecord = true
+                resultfield = netsuite.workflow.instance.customworkflow_b2c_lead_nurturing.workflowcustomfields.workflowcustomfield.0.scriptid
+                schedulemode = "DELAY"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+            subscribetorecordaction = [
+              {
+                scriptid = "workflowaction62"
+                isinactive = false
+                recordfield = netsuite.workflow.instance.customworkflow_b2c_lead_nurturing.workflowcustomfields.workflowcustomfield.0.scriptid
+                schedulemode = "DELAY"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition64"
+              scheduledelay = "7"
+              scheduletimeunit = "DAY"
+              tostate = netsuite.workflow.instance.customworkflow_b2c_lead_nurturing.workflowstates.workflowstate.1.scriptid
+              initcondition = {
+                formula = "\"Workflow:1st Wave Response:Response\" IN (\"Campaign Response Type1\",\"Campaign Response Type2\",\"Campaign Response Type3\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:1st Wave Response:Response"
+                      value = "[scriptid=customworkflow_b2c_lead_nurturing.custworkflow_b2c_res1]:STDRECORDCAMPAIGNRESPONSERESPONSETYPE"
+                    },
+                    {
+                      name = "Campaign Response Type1"
+                      selectrecordtype = "-131"
+                      value = "4"
+                    },
+                    {
+                      name = "Campaign Response Type2"
+                      selectrecordtype = "-131"
+                      value = "5"
+                    },
+                    {
+                      name = "Campaign Response Type3"
+                      selectrecordtype = "-131"
+                      value = "12"
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition63"
+              tostate = netsuite.workflow.instance.customworkflow_b2c_lead_nurturing.workflowstates.workflowstate.3.scriptid
+              initcondition = {
+                formula = "\"Workflow:1st Wave Response:Response\" IN (\"Campaign Response Type1\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:1st Wave Response:Response"
+                      value = "[scriptid=customworkflow_b2c_lead_nurturing.custworkflow_b2c_res1]:STDRECORDCAMPAIGNRESPONSERESPONSETYPE"
+                    },
+                    {
+                      name = "Campaign Response Type1"
+                      selectrecordtype = "-131"
+                      value = "6"
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate26"
+        donotexitworkflow = false
+        name = "New Customer Promotion"
+        positionx = 200
+        positiony = 140
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            sendcampaignemailaction = [
+              {
+                scriptid = "workflowaction66"
+                campaignevent = "[ACCOUNT_SPECIFIC_VALUE]"
+                isinactive = false
+                recipientiscurrentrecord = true
+                resultfield = netsuite.workflow.instance.customworkflow_b2c_lead_nurturing.workflowcustomfields.workflowcustomfield.1.scriptid
+                schedulemode = "DELAY"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition67"
+              scheduledelay = "7"
+              scheduletimeunit = "DAY"
+              tostate = netsuite.workflow.instance.customworkflow_b2c_lead_nurturing.workflowstates.workflowstate.2.scriptid
+              initcondition = {
+                formula = "\"Workflow:2nd Wave Response:Response\" IN (\"Campaign Response Type1\",\"Campaign Response Type2\",\"Campaign Response Type3\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:2nd Wave Response:Response"
+                      value = "[scriptid=customworkflow_b2c_lead_nurturing.custworkflow_b2c_res2]:STDRECORDCAMPAIGNRESPONSERESPONSETYPE"
+                    },
+                    {
+                      name = "Campaign Response Type1"
+                      selectrecordtype = "-131"
+                      value = "12"
+                    },
+                    {
+                      name = "Campaign Response Type2"
+                      selectrecordtype = "-131"
+                      value = "5"
+                    },
+                    {
+                      name = "Campaign Response Type3"
+                      selectrecordtype = "-131"
+                      value = "4"
+                    },
+                  ]
+                }
+              }
+            },
+            {
+              scriptid = "workflowtransition65"
+              tostate = netsuite.workflow.instance.customworkflow_b2c_lead_nurturing.workflowstates.workflowstate.3.scriptid
+              initcondition = {
+                formula = "\"Workflow:2nd Wave Response:Response\" IN (\"Campaign Response Type1\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:2nd Wave Response:Response"
+                      value = "[scriptid=customworkflow_b2c_lead_nurturing.custworkflow_b2c_res2]:STDRECORDCAMPAIGNRESPONSERESPONSETYPE"
+                    },
+                    {
+                      name = "Campaign Response Type1"
+                      selectrecordtype = "-131"
+                      value = "6"
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate27"
+        donotexitworkflow = false
+        name = "15% Discount"
+        positionx = 200
+        positiony = 230
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            sendcampaignemailaction = [
+              {
+                scriptid = "workflowaction69"
+                campaignevent = "[ACCOUNT_SPECIFIC_VALUE]"
+                isinactive = false
+                recipientiscurrentrecord = true
+                resultfield = netsuite.workflow.instance.customworkflow_b2c_lead_nurturing.workflowcustomfields.workflowcustomfield.3.scriptid
+                schedulemode = "DELAY"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+              },
+            ]
+          },
+        ]
+        workflowtransitions = {
+          workflowtransition = [
+            {
+              scriptid = "workflowtransition68"
+              tostate = netsuite.workflow.instance.customworkflow_b2c_lead_nurturing.workflowstates.workflowstate.3.scriptid
+              initcondition = {
+                formula = "\"Workflow:3rd Wave Response:Response\" IN (\"Campaign Response Type1\")"
+                type = "VISUAL_BUILDER"
+                parameters = {
+                  parameter = [
+                    {
+                      name = "Workflow:3rd Wave Response:Response"
+                      value = "[scriptid=customworkflow_b2c_lead_nurturing.custworkflow_b2c_res3]:STDRECORDCAMPAIGNRESPONSERESPONSETYPE"
+                    },
+                    {
+                      name = "Campaign Response Type1"
+                      selectrecordtype = "-131"
+                      value = "6"
+                    },
+                  ]
+                }
+              }
+            },
+          ]
+        }
+      },
+      {
+        scriptid = "workflowstate25"
+        donotexitworkflow = false
+        name = "Spring Collection Catalog"
+        positionx = 200
+        positiony = 320
+        workflowactions = [
+          {
+            triggertype = "ONENTRY"
+            createrecordaction = [
+              {
+                scriptid = "workflowaction84"
+                isinactive = false
+                recordtype = "TASK"
+                resultfield = netsuite.workflow.instance.customworkflow_b2c_lead_nurturing.workflowcustomfields.workflowcustomfield.2.scriptid
+                schedulemode = "DELAY"
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+                fieldsettings = {
+                  fieldsetting = [
+                    {
+                      targetfield = "STDEVENTASSIGNED"
+                      valuefield = "STDENTITYSALESREP"
+                    },
+                    {
+                      targetfield = "STDEVENTSTARTDATE"
+                      valuedate = "TOMORROW"
+                    },
+                    {
+                      targetfield = "STDEVENTDUEDATE"
+                      valuedate = "DFN5"
+                    },
+                    {
+                      targetfield = "STDEVENTCOMPANY"
+                      valueselect = "@CURRENT@"
+                    },
+                    {
+                      targetfield = "STDEVENTTITLE"
+                      valuetext = "Spring Collection Catalog Delivery"
+                    },
+                  ]
+                }
+              },
+            ]
+          },
+        ]
+      },
+    ]
+  }
+}

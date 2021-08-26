@@ -1,0 +1,32 @@
+netsuite.Location "99_Elimination@s" {
+  name = "99 Elimination"
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_HEADQUARTERS@bu,
+  ]
+  isInactive = false
+  mainAddress = {
+    country = "_unitedStates"
+    addressee = "99 Elimination"
+    override = false
+  }
+  useBins = true
+  makeInventoryAvailable = true
+  makeInventoryAvailableStore = true
+  classTranslationList = {
+    classTranslation = [
+      {
+        language = "Danish"
+      },
+      {
+        language = "German"
+      },
+      {
+        language = "English (International)"
+      },
+      {
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "99 Elimination"
+}

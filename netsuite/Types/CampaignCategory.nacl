@@ -1,0 +1,29 @@
+type netsuite.CampaignCategory {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string name {
+  }
+  netsuite.CampaignCategory parent {
+    isReference = true
+  }
+  netsuite.LeadSource leadSource {
+    isReference = true
+  }
+  string description {
+  }
+  boolean isexternal {
+  }
+  boolean isInactive {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+}

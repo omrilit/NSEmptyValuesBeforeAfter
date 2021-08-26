@@ -1,0 +1,122 @@
+type netsuite.ServicePurchaseItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string purchaseDescription {
+  }
+  boolean manufacturingChargeItem {
+  }
+  number cost {
+  }
+  string costUnits {
+  }
+  netsuite.RecordRef issueProduct {
+  }
+  boolean includeChildren {
+  }
+  netsuite.Account expenseAccount {
+    isReference = true
+  }
+  boolean isTaxable {
+  }
+  string matrixType {
+  }
+  netsuite.UnitsType unitsType {
+    isReference = true
+  }
+  netsuite.RecordRef purchaseUnit {
+  }
+  netsuite.RecordRef customForm {
+  }
+  string itemId {
+  }
+  string upcCode {
+  }
+  string displayName {
+  }
+  string vendorName {
+  }
+  netsuite.ServicePurchaseItem parent {
+    isReference = true
+  }
+  boolean isInactive {
+  }
+  string matrixItemNameTemplate {
+  }
+  boolean availableToPartners {
+  }
+  netsuite.Department department {
+    isReference = true
+  }
+  netsuite.Classification class {
+    isReference = true
+  }
+  netsuite.Location location {
+    isReference = true
+  }
+  "List<netsuite.Subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  netsuite.RecordRef taxSchedule {
+  }
+  netsuite.RecordRef deferralAccount {
+  }
+  netsuite.RecordRef amortizationTemplate {
+  }
+  string residual {
+  }
+  number amortizationPeriod {
+  }
+  boolean isFulfillable {
+  }
+  boolean generateAccruals {
+  }
+  netsuite.ItemAccountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.CostCategory costCategory {
+    isReference = true
+  }
+  number purchaseOrderQuantity {
+  }
+  number purchaseOrderAmount {
+  }
+  number purchaseOrderQuantityDiff {
+  }
+  number receiptQuantity {
+  }
+  number receiptAmount {
+  }
+  number receiptQuantityDiff {
+  }
+  string currency {
+  }
+  netsuite.ItemOptionsList itemOptionsList {
+  }
+  netsuite.MatrixOptionList matrixOptionList {
+  }
+  netsuite.ItemVendorList itemVendorList {
+  }
+  netsuite.RecordRef purchaseTaxCode {
+  }
+  netsuite.RecordRef salesTaxCode {
+  }
+  netsuite.TranslationList translationsList {
+  }
+  netsuite.Vendor vendor {
+    isReference = true
+  }
+  netsuite.ServicePurchaseItemHierarchyVersionsList hierarchyVersionsList {
+  }
+  netsuite.RecordRef consumptionUnit {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+}

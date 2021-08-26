@@ -1,0 +1,31 @@
+netsuite.centercategory custcentercategory44 {
+  scriptid = "custcentercategory44"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab38.scriptid
+  label = "Scheduling"
+  links = {
+    link = [
+      {
+        linkid = "LIST_EVENT"
+        shortlist = true
+      },
+      {
+        linkid = "LIST_TASK"
+        shortlist = true
+      },
+      {
+        linkid = "LIST_CALL"
+        shortlist = true
+      },
+      {
+        linkid = "LIST_ACTIVITY"
+        linklabel = "Activities"
+        shortlist = true
+      },
+      {
+        linkid = "LIST_PROJECTTASK"
+        shortlist = true
+      },
+    ]
+  }
+}

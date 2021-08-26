@@ -1,0 +1,37 @@
+netsuite.centercategory custcentercategory93 {
+  scriptid = "custcentercategory93"
+  center = netsuite.center.instance.custcenter4.scriptid
+  centertab = netsuite.centertab.instance.custcentertab46.scriptid
+  label = "Tools"
+  links = {
+    link = [
+      {
+        linkid = "LIST_LEAD"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_PROSPECT"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_IMPORTCSV"
+        linklabel = "Import Assistant"
+        shortlist = false
+      },
+      {
+        linkid = "ADMI_SAVEDIMPORTS"
+        linklabel = "View Saved Imports"
+        shortlist = false
+      },
+      {
+        linkobject = netsuite.centerlink.instance.custlink_12_t1740134_752.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+      },
+      {
+        linkid = "LIST_SALESCAMPAIGN"
+        shortlist = false
+      },
+    ]
+  }
+}

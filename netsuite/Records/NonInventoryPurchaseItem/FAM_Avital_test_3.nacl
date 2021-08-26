@@ -1,0 +1,65 @@
+netsuite.NonInventoryPurchaseItem FAM_Avital_test_3@s {
+  cost = 2000
+  costUnits = "per Ea."
+  expenseAccount = netsuite.Account.instance.IT_Equipment_1301@su
+  unitsType = {
+    name = "EACH"
+  }
+  purchaseUnit = {
+    name = "Each"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  itemId = "FAM Avital test 3"
+  displayName = "FAM Avital test 3"
+  includeChildren = false
+  vendorName = "dell"
+  isInactive = false
+  availableToPartners = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs,
+  ]
+  taxSchedule = {
+    name = "S2-Nontaxable"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  isFulfillable = false
+  generateAccruals = false
+  currency = "2"
+  itemVendorList = {
+    itemVendor = [
+      {
+        vendor = netsuite.Vendor.instance.NonInventoryPurchaseItem_vendor_1423
+        purchasePrice = 2000
+        preferredVendor = false
+        subsidiary = netsuite.Subsidiary.instance.UK_HQ_AMERICAS_US___West@buusbs
+      },
+    ]
+  }
+  translationsList = {
+    translation = [
+      {
+        locale = "_danish"
+        language = "Danish"
+      },
+      {
+        locale = "_german"
+        language = "German"
+      },
+      {
+        locale = "_englishInternational"
+        language = "English (International)"
+      },
+      {
+        locale = "_japanese"
+        language = "Japanese"
+      },
+    ]
+  }
+  identifier = "FAM Avital test 3"
+  custom_custitem_oa_export_to_openair_product = false
+  custom_custitem_wd_badges_refresh = false
+  custom_custitem_wd_cust_keywords = "FAM Avital test 3 null null null"
+  custom_custitem_wd_process_items = false
+  custom_custitem_wd_refresh_image_gallery = false
+  custom_custitem_wd_refresh_relateditem = false
+}

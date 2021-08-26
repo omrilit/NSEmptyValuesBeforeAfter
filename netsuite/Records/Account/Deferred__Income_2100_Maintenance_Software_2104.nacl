@@ -1,0 +1,20 @@
+netsuite.Account Deferred__Income_2100_Maintenance_Software_2104@ssuubu {
+  acctType = "_deferredRevenue"
+  acctNumber = "2104"
+  acctName = "Maintenance-Software"
+  includeChildren = true
+  generalRate = "_current"
+  parent = netsuite.Account.instance.Deferred__Income_2100@ssu
+  cashFlowRate = "_average"
+  isInactive = false
+  inventory = false
+  eliminate = false
+  subsidiaryList = [
+    netsuite.Subsidiary.instance.UK_HQ@b,
+  ]
+  revalue = false
+  identifier = "Deferred  Income_2100_Maintenance-Software_2104"
+  externalId = "Indian   Overseas   Bank  Corp"
+  custom_custrecord_glm_include = false
+  custom_custrecord_has_mx_localization = false
+}

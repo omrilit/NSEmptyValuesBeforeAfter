@@ -1,0 +1,13 @@
+type netsuite.CustomFieldRoleAccess {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.role role {
+    isReference = true
+  }
+  string accessLevel {
+  }
+  string searchLevel {
+  }
+}
